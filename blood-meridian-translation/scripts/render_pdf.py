@@ -81,9 +81,14 @@ def build_pdf_html(passage_ids: list[str]) -> str:
             for echo in echoes:
                 phrase = echo.get("greek", "")
                 if phrase and phrase[:15] in grk:
+                    source = echo.get("source", "")
+                    note = echo.get("note", "")
+                    gloss_note = f'cf. {source}'
+                    if note:
+                        gloss_note += f' — {note[:80]}'
                     glosses.append({
-                        "anchor": phrase[:30] + ("…" if len(phrase) > 30 else ""),
-                        "note": f'cf. {echo.get("source", "")}',
+                        "anchor": phrase[:25] + ("…" if len(phrase) > 25 else ""),
+                        "note": gloss_note,
                         "_type": "echo",
                     })
 
@@ -172,7 +177,7 @@ def build_pdf_html(passage_ids: list[str]) -> str:
     text-indent: 0;
   }}
   .para-gloss {{
-    width: 5.5cm;
+    width: 6.5cm;
     flex-shrink: 0;
     font-size: 6.5pt;
     line-height: 1.2;
@@ -196,10 +201,11 @@ def build_pdf_html(passage_ids: list[str]) -> str:
   .ge.echo .w, .ge.attest .w {{
     font-weight: 400;
     font-style: italic;
+    color: #444;
   }}
   .ge.echo .n, .ge.attest .n {{
     font-style: italic;
-    color: #888;
+    color: #666;
   }}
 </style>
 </head>

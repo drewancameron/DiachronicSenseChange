@@ -275,15 +275,16 @@ ECHO_PROMPT = """You are a classicist examining an Ancient Greek translation of 
 For each echo, give:
 - The Greek phrase from the translation
 - The classical source (author, work, approximate reference)
-- What the echo evokes
+- A SHORT quote in Ancient Greek from the source text being echoed
+- A brief note on the connection
 
-Only note genuine, recognisable echoes — not generic vocabulary.
+Only note genuine, recognisable echoes — not generic vocabulary. The source quote MUST be in Ancient Greek, not English.
 
 ## Greek Translation
 {greek}
 
 Return ONLY a JSON array:
-[{{"greek": "phrase", "source": "Author, Work ref", "note": "what it evokes"}}]
+[{{"greek": "phrase from translation", "source": "Author, Work ref", "source_quote": "Greek quote from the classical source", "note": "brief note on the connection"}}]
 Empty array [] if nothing notable."""
 
 

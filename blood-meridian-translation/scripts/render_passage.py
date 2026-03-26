@@ -107,31 +107,37 @@ def render_passage(passage_ids: list[str]) -> str:
             grk = mg_sent["greek"]
             glosses = list(mg_sent["glosses"])  # copy so we can append
 
-            # Merge echoes: if the echo phrase appears in this sentence, add it
+            # Echoes become footnotes, not margin glosses
+            sent_footnotes = []
             for echo in echoes:
                 phrase = echo.get("greek", "")
                 if phrase and phrase[:15] in grk:
-                    glosses.append({
-                        "anchor": phrase[:30] + ("…" if len(phrase) > 30 else ""),
-                        "note": f'cf. {echo.get("source", "")}',
-                        "_type": "echo",
-                    })
+                    sent_footnotes.append(echo)
 
-            # Merge thematic attestations: if the word appears in this sentence
             for att in attestations:
                 word = att.get("word", "")
                 if word and word in grk:
-                    glosses.append({
-                        "anchor": word,
-                        "note": f'cf. {att.get("author", "")}, {att.get("work", "")}',
+                    sent_footnotes.append({
+                        "greek": word,
+                        "source": f'{att.get("author", "")}, {att.get("work", "")}',
+                        "source_quote": "",
+                        "note": "",
                         "_type": "attestation",
                     })
+
+            # Filter glosses by rank if present (keep rank 1 and 2, drop 3 if tight)
+            # For now keep all — the renderer can thin later based on density
+            glosses = [g for g in glosses if g.get("rank", 1) <= 2]
 
             if grk in para_starters and all_sentences and not all_sentences[-1].get("para_break"):
                 if any(not item.get("para_break") for item in all_sentences):
                     all_sentences.append({"para_break": True})
             highlighted = highlight_anchors(grk, glosses)
-            all_sentences.append({"html": highlighted, "glosses": glosses})
+            all_sentences.append({
+                "html": highlighted,
+                "glosses": glosses,
+                "footnotes": sent_footnotes,
+            })
         all_sentences.append({"para_break": True})
 
     # Collect all glosses with IDs for the margin
@@ -185,11 +191,11 @@ def render_passage(passage_ids: list[str]) -> str:
     margin: 0 0 1.5rem; color: #333; letter-spacing: 0.15em;
   }
 
-  /* Two-panel layout: Greek (wide) + glosses (narrower, two-column flow) */
+  /* Two-panel layout: Greek (left) + glosses (right) */
   .page-body {
     display: grid;
-    grid-template-columns: 1fr 380px;
-    gap: 0 1.5rem;
+    grid-template-columns: 1fr 340px;
+    gap: 0 1.2rem;
     position: relative;
   }
 
@@ -229,15 +235,37 @@ def render_passage(passage_ids: list[str]) -> str:
   .mg .n {
     color: #666;
   }
-  /* Echo/attestation entries: italic, slightly different colour */
-  .mg.echo .w, .mg.attest .w {
-    font-weight: 400;
-    font-style: italic;
+  /* Footnote markers in the text */
+  .fn-marker {
+    font-size: 0.65rem;
+    vertical-align: super;
+    color: #888;
+    margin-left: 1px;
+    cursor: help;
+  }
+
+  /* Footnote section at bottom */
+  .footnotes {
+    margin-top: 2rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid #ccc;
+    font-size: 0.75rem;
+    line-height: 1.4;
     color: #555;
   }
-  .mg.echo .n, .mg.attest .n {
+  .fn-entry {
+    margin-bottom: 0.4rem;
+  }
+  .fn-num {
+    font-weight: 600;
+    color: #666;
+    margin-right: 0.3rem;
+  }
+  .fn-source {
     font-style: italic;
-    color: #888;
+  }
+  .fn-quote {
+    font-family: 'GFS Didot', serif;
   }
 
   .gw { cursor: help; }
@@ -270,7 +298,11 @@ def render_passage(passage_ids: list[str]) -> str:
     html.append('<div class="chapter-num">Ι</div>')
     html.append('<div class="page-body">')
 
-    # Column 1: flowing Greek text with paragraphs
+    # Collect footnotes with running numbers
+    all_footnotes = []
+    fn_counter = 1
+
+    # Column 1: flowing Greek text with paragraphs + footnote markers
     html.append('<div class="main-text">')
     para_parts = []
     for item in all_sentences:
@@ -279,17 +311,43 @@ def render_passage(passage_ids: list[str]) -> str:
                 html.append(f'<p class="para">{" ".join(para_parts)}</p>')
                 para_parts = []
             continue
-        para_parts.append(item["html"])
+
+        sent_html = item["html"]
+
+        # Insert footnote markers for echoes/attestations
+        for fn in item.get("footnotes", []):
+            phrase = fn.get("greek", "")
+            if phrase and phrase[:12] in sent_html:
+                marker = f'<sup class="fn-marker" title="see footnote {fn_counter}">{fn_counter}</sup>'
+                # Insert marker after the phrase
+                insert_pos = sent_html.find(phrase[:12])
+                if insert_pos >= 0:
+                    # Find end of the phrase in the HTML
+                    end_pos = insert_pos + len(phrase[:20])
+                    # Place marker after the nearest word boundary
+                    space_pos = sent_html.find(" ", end_pos)
+                    if space_pos < 0:
+                        space_pos = len(sent_html)
+                    sent_html = sent_html[:space_pos] + marker + sent_html[space_pos:]
+
+                fn["_number"] = fn_counter
+                all_footnotes.append(fn)
+                fn_counter += 1
+
+        para_parts.append(sent_html)
+
     if para_parts:
         html.append(f'<p class="para">{" ".join(para_parts)}</p>')
     html.append('</div>')
 
-    # Gloss panel: all glosses, positioned by JS to align with anchors
+    # Gloss panel: vocabulary glosses only (no echoes/attestations)
     html.append('<div class="gloss-panel">')
     for g in all_glosses:
+        if g.get("_type") in ("echo", "attestation"):
+            continue  # these are now footnotes
         gid = g.get("_id", "")
         html.append(
-            f'<div class="mg {_gloss_css_class(g)}" data-for="{gid}">'
+            f'<div class="mg" data-for="{gid}">'
             f'<span class="w">{g["anchor"]}</span> '
             f'<span class="n">{g["note"]}</span>'
             f'</div>'
@@ -297,6 +355,24 @@ def render_passage(passage_ids: list[str]) -> str:
     html.append('</div>')
 
     html.append('</div>')  # page-body
+
+    # Footnote section
+    if all_footnotes:
+        html.append('<div class="footnotes">')
+        for fn in all_footnotes:
+            num = fn.get("_number", "")
+            source = fn.get("source", "")
+            source_quote = fn.get("source_quote", "")
+            note = fn.get("note", "")
+            entry = f'<div class="fn-entry"><span class="fn-num">{num}.</span>'
+            entry += f'<span class="fn-source">{source}</span>'
+            if source_quote:
+                entry += f' — <span class="fn-quote">{source_quote}</span>'
+            if note:
+                entry += f' ({note})'
+            entry += '</div>'
+            html.append(entry)
+        html.append('</div>')
 
     # JS to position glosses in two columns within the panel
     html.append("""

@@ -342,9 +342,107 @@ def build_revision_prompt(en_text: str, greek_text: str, diagnosis: dict) -> str
 
     issues_text = "\n\n".join(sections)
 
+    # === Supporting evidence: only include what's relevant to the issues found ===
+    evidence_sections = []
+
+    # Style models: include when Sonnet flagged register/idiom issues
+    has_register_issue = any(
+        "register" in si.get("problem", "").lower() or
+        "idiom" in si.get("problem", "").lower() or
+        "calque" in si.get("problem", "").lower()
+        for si in sonnet_issues
+    )
+    if has_register_issue:
+        try:
+            sys.path.insert(0, str(ROOT))
+            from retrieval.search import lexical_inspiration, Scale
+            hits = lexical_inspiration(en_text, Scale.SENTENCE, period_filter=None, top_k=12)
+            seen_authors = set()
+            models = []
+            for hit in hits:
+                author = getattr(hit.chunk, 'author', '') or ''
+                if author in seen_authors:
+                    continue
+                seen_authors.add(author)
+                greek_ex = hit.chunk.text[:200]
+                source = f"{author}, {getattr(hit.chunk, 'work', '')}"
+                models.append(f"  [{source}]: {greek_ex}")
+                if len(models) >= 3:
+                    break
+            if models:
+                evidence_sections.append(
+                    "## Style Reference (thematically matched passages — guide your register)\n"
+                    + "\n\n".join(models)
+                )
+        except Exception:
+            pass
+
+    # Construction guides: include when construction mismatches found
+    if constr:
+        try:
+            from label_constructions import label_english
+            sents = [s.strip() for s in re.split(r'(?<=[.!?])\s+', en_text) if s.strip()]
+            label_lines = []
+            for i, sent in enumerate(sents, 1):
+                labels = label_english(sent)
+                if labels:
+                    short = sent[:60] + ("..." if len(sent) > 60 else "")
+                    label_lines.append(f'  {i}. "{short}" — {", ".join(labels)}')
+            if label_lines:
+                evidence_sections.append(
+                    "## Construction Guide (for the flagged structural issues)\n"
+                    + "\n".join(label_lines)
+                )
+        except Exception:
+            pass
+
+        try:
+            from conditional_guide import identify_constructions, format_for_prompt
+            findings = identify_constructions(en_text)
+            if findings:
+                seen = set()
+                unique = []
+                for f in findings:
+                    key = (f["type"], f["text"][:40])
+                    if key not in seen:
+                        seen.add(key)
+                        unique.append(f)
+                evidence_sections.append(format_for_prompt(unique))
+        except Exception:
+            pass
+
+    # Polysemy: include full sense table for flagged words
+    from translate import POLYSEMOUS
+    if polysemy:
+        en_lower = en_text.lower()
+        en_words = set(re.findall(r'\b\w+\b', en_lower))
+        poly_notes = []
+        for word, senses in POLYSEMOUS.items():
+            matched = word in en_words or any(w.startswith(word) for w in en_words)
+            if not matched:
+                continue
+            best_sense = None
+            best_score = -1
+            for clues, sense_desc, greek_sug in senses:
+                if not clues:
+                    best_sense = (sense_desc, greek_sug)
+                    break
+                score = sum(1 for c in clues if c in en_lower)
+                if score > best_score:
+                    best_score = score
+                    best_sense = (sense_desc, greek_sug)
+            if best_sense:
+                poly_notes.append(f"  '{word}' here = {best_sense[0]} → {best_sense[1]}")
+        if poly_notes:
+            evidence_sections.append(
+                "## Correct Word Senses\n" + "\n".join(poly_notes)
+            )
+
+    evidence_text = "\n\n".join(evidence_sections) if evidence_sections else ""
+
     prompt = f"""You are revising an Ancient Greek translation of McCarthy's Blood Meridian (Koine register, Attic vocabulary).
 
-Fix ONLY the specific issues listed below. Do not change anything else.
+Fix ONLY the specific issues listed below. Do not change anything that is already correct.
 
 ## English Source
 {en_text}
@@ -354,10 +452,13 @@ Fix ONLY the specific issues listed below. Do not change anything else.
 
 {issues_text}
 
+{evidence_text}
+
 ## Instructions
 1. Fix each listed issue while preserving everything that is correct.
-2. Every word must be attestable in Morpheus/LSJ.
-3. Output ONLY the complete revised Greek text — no explanations."""
+2. Use the supporting evidence above to guide your corrections where provided.
+3. Every word must be attestable in Morpheus/LSJ.
+4. Output ONLY the complete revised Greek text — no explanations."""
 
     return prompt
 

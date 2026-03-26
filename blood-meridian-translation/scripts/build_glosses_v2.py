@@ -63,14 +63,17 @@ Abbreviations: αἰτ. γεν. δοτ. = cases; ἑν. πλ. = number; ἐν. �
 {greek}
 
 Return a JSON array. The "anchor" must exactly match text in the Greek.
-Group by sentence — include the sentence text and its glosses.
+Group by sentence. For each gloss, include an importance rank (1=essential, 2=helpful, 3=nice-to-have) so we can thin the display if space is tight.
 [
   {{"sentence": "first sentence of Greek...", "glosses": [
-    {{"anchor": "word", "note": "Ørberg gloss"}},
+    {{"anchor": "word", "note": "Ørberg gloss", "rank": 1}},
     ...
   ]}},
   ...
 ]
+Rank 1: words the reader cannot understand the sentence without.
+Rank 2: words that clarify meaning or register significantly.
+Rank 3: words that are interesting but not essential.
 Output ONLY the JSON."""
 
 
