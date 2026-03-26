@@ -1,0 +1,26 @@
+# Data (large, not for git)
+models/fingerprint_index/features.npy
+models/fingerprint_index/metadata.jsonl
+models/fingerprint_index_fast/features.npy
+models/fingerprint_index_fast/metadata.jsonl
+models/fingerprint_index_fast/metadata_labelled.jsonl
+models/translations/
+retrieval/data/corpus.jsonl
+retrieval/data/morpheus_cache.json
+retrieval/data/collocates.json
+data/lemma_idf.json
+
+# Backups
+drafts_backup_*/
+apparatus_backup_*/
+
+# Output (regenerable)
+output/*.html
+output/*.pdf
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store

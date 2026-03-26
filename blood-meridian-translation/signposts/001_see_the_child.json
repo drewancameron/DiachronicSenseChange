@@ -1,0 +1,161 @@
+[
+  {
+    "en_type": "coordination_chain",
+    "en_scale": "sentence",
+    "en_text": "He is pale and thin, he wears a thin and ragged linen shirt.",
+    "en_head": "",
+    "en_verb": "",
+    "distribution": {
+      "coordination_chain": 1.0
+    },
+    "total_examples": 74129,
+    "recommendation": "coordination_chain (100% of 23473 matched examples)",
+    "nearest_examples": [
+      {
+        "en_text": "Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly ",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "And it appears, first of all, that Theseus, of his own choice, when no one compe",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "wear",
+        "greek_cluster": [
+          "ἀμφοτέρους",
+          "τρίβειν",
+          "ἐκέλευε",
+          "πρῶτον",
+          "ἀποτεμόμενον",
+          "μέγιστα",
+          "Ἀθηναίων",
+          "ἔπειτ"
+        ],
+        "n_passages": 5
+      }
+    ]
+  },
+  {
+    "en_type": "coordination_chain",
+    "en_scale": "sentence",
+    "en_text": "His folk are known for hewers of wood and drawers of water but in truth his father has been a school",
+    "en_head": "",
+    "en_verb": "",
+    "distribution": {
+      "coordination_chain": 1.0
+    },
+    "total_examples": 74129,
+    "recommendation": "coordination_chain (100% of 23473 matched examples)",
+    "nearest_examples": [
+      {
+        "en_text": "Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly ",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "And it appears, first of all, that Theseus, of his own choice, when no one compe",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "know",
+        "greek_cluster": [
+          "σφᾶς",
+          "ἔφη",
+          "ἔπειτα",
+          "πρότερον",
+          "οἶδα",
+          "φύγω",
+          "ἠδίκησαν",
+          "ὅπως"
+        ],
+        "n_passages": 30
+      },
+      {
+        "english_word": "wood",
+        "greek_cluster": [
+          "χάρακα",
+          "ἄραντος",
+          "σφόδρα",
+          "πιέζεσθαι",
+          "φάσκοντος",
+          "εἰκότως",
+          "ἔφη",
+          "ξύλῳ"
+        ],
+        "n_passages": 4
+      }
+    ]
+  },
+  {
+    "en_type": "relative_clause",
+    "en_scale": "clause",
+    "en_text": "He lies in drink, he quotes from poets whose names are now lost.",
+    "en_head": "poets",
+    "en_verb": "lost",
+    "distribution": {
+      "genitive_absolute": 0.5870331219168429,
+      "relative_clause": 0.4115574348132488,
+      "articular_participle": 0.0014094432699083862
+    },
+    "total_examples": 107296,
+    "recommendation": "relative_clause — short defining relative ('poets...lost') → keep as ὅς/ἥ/ὅ + finite verb. Global dist: rel.cl. 41%, gen.abs. 59% — but gen.abs. is for circumstantial, not defining",
+    "nearest_examples": [
+      {
+        "en_text": "a most savage and lawless practice, we shall own that Numa was far more Hellenic",
+        "grc_type": "relative_clause",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "Tellus, moreover, though he kept his post and fought like a brave man, died at t",
+        "grc_type": "genitive_absolute",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "Such, then, are the memorable things about Romulus and Theseus which I have been",
+        "grc_type": "genitive_absolute",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "lie",
+        "greek_cluster": [
+          "ἔφη",
+          "ἅμα",
+          "Ἰταλίας",
+          "Σικελίας",
+          "καλῶς",
+          "ἐφαίνετο",
+          "νῆσος",
+          "παράπλῳ"
+        ],
+        "n_passages": 19
+      },
+      {
+        "english_word": "drink",
+        "greek_cluster": [
+          "τοιοῦτον",
+          "μήτε"
+        ],
+        "n_passages": 3
+      }
+    ]
+  }
+]

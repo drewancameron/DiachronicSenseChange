@@ -1,0 +1,817 @@
+{
+  "kosmos": {
+    "canonical_senses": [
+      {
+        "label": "order or arrangement",
+        "gloss": "A state of order, arrangement, or good order, often in the sense of the arrangement of things or the universe.",
+        "merged_from": [
+          29,
+          200
+        ],
+        "confidence": "established",
+        "period_notes": "Earliest sense in archaic and classical Greek."
+      },
+      {
+        "label": "adornment or decoration",
+        "gloss": "Adornment, decoration, or embellishment, especially in reference to personal ornament or beauty.",
+        "merged_from": [
+          31,
+          32,
+          33,
+          202,
+          201
+        ],
+        "confidence": "established",
+        "period_notes": "Prominent in poetry and prose from archaic period onward."
+      },
+      {
+        "label": "decency or decorum",
+        "gloss": "Proper behavior, decency, or restraint in social or moral conduct.",
+        "merged_from": [
+          36
+        ],
+        "confidence": "probable",
+        "period_notes": "Classical and later Greek."
+      },
+      {
+        "label": "world or universe",
+        "gloss": "The world, universe, or cosmos as an ordered whole.",
+        "merged_from": [
+          30,
+          206
+        ],
+        "confidence": "established",
+        "period_notes": "Becomes prominent in philosophical texts (e.g., Pythagoreans, Plato)."
+      },
+      {
+        "label": "office-holder or official",
+        "gloss": "A person holding a political office or official position.",
+        "merged_from": [
+          35,
+          204
+        ],
+        "confidence": "questionable",
+        "period_notes": "Rare and possibly late or specialized usage."
+      },
+      {
+        "label": "honor or credit",
+        "gloss": "Honor, credit, or esteem given to a person.",
+        "merged_from": [
+          203
+        ],
+        "confidence": "questionable",
+        "period_notes": "Attested in some literary contexts."
+      }
+    ],
+    "notes": "The senses for 'adornment' and 'decoration' are closely related and widely attested; 'order' and 'world' are distinct but historically related. The 'office-holder' and 'honor' senses are rare and may be contextually limited. No evidence for splitting 'adornment' further. Removed undetermined and junk senses."
+  },
+  "logos": {
+    "canonical_senses": [
+      {
+        "label": "word or speech",
+        "gloss": "A word, speech, or utterance, often in the sense of spoken language.",
+        "merged_from": [
+          40,
+          55
+        ],
+        "confidence": "established",
+        "period_notes": "Earliest and most basic sense."
+      },
+      {
+        "label": "statement or assertion",
+        "gloss": "A statement, assertion, or proposition put forward in speech or writing.",
+        "merged_from": [
+          41
+        ],
+        "confidence": "established",
+        "period_notes": "Classical Greek."
+      },
+      {
+        "label": "discourse or discussion",
+        "gloss": "A discourse, discussion, or extended speech about a subject.",
+        "merged_from": [
+          47
+        ],
+        "confidence": "established",
+        "period_notes": "Classical and later Greek."
+      },
+      {
+        "label": "reason or reasoning",
+        "gloss": "Reason, reasoning, or the faculty of rational thought.",
+        "merged_from": [
+          42,
+          39,
+          222
+        ],
+        "confidence": "established",
+        "period_notes": "Philosophical texts, especially from Plato onward."
+      },
+      {
+        "label": "argument or plea",
+        "gloss": "An argument, plea, or case presented in debate or law.",
+        "merged_from": [
+          48,
+          50
+        ],
+        "confidence": "probable",
+        "period_notes": "Classical Greek, especially in rhetoric and law."
+      },
+      {
+        "label": "account or narrative",
+        "gloss": "An account, explanation, or narrative, including historical or prose composition.",
+        "merged_from": [
+          44,
+          56,
+          223
+        ],
+        "confidence": "established",
+        "period_notes": "Classical and Hellenistic Greek."
+      },
+      {
+        "label": "summary or conclusion",
+        "gloss": "A brief summary or concluding statement.",
+        "merged_from": [
+          45
+        ],
+        "confidence": "questionable",
+        "period_notes": "Rare, specialized usage."
+      },
+      {
+        "label": "study or investigation",
+        "gloss": "A study, investigation, or inquiry into a subject.",
+        "merged_from": [
+          46,
+          51,
+          224
+        ],
+        "confidence": "probable",
+        "period_notes": "Philosophical and scientific contexts."
+      },
+      {
+        "label": "proportion or ratio",
+        "gloss": "A mathematical proportion, ratio, or numerical relationship.",
+        "merged_from": [
+          57,
+          60
+        ],
+        "confidence": "probable",
+        "period_notes": "Mathematical and philosophical texts."
+      },
+      {
+        "label": "parts of speech",
+        "gloss": "A grammatical term for parts of speech or composition.",
+        "merged_from": [
+          58
+        ],
+        "confidence": "questionable",
+        "period_notes": "Late or technical usage."
+      },
+      {
+        "label": "poem or poetry",
+        "gloss": "A poem or poetic composition.",
+        "merged_from": [
+          53
+        ],
+        "confidence": "questionable",
+        "period_notes": "Rare, poetic usage."
+      },
+      {
+        "label": "storymaker or fabricator",
+        "gloss": "A person who fabricates stories or tales.",
+        "merged_from": [
+          59
+        ],
+        "confidence": "questionable",
+        "period_notes": "Rare, possibly pejorative."
+      },
+      {
+        "label": "arrangement or ordering",
+        "gloss": "The act or result of arranging or ordering things.",
+        "merged_from": [
+          49
+        ],
+        "confidence": "questionable",
+        "period_notes": "Rare, possibly technical."
+      }
+    ],
+    "notes": "The core senses are 'word/speech', 'statement', 'discourse', 'reason', and 'account'. Many minor senses are rare or technical. No clear need to split further, but 'reason' and 'account' are sometimes blurred in philosophical texts. Removed undetermined and junk senses."
+  },
+  "psyche": {
+    "canonical_senses": [
+      {
+        "label": "soul or life principle",
+        "gloss": "The animating principle of life, the soul as the seat of life and consciousness.",
+        "merged_from": [
+          160,
+          173
+        ],
+        "confidence": "established",
+        "period_notes": "Earliest and most common sense in Homeric and classical Greek."
+      },
+      {
+        "label": "mind or inner thought",
+        "gloss": "The seat of thought, feeling, or inner conviction; the mind.",
+        "merged_from": [
+          166
+        ],
+        "confidence": "probable",
+        "period_notes": "Philosophical and psychological contexts."
+      },
+      {
+        "label": "spirit of the dead",
+        "gloss": "The spirit, ghost, or soul of a deceased person.",
+        "merged_from": [
+          177
+        ],
+        "confidence": "established",
+        "period_notes": "Common in epic and later literature."
+      }
+    ],
+    "notes": "The primary sense is 'soul/life principle', with 'spirit of the dead' as a well-attested extension. 'Mind' is less common but present in philosophical texts. No further splitting needed. Removed undetermined and junk senses."
+  },
+  "arete": {
+    "canonical_senses": [
+      {
+        "label": "virtue or excellence",
+        "gloss": "The quality of moral goodness, virtue, or general excellence, especially in character or conduct.",
+        "merged_from": [
+          187,
+          190,
+          185,
+          197,
+          647,
+          650
+        ],
+        "confidence": "established",
+        "period_notes": "Prominent from Homeric through Classical periods; core philosophical sense."
+      },
+      {
+        "label": "valor or bravery",
+        "gloss": "Courage or prowess, especially in battle or martial contexts.",
+        "merged_from": [
+          190,
+          647
+        ],
+        "confidence": "established",
+        "period_notes": "Earliest attested in Homeric epic; later subsumed under broader 'excellence'."
+      },
+      {
+        "label": "favor or benefit",
+        "gloss": "An act of kindness, favor, or benefit bestowed upon someone.",
+        "merged_from": [
+          184
+        ],
+        "confidence": "probable",
+        "period_notes": "Attested in some Classical and Hellenistic sources."
+      },
+      {
+        "label": "fertility or productivity",
+        "gloss": "The quality of being fertile or productive, especially of land.",
+        "merged_from": [
+          181
+        ],
+        "confidence": "questionable",
+        "period_notes": "Rare and context-specific; not a primary sense."
+      }
+    ],
+    "notes": "Most senses cluster around 'excellence' in various domains (moral, martial, social). 'Favor/benefit' is less common and may overlap with other words. 'Fertility/productivity' is rare and possibly metaphorical. Senses like 'miracle', 'plaster', and the title 'your worship' are not supported by evidence and are omitted."
+  },
+  "dike": {
+    "canonical_senses": [
+      {
+        "label": "justice or right",
+        "gloss": "The principle of justice, fairness, or what is right, both as an abstract concept and as a divine or moral force.",
+        "merged_from": [
+          1,
+          660
+        ],
+        "confidence": "established",
+        "period_notes": "Prominent from early poetry through Classical philosophy."
+      },
+      {
+        "label": "custom or law",
+        "gloss": "Established custom, law, or social order; the way things are done according to tradition or regulation.",
+        "merged_from": [
+          2,
+          8,
+          658,
+          659
+        ],
+        "confidence": "established",
+        "period_notes": "Early sense, especially in Homeric and archaic usage."
+      },
+      {
+        "label": "legal trial or lawsuit",
+        "gloss": "A formal legal proceeding, trial, or lawsuit to determine justice.",
+        "merged_from": [
+          3,
+          661
+        ],
+        "confidence": "established",
+        "period_notes": "Classical period, especially in legal contexts."
+      },
+      {
+        "label": "judgement or penalty",
+        "gloss": "A judgement, sentence, or penalty imposed as a result of a legal or moral transgression.",
+        "merged_from": [
+          6,
+          662
+        ],
+        "confidence": "established",
+        "period_notes": "Classical and later periods; overlaps with the sense of 'just deserts'."
+      },
+      {
+        "label": "judges or decision-makers",
+        "gloss": "Persons who judge or make decisions in legal or moral matters.",
+        "merged_from": [
+          7
+        ],
+        "confidence": "questionable",
+        "period_notes": "Rare and context-dependent; not a primary sense."
+      }
+    ],
+    "notes": "Core senses are 'justice/right', 'custom/law', 'trial', and 'penalty'. 'Judges/decision-makers' is rare and may be better treated as a metonymic extension. All senses are well-attested except the last, which is questionable. 'Order/arrangement' is merged with 'custom/law'."
+  },
+  "techne": {
+    "canonical_senses": [
+      {
+        "label": "skill or craft",
+        "gloss": "The ability to make or do something well, especially practical skill, craft, or art.",
+        "merged_from": [
+          85,
+          97
+        ],
+        "confidence": "established",
+        "period_notes": "Earliest and most common sense; from Homeric through Classical periods."
+      },
+      {
+        "label": "cunning or craftiness",
+        "gloss": "Cleverness, ingenuity, or strategic cunning, often in a practical or deceptive context.",
+        "merged_from": [
+          86,
+          679
+        ],
+        "confidence": "established",
+        "period_notes": "Prominent in epic and early literature; sometimes pejorative."
+      },
+      {
+        "label": "knowledge or science",
+        "gloss": "Systematic knowledge or science, especially as applied to practical arts.",
+        "merged_from": [
+          91
+        ],
+        "confidence": "probable",
+        "period_notes": "Develops in Classical and Hellenistic philosophical usage."
+      },
+      {
+        "label": "means or device",
+        "gloss": "A means, device, or contrivance for achieving something.",
+        "merged_from": [
+          680
+        ],
+        "confidence": "questionable",
+        "period_notes": "Rare and context-specific; not a primary sense."
+      }
+    ],
+    "notes": "The primary sense is 'skill/craft', with 'cunning' as a closely related but sometimes distinct nuance. 'Knowledge/science' emerges later in philosophical contexts. 'Means/device' is rare and may overlap with other senses. No evidence for further splitting."
+  },
+  "nomos": {
+    "canonical_senses": [
+      {
+        "label": "custom or usage",
+        "gloss": "A traditional practice, custom, or usage accepted by a community.",
+        "merged_from": [
+          65,
+          63,
+          64,
+          693
+        ],
+        "confidence": "established",
+        "period_notes": "Archaic and Classical"
+      },
+      {
+        "label": "law or ordinance",
+        "gloss": "A formal rule, regulation, or legal provision established by authority.",
+        "merged_from": [
+          67,
+          694
+        ],
+        "confidence": "established",
+        "period_notes": "Classical onward"
+      },
+      {
+        "label": "order or arrangement",
+        "gloss": "An arrangement, order, or system, especially in a social or cosmic sense.",
+        "merged_from": [
+          68,
+          123
+        ],
+        "confidence": "probable",
+        "period_notes": "Classical"
+      },
+      {
+        "label": "lawgiver",
+        "gloss": "A person who establishes or enacts laws.",
+        "merged_from": [
+          69
+        ],
+        "confidence": "questionable",
+        "period_notes": "Rare, Classical"
+      },
+      {
+        "label": "emblem on coinage",
+        "gloss": "A symbol or device stamped on coins.",
+        "merged_from": [
+          70
+        ],
+        "confidence": "questionable",
+        "period_notes": "Hellenistic"
+      },
+      {
+        "label": "melody or musical mode",
+        "gloss": "A type of melody, strain, or musical mode in ancient Greek music.",
+        "merged_from": [
+          695,
+          696
+        ],
+        "confidence": "probable",
+        "period_notes": "Classical and later"
+      },
+      {
+        "label": "coin",
+        "gloss": "A specific kind of coin.",
+        "merged_from": [
+          697
+        ],
+        "confidence": "questionable",
+        "period_notes": "Hellenistic"
+      },
+      {
+        "label": "course of masonry",
+        "gloss": "A layer or course in masonry construction.",
+        "merged_from": [
+          698
+        ],
+        "confidence": "questionable",
+        "period_notes": "Technical, rare"
+      }
+    ],
+    "notes": "The primary senses are 'custom' and 'law,' both well-attested and sometimes overlapping in early Greek. The musical and technical senses are later and less common. The 'lawgiver' and 'coin' senses are rare and may be context-specific. No further splitting needed."
+  },
+  "physis": {
+    "canonical_senses": [
+      {
+        "label": "nature or natural constitution",
+        "gloss": "The inherent nature, constitution, or essential quality of a person or thing.",
+        "merged_from": [
+          107,
+          723,
+          724,
+          728
+        ],
+        "confidence": "established",
+        "period_notes": "Archaic and Classical"
+      },
+      {
+        "label": "natural growth or formation",
+        "gloss": "The process of natural growth, formation, or coming into being.",
+        "merged_from": [
+          105,
+          116,
+          722
+        ],
+        "confidence": "established",
+        "period_notes": "Archaic and Classical"
+      },
+      {
+        "label": "innate ability or property",
+        "gloss": "An innate ability, property, or natural right possessed by someone or something.",
+        "merged_from": [
+          108,
+          110,
+          723
+        ],
+        "confidence": "probable",
+        "period_notes": "Classical"
+      },
+      {
+        "label": "order or arrangement",
+        "gloss": "A natural order, arrangement, or system.",
+        "merged_from": [
+          123
+        ],
+        "confidence": "questionable",
+        "period_notes": "Rare, technical"
+      },
+      {
+        "label": "sense or meaning",
+        "gloss": "The sense, meaning, or interpretation of a word or phrase.",
+        "merged_from": [
+          122
+        ],
+        "confidence": "questionable",
+        "period_notes": "Late, lexicographical"
+      },
+      {
+        "label": "form or shape",
+        "gloss": "The physical form, shape, or appearance of something.",
+        "merged_from": [
+          725
+        ],
+        "confidence": "questionable",
+        "period_notes": "Rare, technical"
+      },
+      {
+        "label": "type or kind",
+        "gloss": "A kind, type, or class of things.",
+        "merged_from": [
+          727
+        ],
+        "confidence": "questionable",
+        "period_notes": "Rare"
+      },
+      {
+        "label": "creature",
+        "gloss": "A living being or creature.",
+        "merged_from": [
+          729
+        ],
+        "confidence": "questionable",
+        "period_notes": "Rare"
+      }
+    ],
+    "notes": "The core senses are 'nature' (as essence) and 'natural growth.' The 'innate ability' sense is closely related but may overlap with 'nature.' The remaining senses are rare or technical. No further splitting needed."
+  },
+  "daimon": {
+    "canonical_senses": [
+      {
+        "label": "divine spirit or power",
+        "gloss": "A supernatural being or divine spirit, often acting as a guiding or influencing force.",
+        "merged_from": [
+          9,
+          12,
+          20
+        ],
+        "confidence": "established",
+        "period_notes": "Archaic and Classical"
+      },
+      {
+        "label": "fate or destiny",
+        "gloss": "A power or force determining fate or destiny.",
+        "merged_from": [
+          10
+        ],
+        "confidence": "established",
+        "period_notes": "Archaic and Classical"
+      },
+      {
+        "label": "offspring of gods",
+        "gloss": "A child or descendant of a god.",
+        "merged_from": [
+          13
+        ],
+        "confidence": "questionable",
+        "period_notes": "Mythological, rare"
+      },
+      {
+        "label": "ancestral spirit or the dead",
+        "gloss": "A spirit of a deceased ancestor.",
+        "merged_from": [
+          15
+        ],
+        "confidence": "probable",
+        "period_notes": "Archaic, funerary contexts"
+      },
+      {
+        "label": "superstitious fear or divine wrath",
+        "gloss": "A feeling of dread or fear attributed to supernatural forces.",
+        "merged_from": [
+          16
+        ],
+        "confidence": "questionable",
+        "period_notes": "Rare"
+      },
+      {
+        "label": "personal name",
+        "gloss": "Used as a personal name.",
+        "merged_from": [
+          11
+        ],
+        "confidence": "questionable",
+        "period_notes": "Onomastic"
+      }
+    ],
+    "notes": "The main senses are 'divine spirit' and 'fate,' both well-attested. The 'offspring of gods' and 'ancestral spirit' senses are rare and context-dependent. The 'superstitious fear' sense is marginal. No further splitting needed."
+  },
+  "soma": {
+    "canonical_senses": [
+      {
+        "label": "physical human body",
+        "gloss": "The material body of a human being, as opposed to the soul or spirit.",
+        "merged_from": [
+          73,
+          817,
+          816
+        ],
+        "confidence": "established",
+        "period_notes": "Prominent from Homeric through Classical and later periods."
+      },
+      {
+        "label": "military force",
+        "gloss": "A body of troops or a military force considered collectively.",
+        "merged_from": [
+          74
+        ],
+        "confidence": "established",
+        "period_notes": "Classical period usage, especially in military contexts."
+      },
+      {
+        "label": "personal security or life",
+        "gloss": "One's life or personal safety, often in the sense of bodily survival.",
+        "merged_from": [
+          79,
+          816
+        ],
+        "confidence": "probable",
+        "period_notes": "Classical and later."
+      },
+      {
+        "label": "group of people",
+        "gloss": "A collective of persons or people considered as a body.",
+        "merged_from": [
+          81
+        ],
+        "confidence": "probable",
+        "period_notes": "Classical and later."
+      },
+      {
+        "label": "appetitive part of the soul",
+        "gloss": "The bodily or appetitive aspect of the soul, as opposed to its rational part.",
+        "merged_from": [
+          80
+        ],
+        "confidence": "questionable",
+        "period_notes": "Philosophical usage (Plato, etc.)."
+      },
+      {
+        "label": "entire thing",
+        "gloss": "The whole or entirety of something, not just a part.",
+        "merged_from": [
+          819
+        ],
+        "confidence": "questionable",
+        "period_notes": "Rare or specialized usage."
+      },
+      {
+        "label": "three-dimensional object",
+        "gloss": "A solid or three-dimensional figure in mathematics or geometry.",
+        "merged_from": [
+          820
+        ],
+        "confidence": "established",
+        "period_notes": "Hellenistic and later, especially in mathematical contexts."
+      }
+    ],
+    "notes": "The primary sense is the physical human body, with well-attested extensions to military and collective senses. The philosophical and mathematical senses are more specialized. The 'appetitive part of the soul' and 'entire thing' senses are rare and may overlap with philosophical contexts."
+  },
+  "theos": {
+    "canonical_senses": [
+      {
+        "label": "deity or god",
+        "gloss": "A god, goddess, or divine being in general.",
+        "merged_from": [
+          23,
+          28
+        ],
+        "confidence": "established",
+        "period_notes": "Earliest and most common sense from Homeric onward."
+      },
+      {
+        "label": "divine inspiration",
+        "gloss": "A state of being inspired or possessed by a god, often resulting in prophecy or poetic creation.",
+        "merged_from": [
+          24
+        ],
+        "confidence": "established",
+        "period_notes": "Prominent in poetic and religious contexts."
+      },
+      {
+        "label": "title of ruler",
+        "gloss": "An honorific title for rulers, especially in Hellenistic and Roman periods.",
+        "merged_from": [
+          832
+        ],
+        "confidence": "probable",
+        "period_notes": "Hellenistic and later."
+      }
+    ],
+    "notes": "The main sense is 'deity/god', with a clear secondary sense for divine inspiration. The use as a ruler's title is later and less common. The remaining items were grammatical or irrelevant."
+  },
+  "charis": {
+    "canonical_senses": [
+      {
+        "label": "favor or grace",
+        "gloss": "A favor, goodwill, or grace shown to someone, often unearned.",
+        "merged_from": [
+          126,
+          148,
+          130,
+          133,
+          951,
+          142
+        ],
+        "confidence": "established",
+        "period_notes": "Earliest and most common sense."
+      },
+      {
+        "label": "gratitude or thankfulness",
+        "gloss": "A feeling or expression of thankfulness or gratitude for a favor received.",
+        "merged_from": [
+          144,
+          151,
+          130
+        ],
+        "confidence": "established",
+        "period_notes": "Classical and later."
+      },
+      {
+        "label": "pleasure or charm",
+        "gloss": "A quality of delight, charm, or attractiveness that pleases others.",
+        "merged_from": [
+          135,
+          154,
+          127,
+          949,
+          953
+        ],
+        "confidence": "established",
+        "period_notes": "Poetic and general usage."
+      },
+      {
+        "label": "advantage or benefit",
+        "gloss": "A benefit, utility, or advantage gained.",
+        "merged_from": [
+          131,
+          137
+        ],
+        "confidence": "probable",
+        "period_notes": "Classical and later."
+      },
+      {
+        "label": "correctness or rightness",
+        "gloss": "The quality of being correct, proper, or fitting.",
+        "merged_from": [
+          136
+        ],
+        "confidence": "questionable",
+        "period_notes": "Rare or specialized usage."
+      },
+      {
+        "label": "engraving or marking",
+        "gloss": "A line, mark, or engraving, especially as a technical term.",
+        "merged_from": [
+          128
+        ],
+        "confidence": "questionable",
+        "period_notes": "Technical usage."
+      },
+      {
+        "label": "personification (Charis)",
+        "gloss": "One of the Charites (Graces), goddesses personifying charm and beauty.",
+        "merged_from": [
+          125
+        ],
+        "confidence": "established",
+        "period_notes": "Mythological usage."
+      },
+      {
+        "label": "personal name",
+        "gloss": "Used as a personal name, Charis.",
+        "merged_from": [
+          139
+        ],
+        "confidence": "established",
+        "period_notes": "All periods."
+      },
+      {
+        "label": "influence (opposing force)",
+        "gloss": "A force or influence, especially as an opposing force.",
+        "merged_from": [
+          952
+        ],
+        "confidence": "questionable",
+        "period_notes": "Rare or technical."
+      },
+      {
+        "label": "honor or respect",
+        "gloss": "A sense of honor or respect shown to someone.",
+        "merged_from": [
+          140
+        ],
+        "confidence": "questionable",
+        "period_notes": "Rare."
+      }
+    ],
+    "notes": "The senses for favor/grace, gratitude, and charm/pleasure are well-established and central. Some technical or rare senses (engraving, correctness, influence, honor) are questionable and may require further evidence. The overlap between 'favor' and 'gratitude' is notable but both are distinct in Greek usage. No further splitting is needed, but technical senses could be omitted in a more general inventory."
+  }
+}

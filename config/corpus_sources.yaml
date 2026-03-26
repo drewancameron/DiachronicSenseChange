@@ -1,0 +1,168 @@
+# Corpus Sources Inventory
+# Task 1.1 & 1.2: Source bibliography with rights status
+#
+# Priority sources for the pilot phase, focusing on
+# public-domain materials with good digital availability.
+
+greek_text_sources:
+
+  - name: "Perseus Digital Library"
+    url: "https://www.perseus.tufts.edu"
+    content_type: "greek_texts_and_translations"
+    format: "TEI XML"
+    rights_status: "creative_commons"
+    license: "CC-BY-SA 3.0"
+    notes: >
+      Primary source for machine-readable Greek texts. Includes
+      many public-domain English translations. TEI XML with
+      canonical references. Good coverage of Homer through Koine.
+    priority: "essential"
+    api_available: true
+    github_repo: "https://github.com/PerseusDL"
+
+  - name: "First1KGreek Project"
+    url: "https://opengreekandlatin.github.io/First1KGreek/"
+    content_type: "greek_texts"
+    format: "TEI XML"
+    rights_status: "creative_commons"
+    license: "CC-BY-SA"
+    notes: >
+      Open Greek and Latin project. Aims to create a corpus of
+      1000 Greek works. CTS-compliant URNs. Useful supplement
+      to Perseus especially for less common authors.
+    priority: "high"
+    github_repo: "https://github.com/OpenGreekAndLatin/First1KGreek"
+
+  - name: "PROIEL Treebank"
+    url: "https://proiel.github.io/"
+    content_type: "annotated_greek_texts"
+    format: "XML/CoNLL"
+    rights_status: "creative_commons"
+    license: "CC-BY-NC-SA"
+    notes: >
+      Morphologically and syntactically annotated texts.
+      Includes NT Greek and some classical texts.
+      Valuable for token-level morphological data.
+    priority: "high"
+    github_repo: "https://github.com/proiel/proiel-treebank"
+
+  - name: "Diorisis Ancient Greek Corpus"
+    url: "https://figshare.com/articles/dataset/The_Diorisis_Ancient_Greek_Corpus/6187256"
+    content_type: "lemmatized_greek_texts"
+    format: "XML"
+    rights_status: "creative_commons"
+    license: "CC-BY"
+    notes: >
+      820 texts spanning Homer to 5th century CE. Automatically
+      lemmatized. Good for frequency and distribution analysis.
+    priority: "high"
+
+  - name: "Internet Archive / HathiTrust"
+    url: "https://archive.org"
+    content_type: "older_translations_and_commentaries"
+    format: "PDF/OCR text"
+    rights_status: "public_domain"
+    notes: >
+      Primary source for 19th and early 20th century translations,
+      commentaries, and philological scholarship. OCR quality varies.
+      Key for translator's notes and scholarly apparatus.
+    priority: "essential"
+
+translation_sources:
+
+  - name: "Perseus English Translations"
+    description: "Public-domain translations bundled with Perseus"
+    rights_status: "public_domain"
+    coverage: "Homer, tragedy, Plato, Aristotle, historians, orators"
+    priority: "essential"
+
+  - name: "Loeb Classical Library (pre-1929)"
+    description: "Early Loeb volumes now in public domain"
+    rights_status: "public_domain"
+    notes: >
+      Volumes published before 1929 are in the public domain (US).
+      Many available via Internet Archive. Facing-page format useful
+      for alignment. Include translator's introductions and notes.
+    priority: "high"
+
+  - name: "Bohn's Classical Library"
+    description: "19th-century translation series"
+    rights_status: "public_domain"
+    notes: >
+      George Bell & Sons. Extensive coverage of Greek authors.
+      Literal translation style often preserves sense distinctions.
+      Available via Internet Archive and Google Books.
+    priority: "high"
+
+  - name: "Oxford/Cambridge older translations"
+    description: "Various 19th-century scholarly translations"
+    rights_status: "public_domain"
+    priority: "medium"
+
+commentary_and_scholarship_sources:
+
+  - name: "LSJ (Liddell-Scott-Jones)"
+    description: "Standard Ancient Greek-English lexicon"
+    digital_source: "Perseus / Logeion"
+    rights_status: "public_domain"
+    notes: >
+      The 1940 9th edition is the standard. Earlier editions also
+      useful. Available digitally through Perseus and Logeion.
+      Essential reference for sense inventories.
+    priority: "essential"
+
+  - name: "Commentaries on Homer (19th century)"
+    examples:
+      - "Leaf, W. Commentary on the Iliad (1900-02)"
+      - "Monro, D.B. & Allen, T.W. Homer's Iliad (OCT notes)"
+      - "Ameis-Hentze Commentary on the Odyssey"
+      - "Ebeling, H. Lexicon Homericum (1885)"
+    rights_status: "public_domain"
+    priority: "high"
+
+  - name: "Commentaries on Tragedy"
+    examples:
+      - "Jebb, R.C. Sophocles plays (1883-1907)"
+      - "Paley, F.A. Euripides (1872-80)"
+      - "Verrall, A.W. Aeschylus commentaries"
+    rights_status: "public_domain"
+    priority: "high"
+
+  - name: "Commentaries on Plato"
+    examples:
+      - "Adam, J. Republic commentary (1902)"
+      - "Stallbaum, G. Platonis Opera (1835-)"
+      - "Campbell, L. Sophistes and Politicus (1867)"
+    rights_status: "public_domain"
+    priority: "high"
+
+  - name: "Older philological scholarship"
+    examples:
+      - "Onians, R.B. Origins of European Thought (1951)"
+      - "Snell, B. Discovery of the Mind (1946/1953)"
+      - "Dodds, E.R. Greeks and the Irrational (1951)"
+    rights_status: "varies"
+    notes: >
+      Post-1929 works may still be in copyright. Check edition-by-edition.
+      These provide interpretive framing rather than direct occurrence labels.
+    priority: "medium"
+
+existing_datasets:
+
+  - name: "AGREE (Ancient Greek Evaluation of Embeddings)"
+    url: "https://github.com/"
+    description: "Evaluation resource for Ancient Greek word embeddings"
+    rights_status: "open"
+    priority: "high"
+    notes: "Useful as evaluation benchmark, not as primary training data."
+
+  - name: "Ancient Greek WordNet"
+    description: "WordNet-style resource for Ancient Greek"
+    rights_status: "open"
+    priority: "medium"
+
+  - name: "Keersmaekers et al. WSD training data"
+    description: "Translation-derived WSD training data for Ancient Greek"
+    rights_status: "check"
+    priority: "high"
+    notes: "Directly relevant methodological comparison (RQ4)."

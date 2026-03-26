@@ -1,0 +1,303 @@
+# ============================================================
+# Ancient Greek Grammar Rule Book
+# ============================================================
+# Each rule is a declarative pattern matched against stanza UD
+# parse trees.  The checker walks the tree and flags violations.
+#
+# Rule types:
+#   agreement    – two nodes linked by a deprel must share features
+#   government   – a governor constrains the case of its dependent
+#   construction – detect specific syntactic patterns
+#   aspect       – flag suspicious tense/aspect choices
+#
+# Feature names follow UD: Case, Gender, Number, Person, Tense,
+# Mood, Voice, VerbForm.  Values are UD values (Nom, Gen, Dat,
+# Acc, Voc; Masc, Fem, Neut; Sing, Plur, Dual; etc.)
+# ============================================================
+
+# ------------------------------------------------------------------
+# 1. AGREEMENT RULES
+# ------------------------------------------------------------------
+agreement:
+
+  - name: article_noun_case
+    description: "Article must agree with noun in case"
+    head_upos: [NOUN, PROPN, ADJ]  # substantivised adj too
+    dep_upos: [DET]
+    deprel: [det]
+    must_agree: [Case]
+    severity: warning
+
+  - name: article_noun_gender
+    description: "Article must agree with noun in gender"
+    head_upos: [NOUN, PROPN, ADJ]
+    dep_upos: [DET]
+    deprel: [det]
+    must_agree: [Gender]
+    severity: warning
+
+  - name: article_noun_number
+    description: "Article must agree with noun in number"
+    head_upos: [NOUN, PROPN, ADJ]
+    dep_upos: [DET]
+    deprel: [det]
+    must_agree: [Number]
+    severity: warning
+
+  - name: adj_noun_agreement
+    description: "Attributive adjective must agree with noun in case, gender, number"
+    head_upos: [NOUN, PROPN]
+    dep_upos: [ADJ]
+    deprel: [amod]
+    must_agree: [Case, Gender, Number]
+    severity: warning
+
+  - name: subject_verb_person
+    description: "Finite verb must agree with subject in person"
+    head_upos: [VERB, AUX]
+    head_feats:
+      Mood: [Ind, Sub, Opt, Imp]  # finite moods only
+    dep_upos: [NOUN, PROPN, PRON, DET, ADJ, NUM]
+    deprel: [nsubj, nsubj:pass]
+    must_agree: [Person]
+    # Only applies when subject is a pronoun with Person
+    require_dep_feat: Person
+    severity: review
+
+  - name: subject_verb_number
+    description: "Finite verb must agree with subject in number"
+    head_upos: [VERB, AUX]
+    head_feats:
+      Mood: [Ind, Sub, Opt, Imp]
+    dep_upos: [NOUN, PROPN, PRON, DET, ADJ, NUM]
+    deprel: [nsubj, nsubj:pass]
+    must_agree: [Number]
+    severity: review
+    exceptions:
+      - name: neuter_plural_singular_verb
+        description: "Neuter plural subject takes singular verb (Attic rule)"
+        condition:
+          dep_feats: { Gender: Neut, Number: Plur }
+          head_feats: { Number: Sing }
+
+  - name: relative_pronoun_antecedent
+    description: "Relative pronoun should agree with antecedent in gender and number"
+    # The relative pronoun is child of the relcl verb, antecedent is
+    # the noun that the relcl modifies.  Checked specially in code.
+    special: relative_pronoun_agreement
+    severity: review
+
+# ------------------------------------------------------------------
+# 2. GOVERNMENT RULES (preposition → case)
+# ------------------------------------------------------------------
+government:
+
+  # Single-case prepositions
+  - name: en_dative
+    lemma: [ἐν]
+    required_case: [Dat]
+    description: "ἐν governs dative"
+    severity: warning
+
+  - name: eis_accusative
+    lemma: [εἰς]
+    required_case: [Acc]
+    description: "εἰς governs accusative"
+    severity: warning
+
+  - name: ek_genitive
+    lemma: [ἐκ, ἐξ]
+    required_case: [Gen]
+    description: "ἐκ/ἐξ governs genitive"
+    severity: warning
+
+  - name: apo_genitive
+    lemma: [ἀπό]
+    required_case: [Gen]
+    description: "ἀπό governs genitive"
+    severity: warning
+
+  - name: pro_genitive
+    lemma: [πρό]
+    required_case: [Gen]
+    description: "πρό governs genitive"
+    severity: warning
+
+  - name: syn_dative
+    lemma: [σύν]
+    required_case: [Dat]
+    description: "σύν governs dative"
+    severity: warning
+
+  # Two-case prepositions
+  - name: meta_gen_acc
+    lemma: [μετά]
+    required_case: [Gen, Acc]
+    description: "μετά governs genitive ('with') or accusative ('after')"
+    severity: warning
+
+  - name: dia_gen_acc
+    lemma: [διά]
+    required_case: [Gen, Acc]
+    description: "διά governs genitive ('through') or accusative ('because of')"
+    severity: warning
+
+  - name: hyper_gen_acc
+    lemma: [ὑπέρ]
+    required_case: [Gen, Acc]
+    description: "ὑπέρ governs genitive ('on behalf of') or accusative ('above')"
+    severity: warning
+
+  - name: hypo_gen_acc
+    lemma: [ὑπό]
+    required_case: [Gen, Acc]
+    description: "ὑπό governs genitive (agent) or accusative ('under')"
+    severity: warning
+
+  - name: kata_gen_acc
+    lemma: [κατά]
+    required_case: [Gen, Acc]
+    description: "κατά governs genitive ('against/down from') or accusative ('according to')"
+    severity: warning
+
+  - name: peri_gen_acc
+    lemma: [περί]
+    required_case: [Gen, Acc]
+    description: "περί governs genitive ('concerning') or accusative ('around')"
+    severity: warning
+
+  - name: anti_genitive
+    lemma: [ἀντί]
+    required_case: [Gen]
+    description: "ἀντί governs genitive"
+    severity: warning
+
+  # Three-case prepositions
+  - name: epi_three
+    lemma: [ἐπί]
+    required_case: [Gen, Dat, Acc]
+    description: "ἐπί governs genitive ('on/at'), dative ('on/upon'), or accusative ('onto/against')"
+    severity: warning
+
+  - name: para_three
+    lemma: [παρά]
+    required_case: [Gen, Dat, Acc]
+    description: "παρά governs genitive ('from beside'), dative ('beside'), or accusative ('to beside')"
+    severity: warning
+
+  - name: pros_three
+    lemma: [πρός]
+    required_case: [Gen, Dat, Acc]
+    description: "πρός governs genitive ('from'), dative ('near'), or accusative ('toward')"
+    severity: warning
+
+  - name: amphi_three
+    lemma: [ἀμφί]
+    required_case: [Gen, Dat, Acc]
+    description: "ἀμφί governs genitive, dative ('about'), or accusative ('around')"
+    severity: warning
+
+# ------------------------------------------------------------------
+# 3. CONSTRUCTION DETECTION
+# ------------------------------------------------------------------
+constructions:
+
+  - name: genitive_absolute
+    description: "Genitive absolute: participle + noun/pronoun both in genitive with no syntactic governor in the main clause"
+    detect: genitive_absolute
+    severity: info
+    note: "Flag for review — is this the right construction for the English source?"
+
+  - name: articular_infinitive
+    description: "Articular infinitive: τό/τοῦ/τῷ + infinitive"
+    detect: articular_infinitive
+    severity: info
+    note: "Check if English had a gerund, purpose clause, or other structure"
+
+  - name: accusative_infinitive
+    description: "Accusative + infinitive (indirect statement)"
+    detect: acc_inf
+    severity: info
+    note: "Check if English had direct or indirect speech — match construction"
+
+  - name: relative_clause
+    description: "Relative clause (ὅς/ὅστις + finite verb)"
+    detect: relative_clause
+    severity: info
+
+  - name: conditional
+    description: "Conditional clause (εἰ/ἐάν + verb)"
+    detect: conditional
+    severity: info
+
+  - name: purpose_clause
+    description: "Purpose clause (ἵνα/ὅπως/ὡς + subjunctive)"
+    detect: purpose_clause
+    severity: info
+
+  - name: result_clause
+    description: "Result clause (ὥστε + infinitive/indicative)"
+    detect: result_clause
+    severity: info
+
+  - name: temporal_clause
+    description: "Temporal clause (ὅτε/ἐπεί/ἐπειδή + verb)"
+    detect: temporal_clause
+    severity: info
+
+# ------------------------------------------------------------------
+# 4. CASE USAGE RULES
+# ------------------------------------------------------------------
+case_usage:
+
+  - name: time_when_dative
+    description: "Point-in-time expressions should use dative (νυκτί, ἡμέρᾳ)"
+    time_nouns: [νύξ, ἡμέρα, ἔτος, μήν, θέρος, χειμών, ἔαρ, ὥρα]
+    expected_case: Dat
+    context: "time_when"
+    severity: review
+    note: "Genitive also possible for 'time within which' (νυκτός = 'by night')"
+
+  - name: time_duration_accusative
+    description: "Duration expressions should use accusative"
+    expected_case: Acc
+    context: "time_duration"
+    severity: review
+
+  - name: agent_hypo_genitive
+    description: "Agent with passive verb should be ὑπό + genitive"
+    severity: review
+
+  - name: partitive_genitive
+    description: "Partitive genitive after quantity words"
+    severity: info
+
+# ------------------------------------------------------------------
+# 5. ASPECT SIGNPOSTS
+# ------------------------------------------------------------------
+aspect:
+
+  - name: imperfect_for_background
+    description: "Imperfect for ongoing/background action, state, or habitual"
+    indicators:
+      english: ["was -ing", "used to", "kept", "would (habitual)"]
+    expected_tense: Imp
+    severity: info
+
+  - name: aorist_for_punctual
+    description: "Aorist for completed, punctual, narrative-advancing action"
+    indicators:
+      english: ["simple past (he walked)", "suddenly", "at once"]
+    expected_tense: Aor
+    severity: info
+
+  - name: perfect_for_resultative
+    description: "Perfect for current state resulting from past action"
+    indicators:
+      english: ["has -ed", "stands (resultative)", "is dead (state from dying)"]
+    expected_tense: Perf
+    severity: info
+
+  - name: gnomic_aorist
+    description: "Gnomic aorist for general truths — rare, flag for review"
+    severity: review

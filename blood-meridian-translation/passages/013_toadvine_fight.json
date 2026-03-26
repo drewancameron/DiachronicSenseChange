@@ -1,0 +1,442 @@
+{
+  "id": "013_toadvine_fight",
+  "chapter": "I",
+  "title": "Toadvine and the kid — the fight in the mud",
+  "source_lines": [
+    93,
+    155
+  ],
+  "discourse_types": [
+    "violence",
+    "dialogue",
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Extended violence sequence. Bottles, knives, bowieknife, mud, boots. Tests the full violence vocabulary and physical description. Toadvine's branded forehead (H T F) and missing ears.",
+  "text": "It had been raining for sixteen days when he met Toadvine and it was raining yet. He was still standing in the same saloon and he had drunk up all his money save two dollars. The teamster had gone, the room was all but empty. The door stood open and you could see the rain falling in the empty lot behind the hotel. He drained his glass and went out. There were boards laid across the mud and he followed the paling band of doorlight down toward the batboard jakes at the bottom of the lot. Another man was coming up from the jakes and they met halfway on the narrow planks. The man before him swayed slightly. His wet hatbrim fell to his shoulders save in the front where it was pinned back. He held a bottle loosely in one hand. You better get out of my way, he said.\n\nThe kid wasnt going to do that and he saw no use in discussing it. He kicked the man in the jaw. The man went down and got up again. He said: I'm goin to kill you.\n\nHe swung with the bottle and the kid ducked and he swung again and the kid stepped back. When the kid hit him the man shattered the bottle against the side of his head. He went off the boards into the mud and the man lunged after him with the jagged bottleneck and tried to stick it in his eye. The kid was fending with his hands and they were slick with blood. He kept trying to reach into his boot for his knife.\n\nKill your ass, the man said. They slogged about in the dark of the lot, coming out of their boots. The kid had his knife now and they circled crabwise and when the man lurched at him he cut the man's shirt open. The man threw down the bottleneck and unsheathed an immense bowieknife from behind his neck. His hat had come off and his black and ropy locks swung about his head and he had codified his threats to the one word kill like a crazed chant.\n\nThat'ns cut, said one of several men standing along the walkway watching.\n\nKill kill slobbered the man wading forward.\n\nBut someone else was coming down the lot, great steady sucking sounds like a cow. He was carrying a huge shellalegh. He reached the kid first and when he swung with the club the kid went face down in the mud. He'd have died if someone hadn't turned him over.\n\nWhen he woke it was daylight and the rain had stopped and he was looking up into the face of a man with long hair who was completely covered in mud. The man was saying something to him.\n\nWhat? said the kid.\n\nI said are you quits?\n\nQuits?\n\nQuits. Cause if you want some more of me you sure as hell goin to get it.\n\nHe looked at the sky. Very high, very small, a buzzard. He looked at the man. Is my neck broke? he said.\n\nThe man looked out over the lot and spat and looked at the boy again. Can you not get up?\n\nI dont know. I aint tried.\n\nI never meant to break your neck.\n\nNo.\n\nI meant to kill ye.\n\nThey aint nobody done it yet. He clawed at the mud and pushed himself up. The man was sitting on the planks with his boots alongside him. They aint nothin wrong with you, he said.\n\nThe kid looked about stiffly at the day. Where's my boots? he said.\n\nThe man squinted at him. Flakes of dried mud fell from his face.\n\nI'm goin to have to kill some son of a bitch if they got my boots.\n\nYonder looks like one of em.\n\nThe kid labored off through the mud and fetched up one boot. He slogged about in the yard feeling likely lumps of mud.\n\nThis your knife? he said.\n\nThe man squinted at him. Looks like it, he said.\n\nThe kid pitched it to him and he bent and picked it up and wiped the huge blade on his trouserleg. Thought somebody'd done stole you, he told the knife.\n\nThe kid found his other boot and came and sat on the boards. His hands were huge with mud and he wiped one of them briefly at his knee and let it fall again.\n\nThey sat there side by side looking out across the barren lot. There was a picket fence at the edge of the lot and beyond the fence a boy was drawing water at a well and there were chickens in the yard there. A man came from the dramshop door down the walk toward the outhouse. He stopped where they sat and looked at them and then stepped off into the mud. After a while he came back and stepped off into the mud again and went around and on up the walk.\n\nThe kid looked at the man. His head was strangely narrow and his hair was plastered up with mud in a bizarre and primitive coiffure. On his forehead were burned the letters H T and lower and almost between the eyes the letter F and these markings were splayed and garish as if the iron had been left too long. When he turned to look at the kid the kid could see that he had no ears. He stood up and sheathed the knife and started up the walk with the boots in his hand and the kid rose and followed. Halfway to the hotel the man stopped and looked out at the mud and then sat down on the planks and pulled on the boots mud and all. Then he rose and slogged off through the lot to pick something up.\n\nI want you to look here, he said. At my goddamned hat.\n\nYou couldnt tell what it was, something dead. He flapped it about and pulled it over his head and went on and the kid followed.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "It had been raining for sixteen days when he met Toadvine and it was raining yet.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "He was still standing in the same saloon and he had drunk up all his money save two dollars.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "The teamster had gone, the room was all but empty.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "The door stood open and you could see the rain falling in the empty lot behind the hotel.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "He drained his glass and went out.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "There were boards laid across the mud and he followed the paling band of doorlight down toward the batboard jakes at the bottom of the lot.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "Another man was coming up from the jakes and they met halfway on the narrow planks.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "The man before him swayed slightly.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 8,
+      "text": "His wet hatbrim fell to his shoulders save in the front where it was pinned back.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "He held a bottle loosely in one hand.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 10,
+      "text": "You better get out of my way, he said.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 11,
+      "text": "The kid wasnt going to do that and he saw no use in discussing it.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 12,
+      "text": "He kicked the man in the jaw.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 13,
+      "text": "The man went down and got up again.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 14,
+      "text": "He said: I'm goin to kill you.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 15,
+      "text": "He swung with the bottle and the kid ducked and he swung again and the kid stepped back.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 16,
+      "text": "When the kid hit him the man shattered the bottle against the side of his head.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 17,
+      "text": "He went off the boards into the mud and the man lunged after him with the jagged bottleneck and tried to stick it in his eye.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 18,
+      "text": "The kid was fending with his hands and they were slick with blood.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 19,
+      "text": "He kept trying to reach into his boot for his knife.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 20,
+      "text": "Kill your ass, the man said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 21,
+      "text": "They slogged about in the dark of the lot, coming out of their boots.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 22,
+      "text": "The kid had his knife now and they circled crabwise and when the man lurched at him he cut the man's shirt open.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 23,
+      "text": "The man threw down the bottleneck and unsheathed an immense bowieknife from behind his neck.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 24,
+      "text": "His hat had come off and his black and ropy locks swung about his head and he had codified his threats to the one word kill like a crazed chant.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 25,
+      "text": "That'ns cut, said one of several men standing along the walkway watching.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 26,
+      "text": "Kill kill slobbered the man wading forward.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 27,
+      "text": "But someone else was coming down the lot, great steady sucking sounds like a cow.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 28,
+      "text": "He was carrying a huge shellalegh.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 29,
+      "text": "He reached the kid first and when he swung with the club the kid went face down in the mud.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 30,
+      "text": "He'd have died if someone hadn't turned him over.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 31,
+      "text": "When he woke it was daylight and the rain had stopped and he was looking up into the face of a man with long hair who was completely covered in mud.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 32,
+      "text": "The man was saying something to him.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 33,
+      "text": "What? said the kid.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 34,
+      "text": "I said are you quits?",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 35,
+      "text": "Quits?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 36,
+      "text": "Quits.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 37,
+      "text": "Cause if you want some more of me you sure as hell goin to get it.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 38,
+      "text": "He looked at the sky.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 39,
+      "text": "Very high, very small, a buzzard.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 40,
+      "text": "He looked at the man.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 41,
+      "text": "Is my neck broke? he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 42,
+      "text": "The man looked out over the lot and spat and looked at the boy again.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 43,
+      "text": "Can you not get up?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 44,
+      "text": "I dont know.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 45,
+      "text": "I aint tried.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 46,
+      "text": "I never meant to break your neck.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 47,
+      "text": "No.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 48,
+      "text": "I meant to kill ye.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 49,
+      "text": "They aint nobody done it yet.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 50,
+      "text": "He clawed at the mud and pushed himself up.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 51,
+      "text": "The man was sitting on the planks with his boots alongside him.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 52,
+      "text": "They aint nothin wrong with you, he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 53,
+      "text": "The kid looked about stiffly at the day.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 54,
+      "text": "Where's my boots? he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 55,
+      "text": "The man squinted at him.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 56,
+      "text": "Flakes of dried mud fell from his face.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 57,
+      "text": "I'm goin to have to kill some son of a bitch if they got my boots.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 58,
+      "text": "Yonder looks like one of em.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 59,
+      "text": "The kid labored off through the mud and fetched up one boot.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 60,
+      "text": "He slogged about in the yard feeling likely lumps of mud.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 61,
+      "text": "This your knife? he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 62,
+      "text": "The man squinted at him.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 63,
+      "text": "Looks like it, he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 64,
+      "text": "The kid pitched it to him and he bent and picked it up and wiped the huge blade on his trouserleg.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 65,
+      "text": "Thought somebody'd done stole you, he told the knife.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 66,
+      "text": "The kid found his other boot and came and sat on the boards.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 67,
+      "text": "His hands were huge with mud and he wiped one of them briefly at his knee and let it fall again.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 68,
+      "text": "They sat there side by side looking out across the barren lot.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 69,
+      "text": "There was a picket fence at the edge of the lot and beyond the fence a boy was drawing water at a well and there were chickens in the yard there.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 70,
+      "text": "A man came from the dramshop door down the walk toward the outhouse.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 71,
+      "text": "He stopped where they sat and looked at them and then stepped off into the mud.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 72,
+      "text": "After a while he came back and stepped off into the mud again and went around and on up the walk.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 73,
+      "text": "The kid looked at the man.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 74,
+      "text": "His head was strangely narrow and his hair was plastered up with mud in a bizarre and primitive coiffure.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 75,
+      "text": "On his forehead were burned the letters H T and lower and almost between the eyes the letter F and these markings were splayed and garish as if the iron had been left too long.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 76,
+      "text": "When he turned to look at the kid the kid could see that he had no ears.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 77,
+      "text": "He stood up and sheathed the knife and started up the walk with the boots in his hand and the kid rose and followed.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 78,
+      "text": "Halfway to the hotel the man stopped and looked out at the mud and then sat down on the planks and pulled on the boots mud and all.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 79,
+      "text": "Then he rose and slogged off through the lot to pick something up.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 80,
+      "text": "I want you to look here, he said.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 81,
+      "text": "At my goddamned hat.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 82,
+      "text": "You couldnt tell what it was, something dead.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 83,
+      "text": "He flapped it about and pulled it over his head and went on and the kid followed.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 84,
+  "glossary_terms_needed": [],
+  "translation_status": "pending"
+}

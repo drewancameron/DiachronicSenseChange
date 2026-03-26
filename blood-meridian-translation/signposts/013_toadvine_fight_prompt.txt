@@ -1,0 +1,411 @@
+## Construction Signposts (from 142K parallel corpus)
+
+**relative_clause**: "The door stood open and you could see the rain falling in the empty lot behind the hotel."
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: genitive_absolute (59% of 15214 matched examples). Note: if this is a defining relative ('the X who Y'), prefer ὅς + finite verb; gen.abs. is for circumstantial clauses
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'stand' → οὔτε, μᾶλλον, ἐγὼ, πλείω, ὁρῶ
+    'open' → Φορμίων, παραπλέοντας, αὐτοὺς, ἔξω, κόλπου
+
+**relative_clause**: "There were boards laid across the mud and he followed the paling band of doorlight down toward the b"
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: genitive_absolute (59% of 15214 matched examples). Note: if this is a defining relative ('the X who Y'), prefer ὅς + finite verb; gen.abs. is for circumstantial clauses
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'be' → ὑμῖν, μᾶλλον, ναυτικὸν, ἡμᾶς, οὐδὲ
+    'board' → ναῦς, φρουρῶν, ἀπέθανον, διακόσιοι, ἐλήφθησαν
+
+**relative_clause**: "His wet hatbrim fell to his shoulders save in the front where it was pinned back."
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: genitive_absolute (59% of 15214 matched examples). Note: if this is a defining relative ('the X who Y'), prefer ὅς + finite verb; gen.abs. is for circumstantial clauses
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'fall' → κρατοῦντές, ἐχθρῶν, πλεῖστον, ἐξέρχονται, νικώμενοι
+    'shoulder' → κλειδὸς, πολέμῳ, θεραπεύοντος, ἰατροῦ, πάντως
+
+**relative_clause**: "The kid wasnt going to do that and he saw no use in discussing it."
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: relative_clause — short defining relative ('use...discussing') → keep as ὅς/ἥ/ὅ + finite verb. Global dist: rel.cl. 41%, gen.abs. 59% — but gen.abs. is for circumstantial, not defining
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'go' → πόλει, τούτῳ, ἡμῖν, δοκεῖ, ἰόντες
+    'discuss' → τούτῳ, χρόνῳ, ἰόντας, ἀλλήλους, πρέσβεις
+
+**coordination_chain**: "He swung with the bottle and the kid ducked and he swung again and the kid stepped back."
+  Distribution in real translations:
+  - coordination_chain: 100%
+  → Recommendation: coordination_chain (100% of 23473 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly 
+      → GRC used: coordination_chain
+    [Comparison of Solon and Publicola] EN: Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu
+      → GRC used: coordination_chain
+  Related Greek vocabulary:
+    'step' → ἐπιζητοῦντος, τινος, Σπαρτιᾶται, μετ, αὐλῶν
+
+**coordination_chain**: "He went off the boards into the mud and the man lunged after him with the jagged bottleneck and trie"
+  Distribution in real translations:
+  - coordination_chain: 100%
+  → Recommendation: coordination_chain (100% of 23473 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly 
+      → GRC used: coordination_chain
+    [Comparison of Solon and Publicola] EN: Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu
+      → GRC used: coordination_chain
+  Related Greek vocabulary:
+    'go' → πόλει, τούτῳ, ἡμῖν, δοκεῖ, ἰόντες
+    'board' → ναῦς, φρουρῶν, ἀπέθανον, διακόσιοι, ἐλήφθησαν
+
+**coordination_chain**: "The kid had his knife now and they circled crabwise and when the man lurched at him he cut the man's"
+  Distribution in real translations:
+  - coordination_chain: 100%
+  → Recommendation: coordination_chain (100% of 23473 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly 
+      → GRC used: coordination_chain
+    [Comparison of Solon and Publicola] EN: Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu
+      → GRC used: coordination_chain
+
+**relative_clause**: "His hat had come off and his black and ropy locks swung about his head and he had codified his threa"
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: genitive_absolute (59% of 15214 matched examples). Note: if this is a defining relative ('the X who Y'), prefer ὅς + finite verb; gen.abs. is for circumstantial clauses
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'come' → αὐτοὺς, Ἀθηναίων, ναῦς, ἅμα, ἐπειδὴ
+    'black' → μέλαν, ἱμάτιον, οὔτε, μέλλων, ἀποθνήσκειν
+
+**relative_clause**: "That'ns cut, said one of several men standing along the walkway watching."
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: relative_clause — short defining relative ('men...standing') → keep as ὅς/ἥ/ὅ + finite verb. Global dist: rel.cl. 41%, gen.abs. 59% — but gen.abs. is for circumstantial, not defining
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'say' → αὐτοὺς, μήτε, Βοιωτῶν, αὐτοί, εἰπεῖν
+    'several' → πόλεις, ἦσαν, ξυμμάχων, ἕκαστοι, ἐπειδὴ
+
+**conditional**: "He'd have died if someone hadn't turned him over."
+  Distribution in real translations:
+  - conditional_real: 54%
+  - conditional_fv: 24%
+  - conditional_opt: 22%
+  → Recommendation: conditional_real (54% of 2916 matched examples)
+  Examples:
+    [Comparison of Solon and Publicola] EN: Its purpose was that the consul, if a worthy officer, might not be without leisu
+      → GRC used: conditional_real
+    [Comparison of Theseus and Romulus] EN: And we should not blame her for loving him, but rather wonder that all men and w
+      → GRC used: conditional_real
+  Related Greek vocabulary:
+    'die' → μάχεσθαι, εἶπεν, μοι, Κλεομένης, ὑπισχνούμενον
+    'turn' → ἐπειδὴ, ὑμᾶς, Ἀθηναῖοι, ἑκάτεροι, πάντως
+
+**relative_clause**: "When he woke it was daylight and the rain had stopped and he was looking up into the face of a man w"
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: genitive_absolute (59% of 15214 matched examples). Note: if this is a defining relative ('the X who Y'), prefer ὅς + finite verb; gen.abs. is for circumstantial clauses
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'rain' → ὕδωρ, ἀπέχει, Πλάταια, Θηβῶν, σταδίους
+    'stop' → ῥήτορος, εἶπεν, μόλις, τούτῳ, τρόπῳ
+
+**fragment**: "What?"
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment
+
+**conditional**: "Cause if you want some more of me you sure as hell goin to get it."
+  Distribution in real translations:
+  - conditional_real: 54%
+  - conditional_fv: 24%
+  - conditional_opt: 22%
+  → Recommendation: conditional_real (54% of 2916 matched examples)
+  Examples:
+    [Comparison of Solon and Publicola] EN: Its purpose was that the consul, if a worthy officer, might not be without leisu
+      → GRC used: conditional_real
+    [Comparison of Theseus and Romulus] EN: And we should not blame her for loving him, but rather wonder that all men and w
+      → GRC used: conditional_real
+  Related Greek vocabulary:
+    'want' → ἔστι, ἄλλη, πολλὴ, ἄρχουσι, θαλάσσης
+    'more' → μᾶλλον, μάλιστα, πλέον, ὑμᾶς, ἤδη
+
+**fragment**: "Very high, very small, a buzzard."
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment
+  Related Greek vocabulary:
+    'high' → ὑψηλὸν, εἶπεν, γυναικῶν, ἀπέχει, Πλάταια
+    'small' → μικρὰς, τινος, πόλιας, Πελοποννάσῳ, μεγάλας
+
+**coordination_chain**: "The man looked out over the lot and spat and looked at the boy again."
+  Distribution in real translations:
+  - coordination_chain: 100%
+  → Recommendation: coordination_chain (100% of 23473 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly 
+      → GRC used: coordination_chain
+    [Comparison of Solon and Publicola] EN: Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu
+      → GRC used: coordination_chain
+  Related Greek vocabulary:
+    'look' → ἄλλους, πολεμίων, οὔτε, ὄντα, δύναμιν
+    'look' → ἄλλους, πολεμίων, οὔτε, ὄντα, δύναμιν
+
+**fragment**: "No."
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment
+
+**fragment**: "Where's my boots?"
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment
+
+**conditional**: "I'm goin to have to kill some son of a bitch if they got my boots."
+  Distribution in real translations:
+  - conditional_real: 54%
+  - conditional_fv: 24%
+  - conditional_opt: 22%
+  → Recommendation: conditional_real (54% of 2916 matched examples)
+  Examples:
+    [Comparison of Solon and Publicola] EN: Its purpose was that the consul, if a worthy officer, might not be without leisu
+      → GRC used: conditional_real
+    [Comparison of Theseus and Romulus] EN: And we should not blame her for loving him, but rather wonder that all men and w
+      → GRC used: conditional_real
+  Related Greek vocabulary:
+    'go' → πόλει, τούτῳ, ἡμῖν, δοκεῖ, ἰόντες
+    'have' → ἡμᾶς, αὐτοὺς, ὑμᾶς, ἡμῶν, οὔτε
+
+**fragment**: "This your knife?"
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment
+
+**coordination_chain**: "The kid pitched it to him and he bent and picked it up and wiped the huge blade on his trouserleg."
+  Distribution in real translations:
+  - coordination_chain: 100%
+  → Recommendation: coordination_chain (100% of 23473 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly 
+      → GRC used: coordination_chain
+    [Comparison of Solon and Publicola] EN: Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu
+      → GRC used: coordination_chain
+  Related Greek vocabulary:
+    'wipe' → κἂν, ἐλάσσων, δύναται, μεῖζον, ἔγκλημα
+
+**coordination_chain**: "The kid found his other boot and came and sat on the boards."
+  Distribution in real translations:
+  - coordination_chain: 100%
+  → Recommendation: coordination_chain (100% of 23473 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly 
+      → GRC used: coordination_chain
+    [Comparison of Solon and Publicola] EN: Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu
+      → GRC used: coordination_chain
+  Related Greek vocabulary:
+    'find' → οὔτε, ἔφη, οὐδὲ, καθ, ὅπως
+    'other' → Ἀθηναίων, μάλιστα, τἆλλα, ἄλλα, ἄλλων
+
+**coordination_chain**: "His hands were huge with mud and he wiped one of them briefly at his knee and let it fall again."
+  Distribution in real translations:
+  - coordination_chain: 100%
+  → Recommendation: coordination_chain (100% of 23473 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly 
+      → GRC used: coordination_chain
+    [Comparison of Solon and Publicola] EN: Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu
+      → GRC used: coordination_chain
+  Related Greek vocabulary:
+    'hand' → δεξιᾷ, αὐτὴν, μᾶλλον, πάλιν, Ξέρξου
+    'wipe' → κἂν, ἐλάσσων, δύναται, μεῖζον, ἔγκλημα
+
+**coordination_chain**: "There was a picket fence at the edge of the lot and beyond the fence a boy was drawing water at a we"
+  Distribution in real translations:
+  - coordination_chain: 100%
+  → Recommendation: coordination_chain (100% of 23473 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly 
+      → GRC used: coordination_chain
+    [Comparison of Solon and Publicola] EN: Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu
+      → GRC used: coordination_chain
+  Related Greek vocabulary:
+    'edge' → διακομιζόμενος, αἰεὶ, ἵστατο, χείλους, τάφρου
+    'draw' → Αἰγύπτου, ὅπως, πρῶτον, ἐκράτουν, Ἀθηναῖοι
+
+**coordination_chain**: "He stopped where they sat and looked at them and then stepped off into the mud."
+  Distribution in real translations:
+  - coordination_chain: 100%
+  → Recommendation: coordination_chain (100% of 23473 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly 
+      → GRC used: coordination_chain
+    [Comparison of Solon and Publicola] EN: Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu
+      → GRC used: coordination_chain
+  Related Greek vocabulary:
+    'stop' → ῥήτορος, εἶπεν, μόλις, τούτῳ, τρόπῳ
+    'look' → ἄλλους, πολεμίων, οὔτε, ὄντα, δύναμιν
+
+**coordination_chain**: "After a while he came back and stepped off into the mud again and went around and on up the walk."
+  Distribution in real translations:
+  - coordination_chain: 100%
+  → Recommendation: coordination_chain (100% of 23473 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly 
+      → GRC used: coordination_chain
+    [Comparison of Solon and Publicola] EN: Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu
+      → GRC used: coordination_chain
+  Related Greek vocabulary:
+    'while' → νῆες, ἅμα, ξυμμάχους, ὁμοίως, ὥσπερ
+    'come' → αὐτοὺς, Ἀθηναίων, ναῦς, ἅμα, ἐπειδὴ
+
+**coordination_chain**: "His head was strangely narrow and his hair was plastered up with mud in a bizarre and primitive coif"
+  Distribution in real translations:
+  - coordination_chain: 100%
+  → Recommendation: coordination_chain (100% of 23473 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly 
+      → GRC used: coordination_chain
+    [Comparison of Solon and Publicola] EN: Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu
+      → GRC used: coordination_chain
+  Related Greek vocabulary:
+    'head' → Ἀθηναῖοι, ἐκράτησαν, ὥσπερ, Ἀρχίδαμος, Ζευξιδάμου
+    'narrow' → Θωρυκίων, κατειληφότος, Δελφῶν, παραγενόμενος, ἰδὼν
+
+**coordination_chain**: "On his forehead were burned the letters H T and lower and almost between the eyes the letter F and t"
+  Distribution in real translations:
+  - coordination_chain: 100%
+  → Recommendation: coordination_chain (100% of 23473 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly 
+      → GRC used: coordination_chain
+    [Comparison of Solon and Publicola] EN: Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu
+      → GRC used: coordination_chain
+  Related Greek vocabulary:
+    'forehead' → λευκὸν
+    'burn' → εἴτε, ὁρῶντες, αὐτοὺς, Πλαταιῆς, ἀπειλημμένους
+
+**coordination_chain**: "He stood up and sheathed the knife and started up the walk with the boots in his hand and the kid ro"
+  Distribution in real translations:
+  - coordination_chain: 100%
+  → Recommendation: coordination_chain (100% of 23473 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly 
+      → GRC used: coordination_chain
+    [Comparison of Solon and Publicola] EN: Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu
+      → GRC used: coordination_chain
+  Related Greek vocabulary:
+    'stand' → οὔτε, μᾶλλον, ἐγὼ, πλείω, ὁρῶ
+    'start' → δρομεῖς, μᾶλλον, πόλιν, Κορινθίων, στρατεύματος
+
+**coordination_chain**: "Halfway to the hotel the man stopped and looked out at the mud and then sat down on the planks and p"
+  Distribution in real translations:
+  - coordination_chain: 100%
+  → Recommendation: coordination_chain (100% of 23473 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly 
+      → GRC used: coordination_chain
+    [Comparison of Solon and Publicola] EN: Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu
+      → GRC used: coordination_chain
+  Related Greek vocabulary:
+    'stop' → ῥήτορος, εἶπεν, μόλις, τούτῳ, τρόπῳ
+    'look' → ἄλλους, πολεμίων, οὔτε, ὄντα, δύναμιν
+
+**fragment**: "At my goddamned hat."
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment
+
+**relative_clause**: "You couldnt tell what it was, something dead."
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: relative_clause — short defining relative ('what...was') → keep as ὅς/ἥ/ὅ + finite verb. Global dist: rel.cl. 41%, gen.abs. 59% — but gen.abs. is for circumstantial, not defining
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'tell' → ἀλλ, εἰπεῖν, ἔφη, ΕΥΘ, πρέπει
+    'dead' → νεκροὺς, ὑποσπόνδους, Ἀθηναῖοι, ποιήσαντες, τούς
+
+**coordination_chain**: "He flapped it about and pulled it over his head and went on and the kid followed."
+  Distribution in real translations:
+  - coordination_chain: 100%
+  → Recommendation: coordination_chain (100% of 23473 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly 
+      → GRC used: coordination_chain
+    [Comparison of Solon and Publicola] EN: Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu
+      → GRC used: coordination_chain
+  Related Greek vocabulary:
+    'head' → Ἀθηναῖοι, ἐκράτησαν, ὥσπερ, Ἀρχίδαμος, Ζευξιδάμου
+    'go' → πόλει, τούτῳ, ἡμῖν, δοκεῖ, ἰόντες

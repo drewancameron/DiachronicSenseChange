@@ -1,0 +1,115 @@
+## Construction Signposts (from 142K parallel corpus)
+
+**coordination_chain**: "The teamster set his glass down and looked at the kid or he seemed to, you couldnt be sure of his ga"
+  Distribution in real translations:
+  - coordination_chain: 100%
+  → Recommendation: coordination_chain (100% of 23473 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly 
+      → GRC used: coordination_chain
+    [Comparison of Solon and Publicola] EN: Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu
+      → GRC used: coordination_chain
+  Related Greek vocabulary:
+    'look' → ἄλλους, πολεμίων, οὔτε, ὄντα, δύναμιν
+    'seem' → δοκῇ, δοκεῖ, ἄριστα, ξυμμάχοις, Ἀθηναίοις
+
+**coordination_chain**: "The bar was that tall not every man could even get his elbows up on it but it came just to the judge"
+  Distribution in real translations:
+  - coordination_chain: 100%
+  → Recommendation: coordination_chain (100% of 23473 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly 
+      → GRC used: coordination_chain
+    [Comparison of Solon and Publicola] EN: Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu
+      → GRC used: coordination_chain
+  Related Greek vocabulary:
+    'come' → αὐτοὺς, Ἀθηναίων, ναῦς, ἅμα, ἐπειδὴ
+
+**coordination_chain**: "By now men were piling through the doorway, bleeding, covered in mud, cursing."
+  Distribution in real translations:
+  - coordination_chain: 100%
+  → Recommendation: coordination_chain (100% of 23473 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly 
+      → GRC used: coordination_chain
+    [Comparison of Solon and Publicola] EN: Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu
+      → GRC used: coordination_chain
+  Related Greek vocabulary:
+    'curse' → ἄγος, ἐλαύνειν, ἐκέλευον, τοιόνδε, θεοῦ
+
+**fragment**: "Goods?"
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment
+  Related Greek vocabulary:
+    'good' → δοκῇ, Ἀθηναίοις, προσθεῖναι, ταῖς, ἕκαστος
+
+**fragment**: "When was you in Fort Smith?"
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment
+
+**fragment**: "Fort Smith?"
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment
+
+**fragment**: "Yessir."
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment
+
+**fragment**: "I was never in Fort Smith in my life."
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment
+  Related Greek vocabulary:
+    'life' → οὕτω, βίον, σημεῖον, Ἑλλάδος, νεμόμενα
+
+**relative_clause**: "Doubt that he was."
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: relative_clause — short defining relative ('Doubt...was') → keep as ὅς/ἥ/ὅ + finite verb. Global dist: rel.cl. 41%, gen.abs. 59% — but gen.abs. is for circumstantial, not defining
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'doubt' → Σώκρατες, ΕΥΘ
+
+**fragment**: "Then another."
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment

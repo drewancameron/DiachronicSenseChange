@@ -1,0 +1,228 @@
+# Manual2 Sources Registry
+
+sources:
+
+  # TIER 1: Greek text present — high pipeline value
+
+  - filename: "_OceanofPDF.com_Delphi_Complete_Works_of_Thucydides_-_Thucydides.pdf"
+    title: "Delphi Complete Works of Thucydides"
+    author: "Thucydides"
+    type: "primary_text_and_translation"
+    year: 2013
+    publisher: "Delphi Classics"
+    rights_status: "mixed"
+    content_description: >
+      Greek text + Crawley translation (PD) + dual text + Xenophon's
+      Hellenica. Intro by Charles Forster Smith.
+    covers_works: ["tlg0003"]
+    covers_period: "classical"
+    may_redistribute: false
+    usage_restriction: "Delphi compilation copyrighted; underlying Crawley translation and Greek text are PD."
+
+  - filename: "_OceanofPDF.com_Delphi_Complete_Works_of_Aristotle_-_Aristotle.pdf"
+    title: "Delphi Complete Works of Aristotle"
+    author: "Aristotle"
+    type: "primary_text_and_translation"
+    year: 2013
+    publisher: "Delphi Classics"
+    rights_status: "mixed"
+    content_description: >
+      Greek text + English translations + dual text for complete
+      Aristotle. Covers NE, Politics, Metaphysics, Poetics, etc.
+    covers_works: ["tlg0086"]
+    covers_period: "classical"
+    may_redistribute: false
+    usage_restriction: "Delphi compilation copyrighted; underlying translations and Greek text are PD."
+
+  - filename: "_OceanofPDF.com_Plutarchs_Lives_-_Plutarch.pdf"
+    title: "Plutarch's Lives VIII (Loeb)"
+    author: "Plutarch"
+    translator: "Bernadotte Perrin"
+    type: "primary_text_and_translation"
+    year: 1919
+    publisher: "Harvard University Press (Loeb)"
+    rights_status: "public_domain"
+    content_description: "Greek + facing English. Loeb volume VIII."
+    covers_works: ["tlg0007"]
+    covers_period: "imperial"
+    may_redistribute: true
+
+  - filename: "_OceanofPDF.com_Alcestis_-_William_Arrowsmith.pdf"
+    title: "Alcestis of Euripides (Clarendon edition)"
+    author: "Euripides"
+    type: "primary_text_and_translation"
+    year: 1880
+    publisher: "Clarendon Press"
+    rights_status: "public_domain"
+    content_description: "Greek text with commentary by C.S. Jerram."
+    covers_works: ["tlg0006"]
+    covers_period: "classical"
+    may_redistribute: true
+
+  - filename: "_OceanofPDF.com_Plutarch_-_J_L_Moles.pdf"
+    title: "Plutarch: Life of Cicero (Aris & Phillips)"
+    author: "Plutarch"
+    type: "primary_text_and_translation"
+    year: 1988
+    publisher: "Aris & Phillips"
+    rights_status: "copyrighted"
+    content_description: "Facing Greek + English + commentary."
+    covers_works: ["tlg0007"]
+    covers_period: "imperial"
+    may_redistribute: false
+    usage_restriction: "Copyrighted. Use for research supervision only."
+
+  - filename: "_OceanofPDF.com_If_Not_Winter_-_Anne_Carson.pdf"
+    title: "If Not, Winter: Fragments of Sappho"
+    author: "Sappho"
+    translator: "Anne Carson"
+    type: "primary_text_and_translation"
+    year: 2002
+    publisher: "Vintage/Knopf"
+    rights_status: "copyrighted"
+    content_description: "Greek fragments + facing English translation."
+    covers_works: []
+    covers_period: "archaic"
+    may_redistribute: false
+    usage_restriction: "Copyrighted. Use for research supervision only."
+
+  # TIER 2: English-only translations — Jowett Plato (PD)
+
+  - filename: "_OceanofPDF.com_Charmides_-_Plato.pdf"
+    title: "Charmides"
+    author: "Plato"
+    translator: "Benjamin Jowett"
+    type: "translation"
+    year: 1871
+    rights_status: "public_domain"
+    covers_works: ["tlg0059"]
+    covers_period: "classical"
+    may_redistribute: true
+
+  - filename: "_OceanofPDF.com_Crito_-_Plato.pdf"
+    title: "Crito"
+    translator: "Benjamin Jowett"
+    type: "translation"
+    year: 1871
+    rights_status: "public_domain"
+    covers_works: ["tlg0059"]
+    covers_period: "classical"
+    may_redistribute: true
+
+  - filename: "_OceanofPDF.com_Euthyphro_-_Plato.pdf"
+    title: "Euthyphro"
+    translator: "Benjamin Jowett"
+    type: "translation"
+    year: 1871
+    rights_status: "public_domain"
+    covers_works: ["tlg0059"]
+    covers_period: "classical"
+    may_redistribute: true
+
+  - filename: "_OceanofPDF.com_Gorgias_-_Plato.pdf"
+    title: "Gorgias"
+    translator: "Benjamin Jowett"
+    type: "translation"
+    year: 1871
+    rights_status: "public_domain"
+    covers_works: ["tlg0059"]
+    covers_period: "classical"
+    may_redistribute: true
+
+  - filename: "_OceanofPDF.com_Phaedo_-_Plato.pdf"
+    title: "Phaedo"
+    translator: "Benjamin Jowett"
+    type: "translation"
+    year: 1871
+    rights_status: "public_domain"
+    covers_works: ["tlg0059"]
+    covers_period: "classical"
+    may_redistribute: true
+
+  - filename: "_OceanofPDF.com_Protagoras_-_Plato.pdf"
+    title: "Protagoras"
+    translator: "Benjamin Jowett"
+    type: "translation"
+    year: 1871
+    rights_status: "public_domain"
+    covers_works: ["tlg0059"]
+    covers_period: "classical"
+    may_redistribute: true
+
+  - filename: "_OceanofPDF.com_Menexenus_-_Plato.pdf"
+    title: "Menexenus"
+    translator: "Benjamin Jowett"
+    type: "translation"
+    year: 1871
+    rights_status: "public_domain"
+    covers_works: ["tlg0059"]
+    covers_period: "classical"
+    may_redistribute: true
+
+  # TIER 2: English-only translations — modern (copyrighted)
+
+  - filename: "_OceanofPDF.com_The_Republic_-_Plato.pdf"
+    title: "The Republic"
+    translator: "Tom Griffith"
+    type: "translation"
+    year: 2000
+    publisher: "Cambridge University Press"
+    rights_status: "copyrighted"
+    covers_works: ["tlg0059.tlg030"]
+    covers_period: "classical"
+    may_redistribute: false
+    usage_restriction: "Copyrighted. Use for research supervision only."
+
+  - filename: "_OceanofPDF.com_Symposium_-_Plato.pdf"
+    title: "Symposium"
+    translator: "Robin Waterfield"
+    type: "translation"
+    year: 1994
+    publisher: "Oxford University Press"
+    rights_status: "copyrighted"
+    covers_works: ["tlg0059"]
+    covers_period: "classical"
+    may_redistribute: false
+    usage_restriction: "Copyrighted. Use for research supervision only."
+
+  - filename: "_OceanofPDF.com_Greek_Lives_A_Selection_of_Nine_Greek_Lives_-_Plutarch.pdf"
+    title: "Greek Lives: A Selection of Nine Greek Lives"
+    translator: "Robin Waterfield"
+    type: "translation"
+    year: 1998
+    publisher: "Oxford University Press"
+    rights_status: "copyrighted"
+    covers_works: ["tlg0007"]
+    covers_period: "imperial"
+    may_redistribute: false
+    usage_restriction: "Copyrighted. Use for research supervision only."
+
+  - filename: "_OceanofPDF.com_The_Fall_of_the_Roman_Republic_-_Plutarch.pdf"
+    title: "Fall of the Roman Republic (Six Lives)"
+    translator: "Rex Warner"
+    type: "translation"
+    year: 1958
+    publisher: "Penguin"
+    rights_status: "public_domain"
+    covers_works: ["tlg0007"]
+    covers_period: "imperial"
+    may_redistribute: true
+
+  - filename: "_OceanofPDF.com_Memories_of_Socrates_Memorabilia_and_Apology_-_Xenophon.pdf"
+    title: "Memories of Socrates: Memorabilia and Apology"
+    translator: "Martin Hammond"
+    type: "translation"
+    year: 2023
+    publisher: "Oxford University Press"
+    rights_status: "copyrighted"
+    covers_works: ["tlg0032"]
+    covers_period: "classical"
+    may_redistribute: false
+    usage_restriction: "Copyrighted. Use for research supervision only."
+
+  # NOT RELEVANT — Latin or off-topic
+  # _OceanofPDF.com_A_Commentary_on_Virgils_Eclogues — Latin
+  # _OceanofPDF.com_The_Eclogues_-_Virgil — Latin
+  # _OceanofPDF.com_Daphnis_and_Chloe — duplicate from manual/
+  # _OceanofPDF.com_Anabasis — duplicate (same translator as The_Anabasis_of_Cyrus)
+  # _OceanofPDF.com_Complete_Works_of_Aristotle_Vol_1 — 126MB English-only Barnes

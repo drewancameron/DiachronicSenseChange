@@ -1,0 +1,55 @@
+## Construction Signposts (from 142K parallel corpus)
+
+**relative_clause**: "The man flees and he leans against the bar with the blood running out of his shirt."
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: genitive_absolute (59% of 15214 matched examples). Note: if this is a defining relative ('the X who Y'), prefer ὅς + finite verb; gen.abs. is for circumstantial clauses
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'flee' → φύγω, γενόμενος, κριτὴς, πονηρῶν, ἐκέλευσε
+    'lean' → μὴν, μῦθος, παρεμπέσοι, λεκτέος, πιστωτέος
+
+**temporal**: "He lies in a cot in the room upstairs for two weeks while the tavernkeeper's wife attends him."
+  Distribution in real translations:
+  - temporal: 100%
+  → Recommendation: temporal (100% of 805 matched examples)
+  Examples:
+    [Camillus] EN: Accordingly, he equipped himself with fiery darts, and leading his forces out to
+      → GRC used: temporal
+    [Comparison of Theseus and Romulus] EN: For example, the tales told of divine intervention in their lives are in great c
+      → GRC used: temporal
+  Related Greek vocabulary:
+    'lie' → ἔφη, ἅμα, Ἰταλίας, Σικελίας, καλῶς
+    'room' → Λάμαχος, ἐπετίμα, τινὶ, λοχαγῶν, ἁμαρτόντι
+
+**fragment**: "A hardlooking woman with a wiry body like a man's."
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment
+  Related Greek vocabulary:
+    'woman' → ἔφη, τινος, γυνή, ἄλλου, ἐπιζητοῦντος
+    'body' → αὐτοὺς, Ἀθηναῖοι, πανδημεὶ, ὁμοίως, πλῆθος
+
+**relative_clause**: "By the time he is mended he has no money to pay her and he leaves in the night and sleeps on the riv"
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: genitive_absolute (59% of 15214 matched examples). Note: if this is a defining relative ('the X who Y'), prefer ὅς + finite verb; gen.abs. is for circumstantial clauses
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'time' → χρόνον, ἐγένετο, μάλιστα, δύο, χρόνου
+    'money' → χρήματα, πέμπει, ἄνδρα, Πέρσην, Αἰγύπτου

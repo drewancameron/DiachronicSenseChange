@@ -1,0 +1,76 @@
+{
+  "id": "011_tent_collapse",
+  "chapter": "I",
+  "title": "The tent collapse and the bar",
+  "source_lines": [
+    58,
+    62
+  ],
+  "discourse_types": [
+    "violence",
+    "narrative"
+  ],
+  "priority": 3,
+  "notes": "Gunfire, canvas collapsing like a medusa, retreat to the bar. \"These here is on the judge\" — first use of 'judge' as name/title.",
+  "text": "The young teamster instantly produced a knife from his clothing and unseamed the tent and stepped outside into the rain. The kid followed. They ducked low and ran across the mud toward the hotel. Already gunfire was general within the tent and a dozen exits had been hacked through the canvas walls and people were pouring out, women screaming, folk stumbling, folk trampled underfoot in the mud. The kid and his friend reached the hotel gallery and wiped the water from their eyes and turned to watch. As they did so the tent began to sway and buckle and like a huge and wounded medusa it slowly settled to the ground trailing tattered canvas walls and ratty guyropes over the ground.\n\nThe baldheaded man was already at the bar when they entered.\n\nOn the polished wood before him were two hats and a double handful of coins. He raised his glass but not to them. They stood up to the bar and ordered whiskeys and the kid laid his money down but the barman pushed it back with his thumb and nodded. These here is on the judge, he said.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "The young teamster instantly produced a knife from his clothing and unseamed the tent and stepped outside into the rain.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "The kid followed.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 2,
+      "text": "They ducked low and ran across the mud toward the hotel.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "Already gunfire was general within the tent and a dozen exits had been hacked through the canvas walls and people were pouring out, women screaming, folk stumbling, folk trampled underfoot in the mud.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "The kid and his friend reached the hotel gallery and wiped the water from their eyes and turned to watch.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "As they did so the tent began to sway and buckle and like a huge and wounded medusa it slowly settled to the ground trailing tattered canvas walls and ratty guyropes over the ground.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "The baldheaded man was already at the bar when they entered.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "On the polished wood before him were two hats and a double handful of coins.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "He raised his glass but not to them.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "They stood up to the bar and ordered whiskeys and the kid laid his money down but the barman pushed it back with his thumb and nodded.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 10,
+      "text": "These here is on the judge, he said.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 11,
+  "glossary_terms_needed": [],
+  "translation_status": "pending"
+}

@@ -1,0 +1,62 @@
+## Construction Signposts (from 142K parallel corpus)
+
+**relative_clause**: "When the kid ducked into the ratty canvas tent there was standing room along the walls, a place or t"
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: genitive_absolute (59% of 15214 matched examples). Note: if this is a defining relative ('the X who Y'), prefer ὅς + finite verb; gen.abs. is for circumstantial clauses
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'tent' → σκηνὴν, ὀστᾶ, προτίθενται, ἀπογενομένων, πρότριτα
+    'standing' → Ἀθηναίων
+
+**relative_clause**: "The only thing that might have distinguished him in that crowd was that he was not armed."
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: genitive_absolute (59% of 15214 matched examples). Note: if this is a defining relative ('the X who Y'), prefer ὅς + finite verb; gen.abs. is for circumstantial clauses
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'only' → μόνον, ἡμῖν, μόνοι, ἡμᾶς, Βοιωτῶν
+    'thing' → πάντα, πολλοὺς, ὥσπερ, ἄλλο, μηδὲν
+
+**fragment**: "No I aint."
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment
+
+**relative_clause**: "He's a goin to be there with ye ever step of the way whether ye ask it or ye dont."
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: genitive_absolute (59% of 15214 matched examples). Note: if this is a defining relative ('the X who Y'), prefer ὅς + finite verb; gen.abs. is for circumstantial clauses
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'step' → ἐπιζητοῦντος, τινος, Σπαρτιᾶται, μετ, αὐλῶν
+
+**fragment**: "Now."
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment

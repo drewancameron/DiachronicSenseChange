@@ -1,0 +1,1453 @@
+[
+  {
+    "en_type": "relative_clause",
+    "en_scale": "clause",
+    "en_text": "The dramhouse was a long narrow hall wainscotted with varnished boards.",
+    "en_head": "hall",
+    "en_verb": "wainscotted",
+    "distribution": {
+      "genitive_absolute": 0.5870331219168429,
+      "relative_clause": 0.4115574348132488,
+      "articular_participle": 0.0014094432699083862
+    },
+    "total_examples": 107296,
+    "recommendation": "relative_clause — short defining relative ('hall...wainscotted') → keep as ὅς/ἥ/ὅ + finite verb. Global dist: rel.cl. 41%, gen.abs. 59% — but gen.abs. is for circumstantial, not defining",
+    "nearest_examples": [
+      {
+        "en_text": "a most savage and lawless practice, we shall own that Numa was far more Hellenic",
+        "grc_type": "relative_clause",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "Tellus, moreover, though he kept his post and fought like a brave man, died at t",
+        "grc_type": "genitive_absolute",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "Such, then, are the memorable things about Romulus and Theseus which I have been",
+        "grc_type": "genitive_absolute",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "long",
+        "greek_cluster": [
+          "ὕστερον",
+          "Ἀθηναῖοι",
+          "χρόνον",
+          "τείχη",
+          "μακρὰ",
+          "πολλῷ",
+          "ἐγένετο",
+          "πρέπει"
+        ],
+        "n_passages": 30
+      },
+      {
+        "english_word": "narrow",
+        "greek_cluster": [
+          "Θωρυκίων",
+          "κατειληφότος",
+          "Δελφῶν",
+          "παραγενόμενος",
+          "ἰδὼν",
+          "Φιλίππου",
+          "στρατόπεδον",
+          "Ἰσθμῷ"
+        ],
+        "n_passages": 4
+      }
+    ]
+  },
+  {
+    "en_type": "relative_clause",
+    "en_scale": "clause",
+    "en_text": "The barman looked up when they entered and a nigger that had been sweeping the floor stood the broom",
+    "en_head": "nigger",
+    "en_verb": "sweeping",
+    "distribution": {
+      "genitive_absolute": 0.5870331219168429,
+      "relative_clause": 0.4115574348132488,
+      "articular_participle": 0.0014094432699083862
+    },
+    "total_examples": 107296,
+    "recommendation": "genitive_absolute (59% of 15214 matched examples). Note: if this is a defining relative ('the X who Y'), prefer ὅς + finite verb; gen.abs. is for circumstantial clauses",
+    "nearest_examples": [
+      {
+        "en_text": "a most savage and lawless practice, we shall own that Numa was far more Hellenic",
+        "grc_type": "relative_clause",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "Tellus, moreover, though he kept his post and fought like a brave man, died at t",
+        "grc_type": "genitive_absolute",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "Such, then, are the memorable things about Romulus and Theseus which I have been",
+        "grc_type": "genitive_absolute",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "look",
+        "greek_cluster": [
+          "ἄλλους",
+          "πολεμίων",
+          "οὔτε",
+          "ὄντα",
+          "δύναμιν"
+        ],
+        "n_passages": 11
+      }
+    ]
+  },
+  {
+    "en_type": "fragment",
+    "en_scale": "sentence",
+    "en_text": "Where's Sidney?",
+    "en_head": "",
+    "en_verb": "",
+    "distribution": {
+      "fragment": 1.0
+    },
+    "total_examples": 28072,
+    "recommendation": "fragment (100% of 7231 matched examples)",
+    "nearest_examples": [
+      {
+        "en_text": "For their points of likeness are obvious from their careers: their wise moderati",
+        "grc_type": "fragment",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "And his appointment of quaestors over the public moneys mad a like origin.",
+        "grc_type": "fragment",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "Such, then, are the memorable things about Romulus and Theseus which I have been",
+        "grc_type": "fragment",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": []
+  },
+  {
+    "en_type": "fragment",
+    "en_scale": "sentence",
+    "en_text": "Toadvine.",
+    "en_head": "",
+    "en_verb": "",
+    "distribution": {
+      "fragment": 1.0
+    },
+    "total_examples": 28072,
+    "recommendation": "fragment (100% of 7231 matched examples)",
+    "nearest_examples": [
+      {
+        "en_text": "For their points of likeness are obvious from their careers: their wise moderati",
+        "grc_type": "fragment",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "And his appointment of quaestors over the public moneys mad a like origin.",
+        "grc_type": "fragment",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "Such, then, are the memorable things about Romulus and Theseus which I have been",
+        "grc_type": "fragment",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": []
+  },
+  {
+    "en_type": "fragment",
+    "en_scale": "sentence",
+    "en_text": "Old Sidney?",
+    "en_head": "",
+    "en_verb": "",
+    "distribution": {
+      "fragment": 1.0
+    },
+    "total_examples": 28072,
+    "recommendation": "fragment (100% of 7231 matched examples)",
+    "nearest_examples": [
+      {
+        "en_text": "For their points of likeness are obvious from their careers: their wise moderati",
+        "grc_type": "fragment",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "And his appointment of quaestors over the public moneys mad a like origin.",
+        "grc_type": "fragment",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "Such, then, are the memorable things about Romulus and Theseus which I have been",
+        "grc_type": "fragment",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": []
+  },
+  {
+    "en_type": "fragment",
+    "en_scale": "sentence",
+    "en_text": "Old Sidney.",
+    "en_head": "",
+    "en_verb": "",
+    "distribution": {
+      "fragment": 1.0
+    },
+    "total_examples": 28072,
+    "recommendation": "fragment (100% of 7231 matched examples)",
+    "nearest_examples": [
+      {
+        "en_text": "For their points of likeness are obvious from their careers: their wise moderati",
+        "grc_type": "fragment",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "And his appointment of quaestors over the public moneys mad a like origin.",
+        "grc_type": "fragment",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "Such, then, are the memorable things about Romulus and Theseus which I have been",
+        "grc_type": "fragment",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": []
+  },
+  {
+    "en_type": "fragment",
+    "en_scale": "sentence",
+    "en_text": "At the top of the landing was a long hall with a windowlight at the end.",
+    "en_head": "",
+    "en_verb": "",
+    "distribution": {
+      "fragment": 1.0
+    },
+    "total_examples": 28072,
+    "recommendation": "fragment (100% of 7231 matched examples)",
+    "nearest_examples": [
+      {
+        "en_text": "For their points of likeness are obvious from their careers: their wise moderati",
+        "grc_type": "fragment",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "And his appointment of quaestors over the public moneys mad a like origin.",
+        "grc_type": "fragment",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "Such, then, are the memorable things about Romulus and Theseus which I have been",
+        "grc_type": "fragment",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "long",
+        "greek_cluster": [
+          "ὕστερον",
+          "Ἀθηναῖοι",
+          "χρόνον",
+          "τείχη",
+          "μακρὰ",
+          "πολλῷ",
+          "ἐγένετο",
+          "πρέπει"
+        ],
+        "n_passages": 30
+      }
+    ]
+  },
+  {
+    "en_type": "relative_clause",
+    "en_scale": "clause",
+    "en_text": "There were varnished doors down the walls set so close they might have been closets.",
+    "en_head": "walls",
+    "en_verb": "set",
+    "distribution": {
+      "genitive_absolute": 0.5870331219168429,
+      "relative_clause": 0.4115574348132488,
+      "articular_participle": 0.0014094432699083862
+    },
+    "total_examples": 107296,
+    "recommendation": "genitive_absolute (59% of 15214 matched examples). Note: if this is a defining relative ('the X who Y'), prefer ὅς + finite verb; gen.abs. is for circumstantial clauses",
+    "nearest_examples": [
+      {
+        "en_text": "a most savage and lawless practice, we shall own that Numa was far more Hellenic",
+        "grc_type": "relative_clause",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "Tellus, moreover, though he kept his post and fought like a brave man, died at t",
+        "grc_type": "genitive_absolute",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "Such, then, are the memorable things about Romulus and Theseus which I have been",
+        "grc_type": "genitive_absolute",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "be",
+        "greek_cluster": [
+          "ὑμῖν",
+          "μᾶλλον",
+          "ναυτικὸν",
+          "ἡμᾶς",
+          "οὐδὲ",
+          "οὐδ",
+          "τάδε",
+          "ἄριστα"
+        ],
+        "n_passages": 30
+      },
+      {
+        "english_word": "wall",
+        "greek_cluster": [
+          "τείχους",
+          "τεῖχος",
+          "πόλει",
+          "Ἀθηναῖοι",
+          "πόλιν",
+          "ἐντὸς",
+          "περιτείχισμα",
+          "πρῶτον"
+        ],
+        "n_passages": 30
+      }
+    ]
+  },
+  {
+    "en_type": "temporal",
+    "en_scale": "clause",
+    "en_text": "Toadvine went on until he came to the end of the hall.",
+    "en_head": "",
+    "en_verb": "",
+    "distribution": {
+      "temporal": 1.0
+    },
+    "total_examples": 9508,
+    "recommendation": "temporal (100% of 805 matched examples)",
+    "nearest_examples": [
+      {
+        "en_text": "Accordingly, he equipped himself with fiery darts, and leading his forces out to",
+        "grc_type": "temporal",
+        "source": "Camillus"
+      },
+      {
+        "en_text": "For example, the tales told of divine intervention in their lives are in great c",
+        "grc_type": "temporal",
+        "source": "Comparison of Theseus and Romulus"
+      },
+      {
+        "en_text": "For neither at their common festival gatherings 1 would they concede the customa",
+        "grc_type": "temporal",
+        "source": "History of the Peloponnesian War"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "go",
+        "greek_cluster": [
+          "πόλει",
+          "τούτῳ",
+          "ἡμῖν",
+          "δοκεῖ",
+          "ἰόντες",
+          "ξυμμάχους",
+          "ξυμπάσῃ",
+          "βεβαιότατα"
+        ],
+        "n_passages": 30
+      },
+      {
+        "english_word": "come",
+        "greek_cluster": [
+          "αὐτοὺς",
+          "Ἀθηναίων",
+          "ναῦς",
+          "ἅμα",
+          "ἐπειδὴ",
+          "Λευκίμμῃ",
+          "ἀκρωτηρίῳ",
+          "πεζὸς"
+        ],
+        "n_passages": 30
+      }
+    ]
+  },
+  {
+    "en_type": "coordination_chain",
+    "en_scale": "sentence",
+    "en_text": "The kid searched his pockets and came up with a crushed and stained wooden box.",
+    "en_head": "",
+    "en_verb": "",
+    "distribution": {
+      "coordination_chain": 1.0
+    },
+    "total_examples": 74129,
+    "recommendation": "coordination_chain (100% of 23473 matched examples)",
+    "nearest_examples": [
+      {
+        "en_text": "Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly ",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "And it appears, first of all, that Theseus, of his own choice, when no one compe",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "come",
+        "greek_cluster": [
+          "αὐτοὺς",
+          "Ἀθηναίων",
+          "ναῦς",
+          "ἅμα",
+          "ἐπειδὴ",
+          "Λευκίμμῃ",
+          "ἀκρωτηρίῳ",
+          "πεζὸς"
+        ],
+        "n_passages": 30
+      }
+    ]
+  },
+  {
+    "en_type": "fragment",
+    "en_scale": "sentence",
+    "en_text": "Is he in there?",
+    "en_head": "",
+    "en_verb": "",
+    "distribution": {
+      "fragment": 1.0
+    },
+    "total_examples": 28072,
+    "recommendation": "fragment (100% of 7231 matched examples)",
+    "nearest_examples": [
+      {
+        "en_text": "For their points of likeness are obvious from their careers: their wise moderati",
+        "grc_type": "fragment",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "And his appointment of quaestors over the public moneys mad a like origin.",
+        "grc_type": "fragment",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "Such, then, are the memorable things about Romulus and Theseus which I have been",
+        "grc_type": "fragment",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": []
+  },
+  {
+    "en_type": "relative_clause",
+    "en_scale": "clause",
+    "en_text": "That's what we're fixin to see.",
+    "en_head": "what",
+    "en_verb": "fixin",
+    "distribution": {
+      "genitive_absolute": 0.5870331219168429,
+      "relative_clause": 0.4115574348132488,
+      "articular_participle": 0.0014094432699083862
+    },
+    "total_examples": 107296,
+    "recommendation": "relative_clause — short defining relative ('what...fixin') → keep as ὅς/ἥ/ὅ + finite verb. Global dist: rel.cl. 41%, gen.abs. 59% — but gen.abs. is for circumstantial, not defining",
+    "nearest_examples": [
+      {
+        "en_text": "a most savage and lawless practice, we shall own that Numa was far more Hellenic",
+        "grc_type": "relative_clause",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "Tellus, moreover, though he kept his post and fought like a brave man, died at t",
+        "grc_type": "genitive_absolute",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "Such, then, are the memorable things about Romulus and Theseus which I have been",
+        "grc_type": "genitive_absolute",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": []
+  },
+  {
+    "en_type": "relative_clause",
+    "en_scale": "clause",
+    "en_text": "The watchers looked like forms excavated from a bog.",
+    "en_head": "forms",
+    "en_verb": "excavated",
+    "distribution": {
+      "genitive_absolute": 0.5870331219168429,
+      "relative_clause": 0.4115574348132488,
+      "articular_participle": 0.0014094432699083862
+    },
+    "total_examples": 107296,
+    "recommendation": "relative_clause — short defining relative ('forms...excavated') → keep as ὅς/ἥ/ὅ + finite verb. Global dist: rel.cl. 41%, gen.abs. 59% — but gen.abs. is for circumstantial, not defining",
+    "nearest_examples": [
+      {
+        "en_text": "a most savage and lawless practice, we shall own that Numa was far more Hellenic",
+        "grc_type": "relative_clause",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "Tellus, moreover, though he kept his post and fought like a brave man, died at t",
+        "grc_type": "genitive_absolute",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "Such, then, are the memorable things about Romulus and Theseus which I have been",
+        "grc_type": "genitive_absolute",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "look",
+        "greek_cluster": [
+          "ἄλλους",
+          "πολεμίων",
+          "οὔτε",
+          "ὄντα",
+          "δύναμιν"
+        ],
+        "n_passages": 11
+      },
+      {
+        "english_word": "form",
+        "greek_cluster": [
+          "εἶπεν",
+          "ἐρωτηθεὶς",
+          "μάλιστα",
+          "μάθημα",
+          "Σπάρτῃ",
+          "ἀσκεῖται",
+          "ἄρχειν",
+          "ἄρχεσθαι"
+        ],
+        "n_passages": 19
+      }
+    ]
+  },
+  {
+    "en_type": "relative_clause",
+    "en_scale": "clause",
+    "en_text": "They could hear the flames crackling inside the room.",
+    "en_head": "flames",
+    "en_verb": "crackling",
+    "distribution": {
+      "genitive_absolute": 0.5870331219168429,
+      "relative_clause": 0.4115574348132488,
+      "articular_participle": 0.0014094432699083862
+    },
+    "total_examples": 107296,
+    "recommendation": "relative_clause — short defining relative ('flames...crackling') → keep as ὅς/ἥ/ὅ + finite verb. Global dist: rel.cl. 41%, gen.abs. 59% — but gen.abs. is for circumstantial, not defining",
+    "nearest_examples": [
+      {
+        "en_text": "a most savage and lawless practice, we shall own that Numa was far more Hellenic",
+        "grc_type": "relative_clause",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "Tellus, moreover, though he kept his post and fought like a brave man, died at t",
+        "grc_type": "genitive_absolute",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "Such, then, are the memorable things about Romulus and Theseus which I have been",
+        "grc_type": "genitive_absolute",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "hear",
+        "greek_cluster": [
+          "ἀκούειν",
+          "ἀλλ",
+          "εἶπε",
+          "μιμουμένου",
+          "ἀηδόνος",
+          "φωνὴν",
+          "ἀκοῦσαι",
+          "παρακαλούμενος"
+        ],
+        "n_passages": 23
+      },
+      {
+        "english_word": "room",
+        "greek_cluster": [
+          "Λάμαχος",
+          "ἐπετίμα",
+          "τινὶ",
+          "λοχαγῶν",
+          "ἁμαρτόντι",
+          "φήσαντος",
+          "μηκέτι",
+          "ποιήσειν"
+        ],
+        "n_passages": 6
+      }
+    ]
+  },
+  {
+    "en_type": "fragment",
+    "en_scale": "sentence",
+    "en_text": "Here he comes.",
+    "en_head": "",
+    "en_verb": "",
+    "distribution": {
+      "fragment": 1.0
+    },
+    "total_examples": 28072,
+    "recommendation": "fragment (100% of 7231 matched examples)",
+    "nearest_examples": [
+      {
+        "en_text": "For their points of likeness are obvious from their careers: their wise moderati",
+        "grc_type": "fragment",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "And his appointment of quaestors over the public moneys mad a like origin.",
+        "grc_type": "fragment",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "Such, then, are the memorable things about Romulus and Theseus which I have been",
+        "grc_type": "fragment",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "come",
+        "greek_cluster": [
+          "αὐτοὺς",
+          "Ἀθηναίων",
+          "ναῦς",
+          "ἅμα",
+          "ἐπειδὴ",
+          "Λευκίμμῃ",
+          "ἀκρωτηρίῳ",
+          "πεζὸς"
+        ],
+        "n_passages": 30
+      }
+    ]
+  },
+  {
+    "en_type": "relative_clause",
+    "en_scale": "clause",
+    "en_text": "He stood in his underwear holding in one hand the towel he'd used to turn the doorknob with.",
+    "en_head": "towel",
+    "en_verb": "used",
+    "distribution": {
+      "genitive_absolute": 0.5870331219168429,
+      "relative_clause": 0.4115574348132488,
+      "articular_participle": 0.0014094432699083862
+    },
+    "total_examples": 107296,
+    "recommendation": "genitive_absolute (59% of 15214 matched examples). Note: if this is a defining relative ('the X who Y'), prefer ὅς + finite verb; gen.abs. is for circumstantial clauses",
+    "nearest_examples": [
+      {
+        "en_text": "a most savage and lawless practice, we shall own that Numa was far more Hellenic",
+        "grc_type": "relative_clause",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "Tellus, moreover, though he kept his post and fought like a brave man, died at t",
+        "grc_type": "genitive_absolute",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "Such, then, are the memorable things about Romulus and Theseus which I have been",
+        "grc_type": "genitive_absolute",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "stand",
+        "greek_cluster": [
+          "οὔτε",
+          "μᾶλλον",
+          "ἐγὼ",
+          "πλείω",
+          "ὁρῶ",
+          "ἡμῶν",
+          "ὄντα",
+          "ἐθέλωμέν"
+        ],
+        "n_passages": 26
+      },
+      {
+        "english_word": "hold",
+        "greek_cluster": [
+          "οὔτε",
+          "ἀλλ",
+          "Τηλέκλου",
+          "τινὸς",
+          "ἔφη",
+          "ἄνω",
+          "πλείους",
+          "ἐγένοντο"
+        ],
+        "n_passages": 29
+      }
+    ]
+  },
+  {
+    "en_type": "coordination_chain",
+    "en_scale": "sentence",
+    "en_text": "When he saw them he turned and started back into the room but Toadvine seized him about the neck and",
+    "en_head": "",
+    "en_verb": "",
+    "distribution": {
+      "coordination_chain": 1.0
+    },
+    "total_examples": 74129,
+    "recommendation": "coordination_chain (100% of 23473 matched examples)",
+    "nearest_examples": [
+      {
+        "en_text": "Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly ",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "And it appears, first of all, that Theseus, of his own choice, when no one compe",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "turn",
+        "greek_cluster": [
+          "ἐπειδὴ",
+          "ὑμᾶς",
+          "Ἀθηναῖοι",
+          "ἑκάτεροι",
+          "πάντως",
+          "ὁρῶ",
+          "ὡρμημένους",
+          "στρατεύειν"
+        ],
+        "n_passages": 30
+      },
+      {
+        "english_word": "start",
+        "greek_cluster": [
+          "δρομεῖς",
+          "μᾶλλον",
+          "πόλιν",
+          "Κορινθίων",
+          "στρατεύματος",
+          "εἶδεν",
+          "του",
+          "τεῖχος"
+        ],
+        "n_passages": 7
+      }
+    ]
+  },
+  {
+    "en_type": "coordination_chain",
+    "en_scale": "sentence",
+    "en_text": "The kid stepped past them into the room and turned and kicked the man in the face.",
+    "en_head": "",
+    "en_verb": "",
+    "distribution": {
+      "coordination_chain": 1.0
+    },
+    "total_examples": 74129,
+    "recommendation": "coordination_chain (100% of 23473 matched examples)",
+    "nearest_examples": [
+      {
+        "en_text": "Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly ",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "And it appears, first of all, that Theseus, of his own choice, when no one compe",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "step",
+        "greek_cluster": [
+          "ἐπιζητοῦντος",
+          "τινος",
+          "Σπαρτιᾶται",
+          "μετ",
+          "αὐλῶν",
+          "ἀγωνίζονται",
+          "ἔφη",
+          "ὅταν"
+        ],
+        "n_passages": 4
+      },
+      {
+        "english_word": "room",
+        "greek_cluster": [
+          "Λάμαχος",
+          "ἐπετίμα",
+          "τινὶ",
+          "λοχαγῶν",
+          "ἁμαρτόντι",
+          "φήσαντος",
+          "μηκέτι",
+          "ποιήσειν"
+        ],
+        "n_passages": 6
+      }
+    ]
+  },
+  {
+    "en_type": "coordination_chain",
+    "en_scale": "sentence",
+    "en_text": "Toadvine pulled the bloody head around and looked at it and let it flop to the floor and he rose and",
+    "en_head": "",
+    "en_verb": "",
+    "distribution": {
+      "coordination_chain": 1.0
+    },
+    "total_examples": 74129,
+    "recommendation": "coordination_chain (100% of 23473 matched examples)",
+    "nearest_examples": [
+      {
+        "en_text": "Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly ",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "And it appears, first of all, that Theseus, of his own choice, when no one compe",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "head",
+        "greek_cluster": [
+          "Ἀθηναῖοι",
+          "ἐκράτησαν",
+          "ὥσπερ",
+          "Ἀρχίδαμος",
+          "Ζευξιδάμου",
+          "πυθομένου",
+          "τινὸς",
+          "τίνες"
+        ],
+        "n_passages": 11
+      },
+      {
+        "english_word": "look",
+        "greek_cluster": [
+          "ἄλλους",
+          "πολεμίων",
+          "οὔτε",
+          "ὄντα",
+          "δύναμιν"
+        ],
+        "n_passages": 11
+      }
+    ]
+  },
+  {
+    "en_type": "coordination_chain",
+    "en_scale": "sentence",
+    "en_text": "The door was completely afire and part of the wall and ceiling.",
+    "en_head": "",
+    "en_verb": "",
+    "distribution": {
+      "coordination_chain": 1.0
+    },
+    "total_examples": 74129,
+    "recommendation": "coordination_chain (100% of 23473 matched examples)",
+    "nearest_examples": [
+      {
+        "en_text": "Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly ",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "And it appears, first of all, that Theseus, of his own choice, when no one compe",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "part",
+        "greek_cluster": [
+          "ἐγένετο",
+          "βαρβάρων",
+          "ἄλλων",
+          "πρῶτον",
+          "τείχους",
+          "πολλοὶ",
+          "αὐτοὺς",
+          "κίνησις"
+        ],
+        "n_passages": 30
+      },
+      {
+        "english_word": "wall",
+        "greek_cluster": [
+          "τείχους",
+          "τεῖχος",
+          "πόλει",
+          "Ἀθηναῖοι",
+          "πόλιν",
+          "ἐντὸς",
+          "περιτείχισμα",
+          "πρῶτον"
+        ],
+        "n_passages": 30
+      }
+    ]
+  },
+  {
+    "en_type": "fragment",
+    "en_scale": "sentence",
+    "en_text": "Toadvine was four steps above him and when he kicked him he caught him in the throat.",
+    "en_head": "",
+    "en_verb": "",
+    "distribution": {
+      "fragment": 1.0
+    },
+    "total_examples": 28072,
+    "recommendation": "fragment (100% of 7231 matched examples)",
+    "nearest_examples": [
+      {
+        "en_text": "For their points of likeness are obvious from their careers: their wise moderati",
+        "grc_type": "fragment",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "And his appointment of quaestors over the public moneys mad a like origin.",
+        "grc_type": "fragment",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "Such, then, are the memorable things about Romulus and Theseus which I have been",
+        "grc_type": "fragment",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "step",
+        "greek_cluster": [
+          "ἐπιζητοῦντος",
+          "τινος",
+          "Σπαρτιᾶται",
+          "μετ",
+          "αὐλῶν",
+          "ἀγωνίζονται",
+          "ἔφη",
+          "ὅταν"
+        ],
+        "n_passages": 4
+      }
+    ]
+  },
+  {
+    "en_type": "coordination_chain",
+    "en_scale": "sentence",
+    "en_text": "When the kid came past he hit him in the side of the head and the clerk slumped over and began to sl",
+    "en_head": "",
+    "en_verb": "",
+    "distribution": {
+      "coordination_chain": 1.0
+    },
+    "total_examples": 74129,
+    "recommendation": "coordination_chain (100% of 23473 matched examples)",
+    "nearest_examples": [
+      {
+        "en_text": "Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly ",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "And it appears, first of all, that Theseus, of his own choice, when no one compe",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "come",
+        "greek_cluster": [
+          "αὐτοὺς",
+          "Ἀθηναίων",
+          "ναῦς",
+          "ἅμα",
+          "ἐπειδὴ",
+          "Λευκίμμῃ",
+          "ἀκρωτηρίῳ",
+          "πεζὸς"
+        ],
+        "n_passages": 30
+      },
+      {
+        "english_word": "side",
+        "greek_cluster": [
+          "ἑκάτεροι",
+          "πόλεμον",
+          "παρ",
+          "αὐτοὶ",
+          "Ἀθηναίων",
+          "μάλιστα",
+          "ἄλλο",
+          "ἑκατέρων"
+        ],
+        "n_passages": 30
+      }
+    ]
+  },
+  {
+    "en_type": "coordination_chain",
+    "en_scale": "sentence",
+    "en_text": "The kid stepped over him and went down to the lobby and crossed to the front door and out.",
+    "en_head": "",
+    "en_verb": "",
+    "distribution": {
+      "coordination_chain": 1.0
+    },
+    "total_examples": 74129,
+    "recommendation": "coordination_chain (100% of 23473 matched examples)",
+    "nearest_examples": [
+      {
+        "en_text": "Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly ",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "And it appears, first of all, that Theseus, of his own choice, when no one compe",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "step",
+        "greek_cluster": [
+          "ἐπιζητοῦντος",
+          "τινος",
+          "Σπαρτιᾶται",
+          "μετ",
+          "αὐλῶν",
+          "ἀγωνίζονται",
+          "ἔφη",
+          "ὅταν"
+        ],
+        "n_passages": 4
+      },
+      {
+        "english_word": "go",
+        "greek_cluster": [
+          "πόλει",
+          "τούτῳ",
+          "ἡμῖν",
+          "δοκεῖ",
+          "ἰόντες",
+          "ξυμμάχους",
+          "ξυμπάσῃ",
+          "βεβαιότατα"
+        ],
+        "n_passages": 30
+      }
+    ]
+  },
+  {
+    "en_type": "relative_clause",
+    "en_scale": "clause",
+    "en_text": "He'd left the mule with a Mexican family that boarded animals at the edge of town and he arrived the",
+    "en_head": "family",
+    "en_verb": "boarded",
+    "distribution": {
+      "genitive_absolute": 0.5870331219168429,
+      "relative_clause": 0.4115574348132488,
+      "articular_participle": 0.0014094432699083862
+    },
+    "total_examples": 107296,
+    "recommendation": "genitive_absolute (59% of 15214 matched examples). Note: if this is a defining relative ('the X who Y'), prefer ὅς + finite verb; gen.abs. is for circumstantial clauses",
+    "nearest_examples": [
+      {
+        "en_text": "a most savage and lawless practice, we shall own that Numa was far more Hellenic",
+        "grc_type": "relative_clause",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "Tellus, moreover, though he kept his post and fought like a brave man, died at t",
+        "grc_type": "genitive_absolute",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "Such, then, are the memorable things about Romulus and Theseus which I have been",
+        "grc_type": "genitive_absolute",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "leave",
+        "greek_cluster": [
+          "ὑμᾶς",
+          "παῖδες",
+          "ὑμῶν",
+          "πρότερον",
+          "τούς",
+          "φημὶ",
+          "πολεμίους",
+          "πολλοὺς"
+        ],
+        "n_passages": 22
+      },
+      {
+        "english_word": "family",
+        "greek_cluster": [
+          "Ἁρμόδιον",
+          "παλαιοῦ",
+          "Ἁρμοδίου",
+          "ἀπόγονον",
+          "δυσγένειαν",
+          "λοιδορούμενον",
+          "ἔφη",
+          "ἐμὸν"
+        ],
+        "n_passages": 4
+      }
+    ]
+  },
+  {
+    "en_type": "relative_clause",
+    "en_scale": "clause",
+    "en_text": "There were horses tethered in the lot and there was a flatbed wagon against the fence with some turk",
+    "en_head": "horses",
+    "en_verb": "tethered",
+    "distribution": {
+      "genitive_absolute": 0.5870331219168429,
+      "relative_clause": 0.4115574348132488,
+      "articular_participle": 0.0014094432699083862
+    },
+    "total_examples": 107296,
+    "recommendation": "genitive_absolute (59% of 15214 matched examples). Note: if this is a defining relative ('the X who Y'), prefer ὅς + finite verb; gen.abs. is for circumstantial clauses",
+    "nearest_examples": [
+      {
+        "en_text": "a most savage and lawless practice, we shall own that Numa was far more Hellenic",
+        "grc_type": "relative_clause",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "Tellus, moreover, though he kept his post and fought like a brave man, died at t",
+        "grc_type": "genitive_absolute",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "Such, then, are the memorable things about Romulus and Theseus which I have been",
+        "grc_type": "genitive_absolute",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "be",
+        "greek_cluster": [
+          "ὑμῖν",
+          "μᾶλλον",
+          "ναυτικὸν",
+          "ἡμᾶς",
+          "οὐδὲ",
+          "οὐδ",
+          "τάδε",
+          "ἄριστα"
+        ],
+        "n_passages": 30
+      },
+      {
+        "english_word": "horse",
+        "greek_cluster": [
+          "ἵππον",
+          "Ἀθηναίων",
+          "ἵππου",
+          "ἱππέας",
+          "χιλίους",
+          "θυμοειδῆ",
+          "ἱππῆς",
+          "ἀντεπεξελάσαντες"
+        ],
+        "n_passages": 18
+      }
+    ]
+  },
+  {
+    "en_type": "fragment",
+    "en_scale": "sentence",
+    "en_text": "Venga.",
+    "en_head": "",
+    "en_verb": "",
+    "distribution": {
+      "fragment": 1.0
+    },
+    "total_examples": 28072,
+    "recommendation": "fragment (100% of 7231 matched examples)",
+    "nearest_examples": [
+      {
+        "en_text": "For their points of likeness are obvious from their careers: their wise moderati",
+        "grc_type": "fragment",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "And his appointment of quaestors over the public moneys mad a like origin.",
+        "grc_type": "fragment",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "Such, then, are the memorable things about Romulus and Theseus which I have been",
+        "grc_type": "fragment",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": []
+  },
+  {
+    "en_type": "fragment",
+    "en_scale": "sentence",
+    "en_text": "Hay un caballero aquf.",
+    "en_head": "",
+    "en_verb": "",
+    "distribution": {
+      "fragment": 1.0
+    },
+    "total_examples": 28072,
+    "recommendation": "fragment (100% of 7231 matched examples)",
+    "nearest_examples": [
+      {
+        "en_text": "For their points of likeness are obvious from their careers: their wise moderati",
+        "grc_type": "fragment",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "And his appointment of quaestors over the public moneys mad a like origin.",
+        "grc_type": "fragment",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "Such, then, are the memorable things about Romulus and Theseus which I have been",
+        "grc_type": "fragment",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": []
+  },
+  {
+    "en_type": "coordination_chain",
+    "en_scale": "sentence",
+    "en_text": "He went down the shed to the tackroom and got his wretched saddle and his blanketroll and brought th",
+    "en_head": "",
+    "en_verb": "",
+    "distribution": {
+      "coordination_chain": 1.0
+    },
+    "total_examples": 74129,
+    "recommendation": "coordination_chain (100% of 23473 matched examples)",
+    "nearest_examples": [
+      {
+        "en_text": "Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly ",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "And it appears, first of all, that Theseus, of his own choice, when no one compe",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "go",
+        "greek_cluster": [
+          "πόλει",
+          "τούτῳ",
+          "ἡμῖν",
+          "δοκεῖ",
+          "ἰόντες",
+          "ξυμμάχους",
+          "ξυμπάσῃ",
+          "βεβαιότατα"
+        ],
+        "n_passages": 30
+      }
+    ]
+  },
+  {
+    "en_type": "coordination_chain",
+    "en_scale": "sentence",
+    "en_text": "He found the mule and unstalled it and bridled it with the rawhide hacka-more and led it to the fenc",
+    "en_head": "",
+    "en_verb": "",
+    "distribution": {
+      "coordination_chain": 1.0
+    },
+    "total_examples": 74129,
+    "recommendation": "coordination_chain (100% of 23473 matched examples)",
+    "nearest_examples": [
+      {
+        "en_text": "Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly ",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "And it appears, first of all, that Theseus, of his own choice, when no one compe",
+        "grc_type": "coordination_chain",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "find",
+        "greek_cluster": [
+          "οὔτε",
+          "ἔφη",
+          "οὐδὲ",
+          "καθ",
+          "ὅπως",
+          "βουλομένων",
+          "ὑμῶν",
+          "προθύμων"
+        ],
+        "n_passages": 30
+      }
+    ]
+  },
+  {
+    "en_type": "relative_clause",
+    "en_scale": "clause",
+    "en_text": "He leaned against the animal with his shoulder and got the saddle over it and got it cinched, the mu",
+    "en_head": "mule",
+    "en_verb": "starting",
+    "distribution": {
+      "genitive_absolute": 0.5870331219168429,
+      "relative_clause": 0.4115574348132488,
+      "articular_participle": 0.0014094432699083862
+    },
+    "total_examples": 107296,
+    "recommendation": "genitive_absolute (59% of 15214 matched examples). Note: if this is a defining relative ('the X who Y'), prefer ὅς + finite verb; gen.abs. is for circumstantial clauses",
+    "nearest_examples": [
+      {
+        "en_text": "a most savage and lawless practice, we shall own that Numa was far more Hellenic",
+        "grc_type": "relative_clause",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "Tellus, moreover, though he kept his post and fought like a brave man, died at t",
+        "grc_type": "genitive_absolute",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "Such, then, are the memorable things about Romulus and Theseus which I have been",
+        "grc_type": "genitive_absolute",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "learn",
+        "greek_cluster": [
+          "πρότερον",
+          "ἔπειτα",
+          "ἐκεῖθεν",
+          "αἰσθόμενοι",
+          "Μιλήτῳ",
+          "ὄντας",
+          "Ἀθηναίους",
+          "Ἰασικὸν"
+        ],
+        "n_passages": 11
+      },
+      {
+        "english_word": "animal",
+        "greek_cluster": [
+          "Δημάδου",
+          "ῥήτορος",
+          "ἤδη",
+          "πρεσβύτου",
+          "γεγονότος",
+          "ἔφη",
+          "καθάπερ",
+          "ἱερείου"
+        ],
+        "n_passages": 2
+      }
+    ]
+  }
+]

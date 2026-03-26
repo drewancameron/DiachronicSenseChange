@@ -1,0 +1,402 @@
+# ============================================================
+# Canonical Taxonomy of Named Greek Constructions
+# ============================================================
+# Each entry: name, description, English trigger, Greek pattern,
+# stanza detection (EN and GRC), and an attested example.
+#
+# Used by:
+#   - conditional_guide.py: identify constructions in English
+#   - describe_structure.py: label constructions in Greek parallels
+#   - translate.py: inject named guidance into prompts
+#   - grammar_engine.py / grew_check.py: verify in output
+# ============================================================
+
+# ------------------------------------------------------------------
+# CONDITIONALS
+# ------------------------------------------------------------------
+conditionals:
+
+  - name: Future More Vivid
+    description: "Open condition about future — speaker thinks it likely"
+    english_trigger: "if + present tense ('if he does X, he will Y')"
+    greek_pattern: "ἐάν + subjunctive ... future indicative"
+    example_en: "if they hear, they will come"
+    example_grc: "ἐὰν ἀκούσωσιν, ἥξουσιν"
+    stanza_detect_en:
+      deprel: advcl
+      mark: [if]
+      protasis_tense: [Pres]
+
+  - name: Future Less Vivid
+    description: "Remote future condition — speaker thinks it unlikely"
+    english_trigger: "if + should/were to ('if he should do X, he would Y')"
+    greek_pattern: "εἰ + optative ... ἄν + optative"
+    example_en: "if he should come, he would see"
+    example_grc: "εἰ ἔλθοι, ἴδοι ἄν"
+    stanza_detect_en:
+      deprel: advcl
+      mark: [if]
+      aux: [should, were]
+
+  - name: Present Contrafactual
+    description: "Contrary to present fact"
+    english_trigger: "if + past tense ('if he did X, he would Y')"
+    greek_pattern: "εἰ + imperfect ... ἄν + imperfect"
+    example_en: "if he were here, he would help"
+    example_grc: "εἰ παρῆν, ἐβοήθει ἄν"
+    stanza_detect_en:
+      deprel: advcl
+      mark: [if]
+      protasis_tense: [Past]
+      no_aux: [had]
+
+  - name: Past Contrafactual
+    description: "Contrary to past fact"
+    english_trigger: "if + had + past participle ('if he had done X, he would have Y')"
+    greek_pattern: "εἰ + aorist indicative ... ἄν + aorist indicative"
+    example_en: "if he had come, he would have seen"
+    example_grc: "εἰ ἦλθεν, εἶδεν ἄν"
+    stanza_detect_en:
+      deprel: advcl
+      mark: [if]
+      aux: [had]
+
+  - name: Present General
+    description: "General truth / habitual condition"
+    english_trigger: "if/when/whenever + present ('if a man lies, he suffers')"
+    greek_pattern: "ἐάν + subjunctive ... present indicative"
+    example_en: "whenever it rains, the river floods"
+    example_grc: "ἐὰν ὕῃ, ὁ ποταμὸς πλημμυρεῖ"
+
+  - name: Past General
+    description: "Repeated past condition"
+    english_trigger: "whenever + past ('whenever he came, they fled')"
+    greek_pattern: "εἰ + optative ... imperfect indicative"
+    example_en: "whenever he came, they would flee"
+    example_grc: "εἰ ἔλθοι, ἔφευγον"
+
+  - name: Simple Past Conditional
+    description: "Factual past condition (no contrafactual force)"
+    english_trigger: "if + past tense (factual: 'if they got my boots')"
+    greek_pattern: "εἰ + aorist/imperfect indicative"
+    example_en: "if they got my boots"
+    example_grc: "εἰ ἔλαβον τὰς ἐμβάδας"
+
+# ------------------------------------------------------------------
+# OATHS AND ASSEVERATIONS
+# ------------------------------------------------------------------
+oaths:
+
+  - name: Oath-Conditional
+    description: "Colloquial oath with conditional force"
+    english_trigger: "'damn me if I don't', 'I'll be damned if'"
+    greek_pattern: "ἦ μήν + εἰ μή + subjunctive/future"
+    example_en: "damn my eyes if I won't shoot him"
+    example_grc: "ἦ μὴν εἰ μὴ κατατοξεύσω αὐτόν"
+    register: "rough/colloquial — ἦ μήν for low register, νὴ τὸν Δία for formal"
+
+  - name: Simple Oath
+    description: "Oath without conditional"
+    english_trigger: "'I swear', 'by God'"
+    greek_pattern: "νὴ τὸν Δία / μὰ τὸν Δία / ἦ μήν + future"
+    example_en: "I swear I will find him"
+    example_grc: "ἦ μὴν εὑρήσω αὐτόν"
+
+# ------------------------------------------------------------------
+# TEMPORAL CLAUSES
+# ------------------------------------------------------------------
+temporal:
+
+  - name: Past Temporal (single event)
+    description: "When X happened (once)"
+    english_trigger: "when/after + past tense"
+    greek_pattern: "ὅτε / ἐπεί + aorist indicative"
+    example_en: "when he arrived"
+    example_grc: "ὅτε ἀφίκετο"
+
+  - name: Past Temporal (ongoing)
+    description: "While X was happening"
+    english_trigger: "while + past continuous"
+    greek_pattern: "ἐν ᾧ / ἕως + imperfect"
+    example_en: "while he was speaking"
+    example_grc: "ἐν ᾧ ἔλεγεν"
+
+  - name: General Temporal
+    description: "Whenever (repeated)"
+    english_trigger: "whenever + present"
+    greek_pattern: "ὅταν + subjunctive"
+    example_en: "whenever he comes"
+    example_grc: "ὅταν ἔλθῃ"
+
+  - name: Prior Temporal
+    description: "Before X"
+    english_trigger: "before + clause"
+    greek_pattern: "πρίν + infinitive (affirmative) / πρίν ἄν + subjunctive (after negative)"
+    example_en: "before he could escape"
+    example_grc: "πρὶν ἐκφυγεῖν αὐτόν"
+
+  - name: Terminal Temporal
+    description: "Until X"
+    english_trigger: "until + clause"
+    greek_pattern: "ἕως / μέχρι + ἄν + subjunctive (future) or indicative (past)"
+    example_en: "until the sun set"
+    example_grc: "ἕως ὁ ἥλιος ἔδυ"
+
+# ------------------------------------------------------------------
+# CASE CONSTRUCTIONS
+# ------------------------------------------------------------------
+case_constructions:
+
+  - name: Genitive Absolute
+    description: "Circumstantial clause with its own subject in genitive, detached from main clause"
+    english_trigger: "temporal/causal subordinate clause with different subject; English participial phrase"
+    greek_pattern: "noun/pronoun(genitive) + participle(genitive)"
+    example_en: "while darkness still prevailed"
+    example_grc: "σκοτίας ἔτι οὔσης (cf. John 20:1)"
+    when_to_use: "When English has a temporal/causal clause whose subject differs from the main clause. NOT for defining relatives."
+
+  - name: Dative of Time When
+    description: "Point in time"
+    english_trigger: "'on that night', 'on the third day', 'at dawn'"
+    greek_pattern: "noun(dative) [+ demonstrative]"
+    example_en: "on that night"
+    example_grc: "νυκτὶ ἐκείνῃ"
+    note: "Not ἐν + dative (which is place). Plain dative for time."
+
+  - name: Accusative of Duration
+    description: "How long something lasted"
+    english_trigger: "'for fourteen years', 'all day', 'the whole night'"
+    greek_pattern: "noun(accusative) [+ numeral]"
+    example_en: "fourteen years"
+    example_grc: "τεσσαρεσκαίδεκα ἔτη"
+
+  - name: Genitive of Time Within Which
+    description: "During which period"
+    english_trigger: "'by night', 'during the summer', 'within three days'"
+    greek_pattern: "noun(genitive)"
+    example_en: "by night"
+    example_grc: "νυκτός"
+
+  - name: Dative of Instrument/Means
+    description: "By means of what"
+    english_trigger: "'with a knife', 'by force'"
+    greek_pattern: "noun(dative) [no preposition needed]"
+    example_en: "he struck with a stone"
+    example_grc: "λίθῳ ἔβαλεν"
+
+  - name: Dative of Respect
+    description: "In what respect"
+    english_trigger: "'in height', 'in character', 'by name'"
+    greek_pattern: "noun(dative)"
+    example_en: "seven feet in height"
+    example_grc: "ἑπτὰ πόδας τὸ ὕψος" # actually accusative of respect more common here
+
+  - name: Genitive of Separation
+    description: "Away from, deprived of"
+    english_trigger: "'devoid of', 'free from', 'stripped of'"
+    greek_pattern: "adjective + genitive (no preposition)"
+    example_en: "devoid of all qualification"
+    example_grc: "ἄμοιρος τῆς ἱκανότητος"
+
+  - name: Genitive of Description/Quality
+    description: "Characterising genitive"
+    english_trigger: "'hewers of wood', 'men of violence', 'a taste for X'"
+    greek_pattern: "noun + genitive"
+    example_en: "hewers of wood and drawers of water"
+    example_grc: "ξυλοκόποι καὶ ὑδροφόροι (LXX Joshua 9:21)"
+
+  - name: Partitive Genitive
+    description: "Part of a group"
+    english_trigger: "'some of them', 'a few of the wolves'"
+    greek_pattern: "quantifier + genitive"
+    example_en: "a few last wolves"
+    example_grc: "λύκοι τινὲς ἔσχατοι"
+
+# ------------------------------------------------------------------
+# INFINITIVE CONSTRUCTIONS
+# ------------------------------------------------------------------
+infinitives:
+
+  - name: Articular Infinitive
+    description: "Infinitive used as a noun with an article"
+    english_trigger: "gerund ('the act of doing'), purpose ('for the purpose of')"
+    greek_pattern: "τό/τοῦ/τῷ + infinitive"
+    example_en: "for the purpose of lending flavour"
+    example_grc: "πρὸς τὸ παρασχεῖν γεῦσιν"
+
+  - name: Accusative + Infinitive
+    description: "Indirect statement with accusative subject"
+    english_trigger: "indirect speech after verbs of saying/thinking/believing"
+    greek_pattern: "accusative(subject) + infinitive(verb)"
+    example_en: "he said that the man was a fraud"
+    example_grc: "ἔφη τὸν ἄνδρα πλάνον εἶναι"
+    register: "Attic preference for φημί, λέγω, νομίζω. Use ὅτι + indicative for other verbs."
+
+  - name: Purpose Infinitive
+    description: "Bare infinitive expressing purpose (after verbs of motion). NOTE: the future participle is usually preferred in classical prose — use this only for very short purpose expressions."
+    english_trigger: "went to see, came to help"
+    greek_pattern: "[verb of motion] + infinitive"
+    example_en: "he came to see"
+    example_grc: "ἦλθεν ἰδεῖν"
+
+# ------------------------------------------------------------------
+# PURPOSE AND RESULT CLAUSES
+# ------------------------------------------------------------------
+purpose_result:
+
+  - name: Future Participle of Purpose
+    description: "Future participle expressing purpose or intent — the canonical classical construction with verbs of motion. Preferred over bare infinitive in Attic/Koine prose."
+    english_trigger: "'to fight', 'to seek', 'to see' after a verb of motion (came, went, descended, sailed)"
+    greek_pattern: "future participle agreeing with subject (e.g. μαχησόμενος, ζητήσων, ὀψόμενος)"
+    example_en: "he came down to fight with the sailors"
+    example_grc: "κατέβη μαχησόμενος τοῖς ναύταις"
+    stanza_detect_en:
+      deprel: advcl
+      mark: [to]
+      head_lemma: [come, go, descend, sail, march, send, ride, walk, run]
+    register: "Standard Attic/Koine. Thucydides, Xenophon, Herodotus all prefer this to bare infinitive for purpose with motion verbs."
+
+
+  - name: Purpose Clause (ἵνα)
+    description: "So that / in order that"
+    english_trigger: "'so that he might', 'in order that'"
+    greek_pattern: "ἵνα + subjunctive"
+    example_en: "so that he might drive him away"
+    example_grc: "ἵνα αὐτὸν ἀποδιώξῃ"
+
+  - name: Purpose Clause (ὅπως)
+    description: "So that (more formal)"
+    english_trigger: "'so that', 'in such a way that'"
+    greek_pattern: "ὅπως + future indicative / subjunctive"
+    example_en: "so that they would know"
+    example_grc: "ὅπως εἴσονται"
+
+  - name: Negative Purpose
+    description: "Lest / so that ... not"
+    english_trigger: "'lest', 'for fear that', 'so that...not'"
+    greek_pattern: "μή + subjunctive"
+    example_en: "lest he escape"
+    example_grc: "μὴ ἐκφύγῃ"
+
+  - name: Natural Result
+    description: "Result that follows naturally"
+    english_trigger: "'so...that', 'such...that' (tendency)"
+    greek_pattern: "ὥστε + infinitive"
+    example_en: "so many that one could not count them"
+    example_grc: "ὥστε μὴ δύνασθαι ἀριθμεῖν"
+
+  - name: Actual Result
+    description: "Result that actually occurred"
+    english_trigger: "'so...that' (actual fact)"
+    greek_pattern: "ὥστε + indicative"
+    example_en: "so that they actually fled"
+    example_grc: "ὥστε ἔφυγον"
+
+# ------------------------------------------------------------------
+# RELATIVE CLAUSES
+# ------------------------------------------------------------------
+relatives:
+
+  - name: Defining Relative
+    description: "Identifies which one (restrictive)"
+    english_trigger: "'the man who spoke', 'the thing that happened'"
+    greek_pattern: "ὅς/ἥ/ὅ + indicative (definite) — do NOT convert to participle"
+    example_en: "the man who spoke"
+    example_grc: "ὁ ἀνὴρ ὃς ἐλάλησεν"
+
+  - name: Modal/Future Relative
+    description: "Relative with future or modal force"
+    english_trigger: "'who would', 'who could', 'that might'"
+    greek_pattern: "ὅς + future indicative (definite) or ὅς + ἄν + subjunctive (indefinite)"
+    example_en: "the creature who would carry her off"
+    example_grc: "τὸ πλάσμα ὃ αὐτὴν ἀπάξει"
+
+  - name: Possessive Relative
+    description: "Whose"
+    english_trigger: "'whose names', 'whose father'"
+    greek_pattern: "ὧν + nominative subject"
+    example_en: "poets whose names are lost"
+    example_grc: "ποιητῶν ὧν τὰ ὀνόματα ἀπόλωλεν"
+
+  - name: Relative of Place
+    description: "Where/in which"
+    english_trigger: "'woods that harbor', 'place where'"
+    greek_pattern: "ἐν οἷς/αἷς or ὅπου/οὗ + indicative"
+    example_en: "woods that harbor wolves"
+    example_grc: "ὕλαι ἐν αἷς λύκοι"
+
+# ------------------------------------------------------------------
+# PARTICIPLE CONSTRUCTIONS
+# ------------------------------------------------------------------
+participles:
+
+  - name: Circumstantial Participle
+    description: "Adverbial participle expressing time, cause, manner, concession"
+    english_trigger: "'-ing' clause: 'crossing the river, he...', 'being tired, he...'"
+    greek_pattern: "participle (agreeing with subject in case/number/gender)"
+    example_en: "drawing a pistol from his boot, he leveled it"
+    example_grc: "σπάσας πιστόλιον ἐκ τῆς ἐμβάδος ἐσκόπευσεν"
+
+  - name: Supplementary Participle
+    description: "Completes the meaning of the main verb"
+    english_trigger: "after verbs of perception, beginning, continuing"
+    greek_pattern: "main verb + participle (object or subject complement)"
+    example_en: "he was seen crouching"
+    example_grc: "ὤφθη πτώσσων"
+
+  - name: Attributive Participle
+    description: "Participle used as adjective (with article)"
+    english_trigger: "'the crouching boy', 'the burning hotel'"
+    greek_pattern: "article + participle + noun (or noun + article + participle)"
+    example_en: "the man holding this revival"
+    example_grc: "ὁ ἀνὴρ ὁ τὴν σύναξιν ἐπιτελῶν"
+
+# ------------------------------------------------------------------
+# VOICE AND ASPECT
+# ------------------------------------------------------------------
+voice_aspect:
+
+  - name: Middle Voice (interest)
+    description: "Subject acts in own interest or on own body"
+    english_trigger: "'he removed [his own] hat', 'he girded himself'"
+    greek_pattern: "middle voice aorist"
+    example_en: "he removed his hat"
+    example_grc: "ἀφείλετο τὸν πέτασον (middle — his own hat)"
+    note: "Not passive. Middle shows the subject's involvement with the action."
+
+  - name: Aorist (punctual action)
+    description: "Simple occurrence, narrative foreground"
+    english_trigger: "simple past in narrative sequence ('he turned', 'he fired')"
+    greek_pattern: "aorist indicative"
+
+  - name: Imperfect (background/durative)
+    description: "Ongoing or habitual past action"
+    english_trigger: "'he was watching', 'he used to say', 'the fire was burning'"
+    greek_pattern: "imperfect indicative"
+
+  - name: Perfect (resultative state)
+    description: "Present state resulting from past action"
+    english_trigger: "'has been a schoolmaster' (still is), 'is dead' (result of dying)"
+    greek_pattern: "perfect indicative"
+    example_en: "his father has been a schoolmaster"
+    example_grc: "ὁ πατὴρ γραμματιστὴς γέγονεν"
+
+# ------------------------------------------------------------------
+# DIRECT SPEECH
+# ------------------------------------------------------------------
+speech:
+
+  - name: Direct Speech (with speech verb)
+    description: "Quoted speech with attribution"
+    english_trigger: "'said the kid', 'cried the reverend'"
+    greek_pattern: "ἔφη / εἶπεν + direct quote (retain Greek direct speech, do NOT convert to indirect)"
+    example_en: "I just got here, said the kid"
+    example_grc: "ἄρτι ἦλθον, ἔφη ὁ παῖς"
+    note: "McCarthy uses postposed speech verbs. Greek can do the same: quote first, ἔφη second."
+
+  - name: Exclamation/Interjection
+    description: "Emotional outburst"
+    english_trigger: "'Oh God!', 'Lies!', 'The devil!'"
+    greek_pattern: "ὦ + vocative / bare nominative exclamation"
+    example_en: "Oh God!"
+    example_grc: "ὦ θεέ!"

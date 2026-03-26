@@ -1,0 +1,61 @@
+{
+  "id": "004_at_fourteen",
+  "chapter": "I",
+  "title": "At fourteen he runs away",
+  "source_lines": [
+    7,
+    7
+  ],
+  "discourse_types": [
+    "description",
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Landscape passage — pastoral Tennessee, cotton fields, the lone husbandman. Tests nature vocabulary and McCarthy's sentence fragments.",
+  "text": "At fourteen he runs away. He will not see again the freezing kitchenhouse in the predawn dark. The firewood, the washpots. He wanders west as far as Memphis, a solitary migrant upon that flat and pastoral landscape. Blacks in the fields, lank and stooped, their fingers spiderlike among the bolls of cotton. A shadowed agony in the garden. Against the sun's declining figures moving in the slower dusk across a paper skyline. A lone dark husbandman pursuing mule and harrow down the rainblown bottomland toward night.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "At fourteen he runs away.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 1,
+      "text": "He will not see again the freezing kitchenhouse in the predawn dark.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "The firewood, the washpots.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 3,
+      "text": "He wanders west as far as Memphis, a solitary migrant upon that flat and pastoral landscape.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "Blacks in the fields, lank and stooped, their fingers spiderlike among the bolls of cotton.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "A shadowed agony in the garden.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 6,
+      "text": "Against the sun's declining figures moving in the slower dusk across a paper skyline.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "A lone dark husbandman pursuing mule and harrow down the rainblown bottomland toward night.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 8,
+  "glossary_terms_needed": [],
+  "translation_status": "pending"
+}

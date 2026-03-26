@@ -1,0 +1,51 @@
+{
+  "id": "002_night_of_your_birth",
+  "chapter": "I",
+  "title": "Night of your birth",
+  "source_lines": [
+    3,
+    3
+  ],
+  "discourse_types": [
+    "biblical",
+    "description"
+  ],
+  "priority": 1,
+  "notes": "Father's voice, the Leonid meteor shower. Second-person address, fragmented syntax. Cosmological imagery — stars, holes in the heavens.",
+  "text": "Night of your birth. Thirty-three. The Leonids they were called. God how the stars did fall. I looked for blackness, holes in the heavens. The Dipper stove.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "Night of your birth.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 1,
+      "text": "Thirty-three.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 2,
+      "text": "The Leonids they were called.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "God how the stars did fall.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 4,
+      "text": "I looked for blackness, holes in the heavens.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 5,
+      "text": "The Dipper stove.",
+      "discourse_hint": "fragment"
+    }
+  ],
+  "sentence_count": 6,
+  "glossary_terms_needed": [],
+  "translation_status": "pending"
+}

@@ -1,0 +1,58 @@
+## Construction Signposts (from 142K parallel corpus)
+
+**fragment**: "Night of your birth."
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment
+  Related Greek vocabulary:
+    'night' → νυκτὸς, νύκτα, τάχους, Μενδαῖοι, ἔφη
+
+**fragment**: "Thirty-three."
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment
+
+**relative_clause**: "The Leonids they were called."
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: relative_clause — short defining relative ('Leonids...called') → keep as ὅς/ἥ/ὅ + finite verb. Global dist: rel.cl. 41%, gen.abs. 59% — but gen.abs. is for circumstantial, not defining
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'call' → πολὺ, λέγω, ὑμᾶς, μάλιστα, ἄλλους
+
+**fragment**: "God how the stars did fall."
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment
+  Related Greek vocabulary:
+    'fall' → κρατοῦντές, ἐχθρῶν, πλεῖστον, ἐξέρχονται, νικώμενοι
+
+**fragment**: "The Dipper stove."
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment

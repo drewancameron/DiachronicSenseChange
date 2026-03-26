@@ -1,0 +1,242 @@
+[
+  {
+    "en_type": "relative_clause",
+    "en_scale": "clause",
+    "en_text": "The man flees and he leans against the bar with the blood running out of his shirt.",
+    "en_head": "blood",
+    "en_verb": "running",
+    "distribution": {
+      "genitive_absolute": 0.5870331219168429,
+      "relative_clause": 0.4115574348132488,
+      "articular_participle": 0.0014094432699083862
+    },
+    "total_examples": 107296,
+    "recommendation": "genitive_absolute (59% of 15214 matched examples). Note: if this is a defining relative ('the X who Y'), prefer ὅς + finite verb; gen.abs. is for circumstantial clauses",
+    "nearest_examples": [
+      {
+        "en_text": "a most savage and lawless practice, we shall own that Numa was far more Hellenic",
+        "grc_type": "relative_clause",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "Tellus, moreover, though he kept his post and fought like a brave man, died at t",
+        "grc_type": "genitive_absolute",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "Such, then, are the memorable things about Romulus and Theseus which I have been",
+        "grc_type": "genitive_absolute",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "flee",
+        "greek_cluster": [
+          "φύγω",
+          "γενόμενος",
+          "κριτὴς",
+          "πονηρῶν",
+          "ἐκέλευσε",
+          "φεύγειν",
+          "Μακεδονίας",
+          "ἕτερον"
+        ],
+        "n_passages": 4
+      },
+      {
+        "english_word": "lean",
+        "greek_cluster": [
+          "μὴν",
+          "μῦθος",
+          "παρεμπέσοι",
+          "λεκτέος",
+          "πιστωτέος",
+          "πάντως",
+          "ἀλλ",
+          "μέσῳ"
+        ],
+        "n_passages": 2
+      }
+    ]
+  },
+  {
+    "en_type": "temporal",
+    "en_scale": "clause",
+    "en_text": "He lies in a cot in the room upstairs for two weeks while the tavernkeeper's wife attends him.",
+    "en_head": "",
+    "en_verb": "",
+    "distribution": {
+      "temporal": 1.0
+    },
+    "total_examples": 9508,
+    "recommendation": "temporal (100% of 805 matched examples)",
+    "nearest_examples": [
+      {
+        "en_text": "Accordingly, he equipped himself with fiery darts, and leading his forces out to",
+        "grc_type": "temporal",
+        "source": "Camillus"
+      },
+      {
+        "en_text": "For example, the tales told of divine intervention in their lives are in great c",
+        "grc_type": "temporal",
+        "source": "Comparison of Theseus and Romulus"
+      },
+      {
+        "en_text": "For neither at their common festival gatherings 1 would they concede the customa",
+        "grc_type": "temporal",
+        "source": "History of the Peloponnesian War"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "lie",
+        "greek_cluster": [
+          "ἔφη",
+          "ἅμα",
+          "Ἰταλίας",
+          "Σικελίας",
+          "καλῶς",
+          "ἐφαίνετο",
+          "νῆσος",
+          "παράπλῳ"
+        ],
+        "n_passages": 19
+      },
+      {
+        "english_word": "room",
+        "greek_cluster": [
+          "Λάμαχος",
+          "ἐπετίμα",
+          "τινὶ",
+          "λοχαγῶν",
+          "ἁμαρτόντι",
+          "φήσαντος",
+          "μηκέτι",
+          "ποιήσειν"
+        ],
+        "n_passages": 6
+      }
+    ]
+  },
+  {
+    "en_type": "fragment",
+    "en_scale": "sentence",
+    "en_text": "A hardlooking woman with a wiry body like a man's.",
+    "en_head": "",
+    "en_verb": "",
+    "distribution": {
+      "fragment": 1.0
+    },
+    "total_examples": 28072,
+    "recommendation": "fragment (100% of 7231 matched examples)",
+    "nearest_examples": [
+      {
+        "en_text": "For their points of likeness are obvious from their careers: their wise moderati",
+        "grc_type": "fragment",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "And his appointment of quaestors over the public moneys mad a like origin.",
+        "grc_type": "fragment",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "Such, then, are the memorable things about Romulus and Theseus which I have been",
+        "grc_type": "fragment",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "woman",
+        "greek_cluster": [
+          "ἔφη",
+          "τινος",
+          "γυνή",
+          "ἄλλου",
+          "ἐπιζητοῦντος",
+          "πυργομαχεῖν",
+          "ἀπεῖπε",
+          "ἵνα"
+        ],
+        "n_passages": 8
+      },
+      {
+        "english_word": "body",
+        "greek_cluster": [
+          "αὐτοὺς",
+          "Ἀθηναῖοι",
+          "πανδημεὶ",
+          "ὁμοίως",
+          "πλῆθος",
+          "εὐθὺς",
+          "βεβαίως",
+          "τούτου"
+        ],
+        "n_passages": 20
+      }
+    ]
+  },
+  {
+    "en_type": "relative_clause",
+    "en_scale": "clause",
+    "en_text": "By the time he is mended he has no money to pay her and he leaves in the night and sleeps on the riv",
+    "en_head": "time",
+    "en_verb": "mended",
+    "distribution": {
+      "genitive_absolute": 0.5870331219168429,
+      "relative_clause": 0.4115574348132488,
+      "articular_participle": 0.0014094432699083862
+    },
+    "total_examples": 107296,
+    "recommendation": "genitive_absolute (59% of 15214 matched examples). Note: if this is a defining relative ('the X who Y'), prefer ὅς + finite verb; gen.abs. is for circumstantial clauses",
+    "nearest_examples": [
+      {
+        "en_text": "a most savage and lawless practice, we shall own that Numa was far more Hellenic",
+        "grc_type": "relative_clause",
+        "source": "Comparison of Lycurgus and Numa"
+      },
+      {
+        "en_text": "Tellus, moreover, though he kept his post and fought like a brave man, died at t",
+        "grc_type": "genitive_absolute",
+        "source": "Comparison of Solon and Publicola"
+      },
+      {
+        "en_text": "Such, then, are the memorable things about Romulus and Theseus which I have been",
+        "grc_type": "genitive_absolute",
+        "source": "Comparison of Theseus and Romulus"
+      }
+    ],
+    "word_clusters": [
+      {
+        "english_word": "time",
+        "greek_cluster": [
+          "χρόνον",
+          "ἐγένετο",
+          "μάλιστα",
+          "δύο",
+          "χρόνου",
+          "παρόντι",
+          "ἅμα",
+          "χρόνῳ"
+        ],
+        "n_passages": 30
+      },
+      {
+        "english_word": "money",
+        "greek_cluster": [
+          "χρήματα",
+          "πέμπει",
+          "ἄνδρα",
+          "Πέρσην",
+          "Αἰγύπτου",
+          "ὅπως",
+          "τριάκοντα",
+          "τάλαντα"
+        ],
+        "n_passages": 25
+      }
+    ]
+  }
+]

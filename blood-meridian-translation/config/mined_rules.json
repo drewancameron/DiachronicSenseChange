@@ -1,0 +1,2597 @@
+{
+  "source": "UD Ancient Greek Perseus + PROIEL",
+  "total_sentences": 31001,
+  "preposition_governance": {
+    "διά": {
+      "total_attestations": 1118,
+      "accepted_cases": {
+        "Gen": 0.5438,
+        "Acc": 0.449
+      },
+      "most_common": "Gen"
+    },
+    "εἰς": {
+      "total_attestations": 3933,
+      "accepted_cases": {
+        "Acc": 0.9603,
+        "Dat": 0.03
+      },
+      "most_common": "Acc"
+    },
+    "εἴσω": {
+      "total_attestations": 17,
+      "accepted_cases": {
+        "Acc": 0.7647,
+        "Gen": 0.1765,
+        "Dat": 0.0588
+      },
+      "most_common": "Acc"
+    },
+    "καθύπερθε": {
+      "total_attestations": 10,
+      "accepted_cases": {
+        "Gen": 0.9,
+        "Dat": 0.1
+      },
+      "most_common": "Gen"
+    },
+    "κατά": {
+      "total_attestations": 1434,
+      "accepted_cases": {
+        "Acc": 0.8842,
+        "Gen": 0.1067
+      },
+      "most_common": "Acc"
+    },
+    "μέχρι": {
+      "total_attestations": 84,
+      "accepted_cases": {
+        "Gen": 1.0
+      },
+      "most_common": "Gen"
+    },
+    "μεσηγύ": {
+      "total_attestations": 11,
+      "accepted_cases": {
+        "Gen": 1.0
+      },
+      "most_common": "Gen"
+    },
+    "μετά": {
+      "total_attestations": 968,
+      "accepted_cases": {
+        "Gen": 0.5258,
+        "Acc": 0.3853,
+        "Dat": 0.0878
+      },
+      "most_common": "Gen"
+    },
+    "μεταξύ": {
+      "total_attestations": 29,
+      "accepted_cases": {
+        "Gen": 1.0
+      },
+      "most_common": "Gen"
+    },
+    "νόσφι": {
+      "total_attestations": 16,
+      "accepted_cases": {
+        "Gen": 1.0
+      },
+      "most_common": "Gen"
+    },
+    "πέραν": {
+      "total_attestations": 19,
+      "accepted_cases": {
+        "Gen": 1.0
+      },
+      "most_common": "Gen"
+    },
+    "παρά": {
+      "total_attestations": 830,
+      "accepted_cases": {
+        "Acc": 0.3675,
+        "Dat": 0.3422,
+        "Gen": 0.2855
+      },
+      "most_common": "Acc"
+    },
+    "παρέξ": {
+      "total_attestations": 14,
+      "accepted_cases": {
+        "Gen": 0.9286,
+        "Acc": 0.0714
+      },
+      "most_common": "Gen"
+    },
+    "περί": {
+      "total_attestations": 1087,
+      "accepted_cases": {
+        "Gen": 0.6293,
+        "Acc": 0.2971,
+        "Dat": 0.0672
+      },
+      "most_common": "Gen"
+    },
+    "πλήν": {
+      "total_attestations": 50,
+      "accepted_cases": {
+        "Gen": 0.86,
+        "Acc": 0.06,
+        "Nom": 0.06,
+        "Dat": 0.02
+      },
+      "most_common": "Gen"
+    },
+    "προπάροιθε": {
+      "total_attestations": 21,
+      "accepted_cases": {
+        "Gen": 0.9524,
+        "Dat": 0.0476
+      },
+      "most_common": "Gen"
+    },
+    "πρό": {
+      "total_attestations": 142,
+      "accepted_cases": {
+        "Gen": 0.993
+      },
+      "most_common": "Gen"
+    },
+    "πρός": {
+      "total_attestations": 1683,
+      "accepted_cases": {
+        "Acc": 0.8639,
+        "Gen": 0.0903,
+        "Dat": 0.0452
+      },
+      "most_common": "Acc"
+    },
+    "πρόσθεν": {
+      "total_attestations": 30,
+      "accepted_cases": {
+        "Gen": 0.9333,
+        "Dat": 0.0667
+      },
+      "most_common": "Gen"
+    },
+    "σύν": {
+      "total_attestations": 288,
+      "accepted_cases": {
+        "Dat": 1.0
+      },
+      "most_common": "Dat"
+    },
+    "χωρίς": {
+      "total_attestations": 59,
+      "accepted_cases": {
+        "Gen": 0.9831,
+        "Nom": 0.0169
+      },
+      "most_common": "Gen"
+    },
+    "ἀμφί": {
+      "total_attestations": 148,
+      "accepted_cases": {
+        "Dat": 0.4932,
+        "Acc": 0.4865,
+        "Gen": 0.0135
+      },
+      "most_common": "Dat"
+    },
+    "ἀνά": {
+      "total_attestations": 121,
+      "accepted_cases": {
+        "Acc": 0.9174,
+        "Nom": 0.0413,
+        "Dat": 0.0413
+      },
+      "most_common": "Acc"
+    },
+    "ἀντί": {
+      "total_attestations": 94,
+      "accepted_cases": {
+        "Gen": 0.9894,
+        "Acc": 0.0106
+      },
+      "most_common": "Gen"
+    },
+    "ἀπάνευθε": {
+      "total_attestations": 13,
+      "accepted_cases": {
+        "Gen": 1.0
+      },
+      "most_common": "Gen"
+    },
+    "ἀπό": {
+      "total_attestations": 1214,
+      "accepted_cases": {
+        "Gen": 0.9843
+      },
+      "most_common": "Gen"
+    },
+    "ἄγχι": {
+      "total_attestations": 14,
+      "accepted_cases": {
+        "Gen": 0.5,
+        "Dat": 0.5
+      },
+      "most_common": "Gen"
+    },
+    "ἄνευ": {
+      "total_attestations": 33,
+      "accepted_cases": {
+        "Gen": 0.9697,
+        "Nom": 0.0303
+      },
+      "most_common": "Gen"
+    },
+    "ἄντα": {
+      "total_attestations": 13,
+      "accepted_cases": {
+        "Gen": 1.0
+      },
+      "most_common": "Gen"
+    },
+    "ἄτερ": {
+      "total_attestations": 16,
+      "accepted_cases": {
+        "Gen": 1.0
+      },
+      "most_common": "Gen"
+    },
+    "ἄχρι": {
+      "total_attestations": 36,
+      "accepted_cases": {
+        "Gen": 1.0
+      },
+      "most_common": "Gen"
+    },
+    "ἅμα": {
+      "total_attestations": 118,
+      "accepted_cases": {
+        "Dat": 0.9746,
+        "Nom": 0.0169
+      },
+      "most_common": "Dat"
+    },
+    "ἐγγύς": {
+      "total_attestations": 11,
+      "accepted_cases": {
+        "Gen": 0.8182,
+        "Dat": 0.1818
+      },
+      "most_common": "Gen"
+    },
+    "ἐκ": {
+      "total_attestations": 2184,
+      "accepted_cases": {
+        "Gen": 0.9927
+      },
+      "most_common": "Gen"
+    },
+    "ἐκτός": {
+      "total_attestations": 16,
+      "accepted_cases": {
+        "Gen": 1.0
+      },
+      "most_common": "Gen"
+    },
+    "ἐν": {
+      "total_attestations": 4714,
+      "accepted_cases": {
+        "Dat": 0.9922
+      },
+      "most_common": "Dat"
+    },
+    "ἐντός": {
+      "total_attestations": 23,
+      "accepted_cases": {
+        "Gen": 1.0
+      },
+      "most_common": "Gen"
+    },
+    "ἐνώπιον": {
+      "total_attestations": 90,
+      "accepted_cases": {
+        "Gen": 1.0
+      },
+      "most_common": "Gen"
+    },
+    "ἐπάνω": {
+      "total_attestations": 16,
+      "accepted_cases": {
+        "Gen": 1.0
+      },
+      "most_common": "Gen"
+    },
+    "ἐπί": {
+      "total_attestations": 2517,
+      "accepted_cases": {
+        "Acc": 0.4978,
+        "Dat": 0.2888,
+        "Gen": 0.209
+      },
+      "most_common": "Acc"
+    },
+    "ἔμπροσθεν": {
+      "total_attestations": 43,
+      "accepted_cases": {
+        "Gen": 1.0
+      },
+      "most_common": "Gen"
+    },
+    "ἔξω": {
+      "total_attestations": 35,
+      "accepted_cases": {
+        "Gen": 0.9714,
+        "Acc": 0.0286
+      },
+      "most_common": "Gen"
+    },
+    "ἕνεκα": {
+      "total_attestations": 159,
+      "accepted_cases": {
+        "Gen": 0.9937
+      },
+      "most_common": "Gen"
+    },
+    "ἕως": {
+      "total_attestations": 55,
+      "accepted_cases": {
+        "Gen": 0.9455,
+        "Acc": 0.0545
+      },
+      "most_common": "Gen"
+    },
+    "ὀπίσω": {
+      "total_attestations": 25,
+      "accepted_cases": {
+        "Gen": 1.0
+      },
+      "most_common": "Gen"
+    },
+    "ὄπισθεν": {
+      "total_attestations": 11,
+      "accepted_cases": {
+        "Gen": 1.0
+      },
+      "most_common": "Gen"
+    },
+    "ὑπέρ": {
+      "total_attestations": 260,
+      "accepted_cases": {
+        "Gen": 0.8308,
+        "Acc": 0.1654
+      },
+      "most_common": "Gen"
+    },
+    "ὑποκάτω": {
+      "total_attestations": 10,
+      "accepted_cases": {
+        "Gen": 1.0
+      },
+      "most_common": "Gen"
+    },
+    "ὑπό": {
+      "total_attestations": 966,
+      "accepted_cases": {
+        "Gen": 0.7371,
+        "Dat": 0.1522,
+        "Acc": 0.1066
+      },
+      "most_common": "Gen"
+    }
+  },
+  "agreement_rates": {
+    "det_noun": {
+      "Case": {
+        "agreement_rate": 0.9221,
+        "total": 45869,
+        "agree": 42294,
+        "disagree": 3575
+      },
+      "Gender": {
+        "agreement_rate": 0.8806,
+        "total": 45200,
+        "agree": 39801,
+        "disagree": 5399
+      },
+      "Number": {
+        "agreement_rate": 0.956,
+        "total": 46260,
+        "agree": 44224,
+        "disagree": 2036
+      }
+    },
+    "amod_noun": {
+      "Case": {
+        "agreement_rate": 0.9363,
+        "total": 4753,
+        "agree": 4450,
+        "disagree": 303
+      },
+      "Gender": {
+        "agreement_rate": 0.8719,
+        "total": 4613,
+        "agree": 4022,
+        "disagree": 591
+      },
+      "Number": {
+        "agreement_rate": 0.9536,
+        "total": 4760,
+        "agree": 4539,
+        "disagree": 221
+      }
+    }
+  },
+  "subject_verb_agreement": {
+    "total": 26536,
+    "number_agree": 24960,
+    "number_disagree": 1576,
+    "neuter_plural_singular_verb": 716,
+    "neuter_plural_plural_verb": 366,
+    "neuter_plural_total": 1084
+  },
+  "verb_government": {
+    "βλώσκω": {
+      "total": 17,
+      "cases": {
+        "Gen": 7,
+        "Dat": 5,
+        "Acc": 5
+      },
+      "primary_case": "Gen",
+      "confidence": 0.4118
+    },
+    "βοάω": {
+      "total": 16,
+      "cases": {
+        "Dat": 9,
+        "Acc": 6,
+        "Gen": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5625
+    },
+    "βοηθέω": {
+      "total": 35,
+      "cases": {
+        "Dat": 18,
+        "Acc": 15,
+        "Gen": 2
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5143
+    },
+    "γίγνομαι": {
+      "total": 668,
+      "cases": {
+        "Dat": 280,
+        "Gen": 200,
+        "Acc": 187,
+        "Nom": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4192
+    },
+    "δάμνημι": {
+      "total": 14,
+      "cases": {
+        "Dat": 7,
+        "Acc": 6,
+        "Nom": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5
+    },
+    "δαίζω": {
+      "total": 12,
+      "cases": {
+        "Dat": 7,
+        "Acc": 5
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5833
+    },
+    "δαμάζω": {
+      "total": 93,
+      "cases": {
+        "Dat": 65,
+        "Acc": 27,
+        "Gen": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.6989
+    },
+    "διακονέω": {
+      "total": 10,
+      "cases": {
+        "Dat": 5,
+        "Acc": 3,
+        "Gen": 2
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5
+    },
+    "διαλογίζομαι": {
+      "total": 20,
+      "cases": {
+        "Dat": 10,
+        "Acc": 9,
+        "Gen": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5
+    },
+    "διαφέρω": {
+      "total": 56,
+      "cases": {
+        "Gen": 19,
+        "Dat": 19,
+        "Acc": 18
+      },
+      "primary_case": "Gen",
+      "confidence": 0.3393
+    },
+    "διηγέομαι": {
+      "total": 10,
+      "cases": {
+        "Gen": 5,
+        "Acc": 3,
+        "Dat": 2
+      },
+      "primary_case": "Gen",
+      "confidence": 0.5
+    },
+    "δικαιόω": {
+      "total": 48,
+      "cases": {
+        "Gen": 20,
+        "Dat": 15,
+        "Acc": 13
+      },
+      "primary_case": "Gen",
+      "confidence": 0.4167
+    },
+    "δοκέω": {
+      "total": 129,
+      "cases": {
+        "Dat": 85,
+        "Nom": 27,
+        "Acc": 14,
+        "Gen": 3
+      },
+      "primary_case": "Dat",
+      "confidence": 0.6589
+    },
+    "δουλεύω": {
+      "total": 16,
+      "cases": {
+        "Dat": 8,
+        "Gen": 5,
+        "Acc": 3
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5
+    },
+    "εἴδομαι": {
+      "total": 23,
+      "cases": {
+        "Dat": 15,
+        "Acc": 4,
+        "Nom": 4
+      },
+      "primary_case": "Dat",
+      "confidence": 0.6522
+    },
+    "εἴκω": {
+      "total": 23,
+      "cases": {
+        "Dat": 16,
+        "Acc": 5,
+        "Gen": 2
+      },
+      "primary_case": "Dat",
+      "confidence": 0.6957
+    },
+    "εὐδοκέω": {
+      "total": 10,
+      "cases": {
+        "Dat": 7,
+        "Acc": 2,
+        "Gen": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.7
+    },
+    "εὐχαριστέω": {
+      "total": 20,
+      "cases": {
+        "Gen": 14,
+        "Dat": 5,
+        "Acc": 1
+      },
+      "primary_case": "Gen",
+      "confidence": 0.7
+    },
+    "εὔχομαι": {
+      "total": 53,
+      "cases": {
+        "Dat": 27,
+        "Nom": 13,
+        "Gen": 7,
+        "Acc": 6
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5094
+    },
+    "εὕδω": {
+      "total": 11,
+      "cases": {
+        "Dat": 10,
+        "Acc": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.9091
+    },
+    "ζῶ": {
+      "total": 53,
+      "cases": {
+        "Dat": 28,
+        "Acc": 14,
+        "Gen": 11
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5283
+    },
+    "θαρσέω": {
+      "total": 10,
+      "cases": {
+        "Dat": 6,
+        "Gen": 2,
+        "Acc": 2
+      },
+      "primary_case": "Dat",
+      "confidence": 0.6
+    },
+    "θησαυρίζω": {
+      "total": 12,
+      "cases": {
+        "Dat": 7,
+        "Acc": 4,
+        "Gen": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5833
+    },
+    "θνήσκω": {
+      "total": 29,
+      "cases": {
+        "Dat": 16,
+        "Gen": 9,
+        "Acc": 3,
+        "Nom": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5517
+    },
+    "θρῴσκω": {
+      "total": 19,
+      "cases": {
+        "Dat": 10,
+        "Gen": 5,
+        "Acc": 4
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5263
+    },
+    "κάθημαι": {
+      "total": 100,
+      "cases": {
+        "Dat": 40,
+        "Gen": 32,
+        "Acc": 27,
+        "Nom": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4
+    },
+    "κέλομαι": {
+      "total": 38,
+      "cases": {
+        "Dat": 29,
+        "Acc": 9
+      },
+      "primary_case": "Dat",
+      "confidence": 0.7632
+    },
+    "κήδω": {
+      "total": 17,
+      "cases": {
+        "Gen": 9,
+        "Acc": 7,
+        "Dat": 1
+      },
+      "primary_case": "Gen",
+      "confidence": 0.5294
+    },
+    "κίω": {
+      "total": 22,
+      "cases": {
+        "Dat": 9,
+        "Acc": 8,
+        "Gen": 5
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4091
+    },
+    "καθέζομαι": {
+      "total": 13,
+      "cases": {
+        "Dat": 9,
+        "Gen": 3,
+        "Acc": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.6923
+    },
+    "καθίζω": {
+      "total": 68,
+      "cases": {
+        "Dat": 27,
+        "Acc": 25,
+        "Gen": 16
+      },
+      "primary_case": "Dat",
+      "confidence": 0.3971
+    },
+    "κατάκειμαι": {
+      "total": 11,
+      "cases": {
+        "Gen": 5,
+        "Dat": 5,
+        "Acc": 1
+      },
+      "primary_case": "Gen",
+      "confidence": 0.4545
+    },
+    "καταπίπτω": {
+      "total": 19,
+      "cases": {
+        "Dat": 14,
+        "Gen": 3,
+        "Acc": 2
+      },
+      "primary_case": "Dat",
+      "confidence": 0.7368
+    },
+    "κατηγορέω": {
+      "total": 24,
+      "cases": {
+        "Gen": 13,
+        "Acc": 11
+      },
+      "primary_case": "Gen",
+      "confidence": 0.5417
+    },
+    "κατοικέω": {
+      "total": 47,
+      "cases": {
+        "Dat": 19,
+        "Acc": 16,
+        "Gen": 12
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4043
+    },
+    "καυχάομαι": {
+      "total": 31,
+      "cases": {
+        "Dat": 18,
+        "Gen": 9,
+        "Acc": 4
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5806
+    },
+    "κεῖμαι": {
+      "total": 125,
+      "cases": {
+        "Dat": 88,
+        "Acc": 20,
+        "Gen": 17
+      },
+      "primary_case": "Dat",
+      "confidence": 0.704
+    },
+    "κλύω": {
+      "total": 55,
+      "cases": {
+        "Gen": 36,
+        "Acc": 18,
+        "Dat": 1
+      },
+      "primary_case": "Gen",
+      "confidence": 0.6545
+    },
+    "κοιμάω": {
+      "total": 15,
+      "cases": {
+        "Dat": 6,
+        "Gen": 5,
+        "Acc": 4
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4
+    },
+    "κοινωνέω": {
+      "total": 15,
+      "cases": {
+        "Gen": 6,
+        "Dat": 6,
+        "Acc": 2,
+        "Nom": 1
+      },
+      "primary_case": "Gen",
+      "confidence": 0.4
+    },
+    "κορύσσω": {
+      "total": 15,
+      "cases": {
+        "Dat": 13,
+        "Acc": 2
+      },
+      "primary_case": "Dat",
+      "confidence": 0.8667
+    },
+    "κοσμέω": {
+      "total": 53,
+      "cases": {
+        "Dat": 25,
+        "Acc": 24,
+        "Gen": 4
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4717
+    },
+    "κράζω": {
+      "total": 20,
+      "cases": {
+        "Dat": 14,
+        "Gen": 4,
+        "Acc": 2
+      },
+      "primary_case": "Dat",
+      "confidence": 0.7
+    },
+    "κρεμάννυμι": {
+      "total": 13,
+      "cases": {
+        "Gen": 6,
+        "Acc": 4,
+        "Dat": 3
+      },
+      "primary_case": "Gen",
+      "confidence": 0.4615
+    },
+    "κυρέω": {
+      "total": 18,
+      "cases": {
+        "Dat": 7,
+        "Gen": 7,
+        "Acc": 2,
+        "Nom": 2
+      },
+      "primary_case": "Dat",
+      "confidence": 0.3889
+    },
+    "λάμπω": {
+      "total": 24,
+      "cases": {
+        "Dat": 17,
+        "Acc": 4,
+        "Gen": 3
+      },
+      "primary_case": "Dat",
+      "confidence": 0.7083
+    },
+    "λήγω": {
+      "total": 20,
+      "cases": {
+        "Gen": 17,
+        "Acc": 2,
+        "Dat": 1
+      },
+      "primary_case": "Gen",
+      "confidence": 0.85
+    },
+    "λατρεύω": {
+      "total": 19,
+      "cases": {
+        "Dat": 10,
+        "Acc": 5,
+        "Gen": 4
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5263
+    },
+    "μάχομαι": {
+      "total": 147,
+      "cases": {
+        "Dat": 96,
+        "Acc": 33,
+        "Gen": 18
+      },
+      "primary_case": "Dat",
+      "confidence": 0.6531
+    },
+    "μέδομαι": {
+      "total": 11,
+      "cases": {
+        "Gen": 7,
+        "Acc": 2,
+        "Dat": 2
+      },
+      "primary_case": "Gen",
+      "confidence": 0.6364
+    },
+    "μέλω": {
+      "total": 47,
+      "cases": {
+        "Dat": 36,
+        "Gen": 6,
+        "Acc": 4,
+        "Nom": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.766
+    },
+    "μένω": {
+      "total": 144,
+      "cases": {
+        "Dat": 70,
+        "Acc": 59,
+        "Gen": 15
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4861
+    },
+    "μέτειμι": {
+      "total": 17,
+      "cases": {
+        "Dat": 11,
+        "Acc": 3,
+        "Gen": 3
+      },
+      "primary_case": "Dat",
+      "confidence": 0.6471
+    },
+    "μίγνυμι": {
+      "total": 70,
+      "cases": {
+        "Dat": 61,
+        "Acc": 7,
+        "Gen": 2
+      },
+      "primary_case": "Dat",
+      "confidence": 0.8714
+    },
+    "μαρτυρέω": {
+      "total": 45,
+      "cases": {
+        "Gen": 26,
+        "Dat": 9,
+        "Acc": 8,
+        "Nom": 2
+      },
+      "primary_case": "Gen",
+      "confidence": 0.5778
+    },
+    "μεριμνάω": {
+      "total": 14,
+      "cases": {
+        "Gen": 8,
+        "Acc": 4,
+        "Dat": 2
+      },
+      "primary_case": "Gen",
+      "confidence": 0.5714
+    },
+    "μετέχω": {
+      "total": 16,
+      "cases": {
+        "Gen": 12,
+        "Acc": 4
+      },
+      "primary_case": "Gen",
+      "confidence": 0.75
+    },
+    "μετανοέω": {
+      "total": 10,
+      "cases": {
+        "Gen": 6,
+        "Dat": 2,
+        "Acc": 2
+      },
+      "primary_case": "Gen",
+      "confidence": 0.6
+    },
+    "μεταπρέπω": {
+      "total": 11,
+      "cases": {
+        "Dat": 10,
+        "Acc": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.9091
+    },
+    "μεταυδάω": {
+      "total": 12,
+      "cases": {
+        "Dat": 9,
+        "Acc": 2,
+        "Gen": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.75
+    },
+    "μετεῖπον": {
+      "total": 10,
+      "cases": {
+        "Dat": 10
+      },
+      "primary_case": "Dat",
+      "confidence": 1.0
+    },
+    "μιμνήσκω": {
+      "total": 66,
+      "cases": {
+        "Gen": 54,
+        "Acc": 9,
+        "Dat": 3
+      },
+      "primary_case": "Gen",
+      "confidence": 0.8182
+    },
+    "μνημονεύω": {
+      "total": 51,
+      "cases": {
+        "Gen": 26,
+        "Dat": 15,
+        "Acc": 9,
+        "Nom": 1
+      },
+      "primary_case": "Gen",
+      "confidence": 0.5098
+    },
+    "νίζω": {
+      "total": 17,
+      "cases": {
+        "Dat": 7,
+        "Acc": 7,
+        "Gen": 3
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4118
+    },
+    "ναίω": {
+      "total": 48,
+      "cases": {
+        "Dat": 21,
+        "Acc": 16,
+        "Gen": 11
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4375
+    },
+    "ναυμαχέω": {
+      "total": 14,
+      "cases": {
+        "Dat": 10,
+        "Acc": 3,
+        "Gen": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.7143
+    },
+    "νεμεσάω": {
+      "total": 15,
+      "cases": {
+        "Dat": 12,
+        "Acc": 3
+      },
+      "primary_case": "Dat",
+      "confidence": 0.8
+    },
+    "ξενίζω": {
+      "total": 14,
+      "cases": {
+        "Dat": 7,
+        "Acc": 6,
+        "Gen": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5
+    },
+    "πέλω": {
+      "total": 31,
+      "cases": {
+        "Dat": 21,
+        "Gen": 5,
+        "Acc": 5
+      },
+      "primary_case": "Dat",
+      "confidence": 0.6774
+    },
+    "πέτομαι": {
+      "total": 21,
+      "cases": {
+        "Gen": 11,
+        "Acc": 5,
+        "Dat": 5
+      },
+      "primary_case": "Gen",
+      "confidence": 0.5238
+    },
+    "πήγνυμι": {
+      "total": 49,
+      "cases": {
+        "Dat": 24,
+        "Acc": 18,
+        "Gen": 7
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4898
+    },
+    "πίμπλημι": {
+      "total": 45,
+      "cases": {
+        "Gen": 22,
+        "Acc": 15,
+        "Dat": 8
+      },
+      "primary_case": "Gen",
+      "confidence": 0.4889
+    },
+    "πίπτω": {
+      "total": 158,
+      "cases": {
+        "Dat": 64,
+        "Acc": 62,
+        "Gen": 32
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4051
+    },
+    "παίζω": {
+      "total": 11,
+      "cases": {
+        "Dat": 4,
+        "Acc": 4,
+        "Gen": 3
+      },
+      "primary_case": "Dat",
+      "confidence": 0.3636
+    },
+    "παρίστημι": {
+      "total": 65,
+      "cases": {
+        "Dat": 37,
+        "Acc": 22,
+        "Gen": 6
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5692
+    },
+    "παραγγέλλω": {
+      "total": 14,
+      "cases": {
+        "Dat": 8,
+        "Acc": 5,
+        "Gen": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5714
+    },
+    "πατέομαι": {
+      "total": 11,
+      "cases": {
+        "Gen": 5,
+        "Dat": 3,
+        "Acc": 3
+      },
+      "primary_case": "Gen",
+      "confidence": 0.4545
+    },
+    "πείθω": {
+      "total": 177,
+      "cases": {
+        "Dat": 84,
+        "Acc": 79,
+        "Gen": 12,
+        "Nom": 2
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4746
+    },
+    "πειράω": {
+      "total": 34,
+      "cases": {
+        "Gen": 16,
+        "Acc": 12,
+        "Dat": 6
+      },
+      "primary_case": "Gen",
+      "confidence": 0.4706
+    },
+    "πελάζω": {
+      "total": 23,
+      "cases": {
+        "Dat": 14,
+        "Acc": 8,
+        "Gen": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.6087
+    },
+    "περιγίγνομαι": {
+      "total": 10,
+      "cases": {
+        "Dat": 4,
+        "Gen": 3,
+        "Acc": 3
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4
+    },
+    "περιπατέω": {
+      "total": 51,
+      "cases": {
+        "Dat": 26,
+        "Acc": 15,
+        "Gen": 10
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5098
+    },
+    "περισσεύω": {
+      "total": 33,
+      "cases": {
+        "Dat": 17,
+        "Acc": 10,
+        "Gen": 6
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5152
+    },
+    "πολεμίζω": {
+      "total": 15,
+      "cases": {
+        "Dat": 9,
+        "Gen": 5,
+        "Acc": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.6
+    },
+    "προέχω": {
+      "total": 17,
+      "cases": {
+        "Dat": 9,
+        "Acc": 6,
+        "Gen": 2
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5294
+    },
+    "προίστημι": {
+      "total": 10,
+      "cases": {
+        "Gen": 5,
+        "Acc": 3,
+        "Dat": 2
+      },
+      "primary_case": "Gen",
+      "confidence": 0.5
+    },
+    "προαγορεύω": {
+      "total": 10,
+      "cases": {
+        "Dat": 4,
+        "Acc": 4,
+        "Gen": 2
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4
+    },
+    "προβαίνω": {
+      "total": 15,
+      "cases": {
+        "Dat": 6,
+        "Gen": 4,
+        "Acc": 3,
+        "Nom": 1,
+        "Voc": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4
+    },
+    "προεῖπον": {
+      "total": 10,
+      "cases": {
+        "Dat": 8,
+        "Acc": 1,
+        "Gen": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.8
+    },
+    "προσέρχομαι": {
+      "total": 21,
+      "cases": {
+        "Dat": 14,
+        "Gen": 6,
+        "Acc": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.6667
+    },
+    "προσέχω": {
+      "total": 23,
+      "cases": {
+        "Dat": 10,
+        "Gen": 7,
+        "Acc": 6
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4348
+    },
+    "προσεύχομαι": {
+      "total": 38,
+      "cases": {
+        "Dat": 16,
+        "Gen": 13,
+        "Acc": 9
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4211
+    },
+    "πρόκειμαι": {
+      "total": 10,
+      "cases": {
+        "Dat": 8,
+        "Gen": 2
+      },
+      "primary_case": "Dat",
+      "confidence": 0.8
+    },
+    "πρόσειμι": {
+      "total": 16,
+      "cases": {
+        "Dat": 7,
+        "Gen": 5,
+        "Acc": 4
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4375
+    },
+    "πρόσκειμαι": {
+      "total": 11,
+      "cases": {
+        "Dat": 8,
+        "Nom": 1,
+        "Gen": 1,
+        "Acc": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.7273
+    },
+    "πόρω": {
+      "total": 36,
+      "cases": {
+        "Dat": 17,
+        "Acc": 17,
+        "Gen": 2
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4722
+    },
+    "σείω": {
+      "total": 13,
+      "cases": {
+        "Dat": 5,
+        "Acc": 5,
+        "Gen": 3
+      },
+      "primary_case": "Dat",
+      "confidence": 0.3846
+    },
+    "στάζω": {
+      "total": 14,
+      "cases": {
+        "Dat": 6,
+        "Acc": 5,
+        "Gen": 3
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4286
+    },
+    "στέφω": {
+      "total": 12,
+      "cases": {
+        "Dat": 6,
+        "Acc": 5,
+        "Gen": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5
+    },
+    "στερέω": {
+      "total": 13,
+      "cases": {
+        "Gen": 10,
+        "Acc": 3
+      },
+      "primary_case": "Gen",
+      "confidence": 0.7692
+    },
+    "στιχάομαι": {
+      "total": 10,
+      "cases": {
+        "Dat": 5,
+        "Acc": 3,
+        "Gen": 2
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5
+    },
+    "στρατηγέω": {
+      "total": 11,
+      "cases": {
+        "Gen": 6,
+        "Dat": 4,
+        "Acc": 1
+      },
+      "primary_case": "Gen",
+      "confidence": 0.5455
+    },
+    "στρατοπεδεύω": {
+      "total": 15,
+      "cases": {
+        "Dat": 11,
+        "Gen": 3,
+        "Acc": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.7333
+    },
+    "συμβαίνω": {
+      "total": 28,
+      "cases": {
+        "Dat": 14,
+        "Acc": 12,
+        "Gen": 2
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5
+    },
+    "συμμαχέω": {
+      "total": 19,
+      "cases": {
+        "Dat": 10,
+        "Acc": 5,
+        "Gen": 4
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5263
+    },
+    "συμπίτνω": {
+      "total": 10,
+      "cases": {
+        "Dat": 5,
+        "Acc": 4,
+        "Gen": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5
+    },
+    "συμφέρω": {
+      "total": 27,
+      "cases": {
+        "Dat": 18,
+        "Acc": 9
+      },
+      "primary_case": "Dat",
+      "confidence": 0.6667
+    },
+    "σύνειμι": {
+      "total": 38,
+      "cases": {
+        "Dat": 26,
+        "Acc": 6,
+        "Gen": 5,
+        "Nom": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.6842
+    },
+    "τεκμαίρομαι": {
+      "total": 10,
+      "cases": {
+        "Dat": 5,
+        "Acc": 3,
+        "Gen": 2
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5
+    },
+    "τελευτάω": {
+      "total": 67,
+      "cases": {
+        "Dat": 30,
+        "Acc": 28,
+        "Gen": 8,
+        "Nom": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4478
+    },
+    "τεύχω": {
+      "total": 61,
+      "cases": {
+        "Dat": 30,
+        "Acc": 24,
+        "Gen": 7
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4918
+    },
+    "τιτύσκομαι": {
+      "total": 11,
+      "cases": {
+        "Gen": 4,
+        "Acc": 4,
+        "Dat": 3
+      },
+      "primary_case": "Gen",
+      "confidence": 0.3636
+    },
+    "τυγχάνω": {
+      "total": 87,
+      "cases": {
+        "Gen": 50,
+        "Dat": 20,
+        "Acc": 14,
+        "Nom": 3
+      },
+      "primary_case": "Gen",
+      "confidence": 0.5747
+    },
+    "φαίνω": {
+      "total": 117,
+      "cases": {
+        "Dat": 58,
+        "Acc": 42,
+        "Gen": 15,
+        "Nom": 2
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4957
+    },
+    "φανερόω": {
+      "total": 37,
+      "cases": {
+        "Dat": 15,
+        "Acc": 14,
+        "Gen": 8
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4054
+    },
+    "φείδομαι": {
+      "total": 10,
+      "cases": {
+        "Gen": 8,
+        "Acc": 1,
+        "Dat": 1
+      },
+      "primary_case": "Gen",
+      "confidence": 0.8
+    },
+    "φημί": {
+      "total": 264,
+      "cases": {
+        "Dat": 108,
+        "Acc": 107,
+        "Gen": 31,
+        "Nom": 16,
+        "Voc": 2
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4091
+    },
+    "φθίω": {
+      "total": 16,
+      "cases": {
+        "Dat": 10,
+        "Acc": 5,
+        "Gen": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.625
+    },
+    "φράσσω": {
+      "total": 12,
+      "cases": {
+        "Dat": 7,
+        "Acc": 5
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5833
+    },
+    "φρουρέω": {
+      "total": 12,
+      "cases": {
+        "Dat": 5,
+        "Acc": 5,
+        "Gen": 2
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4167
+    },
+    "φύω": {
+      "total": 41,
+      "cases": {
+        "Dat": 22,
+        "Gen": 11,
+        "Acc": 7,
+        "Nom": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5366
+    },
+    "χάζω": {
+      "total": 16,
+      "cases": {
+        "Gen": 8,
+        "Acc": 8
+      },
+      "primary_case": "Gen",
+      "confidence": 0.5
+    },
+    "χαίρω": {
+      "total": 58,
+      "cases": {
+        "Dat": 47,
+        "Acc": 9,
+        "Gen": 2
+      },
+      "primary_case": "Dat",
+      "confidence": 0.8103
+    },
+    "χαρίζομαι": {
+      "total": 31,
+      "cases": {
+        "Dat": 16,
+        "Acc": 13,
+        "Gen": 2
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5161
+    },
+    "χολόω": {
+      "total": 35,
+      "cases": {
+        "Dat": 15,
+        "Acc": 10,
+        "Gen": 10
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4286
+    },
+    "χράομαι": {
+      "total": 27,
+      "cases": {
+        "Dat": 24,
+        "Acc": 3
+      },
+      "primary_case": "Dat",
+      "confidence": 0.8889
+    },
+    "χράω": {
+      "total": 166,
+      "cases": {
+        "Dat": 88,
+        "Acc": 63,
+        "Gen": 15
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5301
+    },
+    "χραύω": {
+      "total": 13,
+      "cases": {
+        "Dat": 7,
+        "Acc": 5,
+        "Gen": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5385
+    },
+    "χωρίζω": {
+      "total": 15,
+      "cases": {
+        "Gen": 9,
+        "Acc": 6
+      },
+      "primary_case": "Gen",
+      "confidence": 0.6
+    },
+    "χώομαι": {
+      "total": 16,
+      "cases": {
+        "Gen": 7,
+        "Acc": 5,
+        "Dat": 4
+      },
+      "primary_case": "Gen",
+      "confidence": 0.4375
+    },
+    "ψαύω": {
+      "total": 10,
+      "cases": {
+        "Dat": 5,
+        "Gen": 4,
+        "Acc": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5
+    },
+    "ἀίσσω": {
+      "total": 33,
+      "cases": {
+        "Gen": 15,
+        "Acc": 11,
+        "Dat": 7
+      },
+      "primary_case": "Gen",
+      "confidence": 0.4545
+    },
+    "ἀγγέλλω": {
+      "total": 21,
+      "cases": {
+        "Dat": 11,
+        "Acc": 8,
+        "Nom": 1,
+        "Gen": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5238
+    },
+    "ἀκολουθέω": {
+      "total": 22,
+      "cases": {
+        "Dat": 11,
+        "Gen": 9,
+        "Acc": 2
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5
+    },
+    "ἀκοντίζω": {
+      "total": 27,
+      "cases": {
+        "Dat": 14,
+        "Gen": 9,
+        "Acc": 4
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5185
+    },
+    "ἀλείφω": {
+      "total": 21,
+      "cases": {
+        "Dat": 11,
+        "Acc": 10
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5238
+    },
+    "ἀμφισβητέω": {
+      "total": 10,
+      "cases": {
+        "Gen": 6,
+        "Dat": 2,
+        "Acc": 2
+      },
+      "primary_case": "Gen",
+      "confidence": 0.6
+    },
+    "ἀμύνω": {
+      "total": 77,
+      "cases": {
+        "Dat": 33,
+        "Acc": 31,
+        "Gen": 12,
+        "Nom": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4286
+    },
+    "ἀνάσσω": {
+      "total": 33,
+      "cases": {
+        "Dat": 26,
+        "Gen": 6,
+        "Acc": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.7879
+    },
+    "ἀναζεύγνυμι": {
+      "total": 11,
+      "cases": {
+        "Gen": 6,
+        "Acc": 4,
+        "Dat": 1
+      },
+      "primary_case": "Gen",
+      "confidence": 0.5455
+    },
+    "ἀναφαίνω": {
+      "total": 11,
+      "cases": {
+        "Dat": 8,
+        "Acc": 2,
+        "Gen": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.7273
+    },
+    "ἀντιάω": {
+      "total": 11,
+      "cases": {
+        "Gen": 7,
+        "Acc": 2,
+        "Dat": 2
+      },
+      "primary_case": "Gen",
+      "confidence": 0.6364
+    },
+    "ἀξιόω": {
+      "total": 12,
+      "cases": {
+        "Gen": 5,
+        "Acc": 4,
+        "Dat": 3
+      },
+      "primary_case": "Gen",
+      "confidence": 0.4167
+    },
+    "ἀπέχω": {
+      "total": 42,
+      "cases": {
+        "Gen": 24,
+        "Acc": 16,
+        "Dat": 2
+      },
+      "primary_case": "Gen",
+      "confidence": 0.5714
+    },
+    "ἀπαλλάσσω": {
+      "total": 33,
+      "cases": {
+        "Gen": 17,
+        "Acc": 14,
+        "Dat": 1,
+        "Nom": 1
+      },
+      "primary_case": "Gen",
+      "confidence": 0.5152
+    },
+    "ἀπαντάω": {
+      "total": 10,
+      "cases": {
+        "Gen": 5,
+        "Dat": 3,
+        "Acc": 2
+      },
+      "primary_case": "Gen",
+      "confidence": 0.5
+    },
+    "ἀποθνήσκω": {
+      "total": 14,
+      "cases": {
+        "Dat": 5,
+        "Acc": 5,
+        "Gen": 4
+      },
+      "primary_case": "Dat",
+      "confidence": 0.3571
+    },
+    "ἀποθνῄσκω": {
+      "total": 54,
+      "cases": {
+        "Dat": 27,
+        "Gen": 18,
+        "Acc": 9
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5
+    },
+    "ἀποκαλύπτω": {
+      "total": 15,
+      "cases": {
+        "Dat": 6,
+        "Acc": 6,
+        "Gen": 3
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4
+    },
+    "ἀποπαύω": {
+      "total": 12,
+      "cases": {
+        "Gen": 7,
+        "Acc": 5
+      },
+      "primary_case": "Gen",
+      "confidence": 0.5833
+    },
+    "ἀποσπάω": {
+      "total": 16,
+      "cases": {
+        "Gen": 9,
+        "Acc": 6,
+        "Dat": 1
+      },
+      "primary_case": "Gen",
+      "confidence": 0.5625
+    },
+    "ἀποχωρέω": {
+      "total": 11,
+      "cases": {
+        "Gen": 7,
+        "Acc": 4
+      },
+      "primary_case": "Gen",
+      "confidence": 0.6364
+    },
+    "ἀράομαι": {
+      "total": 10,
+      "cases": {
+        "Dat": 6,
+        "Acc": 4
+      },
+      "primary_case": "Dat",
+      "confidence": 0.6
+    },
+    "ἀρήγω": {
+      "total": 10,
+      "cases": {
+        "Dat": 10
+      },
+      "primary_case": "Dat",
+      "confidence": 1.0
+    },
+    "ἀραβέω": {
+      "total": 10,
+      "cases": {
+        "Dat": 9,
+        "Acc": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.9
+    },
+    "ἀραρίσκω": {
+      "total": 27,
+      "cases": {
+        "Dat": 22,
+        "Acc": 4,
+        "Gen": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.8148
+    },
+    "ἀρκέω": {
+      "total": 24,
+      "cases": {
+        "Dat": 15,
+        "Acc": 5,
+        "Gen": 4
+      },
+      "primary_case": "Dat",
+      "confidence": 0.625
+    },
+    "ἀσκέω": {
+      "total": 12,
+      "cases": {
+        "Dat": 6,
+        "Acc": 5,
+        "Gen": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5
+    },
+    "ἀφίστημι": {
+      "total": 58,
+      "cases": {
+        "Gen": 41,
+        "Acc": 13,
+        "Dat": 4
+      },
+      "primary_case": "Gen",
+      "confidence": 0.7069
+    },
+    "ἀφεστήξω": {
+      "total": 19,
+      "cases": {
+        "Gen": 13,
+        "Acc": 5,
+        "Dat": 1
+      },
+      "primary_case": "Gen",
+      "confidence": 0.6842
+    },
+    "ἁνδάνω": {
+      "total": 16,
+      "cases": {
+        "Dat": 16
+      },
+      "primary_case": "Dat",
+      "confidence": 1.0
+    },
+    "ἄπειμι": {
+      "total": 28,
+      "cases": {
+        "Gen": 17,
+        "Acc": 7,
+        "Dat": 4
+      },
+      "primary_case": "Gen",
+      "confidence": 0.6071
+    },
+    "ἄρχω": {
+      "total": 154,
+      "cases": {
+        "Gen": 89,
+        "Acc": 37,
+        "Dat": 28
+      },
+      "primary_case": "Gen",
+      "confidence": 0.5779
+    },
+    "ἄω": {
+      "total": 14,
+      "cases": {
+        "Gen": 9,
+        "Acc": 4,
+        "Dat": 1
+      },
+      "primary_case": "Gen",
+      "confidence": 0.6429
+    },
+    "ἅλλομαι": {
+      "total": 27,
+      "cases": {
+        "Gen": 11,
+        "Dat": 10,
+        "Acc": 6
+      },
+      "primary_case": "Gen",
+      "confidence": 0.4074
+    },
+    "ἅπτω": {
+      "total": 38,
+      "cases": {
+        "Gen": 26,
+        "Acc": 8,
+        "Dat": 4
+      },
+      "primary_case": "Gen",
+      "confidence": 0.6842
+    },
+    "ἐγγράφω": {
+      "total": 11,
+      "cases": {
+        "Dat": 6,
+        "Acc": 5
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5455
+    },
+    "ἐκγίγνομαι": {
+      "total": 17,
+      "cases": {
+        "Gen": 14,
+        "Dat": 3
+      },
+      "primary_case": "Gen",
+      "confidence": 0.8235
+    },
+    "ἐκπίπτω": {
+      "total": 28,
+      "cases": {
+        "Gen": 17,
+        "Dat": 6,
+        "Acc": 5
+      },
+      "primary_case": "Gen",
+      "confidence": 0.6071
+    },
+    "ἐκπίτνω": {
+      "total": 20,
+      "cases": {
+        "Gen": 13,
+        "Acc": 5,
+        "Dat": 2
+      },
+      "primary_case": "Gen",
+      "confidence": 0.65
+    },
+    "ἐκπλήσσω": {
+      "total": 12,
+      "cases": {
+        "Dat": 11,
+        "Acc": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.9167
+    },
+    "ἐκπορεύομαι": {
+      "total": 25,
+      "cases": {
+        "Gen": 18,
+        "Acc": 6,
+        "Dat": 1
+      },
+      "primary_case": "Gen",
+      "confidence": 0.72
+    },
+    "ἐμπίπτω": {
+      "total": 29,
+      "cases": {
+        "Dat": 14,
+        "Acc": 12,
+        "Gen": 3
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4828
+    },
+    "ἐμπρήθω": {
+      "total": 11,
+      "cases": {
+        "Dat": 5,
+        "Acc": 5,
+        "Gen": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4545
+    },
+    "ἐνέχω": {
+      "total": 10,
+      "cases": {
+        "Dat": 6,
+        "Acc": 4
+      },
+      "primary_case": "Dat",
+      "confidence": 0.6
+    },
+    "ἐνεργέω": {
+      "total": 26,
+      "cases": {
+        "Dat": 15,
+        "Acc": 10,
+        "Gen": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5769
+    },
+    "ἐντυγχάνω": {
+      "total": 12,
+      "cases": {
+        "Dat": 7,
+        "Gen": 4,
+        "Acc": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5833
+    },
+    "ἐξάρχω": {
+      "total": 12,
+      "cases": {
+        "Gen": 5,
+        "Dat": 4,
+        "Acc": 3
+      },
+      "primary_case": "Gen",
+      "confidence": 0.4167
+    },
+    "ἐξέρχομαι": {
+      "total": 145,
+      "cases": {
+        "Gen": 82,
+        "Acc": 53,
+        "Dat": 10
+      },
+      "primary_case": "Gen",
+      "confidence": 0.5655
+    },
+    "ἐξίστημι": {
+      "total": 12,
+      "cases": {
+        "Dat": 7,
+        "Acc": 4,
+        "Gen": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5833
+    },
+    "ἐπέρχομαι": {
+      "total": 30,
+      "cases": {
+        "Dat": 13,
+        "Acc": 12,
+        "Gen": 5
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4333
+    },
+    "ἐπείγω": {
+      "total": 14,
+      "cases": {
+        "Dat": 5,
+        "Acc": 5,
+        "Gen": 4
+      },
+      "primary_case": "Dat",
+      "confidence": 0.3571
+    },
+    "ἐπιβαίνω": {
+      "total": 39,
+      "cases": {
+        "Gen": 27,
+        "Acc": 11,
+        "Dat": 1
+      },
+      "primary_case": "Gen",
+      "confidence": 0.6923
+    },
+    "ἐπιβουλεύω": {
+      "total": 12,
+      "cases": {
+        "Dat": 6,
+        "Gen": 5,
+        "Acc": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5
+    },
+    "ἐπιθυμέω": {
+      "total": 13,
+      "cases": {
+        "Gen": 9,
+        "Acc": 3,
+        "Dat": 1
+      },
+      "primary_case": "Gen",
+      "confidence": 0.6923
+    },
+    "ἐπικραίνω": {
+      "total": 10,
+      "cases": {
+        "Dat": 6,
+        "Acc": 4
+      },
+      "primary_case": "Dat",
+      "confidence": 0.6
+    },
+    "ἐπικρατέω": {
+      "total": 10,
+      "cases": {
+        "Dat": 5,
+        "Gen": 3,
+        "Voc": 1,
+        "Acc": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5
+    },
+    "ἐπιμιμνήσκομαι": {
+      "total": 13,
+      "cases": {
+        "Gen": 6,
+        "Acc": 4,
+        "Dat": 3
+      },
+      "primary_case": "Gen",
+      "confidence": 0.4615
+    },
+    "ἐπιπείθομαι": {
+      "total": 13,
+      "cases": {
+        "Dat": 13
+      },
+      "primary_case": "Dat",
+      "confidence": 1.0
+    },
+    "ἐπιπλέω": {
+      "total": 17,
+      "cases": {
+        "Dat": 8,
+        "Acc": 8,
+        "Gen": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4706
+    },
+    "ἐπισεύω": {
+      "total": 16,
+      "cases": {
+        "Dat": 7,
+        "Acc": 5,
+        "Gen": 4
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4375
+    },
+    "ἐπιτέλλω": {
+      "total": 36,
+      "cases": {
+        "Dat": 25,
+        "Acc": 11
+      },
+      "primary_case": "Dat",
+      "confidence": 0.6944
+    },
+    "ἐπορούω": {
+      "total": 12,
+      "cases": {
+        "Dat": 11,
+        "Acc": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.9167
+    },
+    "ἐπόρνυμι": {
+      "total": 10,
+      "cases": {
+        "Dat": 6,
+        "Acc": 4
+      },
+      "primary_case": "Dat",
+      "confidence": 0.6
+    },
+    "ἐράω": {
+      "total": 21,
+      "cases": {
+        "Gen": 19,
+        "Acc": 2
+      },
+      "primary_case": "Gen",
+      "confidence": 0.9048
+    },
+    "ἐρίζω": {
+      "total": 22,
+      "cases": {
+        "Dat": 13,
+        "Acc": 5,
+        "Gen": 4
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5909
+    },
+    "ἐρείδω": {
+      "total": 24,
+      "cases": {
+        "Dat": 13,
+        "Gen": 7,
+        "Acc": 4
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5417
+    },
+    "ἐρείπω": {
+      "total": 20,
+      "cases": {
+        "Gen": 11,
+        "Dat": 6,
+        "Acc": 3
+      },
+      "primary_case": "Gen",
+      "confidence": 0.55
+    },
+    "ἐφάπτω": {
+      "total": 11,
+      "cases": {
+        "Dat": 5,
+        "Gen": 4,
+        "Acc": 2
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4545
+    },
+    "ἐφίστημι": {
+      "total": 43,
+      "cases": {
+        "Dat": 27,
+        "Acc": 14,
+        "Gen": 2
+      },
+      "primary_case": "Dat",
+      "confidence": 0.6279
+    },
+    "ἔνειμι": {
+      "total": 14,
+      "cases": {
+        "Dat": 14
+      },
+      "primary_case": "Dat",
+      "confidence": 1.0
+    },
+    "ἔξεστι": {
+      "total": 30,
+      "cases": {
+        "Dat": 19,
+        "Acc": 5,
+        "Gen": 4,
+        "Voc": 2
+      },
+      "primary_case": "Dat",
+      "confidence": 0.6333
+    },
+    "ἔοικα": {
+      "total": 47,
+      "cases": {
+        "Dat": 38,
+        "Acc": 7,
+        "Gen": 1,
+        "Voc": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.8085
+    },
+    "ἔπειμι": {
+      "total": 35,
+      "cases": {
+        "Dat": 16,
+        "Acc": 11,
+        "Gen": 7,
+        "Nom": 1
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4571
+    },
+    "ἔραμαι": {
+      "total": 30,
+      "cases": {
+        "Gen": 27,
+        "Dat": 3
+      },
+      "primary_case": "Gen",
+      "confidence": 0.9
+    },
+    "ἔργω": {
+      "total": 22,
+      "cases": {
+        "Gen": 10,
+        "Acc": 10,
+        "Dat": 2
+      },
+      "primary_case": "Gen",
+      "confidence": 0.4545
+    },
+    "ἕζομαι": {
+      "total": 13,
+      "cases": {
+        "Dat": 6,
+        "Acc": 4,
+        "Gen": 3
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4615
+    },
+    "ἕπομαι": {
+      "total": 94,
+      "cases": {
+        "Dat": 69,
+        "Acc": 18,
+        "Gen": 7
+      },
+      "primary_case": "Dat",
+      "confidence": 0.734
+    },
+    "ἡσσάομαι": {
+      "total": 22,
+      "cases": {
+        "Dat": 14,
+        "Acc": 5,
+        "Gen": 3
+      },
+      "primary_case": "Dat",
+      "confidence": 0.6364
+    },
+    "ἥδομαι": {
+      "total": 13,
+      "cases": {
+        "Dat": 10,
+        "Acc": 3
+      },
+      "primary_case": "Dat",
+      "confidence": 0.7692
+    },
+    "ἧμαι": {
+      "total": 49,
+      "cases": {
+        "Dat": 35,
+        "Gen": 10,
+        "Acc": 4
+      },
+      "primary_case": "Dat",
+      "confidence": 0.7143
+    },
+    "ὀρούω": {
+      "total": 14,
+      "cases": {
+        "Dat": 6,
+        "Acc": 5,
+        "Gen": 3
+      },
+      "primary_case": "Dat",
+      "confidence": 0.4286
+    },
+    "ὁμιλέω": {
+      "total": 14,
+      "cases": {
+        "Dat": 9,
+        "Gen": 3,
+        "Acc": 2
+      },
+      "primary_case": "Dat",
+      "confidence": 0.6429
+    },
+    "ὁρμάω": {
+      "total": 88,
+      "cases": {
+        "Gen": 43,
+        "Acc": 35,
+        "Dat": 10
+      },
+      "primary_case": "Gen",
+      "confidence": 0.4886
+    },
+    "ὑπάρχω": {
+      "total": 30,
+      "cases": {
+        "Dat": 15,
+        "Acc": 9,
+        "Gen": 6
+      },
+      "primary_case": "Dat",
+      "confidence": 0.5
+    },
+    "ῥέω": {
+      "total": 59,
+      "cases": {
+        "Gen": 38,
+        "Acc": 11,
+        "Dat": 9,
+        "Nom": 1
+      },
+      "primary_case": "Gen",
+      "confidence": 0.6441
+    }
+  },
+  "construction_frequencies": {
+    "genitive_absolute": 1301,
+    "articular_infinitive": 448,
+    "acc_inf": 0,
+    "relative_clause": 1821,
+    "conditional": 1337,
+    "purpose_clause": 621,
+    "result_clause": 184,
+    "temporal_clause": 889,
+    "total_sentences": 31001
+  }
+}

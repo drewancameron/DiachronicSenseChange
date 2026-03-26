@@ -1,0 +1,40 @@
+## Construction Signposts (from 142K parallel corpus)
+
+**coordination_chain**: "He is pale and thin, he wears a thin and ragged linen shirt."
+  Distribution in real translations:
+  - coordination_chain: 100%
+  → Recommendation: coordination_chain (100% of 23473 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly 
+      → GRC used: coordination_chain
+    [Comparison of Solon and Publicola] EN: Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu
+      → GRC used: coordination_chain
+  Related Greek vocabulary:
+    'wear' → ἀμφοτέρους, τρίβειν, ἐκέλευε, πρῶτον, ἀποτεμόμενον
+
+**coordination_chain**: "His folk are known for hewers of wood and drawers of water but in truth his father has been a school"
+  Distribution in real translations:
+  - coordination_chain: 100%
+  → Recommendation: coordination_chain (100% of 23473 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly 
+      → GRC used: coordination_chain
+    [Comparison of Solon and Publicola] EN: Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu
+      → GRC used: coordination_chain
+  Related Greek vocabulary:
+    'know' → σφᾶς, ἔφη, ἔπειτα, πρότερον, οἶδα
+    'wood' → χάρακα, ἄραντος, σφόδρα, πιέζεσθαι, φάσκοντος
+
+**relative_clause**: "He lies in drink, he quotes from poets whose names are now lost."
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: relative_clause — short defining relative ('poets...lost') → keep as ὅς/ἥ/ὅ + finite verb. Global dist: rel.cl. 41%, gen.abs. 59% — but gen.abs. is for circumstantial, not defining
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'lie' → ἔφη, ἅμα, Ἰταλίας, Σικελίας, καλῶς
+    'drink' → τοιοῦτον, μήτε

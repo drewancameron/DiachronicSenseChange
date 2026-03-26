@@ -1,0 +1,253 @@
+## Construction Signposts (from 142K parallel corpus)
+
+**relative_clause**: "He turned to the man who spoke."
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: relative_clause — short defining relative ('man...spoke') → keep as ὅς/ἥ/ὅ + finite verb. Global dist: rel.cl. 41%, gen.abs. 59% — but gen.abs. is for circumstantial, not defining
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'turn' → ἐπειδὴ, ὑμᾶς, Ἀθηναῖοι, ἑκάτεροι, πάντως
+    'speak' → κακῶς, εἰπεῖν, αὐτοὺς, ἔφη, λέγειν
+
+**relative_clause**: "Well it beats all I ever seen."
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: relative_clause — short defining relative ('all...seen') → keep as ὅς/ἥ/ὅ + finite verb. Global dist: rel.cl. 41%, gen.abs. 59% — but gen.abs. is for circumstantial, not defining
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'see' → ἔφη, ὁρῶ, Ἀθηναῖοι, τινος, ἐγὼ
+
+**relative_clause**: "An enormous man dressed in an oilcloth slicker had entered the tent and removed his hat."
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: genitive_absolute (59% of 15214 matched examples). Note: if this is a defining relative ('the X who Y'), prefer ὅς + finite verb; gen.abs. is for circumstantial clauses
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'dress' → γυναῖκας, ξὺν
+
+**coordination_chain**: "He was bald as a stone and he had no trace of beard and he had no brows to his eyes nor lashes to th"
+  Distribution in real translations:
+  - coordination_chain: 100%
+  → Recommendation: coordination_chain (100% of 23473 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly 
+      → GRC used: coordination_chain
+    [Comparison of Solon and Publicola] EN: Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu
+      → GRC used: coordination_chain
+  Related Greek vocabulary:
+    'beard' → Λάκων, ἐρωτηθεὶς, αἰτίαν, πώγωνος, τρίχας
+
+**coordination_chain**: "He was close on to seven feet in height and he stood smoking a cigar even in this nomadic house of G"
+  Distribution in real translations:
+  - coordination_chain: 100%
+  → Recommendation: coordination_chain (100% of 23473 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly 
+      → GRC used: coordination_chain
+    [Comparison of Solon and Publicola] EN: Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu
+      → GRC used: coordination_chain
+  Related Greek vocabulary:
+    'close' → Ἀθηναῖοι, θέρους, τελευτῶντος, αὐτὴν, ἤδη
+    'foot' → ποταμοῦ
+
+**relative_clause**: "He adjusted the hat and then pushed his way forward as far as the crateboard pulpit where the revere"
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: genitive_absolute (59% of 15214 matched examples). Note: if this is a defining relative ('the X who Y'), prefer ὅς + finite verb; gen.abs. is for circumstantial clauses
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+
+**fragment**: "His face was serene and strangely childlike."
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment
+  Related Greek vocabulary:
+    'face' → ἀναμιμνῄσκω, ὑμᾶς, νενικήκατε, πολλούς, ἡσσημένων
+
+**fragment**: "His hands were small."
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment
+  Related Greek vocabulary:
+    'hand' → δεξιᾷ, αὐτὴν, μᾶλλον, πάλιν, Ξέρξου
+    'small' → μικρὰς, τινος, πόλιας, Πελοποννάσῳ, μεγάλας
+
+**relative_clause**: "Ladies and gentlemen I feel it my duty to inform you that the man holding this revival is an imposte"
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: genitive_absolute (59% of 15214 matched examples). Note: if this is a defining relative ('the X who Y'), prefer ὅς + finite verb; gen.abs. is for circumstantial clauses
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'feel' → αὐτοὶ, τίσιν, πῶς, ἔχοντες, νοσήσας
+    'duty' → οὕτως, Καίσαρος
+
+**relative_clause**: "He holds no papers of divinity from any institution recognized or improvised."
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: relative_clause — short defining relative ('institution...recognized') → keep as ὅς/ἥ/ὅ + finite verb. Global dist: rel.cl. 41%, gen.abs. 59% — but gen.abs. is for circumstantial, not defining
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'hold' → οὔτε, ἀλλ, Τηλέκλου, τινὸς, ἔφη
+
+**relative_clause**: "He is altogether devoid of the least qualification to the office he has usurped and has only committ"
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: genitive_absolute (59% of 15214 matched examples). Note: if this is a defining relative ('the X who Y'), prefer ὅς + finite verb; gen.abs. is for circumstantial clauses
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'least' → ἡμᾶς, ἥκιστα, ἀνθρώπων, Ἀθηναῖοι, στρατεύσαντες
+
+**relative_clause**: "In truth, the gentleman standing here before you posing as a minister of the Lord is not only totall"
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: genitive_absolute (59% of 15214 matched examples). Note: if this is a defining relative ('the X who Y'), prefer ὅς + finite verb; gen.abs. is for circumstantial clauses
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'truth' → ἄλλου, αὐτὰ, λέγοντος, μήν, εἶπεν
+    'stand' → οὔτε, μᾶλλον, ἐγὼ, πλείω, ὁρῶ
+
+**fragment**: "Lies, lies!"
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment
+  Related Greek vocabulary:
+    'lie' → ἔφη, ἅμα, Ἰταλίας, Σικελίας, καλῶς
+    'lie' → ἔφη, ἅμα, Ἰταλίας, Σικελίας, καλῶς
+
+**relative_clause**: "On a variety of charges the most recent of which involved a girl of eleven years—I said eleven—who h"
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: genitive_absolute (59% of 15214 matched examples). Note: if this is a defining relative ('the X who Y'), prefer ὅς + finite verb; gen.abs. is for circumstantial clauses
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'charge' → πολέμῳ, Ἀθηναίοις, ἔφη, ἤδη, ἐγώ
+    'involve' → ἕνεκα, μᾶλλον, ζῶντι
+
+**fragment**: "This is him, cried the reverend, sobbing."
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment
+  Related Greek vocabulary:
+    'cry' → Λάκων, αἰχμαλωτισθεὶς, πιπρασκόμενος, κήρυκος, λέγοντος
+
+**fragment**: "This is him."
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment
+
+**fragment**: "The devil."
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment
+
+**relative_clause**: "Yes lady, that is what I said."
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: relative_clause — short defining relative ('what...said') → keep as ὅς/ἥ/ὅ + finite verb. Global dist: rel.cl. 41%, gen.abs. 59% — but gen.abs. is for circumstantial, not defining
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'say' → αὐτοὺς, μήτε, Βοιωτῶν, αὐτοί, εἰπεῖν
+
+**fragment**: "Goat."
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment
+
+**conditional**: "Why damn my eyes if I wont shoot the son of a bitch, said a man rising at the far side of the tent, "
+  Distribution in real translations:
+  - conditional_real: 54%
+  - conditional_fv: 24%
+  - conditional_opt: 22%
+  → Recommendation: conditional_real (54% of 2916 matched examples)
+  Examples:
+    [Comparison of Solon and Publicola] EN: Its purpose was that the consul, if a worthy officer, might not be without leisu
+      → GRC used: conditional_real
+    [Comparison of Theseus and Romulus] EN: And we should not blame her for loving him, but rather wonder that all men and w
+      → GRC used: conditional_real
+  Related Greek vocabulary:
+    'eye' → ὅμοιον, τελευτήσαντος, Δημάδης, ῥήτωρ, ἔφη
+    'say' → αὐτοὺς, μήτε, Βοιωτῶν, αὐτοί, εἰπεῖν

@@ -1,0 +1,76 @@
+## Construction Signposts (from 142K parallel corpus)
+
+**relative_clause**: "Only now is the child finally divested of all that he has been."
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: relative_clause — short defining relative ('all...been') → keep as ὅς/ἥ/ὅ + finite verb. Global dist: rel.cl. 41%, gen.abs. 59% — but gen.abs. is for circumstantial, not defining
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'child' → γυναικὸς, παιδίον, ἔτυχεν, ἐπιδημῶν, ἱκέτης
+
+**coordination_chain**: "His origins are become remote as is his destiny and not again in all the world's turning will there "
+  Distribution in real translations:
+  - coordination_chain: 100%
+  → Recommendation: coordination_chain (100% of 23473 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: Now that we have recounted the lives of Numa and Lycurgus, and both lie clearly 
+      → GRC used: coordination_chain
+    [Comparison of Solon and Publicola] EN: Tellus, whom Solon pronounced the most blessed man he knew, because of his fortu
+      → GRC used: coordination_chain
+  Related Greek vocabulary:
+    'origin' → γενέσθαι
+    'become' → δεῖ, ὅπως, ἡμῖν, ἔφη, μόνον
+
+**fragment**: "The passengers are a diffident lot."
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment
+
+**relative_clause**: "They cage their eyes and no man asks another what it is that brings him here."
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: relative_clause — short defining relative ('what...brings') → keep as ὅς/ἥ/ὅ + finite verb. Global dist: rel.cl. 41%, gen.abs. 59% — but gen.abs. is for circumstantial, not defining
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'eye' → ὅμοιον, τελευτήσαντος, Δημάδης, ῥήτωρ, ἔφη
+    'ask' → ἔφη, ἐρωτᾶν, Λακεδαιμονίους, κεῖται, ἀπεκρίνατο
+
+**fragment**: "Flights of pelicans coastwise above the gray swells."
+  Distribution in real translations:
+  - fragment: 100%
+  → Recommendation: fragment (100% of 7231 matched examples)
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: For their points of likeness are obvious from their careers: their wise moderati
+      → GRC used: fragment
+    [Comparison of Solon and Publicola] EN: And his appointment of quaestors over the public moneys mad a like origin.
+      → GRC used: fragment
+  Related Greek vocabulary:
+    'flight' → φυγὴν, ἐπέπεσε, στρατεύματι, τρέπουσι, πολλοὺς
+
+**relative_clause**: "They disembark aboard a lighter, settlers with their chattels, all studying the low coastline, the t"
+  Distribution in real translations:
+  - genitive_absolute: 59%
+  - relative_clause: 41%
+  → Recommendation: genitive_absolute (59% of 15214 matched examples). Note: if this is a defining relative ('the X who Y'), prefer ὅς + finite verb; gen.abs. is for circumstantial clauses
+  Examples:
+    [Comparison of Lycurgus and Numa] EN: a most savage and lawless practice, we shall own that Numa was far more Hellenic
+      → GRC used: relative_clause
+    [Comparison of Solon and Publicola] EN: Tellus, moreover, though he kept his post and fought like a brave man, died at t
+      → GRC used: genitive_absolute
+  Related Greek vocabulary:
+    'light' → πολλὰ, οἷον, ὀλίγῳ, ἐλάσσους, τίς

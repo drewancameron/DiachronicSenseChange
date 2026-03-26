@@ -1,0 +1,470 @@
+{
+  "_meta": {
+    "description": "Inverse Document Frequency glossary for Blood Meridian → Ancient Greek translation",
+    "version": "0.1.0",
+    "conventions": {
+      "register_tags": ["classical", "koine", "septuagintal", "NT", "homeric", "modern_loan", "transliteration"],
+      "status": ["locked", "candidate", "discussion"],
+      "marking_policy": "Words tagged modern_loan or transliteration MUST be visually distinguished in output: use *italics* in markdown, \\textit{} in LaTeX, or <i> in HTML. This signals to the reader that the word is foreign to the ancient register."
+    }
+  },
+
+  "characters": {
+    "the_kid": {
+      "english": "the kid",
+      "korto_mg": "ο μικρός / το παιδί",
+      "ancient_greek": "ὁ παῖς",
+      "register": "classical",
+      "status": "locked",
+      "justification": "παῖς covers both 'child' and 'young man' in classical and Koine usage. Korto alternates ο μικρός (colloquial) and το παιδί; we unify to παῖς which has the right ambiguity — child/servant/youth. Avoids νεανίσκος (too specific to 'young man') and παιδίον (too diminutive).",
+      "marked": false
+    },
+    "the_judge": {
+      "english": "the judge",
+      "korto_mg": "ο δικαστής",
+      "ancient_greek": "ὁ κριτής",
+      "register": "septuagintal",
+      "status": "locked",
+      "justification": "κριτής over δικαστής. In the Septuagint, κριτής = 'judge' in the Book of Judges — figures of terrifying divine-adjacent authority, not merely courtroom officials. This captures the judge's cosmic, quasi-biblical stature. δικαστής is too Athenian-institutional.",
+      "marked": false
+    },
+    "reverend_green": {
+      "english": "the Reverend Green",
+      "korto_mg": "ο αιδεσιμότατος Γκριν",
+      "ancient_greek": "ὁ ἱερεὺς Γρῖνος",
+      "register": "koine",
+      "status": "candidate",
+      "justification": "ἱερεύς = 'priest' broadly. Green is a fraudulent preacher, not truly ordained, but the narrative calls him 'reverend'. Γρῖνος hellenises the name (cf. how Greek historians hellenise foreign names). Alternative: ὁ ψευδοπροφήτης for later ironic references.",
+      "marked": false,
+      "notes": "Γρῖνος is a hellenisation, not a transliteration — no marking needed"
+    },
+    "holden": {
+      "english": "Holden / Judge Holden",
+      "korto_mg": "Χόλντεν",
+      "ancient_greek": "Ὅλδην",
+      "register": "transliteration",
+      "status": "candidate",
+      "justification": "Hellenised transliteration following the pattern of Greek historians rendering barbarian names (cf. Ξέρξης, Δαρεῖος). Ὅλδην with rough breathing echoes the English 'H'. Usually referred to as ὁ κριτής; full name used sparingly.",
+      "marked": true,
+      "notes": "Mark in italics when the transliterated form appears"
+    },
+    "toadvine": {
+      "english": "Toadvine",
+      "korto_mg": "Τόουντβαϊν",
+      "ancient_greek": "Τοαδουῖνος",
+      "register": "transliteration",
+      "status": "candidate",
+      "justification": "Hellenised with Greek masculine ending -ος. The name is too culturally specific to translate (toad + vine).",
+      "marked": true
+    },
+    "glanton": {
+      "english": "Glanton",
+      "korto_mg": "Γκλάντον",
+      "ancient_greek": "Γλάντων",
+      "register": "transliteration",
+      "status": "candidate",
+      "justification": "Hellenised with -ων ending (cf. Πλάτων, Κρίτων). The ντ cluster is natural in Greek.",
+      "marked": true
+    },
+    "the_delawares": {
+      "english": "the Delawares",
+      "korto_mg": null,
+      "ancient_greek": "οἱ Δελαουᾶροι",
+      "register": "transliteration",
+      "status": "candidate",
+      "justification": "Ethnonym, transliterated with Greek plural ending. Following the pattern of how Greek authors render foreign tribal names (cf. οἱ Μασσαγέται).",
+      "marked": true
+    },
+    "the_comanche": {
+      "english": "the Comanche",
+      "korto_mg": null,
+      "ancient_greek": "οἱ Κομάντσιοι",
+      "register": "transliteration",
+      "status": "candidate",
+      "justification": "Ethnonym with hellenised plural. Could alternatively use a descriptive epithet (οἱ ἱππεῖς τῆς ἐρήμου = 'horsemen of the desert') in elevated passages.",
+      "marked": true
+    }
+  },
+
+  "weapons_and_materiel": {
+    "pistol": {
+      "english": "pistol",
+      "korto_mg": "πιστόλι",
+      "ancient_greek": "*πιστόλιον",
+      "register": "modern_loan",
+      "status": "locked",
+      "justification": "No classical equivalent exists. Hellenised with neuter diminutive ending -ιον (cf. βιβλίον). MUST be marked in output. Alternative periphrasis for elevated passages: τὸ μικρὸν πυροβόλον ('small fire-thrower').",
+      "marked": true,
+      "periphrasis": "τὸ μικρὸν πυροβόλον"
+    },
+    "rifle": {
+      "english": "rifle / gun (long)",
+      "korto_mg": "όπλο / τουφέκι",
+      "ancient_greek": "τὸ πυροβόλον",
+      "register": "koine",
+      "status": "locked",
+      "justification": "πυροβόλον = 'fire-thrower', a transparent compound from πῦρ + βάλλω. Used in Byzantine Greek for firearms. Preferable to a modern loanword for the primary weapon. In elevated narrative, τὸ ὅπλον (generic 'weapon') may suffice where context is clear.",
+      "marked": false,
+      "notes": "πυροβόλον is a Greek compound, not a loan — no marking needed"
+    },
+    "gunpowder": {
+      "english": "gunpowder / powder",
+      "korto_mg": "μπαρούτι",
+      "ancient_greek": "ἡ πυρῖτις (κόνις)",
+      "register": "koine",
+      "status": "locked",
+      "justification": "πυρῖτις = 'fire-substance' (from πῦρ). Attested in Byzantine texts for gunpowder. κόνις ('dust/powder') can be added for clarity. Avoids the Turkish loanword μπαρούτι.",
+      "marked": false
+    },
+    "gunshot_shooting": {
+      "english": "gunshot / to shoot",
+      "korto_mg": "πυροβολισμός / πυροβολεί",
+      "ancient_greek": "πυροβολέω / πυροβολισμός",
+      "register": "koine",
+      "status": "locked",
+      "justification": "Verbal form of πυροβόλον. Transparent Greek compound. Byzantine attestation.",
+      "marked": false
+    },
+    "knife": {
+      "english": "knife",
+      "korto_mg": "μαχαίρι",
+      "ancient_greek": "ἡ μάχαιρα",
+      "register": "classical",
+      "status": "locked",
+      "justification": "Standard classical word. Also covers 'short sword' — appropriate for the bowie knives in BM.",
+      "marked": false
+    },
+    "bowie_knife": {
+      "english": "bowie knife / bowieknife",
+      "korto_mg": "κυνηγετικό μαχαίρι",
+      "ancient_greek": "ἡ μεγάλη μάχαιρα / τὸ κυνηγετικὸν ξίφος",
+      "register": "classical",
+      "status": "candidate",
+      "justification": "Korto uses 'hunting knife' (κυνηγετικό μαχαίρι). In ancient Greek: μεγάλη μάχαιρα ('great knife') or κυνηγετικὸν ξίφος ('hunting sword'). The size distinction matters in BM.",
+      "marked": false
+    },
+    "scalp_scalping": {
+      "english": "scalp / scalping",
+      "korto_mg": null,
+      "ancient_greek": "τὸ δέρμα τῆς κεφαλῆς (noun) / ἀποδέρω τὴν κεφαλήν (verb)",
+      "register": "classical",
+      "status": "candidate",
+      "justification": "Periphrasis: 'the skin of the head' / 'to flay the head'. Herodotus (4.64) describes Scythian scalping using ἀποδέρω — this is our strongest classical precedent and McCarthy would approve.",
+      "marked": false,
+      "notes": "Herodotus 4.64 is the locus classicus for scalping in Greek literature"
+    }
+  },
+
+  "geography_and_landscape": {
+    "desert": {
+      "english": "desert / waste",
+      "korto_mg": "έρημος",
+      "ancient_greek": "ἡ ἔρημος / ἡ ἐρημία",
+      "register": "septuagintal",
+      "status": "locked",
+      "justification": "ἔρημος is the Septuagintal desert par excellence. Carries the right biblical desolation. ἐρημία for 'desolation' as abstract quality.",
+      "marked": false
+    },
+    "plain_prairie": {
+      "english": "plain / prairie / flat land",
+      "korto_mg": "πεδίο / τοπίο",
+      "ancient_greek": "τὸ πεδίον",
+      "register": "classical",
+      "status": "locked",
+      "justification": "Standard classical word for flat ground, plain. Works for prairies and mesas alike in non-specific usage.",
+      "marked": false
+    },
+    "mesa": {
+      "english": "mesa",
+      "korto_mg": null,
+      "ancient_greek": "ἡ τράπεζα (τοῦ ὄρους) / τὸ ἐπίπεδον ὄρος",
+      "register": "classical",
+      "status": "candidate",
+      "justification": "τράπεζα = 'table' — a calque of the Spanish 'mesa'. Alternatively τὸ ἐπίπεδον ὄρος = 'flat-topped mountain'.",
+      "marked": false
+    },
+    "river": {
+      "english": "river",
+      "korto_mg": "ποτάμι",
+      "ancient_greek": "ὁ ποταμός",
+      "register": "classical",
+      "status": "locked",
+      "justification": "Universal Greek word, no complications.",
+      "marked": false
+    },
+    "mud": {
+      "english": "mud / mire",
+      "korto_mg": "λάσπη / λάσπες",
+      "ancient_greek": "ὁ πηλός / ἡ ἰλύς",
+      "register": "classical",
+      "status": "locked",
+      "justification": "πηλός = mud, clay (also used in Genesis for the clay of creation — resonant with BM's 'another kind of clay'). ἰλύς = slime, mire, for wetter/nastier contexts.",
+      "marked": false
+    }
+  },
+
+  "elements_and_nature": {
+    "blood": {
+      "english": "blood",
+      "korto_mg": "αίμα",
+      "ancient_greek": "τὸ αἷμα",
+      "register": "classical",
+      "status": "locked",
+      "justification": "Universal, unchanged from Homer to Koine. The title word.",
+      "marked": false
+    },
+    "fire": {
+      "english": "fire",
+      "korto_mg": "φωτιά",
+      "ancient_greek": "τὸ πῦρ",
+      "register": "classical",
+      "status": "locked",
+      "justification": "Universal.",
+      "marked": false
+    },
+    "sun": {
+      "english": "sun",
+      "korto_mg": "ήλιος",
+      "ancient_greek": "ὁ ἥλιος",
+      "register": "classical",
+      "status": "locked",
+      "justification": "Universal.",
+      "marked": false
+    },
+    "dust": {
+      "english": "dust",
+      "korto_mg": "σκόνη",
+      "ancient_greek": "ἡ κόνις",
+      "register": "classical",
+      "status": "locked",
+      "justification": "Classical. Also 'ashes' connotation which suits BM's landscape.",
+      "marked": false
+    },
+    "bones": {
+      "english": "bones",
+      "korto_mg": "κόκαλα",
+      "ancient_greek": "τὰ ὀστᾶ",
+      "register": "classical",
+      "status": "locked",
+      "justification": "Standard classical/Koine form.",
+      "marked": false
+    },
+    "stars": {
+      "english": "stars",
+      "korto_mg": "αστέρια",
+      "ancient_greek": "οἱ ἀστέρες",
+      "register": "classical",
+      "status": "locked",
+      "justification": "Standard. The Leonid meteor shower passage is important — ἀστέρες πίπτοντες ('falling stars').",
+      "marked": false
+    },
+    "night": {
+      "english": "night",
+      "korto_mg": "νύχτα",
+      "ancient_greek": "ἡ νύξ",
+      "register": "classical",
+      "status": "locked",
+      "justification": "Universal. McCarthy's most frequent time-marker.",
+      "marked": false
+    }
+  },
+
+  "animals_and_transport": {
+    "horse": {
+      "english": "horse",
+      "korto_mg": "άλογο",
+      "ancient_greek": "ὁ ἵππος",
+      "register": "classical",
+      "status": "locked",
+      "justification": "Standard classical.",
+      "marked": false
+    },
+    "mule": {
+      "english": "mule",
+      "korto_mg": "μουλάρι",
+      "ancient_greek": "ὁ ἡμίονος",
+      "register": "classical",
+      "status": "locked",
+      "justification": "Standard classical. Literally 'half-ass'. Well attested in Homer and prose.",
+      "marked": false
+    },
+    "wolf": {
+      "english": "wolf / wolves",
+      "korto_mg": "λύκοι",
+      "ancient_greek": "ὁ λύκος",
+      "register": "classical",
+      "status": "locked",
+      "justification": "Universal.",
+      "marked": false
+    }
+  },
+
+  "social_and_institutional": {
+    "tavern_saloon": {
+      "english": "tavern / saloon / dramshop",
+      "korto_mg": "ταβερνείο / σαλούν",
+      "ancient_greek": "τὸ καπηλεῖον",
+      "register": "classical",
+      "status": "locked",
+      "justification": "καπηλεῖον = 'wine-shop, tavern'. Well attested in comedy and prose. Captures the low-status drinking establishment. Avoids transliterated σαλούν.",
+      "marked": false
+    },
+    "hotel": {
+      "english": "hotel",
+      "korto_mg": "ξενοδοχείο",
+      "ancient_greek": "τὸ πανδοκεῖον",
+      "register": "NT",
+      "status": "locked",
+      "justification": "πανδοκεῖον = 'inn' (Luke 10:34, the Good Samaritan). The NT resonance is appropriate — these are rough frontier inns, not modern hotels.",
+      "marked": false
+    },
+    "whore_prostitute": {
+      "english": "whore / whores",
+      "korto_mg": "πόρνες",
+      "ancient_greek": "αἱ πόρναι",
+      "register": "koine",
+      "status": "locked",
+      "justification": "Direct continuity from ancient to modern Greek. NT usage (Matthew, Revelation) gives it the right register for BM's biblical-realist tone.",
+      "marked": false
+    },
+    "pilgrim": {
+      "english": "pilgrim",
+      "korto_mg": "προσκυνητής",
+      "ancient_greek": "ὁ προσκυνητής",
+      "register": "koine",
+      "status": "locked",
+      "justification": "Korto's choice works perfectly in ancient Greek too. A rare case of MG→AG direct transfer.",
+      "marked": false
+    },
+    "dollar_money": {
+      "english": "dollar / dollars / money / coins",
+      "korto_mg": "δολάρια / λεφτά / κέρματα",
+      "ancient_greek": "τὸ ἀργύριον (generic money) / ὁ στατήρ (coin)",
+      "register": "classical",
+      "status": "locked",
+      "justification": "ἀργύριον = 'silver, money' — generic and timeless. Never translate 'dollar' literally. στατήρ for individual coins where needed.",
+      "marked": false
+    }
+  },
+
+  "clothing_and_equipment": {
+    "hat": {
+      "english": "hat",
+      "korto_mg": "καπέλο",
+      "ancient_greek": "ὁ πῖλος / ὁ πέτασος",
+      "register": "classical",
+      "status": "locked",
+      "justification": "πέτασος = wide-brimmed hat (traveller's hat, as worn by Hermes). πῖλος = felt cap. Use πέτασος for the wide-brimmed hats that dominate BM; πῖλος for close-fitting caps.",
+      "marked": false,
+      "notes": "πέτασος is perfect for the wide-brim hats — it even looks like a cowboy hat"
+    },
+    "boots": {
+      "english": "boots",
+      "korto_mg": "μπότες",
+      "ancient_greek": "αἱ ἐμβάδες / αἱ κρηπῖδες",
+      "register": "classical",
+      "status": "locked",
+      "justification": "ἐμβάδες = heavy boots, marching boots (Xenophon). κρηπῖδες = half-boots. Use ἐμβάδες as default — these are rough frontier boots.",
+      "marked": false
+    },
+    "coat": {
+      "english": "coat / slicker / oilcloth",
+      "korto_mg": "αδιάβροχο / μουσαμά",
+      "ancient_greek": "ὁ χιτών (coat) / τὸ κηρωτὸν ἱμάτιον (oilcloth slicker)",
+      "register": "classical",
+      "status": "candidate",
+      "justification": "χιτών for generic coat/shirt. For oilcloth slicker: κηρωτὸν ἱμάτιον = 'waxed garment' — a descriptive compound. Sailors waxed their cloaks in antiquity.",
+      "marked": false
+    },
+    "shirt": {
+      "english": "shirt / linen shirt",
+      "korto_mg": "πουκάμισο",
+      "ancient_greek": "ὁ λίνεος χιτών",
+      "register": "classical",
+      "status": "locked",
+      "justification": "λίνεος χιτών = 'linen tunic'. McCarthy's 'thin and ragged linen shirt' → λίνεος χιτὼν λεπτὸς καὶ ῥακώδης.",
+      "marked": false
+    }
+  },
+
+  "place_names": {
+    "nacogdoches": {
+      "english": "Nacogdoches",
+      "korto_mg": "Νακογκντότσες",
+      "ancient_greek": "*Νακογδόκαι",
+      "register": "transliteration",
+      "status": "candidate",
+      "justification": "Hellenised with Greek plural/place ending. Following Herodotean practice of rendering foreign toponyms into Greek phonology.",
+      "marked": true
+    },
+    "galveston": {
+      "english": "Galveston",
+      "korto_mg": "Γκάλβεστον",
+      "ancient_greek": "*Γαλουεστών",
+      "register": "transliteration",
+      "status": "candidate",
+      "justification": "Hellenised transliteration.",
+      "marked": true
+    },
+    "fort_smith": {
+      "english": "Fort Smith",
+      "korto_mg": "Στρατόπεδο Σμιθ",
+      "ancient_greek": "τὸ φρούριον *Σμίθου",
+      "register": "transliteration",
+      "status": "candidate",
+      "justification": "φρούριον = 'fort, stronghold' (classical). Name in genitive: 'the fort of Smith'. Only the proper name is marked.",
+      "marked": true,
+      "notes": "φρούριον is classical Greek — only *Σμίθου needs marking"
+    },
+    "memphis": {
+      "english": "Memphis",
+      "korto_mg": "Μέμφις",
+      "ancient_greek": "Μέμφις",
+      "register": "classical",
+      "status": "locked",
+      "justification": "Memphis already exists in Greek — it's the Egyptian city name. The coincidence is a gift.",
+      "marked": false
+    },
+    "new_orleans": {
+      "english": "New Orleans",
+      "korto_mg": "Νέα Ορλεάνη",
+      "ancient_greek": "*Νέα Ὀρλεάνη",
+      "register": "transliteration",
+      "status": "candidate",
+      "justification": "Νέα is native Greek ('new'). Only Ὀρλεάνη is foreign. Could also use Νέα Αὐρηλιανή (from French 'Orléans' < Latin Aurelianum) for a more deeply hellenised form.",
+      "marked": true
+    },
+    "texas": {
+      "english": "Texas",
+      "korto_mg": "Τέξας",
+      "ancient_greek": "*Τέξας",
+      "register": "transliteration",
+      "status": "locked",
+      "justification": "Indeclinable transliteration. Too well-known to hellenise further.",
+      "marked": true
+    },
+    "saint_louis": {
+      "english": "Saint Louis",
+      "korto_mg": "Σεντ Λιούις",
+      "ancient_greek": "*Ἅγιος Λουδοβῖκος",
+      "register": "transliteration",
+      "status": "candidate",
+      "justification": "Ἅγιος is native Greek. Λουδοβῖκος is the hellenised form of Louis/Ludwig (used in Byzantine texts). More elegant than raw transliteration.",
+      "marked": true,
+      "notes": "Only Λουδοβῖκος needs marking — Ἅγιος is Greek"
+    }
+  },
+
+  "title": {
+    "blood_meridian": {
+      "english": "Blood Meridian, or The Evening Redness in the West",
+      "korto_mg": "Ματωμένος Μεσημβρινός, ή Το Κόκκινο του Δειλινού στη Δύση",
+      "ancient_greek": "Ὁ Αἱματόεις Μεσημβρινός, ἢ Τὸ Ἑσπέριον Ἐρύθημα",
+      "register": "classical",
+      "status": "candidate",
+      "justification": "αἱματόεις = 'bloody' (Homeric, poetic). μεσημβρινός = 'meridian/of midday' (already Greek in origin). ἑσπέριον ἐρύθημα = 'western redness' — ἕσπερος = 'evening/western', ἐρύθημα = 'redness'. Korto's Ματωμένος Μεσημβρινός is literally 'Bloodied Meridian'.",
+      "marked": false,
+      "notes": "The title is all native Greek — no marking needed"
+    }
+  }
+}

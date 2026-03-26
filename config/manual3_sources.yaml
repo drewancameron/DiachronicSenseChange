@@ -1,0 +1,125 @@
+# Manual3 Sources Registry
+
+sources:
+
+  - filename: "368692259-Eric-Robertson-Dodds-Euripides-Bacchae-Clarendon-Press-1960-1.pdf"
+    title: "Euripides: Bacchae (2nd edition)"
+    author: "E.R. Dodds (ed.)"
+    type: "commentary"
+    year: 1960
+    publisher: "Clarendon Press / Oxford University Press"
+    rights_status: "copyrighted"
+    content_description: >
+      Greek text with introduction and line-by-line commentary.
+      The classic commentary on the Bacchae.
+    covers_works: ["tlg0006"]
+    covers_period: "classical"
+    may_redistribute: false
+    usage_restriction: "Copyrighted. Use for research supervision only."
+
+  - filename: "681762478-Aeschylus-Agamemnon-Aeschylus-Z-Library.pdf"
+    title: "Aeschylus: Agamemnon"
+    author: "J.D. Denniston & D. Page (eds.)"
+    type: "commentary"
+    year: 1957
+    publisher: "Clarendon Press / Oxford University Press"
+    rights_status: "copyrighted"
+    content_description: >
+      Greek text with detailed commentary.
+      Landmark commentary on the Agamemnon.
+    covers_works: ["tlg0085"]
+    covers_period: "classical"
+    may_redistribute: false
+    usage_restriction: "Copyrighted. Use for research supervision only."
+
+  - filename: "euripides_bacchae_-_a_dual_language_edition.pdf"
+    title: "Euripides' Bacchae: A Dual Language Edition"
+    author: "Euripides"
+    translator: "Ian Johnston"
+    type: "primary_text_and_translation"
+    year: 2015
+    publisher: "Faenum Publishing"
+    rights_status: "creative_commons"
+    content_description: "Greek text (Murray edition) + facing English translation."
+    covers_works: ["tlg0006"]
+    covers_period: "classical"
+    may_redistribute: true
+    notes: "CC BY-NC-SA 3.0"
+
+  - filename: "_OceanofPDF.com_Delphi_Complete_Works_of_Euripides_-_Euripides.pdf"
+    title: "Delphi Complete Works of Euripides"
+    type: "primary_text_and_translation"
+    year: 2013
+    publisher: "Delphi Classics"
+    rights_status: "mixed"
+    covers_works: ["tlg0006"]
+    covers_period: "classical"
+    may_redistribute: false
+    usage_restriction: "Delphi compilation copyrighted; underlying Greek text and translations are PD."
+
+  - filename: "_OceanofPDF.com_Delphi_Complete_Works_of_Aristophanes_Ill_-_Aristophanes.pdf"
+    title: "Delphi Complete Works of Aristophanes"
+    type: "primary_text_and_translation"
+    year: 2013
+    publisher: "Delphi Classics"
+    rights_status: "mixed"
+    covers_works: ["tlg0002"]
+    covers_period: "classical"
+    may_redistribute: false
+    usage_restriction: "Delphi compilation copyrighted; underlying Greek text and translations are PD."
+
+  - filename: "_OceanofPDF.com_Delphi_Complete_Works_of_Apollonius_of_Rho_-_Apollonius_of_Rhodes.pdf"
+    title: "Delphi Complete Works of Apollonius of Rhodes"
+    type: "primary_text_and_translation"
+    year: 2014
+    publisher: "Delphi Classics"
+    rights_status: "mixed"
+    covers_works: []
+    covers_period: "hellenistic"
+    may_redistribute: false
+    usage_restriction: "Delphi compilation copyrighted; underlying Greek text and translations are PD."
+
+  - filename: "_OceanofPDF.com_Delphi_Complete_Works_of_Dio_Chrysostom_-_Dio_Chrysostom.pdf"
+    title: "Delphi Complete Works of Dio Chrysostom"
+    type: "primary_text_and_translation"
+    year: 2017
+    publisher: "Delphi Classics"
+    rights_status: "mixed"
+    covers_works: []
+    covers_period: "imperial"
+    may_redistribute: false
+    usage_restriction: "Delphi compilation copyrighted; underlying Greek text and translations are PD."
+
+  - filename: "_OceanofPDF.com_Delphi_Complete_Works_of_Appian_-_Appian_of_Alexandria.pdf"
+    title: "Delphi Complete Works of Appian"
+    type: "primary_text_and_translation"
+    year: 2016
+    publisher: "Delphi Classics"
+    rights_status: "mixed"
+    covers_works: []
+    covers_period: "imperial"
+    may_redistribute: false
+    usage_restriction: "Delphi compilation copyrighted; underlying Greek text and translations are PD."
+
+  - filename: "_OceanofPDF.com_Complete_Works_of_Diodorus_Siculus_-_Diodorus_Siculus.pdf"
+    title: "Delphi Complete Works of Diodorus Siculus"
+    type: "primary_text_and_translation"
+    year: 2014
+    publisher: "Delphi Classics"
+    rights_status: "mixed"
+    covers_works: []
+    covers_period: "hellenistic"
+    may_redistribute: false
+    usage_restriction: "Delphi compilation copyrighted; underlying Greek text and translations are PD."
+
+  - filename: "_OceanofPDF.com_Meditation_-_Marcus_Aurelius.pdf"
+    title: "Meditations"
+    author: "Marcus Aurelius"
+    translator: "Gregory Hays"
+    type: "translation"
+    year: 2002
+    publisher: "Modern Library"
+    rights_status: "copyrighted"
+    covers_period: "imperial"
+    may_redistribute: false
+    usage_restriction: "Copyrighted. English only, no Greek text."

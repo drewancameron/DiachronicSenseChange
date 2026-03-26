@@ -1,0 +1,180 @@
+# Blood Meridian Passage Manifest
+# Each passage is a self-contained unit for translation.
+# Lines refer to McCarthy_Blood_Meridian.txt
+#
+# Discourse types:
+#   narrative    — action, events, movement
+#   description  — landscape, setting, visual
+#   dialogue     — speech (may contain narrative framing)
+#   philosophical — the judge's monologues, hermit's theology, cosmic reflection
+#   biblical     — passages with strong KJV / Septuagintal cadence
+#   violence     — combat, scalping, atrocity
+#   catalogue    — McCarthy's list-mode (objects, sights, sounds)
+
+# ============================================================
+# CHAPTER I  (lines 1–241)
+# ============================================================
+
+passages:
+
+  - id: "001_see_the_child"
+    chapter: I
+    lines: [1, 1]
+    title: "See the child"
+    discourse: [biblical, description]
+    priority: 1
+    notes: >
+      The iconic opening. Paratactic, present-tense, imperative address.
+      "See the child" echoes "Behold the man" (Ecce homo / Ἴδε ὁ ἄνθρωπος).
+      Key test for register: this must sound like scripture.
+
+  - id: "002_night_of_your_birth"
+    chapter: I
+    lines: [3, 3]
+    title: "Night of your birth"
+    discourse: [biblical, description]
+    priority: 1
+    notes: >
+      Father's voice, the Leonid meteor shower. Second-person address,
+      fragmented syntax. Cosmological imagery — stars, holes in the heavens.
+
+  - id: "003_the_mother_dead"
+    chapter: I
+    lines: [5, 5]
+    title: "The mother dead these fourteen years"
+    discourse: [biblical, narrative]
+    priority: 1
+    notes: >
+      Latinate syntax ("did incubate"), biblical cadence ("the child the
+      father of the man"). Tests high-register periodic sentence construction.
+
+  - id: "004_at_fourteen"
+    chapter: I
+    lines: [7, 7]
+    title: "At fourteen he runs away"
+    discourse: [description, narrative]
+    priority: 2
+    notes: >
+      Landscape passage — pastoral Tennessee, cotton fields, the lone
+      husbandman. Tests nature vocabulary and McCarthy's sentence fragments.
+
+  - id: "005_saint_louis"
+    chapter: I
+    lines: [9, 9]
+    title: "A year later he is in Saint Louis"
+    discourse: [narrative, description]
+    priority: 2
+    notes: >
+      River journey, steamboats, New Orleans, fighting sailors. Tests
+      action vocabulary and urban/waterfront description.
+
+  - id: "006_maltese_boatswain"
+    chapter: I
+    lines: [11, 13]
+    title: "The Maltese boatswain"
+    discourse: [violence, narrative]
+    priority: 3
+    notes: >
+      First shooting — pistol vocabulary. Tavernkeeper's wife tending wounds.
+      Tests medical/body vocabulary and the IDF entries for pistol/gun.
+
+  - id: "007_divested_of_all"
+    chapter: I
+    lines: [15, 17]
+    title: "Only now is the child finally divested"
+    discourse: [biblical, philosophical]
+    priority: 1
+    notes: >
+      The great transition passage. "The stuff of creation", "another kind
+      of clay", "a pilgrim among others". Peak biblical register — this is
+      the passage that most demands Septuagintal Greek.
+
+  - id: "008_port_streets"
+    chapter: I
+    lines: [19, 21]
+    title: "The narrow streets of the port"
+    discourse: [description, narrative]
+    priority: 3
+    notes: >
+      Texas arrival. Whores, egrets, parricide. Tests landscape + social
+      vocabulary. "Whores call to him from the dark like souls in want" —
+      a key simile for the translation.
+
+  - id: "009_reverend_green_tent"
+    chapter: I
+    lines: [24, 28]
+    title: "The Reverend Green's tent"
+    discourse: [narrative, dialogue]
+    priority: 2
+    notes: >
+      Setting the scene — the rain, the tent, the crowd. Then the reverend's
+      sermon in dialectal English. Tests rendering of colloquial speech in Greek.
+
+  - id: "010_reverend_dialogue"
+    chapter: I
+    lines: [30, 56]
+    title: "Reverend Green's sermon and the judge's entrance"
+    discourse: [dialogue, narrative]
+    priority: 1
+    notes: >
+      The judge's first appearance and his devastating speech. Two registers
+      collide: the reverend's folksy preaching vs. the judge's formal rhetoric.
+      Critical for establishing ὁ κριτής's voice in Greek.
+
+  - id: "011_tent_collapse"
+    chapter: I
+    lines: [58, 62]
+    title: "The tent collapse and the bar"
+    discourse: [violence, narrative]
+    priority: 3
+    notes: >
+      Gunfire, canvas collapsing like a medusa, retreat to the bar.
+      "These here is on the judge" — first use of 'judge' as name/title.
+
+  - id: "012_judge_bar_scene"
+    chapter: I
+    lines: [64, 90]
+    title: "The judge at the bar — lies about Green"
+    discourse: [dialogue, philosophical]
+    priority: 2
+    notes: >
+      The judge's revelation that he made it all up. Tests dialogue register
+      and the judge's casual menace. "I never laid eyes on the man before today."
+
+  - id: "013_toadvine_fight"
+    chapter: I
+    lines: [93, 155]
+    title: "Toadvine and the kid — the fight in the mud"
+    discourse: [violence, dialogue, narrative]
+    priority: 2
+    notes: >
+      Extended violence sequence. Bottles, knives, bowieknife, mud, boots.
+      Tests the full violence vocabulary and physical description.
+      Toadvine's branded forehead (H T F) and missing ears.
+
+  - id: "014_hotel_fire"
+    chapter: I
+    lines: [157, 241]
+    title: "The hotel fire and escape"
+    discourse: [violence, dialogue, narrative]
+    priority: 3
+    notes: >
+      Sidney, arson, the kicked clerk, the burning hotel.
+      "The judge smiled" — last image of Ch. I. Tests action pacing.
+
+  # ============================================================
+  # SCOPE: First ~10 pages = Chapter I only (lines 1–241)
+  # Chapter II and beyond deferred to later phase.
+  # ============================================================
+
+  # ============================================================
+  # PILOT SET — suggested translation order
+  # ============================================================
+  # 1. 001_see_the_child         (iconic, short, biblical)
+  # 2. 002_night_of_your_birth   (cosmological fragment)
+  # 3. 003_the_mother_dead       (periodic sentence, high register)
+  # 4. 007_divested_of_all       (peak biblical/philosophical)
+  # 5. 004_at_fourteen           (landscape, sentence fragments)
+  # 6. 010_reverend_dialogue     (the judge's voice, dual register)
+  # 7. 005_saint_louis           (river journey, action)
+  # 8. 013_toadvine_fight        (violence vocabulary stress-test)

@@ -1,0 +1,66 @@
+{
+  "id": "007_divested_of_all",
+  "chapter": "I",
+  "title": "Only now is the child finally divested",
+  "source_lines": [
+    15,
+    17
+  ],
+  "discourse_types": [
+    "biblical",
+    "philosophical"
+  ],
+  "priority": 1,
+  "notes": "The great transition passage. \"The stuff of creation\", \"another kind of clay\", \"a pilgrim among others\". Peak biblical register — this is the passage that most demands Septuagintal Greek.",
+  "text": "Only now is the child finally divested of all that he has been. His origins are become remote as is his destiny and not again in all the world's turning will there be terrains so wild and barbarous to try whether the stuff of creation may be shaped to man's will or whether his own heart is not another kind of clay. The passengers are a diffident lot. They cage their eyes and no man asks another what it is that brings him here. He sleeps on the deck, a pilgrim among others. He watches the dim shore rise and fall. Gray seabirds gawking. Flights of pelicans coastwise above the gray swells.\n\nThey disembark aboard a lighter, settlers with their chattels, all studying the low coastline, the thin bight of sand and scrub pine swimming in the haze.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "Only now is the child finally divested of all that he has been.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "His origins are become remote as is his destiny and not again in all the world's turning will there be terrains so wild and barbarous to try whether the stuff of creation may be shaped to man's will or whether his own heart is not another kind of clay.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "The passengers are a diffident lot.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 3,
+      "text": "They cage their eyes and no man asks another what it is that brings him here.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "He sleeps on the deck, a pilgrim among others.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "He watches the dim shore rise and fall.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "Gray seabirds gawking.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 7,
+      "text": "Flights of pelicans coastwise above the gray swells.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "They disembark aboard a lighter, settlers with their chattels, all studying the low coastline, the thin bight of sand and scrub pine swimming in the haze.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 9,
+  "glossary_terms_needed": [],
+  "translation_status": "pending"
+}

@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Data (large files tracked separately)
+corpus/raw/*.xml
+corpus/raw/*.txt
+corpus/raw/*.json
+*.parquet
+*.h5
+
+# Database (local working copies)
+db/*.db
+!db/schema.sql
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Environment
+.env

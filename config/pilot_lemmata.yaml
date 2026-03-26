@@ -1,0 +1,179 @@
+# Pilot Lemmata Selection
+# Criteria: polysemy, diachronic movement, cultural centrality,
+#           philological commentary availability, genre spread
+#
+# Each entry includes:
+#   lemma_greek: the Greek headword
+#   lemma_transliteration: romanized form
+#   selection_rationale: why this word was chosen
+#   expected_behavior: what kind of diachronic pattern is anticipated
+#   key_senses: preliminary sense sketch (to be refined in WP3)
+#   lsj_entry: LSJ reference
+
+pilot_lemmata:
+
+  - lemma_greek: "κόσμος"
+    lemma_transliteration: "kosmos"
+    selection_rationale: >
+      Extremely well-studied word with dramatic diachronic shift from
+      concrete 'order/arrangement/adornment' to abstract 'world-order/universe'.
+      Rich commentary tradition. Ideal test case.
+    expected_behavior: "broadening_and_abstraction"
+    key_senses:
+      - "order, arrangement"
+      - "adornment, decoration"
+      - "world-order, universe"
+      - "propriety, decorum"
+    lsj_entry: "κόσμος"
+
+  - lemma_greek: "λόγος"
+    lemma_transliteration: "logos"
+    selection_rationale: >
+      Massively polysemous across all periods. Central to philosophy,
+      rhetoric, theology. Excellent test of whether the model can
+      distinguish genuine polysemy from contextual flexibility.
+    expected_behavior: "persistent_polysemy_with_domain_specialization"
+    key_senses:
+      - "word, speech"
+      - "account, narrative"
+      - "reason, rational principle"
+      - "ratio, proportion"
+      - "argument, thesis"
+      - "divine Word (Koine theological)"
+    lsj_entry: "λόγος"
+
+  - lemma_greek: "ψυχή"
+    lemma_transliteration: "psyche"
+    selection_rationale: >
+      Shifts from Homeric 'breath/life-force leaving at death' to
+      classical 'soul/self/mind'. Well-documented trajectory with
+      philosophical and religious dimensions.
+    expected_behavior: "gradual_drift_and_domain_specialization"
+    key_senses:
+      - "breath, life-force"
+      - "ghost, shade (of the dead)"
+      - "soul, self"
+      - "mind, seat of thought"
+      - "immortal soul (philosophical)"
+    lsj_entry: "ψυχή"
+
+  - lemma_greek: "ἀρετή"
+    lemma_transliteration: "arete"
+    selection_rationale: >
+      Shifts from Homeric martial 'excellence/prowess' to broader
+      ethical 'virtue'. Key test for cultural-semantic change.
+    expected_behavior: "narrowing_and_moralization"
+    key_senses:
+      - "excellence, prowess (martial)"
+      - "merit, worth"
+      - "virtue (ethical)"
+      - "efficacy, fitness (of things)"
+    lsj_entry: "ἀρετή"
+
+  - lemma_greek: "δίκη"
+    lemma_transliteration: "dike"
+    selection_rationale: >
+      Legal-ethical vocabulary with movement from concrete 'custom/judgment'
+      to abstract 'justice'. Strong genre variation (legal vs. poetic).
+    expected_behavior: "abstraction_with_genre_split"
+    key_senses:
+      - "custom, usage"
+      - "lawsuit, legal proceeding"
+      - "judgment, penalty"
+      - "justice, right (abstract)"
+      - "personified Justice"
+    lsj_entry: "δίκη"
+
+  - lemma_greek: "τέχνη"
+    lemma_transliteration: "techne"
+    selection_rationale: >
+      Relatively stable core meaning but interesting register and
+      domain variation. Good contrast case against rapidly changing words.
+    expected_behavior: "stable_with_register_variation"
+    key_senses:
+      - "craft, skill"
+      - "art, systematic method"
+      - "cunning, artifice"
+      - "treatise (metonymic)"
+    lsj_entry: "τέχνη"
+
+  - lemma_greek: "νόμος"
+    lemma_transliteration: "nomos"
+    selection_rationale: >
+      Movement from 'custom/convention' to 'law'. Central to the
+      nomos-physis debate. Rich philosophical commentary.
+    expected_behavior: "narrowing_and_institutionalization"
+    key_senses:
+      - "custom, convention"
+      - "law, statute"
+      - "musical mode/melody"
+      - "law of nature (philosophical)"
+    lsj_entry: "νόμος"
+
+  - lemma_greek: "φύσις"
+    lemma_transliteration: "physis"
+    selection_rationale: >
+      Counterpart to nomos. Develops from 'growth/origin' to 'nature'
+      in multiple senses. Key philosophical vocabulary.
+    expected_behavior: "broadening_and_abstraction"
+    key_senses:
+      - "growth, origin"
+      - "natural form, constitution"
+      - "nature (of a thing)"
+      - "Nature (cosmic, philosophical)"
+    lsj_entry: "φύσις"
+
+  - lemma_greek: "δαίμων"
+    lemma_transliteration: "daimon"
+    selection_rationale: >
+      Dramatic diachronic shift from 'divine power/god' to
+      'lesser spirit' and eventually 'demon' in Christian usage.
+      Tests the full Homeric-to-Koine arc.
+    expected_behavior: "semantic_degradation"
+    key_senses:
+      - "god, divine power"
+      - "fortune, fate (personified)"
+      - "guardian spirit"
+      - "lesser/intermediary spirit (philosophical)"
+      - "evil spirit, demon (Koine/Christian)"
+    lsj_entry: "δαίμων"
+
+  - lemma_greek: "σῶμα"
+    lemma_transliteration: "soma"
+    selection_rationale: >
+      Interesting Homeric usage ('corpse') vs. classical ('living body').
+      Tests whether the model handles a case where the earlier sense
+      is narrower/darker than the later one.
+    expected_behavior: "broadening"
+    key_senses:
+      - "corpse, dead body"
+      - "living body"
+      - "person (metonymic)"
+      - "body (philosophical, vs. soul)"
+    lsj_entry: "σῶμα"
+
+  - lemma_greek: "θεός"
+    lemma_transliteration: "theos"
+    selection_rationale: >
+      Relatively stable denotation but fascinating register and
+      theological variation across periods. Good archaizing test case.
+    expected_behavior: "stable_denotation_with_register_shift"
+    key_senses:
+      - "god, deity (polytheistic)"
+      - "God (monotheistic/philosophical)"
+      - "divine, godlike (predicative)"
+    lsj_entry: "θεός"
+
+  - lemma_greek: "χάρις"
+    lemma_transliteration: "charis"
+    selection_rationale: >
+      Shifts from 'grace/favor/gratitude' in classical usage to
+      theological 'grace' in Koine. Tests religious semantic
+      appropriation.
+    expected_behavior: "domain_specialization"
+    key_senses:
+      - "grace, beauty"
+      - "favor, goodwill"
+      - "gratitude, thanks"
+      - "grace (theological, Koine)"
+    lsj_entry: "χάρις"

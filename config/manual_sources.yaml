@@ -1,0 +1,250 @@
+# Manual Sources Registry
+# Every manually-acquired file must be registered here with rights status.
+# The pipeline will enforce restrictions based on these flags.
+
+sources:
+
+  - filename: "402138040-3-Leaf-W-Commentary-on-the-Iliad-18-pdf.pdf"
+    title: "The Iliad, Vol. II (Books XIII-XXIV)"
+    author: "Walter Leaf"
+    type: "commentary"
+    year: 1902
+    publisher: "Macmillan, London"
+    rights_status: "public_domain"
+    content_description: >
+      Greek text with apparatus criticus, prolegomena, line-by-line
+      commentary notes, and appendices. Second edition.
+    covers_works: ["tlg0012.tlg001"]  # Iliad
+    covers_period: "homeric"
+    may_redistribute: true
+    notes: "OCR scan, some Greek characters may need cleanup"
+
+  - filename: "Sophocles_0561_EBk_v6.0.pdf"
+    title: "The Tragedies of Sophocles"
+    author: "Sophocles"
+    translator: "Sir Richard C. Jebb"
+    type: "translation"
+    year: 1904
+    publisher: "Cambridge University Press"
+    rights_status: "public_domain"
+    content_description: >
+      English prose translations of all 7 surviving plays.
+      Liberty Fund digital edition — clean born-digital text.
+      OT, OC, Antigone, Ajax, Electra, Trachiniae, Philoctetes.
+    covers_works: ["tlg0011"]  # Sophocles
+    covers_period: "classical"
+    may_redistribute: true
+    notes: "Clean digital text, good for extraction"
+
+  - filename: "plato_the-republic.pdf"
+    title: "The Republic of Plato, Vol. I (Books I-V)"
+    author: "James Adam"
+    type: "commentary"
+    year: 1902
+    publisher: "Cambridge University Press"
+    rights_status: "public_domain"
+    content_description: >
+      Greek text with critical notes, commentary, and appendices.
+      First edition 1902, this is 1926 reprint. Deep commentary
+      on Platonic vocabulary and philosophical terminology.
+    covers_works: ["tlg0059.tlg030"]  # Republic
+    covers_period: "classical"
+    may_redistribute: true
+    notes: "Scanned from 1926 reprint of 1902 first edition"
+
+  - filename: "Liddell-Scott= A-Greek-English-Lexicon.pdf"
+    title: "A Greek-English Lexicon (LSJ)"
+    author: "Liddell, Scott, Jones"
+    type: "lexicon"
+    year: 1940
+    publisher: "Clarendon Press, Oxford"
+    rights_status: "copyrighted"
+    content_description: >
+      The full 9th edition of LSJ with 1996 supplement.
+      Complete Greek-English lexicon with citations and usage history.
+    covers_works: []  # general reference
+    covers_period: "all"
+    may_redistribute: false
+    usage_restriction: >
+      Use for research supervision only. Extracted sense labels and
+      evidence spans must not reproduce substantial portions of entries.
+      Do not include raw LSJ text in any released dataset.
+      Fair dealing for research/private study (UK CDPA 1988 s.29).
+    notes: "95MB PDF, 9th ed. + 1996 supplement. Copyright OUP."
+
+  - filename: "_OceanofPDF.com_Delphi_Complete_Works_of_Polybius_-_Polybius.pdf"
+    title: "Delphi Complete Works of Polybius"
+    author: "Polybius"
+    type: "primary_text_and_translation"
+    year: 2014
+    publisher: "Delphi Classics"
+    rights_status: "mixed"
+    content_description: >
+      Contains English translation (Shuckburgh, 1889 — public domain),
+      Greek text (public domain), dual text, and modern introduction
+      by H.J. Edwards (check rights). 18MB.
+    covers_works: ["tlg0541"]  # Polybius
+    covers_period: "hellenistic"
+    may_redistribute: false
+    usage_restriction: >
+      The compilation is copyrighted (Delphi 2014). The underlying
+      Shuckburgh translation (1889) and Greek text are public domain.
+      Extract and use the PD content; do not redistribute the compilation.
+    notes: "Greek text + dual text sections are the key material for us"
+
+  - filename: "_OceanofPDF.com_Polybius_-_Frank_William_Walbank.pdf"
+    title: "Polybius (Sather Classical Lectures)"
+    author: "F.W. Walbank"
+    type: "monograph"
+    year: 1972
+    publisher: "University of California Press"
+    rights_status: "copyrighted"
+    content_description: >
+      Scholarly monograph on Polybius. Critical analysis of his
+      historical method, language, and intellectual context.
+      Not primary text — secondary scholarship.
+    covers_works: ["tlg0541"]
+    covers_period: "hellenistic"
+    may_redistribute: false
+    usage_restriction: >
+      Copyrighted modern scholarship. Use only for interpretive context
+      and background understanding. Do not extract text for training data.
+      Do not reproduce in any output dataset.
+    notes: "Secondary source — useful for understanding Polybian vocabulary in context"
+
+  - filename: "_OceanofPDF.com_Plato_-_David_Sansone.pdf"
+    title: "Plato: Republic Book I"
+    author: "David Sansone (ed.)"
+    type: "commentary"
+    year: 2024  # Cambridge Green & Yellow series, recent
+    publisher: "Cambridge University Press"
+    rights_status: "copyrighted"
+    content_description: >
+      Cambridge Greek and Latin Classics edition. Greek text of
+      Republic Book I with modern commentary by Sansone.
+      Will have detailed word-level notes on vocabulary.
+    covers_works: ["tlg0059.tlg030"]  # Republic
+    covers_period: "classical"
+    may_redistribute: false
+    usage_restriction: >
+      Modern copyrighted commentary. Use for research supervision
+      only — extract sense evidence but do not reproduce commentary
+      text in any output dataset.
+    notes: "Very high value — modern CUP Green & Yellow commentary with detailed lexical notes"
+
+  - filename: "_OceanofPDF.com_Theogony__Works_and_Days_-_Hesiod.pdf"
+    title: "The Poems of Hesiod: Theogony, Works and Days, and The Shield of Herakles"
+    translator: "Barry B. Powell"
+    type: "translation"
+    year: 2017
+    publisher: "University of California Press"
+    rights_status: "copyrighted"
+    content_description: >
+      Modern English translation of all three Hesiodic poems.
+      Likely includes introduction and notes.
+    covers_works: ["tlg0020"]  # Hesiod
+    covers_period: "archaic"
+    may_redistribute: false
+    usage_restriction: >
+      Copyrighted modern translation. Use for research supervision —
+      compare translation choices against PD translations. Do not
+      reproduce translation text in output datasets.
+    notes: "Modern translation gives us a second translator voice for Hesiod alongside Perseus PD translations"
+
+  - filename: "_OceanofPDF.com_The_works_of_Hesiod_-_Hesiod.pdf"
+    title: "Delphi Complete Works of Hesiod"
+    author: "Hesiod"
+    type: "primary_text_and_translation"
+    year: 2013
+    publisher: "Delphi Classics"
+    rights_status: "mixed"
+    content_description: >
+      Contains Theogony, Works and Days, Shield of Heracles, Fragments.
+      English translations (Evelyn-White, 1914 — public domain) plus
+      Greek texts (public domain). Introduction by Evelyn-White.
+    covers_works: ["tlg0020"]
+    covers_period: "archaic"
+    may_redistribute: false
+    usage_restriction: >
+      Delphi compilation copyrighted. Underlying Evelyn-White
+      translation (1914) and Greek text are public domain.
+    notes: "Greek text + PD translations are the useful content"
+
+  - filename: "_OceanofPDF.com_Anachronism_and_Antiquity_-_Tim_Rood.pdf"
+    title: "Anachronism and Antiquity"
+    author: "Tim Rood, Carol Atack, Tom Phillips"
+    type: "monograph"
+    year: 2020
+    publisher: "Bloomsbury Academic"
+    rights_status: "copyrighted"
+    content_description: >
+      Scholarly study of anachronism in antiquity. Covers philological
+      argument, periodization, and how ancients understood temporal
+      difference. Ch. 3 on anachronism and philology is directly relevant.
+    covers_works: []
+    covers_period: "all"
+    may_redistribute: false
+    usage_restriction: >
+      Copyrighted modern scholarship. Use for theoretical framing
+      and interpretive context only. Do not extract for training.
+    notes: "Background reading — relevant to how we think about diachronic change and register"
+
+  - filename: "_OceanofPDF.com_Daphnis_and_Chloe_-_Longus.pdf"
+    title: "Daphnis and Chloe"
+    author: "Longus"
+    translator: "Phiroze Vasunia"
+    type: "translation"
+    year: 2011
+    publisher: "Penguin Classics"
+    rights_status: "copyrighted"
+    content_description: >
+      Modern English translation of Longus's pastoral novel.
+      Longus dated mid-2nd to mid-3rd century AD — Imperial/
+      Second Sophistic period. 4 books.
+    covers_works: []  # Longus not in TLG pilot set
+    covers_period: "imperial"
+    may_redistribute: false
+    usage_restriction: >
+      Copyrighted Penguin translation. Use for research context only.
+      English translation only (no Greek text) so limited direct
+      pipeline value, but useful for Imperial Greek vocabulary context.
+    notes: "Imperial period prose — fills a genre gap (novel). Translation only, no Greek."
+
+  - filename: "_OceanofPDF.com_Delphi_Complete_Works_of_Sidonius_Apollina_-_Sidonius_Apollinaris.pdf"
+    title: "Delphi Complete Works of Sidonius Apollinaris"
+    author: "Sidonius Apollinaris"
+    type: "primary_text_and_translation"
+    year: 2017
+    publisher: "Delphi Classics"
+    rights_status: "mixed"
+    content_description: >
+      Poems and Letters of Sidonius Apollinaris (c.430-489 AD).
+      LATIN text, not Greek. Dual Latin/English text.
+      Translations by W.B. Anderson (Loeb).
+    covers_works: []
+    covers_period: "late_antique"
+    may_redistribute: false
+    usage_restriction: >
+      Delphi compilation copyrighted. Underlying older translations
+      may be PD but check Anderson dates.
+    notes: >
+      LATIN author, not Greek — outside our project scope. Could be
+      useful for comparative late antique vocabulary if we ever extend
+      to Latin reception of Greek terms, but low priority for now.
+
+# TEMPLATE for new sources — copy and fill in:
+#
+#  - filename: ""
+#    title: ""
+#    author: ""
+#    translator: ""  # if applicable
+#    type: ""  # commentary | translation | lexicon | monograph | primary_text
+#    year:
+#    publisher: ""
+#    rights_status: ""  # public_domain | copyrighted | creative_commons | fair_use
+#    content_description: ""
+#    covers_works: []
+#    covers_period: ""
+#    may_redistribute: false
+#    usage_restriction: ""  # required if copyrighted
+#    notes: ""

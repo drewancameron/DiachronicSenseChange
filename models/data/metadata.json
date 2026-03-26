@@ -1,0 +1,109 @@
+{
+  "total_examples": 8321,
+  "sense_maps": {
+    "τέχνη": {
+      "cunning or craftiness": 0,
+      "knowledge or science": 1,
+      "means or device": 2,
+      "skill or craft": 3
+    },
+    "ἀρετή": {
+      "favor or benefit": 0,
+      "fertility or productivity": 1,
+      "virtue or excellence": 2
+    },
+    "δαίμων": {
+      "ancestral spirit or the dead": 0,
+      "divine spirit or power": 1,
+      "fate or destiny": 2,
+      "superstitious fear or divine wrath": 3
+    },
+    "ψυχή": {
+      "mind or inner thought": 0,
+      "soul or life principle": 1,
+      "spirit of the dead": 2
+    },
+    "δίκη": {
+      "custom or law": 0,
+      "judgement or penalty": 1,
+      "judges or decision-makers": 2,
+      "justice or right": 3,
+      "legal trial or lawsuit": 4
+    },
+    "σῶμα": {
+      "appetitive part of the soul": 0,
+      "entire thing": 1,
+      "group of people": 2,
+      "military force": 3,
+      "personal security or life": 4,
+      "physical human body": 5,
+      "three-dimensional object": 6
+    },
+    "θεός": {
+      "deity or god": 0,
+      "divine inspiration": 1
+    },
+    "κόσμος": {
+      "adornment or decoration": 0,
+      "honor or credit": 1,
+      "office-holder or official": 2,
+      "order or arrangement": 3,
+      "world or universe": 4
+    },
+    "φύσις": {
+      "form or shape": 0,
+      "innate ability or property": 1,
+      "natural growth or formation": 2,
+      "nature or natural constitution": 3,
+      "sense or meaning": 4
+    },
+    "νόμος": {
+      "custom or usage": 0,
+      "emblem on coinage": 1,
+      "law or ordinance": 2,
+      "melody or musical mode": 3,
+      "order or arrangement": 4
+    },
+    "χάρις": {
+      "advantage or benefit": 0,
+      "favor or grace": 1,
+      "gratitude or thankfulness": 2,
+      "personal name": 3,
+      "personification (Charis)": 4,
+      "pleasure or charm": 5
+    },
+    "λόγος": {
+      "account or narrative": 0,
+      "argument or plea": 1,
+      "arrangement or ordering": 2,
+      "discourse or discussion": 3,
+      "poem or poetry": 4,
+      "proportion or ratio": 5,
+      "reason or reasoning": 6,
+      "statement or assertion": 7,
+      "storymaker or fabricator": 8,
+      "study or investigation": 9,
+      "summary or conclusion": 10,
+      "word or speech": 11
+    }
+  },
+  "splits": {
+    "train": 5824,
+    "val": 1248,
+    "test": 1249
+  },
+  "period_splits": {
+    "test_period_classical": 4868,
+    "train_no_classical": 3453,
+    "test_period_imperial": 1500,
+    "train_no_imperial": 6821,
+    "test_period_archaic": 540,
+    "train_no_archaic": 7781,
+    "test_period_homeric": 360,
+    "train_no_homeric": 7961,
+    "test_period_hellenistic": 507,
+    "train_no_hellenistic": 7814,
+    "test_period_koine": 546,
+    "train_no_koine": 7775
+  }
+}
