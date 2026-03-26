@@ -572,11 +572,14 @@ Grammatical abbreviations: αἰτ. γεν. δοτ. ὀν. κλ. = cases; ἑν.
 - πτώσσει → `↔ ἵσταται ὀρθός· = ὀκλάζει ὥσπερ θηρίον δεδοικός (Ὅμ.)`
 
 ## The Ørberg Principle
-The CARDINAL RULE of Ørberg glossing: **explain rare words using only common words**.
-The reader knows the top ~500 most frequent Greek words (articles, εἰμί, ἔχω, ποιέω,
-λέγω, ἀνήρ, γυνή, πόλις, μέγας, μικρός, καλός, κακός, etc.). Your gloss must be
-composed ENTIRELY of such common words plus the notation symbols. If you find yourself
-using a rare word in a gloss, replace it with a common paraphrase.
+The CARDINAL RULE of Ørberg glossing: **explain rare Ancient Greek words using only
+common Ancient Greek words that the reader is likely to already know**. These are the
+everyday vocabulary of classical prose: articles, common verbs (εἰμί, ἔχω, ποιέω,
+λέγω, φέρω, βαίνω, δίδωμι), common nouns (ἀνήρ, γυνή, πόλις, θεός, ὕδωρ, πῦρ,
+γῆ, χείρ), common adjectives (μέγας, μικρός, καλός, κακός, πολύς), and basic
+prepositions/particles. Your gloss must be composed ENTIRELY of such common Ancient
+Greek words plus the notation symbols. If you find yourself using a rare or specialised
+Greek word inside a gloss, replace it with a simpler paraphrase using common words.
 
 BAD:  κηρώδη → `< κηρός· = ἀλεξητήριος ὕδατος` (ἀλεξητήριος is itself rare!)
 GOOD: κηρώδη → `< κηρός· = ἐκ κηροῦ· ὕδωρ οὐ δέχεται`
