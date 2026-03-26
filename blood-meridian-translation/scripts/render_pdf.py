@@ -171,12 +171,20 @@ def build_pdf_html(passage_ids: list[str]) -> str:
 <div class="chapter-num">Ι</div>
 """
 
+    # Display-time density cap for PDF: limit glosses per paragraph
+    # to avoid the gloss column overwhelming the text column.
+    PDF_MAX_GLOSSES_PER_PARA = 6
+
     for i, para in enumerate(paragraphs):
         text = " ".join(para["text_parts"])
         gloss_html = ""
+        displayed = 0
         for g in para["glosses"]:
+            if displayed >= PDF_MAX_GLOSSES_PER_PARA:
+                break
             anchor = g["anchor"]
             note = g["note"]
+            displayed += 1
             gloss_html += (
                 f'<div class="ge">'
                 f'<span class="w">{anchor}</span> '

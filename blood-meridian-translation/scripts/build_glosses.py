@@ -40,9 +40,9 @@ LEMMA_IDF_PATH = ROOT / "data" / "lemma_idf.json"
 
 # Limits
 MAX_GLOSSES_PER_SENTENCE = 3
-MIN_GLOSSES_PER_PASSAGE = 8
-MAX_GLOSSES_PER_PASSAGE = 80  # hard ceiling
-GLOSSES_PER_100_WORDS = 15    # target density: ~15 glosses per 100 words (every rare word)
+MIN_GLOSSES_PER_PASSAGE = 10
+MAX_GLOSSES_PER_PASSAGE = 200  # generous: gloss everything rare, trim at display time
+GLOSSES_PER_100_WORDS = 25     # high target: capture all rare words, renderer will trim
 MAX_PER_LEMMA_PER_CHAPTER = 2
 MAX_PER_LEMMA_BOOK = 5
 
