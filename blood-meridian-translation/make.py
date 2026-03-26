@@ -4,11 +4,12 @@ Single-command build pipeline for the Blood Meridian translation.
 
 Usage:
   python3 make.py              # full build (check + render, no auto-revise)
-  python3 make.py full         # translate → auto-revise → render (end-to-end)
+  python3 make.py v2           # V2 pipeline: bare translate → diagnose → revise → render
+  python3 make.py full         # V1 pipeline: guided translate → auto-revise → render
   python3 make.py render       # render only (skip checks)
   python3 make.py check        # checks only (no render)
   python3 make.py grew         # Grew grammar check only
-  python3 make.py translate     # guided first-attempt translation (new passages)
+  python3 make.py translate     # V1 guided first-attempt translation (new passages)
   python3 make.py translate-dry # show translation prompt without calling LLM
   python3 make.py revise        # auto-revise: detect → prompt LLM → fix → verify
   python3 make.py revise-dry    # show what revise would do (no LLM calls)
@@ -78,6 +79,13 @@ def main():
         run("Grew: treebank-backed grammar check", "grew_check.py",
             args=["--warnings-only"])
 
+    if mode in ("v2", "v2-dry"):
+        v2_args = ["--all"]
+        if mode == "v2-dry":
+            v2_args.append("--dry-run")
+        run("V2: bare translate → diagnose → revise", "translate_v2.py",
+            args=v2_args, fatal=True)
+
     if mode in ("translate", "translate-dry", "full"):
         translate_args = ["--all"]
         if mode == "translate-dry":
@@ -95,7 +103,7 @@ def main():
         run("Auto-revise: detect → prompt LLM → fix → verify",
             "auto_revise.py", args=revise_args)
 
-    if mode in ("all", "revise", "full", "render"):
+    if mode in ("all", "revise", "full", "v2", "render"):
         run("Mark loanwords and neologisms", "mark_loans.py")
         run("Render HTML", "render_passage.py")
 
