@@ -429,7 +429,11 @@ def build_domain_notes(en_text: str) -> str:
 
     notes = []
     for word, senses in POLYSEMOUS.items():
-        if word not in words_in_text:
+        # Match the word or common inflections (swells→swell, charges→charge)
+        matched = word in words_in_text
+        if not matched:
+            matched = any(w.startswith(word) for w in words_in_text)
+        if not matched:
             continue
         # Find best matching sense by context clues
         best_sense = None

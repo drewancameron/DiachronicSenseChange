@@ -40,9 +40,9 @@ LEMMA_IDF_PATH = ROOT / "data" / "lemma_idf.json"
 
 # Limits
 MAX_GLOSSES_PER_SENTENCE = 3
-MIN_GLOSSES_PER_PASSAGE = 6
-MAX_GLOSSES_PER_PASSAGE = 40  # hard ceiling
-GLOSSES_PER_100_WORDS = 8     # target density: ~8 glosses per 100 words
+MIN_GLOSSES_PER_PASSAGE = 8
+MAX_GLOSSES_PER_PASSAGE = 80  # hard ceiling
+GLOSSES_PER_100_WORDS = 15    # target density: ~15 glosses per 100 words (every rare word)
 MAX_PER_LEMMA_PER_CHAPTER = 2
 MAX_PER_LEMMA_BOOK = 5
 
@@ -571,17 +571,31 @@ Grammatical abbreviations: αἰτ. γεν. δοτ. ὀν. κλ. = cases; ἑν.
 - ἀπόλωλεν → `< ἀπόλλυμι (παρακ.)· οὐδ. πλ. + ἑν. ῥ. κατ᾽ Ἀττ. ἔθος`
 - πτώσσει → `↔ ἵσταται ὀρθός· = ὀκλάζει ὥσπερ θηρίον δεδοικός (Ὅμ.)`
 
+## The Ørberg Principle
+The CARDINAL RULE of Ørberg glossing: **explain rare words using only common words**.
+The reader knows the top ~500 most frequent Greek words (articles, εἰμί, ἔχω, ποιέω,
+λέγω, ἀνήρ, γυνή, πόλις, μέγας, μικρός, καλός, κακός, etc.). Your gloss must be
+composed ENTIRELY of such common words plus the notation symbols. If you find yourself
+using a rare word in a gloss, replace it with a common paraphrase.
+
+BAD:  κηρώδη → `< κηρός· = ἀλεξητήριος ὕδατος` (ἀλεξητήριος is itself rare!)
+GOOD: κηρώδη → `< κηρός· = ἐκ κηροῦ· ὕδωρ οὐ δέχεται`
+
+BAD:  ἁμαξηγῶν → `= ἡνίοχοι ἐπ᾽ ἐμπορίᾳ` (ἡνίοχοι is not common)
+GOOD: ἁμαξηγῶν → `ἅμαξα·ἄγω· = οἱ ἁμάξας ἐλαύνοντες`
+
 ## Rules
 1. ENTIRELY in Greek — no English words, no Latin script.
-2. Dense and terse — under 80 characters per gloss. No full sentences.
-3. Multi-word anchors are allowed when a phrase is a unit (e.g. ξυλοκόπων καὶ ὑδροφόρων).
-4. For compound words, ALWAYS show component parts with · boundary.
-5. For derived forms, show the root with < and the tense/mood/voice in parentheses.
-6. Include grammatical notes where they illuminate: case governance, Attic rules, voice.
-7. Note biblical/Septuagintal/Homeric resonances with abbreviated references.
-8. For verbs, include case governance if non-obvious (+ γεν., + δοτ.).
-9. For metaphorical or contextual uses, use ἐνταῦθα to distinguish.
-10. Prioritise information density: every character should teach something.
+2. ONLY USE COMMON WORDS in the gloss itself. If a synonym is itself rare, paraphrase.
+3. Dense and terse — under 80 characters per gloss. No full sentences.
+4. Multi-word anchors are allowed when a phrase is a unit (e.g. ξυλοκόπων καὶ ὑδροφόρων).
+5. For compound words, ALWAYS show component parts with · boundary.
+6. For derived forms, show the root with < and the tense/mood/voice in parentheses.
+7. Include grammatical notes where they illuminate: case governance, Attic rules, voice.
+8. Note biblical/Septuagintal/Homeric resonances with abbreviated references.
+9. For verbs, include case governance if non-obvious (+ γεν., + δοτ.).
+10. For metaphorical or contextual uses, use ἐνταῦθα to distinguish.
+11. Prioritise information density: every character should teach something.
 
 ## English source
 {data['english']}
