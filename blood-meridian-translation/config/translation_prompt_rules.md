@@ -2,18 +2,23 @@
 
 These rules MUST be included in every translation prompt (for new passages or revision passes).
 
-## Sentence Structure Mirroring
+## Sentence Structure Guidance
 
-**Mirror the syntactic construction type of the English source sentence:**
+**Prefer the most natural Greek idiom, but be alert to these common LLM pitfalls:**
 
-- English relative clause ("the creature **who would** carry her off") → Greek relative clause (τὸ πλάσμα **ὃ** αὐτὴν ἀπάξει), NOT articular participle
-- English participial phrase ("crouching by the fire") → Greek participle (πτώσσων παρὰ τὸ πῦρ), NOT relative clause
-- English bare fragment ("The firewood, the washpots.") → Greek bare fragment (τὰ ξύλα, τοὺς πλυνούς.), NOT a full sentence
-- English coordination ("he walks and he hears") → Greek coordination (περιπατεῖ καὶ ἀκούει), NOT subordination
-- English conditional ("if they got my boots") → Greek conditional (εἰ ἔλαβον τὰς ἐμβάδας), NOT participial
+The LLM default when translating into Greek is to over-subordinate and over-participialise — collapsing McCarthy's distinctive parataxis into nested subordinate clauses. Guard against this specifically:
+
+- English coordination ("he walks and he hears") → preserve as coordination (περιπατεῖ καὶ ἀκούει), NOT subordination
+- English bare fragment ("The firewood, the washpots.") → preserve as fragment (τὰ ξύλα, τοὺς πλυνούς.), NOT a full sentence
+- English "and...and...and" chains → preserve as καί chains. This is McCarthy's signature.
 - English direct speech → Greek direct speech with same structure
 
-**Do NOT convert between construction types unless the alternative is more natural for Ancient Greek (Koine/Attic).** The LLM default is to over-subordinate and over-participialise. Resist this — but where Greek idiom genuinely favours a different construction (e.g. genitive absolute for an English temporal clause), that is fine. The test: would a competent Greek prose author use this construction here? If the English structure works naturally in Greek too, keep it.
+For other constructions, use whatever is most natural in Greek:
+- English relative clause → Greek relative clause OR participle, whichever a competent Greek prose author would prefer
+- English temporal clause → Greek temporal clause OR genitive absolute, as idiom dictates
+- English conditional → Greek conditional (the form should follow Smyth's categories naturally)
+
+The test: does this sound like something Thucydides, Xenophon, or the Septuagint translators would write? If so, it's fine — even if the construction type differs from the English.
 
 ## Neuter Plural Agreement
 

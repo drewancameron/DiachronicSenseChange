@@ -1,0 +1,143 @@
+You are translating Cormac McCarthy's Blood Meridian into Ancient Greek (Koine with Attic vocabulary).
+
+## Translation Rules
+# Translation Prompt Rules
+
+These rules MUST be included in every translation prompt (for new passages or revision passes).
+
+## Sentence Structure Mirroring
+
+**Mirror the syntactic construction type of the English source sentence:**
+
+- English relative clause ("the creature **who would** carry her off") → Greek relative clause (τὸ πλάσμα **ὃ** αὐτὴν ἀπάξει), NOT articular participle
+- English participial phrase ("crouching by the fire") → Greek participle (πτώσσων παρὰ τὸ πῦρ), NOT relative clause
+- English bare fragment ("The firewood, the washpots.") → Greek bare fragment (τὰ ξύλα, τοὺς πλυνούς.), NOT a full sentence
+- English coordination ("he walks and he hears") → Greek coordination (περιπατεῖ καὶ ἀκούει), NOT subordination
+- English conditional ("if they got my boots") → Greek conditional (εἰ ἔλαβον τὰς ἐμβάδας), NOT participial
+- English direct speech → Greek direct speech with same structure
+
+**Do NOT convert between construction types unless the alternative is more natural for Ancient Greek (Koine/Attic).** The LLM default is to over-subordinate and over-participialise. Resist this — but where Greek idiom genuinely favours a different construction (e.g. genitive absolute for an English temporal clause), that is fine. The test: would a competent Greek prose author use this construction here? If the English structure works naturally in Greek too, keep it.
+
+## Neuter Plural Agreement
+
+Neuter plural subjects take SINGULAR verbs (Attic rule, maintained in our register):
+- τὰ πλοῖα βοᾷ (not βοῶσι)
+- τὰ Λεοντίδια ἐκαλεῖτο (not ἐκαλοῦντο)
+- τὰ ὀνόματα ἀπόλωλεν (not ἀπολώλασιν)
+
+## Time Expressions
+
+- Dative for point in time ("on that night" = νυκτὶ ἐκείνῃ)
+- Accusative for duration ("fourteen years" = τεσσαρεσκαίδεκα ἔτη)
+- Genitive for time within which ("by night" = νυκτός)
+
+## Word Order
+
+Place time expressions and adverbial modifiers where the English places them relative to the word they modify. If McCarthy puts the time expression between subject and participle, do the same in Greek:
+- "The mother dead these fourteen years did incubate..."
+- → ἡ μήτηρ τεσσαρεσκαίδεκα ταῦτα ἔτη τεθνηκυῖα ἐνεθάλπετο...
+
+## Vocabulary
+
+- Use the IDF glossary for all locked terms
+- Prefer πλάσμα over κτίσμα for "creature" (more physical, Genesis resonance)
+- Mark all loans/transliterations with * prefix
+- Words attested only in Byzantine or later Greek (e.g. *βαμβάκιον) must also be * marked as loans
+- Herodotean periphrasis is acceptable for concepts without a Koine word (e.g. cotton = τὸ ἐριοφόρον φυτόν, Hdt. 3.106), but a short marked loan is also fine for passing references
+- Every word in the translation should be attestable in Morpheus/LSJ or our AG corpus. If not, it is probably invented. Replace it.
+- Do not use modern Greek vocabulary. All prompts must specify "Ancient Greek (Koine/Attic)" — never just "Greek" which risks modern Greek output.
+
+## Register
+
+- Koine structure with Attic vocabulary richness
+- Septuagintal colouring for biblical passages
+- Do not over-subordinate — McCarthy's power comes from coordination
+
+
+# Particle Style Guide for Blood Meridian Translation
+
+## Core principle
+
+McCarthy's prose is mostly **asyndetic** (no connective at all) or uses bare **"and"**. The Greek should follow this: prefer asyndeton or καί. Use μέν...δέ and other particles only when the English signals a genuine logical relationship.
+
+## When to use what
+
+### Asyndeton (no particle)
+Use when McCarthy uses a full stop or comma-splice between independent clauses with no conjunction:
+- "He is pale and thin. He stokes the fire." → ὠχρός ἐστι καὶ ἰσχνός. σκαλεύει τὸ πῦρ.
+- No δέ, no γάρ, no οὖν — just the next sentence.
+
+### καί
+Use when McCarthy writes "and" — his most common conjunction. Also for his cascading "and...and...and" chains:
+- "he walks in the streets and hears tongues" → περιπατεῖ ἐν ταῖς ὁδοῖς καὶ ἀκούει γλώσσας
+
+### τε...καί / τε
+Use for things that belong together as a natural pair or list, where McCarthy coordinates without contrast:
+- "the father never speaks her name, the child does not know it" → ὁ πατὴρ οὐδέποτε λέγει τὸ ὄνομα αὐτῆς, τὸ τε παιδίον οὐ γινώσκει αὐτό
+- τε signals "and furthermore / and also" — additive, not adversative
+
+### δέ
+Use ONLY when there is a genuine shift, contrast, or change of subject that the English signals:
+- "He fled. **But** he leaned against the bar" → ὁ μὲν ἔφυγεν, ὁ δὲ προσεκλίθη τῷ ξύλῳ
+- New scene or subject change: "The reverend had stopped. **[Now]** the tall man pushed forward" → ὁ ἱερεὺς ἐπαύσατο. ὁ δὲ ὑψηλὸς προῆλθεν
+
+### μέν...δέ
+Use for explicit contrasts between two things:
+- "He is not big **but** he has big wrists" → οὐ μέγας μέν ἐστιν, μεγάλους δὲ ἔχει τοὺς καρπούς
+- Must be a genuine antithesis, not just two consecutive facts
+
+### γάρ
+Use when McCarthy gives an explanation or reason (rare in his style):
+- "now he put it on again" (explaining why he'd removed the hat) → νῦν γὰρ πάλιν ἐπέθηκεν αὐτόν
+
+### οὖν
+Almost never. McCarthy doesn't do "therefore." Reserve for the judge's formal rhetoric only.
+
+## Common LLM errors to avoid
+
+1. **δέ as default connective** — the LLM treats δέ like English "and." It isn't. δέ implies contrast or topic shift. Most of McCarthy's sentences should be asyndetic or use καί.
+
+2. **Over-using μέν...δέ** — this is a balanced antithesis structure. McCarthy rarely balances. Don't impose symmetry.
+
+3. **γάρ where none is needed** — don't explain what McCarthy leaves unexplained.
+
+4. **Missing asyndeton** — McCarthy's power comes from sentences placed next to each other with NO connective. If the English has a period, the Greek should usually have a period. Don't bridge with particles.
+
+
+## Construction Labels Detected in Source
+  Sentence 1: Defining Relative, Passive Voice
+  Sentence 2: Defining Relative
+  Sentence 3: Asyndeton (comma splice)
+  Sentence 5: Fragment
+  Sentence 6: Passive Voice
+  Sentence 7: Fragment
+  Sentence 8: Fragment
+  Sentence 9: Fragment
+  Sentence 11: Fragment
+  Sentence 12: Defining Relative, Fragment
+  Sentence 14: Fragment
+  Sentence 17: Indirect Speech
+  Sentence 18: Fragment
+  Sentence 19: Fragment
+  Sentence 20: Passive Voice
+
+## English Source
+He looked about at the dark forest in which they were bivouacked. He nodded toward the specimens he'd collected. These anonymous creatures, he said, may seem little or nothing in the world. Yet the smallest crumb can devour us. Any smallest thing beneath yon rock out of men's knowing. Only nature can enslave man and only when the existence of each last entity is routed out and made to stand naked before him will he be properly suzerain of the earth.
+
+What's a suzerain?
+
+A keeper. A keeper or overlord.
+
+Why not say keeper then?
+
+Because he is a special kind of keeper. A suzerain rules even where there are other rulers. His authority countermands local judgements.
+
+Toadvine spat.
+
+The judge placed his hands on the ground. He looked at his inquisitor. This is my claim, he said. And yet everywhere upon it are pockets of autonomous life. Autonomous. In order for it to be mine nothing must be permitted to occur upon it save by my dispensation.
+
+## Instructions
+1. Translate the full passage into Ancient Greek (Koine/Attic register).
+2. Follow the construction labels: preserve relative clauses as ὅς/ἥ/ὅ + finite verb, fragments as fragments, etc.
+3. McCarthy's comma splices → asyndeton. No δέ unless genuine contrast.
+4. Output ONLY the Greek text.

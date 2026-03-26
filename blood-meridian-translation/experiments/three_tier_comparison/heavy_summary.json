@@ -1,0 +1,21 @@
+{
+  "experiment": "Heavy passage comparison (mountain torrent)",
+  "passage": "Blood Meridian, Ch. IV — mountain torrent and burn",
+  "model": "claude-opus-4-20250514",
+  "date": "2026-03-26",
+  "complexity": "heavy (avg 31.2 words/sent, 3 subordinations, polysyndetic)",
+  "tiers": {
+    "tier1": {
+      "name": "bare",
+      "prompt_chars": 1057,
+      "output_chars": 892,
+      "time_s": 26.1
+    },
+    "tier3": {
+      "name": "full_pipeline",
+      "prompt_chars": 25010,
+      "output_chars": 806,
+      "time_s": 35.0
+    }
+  }
+}

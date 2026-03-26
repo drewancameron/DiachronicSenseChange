@@ -301,11 +301,11 @@ def load_glossary(en_text: str = "") -> str:
     if not all_locked:
         return ""
 
-    sections = ["Locked term translations (MUST use these):"]
+    sections = ["Preferred translations (use these unless context demands otherwise):"]
     if relevant_locked:
-        sections.append("\n### Relevant to this passage:")
+        sections.append("\n### Especially relevant to this passage:")
         sections.extend(relevant_locked)
-        sections.append("\n### All locked terms:")
+        sections.append("\n### Full list:")
     sections.extend(all_locked)
     return "\n".join(sections)
 
@@ -458,8 +458,96 @@ def build_domain_notes(en_text: str) -> str:
     return "## Polysemy Warnings (check these carefully)\n" + "\n".join(notes)
 
 
-def build_translation_prompt(passage_id: str, features_arr, metadata) -> str:
-    """Build a guided first-attempt translation prompt."""
+# ====================================================================
+# Adaptive prompt: complexity scoring and tiered prompt assembly
+# ====================================================================
+
+def score_complexity(en_text: str) -> dict:
+    """Score a passage's syntactic complexity to determine prompt weight.
+
+    Returns a dict with individual scores and an overall tier:
+      'light'  — dialogue, short declaratives, philosophical speech
+      'medium' — mixed narration with some subordination
+      'heavy'  — long participial chains, temporal nesting, complex subordination
+    """
+    sents = [s.strip() for s in re.split(r'(?<=[.!?])\s+', en_text) if s.strip()]
+    if not sents:
+        return {"tier": "light", "scores": {}}
+
+    try:
+        from label_constructions import label_english
+    except ImportError:
+        return {"tier": "medium", "scores": {}}
+
+    n_sents = len(sents)
+    total_words = len(en_text.split())
+    avg_sent_len = total_words / max(1, n_sents)
+
+    # Count structural features
+    n_relative = 0
+    n_conditional = 0
+    n_temporal = 0
+    n_fragments = 0
+    n_coord_chains = 0
+    n_dialogue = 0
+
+    for sent in sents:
+        labels = label_english(sent)
+        for l in labels:
+            if "Relative" in l:
+                n_relative += 1
+            if "Contrafactual" in l or "Vivid" in l:
+                n_conditional += 1
+            if "Temporal" in l:
+                n_temporal += 1
+            if "Fragment" in l:
+                n_fragments += 1
+            if "Coordination Chain" in l:
+                n_coord_chains += 1
+
+        # Detect dialogue (short sentences with speech verbs or question marks)
+        if len(sent.split()) < 10 and ("?" in sent or
+            any(w in sent.lower() for w in ["said", "cried", "asked", "spat"])):
+            n_dialogue += 1
+
+    # Complexity score
+    subordination = n_relative + n_conditional + n_temporal
+    dialogue_frac = n_dialogue / max(1, n_sents)
+    fragment_frac = n_fragments / max(1, n_sents)
+
+    scores = {
+        "n_sents": n_sents,
+        "avg_sent_len": round(avg_sent_len, 1),
+        "subordination": subordination,
+        "coord_chains": n_coord_chains,
+        "dialogue_frac": round(dialogue_frac, 2),
+        "fragment_frac": round(fragment_frac, 2),
+    }
+
+    # Tier assignment
+    if dialogue_frac > 0.3 and subordination <= 2:
+        tier = "light"
+    elif avg_sent_len < 12 and subordination <= 1:
+        tier = "light"
+    elif subordination >= 4 or n_coord_chains >= 3 or avg_sent_len > 30:
+        tier = "heavy"
+    else:
+        tier = "medium"
+
+    scores["tier"] = tier
+    return scores
+
+
+def build_translation_prompt(passage_id: str, features_arr, metadata,
+                              force_tier: str = None) -> str:
+    """Build an adaptive translation prompt scaled to passage complexity.
+
+    Tiers:
+      light  — register + polysemy + soft glossary. No parallel examples,
+               no structural mirroring. Lets Opus find natural Greek.
+      medium — adds construction labels and key rules. No parallel examples.
+      heavy  — full apparatus: parallels, vocab guidance, structural mirroring.
+    """
     # Load English source
     p_path = PASSAGES / f"{passage_id}.json"
     if not p_path.exists():
@@ -468,28 +556,64 @@ def build_translation_prompt(passage_id: str, features_arr, metadata) -> str:
     if not en_text:
         return ""
 
-    # Split into sentences
-    sents = [s.strip() for s in re.split(r'(?<=[.!?])\s+', en_text) if s.strip()]
+    # Determine tier
+    complexity = score_complexity(en_text)
+    tier = force_tier or complexity.get("tier", "medium")
+    print(f"    Complexity: {complexity}")
+    print(f"    Prompt tier: {tier}")
 
-    # Build per-sentence guidance
-    guidance_parts = []
-    for i, sent in enumerate(sents, 1):
-        guidance_parts.append(
-            build_sentence_guidance(sent, i, features_arr, metadata)
-        )
-
-    guidance = "\n".join(guidance_parts)
-    vocab = build_vocab_guidance(en_text)
-    rules = load_rules()
+    # Common to all tiers: polysemy warnings and glossary
+    domain_notes = build_domain_notes(en_text)
     glossary = load_glossary(en_text)
 
-    # Build construction guide (conditionals, temporals, modals)
+    # --- TIER: LIGHT ---
+    if tier == "light":
+        prompt = f"""You are translating Cormac McCarthy's Blood Meridian into Ancient Greek (Koine register with Attic vocabulary). Use polytonic orthography.
+
+The target register is literary Koine with classical vocabulary — draw on the idiom of the Septuagint for biblical/religious contexts, Plato for philosophical speech, Thucydides/Xenophon for narration. Choose the register that suits the speaker and context naturally.
+
+{domain_notes}
+
+## Vocabulary Notes (preferred, not mandatory)
+{glossary}
+
+Treat these as preferences. If context demands a different word, use it.
+
+## English Source
+{en_text}
+
+## Instructions
+1. Translate into Ancient Greek. Match McCarthy's sentence structure where Greek allows it naturally.
+2. Preserve his parataxis and asyndeton — but use particles (δέ, γάρ, οὖν) where Greek genuinely needs them for readability.
+3. Preserve fragments as fragments. Preserve dialogue line breaks.
+4. Every word must be attestable in Morpheus/LSJ.
+5. Output ONLY the Greek text.
+"""
+        return prompt
+
+    # --- TIER: MEDIUM ---
+    # Add construction labels and core rules, but no parallel examples
+    rules = load_rules()
+
+    sents = [s.strip() for s in re.split(r'(?<=[.!?])\s+', en_text) if s.strip()]
+
+    # Construction labels only (no parallels)
+    construction_notes = []
+    try:
+        from label_constructions import label_english
+        for i, sent in enumerate(sents, 1):
+            labels = label_english(sent)
+            if labels:
+                short = sent[:60] + ("..." if len(sent) > 60 else "")
+                construction_notes.append(f'  {i}. "{short}" — {", ".join(labels)}')
+    except Exception:
+        pass
+
     construction_guide = ""
     try:
         from conditional_guide import identify_constructions, format_for_prompt
         findings = identify_constructions(en_text)
         if findings:
-            # Deduplicate by (type, text[:40])
             seen = set()
             unique = []
             for f in findings:
@@ -501,8 +625,46 @@ def build_translation_prompt(passage_id: str, features_arr, metadata) -> str:
     except Exception:
         pass
 
-    # Build domain-specific disambiguation notes
-    domain_notes = build_domain_notes(en_text)
+    constr_text = "\n".join(construction_notes) if construction_notes else ""
+
+    if tier == "medium":
+        prompt = f"""You are translating Cormac McCarthy's Blood Meridian into Ancient Greek (Koine with Attic vocabulary).
+
+## Translation Rules
+{rules}
+
+{domain_notes}
+
+## Vocabulary Notes (preferred, not mandatory)
+{glossary}
+
+Treat locked terms as strong preferences. If context demands a different word, use it — but note your reasoning.
+
+## Construction Labels Detected in Source
+{constr_text}
+
+{construction_guide}
+
+## English Source
+{en_text}
+
+## Instructions
+1. Translate into Ancient Greek (Koine/Attic register).
+2. The construction labels show what Greek constructions to consider — use them as guidance, not rigid rules.
+3. McCarthy's comma splices → asyndeton generally, but use connective particles where Greek needs them.
+4. Preserve relative clauses as ὅς/ἥ/ὅ + finite verb where natural. Participles are acceptable if more idiomatic.
+5. Preserve fragments as fragments.
+6. Every word must be attestable in Morpheus/LSJ.
+7. Output ONLY the Greek text.
+"""
+        return prompt
+
+    # --- TIER: HEAVY ---
+    # Construction labels + a few semantically-matched style models.
+    # No per-word vocabulary lookups — they over-constrain word choice.
+    # Instead: holistic style models from thematically similar classical prose.
+
+    style_models = _find_style_models(en_text, k=4)
 
     prompt = f"""You are translating Cormac McCarthy's Blood Meridian into Ancient Greek (Koine with Attic vocabulary).
 
@@ -511,32 +673,73 @@ def build_translation_prompt(passage_id: str, features_arr, metadata) -> str:
 
 {domain_notes}
 
-## {glossary}
+## Vocabulary Notes (preferred, not mandatory)
+{glossary}
+
+## Style Models
+
+The following passages from the classical corpus are thematically close to the passage you are translating. Let them guide your ear and register — not your dictionary. Notice their clause structure, particle usage, and how they handle similar subject matter in Greek.
+
+{style_models}
+
+## Construction Labels Detected in Source
+{constr_text}
+
+{construction_guide}
 
 ## English Source
 {en_text}
 
-## Structural Guidance
-
-For each sentence we describe its grammar and show how translators of classical Greek prose (Thucydides, Herodotus, Xenophon, Plato, Plutarch, Septuagint) handled structurally similar English sentences. Use these as models for construction choices.
-
-{guidance}
-
-{construction_guide}
-
-{vocab}
-
 ## Instructions
-1. Translate the full passage into Ancient Greek (Koine/Attic register).
-2. Follow the structural guidance: match McCarthy's constructions where Greek allows it.
-3. Use the vocabulary guidance for word choices — prefer attested forms from the parallel corpus.
-4. McCarthy's comma splices → asyndeton. His "and...and...and" → καί chains. No δέ unless genuine contrast.
-5. Preserve relative clauses as ὅς/ἥ/ὅ + finite verb. Do NOT convert to articular participles.
-6. Preserve fragments as fragments. Do NOT expand into full sentences.
+1. Translate into Ancient Greek (Koine/Attic register).
+2. Mirror McCarthy's sentence structure where Greek allows it naturally — but always prefer idiomatic Greek over literal English mirroring.
+3. McCarthy's "and...and...and" coordination chains → preserve as καί chains. Do NOT subordinate.
+4. McCarthy's comma splices → asyndeton generally. But use particles (δέ, γάρ, οὖν) where Greek genuinely needs them.
+5. Preserve relative clauses as ὅς/ἥ/ὅ + finite verb where natural. Participles are acceptable if more idiomatic.
+6. Preserve fragments as fragments.
 7. Every word must be attestable in Morpheus/LSJ.
-7. Output ONLY the Greek text, one continuous paragraph matching McCarthy's formatting.
+8. Output ONLY the Greek text, matching McCarthy's paragraph formatting.
 """
     return prompt
+
+
+def _find_style_models(en_text: str, k: int = 4) -> str:
+    """Find thematically similar passages from the classical corpus using embeddings.
+
+    Returns a formatted string with k Greek passages and their sources,
+    chosen for thematic (not structural) similarity to the English source.
+    """
+    try:
+        import sys
+        sys.path.insert(0, str(ROOT))
+        from retrieval.search import lexical_inspiration, Scale
+        hits = lexical_inspiration(en_text, Scale.SENTENCE, period_filter=None, top_k=k * 3)
+    except Exception as e:
+        print(f"    Style model retrieval failed: {e}")
+        return "(no style models available)"
+
+    if not hits:
+        return "(no style models available)"
+
+    # Deduplicate by author and pick diverse sources
+    seen_authors = set()
+    selected = []
+    for hit in hits:
+        author = getattr(hit.chunk, 'author', '') or ''
+        if author in seen_authors:
+            continue
+        seen_authors.add(author)
+        greek = hit.chunk.text[:200]
+        source = f"{author}, {getattr(hit.chunk, 'work', '')}"
+        period = getattr(hit.chunk, 'period', '')
+        selected.append(f'  [{source} ({period})]:\n    {greek}')
+        if len(selected) >= k:
+            break
+
+    if not selected:
+        return "(no style models available)"
+
+    return "\n\n".join(selected)
 
 
 def build_revision_prompt(passage_id: str, en_text: str, grc_text: str,

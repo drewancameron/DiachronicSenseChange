@@ -1,0 +1,673 @@
+You are translating Cormac McCarthy's Blood Meridian into Ancient Greek (Koine with Attic vocabulary).
+
+## Translation Rules
+# Translation Prompt Rules
+
+These rules MUST be included in every translation prompt (for new passages or revision passes).
+
+## Sentence Structure Mirroring
+
+**Mirror the syntactic construction type of the English source sentence:**
+
+- English relative clause ("the creature **who would** carry her off") → Greek relative clause (τὸ πλάσμα **ὃ** αὐτὴν ἀπάξει), NOT articular participle
+- English participial phrase ("crouching by the fire") → Greek participle (πτώσσων παρὰ τὸ πῦρ), NOT relative clause
+- English bare fragment ("The firewood, the washpots.") → Greek bare fragment (τὰ ξύλα, τοὺς πλυνούς.), NOT a full sentence
+- English coordination ("he walks and he hears") → Greek coordination (περιπατεῖ καὶ ἀκούει), NOT subordination
+- English conditional ("if they got my boots") → Greek conditional (εἰ ἔλαβον τὰς ἐμβάδας), NOT participial
+- English direct speech → Greek direct speech with same structure
+
+**Do NOT convert between construction types unless the alternative is more natural for Ancient Greek (Koine/Attic).** The LLM default is to over-subordinate and over-participialise. Resist this — but where Greek idiom genuinely favours a different construction (e.g. genitive absolute for an English temporal clause), that is fine. The test: would a competent Greek prose author use this construction here? If the English structure works naturally in Greek too, keep it.
+
+## Neuter Plural Agreement
+
+Neuter plural subjects take SINGULAR verbs (Attic rule, maintained in our register):
+- τὰ πλοῖα βοᾷ (not βοῶσι)
+- τὰ Λεοντίδια ἐκαλεῖτο (not ἐκαλοῦντο)
+- τὰ ὀνόματα ἀπόλωλεν (not ἀπολώλασιν)
+
+## Time Expressions
+
+- Dative for point in time ("on that night" = νυκτὶ ἐκείνῃ)
+- Accusative for duration ("fourteen years" = τεσσαρεσκαίδεκα ἔτη)
+- Genitive for time within which ("by night" = νυκτός)
+
+## Word Order
+
+Place time expressions and adverbial modifiers where the English places them relative to the word they modify. If McCarthy puts the time expression between subject and participle, do the same in Greek:
+- "The mother dead these fourteen years did incubate..."
+- → ἡ μήτηρ τεσσαρεσκαίδεκα ταῦτα ἔτη τεθνηκυῖα ἐνεθάλπετο...
+
+## Vocabulary
+
+- Use the IDF glossary for all locked terms
+- Prefer πλάσμα over κτίσμα for "creature" (more physical, Genesis resonance)
+- Mark all loans/transliterations with * prefix
+- Words attested only in Byzantine or later Greek (e.g. *βαμβάκιον) must also be * marked as loans
+- Herodotean periphrasis is acceptable for concepts without a Koine word (e.g. cotton = τὸ ἐριοφόρον φυτόν, Hdt. 3.106), but a short marked loan is also fine for passing references
+- Every word in the translation should be attestable in Morpheus/LSJ or our AG corpus. If not, it is probably invented. Replace it.
+- Do not use modern Greek vocabulary. All prompts must specify "Ancient Greek (Koine/Attic)" — never just "Greek" which risks modern Greek output.
+
+## Register
+
+- Koine structure with Attic vocabulary richness
+- Septuagintal colouring for biblical passages
+- Do not over-subordinate — McCarthy's power comes from coordination
+
+
+# Particle Style Guide for Blood Meridian Translation
+
+## Core principle
+
+McCarthy's prose is mostly **asyndetic** (no connective at all) or uses bare **"and"**. The Greek should follow this: prefer asyndeton or καί. Use μέν...δέ and other particles only when the English signals a genuine logical relationship.
+
+## When to use what
+
+### Asyndeton (no particle)
+Use when McCarthy uses a full stop or comma-splice between independent clauses with no conjunction:
+- "He is pale and thin. He stokes the fire." → ὠχρός ἐστι καὶ ἰσχνός. σκαλεύει τὸ πῦρ.
+- No δέ, no γάρ, no οὖν — just the next sentence.
+
+### καί
+Use when McCarthy writes "and" — his most common conjunction. Also for his cascading "and...and...and" chains:
+- "he walks in the streets and hears tongues" → περιπατεῖ ἐν ταῖς ὁδοῖς καὶ ἀκούει γλώσσας
+
+### τε...καί / τε
+Use for things that belong together as a natural pair or list, where McCarthy coordinates without contrast:
+- "the father never speaks her name, the child does not know it" → ὁ πατὴρ οὐδέποτε λέγει τὸ ὄνομα αὐτῆς, τὸ τε παιδίον οὐ γινώσκει αὐτό
+- τε signals "and furthermore / and also" — additive, not adversative
+
+### δέ
+Use ONLY when there is a genuine shift, contrast, or change of subject that the English signals:
+- "He fled. **But** he leaned against the bar" → ὁ μὲν ἔφυγεν, ὁ δὲ προσεκλίθη τῷ ξύλῳ
+- New scene or subject change: "The reverend had stopped. **[Now]** the tall man pushed forward" → ὁ ἱερεὺς ἐπαύσατο. ὁ δὲ ὑψηλὸς προῆλθεν
+
+### μέν...δέ
+Use for explicit contrasts between two things:
+- "He is not big **but** he has big wrists" → οὐ μέγας μέν ἐστιν, μεγάλους δὲ ἔχει τοὺς καρπούς
+- Must be a genuine antithesis, not just two consecutive facts
+
+### γάρ
+Use when McCarthy gives an explanation or reason (rare in his style):
+- "now he put it on again" (explaining why he'd removed the hat) → νῦν γὰρ πάλιν ἐπέθηκεν αὐτόν
+
+### οὖν
+Almost never. McCarthy doesn't do "therefore." Reserve for the judge's formal rhetoric only.
+
+## Common LLM errors to avoid
+
+1. **δέ as default connective** — the LLM treats δέ like English "and." It isn't. δέ implies contrast or topic shift. Most of McCarthy's sentences should be asyndetic or use καί.
+
+2. **Over-using μέν...δέ** — this is a balanced antithesis structure. McCarthy rarely balances. Don't impose symmetry.
+
+3. **γάρ where none is needed** — don't explain what McCarthy leaves unexplained.
+
+4. **Missing asyndeton** — McCarthy's power comes from sentences placed next to each other with NO connective. If the English has a period, the Greek should usually have a period. Don't bridge with particles.
+
+
+
+
+## Locked term translations (MUST use these):
+
+### Relevant to this passage:
+  the kid = ὁ παῖς
+    (παῖς covers both 'child' and 'young man' in classical and Koine usage. Korto alternates ο μικρός (colloquial) and το παι)
+  the judge = ὁ κριτής
+    (κριτής over δικαστής. In the Septuagint, κριτής = 'judge' in the Book of Judges — figures of terrifying divine-adjacent )
+  hat = ὁ πῖλος / ὁ πέτασος
+    (πέτασος = wide-brimmed hat (traveller's hat, as worn by Hermes). πῖλος = felt cap. Use πέτασος for the wide-brimmed hats)
+
+### All locked terms:
+  the kid = ὁ παῖς
+  the judge = ὁ κριτής  [septuagintal]
+  pistol = πιστόλιον  [modern_loan]
+  rifle / gun (long) = τὸ πυροβόλον
+  gunpowder / powder = ἡ πυρῖτις (κόνις)
+  gunshot / to shoot = πυροβολέω / πυροβολισμός
+  knife = ἡ μάχαιρα
+  desert / waste = ἡ ἔρημος / ἡ ἐρημία  [septuagintal]
+  plain / prairie / flat land = τὸ πεδίον
+  river = ὁ ποταμός
+  mud / mire = ὁ πηλός / ἡ ἰλύς
+  blood = τὸ αἷμα
+  fire = τὸ πῦρ
+  sun = ὁ ἥλιος
+  dust = ἡ κόνις
+  bones = τὰ ὀστᾶ
+  stars = οἱ ἀστέρες
+  night = ἡ νύξ
+  horse = ὁ ἵππος
+  mule = ὁ ἡμίονος
+  wolf / wolves = ὁ λύκος
+  tavern / saloon / dramshop = τὸ καπηλεῖον
+  hotel = τὸ πανδοκεῖον  [NT]
+  whore / whores = αἱ πόρναι
+  pilgrim = ὁ προσκυνητής
+  dollar / dollars / money / coins = τὸ ἀργύριον (generic money) / ὁ στατήρ (coin)
+  hat = ὁ πῖλος / ὁ πέτασος
+  boots = αἱ ἐμβάδες / αἱ κρηπῖδες
+  shirt / linen shirt = ὁ λίνεος χιτών
+  Memphis = Μέμφις
+  Texas = Τέξας  [transliteration]
+
+## English Source
+He looked about at the dark forest in which they were bivouacked. He nodded toward the specimens he'd collected. These anonymous creatures, he said, may seem little or nothing in the world. Yet the smallest crumb can devour us. Any smallest thing beneath yon rock out of men's knowing. Only nature can enslave man and only when the existence of each last entity is routed out and made to stand naked before him will he be properly suzerain of the earth.
+
+What's a suzerain?
+
+A keeper. A keeper or overlord.
+
+Why not say keeper then?
+
+Because he is a special kind of keeper. A suzerain rules even where there are other rulers. His authority countermands local judgements.
+
+Toadvine spat.
+
+The judge placed his hands on the ground. He looked at his inquisitor. This is my claim, he said. And yet everywhere upon it are pockets of autonomous life. Autonomous. In order for it to be mine nothing must be permitted to occur upon it save by my dispensation.
+
+## Structural Guidance
+
+For each sentence we describe its grammar and show how translators of classical Greek prose (Thucydides, Herodotus, Xenophon, Plato, Plutarch, Septuagint) handled structurally similar English sentences. Use these as models for construction choices.
+
+### 1. "He looked about at the dark forest in which they were bivouacked."
+Grammar: Complex sentence (main + subordinate clause), 12 words. 1 relative clause(s) — preserve as ὅς/ἥ/ὅ + finite verb. passive voice.
+  → **Defining Relative**: ὅς/ἥ/ὅ + indicative (definite) — do NOT convert to participle
+    e.g. ὁ ἀνὴρ ὃς ἐλάλησεν
+  → **Passive Voice**
+Parallels:
+  "These islands are occupied by the Liparaeans, who are colonists of the"
+    → νέμονται δὲ Λιπαραῖοι αὐτάς, Κνιδίων ἄποικοι ὄντες. οἰκοῦσι δ’ ἐν μιᾷ  [Genitive of Separation, Middle Voice]
+    [History of the Peloponnesian W]
+  "ere 
+fastened together by long chains which were passed through 
+their"
+    → ἔθυσε δὲ καὶ Μετοίκια τῇ ἕκτῃ ἐπὶ δέκα τοῦ Ἑκατομβαιῶνος, ἣν ἔτι νῦν θ [Genitive of Separation, Relative Clause (oblique)]
+    [Theseus]
+
+### 2. "He nodded toward the specimens he'd collected."
+Grammar: Complex sentence (main + subordinate clause), 8 words. 1 relative clause(s) — preserve as ὅς/ἥ/ὅ + finite verb.
+  → **Defining Relative**: ὅς/ἥ/ὅ + indicative (definite) — do NOT convert to participle
+    e.g. ὁ ἀνὴρ ὃς ἐλάλησεν
+Parallels:
+  "Read the complaint itself, which he brings against me. The Complaint N"
+    → λέγε δʼ αὐτὸ τὸ ἔγκλημα, ὅ μοι δικάζεται. [Middle Voice, Relative Clause (oblique)]
+    [Against Pantaenetus]
+  "and said to the friend who was nearest him: The discipline of these Ba"
+    → καὶ τῶν φίλων προσαγορεύσας τὸν ἐγγυτάτω, τάξις μέν, εἶπεν, ὦ Μεγάκλει [Circumstantial Participle, Genitive of Separation, Middle Voice]
+    [Pyrrhus]
+
+### 3. "These anonymous creatures, he said, may seem little or nothing in the world."
+Grammar: Simple sentence, 13 words. one coordination (καί). comma splice → asyndeton in Greek (no δέ).
+  → **Asyndeton (comma splice)**
+Parallels:
+  "II, 234. 
+76. should be prolonged: For 5 years, cf. MRR II, 238. The s"
+    → μετὰ δὲ τὴν ναυμαχίαν Ξέρξης μὲν ἔτι θυμομαχῶν πρὸς τὴν ἀπότευξιν ἐπεχ [Circumstantial Participle, Purpose Infinitive]
+    [Themistocles]
+  "ho were not 
+accustomed to either heat or thirst, suffered very intens"
+    → οἳ τῶν ἴσων ἀπʼ ἀρχῆς τετυχηκότες, ἐν δὲ τῷ κλήρῳ καὶ πλέον ἔχειν ἐκεί [Circumstantial Participle, Dative of Instrument, Dative of Time When, Middle Voice, Purpose Infinitive]
+    [Lycurgus]
+
+### 4. "Yet the smallest crumb can devour us."
+Grammar: Simple sentence, 7 words.
+Parallels:
+  "archers and then sailed away to 
+Pontus. 
+Sulla realized that the peac"
+    → ὀπίμια δὲ τὰ σκῦλα, φησὶ Βάρρων, καθότι καὶ τὴν περιουσίαν ὄπεμ λέγουσ
+    [Romulus]
+  "But Alcibiades deviseth against them this plot. He persuaded the Laced"
+    → μηχανᾶται δὲ πρὸς αὐτοὺς τοιόνδε τι ὁ Ἀλκιβιάδης· τοὺς Λακεδαιμονίους  [Middle Voice]
+    [History of the Peloponnesian W]
+
+### 5. "Any smallest thing beneath yon rock out of men's knowing."
+Grammar: Verbless fragment, 11 words.
+  → **Fragment**
+Parallels:
+  "The sight of the hare is not keen for several
+						reasons. The eyes "
+    → βλέπει δὲ οὐκ ὀξὺ διὰ πολλά· τά τε γὰρ ὄμματα 						ἔχει ἔξω καὶ τὰ βλ
+    [On Hunting]
+  "it is not clear that Plato’s conception is
+altogether egoistic. To say"
+    → ΕΥΘ.      ἐμπορική, εἰ οὕτως ἥδιόν σοι ὀνομάζειν.
+    [Euthyphro]
+
+### 6. "Only nature can enslave man and only when the existence of each last entity is r..."
+Grammar: Compound sentence (multiple independent clauses), 32 words. 2 coordinations — preserve καί chain (McCarthy's parataxis). passive voice.
+  → **Passive Voice**
+Parallels:
+  "Again, we were left independent for no other reason than inasmuch as t"
+    → αὐτόνομοί τε ἐλείφθημεν οὐ δι’  ἄλλο τι ἢ ὅσον αὐτοῖς ἐς τὴν ἀρχὴν εὐπ [Dative of Instrument, Dative of Time When, Middle Voice, Passive Voice]
+    [History of the Peloponnesian W]
+  "He was overtaken in his flight by a Persian, and
+                     "
+    → ὡς φεύγων τε κατελαμβάνετο ὑπὸ ἀνδρὸς Πέρσεω καὶ ὡς καταιρεόμενος ὑπʼ  [Circumstantial Participle, Middle Voice, Purpose Infinitive]
+    [Histories]
+
+### 7. "What's a suzerain?"
+Grammar: Verbless fragment, 4 words.
+  → **Fragment**
+Parallels:
+  "lity of the soul. It was based on the authority of the Church, on
+the "
+    → ΦΑΙΔ.                          οὗτός τε δὴ ὁ Ἀπολλόδωρος τῶν ἐπιχωρίων
+    [Phaedo]
+  "he Jain Elders
+KALIDASA
+The Recognition of Śakuntalā
+MANJHAN
+Madhumala"
+    → ΣΩ. πότε οὖν ἀπειπὼν ὁ ἀπαγορεύων δικαίως παύοιτο ἄν; ἆρʼ οὐκ ἐπειδὰν 
+    [Cratylus]
+
+### 8. "A keeper."
+Grammar: Short declarative, 2 words.
+  → **Fragment**
+Parallels:
+  "life (36). Many other topics, such
+as Athens’ glorious building progra"
+    → ἐκεῖ δὲ καὶ τοῖς Ὁμήρου ποιήμασιν ἐντυχὼν πρῶτον, ὡς ἔοικε, παρὰ τοῖς  [Circumstantial Participle, Dative of Instrument, Genitive of Separation, Middle Voice]
+    [Lycurgus]
+  "Of Labotus.  Labotus said to one that made a long discourse: Why such "
+    → Λαβώτας, μακρολογοῦντός τινος, εἶπε, τί μοι μικρῶν πέρι μεγάλα φροιμιά [Circumstantial Participle, Dative of Instrument, Genitive Absolute]
+    [Sayings of Spartans]
+
+### 9. "A keeper or overlord."
+Grammar: Short declarative, 4 words. one coordination (καί).
+  → **Fragment**
+Parallels:
+  "n gods and men. But although
+they are the givers of all good, how can "
+    → ΣΩ.  οὐ γὰρ οὖν.
+    [Euthyphro]
+  "ed marriage and procreation. There were also strict dietary regulation"
+    → ΣΩ. ἔοικεν, ὦ Ἑρμόγενες, οὐχὶ καθάπερ οἱ κάπηλοι αὐτῷ χρῶνται, ἐὰν τὸ 
+    [Cratylus]
+
+### 10. "Why not say keeper then?"
+Grammar: Simple sentence, 5 words.
+Parallels:
+  "many a song sang Phoibos! while Daphne heard him, but felt no pleasure"
+    → 370   ἀλλ᾽ οὐ νεκρὸς ἄδακρυς ἔην τότε: μεμφομένη δὲ ἀνδροφόνον Νίκαιαν
+    [Nonnus (from _OceanofPDF.com_W]
+  "They all raised their hands.Then
+                                Xenop"
+    → ἀνέτειναν πάντες. ἀναστὰς δὲ πάλιν εἶπε Ξενοφῶν· ὦ ἄνδρες, ἀκούσατε ὧν
+    [Anabasis]
+
+### 11. "Because he is a special kind of keeper."
+Grammar: Verbless fragment, 8 words.
+  → **Fragment**
+Parallels:
+  "s.’
+‘Yes, that will be the right approach.’
+‘And to command them their"
+    → ΕΡΜ. πάντα, οἶμαι ἔγωγε.
+    [Cratylus]
+  "But Lucullus was much the greater in war. He was the first Roman to cr"
+    → πολὺ δʼ ὁ Λούκουλλος προῆλθε τῷ πολέμῳ τόν τε Ταῦρον ὑπερβαλὼν στρατοπ [Circumstantial Participle, Dative of Instrument, Dative of Time When]
+    [Comparison of Lucullus and Cim]
+
+### 12. "A suzerain rules even where there are other rulers."
+Grammar: Verbless fragment, 9 words. 1 relative clause(s) — preserve as ὅς/ἥ/ὅ + finite verb.
+  → **Defining Relative**: ὅς/ἥ/ὅ + indicative (definite) — do NOT convert to participle
+    e.g. ὁ ἀνὴρ ὃς ἐλάλησεν
+  → **Fragment**
+Parallels:
+  "beauty are attributes which
+belong to every single god? Can you really"
+    → ΣΩ. νομοθέτου δέ γε, ὡς ἔοικεν, ὄνομα, ἐπιστάτην ἔχοντος διαλεκτικὸν ἄ
+    [Cratylus]
+  "by a fate to which none may draw
+nigh.
+Te. It sways him no longer: the"
+    → πείθου λεγούσῃ χρηστά, κοὐ μέμψει χρόνῳ [Dative of Instrument, Dative of Time When, Middle Voice]
+    [Trachiniae]
+
+### 13. "His authority countermands local judgements."
+Grammar: Simple sentence, 5 words.
+Parallels:
+  "many a song sang Phoibos! while Daphne heard him, but felt no pleasure"
+    → 370   ἀλλ᾽ οὐ νεκρὸς ἄδακρυς ἔην τότε: μεμφομένη δὲ ἀνδροφόνον Νίκαιαν
+    [Nonnus (from _OceanofPDF.com_W]
+  "They all raised their hands.Then
+                                Xenop"
+    → ἀνέτειναν πάντες. ἀναστὰς δὲ πάλιν εἶπε Ξενοφῶν· ὦ ἄνδρες, ἀκούσατε ὧν
+    [Anabasis]
+
+### 14. "Toadvine spat."
+Grammar: Imperative, 2 words.
+  → **Fragment**
+Parallels:
+  "life (36). Many other topics, such
+as Athens’ glorious building progra"
+    → ἐκεῖ δὲ καὶ τοῖς Ὁμήρου ποιήμασιν ἐντυχὼν πρῶτον, ὡς ἔοικε, παρὰ τοῖς  [Circumstantial Participle, Dative of Instrument, Genitive of Separation, Middle Voice]
+    [Lycurgus]
+  "Of Labotus.  Labotus said to one that made a long discourse: Why such "
+    → Λαβώτας, μακρολογοῦντός τινος, εἶπε, τί μοι μικρῶν πέρι μεγάλα φροιμιά [Circumstantial Participle, Dative of Instrument, Genitive Absolute]
+    [Sayings of Spartans]
+
+### 15. "The judge placed his hands on the ground."
+Grammar: Simple sentence, 8 words.
+Parallels:
+  "Therefore their grave faults incur my graver censure. As for the style"
+    → μέμφομαι οὖν αὐτοῖς τὰ μὲν μεγάλα μειζόνως· περὶ δὲ ὧν γράφουσιν, ὅτι  [Middle Voice]
+    [On Hunting]
+  "you will prove the truth of your words.
+EUTHYPHRO: Of course.
+SOCRATES"
+    → ΣΩ.  καὶ αὖ τὸ διδόναι ὀρθῶς, ὧν ἐκεῖνοι τυγχάνουσιν δεόμενοι παρʼ ἡμῶ
+    [Euthyphro]
+
+### 16. "He looked at his inquisitor."
+Grammar: Simple sentence, 5 words.
+Parallels:
+  "many a song sang Phoibos! while Daphne heard him, but felt no pleasure"
+    → 370   ἀλλ᾽ οὐ νεκρὸς ἄδακρυς ἔην τότε: μεμφομένη δὲ ἀνδροφόνον Νίκαιαν
+    [Nonnus (from _OceanofPDF.com_W]
+  "They all raised their hands.Then
+                                Xenop"
+    → ἀνέτειναν πάντες. ἀναστὰς δὲ πάλιν εἶπε Ξενοφῶν· ὦ ἄνδρες, ἀκούσατε ὧν
+    [Anabasis]
+
+### 17. "This is my claim, he said."
+Grammar: Simple sentence, 6 words. comma splice → asyndeton in Greek (no δέ).
+  → **Indirect Speech**
+Parallels:
+  "turn alive to480 Oeta’s land. Come, the trouble lasts
+not one whole da"
+    → ὁρῶμεν αὐτὴν ἀμφιπλῆγι φασγάνῳ [Dative of Instrument, Dative of Time When]
+    [Trachiniae]
+  "Who ought to tolerate these doings? What person, whether friend or rel"
+    → ποῖον φίλον, ποῖον συγγενῆ, ποῖον δημότηνδημότην Blass: δικαστὴν MSS.  [Middle Voice]
+    [Against Andocides]
+
+### 18. "And yet everywhere upon it are pockets of autonomous life."
+Grammar: Verbless fragment, 10 words.
+  → **Fragment**
+Parallels:
+  "He was highly esteemed also for his law concerning wills. Before his t"
+    → εὐδοκίμησε δὲ κἀν τῷ περὶ διαθηκῶν νόμῳ· πρότερον γὰρ οὐκ ἐξῆν, ἀλλʼ ἐ [Dative of Instrument, Dative of Time When]
+    [Solon]
+  "At this time Cleombrotus was in Phocis with an army. The ephors theref"
+    → ἔτυχε δὲ κατʼ ἐκεῖνον τὸν χρόνον ἐν Φωκεῦσιν ὢν ὁ Κλεόμβροτος μετὰ δυν [Accusative + Infinitive, Circumstantial Participle, Dative of Instrument, Dative of Time When, Indirect Speech (acc + infinitive), Purpose Infinitive]
+    [Agesilaus]
+
+### 19. "Autonomous."
+Grammar: Imperative, 1 words.
+  → **Fragment**
+Parallels:
+  "onstitution. All
+over the world, in fact, in Greece and abroad, variou"
+    → ΕΡΜ. τί οὖν δή;
+    [Cratylus]
+  "tching? 'I do not deny that there may be happiness even in that.'
+And "
+    → ΣΩ. εὖ λέγεις. ἴθι δή μοι ἀπόκριναι οὕτως καὶ περὶ τῆς ῥητορικῆς, περὶ
+    [Gorgias]
+
+### 20. "In order for it to be mine nothing must be permitted to occur upon it save by my..."
+Grammar: Simple sentence, 19 words. passive voice.
+  → **Passive Voice**
+Parallels:
+  "whereas now, as you see, proclamation has been made forbidding any
+			"
+    → καίτοι νῦν μέν, ὡς ὁρᾷς, ἀποκεκήρυκται μηδένα μετὰ σοῦ στρατεύειν Θηβα [Accusative + Infinitive, Indirect Speech (acc + infinitive), Middle Voice, Purpose Infinitive]
+    [Hellenica]
+  "Besides, patrols are easily deceived, for they pursue a handful of men"
+    → καὶ εὐεξαπάτητοι δʼ εἰσὶν οἱ φύλακες· διώκουσι γὰρ ὅ τι ἂν ὀλίγον ἴδωσ
+    [On the Cavalry Commander]
+
+
+## Construction Guide
+
+Named Greek constructions identified in the English source:
+
+**indirect speech (after 'said')**: "This is my claim, he said."
+  Greek: ὅτι/ὡς + indicative or accusative + infinitive
+  Pattern: ὅτι + [original tense retained] or acc. + infinitive
+  Example: εἶπεν ὅτι πλάνος ἐστίν (he said that he is an imposter)
+  Register: Attic prefers acc+inf for φημί, λέγω; ὅτι for verbs of knowing/perceiving
+
+
+## Vocabulary Guidance (from parallel corpus)
+
+'looked' [verb — main verb]:
+  [History of the Peloponnes] "After he had given these instructions, and an intimation tha"
+    → καὶ ὁ μὲν ταῦτα διδάξας καὶ ὑπειπὼν τἆλλα ὅτι αὐτὸς τἀκεῖ πρ
+  [History of the Peloponnes] "And so I look the rest should do as well as I; and that of y"
+    → καὶ τοὺς ἄλλους δικαιῶ ταὐτό μοι ποιῆσαι, ὑφ’ ὑμῶν αὐτῶν καὶ
+
+'dark' [adj — modifying 'forest']:
+  [On Hunting] "The large are dark brown, and the white patch on the forehea"
+    → δύο δὲ τὰ γένη ἐστὶν αὐτῶν· οἱ μὲν γὰρ μεγάλοι 						τὸ χρῶμ
+  [History of the Peloponnes] "for it was now growing dark, and the Corinthians by turning "
+    → οὕτω μὲν ἡ ἀπαλλαγὴ ἐγένετο ἀλλήλων, καὶ ἡ ναυμαχία ἐτελεύτα
+
+'forest' [noun — after 'at']:
+  [History of the Peloponnes] "Upon knowledge hereof, the Argives betimes in the morning re"
+    → καὶ οἱ Ἀργεῖοι αἰσθόμενοι ἅμα ἕῳ ἐχώρουν, πρῶτον μὲν ἐς Ἄργο
+  [History of the Peloponnes] "It was especially owing to his experience in Aetolia, when h"
+    → ἀπὸ δὲ τοῦ Αἰτωλικοῦ πάθους, ὃ διὰ τὴν ὕλην μέρος τι ἐγένετο
+
+'collected' [verb]:
+  [History of the Peloponnes] "Everywhere predictions were being recited and oracles being "
+    → καὶ πολλὰ μὲν λόγια ἐλέγετο, πολλὰ δὲ χρησμολόγοι ᾖδον ἔν τε
+  [On the Art of Horsemanshi] "It is necessary to collect him at the turns; for it is neith"
+    → δεῖ δὲ καὶ ὑπολαμβάνειν ἐν ταῖς στροφαῖς· οὐ γὰρ ῥᾴδιον τῷ ἵ
+
+'creatures' [noun — as subject]:
+  [Histories] "Their wings are not feathered but very like the wings of a b"
+    → πτίλα δὲ οὐ πτερωτὰ φορέει ἀλλὰ τοῖσι τῆς νυκτερίδος πτεροῖσ
+  [Histories] "Their wings are not feathered but very like the wings of a b"
+    → Τοσαῦτα μὲν θηρίων πέρι ἱρῶν εἰρήσθω.
+
+'little' [adj — modifying 'seem']:
+  [History of the Peloponnes] "if beaten, they fall back as little as possible."
+    → κρατοῦντές τε τῶν ἐχθρῶν ἐπὶ πλεῖστον ἐξέρχονται καὶ νικώμεν
+  [History of the Peloponnes] "So the officer in charge took the ships, went to Crete, and "
+    → καὶ ὁ μὲν λαβὼν τὰς ναῦς ᾤχετο ἐς Κρήτην, καὶ μετὰ τῶν Πολιχ
+
+'world' [noun — after 'in']:
+  [History of the Peloponnes] "So that if any one should sum up their character, by saying,"
+    → ὥστε εἴ τις αὐτοὺς ξυνελὼν φαίη πεφυκέναι ἐπὶ τῷ μήτε αὐτοὺς
+  [History of the Peloponnes] "And there are many other points in which a likeness might be"
+    → πολλὰ δ’ ἂν καὶ ἄλλα τις ἀποδείξειε τὸ παλαιὸν Ἑλληνικὸν ὁμο
+
+'rock' [noun]:
+  [Aemilius Paulus] "And again, when a mountain or rock is smitten asunder, a fie"
+    → ὁρῶν δὲ καὶ πέτρας πληγῇ ῥαγείσης ἐξεπήδησε ῥεῦμα λάβρον ὕδα
+  [Dion] "at once, then, they ran after them, and found no one, but sa"
+    → εὐθὺς οὖν διώκοντες ἄνθρωπον μὲν οὐδένα λαβεῖν, ὑπὸ πέτραν δ
+
+'Only' [adv]:
+  [History of the Peloponnes] "And if you do this, you will not only be taking the fitting "
+    → καὶ τάδε ποιοῦντες τὰ προσήκοντά τε δράσετε καὶ τὰ ἄριστα βο
+  [History of the Peloponnes] "And the Boeotians not only supplied their contingent and the"
+    → Βοιωτοὶ δὲ μέρος μὲν τὸ σφέτερον καὶ τοὺς ἱππέας παρείχοντο 
+
+'nature' [noun — as subject]:
+  [History of the Peloponnes] "And they are to be commended who, yielding to the instinct o"
+    → ἐπαινεῖσθαί τε ἄξιοι οἵτινες χρησάμενοι τῇ ἀνθρωπείᾳ φύσει ὥ
+  [History of the Peloponnes] "So that at first we were forced to advance our dominion to w"
+    → ἐξ αὐτοῦ δὲ τοῦ ἔργου κατηναγκάσθημεν τὸ πρῶτον προαγαγεῖν α
+
+'enslave' [verb — main verb]:
+  [History of the Peloponnes] "but when we saw them relaxing in their hostility to the Mede"
+    → καὶ μέχρι μὲν ἀπὸ τοῦ ἴσου ἡγοῦντο, προθύμως εἱπόμεθα· ἐπειδ
+  [History of the Peloponnes] "Your fathers rewarded us thus for the courage and patriotism"
+    → τάδε μὲν ἡμῖν πατέρες οἱ ὑμέτεροι ἔδοσαν ἀρετῆς ἕνεκα καὶ πρ
+
+'when' [adv]:
+  [History of the Peloponnes] "And later on, when they had at length more completely reache"
+    → καὶ ἐν τούτῳ τῷ τρόπῳ μᾶλλον ἤδη ὄντες ὕστερον χρόνῳ ἐπὶ Τρο
+  [History of the Peloponnes] "And the war began when the Athenians and Peloponnesians brok"
+    → ἤρξαντο δὲ αὐτοῦ Ἀθηναῖοι καὶ Πελοποννήσιοι λύσαντες τὰς τρι
+
+'existence' [noun — as subject]:
+  [The "Art" of Rhetoric] "And those things which form the subject of sciences or arts "
+    → καὶ ὧν ἐπιστῆμαί εἰσι καὶ τέχναι, δυνατὸν ταῦτα καὶ εἶναι κα
+
+'routed' [verb]:
+  [History of the Peloponnes] "At this time, consequently, owing both to this manoeuvre and"
+    → καὶ ἀμφοτέρωθεν ἤδη, ὑπό τε τοῦ τοιούτου καὶ ὑπὸ τῶν Θηβαίων
+  [Sayings of Kings and Comm] "When another Athenian said to him, You cannot deny that we h"
+    → ἑτέρου δὲ Ἀθηναίου πρὸς αὐτὸν εἰπόντος, ἀλλὰ μὴν ἡμεῖς ἀπὸ τ
+
+'stand' [verb]:
+  [History of the Peloponnes] "However, as I see the matter, the odds are on our side, if w"
+    → ἐγὼ δὲ καὶ τὰ πλείω ὁρῶ πρὸς ἡμῶν ὄντα, ἢν ἐθέλωμέν τε μεῖνα
+  [History of the Peloponnes] "But if you have aught else in mind, or intend to stand in th"
+    → ὑμεῖς δὲ εἴ τι ἄλλο ἐν νῷ ἔχετε ἢ εἰ ἐναντιώσεσθε τῇ τε ὑμετ
+
+'naked' [adj — modifying 'stand']:
+  [Brutus] "And now Brutus and his associates went up to the Capitol, th"
+    → οἱ δὲ περὶ Βροῦτον εἰς τὸ Καπετώλιον ἐχώρουν, ᾑμαγμένοι τὰς 
+  [Brutus] "This man he placed nearest to himself, and then, grasping wi"
+    → καὶ τοῦτον ἔγγιστα παραστησάμενος ἑαυτῷ καὶ τὸ ξίφος γυμνὸν 
+
+'properly' [adv]:
+  [History of the Peloponnes] "But we say that neither did we settle them there to be insul"
+    → ἡμεῖς δὲ οὐδ’ αὐτοί φαμεν ἐπὶ τῷ ὑπὸ τούτων ὑβρίζεσθαι κατοι
+  [The "Art" of Rhetoric] "Following on what we have just spoken of, we have now briefl"
+    → περὶ δὲ τῶν ἀτέχνων καλουμένων πίστεων ἐχόμενόν ἐστι τῶν εἰρ
+
+'earth' [noun]:
+  [History of the Peloponnes] "But the Peloponnesians became aware of this, and threw into "
+    → οἱ δὲ Πελοποννήσιοι αἰσθόμενοι ἐν ταρσοῖς καλάμου πηλὸν ἐνίλ
+  [Aemilius Paulus] "and that moist vapour is liquefied by density and cold, when"
+    → ἐξυγραίνεσθαι δὲ πυκνότητι καὶ ψυχρότητι τὴν νοτερὰν  ἀναθυμ
+
+'Why' [adv]:
+  [History of the Peloponnes] "The reasons why they broke it and the grounds of their quarr"
+    → διότι δ’ ἔλυσαν, τὰς αἰτίας προύγραψα πρῶτον καὶ τὰς διαφορά
+  [History of the Peloponnes] "There is accordingly not a single reason that we can find wh"
+    → ὥστε οὐδὲ καθ’ ἓν εὑρίσκομεν εἰκότως ἂν ἡμᾶς σφαλλομένους· κ
+
+'then' [adv]:
+  [History of the Peloponnes] "It was at this point of the mainland then that the Corinthia"
+    → οἱ μὲν οὖν Κορίνθιοι τῆς ἠπείρου ἐνταῦθα ὁρμίζονταί τε καὶ σ
+  [History of the Peloponnes] "What then will be the character of the war we shall be wagin"
+    → τίς οὖν ἔσται ἡμῶν ὁ πόλεμος; εἰ μὴ γὰρ ἢ ναυσὶ κρατήσομεν ἢ
+
+'special' [adj — modifying 'kind']:
+  [Histories] "There are men whose sole business this is and who
+          "
+    → εἰσὶ δὲ οἳ ἐπʼ αὐτῷ τούτῳ κατέαται καὶ τέχνην ἔχουσι ταύτην.
+  [The "Art" of Rhetoric] "The first rule therefore is to make a proper use of connecti"
+    → ἓν μὲν δὴ τὸ εὖ ἐν τοῖς συνδέσμοις, δεύτερον δὲ τὸ τοῖς ἰδίο
+
+'kind' [noun]:
+  [History of the Peloponnes] "But in contests of that kind the city bestows the prizes upo"
+    → ἡ δὲ πόλις ἐκ τῶν τοιῶνδε ἀγώνων τὰ μὲν ἆθλα ἑτέροις δίδωσιν
+  [History of the Peloponnes] "Our words, however, will be spoken, not so much for the purp"
+    → ῥηθήσεται δὲ οὐ παραιτήσεως μᾶλλον ἕνεκα ἢ μαρτυρίου καὶ δηλ
+
+'rules' [noun]:
+  [History of the Peloponnes] "And they are to be commended who, yielding to the instinct o"
+    → ἐπαινεῖσθαί τε ἄξιοι οἵτινες χρησάμενοι τῇ ἀνθρωπείᾳ φύσει ὥ
+  [History of the Peloponnes] "At least they endured much harder treatment than this at the"
+    → ὑπὸ γοῦν τοῦ Μήδου δεινότερα τούτων πάσχοντες ἠνείχοντο, ἡ δ
+
+'even' [adv]:
+  [History of the Peloponnes] "For this was the greatest movement that had ever stirred the"
+    → κίνησις γὰρ αὕτη μεγίστη δὴ τοῖς Ἕλλησιν ἐγένετο καὶ μέρει τ
+  [History of the Peloponnes] "Indeed, even after the Trojan war Hellas was still subject t"
+    → ἐπεὶ καὶ μετὰ τὰ Τρωικὰ ἡ Ἑλλὰς ἔτι μετανίστατό τε καὶ κατῳκ
+
+'where' [adv]:
+  [History of the Peloponnes] "but on the left wing where the Corinthians themselves were, "
+    → ταύτῃ μὲν οὖν οἱ Κορίνθιοι καὶ οἱ ξύμμαχοι ἡσσῶντό [τε] καὶ 
+  [History of the Peloponnes] "And so Potidaea was at length in a state of siege, which was"
+    → καὶ οὕτως ἤδη κατὰ κράτος ἡ Ποτείδαια ἀμφοτέρωθεν ἐπολιορκεῖ
+
+'rulers' [noun — as subject]:
+  [Timoleon] "And they put in at Tauromenium in Sicily, whither they had b"
+    → καὶ κατήχθησαν εἰς Ταυρομένιον τῆς Σικελίας, ὑποδεχομένου κα
+  [Sayings of Kings and Comm] "He said that the worst ruler is one who cannot rule himself."
+    → κάκιστον δὲ ἔλεγεν ἄρχοντα εἶναι τὸν ἄρχειν ἑαυτοῦ μὴ δυνάμε
+
+'authority' [noun — as subject]:
+  [History of the Peloponnes] "For as long as he was in authority in the city in time of pe"
+    → ὅσον τε γὰρ χρόνον προύστη τῆς πόλεως ἐν τῇ εἰρήνῃ, μετρίως 
+  [Sayings of Kings and Comm] "He charged those in power to be sparing of their authority, "
+    → φείδεσθαι δὲ τῆς ἐξουσίας παρεκάλει τοὺς δυναμένους, ὅπως ἀε
+
+'judgements' [noun — as object]:
+  [The "Art" of Rhetoric] "and we must argue that, when the dicast takes an oath to dec"
+    → καὶ ὅτι τὸ γνώμῃ τῇ ἀρίστῃ τοῦτʼ ἐστίν, τὸ μὴ παντελῶς χρῆσθ
+
+'judge' [noun — as subject]:
+  [History of the Peloponnes] "But we could not have expected to be able to survive for lon"
+    → οὐ μέντοι ἐπὶ πολύ γ’ ἂν ἐδοκοῦμεν δυνηθῆναι, εἰ μὴ ὁ πόλεμο
+  [Dion] "Since, then, fortune has made thee our lord and master, how "
+    → ὅτε οὖν σὲ κύριον ἡμῶν ἡ τύχη πεποίηκε, πῶς αὐτῇ διαιτᾷς ἐκε
+
+'ground' [noun — after 'on']:
+  [History of the Peloponnes] "therefore, let no one think the worse of us on the ground th"
+    → μηδέ τῳ χείρους δόξωμεν εἶναι εἰ ἐν τῇ εἰρήνῃ τιμώμενοι ὑπ’ 
+  [History of the Peloponnes] "However, as I see the matter, the odds are on our side, if w"
+    → ἐγὼ δὲ καὶ τὰ πλείω ὁρῶ πρὸς ἡμῶν ὄντα, ἢν ἐθέλωμέν τε μεῖνα
+
+'claim' [noun]:
+  [History of the Peloponnes] "In that case even they would not be setting up the claim tha"
+    → ἀδικούμενοί τε, ὡς ἔοικεν, οἱ ἄνθρωποι μᾶλλον ὀργίζονται ἢ β
+  [History of the Peloponnes] "And I claim that no one of you shall think more harshly of m"
+    → ‘καὶ χείρων οὐδενὶ ἀξιῶ δοκεῖν ὑμῶν εἶναι, εἰ τῇ            
+
+'yet' [adv]:
+  [History of the Peloponnes] "but the opportunities of war wait for no man. "Moreover, nei"
+    → καὶ μὴν οὐδ’ ἡ ἐπιτείχισις οὐδὲ τὸ ναυτικὸν αὐτῶν ἄξιον φοβη
+  [History of the Peloponnes] "For even though a man flourishes in his own private affairs,"
+    → καλῶς μὲν γὰρ φερόμενος ἀνὴρ τὸ καθ’ ἑαυτὸν διαφθειρομένης τ
+
+'everywhere' [adv]:
+  [History of the Peloponnes] "For Brasidas in other things showed himself moderate, and in"
+    → ὁ γὰρ Βρασίδας ἔν τε τοῖς ἄλλοις μέτριον ἑαυτὸν παρεῖχε, καὶ
+  [History of the Peloponnes] "And the fact that these districts of Hellas still retain thi"
+    → σημεῖον δ’ ἐστὶ ταῦτα τῆς Ἑλλάδος ἔτι οὕτω νεμόμενα τῶν ποτὲ
+
+'autonomous' [adj — modifying 'life']:
+  [History of the Peloponnes] "And so the Boeotian exiles were restored, and they as well a"
+    → καὶ οἱ φεύγοντες Βοιωτῶν κατελθόντες καὶ οἱ ἄλλοι πάντες αὐτ
+
+'life' [noun]:
+  [History of the Peloponnes] "And the fact that these districts of Hellas still retain thi"
+    → σημεῖον δ’ ἐστὶ ταῦτα τῆς Ἑλλάδος ἔτι οὕτω νεμόμενα τῶν ποτὲ
+  [History of the Peloponnes] "He died a natural death, an illness taking him off, though s"
+    → νοσήσας δὲ τελευτᾷ τὸν βίον· λέγουσι δέ τινες καὶ ἑκούσιον φ
+
+'order' [noun]:
+  [History of the Peloponnes] "But neither of the Hellenic divisions was aware of the battl"
+    → τῶν δὲ Ἑλληνικῶν στρατοπέδων οὐδέτερον ᾔσθετο τῆς μάχης διὰ 
+  [History of the Peloponnes] "whenever a free people that is forced into subjection revolt"
+    → οὗ νῦν τοὐναντίον δρῶντες, ἤν τινα ἐλεύθερον καὶ βίᾳ ἀρχόμεν
+
+'permitted' [verb — main verb]:
+  [History of the Peloponnes] "but rather being anxious, as we are, to stop others from acq"
+    → οὐδ’ αὖ ἀρχῆς ἐφιέμεθα, παῦσαι δὲ μᾶλλον ἑτέρους σπεύδοντες 
+  [History of the Peloponnes] "To this effect spoke Athenagoras. One of the generals then r"
+    → τοιαῦτα δὲ Ἀθηναγόρας εἶπεν. τῶν δὲ στρατηγῶν εἷς           
+
+'occur' [verb]:
+  [Brutus] "This is clear from the transformations which occur in dreams"
+    → δηλοῦσι δὲ αἱ κατὰ τοὺς ὕπνους τροπαὶ τῶν ὀνείρων, ἃς τρέπετ
+  [Περὶ ποιητικῆς] "There are also other forms of discovery, for what we have de"
+    → εἰσὶν μὲν οὖν καὶ ἄλλαι ἀναγνωρίσεις· καὶ γὰρ πρὸς ἄψυχα καὶ
+
+'save' [verb]:
+  [History of the Peloponnes] "But at length, having wearied and wounded each other, they f"
+    → πολύν τε πόνον παρασχόντες ἀλλήλοις καὶ τραυματίσαντες διεκρ
+  [History of the Peloponnes] "and did by their words so prevail with the confederates that"
+    → καὶ πείσαντες ἐκ τῶν λόγων τοὺς ξυμμάχους εὐθὺς ἐχώρουν ἐπὶ 
+
+## Instructions
+1. Translate the full passage into Ancient Greek (Koine/Attic register).
+2. Follow the structural guidance: match McCarthy's constructions where Greek allows it.
+3. Use the vocabulary guidance for word choices — prefer attested forms from the parallel corpus.
+4. McCarthy's comma splices → asyndeton. His "and...and...and" → καί chains. No δέ unless genuine contrast.
+5. Preserve relative clauses as ὅς/ἥ/ὅ + finite verb. Do NOT convert to articular participles.
+6. Preserve fragments as fragments. Do NOT expand into full sentences.
+7. Every word must be attestable in Morpheus/LSJ.
+7. Output ONLY the Greek text, one continuous paragraph matching McCarthy's formatting.

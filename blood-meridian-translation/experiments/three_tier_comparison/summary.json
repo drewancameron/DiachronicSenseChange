@@ -1,0 +1,32 @@
+{
+  "experiment": "Three-tier translation comparison",
+  "passage": "Blood Meridian, Ch. X — the judge's suzerain speech",
+  "model": "claude-opus-4-20250514",
+  "date": "2026-03-26",
+  "tiers": {
+    "tier1": {
+      "name": "bare",
+      "prompt_chars": 1137,
+      "output_chars": 949,
+      "time_s": 28.6,
+      "prompt_file": "tier1_bare_prompt.txt",
+      "output_file": "tier1_bare_output.txt"
+    },
+    "tier2": {
+      "name": "rules_and_constructions",
+      "prompt_chars": 7552,
+      "output_chars": 922,
+      "time_s": 23.1,
+      "prompt_file": "tier2_rules_and_constructions_prompt.txt",
+      "output_file": "tier2_rules_and_constructions_output.txt"
+    },
+    "tier3": {
+      "name": "full_pipeline",
+      "prompt_chars": 33438,
+      "output_chars": 916,
+      "time_s": 35.2,
+      "prompt_file": "tier3_full_pipeline_prompt.txt",
+      "output_file": "tier3_full_pipeline_output.txt"
+    }
+  }
+}
