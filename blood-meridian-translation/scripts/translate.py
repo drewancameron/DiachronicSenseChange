@@ -255,16 +255,59 @@ def load_rules() -> str:
     return rules + "\n\n" + particles
 
 
-def load_glossary() -> str:
+def load_glossary(en_text: str = "") -> str:
+    """Load locked glossary terms, filtered to those relevant to the passage.
+
+    Scans the English source text for keywords that match glossary entries,
+    then includes only the relevant locked terms plus any from matching
+    semantic domains. This gives the LLM context-specific vocabulary rules.
+    """
     glossary_path = GLOSSARY / "idf_glossary.json"
     if not glossary_path.exists():
         return ""
     data = json.load(open(glossary_path))
-    lines = ["Locked term translations (MUST use these):"]
-    for entry in data.get("terms", []):
-        if entry.get("status") == "locked":
-            lines.append(f"  {entry['english']} = {entry['greek']}")
-    return "\n".join(lines)
+
+    en_lower = en_text.lower()
+    all_locked = []
+    relevant_locked = []
+
+    for category, entries in data.items():
+        if category.startswith("_") or not isinstance(entries, dict):
+            continue
+        for key, entry in entries.items():
+            if not isinstance(entry, dict):
+                continue
+            if entry.get("status") != "locked":
+                continue
+            en_term = entry.get("english", "")
+            ag_term = entry.get("ancient_greek", "").replace("*", "")
+            register = entry.get("register", "")
+            justification = entry.get("justification", "")
+
+            line = f"  {en_term} = {ag_term}"
+            if register and register not in ("classical", "koine"):
+                line += f"  [{register}]"
+            all_locked.append(line)
+
+            # Check if this term is relevant to the current passage
+            keywords = [en_term.lower()] + key.replace("_", " ").lower().split()
+            if any(kw in en_lower for kw in keywords if len(kw) > 2):
+                # Add justification for context-specific terms
+                detail = f"  {en_term} = {ag_term}"
+                if justification:
+                    detail += f"\n    ({justification[:120]})"
+                relevant_locked.append(detail)
+
+    if not all_locked:
+        return ""
+
+    sections = ["Locked term translations (MUST use these):"]
+    if relevant_locked:
+        sections.append("\n### Relevant to this passage:")
+        sections.extend(relevant_locked)
+        sections.append("\n### All locked terms:")
+    sections.extend(all_locked)
+    return "\n".join(sections)
 
 
 def build_vocab_guidance(en_text: str) -> str:
@@ -299,6 +342,118 @@ def build_vocab_guidance(en_text: str) -> str:
     return "## Vocabulary Guidance (from parallel corpus)\n\n" + "\n\n".join(entries)
 
 
+# ====================================================================
+# Polysemy disambiguation
+# ====================================================================
+
+# English words with multiple senses where the wrong Greek equivalent
+# is a common LLM error. Each entry: word → list of (context_clue, sense, greek).
+# Only the sense matching the passage context is emitted.
+POLYSEMOUS = {
+    "swell": [
+        (["sea", "ocean", "wave", "water", "ship", "boat", "tide", "shore"],
+         "sea swell, wave", "κῦμα, οἶδμα (NOT οἴδημα which is medical swelling)"),
+        (["pride", "anger", "chest", "heart", "emotion"],
+         "swell with emotion", "ὀγκόω, ἐπαίρω"),
+        (["wound", "injury", "skin", "bruise"],
+         "medical swelling", "οἴδημα, οἰδέω"),
+    ],
+    "float": [
+        (["river", "flatboat", "lumber", "raft", "downstream"],
+         "raft/flatboat", "σχεδία (NOT πλέω)"),
+        (["water", "swim", "surface"],
+         "float on water", "ἐπιπλέω, πλέω"),
+    ],
+    "port": [
+        (["ship", "harbor", "harbour", "dock", "sail"],
+         "harbour", "λιμήν"),
+        (["city", "town", "streets", "walk"],
+         "port city", "ἐμπόριον, λιμήν"),
+    ],
+    "harbor": [
+        (["ship", "boat", "sail", "dock"],
+         "harbour for ships", "λιμήν"),
+        (["wolf", "wolves", "animal", "shelter", "woods", "forest"],
+         "shelter/conceal", "τρέφω, κρύπτω, ὑποδέχομαι"),
+    ],
+    "draw": [
+        (["water", "well", "bucket"],
+         "draw water", "ἀντλέω, ἀρύω"),
+        (["sword", "knife", "pistol", "gun", "weapon", "boot"],
+         "draw a weapon", "σπάω, ἐξέλκω"),
+        (["picture", "line", "sketch"],
+         "draw/sketch", "γράφω"),
+    ],
+    "make": [
+        (["way", "road", "path", "through"],
+         "make one's way", "πορεύομαι, χωρέω"),
+        (["fire", "camp"],
+         "make a fire", "ἀνάπτω πῦρ, καίω"),
+    ],
+    "run": [
+        (["out", "fort", "town", "expelled"],
+         "run out / expelled", "ἐξελαύνω (pass: ἐξηλάθη)"),
+        (["fast", "flee", "chase"],
+         "run/flee", "τρέχω, φεύγω"),
+    ],
+    "charge": [
+        (["crime", "law", "accused", "court", "arrest"],
+         "legal charge", "αἰτία, ἔγκλημα"),
+        (["horse", "attack", "battle", "rush"],
+         "military charge", "ἐφορμή, ἐπιδρομή"),
+    ],
+    "break": [
+        (["float", "raft", "lumber", "apart"],
+         "break up (dismantle)", "διαλύω"),
+        (["bone", "neck", "arm"],
+         "break/fracture", "κατάγνυμι"),
+    ],
+    "dollar": [
+        ([], "money (NEVER δολλάριον)", "ἀργύριον, στατήρ, χρήματα"),
+    ],
+    "dollars": [
+        ([], "money (NEVER δολλάρια)", "ἀργύρια, στατῆρες, χρήματα"),
+    ],
+    "revival": [
+        (["reverend", "preacher", "tent", "sermon", "god", "church"],
+         "religious revival meeting", "ἀναζωπύρησις (NOT ἀνάστασις)"),
+    ],
+}
+
+
+def build_domain_notes(en_text: str) -> str:
+    """Scan English for polysemous words and emit the contextually correct sense."""
+    import re
+    en_lower = en_text.lower()
+    words_in_text = set(re.findall(r'\b\w+\b', en_lower))
+
+    notes = []
+    for word, senses in POLYSEMOUS.items():
+        if word not in words_in_text:
+            continue
+        # Find best matching sense by context clues
+        best_sense = None
+        best_score = -1
+        for clues, sense_desc, greek in senses:
+            if not clues:
+                # No context needed (e.g. "dollar" is always wrong)
+                best_sense = (sense_desc, greek)
+                best_score = 999
+                break
+            score = sum(1 for c in clues if c in en_lower)
+            if score > best_score:
+                best_score = score
+                best_sense = (sense_desc, greek)
+
+        if best_sense:
+            sense_desc, greek = best_sense
+            notes.append(f"  '{word}' here = {sense_desc} → {greek}")
+
+    if not notes:
+        return ""
+    return "## Polysemy Warnings (check these carefully)\n" + "\n".join(notes)
+
+
 def build_translation_prompt(passage_id: str, features_arr, metadata) -> str:
     """Build a guided first-attempt translation prompt."""
     # Load English source
@@ -322,7 +477,7 @@ def build_translation_prompt(passage_id: str, features_arr, metadata) -> str:
     guidance = "\n".join(guidance_parts)
     vocab = build_vocab_guidance(en_text)
     rules = load_rules()
-    glossary = load_glossary()
+    glossary = load_glossary(en_text)
 
     # Build construction guide (conditionals, temporals, modals)
     construction_guide = ""
@@ -342,10 +497,15 @@ def build_translation_prompt(passage_id: str, features_arr, metadata) -> str:
     except Exception:
         pass
 
+    # Build domain-specific disambiguation notes
+    domain_notes = build_domain_notes(en_text)
+
     prompt = f"""You are translating Cormac McCarthy's Blood Meridian into Ancient Greek (Koine with Attic vocabulary).
 
 ## Translation Rules
 {rules}
+
+{domain_notes}
 
 ## {glossary}
 
@@ -388,7 +548,7 @@ def build_revision_prompt(passage_id: str, en_text: str, grc_text: str,
 
     guidance = "\n".join(guidance_parts)
     rules = load_rules()
-    glossary = load_glossary()
+    glossary = load_glossary(en_text)
 
     prompt = f"""You are revising an Ancient Greek (Koine/Attic) translation of McCarthy's Blood Meridian.
 

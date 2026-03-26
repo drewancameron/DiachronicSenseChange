@@ -141,15 +141,22 @@ def load_rules_text() -> str:
 
 
 def load_glossary_locks() -> str:
-    """Load locked glossary terms as a concise reference."""
+    """Load locked glossary terms from the IDF glossary."""
     glossary_path = GLOSSARY / "idf_glossary.json"
     if not glossary_path.exists():
         return ""
     data = json.load(open(glossary_path))
     lines = ["Locked term translations (MUST use these):"]
-    for entry in data.get("terms", []):
-        if entry.get("status") == "locked":
-            lines.append(f"  {entry['english']} = {entry['greek']}")
+    for category, entries in data.items():
+        if category.startswith("_") or not isinstance(entries, dict):
+            continue
+        for key, entry in entries.items():
+            if not isinstance(entry, dict):
+                continue
+            if entry.get("status") == "locked":
+                en = entry.get("english", "")
+                ag = entry.get("ancient_greek", "").replace("*", "")
+                lines.append(f"  {en} = {ag}")
     return "\n".join(lines)
 
 
