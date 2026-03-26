@@ -23,6 +23,15 @@ APPARATUS = ROOT / "apparatus"
 OUTPUT = ROOT / "output"
 
 
+def _ge_class(g: dict) -> str:
+    t = g.get("_type", "")
+    if t == "echo":
+        return "echo"
+    elif t == "attestation":
+        return "attest"
+    return ""
+
+
 def italicise_loans(greek: str) -> str:
     return re.sub(r'\*(\S+)', r'<i>\1</i>', greek)
 
@@ -58,9 +67,35 @@ def build_pdf_html(passage_ids: list[str]) -> str:
         current_para_sents = []
         current_para_glosses = []
 
+        # Load echoes and attestations
+        echoes_path = APPARATUS / passage_id / "echoes.json"
+        attestations_path = APPARATUS / passage_id / "thematic_attestations.json"
+        echoes = json.load(open(echoes_path)) if echoes_path.exists() else []
+        attestations = json.load(open(attestations_path)) if attestations_path.exists() else []
+
         for mg_sent in marginal["sentences"]:
             grk = mg_sent["greek"]
-            glosses = mg_sent.get("glosses", [])
+            glosses = list(mg_sent.get("glosses", []))
+
+            # Merge echoes into glosses for this sentence
+            for echo in echoes:
+                phrase = echo.get("greek", "")
+                if phrase and phrase[:15] in grk:
+                    glosses.append({
+                        "anchor": phrase[:30] + ("…" if len(phrase) > 30 else ""),
+                        "note": f'cf. {echo.get("source", "")}',
+                        "_type": "echo",
+                    })
+
+            # Merge thematic attestations
+            for att in attestations:
+                word = att.get("word", "")
+                if word and word in grk:
+                    glosses.append({
+                        "anchor": word,
+                        "note": f'cf. {att.get("author", "")}, {att.get("work", "")}',
+                        "_type": "attestation",
+                    })
 
             # New paragraph?
             if grk in para_starters and current_para_sents:
@@ -158,6 +193,14 @@ def build_pdf_html(passage_ids: list[str]) -> str:
   .ge .n {{
     color: #666;
   }}
+  .ge.echo .w, .ge.attest .w {{
+    font-weight: 400;
+    font-style: italic;
+  }}
+  .ge.echo .n, .ge.attest .n {{
+    font-style: italic;
+    color: #888;
+  }}
 </style>
 </head>
 <body>
@@ -177,7 +220,7 @@ def build_pdf_html(passage_ids: list[str]) -> str:
         gloss_html = ""
         for g in para["glosses"]:
             gloss_html += (
-                f'<div class="ge">'
+                f'<div class="ge {_ge_class(g)}">'
                 f'<span class="w">{g["anchor"]}</span> '
                 f'<span class="n">{g["note"]}</span>'
                 f'</div>'

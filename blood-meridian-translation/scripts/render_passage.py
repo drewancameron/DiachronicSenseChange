@@ -55,6 +55,16 @@ def highlight_anchors(greek: str, glosses: list) -> str:
     return result
 
 
+def _gloss_css_class(g: dict) -> str:
+    """Return CSS class for a gloss entry based on its type."""
+    t = g.get("_type", "")
+    if t == "echo":
+        return "echo"
+    elif t == "attestation":
+        return "attest"
+    return ""
+
+
 def render_passage(passage_ids: list[str]) -> str:
     global gloss_counter
     gloss_counter = 0
@@ -83,9 +93,40 @@ def render_passage(passage_ids: list[str]) -> str:
             if first_sent:
                 para_starters.add(first_sent[0].strip())
 
+        # Load echoes and thematic attestations for this passage
+        echoes_path = APPARATUS / passage_id / "echoes.json"
+        attestations_path = APPARATUS / passage_id / "thematic_attestations.json"
+        echoes = []
+        attestations = []
+        if echoes_path.exists():
+            echoes = json.load(open(echoes_path))
+        if attestations_path.exists():
+            attestations = json.load(open(attestations_path))
+
         for mg_sent in marginal["sentences"]:
             grk = mg_sent["greek"]
-            glosses = mg_sent["glosses"]
+            glosses = list(mg_sent["glosses"])  # copy so we can append
+
+            # Merge echoes: if the echo phrase appears in this sentence, add it
+            for echo in echoes:
+                phrase = echo.get("greek", "")
+                if phrase and phrase[:15] in grk:
+                    glosses.append({
+                        "anchor": phrase[:30] + ("…" if len(phrase) > 30 else ""),
+                        "note": f'cf. {echo.get("source", "")}',
+                        "_type": "echo",
+                    })
+
+            # Merge thematic attestations: if the word appears in this sentence
+            for att in attestations:
+                word = att.get("word", "")
+                if word and word in grk:
+                    glosses.append({
+                        "anchor": word,
+                        "note": f'cf. {att.get("author", "")}, {att.get("work", "")}',
+                        "_type": "attestation",
+                    })
+
             if grk in para_starters and all_sentences and not all_sentences[-1].get("para_break"):
                 if any(not item.get("para_break") for item in all_sentences):
                     all_sentences.append({"para_break": True})
@@ -188,6 +229,16 @@ def render_passage(passage_ids: list[str]) -> str:
   .mg .n {
     color: #666;
   }
+  /* Echo/attestation entries: italic, slightly different colour */
+  .mg.echo .w, .mg.attest .w {
+    font-weight: 400;
+    font-style: italic;
+    color: #555;
+  }
+  .mg.echo .n, .mg.attest .n {
+    font-style: italic;
+    color: #888;
+  }
 
   .gw { cursor: help; }
   .gw:hover { background: #F5F0E0; }
@@ -238,7 +289,7 @@ def render_passage(passage_ids: list[str]) -> str:
     for g in all_glosses:
         gid = g.get("_id", "")
         html.append(
-            f'<div class="mg" data-for="{gid}">'
+            f'<div class="mg {_gloss_css_class(g)}" data-for="{gid}">'
             f'<span class="w">{g["anchor"]}</span> '
             f'<span class="n">{g["note"]}</span>'
             f'</div>'
