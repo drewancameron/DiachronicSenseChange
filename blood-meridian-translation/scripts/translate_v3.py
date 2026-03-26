@@ -113,7 +113,17 @@ Output ONLY the Greek text, matching McCarthy's paragraph formatting."""
 
 def build_translate_prompt(en_text: str) -> str:
     glossary = load_living_glossary(en_text)
-    return TRANSLATE_PROMPT.format(glossary=glossary, english=en_text)
+
+    # Thematic vocabulary from the full 809K-passage corpus
+    try:
+        from thematic_vocab import get_thematic_vocabulary
+        thematic = get_thematic_vocabulary(en_text)
+    except Exception:
+        thematic = ""
+
+    return TRANSLATE_PROMPT.format(glossary=glossary, english=en_text) + (
+        f"\n\n{thematic}" if thematic else ""
+    )
 
 
 # ====================================================================
