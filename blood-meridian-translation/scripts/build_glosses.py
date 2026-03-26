@@ -624,7 +624,7 @@ def call_llm(prompt: str) -> str:
     client = anthropic.Anthropic()
     response = client.messages.create(
         model="claude-sonnet-4-20250514",
-        max_tokens=4096,
+        max_tokens=8192,
         messages=[{"role": "user", "content": prompt}],
     )
     return response.content[0].text.strip()
@@ -652,27 +652,54 @@ def build_passage_glosses(passage_id: str, ledger: dict,
                 print(f"    {c['anchor']:30s} rank={c['rank']}, freq={c['frequency']}")
         return False
 
-    prompt = build_gloss_prompt(data)
-    if not prompt:
+    # Batch into chunks of ~40 candidates to avoid overloading the LLM
+    BATCH_SIZE = 40
+    all_cands = []
+    for sent in data["sentences"]:
+        for c in sent["candidates"]:
+            all_cands.append(c)
+
+    gloss_map = {}
+    for batch_start in range(0, len(all_cands), BATCH_SIZE):
+        batch = all_cands[batch_start:batch_start + BATCH_SIZE]
+        batch_num = batch_start // BATCH_SIZE + 1
+        total_batches = (len(all_cands) + BATCH_SIZE - 1) // BATCH_SIZE
+
+        # Build a sub-data with only this batch's candidates
+        batch_data = {
+            "english": data["english"],
+            "sentences": [],
+        }
+        batch_anchors = {c["anchor"] for c in batch}
+        for sent in data["sentences"]:
+            batch_cands = [c for c in sent["candidates"] if c["anchor"] in batch_anchors]
+            if batch_cands:
+                batch_data["sentences"].append({
+                    "index": sent["index"],
+                    "greek": sent["greek"],
+                    "candidates": batch_cands,
+                })
+
+        prompt = build_gloss_prompt(batch_data)
+        if not prompt:
+            continue
+
+        print(f"    Calling LLM for glosses (batch {batch_num}/{total_batches}, {len(batch)} words)...")
+        raw = call_llm(prompt)
+
+        try:
+            clean = re.sub(r'^```json\s*', '', raw)
+            clean = re.sub(r'\s*```$', '', clean)
+            batch_glosses = json.loads(clean)
+            for g in batch_glosses:
+                gloss_map[g["anchor"]] = g["note"]
+        except json.JSONDecodeError:
+            print(f"    WARNING: could not parse batch {batch_num} response, skipping")
+
+    if not gloss_map:
+        print(f"    WARNING: no glosses produced, writing bare glosses")
         write_bare_glosses(passage_id, data)
         return True
-
-    print(f"    Calling LLM for glosses...")
-    raw = call_llm(prompt)
-
-    # Parse JSON response
-    try:
-        # Strip markdown code block if present
-        clean = re.sub(r'^```json\s*', '', raw)
-        clean = re.sub(r'\s*```$', '', clean)
-        glosses = json.loads(clean)
-    except json.JSONDecodeError:
-        print(f"    WARNING: could not parse LLM response, writing bare glosses")
-        write_bare_glosses(passage_id, data)
-        return True
-
-    # Merge LLM glosses into sentence structure
-    gloss_map = {g["anchor"]: g["note"] for g in glosses}
 
     output = {"passage_id": passage_id, "style": "Ørberg", "sentences": []}
     for sent in data["sentences"]:

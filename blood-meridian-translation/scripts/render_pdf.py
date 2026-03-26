@@ -123,8 +123,9 @@ def build_pdf_html(passage_ids: list[str]) -> str:
   /* Each paragraph row: text left, glosses right */
   .para-row {{
     display: flex;
-    gap: 1.2cm;
-    margin-bottom: 0.15cm;
+    gap: 0.6cm;
+    margin-bottom: 0.1cm;
+    align-items: flex-start;
   }}
   .para-text {{
     flex: 1;
@@ -138,23 +139,23 @@ def build_pdf_html(passage_ids: list[str]) -> str:
   .para-gloss {{
     width: 5.5cm;
     flex-shrink: 0;
-    font-size: 7pt;
-    line-height: 1.3;
+    font-size: 6.5pt;
+    line-height: 1.2;
     color: #555;
-    border-left: 0.5pt solid #d0ccc0;
-    padding-left: 0.4cm;
+    padding-left: 0.3cm;
     column-count: 2;
-    column-gap: 0.3cm;
+    column-gap: 0.2cm;
   }}
-  .para-gloss .ge {{
-    margin-bottom: 0.1cm;
+  .ge {{
+    margin-bottom: 0.06cm;
     break-inside: avoid;
   }}
-  .para-gloss .w {{
+  .ge .w {{
     font-weight: 600;
     color: #333;
+    font-size: 6pt;
   }}
-  .para-gloss .n {{
+  .ge .n {{
     color: #666;
   }}
 </style>
@@ -171,24 +172,14 @@ def build_pdf_html(passage_ids: list[str]) -> str:
 <div class="chapter-num">Ι</div>
 """
 
-    # Display-time density cap for PDF: limit glosses per paragraph
-    # to avoid the gloss column overwhelming the text column.
-    PDF_MAX_GLOSSES_PER_PARA = 6
-
     for i, para in enumerate(paragraphs):
         text = " ".join(para["text_parts"])
         gloss_html = ""
-        displayed = 0
         for g in para["glosses"]:
-            if displayed >= PDF_MAX_GLOSSES_PER_PARA:
-                break
-            anchor = g["anchor"]
-            note = g["note"]
-            displayed += 1
             gloss_html += (
                 f'<div class="ge">'
-                f'<span class="w">{anchor}</span> '
-                f'<span class="n">{note}</span>'
+                f'<span class="w">{g["anchor"]}</span> '
+                f'<span class="n">{g["note"]}</span>'
                 f'</div>'
             )
 
