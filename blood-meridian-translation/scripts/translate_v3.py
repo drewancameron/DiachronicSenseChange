@@ -298,6 +298,91 @@ def find_echoes(greek: str) -> list[dict]:
 
 
 # ====================================================================
+# Step 4: MECHANICAL SANITY CHECK
+# ====================================================================
+
+def run_mechanical_sanity(passage_id: str, en_text: str, greek: str) -> list[dict]:
+    """Run cheap deterministic checks as a safety net after Sonnet reviews.
+
+    Returns issues formatted as [{greek, problem, fix}] for the revision prompt.
+    Only flags genuine problems — skips known noisy checks.
+    """
+    issues = []
+
+    # Morpheus: unattested words
+    try:
+        from morpheus_check import check_passage, _save_cache
+        morph_issues = check_passage(passage_id)
+        _save_cache()
+        for i in morph_issues:
+            if i["type"] == "unattested_word":
+                issues.append({
+                    "greek": i["word"],
+                    "problem": f"Unattested in Morpheus, corpus, and database — possibly invented",
+                    "fix": "Replace with an attested alternative",
+                })
+            elif i["type"] == "neuter_plural_verb":
+                issues.append({
+                    "greek": i.get("word", ""),
+                    "problem": f"Neuter plural subject with plural verb — Attic rule requires singular: {i.get('context', '')[:60]}",
+                    "fix": "Change verb to singular",
+                })
+    except Exception as e:
+        print(f"    Morpheus error: {e}")
+
+    # Grew: grammar patterns (only high-confidence rules)
+    try:
+        from grew_check import parse_to_conllu, run_checks
+        conllu = parse_to_conllu([passage_id])
+        grew_issues = run_checks(conllu, warnings_only=True)
+        for g in grew_issues:
+            if g.get("passage") != passage_id:
+                continue
+            rule = g.get("rule", "")
+            # Only flag neuter plural (high confidence) and preposition governance
+            if rule.startswith("neut_pl"):
+                issues.append({
+                    "greek": g.get("sentence", "")[:40],
+                    "problem": f"Neuter plural + plural verb (Grew): {g.get('description', '')}",
+                    "fix": "Change verb to singular",
+                })
+            elif rule.startswith("mined_prep_"):
+                issues.append({
+                    "greek": g.get("sentence", "")[:40],
+                    "problem": f"Preposition governance: {g.get('description', '')}",
+                    "fix": "Check case after preposition",
+                })
+    except Exception as e:
+        print(f"    Grew error: {e}")
+
+    # Construction checker: only flag lost relative clauses (not coordination, which
+    # is often a deliberate McCarthy choice)
+    try:
+        from check_constructions import check_passage as check_constr
+        constr = check_constr(passage_id)
+        for c in constr:
+            if isinstance(c, dict) and c.get("type") == "relative_clause_lost":
+                issues.append({
+                    "greek": "",
+                    "problem": f"Relative clauses: {c.get('message', '')}",
+                    "fix": "Consider restoring relative clause where natural in Greek",
+                })
+    except Exception as e:
+        print(f"    Construction check error: {e}")
+
+    # Deduplicate
+    seen = set()
+    unique = []
+    for i in issues:
+        key = i["problem"][:50]
+        if key not in seen:
+            seen.add(key)
+            unique.append(i)
+
+    return unique
+
+
+# ====================================================================
 # LLM calls
 # ====================================================================
 
@@ -395,8 +480,24 @@ def translate_passage(passage_id: str, dry_run: bool = False) -> dict | None:
             print(f"    Revised in {time.time()-t0:.0f}s")
             draft_path.write_text(greek + "\n", encoding="utf-8")
 
-    # === Step 4: FIND ECHOES ===
-    print(f"\n  [{passage_id}] Step 4: FIND ECHOES")
+    # === Step 4: MECHANICAL SANITY CHECK → Opus fix if needed ===
+    print(f"\n  [{passage_id}] Step 4: MECHANICAL SANITY CHECK")
+    mech_issues = run_mechanical_sanity(passage_id, en_text, greek)
+    if mech_issues:
+        print(f"    {len(mech_issues)} mechanical issues found")
+        for mi in mech_issues:
+            print(f"      {mi.get('greek','')[:30]}: {mi.get('problem','')[:60]}")
+        rev = build_revision_prompt(en_text, greek, mech_issues)
+        if rev:
+            t0 = time.time()
+            greek = call_opus(rev)
+            print(f"    Revised in {time.time()-t0:.0f}s")
+            draft_path.write_text(greek + "\n", encoding="utf-8")
+    else:
+        print(f"    Clean — no mechanical issues.")
+
+    # === Step 5: FIND ECHOES ===
+    print(f"\n  [{passage_id}] Step 5: FIND ECHOES")
     t0 = time.time()
     echoes = find_echoes(greek)
     print(f"    {len(echoes)} echoes ({time.time()-t0:.0f}s)")
@@ -410,12 +511,44 @@ def translate_passage(passage_id: str, dry_run: bool = False) -> dict | None:
         json.dump(echoes, open(echo_path / "echoes.json", "w"),
                   ensure_ascii=False, indent=2)
 
+    # === Step 6: THEMATIC VOCAB ATTESTATION ===
+    # Check which thematic vocab words we offered actually appeared in the output
+    try:
+        from thematic_vocab import detect_themes, search_corpus, extract_vocabulary, normalize
+        themes = detect_themes(en_text)
+        if themes:
+            corpus = search_corpus(themes)
+            vocab = extract_vocabulary(corpus)
+            used_vocab = []
+            for theme_id, words in vocab.items():
+                for w in words:
+                    if w["word"] in greek or normalize(w["word"]) in normalize(greek):
+                        used_vocab.append({
+                            "word": w["word"],
+                            "author": w["author"],
+                            "work": w["work"],
+                            "theme": theme_id,
+                        })
+            if used_vocab:
+                print(f"\n  [{passage_id}] Thematic vocab used: {len(used_vocab)} words")
+                for uv in used_vocab:
+                    print(f"      {uv['word']} ← {uv['author']}, {uv['work']}")
+                # Save for apparatus
+                echo_path = ROOT / "apparatus" / passage_id
+                echo_path.mkdir(parents=True, exist_ok=True)
+                json.dump(used_vocab, open(echo_path / "thematic_attestations.json", "w"),
+                          ensure_ascii=False, indent=2)
+    except Exception:
+        used_vocab = []
+
     result = {
         "passage_id": passage_id,
         "greek": greek,
         "style_issues": style_issues,
         "vocab_issues": vocab_issues,
+        "mechanical_issues": mech_issues,
         "echoes": echoes,
+        "thematic_vocab_used": used_vocab if 'used_vocab' in dir() else [],
     }
     return result
 

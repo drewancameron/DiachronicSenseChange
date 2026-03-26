@@ -151,15 +151,16 @@ THEMES = {
 }
 
 
-def detect_themes(en_text: str) -> list[str]:
-    """Detect which themes are present in an English passage."""
+def detect_themes(en_text: str, max_themes: int = 3) -> list[str]:
+    """Detect the top themes present in an English passage. Max 3."""
     en_lower = en_text.lower()
-    active = []
+    scored = []
     for theme_id, spec in THEMES.items():
         hits = sum(1 for t in spec["en_triggers"] if t in en_lower)
-        if hits >= 2 or (hits >= 1 and len(spec["en_triggers"]) <= 5):
-            active.append(theme_id)
-    return active
+        if hits >= 2:
+            scored.append((theme_id, hits))
+    scored.sort(key=lambda x: -x[1])
+    return [t for t, _ in scored[:max_themes]]
 
 
 # ====================================================================
@@ -271,25 +272,32 @@ def extract_vocabulary(corpus_results: dict[str, list[dict]],
                 n = normalize(clean)
                 if len(n) <= 3 or n in STOP:
                     continue
-                # Skip likely proper nouns (capitalized in non-initial position)
-                # and Latin/transliterated words
+                # Skip Latin/transliterated words
                 if re.match(r'^[A-Za-z]', clean):
                     continue
-                # Skip Hebrew/Semitic proper nouns common in LXX
-                if any(c in clean for c in "ΔΒΖ") and len(clean) > 6:
-                    # Heuristic: long words with rare Greek letter combos
-                    pass  # keep — could be legitimate Greek
+                # Skip likely proper nouns: capitalized AND not a sentence starter
+                # Heuristic: if the word starts with uppercase and doesn't start
+                # a known Greek word family, it's probably a name
+                if clean[0].isupper() and n not in {
+                    normalize(t) for t in THEMES[theme_id]["grc_search"]
+                }:
+                    continue
                 word_sources[n].append((clean, author, work, period))
 
-        # Rank by frequency (more attestations = more useful) and diversity
+        # Filter: only keep words that are thematically relevant
+        theme_spec = THEMES[theme_id]
+        search_norms = {normalize(t) for t in theme_spec["grc_search"]}
+
         ranked = []
         for n, sources in word_sources.items():
-            # Prefer words attested by multiple authors
+            # Prefer words that match search terms or share a root
+            is_search_term = n in search_norms or any(
+                n.startswith(sn[:4]) or sn.startswith(n[:4])
+                for sn in search_norms if len(sn) >= 4
+            )
             authors = set(s[1] for s in sources)
-            # Pick the "best" form (most common surface form)
             form_counts = Counter(s[0] for s in sources)
             best_form = form_counts.most_common(1)[0][0]
-            # Pick a representative source
             rep = sources[0]
             ranked.append({
                 "word": best_form,
@@ -299,9 +307,13 @@ def extract_vocabulary(corpus_results: dict[str, list[dict]],
                 "period": rep[3],
                 "n_authors": len(authors),
                 "n_attestations": len(sources),
+                "is_search_term": is_search_term,
             })
 
-        # Sort: multi-author words first, then by attestation count
+        # Only keep words that are thematically relevant (search terms or close)
+        ranked = [r for r in ranked if r["is_search_term"]]
+
+        # Sort: multi-author first, then attestation count
         ranked.sort(key=lambda x: (-x["n_authors"], -x["n_attestations"]))
         theme_vocab[theme_id] = ranked[:max_words_per_theme]
 
