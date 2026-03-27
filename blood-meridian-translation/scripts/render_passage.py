@@ -17,6 +17,7 @@ OUTPUT = ROOT / "output"
 OUTPUT.mkdir(exist_ok=True)
 
 gloss_counter = 0
+MAX_APPARATUS_PER_PARA = 2
 
 
 def load_json(path: Path) -> dict:
@@ -235,6 +236,9 @@ def render_passage(passage_ids: list[str]) -> str:
   .mg .n {
     color: #666;
   }
+  /* Footnote markers */
+  .fn-marker { font-size: 0.6rem; color: #999; }
+
   /* Inline apparatus: small block between paragraphs */
   .apparatus {
     font-size: 0.7rem;
@@ -277,19 +281,117 @@ def render_passage(passage_ids: list[str]) -> str:
     html.append('<div class="main-text">')
     para_parts = []
     para_footnotes = []
+    fn_counter = 1
 
     for item in all_sentences:
         if item.get("para_break"):
             if para_parts:
-                html.append(f'<p class="para">{" ".join(para_parts)}</p>')
-                # Emit inline apparatus after the paragraph
                 if para_footnotes:
-                    refs = []
+                    # Deduplicate by Greek phrase — keep the one with longest source_quote
+                    seen_phrases = {}
                     for fn in para_footnotes:
+                        phrase = fn.get("greek", "")[:20]
+                        existing = seen_phrases.get(phrase)
+                        if not existing or len(fn.get("source_quote", "")) > len(existing.get("source_quote", "")):
+                            seen_phrases[phrase] = fn
+                    deduped = list(seen_phrases.values())
+
+                    # Select best entries
+                    ranked = sorted(deduped, key=lambda f: (
+                        -len(f.get("source_quote", "")),
+                        -len(f.get("note", "")),
+                    ))
+                    selected = ranked[:MAX_APPARATUS_PER_PARA]
+
+                    # Find position of each echo phrase in the plain text
+                    # to assign numbers in text order
+                    joined = " ".join(para_parts)
+                    # Strip HTML tags for position finding
+                    plain = re.sub(r'<[^>]+>', '', joined)
+                    for fn in selected:
+                        phrase = fn.get("greek", "")
+                        # Find the END position of the phrase in plain text
+                        pos = plain.find(phrase[:15])
+                        if pos >= 0:
+                            fn["_text_pos"] = pos + len(phrase)
+                        else:
+                            fn["_text_pos"] = len(plain)
+
+                    # Sort by position in text, then assign numbers
+                    selected.sort(key=lambda f: f.get("_text_pos", 0))
+                    for fn in selected:
+                        fn["_num"] = fn_counter
+                        fn_counter += 1
+
+                    # Insert markers into the HTML at the right positions
+                    # Work backwards so insertions don't shift later positions
+                    # Build plain-text version for position finding
+                    plain = re.sub(r'<[^>]+>', '', joined)
+
+                    for fn in reversed(selected):
+                        phrase = fn.get("greek", "").strip()
+                        if not phrase:
+                            continue
+
+                        # Find the phrase in the PLAIN text to get the end position
+                        # Try full phrase first, then progressively shorter prefixes
+                        plain_pos = -1
+                        match_len = 0
+                        for try_len in range(len(phrase), 4, -1):
+                            p = plain.find(phrase[:try_len])
+                            if p >= 0:
+                                plain_pos = p
+                                match_len = try_len
+                                break
+
+                        if plain_pos < 0:
+                            continue
+
+                        # The end position in plain text
+                        plain_end = plain_pos + match_len
+
+                        # Now find where plain_end maps to in the HTML
+                        # Walk through joined, tracking plain-text position
+                        html_insert = 0
+                        plain_idx = 0
+                        in_tag = False
+                        for i, ch in enumerate(joined):
+                            if ch == '<':
+                                in_tag = True
+                            elif ch == '>':
+                                in_tag = False
+                                continue
+                            if not in_tag:
+                                if plain_idx == plain_end:
+                                    html_insert = i
+                                    break
+                                plain_idx += 1
+                        else:
+                            html_insert = len(joined)
+
+                        # Skip past any closing tags at this position
+                        while html_insert < len(joined) and joined[html_insert:html_insert+2] == '</':
+                            close = joined.find('>', html_insert)
+                            if close >= 0:
+                                html_insert = close + 1
+                            else:
+                                break
+
+                        marker = f'<sup class="fn-marker">{fn["_num"]}</sup>'
+                        joined = joined[:html_insert] + marker + joined[html_insert:]
+                        # Update plain too so subsequent searches account for shift
+                        plain = re.sub(r'<[^>]+>', '', joined)
+
+                    html.append(f'<p class="para">{joined}</p>')
+
+                    # Emit apparatus in number order
+                    selected.sort(key=lambda f: f["_num"])
+                    refs = []
+                    for fn in selected:
                         source = fn.get("source", "")
                         source_quote = fn.get("source_quote", "")
                         note = fn.get("note", "")
-                        ref = f'<em>{source}</em>'
+                        ref = f'<sup>{fn["_num"]}</sup> <em>{source}</em>'
                         if source_quote:
                             ref += f': {source_quote}'
                         if note:
@@ -298,19 +400,26 @@ def render_passage(passage_ids: list[str]) -> str:
                     html.append(
                         f'<div class="apparatus">{";&nbsp; ".join(refs)}</div>'
                     )
+                else:
+                    html.append(f'<p class="para">{" ".join(para_parts)}</p>')
                 para_parts = []
                 para_footnotes = []
             continue
 
         para_parts.append(item["html"])
         for fn in item.get("footnotes", []):
-            para_footnotes.append(fn)
+            if fn.get("source_quote") or (fn.get("note") and len(fn.get("note", "")) > 10):
+                para_footnotes.append(fn)
 
     if para_parts:
         html.append(f'<p class="para">{" ".join(para_parts)}</p>')
         if para_footnotes:
+            ranked = sorted(para_footnotes, key=lambda f: (
+                -len(f.get("source_quote", "")),
+                -len(f.get("note", "")),
+            ))
             refs = []
-            for fn in para_footnotes:
+            for fn in ranked[:MAX_APPARATUS_PER_PARA]:
                 source = fn.get("source", "")
                 source_quote = fn.get("source_quote", "")
                 note = fn.get("note", "")

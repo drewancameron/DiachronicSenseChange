@@ -264,29 +264,32 @@ def find_corpus_candidates(greek: str, cur, en_text: str = "") -> list[dict]:
     return candidates
 
 
-CURATE_PROMPT = """You are a classicist. Below is a Greek translation of Cormac McCarthy, followed by passages from the classical corpus that share vocabulary or phrases with it.
+CURATE_PROMPT = """You are a classicist preparing a scholarly apparatus for a Greek translation of Cormac McCarthy's Blood Meridian. Below is the Greek translation, followed by real passages from a classical corpus that share vocabulary or phrases with it.
 
-Your task: identify which of these corpus matches represent GENUINE literary echoes — cases where the translation's phrasing meaningfully resonates with the classical source, either because:
-- The same distinctive phrase appears (not just a common word)
-- The imagery or idiom is recognisably drawn from that classical passage
-- The context creates an illuminating intertextual connection
+Every candidate below is a VERIFIED match from our database — the Greek text really does appear in that source. Your task: select which matches are worth noting in a scholarly apparatus. Include a match if:
 
-Reject matches that are merely coincidental sharing of common vocabulary.
+- A multi-word phrase appears verbatim in a classical text (ALWAYS include these — they are direct verbal echoes)
+- The shared vocabulary creates a meaningful intertextual resonance (e.g. biblical language in a context of sin/violence, Homeric language in a context of journey/combat)
+- The classical passage illuminates the translation's register choice
+
+Reject ONLY matches where a single common word happens to appear in an unrelated context.
+
+Be GENEROUS — a scholarly reader will appreciate even modest connections. If the match type is "greek_trigram" or "phrase", it is almost certainly worth including.
 
 ## Our Greek translation
 {greek}
 
-## Corpus candidates
+## Corpus candidates (all verified from our database)
 {candidates}
 
-For each genuine echo, return:
-- greek: the phrase from OUR translation that echoes the source
-- source: Author, Work (reference if known)
-- source_quote: the relevant Greek quote FROM THE CORPUS PASSAGE (copy exactly)
-- note: brief explanation of the connection
+For each echo worth noting, return:
+- greek: the COMPLETE meaningful phrase from OUR translation that echoes the source. This must be a full, self-contained phrase — not a truncated fragment. For example: "ξυλοκόποι καὶ ὑδροφόροι" not "ξυλοκόποι καὶ"; "γραμματοδιδάσκαλος γέγονεν" not "τῇ ἀληθείᾳ ὁ". Quote the whole expression that a reader would recognise as an echo.
+- source: Author, Work (and reference from the candidate if given)
+- source_quote: copy the relevant Greek FROM THE CORPUS PASSAGE exactly as shown above
+- note: brief scholarly note on the connection
 
-Return ONLY a JSON array of genuine echoes. Be selective — only include clear, interesting connections. If none are genuine, return [].
-[{{"greek": "phrase from translation", "source": "Author, Work ref", "source_quote": "Greek from corpus", "note": "connection"}}]"""
+Return ONLY a JSON array. Include at least the phrase/trigram matches unless truly trivial.
+[{{"greek": "complete phrase from translation", "source": "Author, Work ref", "source_quote": "Greek from corpus", "note": "connection"}}]"""
 
 
 def curate_echoes(greek: str, candidates: list[dict]) -> list[dict]:
@@ -321,9 +324,37 @@ def curate_echoes(greek: str, candidates: list[dict]) -> list[dict]:
     try:
         clean = re.sub(r'^```json\s*', '', raw)
         clean = re.sub(r'\s*```$', '', clean)
-        return json.loads(clean)
+        echoes = json.loads(clean)
     except json.JSONDecodeError:
         return []
+
+    # Validate: each greek phrase must appear in our translation
+    # and must be a complete phrase (at least 2 words, ending on a word boundary)
+    validated = []
+    for echo in echoes:
+        phrase = echo.get("greek", "").strip()
+        if not phrase:
+            continue
+        # Check it actually appears in our text
+        if phrase not in greek:
+            # Try to find the closest match — maybe minor whitespace difference
+            # If first 10 chars match, accept but truncate to what's in the text
+            if phrase[:10] in greek:
+                # Find the full extent in our text
+                pos = greek.find(phrase[:10])
+                # Extend to the end of the last word
+                end = pos + len(phrase)
+                if end > len(greek):
+                    end = len(greek)
+                # Snap to word boundary
+                while end < len(greek) and greek[end] not in ' .,·;:!?':
+                    end += 1
+                echo["greek"] = greek[pos:end].strip()
+            else:
+                continue  # phrase not in our text at all — skip
+        validated.append(echo)
+
+    return validated
 
 
 def hard_verify(echoes: list[dict], cur) -> list[dict]:
