@@ -359,11 +359,11 @@
       "justification": "Direct Septuagint echo: LXX Joshua 9:21/27. McCarthy's English deliberately alludes to this biblical phrase. The Greek must complete the circle back to the LXX source text. Do NOT substitute ξυλοτόμοι."
     },
     "see_behold": {
-      "english": "See (imperative, literary)",
-      "ancient_greek": "Ἰδού / Ἴδε",
+      "english": "See (imperative, literary opening)",
+      "ancient_greek": "Ἴδε τὸν παῖδα OR Ἰδοὺ ὁ παῖς",
       "register": "septuagintal",
       "status": "locked",
-      "justification": "McCarthy's 'See the child' is a prophetic imperative. Ἰδού (Septuagintal 'behold') or Ἴδε (classical imperative) — both acceptable, both carry the right declarative weight."
+      "justification": "TWO correct options: (1) Ἴδε + accusative (aorist imperative, transitive, closer to McCarthy's 'See the child') or (2) Ἰδοὺ + nominative (Septuagintal particle, 'Behold, the child'). Do NOT mix them — Ἰδοὺ + accusative is WRONG."
     },
     "scullery_fire": {
       "english": "scullery fire / grate / hearth fire",
@@ -378,6 +378,13 @@
       "register": "classical",
       "status": "locked",
       "justification": "ὑποζωπυρεῖ = stokes, rekindles. Well attested. NOT σαλεύει (shakes), σκαλεύει (hoes), τρέφει (feeds — too poetic/vague), or διασώζει (preserves)."
+    },
+    "quotes_from": {
+      "english": "quotes from / recites from (poets)",
+      "ancient_greek": "λέγει ἐκ",
+      "register": "classical",
+      "status": "locked",
+      "justification": "λέγει ἐκ ποιητῶν = 'recites from poets'. Clean and unambiguous. NOT παρατίθεται (serves food), NOT παραφέρει (carries past/leads astray), NOT ἀναλέγει (gathers up)."
     }
   },
   "clothing_and_equipment": {
