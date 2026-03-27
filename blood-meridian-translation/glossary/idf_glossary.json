@@ -3,12 +3,23 @@
     "description": "Inverse Document Frequency glossary for Blood Meridian → Ancient Greek translation",
     "version": "0.1.0",
     "conventions": {
-      "register_tags": ["classical", "koine", "septuagintal", "NT", "homeric", "modern_loan", "transliteration"],
-      "status": ["locked", "candidate", "discussion"],
+      "register_tags": [
+        "classical",
+        "koine",
+        "septuagintal",
+        "NT",
+        "homeric",
+        "modern_loan",
+        "transliteration"
+      ],
+      "status": [
+        "locked",
+        "candidate",
+        "discussion"
+      ],
       "marking_policy": "Words tagged modern_loan or transliteration MUST be visually distinguished in output: use *italics* in markdown, \\textit{} in LaTeX, or <i> in HTML. This signals to the reader that the word is foreign to the ancient register."
     }
   },
-
   "characters": {
     "the_kid": {
       "english": "the kid",
@@ -85,7 +96,6 @@
       "marked": true
     }
   },
-
   "weapons_and_materiel": {
     "pistol": {
       "english": "pistol",
@@ -154,7 +164,6 @@
       "notes": "Herodotus 4.64 is the locus classicus for scalping in Greek literature"
     }
   },
-
   "geography_and_landscape": {
     "desert": {
       "english": "desert / waste",
@@ -202,7 +211,6 @@
       "marked": false
     }
   },
-
   "elements_and_nature": {
     "blood": {
       "english": "blood",
@@ -268,7 +276,6 @@
       "marked": false
     }
   },
-
   "animals_and_transport": {
     "horse": {
       "english": "horse",
@@ -298,7 +305,6 @@
       "marked": false
     }
   },
-
   "social_and_institutional": {
     "tavern_saloon": {
       "english": "tavern / saloon / dramshop",
@@ -344,9 +350,36 @@
       "status": "locked",
       "justification": "ἀργύριον = 'silver, money' — generic and timeless. Never translate 'dollar' literally. στατήρ for individual coins where needed.",
       "marked": false
+    },
+    "hewers_of_wood": {
+      "english": "hewers of wood and drawers of water",
+      "ancient_greek": "ξυλοκόποι καὶ ὑδροφόροι",
+      "register": "septuagintal",
+      "status": "locked",
+      "justification": "Direct Septuagint echo: LXX Joshua 9:21/27. McCarthy's English deliberately alludes to this biblical phrase. The Greek must complete the circle back to the LXX source text. Do NOT substitute ξυλοτόμοι."
+    },
+    "see_behold": {
+      "english": "See (imperative, literary)",
+      "ancient_greek": "Ἰδού / Ἴδε",
+      "register": "septuagintal",
+      "status": "locked",
+      "justification": "McCarthy's 'See the child' is a prophetic imperative. Ἰδού (Septuagintal 'behold') or Ἴδε (classical imperative) — both acceptable, both carry the right declarative weight."
+    },
+    "scullery_fire": {
+      "english": "scullery fire / grate / hearth fire",
+      "ancient_greek": "τὸ πῦρ τῆς ἐσχάρας",
+      "register": "classical",
+      "status": "locked",
+      "justification": "McCarthy's 'scullery fire' is a fireplace grate, not a kitchen. ἐσχάρα = hearth/grate (not μαγειρεῖον which means kitchen). Use ὑποζωπυρεῖ for 'stokes' — precise, well-attested for stoking/rekindling."
+    },
+    "stokes": {
+      "english": "stokes (a fire)",
+      "ancient_greek": "ὑποζωπυρεῖ",
+      "register": "classical",
+      "status": "locked",
+      "justification": "ὑποζωπυρεῖ = stokes, rekindles. Well attested. NOT σαλεύει (shakes), σκαλεύει (hoes), τρέφει (feeds — too poetic/vague), or διασώζει (preserves)."
     }
   },
-
   "clothing_and_equipment": {
     "hat": {
       "english": "hat",
@@ -386,7 +419,6 @@
       "marked": false
     }
   },
-
   "place_names": {
     "nacogdoches": {
       "english": "Nacogdoches",
@@ -454,7 +486,6 @@
       "notes": "Only Λουδοβῖκος needs marking — Ἅγιος is Greek"
     }
   },
-
   "title": {
     "blood_meridian": {
       "english": "Blood Meridian, or The Evening Redness in the West",

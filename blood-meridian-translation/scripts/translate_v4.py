@@ -71,6 +71,29 @@ def load_thematic_vocab(en_text: str) -> str:
         return ""
 
 
+def load_previous_greek(passage_id: str) -> str:
+    """Load the Greek from the immediately preceding passage for style continuity."""
+    all_ids = sorted(p.stem for p in PASSAGES.glob("*.json")
+                     if not p.stem.startswith("exp_") and not p.stem.startswith("905"))
+    try:
+        idx = all_ids.index(passage_id)
+    except ValueError:
+        return ""
+    if idx == 0:
+        return ""
+
+    prev_id = all_ids[idx - 1]
+    prev_path = DRAFTS / prev_id / "primary.txt"
+    if prev_path.exists():
+        prev_greek = prev_path.read_text("utf-8").strip()
+        if prev_greek:
+            return (
+                "## Previous passage (for style continuity — match this register and tone)\n"
+                + prev_greek
+            )
+    return ""
+
+
 # ====================================================================
 # Step 1: TRANSLATE (Opus as translator)
 # ====================================================================
@@ -91,6 +114,8 @@ Every word must be attestable in Morpheus/LSJ. Mark modern coinages with *.
 
 {thematic_vocab}
 
+{previous_greek}
+
 ## English Source
 {english}
 
@@ -105,16 +130,23 @@ EDIT_PROMPT = """You are a scholarly editor reviewing an Ancient Greek translati
 
 Your review has TWO equally important parts:
 
-## Part 1: PRAISE — What is excellent
-Identify specific word choices, constructions, and effects that MUST be preserved. These are the translation's strengths. Be specific — name the Greek word and explain why it works. A revision that fixes problems but loses these would be a net loss.
+## Part 1: PRAISE — What MUST be preserved
+List specific Greek words and phrases that are excellent and MUST survive any revision. For each one, quote the EXACT GREEK TEXT and explain why it works. These form a protection list — the translator may not remove or change any of these in revision.
 
-## Part 2: CRITIQUE — What needs improvement
+Pay special attention to:
+- Words that echo the Septuagint, Homer, or other classical sources (e.g. ξυλοκόποι echoing LXX Joshua)
+- The opening word/construction — if it sets the right tone, name it
+- Relative clauses that preserve McCarthy's sentence structure
+- Biblical/Homeric register choices that suit the context
+
+## Part 2: CRITIQUE — What needs fixing
 For each problem, give:
-- The specific Greek text
+- The EXACT Greek text that is wrong
 - What's wrong (wrong sense, calque, lost construction, register mismatch, unattested word)
 - Your suggested fix, with a classical attestation if you can cite one
+- Check: is the grammar correct? Compound subjects need plural verbs. Neuter plurals need singular verbs (Attic rule) BUT only when the subject is purely neuter — mixed-gender compound subjects take plural.
 
-Focus on: wrong word senses, destroyed McCarthy constructions (especially relative clauses converted to separate sentences, lost coordination chains, expanded fragments), register mismatches, and unattested vocabulary.
+Focus on: wrong word senses, destroyed McCarthy constructions (especially relative clauses converted to separate sentences, lost coordination chains, expanded fragments), register mismatches, unattested vocabulary, and agreement errors.
 
 {corpus_evidence}
 
@@ -143,13 +175,16 @@ REVISE_PROMPT = """You are revising your Ancient Greek translation of McCarthy's
 ## Your Current Translation
 {greek}
 
-## Editor's Praise (PRESERVE these — do not change):
+## PROTECTED — these exact Greek words/phrases MUST appear in your revision:
+{protected_words}
+
+## Editor's Full Praise (context for the protection list):
 {praise}
 
-## Editor's Corrections (FIX these):
+## Editor's Corrections (FIX these, but never at the cost of a protected element):
 {fixes}
 
-Revise the translation. Fix each listed problem while preserving everything the editor praised. If a fix would conflict with a praised element, keep the praised element.
+Revise the translation. Your revision MUST contain every word listed in the PROTECTED section. Fix the listed problems without removing or altering any protected element.
 
 Output ONLY the complete revised Greek text."""
 
@@ -198,8 +233,10 @@ def translate_passage(passage_id: str, dry_run: bool = False) -> dict | None:
     print(f"\n  [{passage_id}] Step 1: TRANSLATE")
     glossary = load_living_glossary(en_text)
     thematic = load_thematic_vocab(en_text)
+    previous = load_previous_greek(passage_id)
     prompt = TRANSLATE_PROMPT.format(
-        glossary=glossary, thematic_vocab=thematic, english=en_text
+        glossary=glossary, thematic_vocab=thematic,
+        previous_greek=previous, english=en_text,
     )
     print(f"    Prompt: {len(prompt)} chars")
 
@@ -223,6 +260,15 @@ def translate_passage(passage_id: str, dry_run: bool = False) -> dict | None:
     if thematic:
         corpus_evidence_parts.append(
             f"## Classical vocabulary on similar themes\n{thematic}")
+
+    # Flag locked glossary terms that appear in the translation
+    if glossary:
+        corpus_evidence_parts.append(
+            "## Locked translation decisions (these are DELIBERATE choices)\n"
+            "If these words appear in the translation, they were chosen for\n"
+            "consistency across the book. Do NOT suggest alternatives.\n"
+            + glossary
+        )
 
     # Run echo search so editor can reference real corpus matches
     try:
@@ -281,6 +327,16 @@ def translate_passage(passage_id: str, dry_run: bool = False) -> dict | None:
     (draft_path.parent / "stage1_review.json").write_text(
         json.dumps(review, ensure_ascii=False, indent=2))
 
+    # Extract specific Greek words/phrases from praise for protection list
+    protected = []
+    for p in praise:
+        match = re.match(r'^([^\-—]+?)(?:\s*[-—])', p)
+        if match:
+            word = match.group(1).strip()
+            if re.search(r'[\u0370-\u03FF\u1F00-\u1FFF]', word):
+                protected.append(word)
+    protected_text = "\n".join(f"  • {w}" for w in protected) if protected else "  (none specified)"
+
     # === Step 3: REVISE ===
     if fixes:
         print(f"\n  [{passage_id}] Step 3: REVISE")
@@ -291,6 +347,7 @@ def translate_passage(passage_id: str, dry_run: bool = False) -> dict | None:
         )
         revise_prompt = REVISE_PROMPT.format(
             english=en_text, greek=greek,
+            protected_words=protected_text,
             praise=praise_text, fixes=fixes_text,
         )
         t0 = time.time()
@@ -324,6 +381,7 @@ def translate_passage(passage_id: str, dry_run: bool = False) -> dict | None:
             )
             mech_prompt = REVISE_PROMPT.format(
                 english=en_text, greek=greek,
+                protected_words=protected_text if 'protected_text' in dir() else "  (preserve all praised elements)",
                 praise="\n".join(f"  ✓ {p}" for p in praise),
                 fixes=mech_fixes,
             )
