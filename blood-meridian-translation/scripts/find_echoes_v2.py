@@ -287,9 +287,13 @@ For each echo worth noting, return:
 - source: Author, Work (and reference from the candidate if given)
 - source_quote: copy the relevant Greek FROM THE CORPUS PASSAGE exactly as shown above
 - note: brief scholarly note on the connection
+- rank: 1-3 significance ranking:
+  1 = ESSENTIAL: multi-word verbatim echo of a famous passage, deliberate biblical/Homeric allusion, or a connection that illuminates McCarthy's meaning (e.g. ξυλοκόποι καὶ ὑδροφόροι echoing LXX Joshua)
+  2 = INTERESTING: shared vocabulary that creates meaningful resonance, or an echo of a well-known classical passage
+  3 = MINOR: single common word that happens to appear in a classical text, or a connection that would only interest a specialist
 
 Return ONLY a JSON array. Include at least the phrase/trigram matches unless truly trivial.
-[{{"greek": "complete phrase from translation", "source": "Author, Work ref", "source_quote": "Greek from corpus", "note": "connection"}}]"""
+[{{"greek": "complete phrase", "source": "Author, Work ref", "source_quote": "Greek from corpus", "note": "connection", "rank": 1}}]"""
 
 
 def curate_echoes(greek: str, candidates: list[dict]) -> list[dict]:

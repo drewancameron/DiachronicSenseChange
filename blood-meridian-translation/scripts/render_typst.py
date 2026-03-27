@@ -46,34 +46,15 @@ def build_typst(passage_ids: list[str]) -> str:
 
     doc = []
 
-    # Page setup
-    doc.append("""
+    # Page setup — use grid layout for text + glosses
+    doc.append(r"""
 #set page(
   paper: "a4",
-  margin: (top: 2.5cm, bottom: 2.5cm, left: 2cm, right: 7cm),
+  margin: (top: 2.5cm, bottom: 2.5cm, left: 2cm, right: 1.5cm),
   numbering: "1",
 )
 #set text(font: "GFS Didot", size: 10.5pt, lang: "el")
 #set par(justify: true, leading: 0.9em)
-
-// Margin note function: places gloss in the right margin
-#let mg(body) = {
-  place(right + top, dx: 0.8cm, float: true, scope: "parent",
-    block(width: 4.5cm, {
-      set text(size: 7pt, fill: rgb("#555555"))
-      set par(leading: 0.5em, justify: false)
-      body
-    })
-  )
-}
-
-// Gloss entry formatting
-#let gloss(anchor, note) = {
-  mg[
-    #text(weight: "bold", fill: rgb("#333333"), size: 6.5pt)[#anchor]
-    #text(fill: rgb("#666666"))[#note]
-  ]
-}
 """)
 
     # Title page
@@ -95,6 +76,11 @@ def build_typst(passage_ids: list[str]) -> str:
 #v(2cm)
 #align(center)[#text(size: 14pt, tracking: 0.15em, fill: rgb("#333333"))[Ι]]
 #v(1cm)
+
+// Begin two-column grid: text (left, flexible) + glosses (right, fixed)
+#grid(
+  columns: (1fr, 4.5cm),
+  column-gutter: 0.8cm,
 """)
 
     # Process each passage
@@ -137,9 +123,11 @@ def build_typst(passage_ids: list[str]) -> str:
 
         # Render each paragraph
         for para_idx, para in enumerate(paragraphs):
-            # Split into sentences for gloss matching
             sents = re.split(r'(?<=[.·;!])\s+', para)
             sents = [s.strip() for s in sents if s.strip()]
+
+            # Collect all glosses for this paragraph
+            para_gloss_entries = []
 
             para_typst = []
             for sent in sents:
@@ -159,22 +147,17 @@ def build_typst(passage_ids: list[str]) -> str:
                         matched_glosses = gls
                         break
 
-                # Insert gloss margin notes
+                # Collect glosses (don't insert inline)
                 for g in matched_glosses:
                     rank = g.get("rank", 1)
                     if rank > 2:
                         continue
                     anchor = escape_typst(g.get("anchor", ""))
-                    note = escape_typst(g.get("note", ""))
-                    if anchor in sent_escaped:
-                        # Place gloss call after the anchor word
-                        sent_escaped = sent_escaped.replace(
-                            anchor,
-                            f'{anchor}#gloss[{anchor}][ {note}]',
-                            1
-                        )
+                    gnote = escape_typst(g.get("note", ""))
+                    if anchor:
+                        para_gloss_entries.append((anchor, gnote))
 
-                # Insert footnotes for echoes
+                # Insert footnotes for echoes (these are inline)
                 for prefix, echo in echo_map.items():
                     if prefix in sent:
                         source = escape_typst(echo.get("source", ""))
@@ -187,11 +170,9 @@ def build_typst(passage_ids: list[str]) -> str:
                         if note:
                             fn_body += f' ({note})'
 
-                        # Insert footnote after the matching phrase
                         esc_prefix = escape_typst(prefix)
                         if esc_prefix in sent_escaped:
                             pos = sent_escaped.find(esc_prefix) + len(esc_prefix)
-                            # Find next word boundary
                             end = sent_escaped.find(" ", pos)
                             if end < 0:
                                 end = len(sent_escaped)
@@ -203,14 +184,28 @@ def build_typst(passage_ids: list[str]) -> str:
 
                 para_typst.append(sent_escaped)
 
-            # Join sentences, emit paragraph
+            # Join sentences
             full_para = " ".join(para_typst)
-            if para_idx == 0:
-                # No indent on first paragraph
-                doc.append(f'#par(first-line-indent: 0pt)[{full_para}]\n')
-            else:
-                doc.append(f'{full_para}\n')
 
+            # Grid cell 1: text
+            if para_idx == 0:
+                doc.append(f'  [#par(first-line-indent: 0pt)[{full_para}]],')
+            else:
+                doc.append(f'  [{full_para}],')
+
+            # Grid cell 2: glosses
+            if para_gloss_entries:
+                gloss_lines = []
+                for anchor, gnote in para_gloss_entries:
+                    gloss_lines.append(
+                        f'    #block(spacing: 0.25em)[#text(weight: "bold", fill: rgb("#333"), size: 6.5pt)[{anchor}] #text(fill: rgb("#666"), size: 6.5pt)[{gnote}]]'
+                    )
+                doc.append('  [#set text(size: 7pt)\n  #set par(leading: 0.35em, justify: false)\n' + '\n'.join(gloss_lines) + '\n  ],')
+            else:
+                doc.append('  [],')  # empty gloss cell
+
+    # Close the grid
+    doc.append(")")
     return "\n".join(doc)
 
 

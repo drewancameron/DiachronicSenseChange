@@ -298,7 +298,8 @@ def render_passage(passage_ids: list[str]) -> str:
 
                     # Select best entries
                     ranked = sorted(deduped, key=lambda f: (
-                        -len(f.get("source_quote", "")),
+                        f.get("rank", 2),  # Sonnet's significance rank (1=best)
+                        -len(f.get("source_quote", "")),  # longer quote = better
                         -len(f.get("note", "")),
                     ))
                     selected = ranked[:MAX_APPARATUS_PER_PARA]

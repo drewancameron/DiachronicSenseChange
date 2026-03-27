@@ -245,24 +245,38 @@ Translate this passage into Ancient Greek. Output ONLY the Greek text."""
                             f"corpus, or database. Fabricated — replace with an attested word."
                         )
 
-                # Check for Morpheus-only words (valid morphology, no ancient usage)
+                # Check for Morpheus-only words: valid morphology but neither
+                # the form NOR its lemma appears in corpus/DB — likely fabricated.
+                # Skip if the lemma IS attested (just an unusual inflected form).
                 tokens = re.findall(r'[\w\u0370-\u03FF\u1F00-\u1FFF]+', greek)
+                seen_flagged = set()
                 for tok in tokens:
-                    if len(tok) <= 3:
+                    if len(tok) <= 4:
                         continue
                     analyses = parse_word(tok)
                     if not analyses:
-                        continue  # already caught above
-                    # Morpheus knows it — but is it in the corpus or DB?
+                        continue  # already caught by unattested check
                     in_corpus = _is_attested_in_corpus(tok)
+                    if in_corpus:
+                        continue  # form attested — fine
                     in_db = _is_attested_in_db(tok)
-                    if not in_corpus and not in_db and tok not in MORPHEUS_WHITELIST:
-                        lemma = analyses[0].get("lemma", tok) if analyses else tok
+                    if in_db:
+                        continue  # form in DB — fine
+                    if tok in MORPHEUS_WHITELIST:
+                        continue
+                    # Form not attested — check if the LEMMA is attested
+                    lemma = analyses[0].get("lemma", "") if analyses else ""
+                    if lemma and (
+                        _is_attested_in_corpus(lemma) or _is_attested_in_db(lemma)
+                    ):
+                        continue  # lemma is real, just an unusual form — let it go
+                    # Neither form nor lemma attested — flag it
+                    if tok not in seen_flagged:
+                        seen_flagged.add(tok)
                         all_issues.append(
-                            f"  - MORPHEUS-ONLY: {tok} (lemma: {lemma}) — Morpheus "
-                            f"parses this but it appears in neither our 57K corpus "
-                            f"nor 839K database. Possibly a valid but unattested form. "
-                            f"Prefer a well-attested alternative."
+                            f"  - MORPHEUS-ONLY: {tok} (lemma: {lemma}) — neither this "
+                            f"form nor its lemma appears in our corpus or database. "
+                            f"Likely fabricated. Replace with a well-attested word."
                         )
             except Exception:
                 pass

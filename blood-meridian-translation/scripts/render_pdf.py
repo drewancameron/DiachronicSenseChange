@@ -77,18 +77,15 @@ def build_pdf_html(passage_ids: list[str]) -> str:
             grk = mg_sent["greek"]
             glosses = list(mg_sent.get("glosses", []))
 
-            # Merge echoes into glosses for this sentence
+            # Merge echoes — keep full data for footnote rendering
             for echo in echoes:
                 phrase = echo.get("greek", "")
                 if phrase and phrase[:15] in grk:
-                    source = echo.get("source", "")
-                    note = echo.get("note", "")
-                    gloss_note = f'cf. {source}'
-                    if note:
-                        gloss_note += f' — {note[:80]}'
                     glosses.append({
-                        "anchor": phrase[:25] + ("…" if len(phrase) > 25 else ""),
-                        "note": gloss_note,
+                        "anchor": phrase[:25],
+                        "source": echo.get("source", ""),
+                        "source_quote": echo.get("source_quote", ""),
+                        "note": echo.get("note", ""),
                         "_type": "echo",
                     })
 
@@ -98,7 +95,9 @@ def build_pdf_html(passage_ids: list[str]) -> str:
                 if word and word in grk:
                     glosses.append({
                         "anchor": word,
-                        "note": f'cf. {att.get("author", "")}, {att.get("work", "")}',
+                        "source": f'{att.get("author", "")}, {att.get("work", "")}',
+                        "source_quote": "",
+                        "note": "",
                         "_type": "attestation",
                     })
 
@@ -163,15 +162,17 @@ def build_pdf_html(passage_ids: list[str]) -> str:
   /* Each paragraph row: text left, glosses right */
   .para-row {{
     display: flex;
-    gap: 0.6cm;
+    gap: 0.4cm;
     margin-bottom: 0.1cm;
-    align-items: flex-start;
+    align-items: stretch;  /* gloss column stretches to paragraph height */
+    break-inside: auto;
   }}
   .para-text {{
     flex: 1;
     text-align: justify;
     hyphens: auto;
     text-indent: 1.2em;
+    break-inside: auto;
   }}
   .para-row:first-child .para-text {{
     text-indent: 0;
@@ -183,8 +184,9 @@ def build_pdf_html(passage_ids: list[str]) -> str:
     line-height: 1.2;
     color: #555;
     padding-left: 0.3cm;
-    column-count: 2;
-    column-gap: 0.2cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;  /* distribute glosses across paragraph height */
   }}
   .ge {{
     margin-bottom: 0.06cm;
@@ -198,14 +200,33 @@ def build_pdf_html(passage_ids: list[str]) -> str:
   .ge .n {{
     color: #666;
   }}
-  .ge.echo .w, .ge.attest .w {{
-    font-weight: 400;
-    font-style: italic;
-    color: #444;
+  /* Per-page footnotes using CSS float:footnote */
+  .fn-inline {{
+    float: footnote;
+    font-size: 6pt;
+    line-height: 1.3;
+    color: #555;
   }}
-  .ge.echo .n, .ge.attest .n {{
+  .fn-inline .fn-source {{
     font-style: italic;
+  }}
+  .fn-inline .fn-quote {{
+    font-family: 'GFS Didot', serif;
+  }}
+  .fn-inline::footnote-call {{
+    font-size: 5pt;
+    vertical-align: super;
+    color: #888;
+  }}
+  .fn-inline::footnote-marker {{
+    font-weight: 600;
     color: #666;
+  }}
+  @page {{
+    @footnote {{
+      border-top: 0.5pt solid #ccc;
+      padding-top: 0.2cm;
+    }}
   }}
 </style>
 </head>
@@ -221,19 +242,49 @@ def build_pdf_html(passage_ids: list[str]) -> str:
 <div class="chapter-num">Ι</div>
 """
 
+    all_footnotes = []
+    fn_counter = 1
+
     for i, para in enumerate(paragraphs):
         text = " ".join(para["text_parts"])
+
+        # Separate vocab glosses from footnotes
         gloss_html = ""
         for g in para["glosses"]:
-            gloss_html += (
-                f'<div class="ge {_ge_class(g)}">'
-                f'<span class="w">{g["anchor"]}</span> '
-                f'<span class="n">{g["note"]}</span>'
-                f'</div>'
-            )
+            if g.get("_type") in ("echo", "attestation"):
+                phrase = g.get("anchor", "")[:15]
+                source = g.get("source", "")
+                source_quote = g.get("source_quote", "")
+                note = g.get("note", "")
+                fn_content = f'<span class="fn-source">{source}</span>'
+                if source_quote:
+                    fn_content += f' — <span class="fn-quote">{source_quote}</span>'
+                if note:
+                    fn_content += f' ({note})'
+                fn_span = f'<span class="fn-inline">{fn_content}</span>'
+                if phrase and phrase in text:
+                    pos = text.find(phrase)
+                    end = text.find(" ", pos + len(phrase))
+                    if end < 0:
+                        end = len(text)
+                    text = text[:end] + fn_span + text[end:]
+                g["_number"] = fn_counter
+                all_footnotes.append(g)
+                fn_counter += 1
+            else:
+                if g.get("rank", 1) > 2:
+                    continue
+                gloss_html += (
+                    f'<div class="ge">'
+                    f'<span class="w">{g["anchor"]}</span> '
+                    f'<span class="n">{g["note"]}</span>'
+                    f'</div>'
+                )
+
+        indent = "" if i == 0 else ' style="text-indent: 1.2em;"'
 
         html += f"""<div class="para-row">
-  <div class="para-text">{text}</div>
+  <div class="para-text"{indent}>{text}</div>
   <div class="para-gloss">{gloss_html}</div>
 </div>
 """
