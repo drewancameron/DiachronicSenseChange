@@ -187,10 +187,58 @@ Translate this passage into Ancient Greek. Output ONLY the Greek text."""
 
     # === Editorial loop ===
     for round_num in range(2, max_rounds + 1):
-        # Build editorial feedback with corpus evidence
+        # Run mechanical checks on current greek BEFORE the editor sees it
+        mech_report = ""
+        try:
+            # Write current draft for mechanical checker
+            draft_path.write_text(greek + "\n")
+
+            all_issues = []
+
+            # Grammar checks (agreement, preposition governance, constructions)
+            from translate_v3 import run_mechanical_sanity
+            mech_issues = run_mechanical_sanity(passage_id, en_text, greek)
+            for m in mech_issues:
+                all_issues.append(f"  - GRAMMAR: {m.get('greek','')}: {m.get('problem','')} → {m.get('fix','')}")
+
+            # Morpheus attestation (unattested/fabricated words)
+            try:
+                from morpheus_check import check_passage, _save_cache
+                morph = check_passage(passage_id)
+                _save_cache()
+                for m in morph:
+                    if m["type"] == "unattested_word":
+                        all_issues.append(f"  - UNATTESTED: {m['word']} — not found in Morpheus, corpus, or database. Possibly fabricated.")
+            except Exception:
+                pass
+
+            # Polysemy sense check
+            try:
+                from translate_v2 import check_polysemy
+                poly = check_polysemy(en_text, greek)
+                for p in poly:
+                    all_issues.append(f"  - WRONG SENSE: {p}")
+            except Exception:
+                pass
+
+            if all_issues:
+                mech_report = (
+                    "\n## Automated Check Results\n"
+                    "These issues were flagged by our mechanical checkers (grammar, attestation, sense):\n"
+                    + "\n".join(all_issues)
+                )
+                print(f"    Mechanical pre-check: {len(all_issues)} issues")
+                for a in all_issues:
+                    print(f"      {a[:70]}")
+            else:
+                print(f"    Mechanical pre-check: clean")
+        except Exception as e:
+            print(f"    Mechanical pre-check error: {e}")
+
+        # Build editorial feedback with corpus evidence + mechanical results
         corpus = load_corpus_evidence(en_text, greek)
 
-        edit_msg = f"""Now review your translation as a scholarly editor. You have access to the English source and corpus evidence below.
+        edit_msg = f"""Now review your translation as a scholarly editor. You have the English source, corpus evidence, and automated grammar check results below.
 
 Give your review in TWO parts:
 1. STRENGTHS: List specific Greek words and phrases that are excellent. Quote the exact Greek.
@@ -200,7 +248,11 @@ Give your review in TWO parts:
    - Preposition governance: μετά + genitive, σύν + dative, etc.
    - Word sense: does each Greek word actually mean what the English says?
 
-If there are NO problems, say "APPROVED" and nothing else.
+IMPORTANT: If the automated grammar check flagged issues, you MUST include them in your PROBLEMS list.
+
+If there are NO problems (including no grammar check issues), say "APPROVED" and nothing else.
+
+{mech_report}
 
 {corpus}
 
@@ -259,37 +311,18 @@ Output ONLY the complete revised Greek text."""
         (draft_path.parent / f"stage{round_num}_revised.txt").write_text(greek)
         draft_path.write_text(greek + "\n")
 
-    # === MECHANICAL CHECK — inject as third voice ===
-    print(f"\n  [{passage_id}] MECHANICAL CHECK")
+    # === FINAL MECHANICAL BACKSTOP ===
+    print(f"\n  [{passage_id}] FINAL CHECK")
     try:
+        draft_path.write_text(greek + "\n")
         from translate_v3 import run_mechanical_sanity
-        mech = run_mechanical_sanity(passage_id, en_text, greek)
-        if mech:
-            print(f"    {len(mech)} mechanical issues")
-            mech_lines = []
-            for m in mech:
-                mech_lines.append(f"- {m.get('greek','')}: {m.get('problem','')} → {m.get('fix','')}")
-                print(f"      {m.get('problem','')[:60]}")
-
-            mech_msg = f"""A grammar checker has flagged these issues in your approved translation. These are mechanical checks that catch things human review sometimes misses. Fix them.
-
-{chr(10).join(mech_lines)}
-
-Output ONLY the complete revised Greek text."""
-
-            messages.append({"role": "user", "content": mech_msg})
-            t0 = time.time()
-            response = client.messages.create(
-                model="claude-opus-4-20250514",
-                max_tokens=4096,
-                messages=messages,
-            )
-            greek = response.content[0].text.strip()
-            messages.append({"role": "assistant", "content": greek})
-            draft_path.write_text(greek + "\n")
-            print(f"    Fixed in {time.time()-t0:.0f}s")
+        final_mech = run_mechanical_sanity(passage_id, en_text, greek)
+        if final_mech:
+            print(f"    ⚠ {len(final_mech)} residual issues (for human review):")
+            for m in final_mech:
+                print(f"      {m.get('problem','')[:70]}")
         else:
-            print(f"    Clean")
+            print(f"    ✓ Clean")
     except Exception as e:
         print(f"    Error: {e}")
 
