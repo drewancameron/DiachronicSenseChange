@@ -26,6 +26,31 @@ GLOSSARY = ROOT / "glossary"
 sys.path.insert(0, str(SCRIPTS))
 
 
+def fix_missing_spaces(text: str) -> str:
+    """Fix missing spaces between Greek words — an LLM tokenization artifact.
+
+    Inserts a space where a Greek word-ending character is immediately
+    followed by an article, preposition, or other function word that
+    should start a new word.
+    """
+    # Pattern: Greek letter followed immediately by a known word-starter
+    # that should be a separate word. Only fire when the preceding char
+    # is clearly the end of a different word (lowercase letter followed
+    # by an uppercase or a known article/preposition pattern).
+    import re
+
+    # Fix: lowercase Greek letter directly followed by τό/τήν/τῆς/τοῦ/τῷ etc.
+    # These articles almost never appear mid-word
+    articles = r'(τό|τήν|τῆς|τοῦ|τῷ|τά|τοί|τῶν|τούς|τάς|τοῖς|ταῖς)'
+    text = re.sub(r'([α-ωά-ώϊϋΐΰᾶῆῖῦῶ])(' + articles + r')\b', r'\1 \2', text)
+
+    # Fix: lowercase Greek followed by μετά/ἐν/εἰς/ἐκ/πρός/διά/κατά/παρά/ὑπό/ἐπί
+    preps = r'(μετά|μετὰ|ἐν|εἰς|ἐκ|ἐξ|πρός|πρὸς|διά|διὰ|κατά|κατὰ|παρά|παρὰ|ὑπό|ὑπὸ|ἐπί|ἐπὶ|ἀπό|ἀπὸ|σύν|σὺν)'
+    text = re.sub(r'([α-ωά-ώϊϋΐΰᾶῆῖῦῶ])(' + preps + r')\s', r'\1 \2 ', text)
+
+    return text
+
+
 def load_living_glossary(en_text: str = "") -> str:
     glossary_path = GLOSSARY / "idf_glossary.json"
     if not glossary_path.exists():
@@ -201,14 +226,44 @@ Translate this passage into Ancient Greek. Output ONLY the Greek text."""
             for m in mech_issues:
                 all_issues.append(f"  - GRAMMAR: {m.get('greek','')}: {m.get('problem','')} → {m.get('fix','')}")
 
-            # Morpheus attestation (unattested/fabricated words)
+            # Attestation check: two levels
+            # 1. Completely unattested (not even Morpheus) — definitely fabricated
+            # 2. Morpheus-only (valid morphology but no corpus/DB attestation) — suspect
             try:
-                from morpheus_check import check_passage, _save_cache
+                from morpheus_check import (
+                    check_passage, _save_cache, parse_word,
+                    _is_attested_in_corpus, _is_attested_in_db,
+                    _load_corpus_forms, MORPHEUS_WHITELIST,
+                )
+                _load_corpus_forms()
                 morph = check_passage(passage_id)
                 _save_cache()
                 for m in morph:
                     if m["type"] == "unattested_word":
-                        all_issues.append(f"  - UNATTESTED: {m['word']} — not found in Morpheus, corpus, or database. Possibly fabricated.")
+                        all_issues.append(
+                            f"  - UNATTESTED: {m['word']} — not found in Morpheus, "
+                            f"corpus, or database. Fabricated — replace with an attested word."
+                        )
+
+                # Check for Morpheus-only words (valid morphology, no ancient usage)
+                tokens = re.findall(r'[\w\u0370-\u03FF\u1F00-\u1FFF]+', greek)
+                for tok in tokens:
+                    if len(tok) <= 3:
+                        continue
+                    analyses = parse_word(tok)
+                    if not analyses:
+                        continue  # already caught above
+                    # Morpheus knows it — but is it in the corpus or DB?
+                    in_corpus = _is_attested_in_corpus(tok)
+                    in_db = _is_attested_in_db(tok)
+                    if not in_corpus and not in_db and tok not in MORPHEUS_WHITELIST:
+                        lemma = analyses[0].get("lemma", tok) if analyses else tok
+                        all_issues.append(
+                            f"  - MORPHEUS-ONLY: {tok} (lemma: {lemma}) — Morpheus "
+                            f"parses this but it appears in neither our 57K corpus "
+                            f"nor 839K database. Possibly a valid but unattested form. "
+                            f"Prefer a well-attested alternative."
+                        )
             except Exception:
                 pass
 
