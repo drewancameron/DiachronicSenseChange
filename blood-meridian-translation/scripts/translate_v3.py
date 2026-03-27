@@ -505,12 +505,37 @@ def translate_passage(passage_id: str, dry_run: bool = False) -> dict | None:
     for e in echoes:
         print(f"      {e.get('greek','')[:30]} ← {e.get('source','')}")
 
-    # Save echoes for apparatus
+    # Verify echoes against the actual corpus — strip hallucinations
     if echoes:
-        echo_path = ROOT / "apparatus" / passage_id
-        echo_path.mkdir(parents=True, exist_ok=True)
-        json.dump(echoes, open(echo_path / "echoes.json", "w"),
-                  ensure_ascii=False, indent=2)
+        try:
+            from verify_echoes import verify_passage
+            import sqlite3
+            db_path = ROOT.parent / "db" / "diachronic.db"
+            if db_path.exists():
+                conn = sqlite3.connect(str(db_path))
+                cur = conn.cursor()
+                # Write temporarily so verify_passage can read them
+                echo_path = ROOT / "apparatus" / passage_id
+                echo_path.mkdir(parents=True, exist_ok=True)
+                json.dump(echoes, open(echo_path / "echoes.json", "w"),
+                          ensure_ascii=False, indent=2)
+                verified = verify_passage(passage_id, cur)
+                conn.close()
+                clean = [e for e in verified if e.get("_verified")]
+                removed = len(echoes) - len(clean)
+                if removed:
+                    print(f"    Removed {removed} unverified echo(es)")
+                echoes = clean
+                json.dump(echoes, open(echo_path / "echoes.json", "w"),
+                          ensure_ascii=False, indent=2)
+                print(f"    {len(echoes)} verified echoes")
+        except Exception as e:
+            print(f"    Echo verification error: {e}")
+            # Save unverified as fallback
+            echo_path = ROOT / "apparatus" / passage_id
+            echo_path.mkdir(parents=True, exist_ok=True)
+            json.dump(echoes, open(echo_path / "echoes.json", "w"),
+                      ensure_ascii=False, indent=2)
 
     # === Step 6: THEMATIC VOCAB ATTESTATION ===
     # Check which thematic vocab words we offered actually appeared in the output

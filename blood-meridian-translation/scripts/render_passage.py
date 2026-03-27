@@ -235,37 +235,12 @@ def render_passage(passage_ids: list[str]) -> str:
   .mg .n {
     color: #666;
   }
-  /* Footnote markers in the text */
-  .fn-marker {
-    font-size: 0.65rem;
-    vertical-align: super;
+  /* Inline apparatus: small block between paragraphs */
+  .apparatus {
+    font-size: 0.7rem;
+    line-height: 1.3;
     color: #888;
-    margin-left: 1px;
-    cursor: help;
-  }
-
-  /* Footnote section at bottom */
-  .footnotes {
-    margin-top: 2rem;
-    padding-top: 0.8rem;
-    border-top: 1px solid #ccc;
-    font-size: 0.75rem;
-    line-height: 1.4;
-    color: #555;
-  }
-  .fn-entry {
-    margin-bottom: 0.4rem;
-  }
-  .fn-num {
-    font-weight: 600;
-    color: #666;
-    margin-right: 0.3rem;
-  }
-  .fn-source {
-    font-style: italic;
-  }
-  .fn-quote {
-    font-family: 'GFS Didot', serif;
+    margin: 0.1rem 0 0.6rem 1.5em;
   }
 
   .gw { cursor: help; }
@@ -298,46 +273,56 @@ def render_passage(passage_ids: list[str]) -> str:
     html.append('<div class="chapter-num">Ι</div>')
     html.append('<div class="page-body">')
 
-    # Collect footnotes with running numbers
-    all_footnotes = []
-    fn_counter = 1
-
-    # Column 1: flowing Greek text with paragraphs + footnote markers
+    # Column 1: flowing Greek text with paragraphs + inline apparatus after each
     html.append('<div class="main-text">')
     para_parts = []
+    para_footnotes = []
+
     for item in all_sentences:
         if item.get("para_break"):
             if para_parts:
                 html.append(f'<p class="para">{" ".join(para_parts)}</p>')
+                # Emit inline apparatus after the paragraph
+                if para_footnotes:
+                    refs = []
+                    for fn in para_footnotes:
+                        source = fn.get("source", "")
+                        source_quote = fn.get("source_quote", "")
+                        note = fn.get("note", "")
+                        ref = f'<em>{source}</em>'
+                        if source_quote:
+                            ref += f': {source_quote}'
+                        if note:
+                            ref += f' — {note}'
+                        refs.append(ref)
+                    html.append(
+                        f'<div class="apparatus">{";&nbsp; ".join(refs)}</div>'
+                    )
                 para_parts = []
+                para_footnotes = []
             continue
 
-        sent_html = item["html"]
-
-        # Insert footnote markers for echoes/attestations
+        para_parts.append(item["html"])
         for fn in item.get("footnotes", []):
-            phrase = fn.get("greek", "")
-            if phrase and phrase[:12] in sent_html:
-                marker = f'<sup class="fn-marker" title="see footnote {fn_counter}">{fn_counter}</sup>'
-                # Insert marker after the phrase
-                insert_pos = sent_html.find(phrase[:12])
-                if insert_pos >= 0:
-                    # Find end of the phrase in the HTML
-                    end_pos = insert_pos + len(phrase[:20])
-                    # Place marker after the nearest word boundary
-                    space_pos = sent_html.find(" ", end_pos)
-                    if space_pos < 0:
-                        space_pos = len(sent_html)
-                    sent_html = sent_html[:space_pos] + marker + sent_html[space_pos:]
-
-                fn["_number"] = fn_counter
-                all_footnotes.append(fn)
-                fn_counter += 1
-
-        para_parts.append(sent_html)
+            para_footnotes.append(fn)
 
     if para_parts:
         html.append(f'<p class="para">{" ".join(para_parts)}</p>')
+        if para_footnotes:
+            refs = []
+            for fn in para_footnotes:
+                source = fn.get("source", "")
+                source_quote = fn.get("source_quote", "")
+                note = fn.get("note", "")
+                ref = f'<em>{source}</em>'
+                if source_quote:
+                    ref += f': {source_quote}'
+                if note:
+                    ref += f' — {note}'
+                refs.append(ref)
+            html.append(
+                f'<div class="apparatus">{";&nbsp; ".join(refs)}</div>'
+            )
     html.append('</div>')
 
     # Gloss panel: vocabulary glosses only (no echoes/attestations)
@@ -355,24 +340,6 @@ def render_passage(passage_ids: list[str]) -> str:
     html.append('</div>')
 
     html.append('</div>')  # page-body
-
-    # Footnote section
-    if all_footnotes:
-        html.append('<div class="footnotes">')
-        for fn in all_footnotes:
-            num = fn.get("_number", "")
-            source = fn.get("source", "")
-            source_quote = fn.get("source_quote", "")
-            note = fn.get("note", "")
-            entry = f'<div class="fn-entry"><span class="fn-num">{num}.</span>'
-            entry += f'<span class="fn-source">{source}</span>'
-            if source_quote:
-                entry += f' — <span class="fn-quote">{source_quote}</span>'
-            if note:
-                entry += f' ({note})'
-            entry += '</div>'
-            html.append(entry)
-        html.append('</div>')
 
     # JS to position glosses in two columns within the panel
     html.append("""
