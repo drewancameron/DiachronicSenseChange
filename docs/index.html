@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<title>Ὁ Αἱματόεις Μεσημβρινός</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+
+  @page { size: A4; margin: 2cm 1.5cm; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'GFS Didot', 'Times New Roman', serif;
+    background: #fff;
+    color: #1a1a1a;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+
+  /* Title page */
+  .title-page {
+    text-align: center; margin: 0; padding: 4rem 2rem;
+    page-break-after: always;
+    min-height: 60vh;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+  }
+  .title-page .author { font-size: 0.95rem; letter-spacing: 0.2em; color: #333; margin-top: 2.25rem; margin-bottom: 1.25rem; }
+  .title-page .title { font-size: 2.6rem; line-height: 1.2; margin-bottom: 0; color: #1a1a1a; }
+  .title-page .sub { font-size: 1.05rem; color: #333; margin-bottom: 1.25rem; }
+  .title-page .note { font-size: 0.85rem; color: #666; margin-top: -0.1rem; }
+
+  .chapter-num {
+    font-size: 1.6rem; text-align: center;
+    margin: 0 0 1.5rem; color: #333; letter-spacing: 0.15em;
+  }
+
+  /* Two-panel layout: Greek (left) + glosses (right) */
+  .page-body {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 0 1.2rem;
+    position: relative;
+  }
+
+  /* Main Greek text column */
+  .main-text {
+    font-size: 1.1rem;
+    line-height: 2;
+    text-align: justify;
+    hyphens: auto;
+  }
+  .main-text .para {
+    text-indent: 1.5em;
+    margin-bottom: 0.5rem;
+  }
+  .main-text .para:first-child {
+    text-indent: 0;
+  }
+
+  /* Gloss panel: two-column CSS flow inside */
+  .gloss-panel {
+    position: relative;
+    border-left: none;
+    padding-left: 1rem;
+  }
+
+  .mg {
+    position: absolute;
+    width: 100%;
+    font-size: 0.75rem;
+    line-height: 1.35;
+    color: #555;
+  }
+  .mg .w {
+    font-weight: 600;
+    color: #333;
+  }
+  .mg .n {
+    color: #666;
+  }
+  /* Footnote markers */
+  .fn-marker { font-size: 0.6rem; color: #999; }
+
+  /* Inline apparatus: small block between paragraphs */
+  .apparatus {
+    font-size: 0.7rem;
+    line-height: 1.3;
+    color: #888;
+    margin: 0.1rem 0 0.6rem 1.5em;
+  }
+
+  .gw { cursor: help; }
+  .gw:hover { background: #F5F0E0; }
+
+  @media print {
+    body { padding: 0; max-width: none; }
+    .gw:hover { background: none; }
+  }
+  @media (max-width: 800px) {
+    .page-body { grid-template-columns: 1fr; }
+    .gloss-panel { display: none; }
+  }
+</style>
+</head>
+<body>
+
+
+<div class="title-page">
+  <div class="author">ΚΟΡΜΑΚ ΜΑΚΚΑΡΘΥ</div>
+  <div class="title">Ὁ Αἱματόεις<br>Μεσημβρινός</div>
+  <div class="sub">ἢ<br>Τὸ Ἑσπέριον Ἐρύθημα</div>
+  <div class="note">εἰς τὴν Ἑλλάδα φωνὴν μεταφρασθέν</div>
+</div>
+
+<div style="height:3rem"></div>
+<div class="chapter-num">Ι</div>
+<div class="page-body">
+<div class="main-text">
+<p class="para">Ἴδε τὸν παῖδα. ὠχρός ἐστι καὶ ἰσχνός, φορεῖ δὲ λίνεον χιτῶνα λεπτὸν καὶ ῥακώδη. <span class="gw" id="gw4" title="= κινεῖ τοὺς ἄνθρακας σιδήρῳ ↔ σβέννυμι">σκαλεύει</span> τὸ πῦρ τῆς <span class="gw" id="gw5" title="= τόπος πυρὸς ἐν οἰκίᾳ">ἐσχάρας</span><sup class="fn-marker">1</sup>. ἔξω κεῖνται <span class="gw" id="gw6" title="= γῆ σπερμάτων">ἄρουραι</span> σκοτειναὶ <span class="gw" id="gw7" title="< ἀρότρον = γῆ κατεσκαμμένη">ἠροτριωμέναι</span> <span class="gw" id="gw8" title="ἐνταῦθα = μικρὰ μέρη ὡς ἱμάτια">ῥάκεσι</span> χιόνος καὶ ὕλαι σκοτεινότεραι πέρα αἵ ἔτι τρέφουσι λύκους τινὰς <span class="gw" id="gw9" title="= τελευταίους">ὑστάτους</span>. οἱ αὐτοῦ γνωστοὶ ὡς <span class="gw" id="gw10" title="ξυλο·κόπος · ὑδρο·φόρος = δοῦλοι ταπεινοί">ξυλοκόποι καὶ ὑδροφόροι</span><sup class="fn-marker">2</sup> ἀλλὰ κατ' ἀλήθειαν ὁ πατὴρ αὐτοῦ γέγονε <span class="gw" id="gw11" title="= διδάσκαλος παίδων">γραμματιστής</span>. <span class="gw" id="gw12" title="= κατάκειται μεθύων">κεῖται ἐν μέθῃ</span>, λέγει ἐκ ποιητῶν ὧν τὰ ὀνόματα νῦν ἀπόλωλε. ὁ παῖς παρὰ τῷ πυρὶ κάθηται καὶ θεωρεῖ αὐτόν.</p>
+<div class="apparatus"><sup>1</sup> <em>Septuagint, LXX Jeremias 49.43.23</em>: ἔριπτεν εἰς τὸ πῦρ τὸ ἐπὶ τῆς ἐσχάρας — Biblical echo of fire on the altar/hearth; the Jeremiah passage involves destruction of scrolls, creating resonance with themes of loss and desolation;&nbsp; <sup>2</sup> <em>Septuagint, LXX Joshua 9.27</em>: ἔσονται ξυλοκόποι καὶ ὑδροφόροι πάσῃ τῇ συναγωγῇ — Direct biblical allusion to the Gibeonites condemned to servitude as woodcutters and water-carriers; evokes themes of social degradation and survival</div>
+<p class="para">Νὺξ τῆς σῆς <span class="gw" id="gw13" title="= τόκου, τῆς ἡμέρας ἐν ᾗ ἐτέχθης">γενέσεως</span>. τριάκοντα τρεῖς<sup class="fn-marker">3</sup>. οἱ <span class="gw" id="gw14" title="= ἀστέρες πίπτοντες < Λέων ἄστρον">Λεοντίδαι</span> οἳ ἐκαλοῦντο. ὦ θεέ, ὡς ἔπιπτον οἱ ἀστέρες. ἐζήτουν σκότος, <span class="gw" id="gw15" title="= τρήματα, χάσματα ↔ στερεὸν τεῖχος">ὀπὰς</span> ἐν τοῖς οὐρανοῖς<sup class="fn-marker">4</sup>. ἡ <span class="gw" id="gw16" title="= ἄστρα ἑπτὰ ἐν οὐρανῷ ὡς ἅμαξα">Ἅμαξα</span> <span class="gw" id="gw17" title="< σκεδάννυμι = διελύθη, διεφθάρη">διεσκεδάσθη</span>.</p>
+<div class="apparatus"><sup>3</sup> <em>Septuagint, LXX Genesis 1.46.15</em>: πᾶσαι αἱ ψυχαί, υἱοὶ καὶ αἱ θυγατέρες, τριάκοντα τρεῖς — Exact biblical phrase; the septuagintal numbering formula resonates with McCarthy's precise age specification in this apocalyptic context;&nbsp; <sup>4</sup> <em>Septuagint, LXX Psalmi 27.88.3</em>: ἐν τοῖς οὐρανοῖς ἑτοιμασθήσεται ἡ ἀλήθειά σου — Biblical phraseology for cosmic/celestial realm; the psalmic register enhances the theological weight of the falling stars passage</div>
+<p class="para">ἡ μήτηρ τεθνηκυῖα ἤδη <span class="gw" id="gw18" title="= δέκα καὶ τέτταρα">τεσσαρεσκαίδεκα</span> ἔτη ἐν τοῖς ἰδίοις <span class="gw" id="gw19" title="= στήθεσι, μαστοῖς· ἐνταῦθα καρδίᾳ">κόλποις</span> ἔθρεψε<sup class="fn-marker">5</sup> τὸ θηρίον τὸ μέλλον αὐτὴν <span class="gw" id="gw20" title="ἐνταῦθα = ἀποκτεῖναι, φθεῖραι">ἀπάγειν</span>. ὁ πατὴρ οὐδέποτε λέγει τὸ ὄνομα αὐτῆς<sup class="fn-marker">6</sup>, ὁ παῖς οὐκ οἶδεν αὐτό. ἔχει ἀδελφὴν ἐν <span class="gw" id="gw21" title="= ἐν τῇ γῇ, ἐν τῇ ζωῇ">τῷδε τῷ κόσμῳ</span> ἣν οὐκέτι ὄψεται. σκοπεῖ, ὠχρὸς καὶ <span class="gw" id="gw23" title="< λούω· = οὐ λελουμένος, ῥυπαρός">ἄλουτος</span>. οὔτε ἀναγινώσκειν οὔτε γράφειν οἶδεν καὶ ἐν αὐτῷ ἤδη τρέφεται <span class="gw" id="gw24" title="= ἐπιθυμία, βούλησις">ὄρεξις</span> βίας <span class="gw" id="gw25" title="= ἄνευ λόγου, μαινομένης ↔ σώφρων">ἀλόγου</span>. πᾶσα ἱστορία πάρεστιν ἐν τῷ <span class="gw" id="gw26" title="ἐνταῦθα = ὄψει, εἴδει">προσώπῳ</span> ἐκείνῳ, ὁ παῖς πατὴρ τοῦ ἀνδρός.</p>
+<div class="apparatus"><sup>5</sup> <em>Euripides, Electra 969a</em>: πῶς γὰρ κτάνω νιν, ἥ μʼ ἔθρεψε κἄτεκεν; — Tragic resonance: Euripides' Electra questions killing the mother who nursed her; here the mother nurses the violence that will destroy her;&nbsp; <sup>6</sup> <em>Septuagint, Genesis 17.15</em>: οὐ κληθήσεται τὸ ὄνομα αὐτῆς Σάρα — Biblical phraseology for naming, creating ironic contrast - here the mother's name is never spoken, inverting the biblical pattern of divine naming</div>
+<p class="para">τεσσαρεσκαίδεκα ἐτῶν ὢν <span class="gw" id="gw27" title="= φεύγει λάθρᾳ ἀπὸ τῆς οἰκίας">ἀποδιδράσκει</span>. οὐκέτι ὄψεται τὸ <span class="gw" id="gw28" title="< μάγειρος· = οἶκος ὅπου τὴν τροφὴν παρασκευάζουσι">μαγειρεῖον</span> ψυχρὸν ἐν τῷ σκότει <span class="gw" id="gw29" title="= πρὶν ἀνατεῖλαι τὸν ἥλιον">πρὸ ἕω</span>. τὰ ξύλα, τοὺς <span class="gw" id="gw30" title="= μεγάλα ἀγγεῖα χαλκᾶ πρὸς πλύσιν">λέβητας</span><sup class="fn-marker">7</sup>. πλανᾶται πρὸς ἑσπέραν μέχρι Μέμφεως, μόνος <span class="gw" id="gw31" title="= ὁ μεταβαίνων ἀπὸ τόπου εἰς τόπον">μετανάστης</span> ἐπὶ τῆς <span class="gw" id="gw32" title="< πεδίον· = ἐπίπεδος, οὐκ ὀρεινή">πεδινῆς</span> καὶ <span class="gw" id="gw33" title="< ποιμήν· = πρὸς βοσκὴν ἁρμόζουσα">ποιμενικῆς</span> χώρας. μέλανες ἐν τοῖς ἀγροῖς<sup class="fn-marker">8</sup>, λεπτοὶ καὶ <span class="gw" id="gw34" title="= κλίνοντες τὸ σῶμα κάτω ↔ ὀρθοί">κύπτοντες</span>, οἱ δάκτυλοι ὡς <span class="gw" id="gw35" title="= μικρὰ ζῷα ὀκτάπουν ἱστὸν ὑφαίνοντα">ἀράχναι</span> ἐν τοῖς <span class="gw" id="gw36" title="= λευκὸν ἔριον φυτοῦ· βάμβαξ">ἐρίοις</span>. ἀγωνία <span class="gw" id="gw37" title="< σκιά· = πλήρης σκιῶν, οὐ λαμπρός">σκιώδης</span> ἐν τῷ κήπῳ. πρὸς τὸν ἥλιον <span class="gw" id="gw38" title="= δύνοντα, κάτω βαίνοντα">καταδυόμενον</span> σχήματα κινούμενα ἐν τῷ βραδυτέρῳ σκότει διὰ λεπτοῦ οὐρανοῦ. εἷς μέλας γεωργὸς διώκων ἡμίονον καὶ <span class="gw" id="gw39" title="= ὄργανον σιδηροῦν πρὸς ἄροσιν γῆς">ἄροτρον</span> κάτω διὰ τῆς <span class="gw" id="gw40" title="= γῆς βρεχομένης, ὑγρᾶς">ὑπὸ ὄμβρου γῆς</span> πρὸς νύκτα.</p>
+<div class="apparatus"><sup>7</sup> <em>Septuagint, LXX Regnorum III 13.7.26</em>: καὶ ἐποίησεν Χειρὰμ τοὺς λέβητας καὶ τὰς θερμάστρεις καὶ τὰς φιάλας — Biblical language for metal vessels/cauldrons, evoking temple furnishings in a context of departure from domestic space;&nbsp; <sup>8</sup> <em>Thucydides, History of the Peloponnesian War 2.14.2</em>: τοὺς πολλοὺς ἐν τοῖς ἀγροῖς διαιτᾶσθαι — Classical historiographical phrase for field workers, lending gravity to description of enslaved laborers</div>
+<p class="para"><span class="gw" id="gw41" title="= ἔτει">ἐνιαυτῷ</span> ὕστερον<sup class="fn-marker">9</sup> ἐν <i>Σαὶντ</i> Λούις ἐστίν. <span class="gw" id="gw42" title="= δέχονται αὐτὸν ἐργάτην">παραλαμβάνεται</span> εἰς <i>Νέαν</i> Ὀρλεάνην ἐπὶ <span class="gw" id="gw43" title="= πλοῖον πλατὺ χωρὶς ἱστίων">πλατείας νεώς</span>. τεσσαράκοντα καὶ δύο ἡμέραι ἐπὶ τοῦ ποταμοῦ. νύκτωρ τὰ πλοῖα <span class="gw" id="gw44" title="= πυρὶ καὶ ἀτμῷ κινούμενα, οὐκ ἀνέμῳ">ἀτμῷ κινούμενα</span> βοᾷ καὶ βαδίζει παρὰ τὰ μέλανα ὕδατα πάντα <span class="gw" id="gw45" title="= φῶτα ἔχοντα, λαμπόμενα">πεφωτισμένα</span> ὥσπερ πόλεις <span class="gw" id="gw46" title="= πλέουσαι ὧδε κἀκεῖσε">πλανώμεναι</span>. <span class="gw" id="gw47" title="= εἰς μέρη διαιρεῖ, καταλύει">διαλύει</span> τὸ πλοῖον καὶ πωλοῦσι τὰ ξύλα καὶ βαδίζει ἐν ταῖς ὁδοῖς καὶ ἀκούει γλώσσας ἃς οὐ πρότερον ἤκουσεν. οἰκεῖ ἐν <span class="gw" id="gw48" title="= μικρῷ οἰκήματι">δωματίῳ</span> ὑπὲρ αὐλῆς ὄπισθεν <span class="gw" id="gw49" title="= οἴνου καὶ σίτου πωλητηρίου">καπηλείου</span> καὶ καταβαίνει νύκτωρ ὥσπερ τι <span class="gw" id="gw50" title="= ἐκ μύθων, οὐκ ἀληθινόν">μυθῶδες</span> θηρίον μάχεσθαι τοῖς ναύταις. οὐ μέγας ἐστὶν ἀλλὰ μεγάλους ἔχει <span class="gw" id="gw51" title="= ἐνταῦθα τὰ μέρη τῶν χειρῶν πρὸς ταῖς παλάμαις">καρπούς</span>, μεγάλας χεῖρας. οἱ <span class="gw" id="gw52" title="= τὰ ἄνω μέρη τῶν βραχιόνων">ὦμοι</span> ἐγγὺς κεῖνται. τὸ τοῦ παιδὸς πρόσωπον παραδόξως <span class="gw" id="gw53" title="= οὐ βεβλαμμένον, ἀπαθές">ἄθικτον</span> ὄπισθεν τῶν <span class="gw" id="gw54" title="= τῶν ἀπὸ τραυμάτων σημείων">οὐλῶν</span>, οἱ ὀφθαλμοὶ παραδόξως <span class="gw" id="gw55" title="= καθαροί, οὐ διεφθαρμένοι">ἀκέραιοι</span>. μάχονται <span class="gw" id="gw56" title="= κλειστοῖς χερσίν">πυγμαῖς</span>, ποσίν, <span class="gw" id="gw57" title="= ἀγγείοις οἴνου">λαγύνοις</span> ἢ μαχαίραις. πάντα γένη, πᾶσαι φυλαί. ἄνδρες ὧν ἡ φωνὴ ὥσπερ <span class="gw" id="gw58" title="= θηρίων ἀνθρώποις ὁμοίων">πιθήκων</span> <span class="gw" id="gw59" title="= φωνὴ ἄγρια, οὐχὶ ἀνθρωπίνη">βρυχὴ</span> ἠχεῖ. ἄνδρες ἐκ χωρῶν οὕτω μακρῶν καὶ ξένων ὥστε ἱστάμενος ὑπὲρ αὐτῶν ὅπου κεῖνται <span class="gw" id="gw60" title="= αἷμα ῥέοντες ἐκ τραυμάτων">αἱμάσσοντες</span> ἐν τῷ <span class="gw" id="gw61" title="= γῇ ὑγρᾷ μετὰ ὕδατος">πηλῷ</span> αἰσθάνεται αὐτὸ τὸ <span class="gw" id="gw62" title="= πάντας ἀνθρώπους ὀρθῶς νικᾶν">ἀνθρώπινον γένος<sup class="fn-marker">10</sup> δίκαιον</span>.</p>
+<div class="apparatus"><sup>9</sup> <em>Plutarch, Aratus 16.2</em>: ἐνιαυτῷ δὲ ὕστερον αὖθις στρατηγῶν ἐνίστατο τὴν περὶ τὸν Ἀκροκόρινθον πρᾶξιν — Exact temporal formula marking narrative transition, common in historical prose;&nbsp; <sup>10</sup> <em>Josephus; Clement of Alexandria</em>: πᾶν ἠφανίσθαι τὸ ἀνθρώπινον ὑπολαβοῦσαι — Philosophical/theological phrase for humanity as a whole; climactic reflection on human nature</div>
+<p class="para">νυκτί τινι <span class="gw" id="gw63" title="= ἄρχων πλοίου, κυβερνήτης">ναύκληρός</span> τις ἀπὸ <span class="gw" id="gw64" title="= νῆσος ἐν μέσῃ θαλάττῃ">Μελίτης</span> βάλλει αὐτὸν εἰς τὸ νῶτον μικρῷ <i><span class="gw" id="gw65" title="= μικρὸν τόξον ὃ βάλλει σφαίρας">πιστολίῳ</span>.</i> στρεφόμενος πρὸς τὸν ἄνδρα βάλλεται αὖθις ὑπὸ τὴν καρδίαν. ὁ ἀνὴρ φεύγει καὶ αὐτὸς <span class="gw" id="gw66" title="= στηρίζεται, ἵσταται πρός τι">ἐρείδεται</span> πρὸς τὴν τράπεζαν τοῦ αἵματος ἐκ τοῦ χιτῶνος ῥέοντος. οἱ ἄλλοι <span class="gw" id="gw67" title="= βλέπουσιν εἰς ἄλλο μέρος ↔ προσβλέπουσιν">ἀποβλέπουσιν</span>. μετὰ χρόνον κάθηται ἐν τῷ ἐδάφει.</p>
+<p class="para">κεῖται ἐν κλίνῃ ἐν τῷ <span class="gw" id="gw68" title="= οἰκίᾳ ἄνω, ἐν ὑψηλῷ">ὑπερῴῳ</span> δύο ἑβδομάδας ἡ τοῦ <span class="gw" id="gw69" title="= ἀνδρὸς ὃς πωλεῖ οἶνον καὶ σῖτον">καπήλου</span> γυνὴ θεραπεύουσα αὐτόν. φέρει τὰ δεῖπνα, ἐκφέρει τὰ <span class="gw" id="gw70" title="= ῥύπος ἐκ τοῦ σώματος, κόπρος">ἀποπατήματα</span>. γυνὴ σκληρὰ τὴν ὄψιν σῶμα ἔχουσα <span class="gw" id="gw71" title="< νεῦρον· = ἰσχυρόν, μυῶδες ↔ μαλακόν">νευρῶδες</span> ὥσπερ ἀνδρός. ἐν ᾧ χρόνῳ <span class="gw" id="gw72" title="= ὑγιὴς γίγνεται ἐκ νόσου">ἰᾶται</span> οὐκ ἔχει ἀργύριον ἀποδοῦναι αὐτῇ καὶ ἀπέρχεται νυκτὸς καὶ καθεύδει παρὰ τῇ <span class="gw" id="gw73" title="= χεῖλος ποταμοῦ, παραλία">ὄχθῃ</span> τοῦ ποταμοῦ ἕως ἂν εὕρῃ πλοῖον ὃ λήψεται αὐτόν. τὸ πλοῖον πορεύεται εἰς <i><span class="gw" id="gw74" title="= χώρα μεγάλη ἐν δύσει">Τέξας</span>.</i></p>
+<p class="para">μόνον νῦν ὁ παῖς τέλος <span class="gw" id="gw75" title="= ἀφίησιν, ἀπολείπει ↔ ἐνδύομαι">ἀποδύεται</span> πάντα ἅπερ ἦν. αἱ ἀρχαὶ αὐτοῦ μακραὶ γίγνονται ὥσπερ καὶ ἡ<sup class="fn-marker">11</sup> μοῖρα καὶ οὐκέτι ἐν πάσῃ τῇ τοῦ κόσμου <span class="gw" id="gw76" title="= κινήσει, τροχῷ κυκλικῷ">περιστροφῇ</span> ἔσται χῶραι οὕτως ἄγριαι καὶ βάρβαροι πειρᾶν εἰ τὸ <span class="gw" id="gw77" title="= ὕλη, πρᾶγμα ἐξ οὗ ποιεῖται">ὕλημα</span> τῆς <span class="gw" id="gw78" title="= ποιήσεως τοῦ κόσμου">κτίσεως</span><sup class="fn-marker">12</sup> δύναται <span class="gw" id="gw79" title="= μορφοῦσθαι ὥσπερ πηλὸς ὑπὸ κεραμέως">πλάττεσθαι</span> πρὸς βούλησιν ἀνθρώπου ἢ εἰ ἡ αὐτοῦ καρδία οὐκ ἔστιν ἄλλο γένος πηλοῦ. οἱ <span class="gw" id="gw80" title="= οἱ ἐν νηὶ πλέοντες">ἐπιβάται</span> <span class="gw" id="gw81" title="= φοβερόν, μὴ θαρραλέον">ὄκνηρόν</span> τι γένος. <span class="gw" id="gw82" title="= κρύπτουσι, κάτω βλέπουσι">ἐγκλείουσι</span> τοὺς ὀφθαλμοὺς καὶ οὐδεὶς ἐρωτᾷ ἄλλον ὅ τι ἄγει αὐτὸν ἐνθάδε. καθεύδει ἐπὶ τοῦ <span class="gw" id="gw83" title="= ἐδάφους νηός">καταστρώματος</span>, <span class="gw" id="gw84" title="= ἱερὰν ὁδὸν βαδίζων εἰς ναόν">προσκυνητὴς</span> μετ' ἄλλων. θεωρεῖ τὴν <span class="gw" id="gw85" title="= οὐ σαφῆ, ἐν ὁμίχλῃ">ἀμυδρὰν</span> ἀκτὴν ἀναβαίνουσαν καὶ καταβαίνουσαν. φαιοὶ θαλάττιοι ὄρνιθες <span class="gw" id="gw86" title="= ἀνεῳγότες τὸ στόμα (παρακ. μτχ.)">κεχηνότες</span>. <span class="gw" id="gw87" title="= πλήθη συνεστῶτα">στίφη</span> ὀρνίθων πέτεται παρὰ τὴν ἀκτὴν ὑπὲρ τῶν φαιῶν κυμάτων.</p>
+<div class="apparatus"><sup>11</sup> <em>Aristotle, The 'Art' of Rhetoric 3.9.5</em>: μὴ ἐν τῇ διαιρέσει †ὥσπερ καὶ ἡ περίοδος,† ἀλλʼ ὅλη — Aristotelian comparative formula, here linking the boy's origins to his fate in philosophical manner;&nbsp; <sup>12</sup> <em>Septuagint, LXX Machabaeorum iii 25.2.2</em>: βασιλεῦ τῶν οὐρανῶν, καὶ δέσποτα πάσης τῆς κτίσεως — Biblical language for 'creation' in a context questioning whether creation's material can be shaped by human will—theological resonance with McCarthy's theme</div>
+<p class="para">ἀποβαίνουσιν ἐπὶ <span class="gw" id="gw88" title="= μικροῦ πλοίου">λέμβου</span>, <span class="gw" id="gw89" title="= οἰκήτορες νέας χώρας">ἄποικοι</span> μετὰ τῶν σκευῶν, πάντες σκοποῦντες τὴν ταπεινὴν παραλίαν, τὸν λεπτὸν <span class="gw" id="gw90" title="= μικρὸν λιμένα παρὰ θάλασσαν">κόλπον</span> ψάμμου καὶ πίτυος νέοντα ἐν τῇ <span class="gw" id="gw91" title="= ὁμίχλῃ, νεφέλῃ">ἀχλύι</span>.</p>
+<p class="para"><span class="gw" id="gw92" title="= βαίνει, πορεύεται">βαδίζει</span> διὰ τῶν στενῶν ὁδῶν τοῦ λιμένος. ὁ ἀὴρ <span class="gw" id="gw93" title="= ὀσμὴν ἔχει, εὐωδεῖ">ὄζει</span> ἁλὸς καὶ <span class="gw" id="gw94" title="νεο·πρίστου < πρίζω = ἄρτι τετμημένου">νεοπρίστου</span> ξύλου. νυκτὸς αἱ <span class="gw" id="gw95" title="= γυναῖκες μισθὸν λαμβάνουσαι">πόρναι</span> καλοῦσιν αὐτὸν ἐκ τοῦ σκότους ὥσπερ ψυχαὶ ἐν χρείᾳ. <span class="gw" id="gw96" title="= ἑπτὰ ἡμέραι">ἑβδομάς</span>· πάλιν ὁδεύει, ὀλίγον ἀργύριον ἐν τῷ βαλαντίῳ ὃ ἐκέρδησεν, βαδίζων τὰς ψαμμώδεις ὁδοὺς τῆς μεσημβρινῆς νυκτὸς μόνος, χεῖρες πεπυγμέναι ἐν τοῖς λινέοις κόλποις τοῦ εὐτελοῦς χιτῶνος. <span class="gw" id="gw101" title="< γῆ = ἐκ γῆς πεποιημέναι">γήιναι</span> <span class="gw" id="gw102" title="= ὁδοὶ διὰ ὕδατος">διαβάσεις</span> διὰ τῶν <span class="gw" id="gw103" title="= τόποι ὑγροὶ καὶ βορβορώδεις">ἑλῶν</span>. <span class="gw" id="gw104" title="= μεγάλα ὄρνεα ὑδρόβια">ἐρῳδιοὶ</span> ἐν <span class="gw" id="gw105" title="= τόποις ὅπου νεοττοὶ τρέφονται">νοσσιαῖς</span> λευκοὶ ὡς λύχνοι ἐν τῷ <span class="gw" id="gw106" title="= μαλακῷ φυτῷ ἐπὶ δένδρων">βρύῳ</span>. ὁ ἄνεμος <span class="gw" id="gw107" title="ἐνταῦθα = ψυχρὸν καὶ τραχύ">ὠμὸν</span> ἔχει τὸ ἄκρον καὶ φύλλα φέρεται παρὰ τὴν ὁδὸν καὶ <span class="gw" id="gw108" title="= διασπείρεται, διαρρέει">σκεδάννυται</span> ἐν τοῖς νυκτερινοῖς ἀγροῖς. πρὸς βορρᾶν<sup class="fn-marker">13</sup> κινεῖται διὰ μικρῶν <span class="gw" id="gw109" title="= μικρῶν κωμῶν">οἰκισμῶν</span> καὶ ἀγρῶν, ἐργαζόμενος <span class="gw" id="gw110" title="= καθ' ἡμέραν">ἐφημέριον</span> μισθὸν καὶ τροφήν. ὁρᾷ <span class="gw" id="gw111" title="πατρο·κτόνον = τὸν πατέρα κτείναντα">πατροκτόνον</span> κρεμάμενον ἐν <span class="gw" id="gw112" title="τρι·όδῳ = ὅπου τρεῖς ὁδοὶ συμβάλλουσι">τριόδῳ</span> κώμῃ καὶ οἱ φίλοι τοῦ ἀνδρὸς προτρέχουσι καὶ ἕλκουσι τὰ σκέλη αὐτοῦ καὶ κρέμαται νεκρὸς ἐκ τοῦ σχοινίου οὖρον μελαίνει τὰς <span class="gw" id="gw113" title="= ἱμάτια περὶ τὰ σκέλη">ἀναξυρίδας</span><sup class="fn-marker">14</sup>. ἐργάζεται ἐν ἐργαστηρίῳ <span class="gw" id="gw114" title="ξυλο·ουργῶν = τὰ ξύλα κόπτων">ξυλουργῶν</span>, ἐργάζεται ἐν <span class="gw" id="gw115" title="< λοιμός = νόσου κολαστικῆς">λοιμώδους</span> νοσοκομείῳ. λαμβάνει ὡς μισθὸν παρὰ γεωργοῦ γέροντα ἡμίονον καὶ ἐπὶ τούτου τοῦ ζῴου ἐν τῷ ἔαρι τοῦ ἔτους χιλίου ὀκτακοσίου τεσσαρακοστοῦ ἐνάτου ἀναβαίνει διὰ τῆς <span class="gw" id="gw116" title="ἐνταῦθα = νέας, προσφάτου">ὑστάτης</span> πολιτείας Φρεδονίας εἰς τὴν πόλιν Νακογδόχης.</p>
+<div class="apparatus"><sup>13</sup> <em>Septuagint, Genesis 13.14</em>: πρὸς βορρᾶν καὶ λίβα καὶ ἀνατολὰς καὶ θάλασσαν — Biblical directional formula echoing God's promise to Abraham, ironically framing the protagonist's aimless wandering;&nbsp; <sup>14</sup> <em>Polybius, Histories 2.28.7</em>: τὰς ἀναξυρίδας ἔχοντες καὶ τοὺς εὐπετεῖς τῶν σάγων — Classical term for trousers/breeches, establishing proper register for describing foreign/barbarian clothing</div>
+</div>
+<div class="gloss-panel">
+<div class="mg" data-for="gw0"><span class="w">ὠχρός</span> <span class="n">= λευκὸς ὡς νοσῶν ↔ ἐρυθρός</span></div>
+<div class="mg" data-for="gw1"><span class="w">ἰσχνός</span> <span class="n">= λεπτός, ἀσθενὴς τὸ σῶμα ↔ παχύς</span></div>
+<div class="mg" data-for="gw2"><span class="w">λίνεον</span> <span class="n">< λίνον = ἐκ λίνου πεποιημένον</span></div>
+<div class="mg" data-for="gw3"><span class="w">ῥακώδη</span> <span class="n">< ῥάκος = διερρωγότα, κακὰ ἱμάτια</span></div>
+<div class="mg" data-for="gw4"><span class="w">σκαλεύει</span> <span class="n">= κινεῖ τοὺς ἄνθρακας σιδήρῳ ↔ σβέννυμι</span></div>
+<div class="mg" data-for="gw5"><span class="w">ἐσχάρας</span> <span class="n">= τόπος πυρὸς ἐν οἰκίᾳ</span></div>
+<div class="mg" data-for="gw6"><span class="w">ἄρουραι</span> <span class="n">= γῆ σπερμάτων</span></div>
+<div class="mg" data-for="gw7"><span class="w">ἠροτριωμέναι</span> <span class="n">< ἀρότρον = γῆ κατεσκαμμένη</span></div>
+<div class="mg" data-for="gw8"><span class="w">ῥάκεσι</span> <span class="n">ἐνταῦθα = μικρὰ μέρη ὡς ἱμάτια</span></div>
+<div class="mg" data-for="gw9"><span class="w">ὑστάτους</span> <span class="n">= τελευταίους</span></div>
+<div class="mg" data-for="gw10"><span class="w">ξυλοκόποι καὶ ὑδροφόροι</span> <span class="n">ξυλο·κόπος · ὑδρο·φόρος = δοῦλοι ταπεινοί</span></div>
+<div class="mg" data-for="gw11"><span class="w">γραμματιστής</span> <span class="n">= διδάσκαλος παίδων</span></div>
+<div class="mg" data-for="gw12"><span class="w">κεῖται ἐν μέθῃ</span> <span class="n">= κατάκειται μεθύων</span></div>
+<div class="mg" data-for="gw13"><span class="w">γενέσεως</span> <span class="n">= τόκου, τῆς ἡμέρας ἐν ᾗ ἐτέχθης</span></div>
+<div class="mg" data-for="gw14"><span class="w">Λεοντίδαι</span> <span class="n">= ἀστέρες πίπτοντες < Λέων ἄστρον</span></div>
+<div class="mg" data-for="gw15"><span class="w">ὀπὰς</span> <span class="n">= τρήματα, χάσματα ↔ στερεὸν τεῖχος</span></div>
+<div class="mg" data-for="gw16"><span class="w">Ἅμαξα</span> <span class="n">= ἄστρα ἑπτὰ ἐν οὐρανῷ ὡς ἅμαξα</span></div>
+<div class="mg" data-for="gw17"><span class="w">διεσκεδάσθη</span> <span class="n">< σκεδάννυμι = διελύθη, διεφθάρη</span></div>
+<div class="mg" data-for="gw18"><span class="w">τεσσαρεσκαίδεκα</span> <span class="n">= δέκα καὶ τέτταρα</span></div>
+<div class="mg" data-for="gw19"><span class="w">κόλποις</span> <span class="n">= στήθεσι, μαστοῖς· ἐνταῦθα καρδίᾳ</span></div>
+<div class="mg" data-for="gw20"><span class="w">ἀπάγειν</span> <span class="n">ἐνταῦθα = ἀποκτεῖναι, φθεῖραι</span></div>
+<div class="mg" data-for="gw21"><span class="w">τῷδε τῷ κόσμῳ</span> <span class="n">= ἐν τῇ γῇ, ἐν τῇ ζωῇ</span></div>
+<div class="mg" data-for="gw22"><span class="w">ὠχρός</span> <span class="n">= λευκός, ἀσθενὴς τὴν χρόαν ↔ ἐρυθρός</span></div>
+<div class="mg" data-for="gw23"><span class="w">ἄλουτος</span> <span class="n">< λούω· = οὐ λελουμένος, ῥυπαρός</span></div>
+<div class="mg" data-for="gw24"><span class="w">ὄρεξις</span> <span class="n">= ἐπιθυμία, βούλησις</span></div>
+<div class="mg" data-for="gw25"><span class="w">ἀλόγου</span> <span class="n">= ἄνευ λόγου, μαινομένης ↔ σώφρων</span></div>
+<div class="mg" data-for="gw26"><span class="w">προσώπῳ</span> <span class="n">ἐνταῦθα = ὄψει, εἴδει</span></div>
+<div class="mg" data-for="gw27"><span class="w">ἀποδιδράσκει</span> <span class="n">= φεύγει λάθρᾳ ἀπὸ τῆς οἰκίας</span></div>
+<div class="mg" data-for="gw28"><span class="w">μαγειρεῖον</span> <span class="n">< μάγειρος· = οἶκος ὅπου τὴν τροφὴν παρασκευάζουσι</span></div>
+<div class="mg" data-for="gw29"><span class="w">πρὸ ἕω</span> <span class="n">= πρὶν ἀνατεῖλαι τὸν ἥλιον</span></div>
+<div class="mg" data-for="gw30"><span class="w">λέβητας</span> <span class="n">= μεγάλα ἀγγεῖα χαλκᾶ πρὸς πλύσιν</span></div>
+<div class="mg" data-for="gw31"><span class="w">μετανάστης</span> <span class="n">= ὁ μεταβαίνων ἀπὸ τόπου εἰς τόπον</span></div>
+<div class="mg" data-for="gw32"><span class="w">πεδινῆς</span> <span class="n">< πεδίον· = ἐπίπεδος, οὐκ ὀρεινή</span></div>
+<div class="mg" data-for="gw33"><span class="w">ποιμενικῆς</span> <span class="n">< ποιμήν· = πρὸς βοσκὴν ἁρμόζουσα</span></div>
+<div class="mg" data-for="gw34"><span class="w">κύπτοντες</span> <span class="n">= κλίνοντες τὸ σῶμα κάτω ↔ ὀρθοί</span></div>
+<div class="mg" data-for="gw35"><span class="w">ἀράχναι</span> <span class="n">= μικρὰ ζῷα ὀκτάπουν ἱστὸν ὑφαίνοντα</span></div>
+<div class="mg" data-for="gw36"><span class="w">ἐρίοις</span> <span class="n">= λευκὸν ἔριον φυτοῦ· βάμβαξ</span></div>
+<div class="mg" data-for="gw37"><span class="w">σκιώδης</span> <span class="n">< σκιά· = πλήρης σκιῶν, οὐ λαμπρός</span></div>
+<div class="mg" data-for="gw38"><span class="w">καταδυόμενον</span> <span class="n">= δύνοντα, κάτω βαίνοντα</span></div>
+<div class="mg" data-for="gw39"><span class="w">ἄροτρον</span> <span class="n">= ὄργανον σιδηροῦν πρὸς ἄροσιν γῆς</span></div>
+<div class="mg" data-for="gw40"><span class="w">ὑπὸ ὄμβρου γῆς</span> <span class="n">= γῆς βρεχομένης, ὑγρᾶς</span></div>
+<div class="mg" data-for="gw41"><span class="w">ἐνιαυτῷ</span> <span class="n">= ἔτει</span></div>
+<div class="mg" data-for="gw42"><span class="w">παραλαμβάνεται</span> <span class="n">= δέχονται αὐτὸν ἐργάτην</span></div>
+<div class="mg" data-for="gw43"><span class="w">πλατείας νεώς</span> <span class="n">= πλοῖον πλατὺ χωρὶς ἱστίων</span></div>
+<div class="mg" data-for="gw44"><span class="w">ἀτμῷ κινούμενα</span> <span class="n">= πυρὶ καὶ ἀτμῷ κινούμενα, οὐκ ἀνέμῳ</span></div>
+<div class="mg" data-for="gw45"><span class="w">πεφωτισμένα</span> <span class="n">= φῶτα ἔχοντα, λαμπόμενα</span></div>
+<div class="mg" data-for="gw46"><span class="w">πλανώμεναι</span> <span class="n">= πλέουσαι ὧδε κἀκεῖσε</span></div>
+<div class="mg" data-for="gw47"><span class="w">διαλύει</span> <span class="n">= εἰς μέρη διαιρεῖ, καταλύει</span></div>
+<div class="mg" data-for="gw48"><span class="w">δωματίῳ</span> <span class="n">= μικρῷ οἰκήματι</span></div>
+<div class="mg" data-for="gw49"><span class="w">καπηλείου</span> <span class="n">= οἴνου καὶ σίτου πωλητηρίου</span></div>
+<div class="mg" data-for="gw50"><span class="w">μυθῶδες</span> <span class="n">= ἐκ μύθων, οὐκ ἀληθινόν</span></div>
+<div class="mg" data-for="gw51"><span class="w">καρπούς</span> <span class="n">= ἐνταῦθα τὰ μέρη τῶν χειρῶν πρὸς ταῖς παλάμαις</span></div>
+<div class="mg" data-for="gw52"><span class="w">ὦμοι</span> <span class="n">= τὰ ἄνω μέρη τῶν βραχιόνων</span></div>
+<div class="mg" data-for="gw53"><span class="w">ἄθικτον</span> <span class="n">= οὐ βεβλαμμένον, ἀπαθές</span></div>
+<div class="mg" data-for="gw54"><span class="w">οὐλῶν</span> <span class="n">= τῶν ἀπὸ τραυμάτων σημείων</span></div>
+<div class="mg" data-for="gw55"><span class="w">ἀκέραιοι</span> <span class="n">= καθαροί, οὐ διεφθαρμένοι</span></div>
+<div class="mg" data-for="gw56"><span class="w">πυγμαῖς</span> <span class="n">= κλειστοῖς χερσίν</span></div>
+<div class="mg" data-for="gw57"><span class="w">λαγύνοις</span> <span class="n">= ἀγγείοις οἴνου</span></div>
+<div class="mg" data-for="gw58"><span class="w">πιθήκων</span> <span class="n">= θηρίων ἀνθρώποις ὁμοίων</span></div>
+<div class="mg" data-for="gw59"><span class="w">βρυχὴ</span> <span class="n">= φωνὴ ἄγρια, οὐχὶ ἀνθρωπίνη</span></div>
+<div class="mg" data-for="gw60"><span class="w">αἱμάσσοντες</span> <span class="n">= αἷμα ῥέοντες ἐκ τραυμάτων</span></div>
+<div class="mg" data-for="gw61"><span class="w">πηλῷ</span> <span class="n">= γῇ ὑγρᾷ μετὰ ὕδατος</span></div>
+<div class="mg" data-for="gw62"><span class="w">ἀνθρώπινον γένος δίκαιον</span> <span class="n">= πάντας ἀνθρώπους ὀρθῶς νικᾶν</span></div>
+<div class="mg" data-for="gw63"><span class="w">ναύκληρός</span> <span class="n">= ἄρχων πλοίου, κυβερνήτης</span></div>
+<div class="mg" data-for="gw64"><span class="w">Μελίτης</span> <span class="n">= νῆσος ἐν μέσῃ θαλάττῃ</span></div>
+<div class="mg" data-for="gw65"><span class="w">πιστολίῳ</span> <span class="n">= μικρὸν τόξον ὃ βάλλει σφαίρας</span></div>
+<div class="mg" data-for="gw66"><span class="w">ἐρείδεται</span> <span class="n">= στηρίζεται, ἵσταται πρός τι</span></div>
+<div class="mg" data-for="gw67"><span class="w">ἀποβλέπουσιν</span> <span class="n">= βλέπουσιν εἰς ἄλλο μέρος ↔ προσβλέπουσιν</span></div>
+<div class="mg" data-for="gw68"><span class="w">ὑπερῴῳ</span> <span class="n">= οἰκίᾳ ἄνω, ἐν ὑψηλῷ</span></div>
+<div class="mg" data-for="gw69"><span class="w">καπήλου</span> <span class="n">= ἀνδρὸς ὃς πωλεῖ οἶνον καὶ σῖτον</span></div>
+<div class="mg" data-for="gw70"><span class="w">ἀποπατήματα</span> <span class="n">= ῥύπος ἐκ τοῦ σώματος, κόπρος</span></div>
+<div class="mg" data-for="gw71"><span class="w">νευρῶδες</span> <span class="n">< νεῦρον· = ἰσχυρόν, μυῶδες ↔ μαλακόν</span></div>
+<div class="mg" data-for="gw72"><span class="w">ἰᾶται</span> <span class="n">= ὑγιὴς γίγνεται ἐκ νόσου</span></div>
+<div class="mg" data-for="gw73"><span class="w">ὄχθῃ</span> <span class="n">= χεῖλος ποταμοῦ, παραλία</span></div>
+<div class="mg" data-for="gw74"><span class="w">Τέξας</span> <span class="n">= χώρα μεγάλη ἐν δύσει</span></div>
+<div class="mg" data-for="gw75"><span class="w">ἀποδύεται</span> <span class="n">= ἀφίησιν, ἀπολείπει ↔ ἐνδύομαι</span></div>
+<div class="mg" data-for="gw76"><span class="w">περιστροφῇ</span> <span class="n">= κινήσει, τροχῷ κυκλικῷ</span></div>
+<div class="mg" data-for="gw77"><span class="w">ὕλημα</span> <span class="n">= ὕλη, πρᾶγμα ἐξ οὗ ποιεῖται</span></div>
+<div class="mg" data-for="gw78"><span class="w">κτίσεως</span> <span class="n">= ποιήσεως τοῦ κόσμου</span></div>
+<div class="mg" data-for="gw79"><span class="w">πλάττεσθαι</span> <span class="n">= μορφοῦσθαι ὥσπερ πηλὸς ὑπὸ κεραμέως</span></div>
+<div class="mg" data-for="gw80"><span class="w">ἐπιβάται</span> <span class="n">= οἱ ἐν νηὶ πλέοντες</span></div>
+<div class="mg" data-for="gw81"><span class="w">ὄκνηρόν</span> <span class="n">= φοβερόν, μὴ θαρραλέον</span></div>
+<div class="mg" data-for="gw82"><span class="w">ἐγκλείουσι</span> <span class="n">= κρύπτουσι, κάτω βλέπουσι</span></div>
+<div class="mg" data-for="gw83"><span class="w">καταστρώματος</span> <span class="n">= ἐδάφους νηός</span></div>
+<div class="mg" data-for="gw84"><span class="w">προσκυνητὴς</span> <span class="n">= ἱερὰν ὁδὸν βαδίζων εἰς ναόν</span></div>
+<div class="mg" data-for="gw85"><span class="w">ἀμυδρὰν</span> <span class="n">= οὐ σαφῆ, ἐν ὁμίχλῃ</span></div>
+<div class="mg" data-for="gw86"><span class="w">κεχηνότες</span> <span class="n">= ἀνεῳγότες τὸ στόμα (παρακ. μτχ.)</span></div>
+<div class="mg" data-for="gw87"><span class="w">στίφη</span> <span class="n">= πλήθη συνεστῶτα</span></div>
+<div class="mg" data-for="gw88"><span class="w">λέμβου</span> <span class="n">= μικροῦ πλοίου</span></div>
+<div class="mg" data-for="gw89"><span class="w">ἄποικοι</span> <span class="n">= οἰκήτορες νέας χώρας</span></div>
+<div class="mg" data-for="gw90"><span class="w">κόλπον</span> <span class="n">= μικρὸν λιμένα παρὰ θάλασσαν</span></div>
+<div class="mg" data-for="gw91"><span class="w">ἀχλύι</span> <span class="n">= ὁμίχλῃ, νεφέλῃ</span></div>
+<div class="mg" data-for="gw92"><span class="w">βαδίζει</span> <span class="n">= βαίνει, πορεύεται</span></div>
+<div class="mg" data-for="gw93"><span class="w">ὄζει</span> <span class="n">= ὀσμὴν ἔχει, εὐωδεῖ</span></div>
+<div class="mg" data-for="gw94"><span class="w">νεοπρίστου</span> <span class="n">νεο·πρίστου < πρίζω = ἄρτι τετμημένου</span></div>
+<div class="mg" data-for="gw95"><span class="w">πόρναι</span> <span class="n">= γυναῖκες μισθὸν λαμβάνουσαι</span></div>
+<div class="mg" data-for="gw96"><span class="w">ἑβδομάς</span> <span class="n">= ἑπτὰ ἡμέραι</span></div>
+<div class="mg" data-for="gw97"><span class="w">ὁδεύει</span> <span class="n">= πορεύεται μακρὰν ὁδόν</span></div>
+<div class="mg" data-for="gw98"><span class="w">βαλαντίῳ</span> <span class="n">= μικρῷ σάκκῳ χρημάτων</span></div>
+<div class="mg" data-for="gw99"><span class="w">ψαμμώδεις</span> <span class="n">< ψάμμος = ἐκ ψάμμου πεποιημέναι</span></div>
+<div class="mg" data-for="gw100"><span class="w">πεπυγμέναι</span> <span class="n">< πυγμή = εἰς σφαῖραν συνηγμέναι</span></div>
+<div class="mg" data-for="gw101"><span class="w">γήιναι</span> <span class="n">< γῆ = ἐκ γῆς πεποιημέναι</span></div>
+<div class="mg" data-for="gw102"><span class="w">διαβάσεις</span> <span class="n">= ὁδοὶ διὰ ὕδατος</span></div>
+<div class="mg" data-for="gw103"><span class="w">ἑλῶν</span> <span class="n">= τόποι ὑγροὶ καὶ βορβορώδεις</span></div>
+<div class="mg" data-for="gw104"><span class="w">ἐρῳδιοὶ</span> <span class="n">= μεγάλα ὄρνεα ὑδρόβια</span></div>
+<div class="mg" data-for="gw105"><span class="w">νοσσιαῖς</span> <span class="n">= τόποις ὅπου νεοττοὶ τρέφονται</span></div>
+<div class="mg" data-for="gw106"><span class="w">βρύῳ</span> <span class="n">= μαλακῷ φυτῷ ἐπὶ δένδρων</span></div>
+<div class="mg" data-for="gw107"><span class="w">ὠμὸν</span> <span class="n">ἐνταῦθα = ψυχρὸν καὶ τραχύ</span></div>
+<div class="mg" data-for="gw108"><span class="w">σκεδάννυται</span> <span class="n">= διασπείρεται, διαρρέει</span></div>
+<div class="mg" data-for="gw109"><span class="w">οἰκισμῶν</span> <span class="n">= μικρῶν κωμῶν</span></div>
+<div class="mg" data-for="gw110"><span class="w">ἐφημέριον</span> <span class="n">= καθ' ἡμέραν</span></div>
+<div class="mg" data-for="gw111"><span class="w">πατροκτόνον</span> <span class="n">πατρο·κτόνον = τὸν πατέρα κτείναντα</span></div>
+<div class="mg" data-for="gw112"><span class="w">τριόδῳ</span> <span class="n">τρι·όδῳ = ὅπου τρεῖς ὁδοὶ συμβάλλουσι</span></div>
+<div class="mg" data-for="gw113"><span class="w">ἀναξυρίδας</span> <span class="n">= ἱμάτια περὶ τὰ σκέλη</span></div>
+<div class="mg" data-for="gw114"><span class="w">ξυλουργῶν</span> <span class="n">ξυλο·ουργῶν = τὰ ξύλα κόπτων</span></div>
+<div class="mg" data-for="gw115"><span class="w">λοιμώδους</span> <span class="n">< λοιμός = νόσου κολαστικῆς</span></div>
+<div class="mg" data-for="gw116"><span class="w">ὑστάτης</span> <span class="n">ἐνταῦθα = νέας, προσφάτου</span></div>
+</div>
+</div>
+
+<script>
+function alignGlosses() {
+  const panel = document.querySelector('.gloss-panel');
+  if (!panel) return;
+  const body = document.querySelector('.page-body');
+  const bodyTop = body.getBoundingClientRect().top + window.scrollY;
+  const panelWidth = panel.offsetWidth;
+  const colWidth = Math.floor((panelWidth - 12) / 2);
+
+  const mgs = panel.querySelectorAll('.mg');
+
+  let col1Bottom = 0;
+  let col2Bottom = 0;
+
+  mgs.forEach(mg => {
+    const forId = mg.dataset.for;
+    const anchor = document.getElementById(forId);
+    if (!anchor) { mg.style.display = 'none'; return; }
+
+    mg.style.width = colWidth + 'px';
+
+    const anchorRect = anchor.getBoundingClientRect();
+    let idealTop = anchorRect.top + window.scrollY - bodyTop;
+
+    let top1 = Math.max(idealTop, col1Bottom + 2);
+    let top2 = Math.max(idealTop, col2Bottom + 2);
+
+    let useCol1 = true;
+    if (Math.abs(top2 - idealTop) < Math.abs(top1 - idealTop)) {
+      useCol1 = false;
+    }
+
+    if (useCol1) {
+      mg.style.top = top1 + 'px';
+      mg.style.left = '0px';
+      col1Bottom = top1 + mg.offsetHeight;
+    } else {
+      mg.style.top = top2 + 'px';
+      mg.style.left = (colWidth + 12) + 'px';
+      col2Bottom = top2 + mg.offsetHeight;
+    }
+  });
+}
+
+window.addEventListener('load', alignGlosses);
+window.addEventListener('resize', alignGlosses);
+</script>
+
+
+<style>
+  .fb-tab {
+    position: fixed; top: 1rem; right: 0;
+    background: #444; color: #fff; padding: 0.4rem 0.8rem;
+    font-size: 0.75rem; cursor: pointer; border-radius: 4px 0 0 4px;
+    writing-mode: horizontal-tb; z-index: 100;
+  }
+  .fb-tab:hover { background: #666; }
+  .fb-panel {
+    display: none; position: fixed; top: 0; right: 0;
+    width: 320px; height: 100vh; background: #fafaf8;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.15); z-index: 101;
+    padding: 1.5rem; overflow-y: auto;
+    font-family: system-ui, sans-serif;
+  }
+  .fb-panel.open { display: block; }
+  .fb-panel h3 { margin: 0 0 0.8rem; font-size: 1rem; color: #333; }
+  .fb-panel label { display: block; font-size: 0.8rem; color: #555; margin: 0.6rem 0 0.2rem; }
+  .fb-panel textarea, .fb-panel input, .fb-panel select {
+    width: 100%; padding: 0.4rem; font-size: 0.85rem;
+    border: 1px solid #ccc; border-radius: 3px;
+  }
+  .fb-panel textarea { height: 120px; resize: vertical; }
+  .fb-panel button {
+    margin-top: 0.8rem; padding: 0.5rem 1.2rem;
+    background: #444; color: #fff; border: none;
+    border-radius: 3px; cursor: pointer; font-size: 0.85rem;
+  }
+  .fb-panel button:hover { background: #666; }
+  .fb-panel .fb-close {
+    position: absolute; top: 0.5rem; right: 0.8rem;
+    background: none; border: none; font-size: 1.2rem;
+    color: #999; cursor: pointer; padding: 0;
+  }
+  .fb-thanks { display: none; color: #4a4; font-size: 0.9rem; margin-top: 1rem; }
+</style>
+
+<div class="fb-tab" onclick="document.querySelector('.fb-panel').classList.toggle('open')">Feedback</div>
+
+<div class="fb-panel">
+  <button class="fb-close" onclick="this.parentElement.classList.remove('open')">&times;</button>
+  <h3>Feedback</h3>
+  <form id="fb-form" action="https://formspree.io/f/xwvwvaop" method="POST">
+    <label>What passage does this concern?</label>
+    <input type="text" name="passage" placeholder="e.g. paragraph 1, or general">
+    <label>Type of feedback</label>
+    <select name="type">
+      <option>Translation quality</option>
+      <option>Grammar error</option>
+      <option>Wrong word / sense</option>
+      <option>Gloss suggestion</option>
+      <option>Apparatus / echo</option>
+      <option>Display / formatting</option>
+      <option>Other</option>
+    </select>
+    <label>Your feedback</label>
+    <textarea name="feedback" required placeholder="Your comments..."></textarea>
+    <label>Your name (optional)</label>
+    <input type="text" name="name" placeholder="Optional">
+    <input type="hidden" name="_subject" value="Blood Meridian Translation Feedback">
+    <button type="submit">Send</button>
+    <div class="fb-thanks">Thank you for your feedback!</div>
+  </form>
+</div>
+
+<script>
+document.getElementById('fb-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  fetch(this.action, {method:'POST', body: new FormData(this), headers:{'Accept':'application/json'}})
+    .then(r => {
+      if (r.ok) {
+        this.reset();
+        this.querySelector('.fb-thanks').style.display = 'block';
+        setTimeout(() => this.querySelector('.fb-thanks').style.display = 'none', 3000);
+      }
+    });
+});
+</script>
+
+</body></html>
