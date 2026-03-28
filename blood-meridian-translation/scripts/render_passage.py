@@ -502,6 +502,88 @@ window.addEventListener('resize', alignGlosses);
 </script>
 """)
 
+    # Feedback tab
+    html.append("""
+<style>
+  .fb-tab {
+    position: fixed; top: 1rem; right: 0;
+    background: #444; color: #fff; padding: 0.4rem 0.8rem;
+    font-size: 0.75rem; cursor: pointer; border-radius: 4px 0 0 4px;
+    writing-mode: horizontal-tb; z-index: 100;
+  }
+  .fb-tab:hover { background: #666; }
+  .fb-panel {
+    display: none; position: fixed; top: 0; right: 0;
+    width: 320px; height: 100vh; background: #fafaf8;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.15); z-index: 101;
+    padding: 1.5rem; overflow-y: auto;
+    font-family: system-ui, sans-serif;
+  }
+  .fb-panel.open { display: block; }
+  .fb-panel h3 { margin: 0 0 0.8rem; font-size: 1rem; color: #333; }
+  .fb-panel label { display: block; font-size: 0.8rem; color: #555; margin: 0.6rem 0 0.2rem; }
+  .fb-panel textarea, .fb-panel input, .fb-panel select {
+    width: 100%; padding: 0.4rem; font-size: 0.85rem;
+    border: 1px solid #ccc; border-radius: 3px;
+  }
+  .fb-panel textarea { height: 120px; resize: vertical; }
+  .fb-panel button {
+    margin-top: 0.8rem; padding: 0.5rem 1.2rem;
+    background: #444; color: #fff; border: none;
+    border-radius: 3px; cursor: pointer; font-size: 0.85rem;
+  }
+  .fb-panel button:hover { background: #666; }
+  .fb-panel .fb-close {
+    position: absolute; top: 0.5rem; right: 0.8rem;
+    background: none; border: none; font-size: 1.2rem;
+    color: #999; cursor: pointer; padding: 0;
+  }
+  .fb-thanks { display: none; color: #4a4; font-size: 0.9rem; margin-top: 1rem; }
+</style>
+
+<div class="fb-tab" onclick="document.querySelector('.fb-panel').classList.toggle('open')">Feedback</div>
+
+<div class="fb-panel">
+  <button class="fb-close" onclick="this.parentElement.classList.remove('open')">&times;</button>
+  <h3>Feedback</h3>
+  <form id="fb-form" action="https://formspree.io/f/xwvwvaop" method="POST">
+    <label>What passage does this concern?</label>
+    <input type="text" name="passage" placeholder="e.g. paragraph 1, or general">
+    <label>Type of feedback</label>
+    <select name="type">
+      <option>Translation quality</option>
+      <option>Grammar error</option>
+      <option>Wrong word / sense</option>
+      <option>Gloss suggestion</option>
+      <option>Apparatus / echo</option>
+      <option>Display / formatting</option>
+      <option>Other</option>
+    </select>
+    <label>Your feedback</label>
+    <textarea name="feedback" required placeholder="Your comments..."></textarea>
+    <label>Your name (optional)</label>
+    <input type="text" name="name" placeholder="Optional">
+    <input type="hidden" name="_subject" value="Blood Meridian Translation Feedback">
+    <button type="submit">Send</button>
+    <div class="fb-thanks">Thank you for your feedback!</div>
+  </form>
+</div>
+
+<script>
+document.getElementById('fb-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  fetch(this.action, {method:'POST', body: new FormData(this), headers:{'Accept':'application/json'}})
+    .then(r => {
+      if (r.ok) {
+        this.reset();
+        this.querySelector('.fb-thanks').style.display = 'block';
+        setTimeout(() => this.querySelector('.fb-thanks').style.display = 'none', 3000);
+      }
+    });
+});
+</script>
+""")
+
     html.append('</body></html>')
     return "\n".join(html)
 
