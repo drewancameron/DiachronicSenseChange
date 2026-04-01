@@ -142,7 +142,7 @@ def render_typst(passage_ids: list[str]) -> str:
     # Preamble — wide outside margin for placed glosses
     typ.append(r"""#set page(
   paper: "a4",
-  margin: (top: 2.5cm, bottom: 2.5cm, inside: 2cm, outside: 5.5cm),
+  margin: (top: 2.5cm, bottom: 2.5cm, left: 2cm, right: 5.5cm),
   numbering: "1",
 )
 #set text(font: "Didot", size: 11pt, lang: "el")
