@@ -1,19 +1,21 @@
 #!/usr/bin/env python3
 """
-Render blood_meridian to PDF using WeasyPrint.
+Render translated passages as an Ørberg-style PDF via Typst.
 
-Since WeasyPrint doesn't execute JS, we generate a PDF-specific HTML
-where glosses appear as simple right-column entries alongside their
-paragraph, using a two-column CSS grid that WeasyPrint handles natively.
+Produces a .typ file with:
+  - Greek text in the main column
+  - Marginal glosses using Typst margin notes (auto-positioned per page)
+  - Footnote apparatus for echoes/attestations
+  - Proper pagination with glosses following their anchor words
 
 Usage:
-  python3 scripts/render_pdf.py
-  python3 scripts/render_pdf.py -o output/custom.pdf
+  python3 scripts/render_pdf.py          # generate .typ and compile to PDF
+  python3 scripts/render_pdf.py --typ    # generate .typ only (no compile)
 """
 
-import argparse
 import json
 import re
+import subprocess
 import sys
 from pathlib import Path
 
@@ -21,26 +23,33 @@ ROOT = Path(__file__).resolve().parent.parent
 DRAFTS = ROOT / "drafts"
 APPARATUS = ROOT / "apparatus"
 OUTPUT = ROOT / "output"
+OUTPUT.mkdir(exist_ok=True)
+
+MAX_APPARATUS_PER_PARA = 2
 
 
-def _ge_class(g: dict) -> str:
-    t = g.get("_type", "")
-    if t == "echo":
-        return "echo"
-    elif t == "attestation":
-        return "attest"
-    return ""
+def load_json(path: Path) -> dict:
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 
-def italicise_loans(greek: str) -> str:
-    return re.sub(r'\*(\S+)', r'<i>\1</i>', greek)
+def escape_typst(s: str) -> str:
+    """Escape special Typst characters in text."""
+    s = s.replace("\\", "\\\\")
+    s = s.replace("#", "\\#")
+    s = s.replace("$", "\\$")
+    s = s.replace("@", "\\@")
+    s = s.replace("<", "\\<")
+    s = s.replace(">", "\\>")
+    # '=' at start of content creates a heading in Typst
+    if s.startswith("="):
+        s = "\\=" + s[1:]
+    return s
 
 
-def build_pdf_html(passage_ids: list[str]) -> str:
-    """Build a PDF-optimised HTML with static two-column layout."""
-
-    # Gather all paragraphs with their glosses
-    paragraphs = []  # list of {"text_parts": [...], "glosses": [...]}
+def load_passages(passage_ids: list[str]) -> list[dict]:
+    """Load all paragraphs with their glosses and footnotes."""
+    all_sentences = []
 
     for passage_id in passage_ids:
         primary_path = DRAFTS / passage_id / "primary.txt"
@@ -48,280 +57,233 @@ def build_pdf_html(passage_ids: list[str]) -> str:
         if not primary_path.exists():
             continue
 
-        draft_text = primary_path.read_text("utf-8").strip()
-        draft_paras = [p.strip() for p in draft_text.split("\n\n") if p.strip()]
-
         if glosses_path.exists():
-            marginal = json.load(open(glosses_path))
+            marginal = load_json(glosses_path)
         else:
-            sents = [s.strip() for s in re.split(r'(?<=[.;·!])\s+', draft_text) if s.strip()]
+            text = primary_path.read_text("utf-8").strip()
+            sents = [s.strip() for s in re.split(r'(?<=[.;·!])\s+', text) if s.strip()]
             marginal = {"sentences": [{"index": i, "greek": s, "glosses": []} for i, s in enumerate(sents)]}
 
-        # Map sentences to paragraphs
+        draft_text = primary_path.read_text("utf-8").strip()
+        paragraphs_raw = [p.strip() for p in draft_text.split("\n\n") if p.strip()]
+
         para_starters = set()
-        for para in draft_paras:
+        for para in paragraphs_raw:
             first_sent = re.split(r'(?<=[.;·!])\s+', para)
             if first_sent:
                 para_starters.add(first_sent[0].strip())
 
-        current_para_sents = []
-        current_para_glosses = []
-
-        # Load echoes and attestations
         echoes_path = APPARATUS / passage_id / "echoes.json"
         attestations_path = APPARATUS / passage_id / "thematic_attestations.json"
-        echoes = json.load(open(echoes_path)) if echoes_path.exists() else []
-        attestations = json.load(open(attestations_path)) if attestations_path.exists() else []
+        echoes = []
+        attestations = []
+        if echoes_path.exists():
+            echoes = json.load(open(echoes_path))
+        if attestations_path.exists():
+            attestations = json.load(open(attestations_path))
 
         for mg_sent in marginal["sentences"]:
             grk = mg_sent["greek"]
-            glosses = list(mg_sent.get("glosses", []))
+            glosses = [g for g in mg_sent["glosses"] if g.get("rank", 1) <= 2]
 
-            # Merge echoes — keep full data for footnote rendering
+            sent_footnotes = []
             for echo in echoes:
                 phrase = echo.get("greek", "")
                 if phrase and phrase[:15] in grk:
-                    glosses.append({
-                        "anchor": phrase[:25],
-                        "source": echo.get("source", ""),
-                        "source_quote": echo.get("source_quote", ""),
-                        "note": echo.get("note", ""),
-                        "_type": "echo",
-                    })
-
-            # Merge thematic attestations
+                    sent_footnotes.append(echo)
             for att in attestations:
                 word = att.get("word", "")
                 if word and word in grk:
-                    glosses.append({
-                        "anchor": word,
+                    sent_footnotes.append({
+                        "greek": word,
                         "source": f'{att.get("author", "")}, {att.get("work", "")}',
                         "source_quote": "",
                         "note": "",
                         "_type": "attestation",
                     })
 
-            # New paragraph?
-            if grk in para_starters and current_para_sents:
-                paragraphs.append({
-                    "text_parts": current_para_sents,
-                    "glosses": current_para_glosses,
-                })
-                current_para_sents = []
-                current_para_glosses = []
+            if grk in para_starters and all_sentences and not all_sentences[-1].get("para_break"):
+                if any(not item.get("para_break") for item in all_sentences):
+                    all_sentences.append({"para_break": True})
 
-            current_para_sents.append(italicise_loans(grk))
-            for g in glosses:
-                if g.get("note"):
-                    current_para_glosses.append(g)
-
-        if current_para_sents:
-            paragraphs.append({
-                "text_parts": current_para_sents,
-                "glosses": current_para_glosses,
+            all_sentences.append({
+                "greek": grk,
+                "glosses": glosses,
+                "footnotes": sent_footnotes,
             })
+        all_sentences.append({"para_break": True})
 
-    # Build HTML
-    html = f"""<!DOCTYPE html>
-<html lang="el">
-<head>
-<meta charset="utf-8">
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+    # Group into paragraphs
+    paragraphs = []
+    cur = {"sentences": [], "glosses": [], "footnotes": []}
+    for item in all_sentences:
+        if item.get("para_break"):
+            if cur["sentences"]:
+                paragraphs.append(cur)
+            cur = {"sentences": [], "glosses": [], "footnotes": []}
+            continue
+        cur["sentences"].append(item["greek"])
+        cur["glosses"].extend(item["glosses"])
+        for fn in item.get("footnotes", []):
+            if fn.get("source_quote") or (fn.get("note") and len(fn.get("note", "")) > 10):
+                cur["footnotes"].append(fn)
+    if cur["sentences"]:
+        paragraphs.append(cur)
 
-  @page {{
-    size: A4;
-    margin: 2.5cm 1.5cm 2.5cm 1.5cm;
-  }}
+    return paragraphs
 
-  * {{ box-sizing: border-box; margin: 0; padding: 0; }}
 
-  body {{
-    font-family: 'GFS Didot', 'Times New Roman', serif;
-    color: #1a1a1a;
-    font-size: 10.5pt;
-    line-height: 1.9;
-  }}
+def render_typst(passage_ids: list[str]) -> str:
+    """Generate a Typst document string."""
+    paragraphs = load_passages(passage_ids)
 
-  /* Title page */
-  .title-page {{
-    text-align: center;
-    padding-top: 8cm;
-    page-break-after: always;
-  }}
-  .title-page .author {{ font-size: 9pt; letter-spacing: 0.2em; color: #333; margin-bottom: 1.5cm; }}
-  .title-page .title {{ font-size: 22pt; line-height: 1.3; margin-bottom: 0.3cm; }}
-  .title-page .sub {{ font-size: 10pt; color: #333; margin-bottom: 1cm; }}
-  .title-page .note {{ font-size: 8pt; color: #666; }}
+    typ = []
 
-  .chapter-num {{
-    font-size: 14pt; text-align: center;
-    margin: 0 0 1cm; color: #333; letter-spacing: 0.15em;
-  }}
+    # Preamble
+    typ.append(r"""#set page(
+  paper: "a4",
+  margin: (top: 2.5cm, bottom: 2.5cm, left: 2cm, right: 1.5cm),
+  numbering: "1",
+)
+#set text(font: "Didot", size: 11pt, lang: "el")
+#set par(justify: true, leading: 0.85em)
 
-  /* Each paragraph row: text left, glosses right */
-  .para-row {{
-    display: flex;
-    gap: 0.4cm;
-    margin-bottom: 0.1cm;
-    align-items: stretch;  /* gloss column stretches to paragraph height */
-    break-inside: auto;
-  }}
-  .para-text {{
-    flex: 1;
-    text-align: justify;
-    hyphens: auto;
-    text-indent: 1.2em;
-    break-inside: auto;
-  }}
-  .para-row:first-child .para-text {{
-    text-indent: 0;
-  }}
-  .para-gloss {{
-    width: 6.5cm;
-    flex-shrink: 0;
-    font-size: 6.5pt;
-    line-height: 1.2;
-    color: #555;
-    padding-left: 0.3cm;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;  /* distribute glosses across paragraph height */
-  }}
-  .ge {{
-    margin-bottom: 0.06cm;
-    break-inside: avoid;
-  }}
-  .ge .w {{
-    font-weight: 600;
-    color: #333;
-    font-size: 6pt;
-  }}
-  .ge .n {{
-    color: #666;
-  }}
-  /* Per-page footnotes using CSS float:footnote */
-  .fn-inline {{
-    float: footnote;
-    font-size: 6pt;
-    line-height: 1.3;
-    color: #555;
-  }}
-  .fn-inline .fn-source {{
-    font-style: italic;
-  }}
-  .fn-inline .fn-quote {{
-    font-family: 'GFS Didot', serif;
-  }}
-  .fn-inline::footnote-call {{
-    font-size: 5pt;
-    vertical-align: super;
-    color: #888;
-  }}
-  .fn-inline::footnote-marker {{
-    font-weight: 600;
-    color: #666;
-  }}
-  @page {{
-    @footnote {{
-      border-top: 0.5pt solid #ccc;
-      padding-top: 0.2cm;
-    }}
-  }}
-</style>
-</head>
-<body>
+// Gloss entry: bold anchor + explanation on one line, uniform 6pt
+#let gloss(anchor, note) = {
+  set text(size: 6pt)
+  block(above: 2pt, below: 0pt, strong(anchor) + h(2pt) + text(fill: rgb("#666"), note))
+}
+""")
 
-<div class="title-page">
-  <div class="author">ΚΟΡΜΑΚ ΜΑΚΚΑΡΘΥ</div>
-  <div class="title">Ὁ Αἱματόεις<br>Μεσημβρινός</div>
-  <div class="sub">ἢ<br>Τὸ Ἑσπέριον Ἐρύθημα</div>
-  <div class="note">εἰς τὴν Ἑλλάδα φωνὴν μεταφρασθέν</div>
-</div>
+    # Title page
+    typ.append(r"""
+#align(center + horizon)[
+  #text(size: 9pt, tracking: 0.2em, fill: rgb("#333"))[ΚΟΡΜΑΚ ΜΑΚΚΑΡΘΥ]
+  #v(1.5cm)
+  #text(size: 22pt)[Ὁ Αἱματόεις\ Μεσημβρινός]
+  #v(0.3cm)
+  #text(size: 10pt, fill: rgb("#333"))[ἢ\ Τὸ Ἑσπέριον Ἐρύθημα]
+  #v(1cm)
+  #text(size: 8pt, fill: rgb("#666"))[εἰς τὴν Ἑλλάδα φωνὴν μεταφρασθέν]
+]
+#pagebreak()
 
-<div class="chapter-num">Ι</div>
-"""
+#v(2cm)
+#align(center)[#text(size: 14pt, tracking: 0.15em, fill: rgb("#333"))[Ι]]
+#v(1cm)
+""")
 
-    all_footnotes = []
-    fn_counter = 1
+    # Render paragraphs as grid rows: text (left) + glosses (right)
+    first_para = True
 
-    for i, para in enumerate(paragraphs):
-        text = " ".join(para["text_parts"])
+    for para in paragraphs:
+        greek_text = " ".join(para["sentences"])
 
-        # Separate vocab glosses from footnotes
-        gloss_html = ""
-        for g in para["glosses"]:
-            if g.get("_type") in ("echo", "attestation"):
-                phrase = g.get("anchor", "")[:15]
-                source = g.get("source", "")
-                source_quote = g.get("source_quote", "")
-                note = g.get("note", "")
-                fn_content = f'<span class="fn-source">{source}</span>'
+        # Handle loans: *word → italic
+        greek_text = re.sub(r'\*(\S+)', r'_\1_', greek_text)
+
+        # Escape Typst specials but preserve _word_ italics
+        greek_text = greek_text.replace("_", "\x00ITAL\x00")
+        greek_text = escape_typst(greek_text)
+        greek_text = greek_text.replace("\x00ITAL\x00", "_")
+
+        # Add footnotes for echoes/attestations
+        footnotes = para["footnotes"]
+        if footnotes:
+            seen_phrases = {}
+            for fn in footnotes:
+                phrase = fn.get("greek", "")[:20]
+                existing = seen_phrases.get(phrase)
+                if not existing or len(fn.get("source_quote", "")) > len(existing.get("source_quote", "")):
+                    seen_phrases[phrase] = fn
+            deduped = list(seen_phrases.values())
+            ranked = sorted(deduped, key=lambda f: (
+                f.get("rank", 2),
+                -len(f.get("source_quote", "")),
+                -len(f.get("note", "")),
+            ))
+            selected = ranked[:MAX_APPARATUS_PER_PARA]
+
+            for fn in selected:
+                phrase = fn.get("greek", "").strip()
+                source = escape_typst(fn.get("source", ""))
+                source_quote = escape_typst(fn.get("source_quote", ""))
+                note = escape_typst(fn.get("note", ""))
+
+                fn_body = f'_{source}_'
                 if source_quote:
-                    fn_content += f' — <span class="fn-quote">{source_quote}</span>'
+                    fn_body += f': {source_quote}'
                 if note:
-                    fn_content += f' ({note})'
-                fn_span = f'<span class="fn-inline">{fn_content}</span>'
-                if phrase and phrase in text:
-                    pos = text.find(phrase)
-                    end = text.find(" ", pos + len(phrase))
-                    if end < 0:
-                        end = len(text)
-                    text = text[:end] + fn_span + text[end:]
-                g["_number"] = fn_counter
-                all_footnotes.append(g)
-                fn_counter += 1
-            else:
-                if g.get("rank", 1) > 2:
-                    continue
-                gloss_html += (
-                    f'<div class="ge">'
-                    f'<span class="w">{g["anchor"]}</span> '
-                    f'<span class="n">{g["note"]}</span>'
-                    f'</div>'
-                )
+                    fn_body += f' — {note}'
 
-        indent = "" if i == 0 else ' style="text-indent: 1.2em;"'
+                # Find the phrase and insert footnote AFTER the next word boundary
+                phrase_esc = escape_typst(phrase[:15])
+                pos = greek_text.find(phrase_esc)
+                if pos >= 0:
+                    # Advance past the match to the next space/punctuation
+                    end = pos + len(phrase_esc)
+                    while end < len(greek_text) and greek_text[end] not in ' .,;·!?\n':
+                        end += 1
+                    greek_text = greek_text[:end] + f'#footnote[{fn_body}]' + greek_text[end:]
 
-        html += f"""<div class="para-row">
-  <div class="para-text"{indent}>{text}</div>
-  <div class="para-gloss">{gloss_html}</div>
-</div>
-"""
+        # Build gloss column
+        gloss_lines = []
+        seen_anchors = set()
+        for g in para["glosses"]:
+            anchor = g["anchor"]
+            if anchor in seen_anchors:
+                continue
+            seen_anchors.add(anchor)
+            note = g["note"]
+            note = note.replace("_", "\x00ITAL\x00")
+            note = escape_typst(note)
+            note = note.replace("\x00ITAL\x00", "_")
+            anchor_esc = escape_typst(anchor)
+            gloss_lines.append(f'    #gloss[{anchor_esc}][{note}]')
 
-    html += "</body></html>"
-    return html
+        gloss_col = "\n".join(gloss_lines) if gloss_lines else ""
 
+        # Paragraph indent
+        indent = "0pt" if first_para else "1.5em"
+        first_para = False
 
-def render_pdf(pdf_path: Path, passage_ids: list[str]):
-    from weasyprint import HTML
+        # Emit as a grid row: text | glosses
+        typ.append(f"""#block(spacing: 0.6em, grid(
+  columns: (1fr, 4.2cm),
+  column-gutter: 0.6cm,
+  [#par(first-line-indent: {indent})[{greek_text}]],
+  [#set par(leading: 0.3em, justify: false)
+{gloss_col}
+  ],
+))""")
 
-    print("  Building PDF-optimised HTML...")
-    html_str = build_pdf_html(passage_ids)
-
-    # Save intermediate HTML for debugging
-    debug_path = OUTPUT / "blood_meridian_pdf.html"
-    debug_path.write_text(html_str, encoding="utf-8")
-
-    print("  Rendering PDF with WeasyPrint...")
-    HTML(string=html_str, base_url=str(ROOT)).write_pdf(str(pdf_path))
-
-    size_mb = pdf_path.stat().st_size / (1024 * 1024)
-    print(f"  ✓ Wrote {pdf_path.name} ({size_mb:.1f} MB)")
+    return "\n".join(typ)
 
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-o", "--output", type=Path,
-                        default=OUTPUT / "blood_meridian.pdf")
-    args = parser.parse_args()
+    typ_only = "--typ" in sys.argv
 
     passage_ids = sorted(
         d.name for d in DRAFTS.iterdir()
         if d.is_dir() and (d / "primary.txt").exists()
     )
 
-    render_pdf(args.output, passage_ids)
+    typst_content = render_typst(passage_ids)
+    typ_path = OUTPUT / "blood_meridian.typ"
+    typ_path.write_text(typst_content, encoding="utf-8")
+    print(f"Wrote {typ_path}")
+
+    if not typ_only:
+        pdf_path = OUTPUT / "blood_meridian.pdf"
+        result = subprocess.run(
+            ["typst", "compile", str(typ_path), str(pdf_path)],
+            capture_output=True, text=True,
+        )
+        if result.returncode == 0:
+            print(f"Wrote {pdf_path}")
+        else:
+            print(f"Typst compile error:\n{result.stderr[:2000]}")
+            sys.exit(1)
 
 
 if __name__ == "__main__":
