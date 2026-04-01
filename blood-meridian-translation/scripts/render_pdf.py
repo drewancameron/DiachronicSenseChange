@@ -231,7 +231,7 @@ def render_typst(passage_ids: list[str]) -> str:
                 "greek": grk,
                 "glosses": glosses,
                 "footnotes": [fn for fn in sent_footnotes
-                              if fn.get("source_quote") or (fn.get("note") and len(fn.get("note", "")) > 10)],
+                              if fn.get("source_quote")],  # only include echoes with actual Greek quotes
             })
         all_sents.append({"para_break": True})
 
@@ -287,7 +287,7 @@ def render_typst(passage_ids: list[str]) -> str:
                 -len(f.get("source_quote", "")),
                 -len(f.get("note", "")),
             ))
-            selected = ranked[:MAX_APPARATUS_PER_PARA]
+            selected = ranked[:1]  # max 1 footnote per chunk to avoid clutter
             for fn in selected:
                 phrase = fn.get("greek", "").strip()
                 source = escape_typst(fn.get("source", ""))
@@ -328,8 +328,8 @@ def render_typst(passage_ids: list[str]) -> str:
             indent = "1.5em"
         is_first = False
 
-        # Spacing: paragraph breaks get more space
-        spacing = "0.6em" if chunk["indent"] else "0pt"
+        # Spacing: paragraph breaks get more space, but all chunks need some
+        spacing = "0.8em" if chunk["indent"] else "0.15em"
 
         typ.append(f"""#block(above: {spacing}, below: 0pt, grid(
   columns: (1fr, 4.5cm),
