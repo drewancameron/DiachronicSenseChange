@@ -254,10 +254,9 @@ def render_passage(passage_ids: list[str]) -> str:
   .gw:hover { background: #F5F0E0; }
 
   @media print {
-    body { padding: 0; max-width: none; }
+    body { padding: 0; }
     .gw:hover { background: none; }
     .fb-tab, .fb-panel { display: none !important; }
-    .para-row { break-inside: auto; }
   }
   @media (max-width: 800px) {
     .para-row { grid-template-columns: 1fr; }
@@ -426,6 +425,7 @@ def render_passage(passage_ids: list[str]) -> str:
 
     # JS: align glosses vertically with their anchor words using margin-top.
     # Margins are flow-based, so they survive print pagination.
+    # Re-runs on beforeprint so margins are correct for the print layout.
     html.append("""
 <script>
 function alignGlosses() {
@@ -434,8 +434,14 @@ function alignGlosses() {
     const glossPanel = row.querySelector('.para-glosses');
     if (!textEl || !glossPanel) return;
 
-    const textTop = textEl.getBoundingClientRect().top;
     const mgs = glossPanel.querySelectorAll('.mg');
+
+    // Reset all margins first so measurements are clean
+    mgs.forEach(mg => { mg.style.marginTop = '0px'; });
+
+    // Force reflow after reset
+    glossPanel.offsetHeight;
+
     let prevBottom = glossPanel.getBoundingClientRect().top;
 
     mgs.forEach(mg => {
@@ -443,12 +449,14 @@ function alignGlosses() {
       const anchor = document.getElementById(forId);
       if (!anchor) return;
 
-      const anchorTop = anchor.getBoundingClientRect().top;
-      // How far down the anchor is from where the next gloss would naturally sit
-      const gap = anchorTop - prevBottom;
+      const anchorMid = anchor.getBoundingClientRect().top +
+                        anchor.getBoundingClientRect().height / 2;
+      const mgHeight = mg.getBoundingClientRect().height;
+      // Align gloss middle with anchor middle
+      const idealTop = anchorMid - mgHeight / 2;
+      const gap = idealTop - prevBottom;
       mg.style.marginTop = Math.max(0, gap) + 'px';
 
-      // Track where this gloss ends up for the next one
       prevBottom = mg.getBoundingClientRect().bottom + 2;
     });
   });
@@ -456,6 +464,10 @@ function alignGlosses() {
 
 window.addEventListener('load', alignGlosses);
 window.addEventListener('resize', alignGlosses);
+window.addEventListener('beforeprint', alignGlosses);
+window.matchMedia('print').addEventListener('change', e => {
+  if (e.matches) alignGlosses();
+});
 </script>
 """)
 
