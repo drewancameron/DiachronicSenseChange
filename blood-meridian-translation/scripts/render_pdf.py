@@ -139,10 +139,10 @@ def render_typst(passage_ids: list[str]) -> str:
 
     typ = []
 
-    # Preamble — per-sentence grid with gloss column
+    # Preamble — wide outside margin for placed glosses
     typ.append(r"""#set page(
   paper: "a4",
-  margin: (top: 2.5cm, bottom: 2.5cm, left: 2cm, right: 1.5cm),
+  margin: (top: 2.5cm, bottom: 2.5cm, inside: 2cm, outside: 5.5cm),
   numbering: "1",
 )
 #set text(font: "Didot", size: 11pt, lang: "el")
@@ -151,10 +151,14 @@ def render_typst(passage_ids: list[str]) -> str:
 // Smaller footnotes for apparatus
 #show footnote.entry: set text(size: 6.5pt)
 
-// Gloss entry in the margin column
-#let gloss(anchor, note) = {
-  block(above: 1.5pt, below: 0pt,
-    text(size: 7pt)[#strong[#anchor] #text(fill: rgb("#555"))[#note]]
+// Margin gloss placed outside par content, stacked by dy offset
+#let mg(dy, anchor, note) = {
+  place(right, dx: 5.0cm, dy: dy,
+    box(width: 4.5cm,
+      text(size: 7pt, fill: rgb("#444"))[
+        #strong(anchor) #h(2pt) #text(fill: rgb("#555"), note)
+      ]
+    )
   )
 }
 """)
@@ -221,8 +225,14 @@ def render_typst(passage_ids: list[str]) -> str:
                         end += 1
                     greek_text = greek_text[:end] + f'#footnote[{fn_body}]' + greek_text[end:]
 
-        # Gloss column
-        gloss_lines = []
+        # Build gloss place() calls with dy offsets estimated from anchor position.
+        # Text column is ~13.5cm wide at 11pt, ~65 chars/line, ~20pt per line.
+        plain_text = " ".join(para["sentences"])
+        chars_per_line = 58.0  # approximate for 11pt Didot in 13.5cm column
+        pt_per_line = 20.0    # 11pt + 0.85em leading
+
+        gloss_calls = []
+        gloss_bottom = 0.0  # track bottom of last gloss to avoid overlap
         seen_anchors = set()
         for g in para["glosses"]:
             anchor = g["anchor"]
@@ -234,20 +244,35 @@ def render_typst(passage_ids: list[str]) -> str:
             note = escape_typst(note)
             note = note.replace("\x00ITAL\x00", "_")
             anchor_esc = escape_typst(anchor)
-            gloss_lines.append(f'    #gloss[{anchor_esc}][{note}]')
-        gloss_col = "\n".join(gloss_lines) if gloss_lines else ""
+
+            # Estimate dy from anchor's character position in the paragraph
+            pos = plain_text.find(anchor)
+            if pos >= 0:
+                line_num = pos / chars_per_line
+                anchor_dy = line_num * pt_per_line
+            else:
+                anchor_dy = gloss_bottom  # fallback: stack after previous
+
+            # Don't overlap previous gloss
+            dy_pt = max(anchor_dy, gloss_bottom)
+
+            gloss_calls.append(f'  #mg({dy_pt:.1f}pt)[{anchor_esc}][{note}]')
+
+            # Advance bottom tracker
+            note_len = len(note) + len(anchor)
+            gloss_height = 10.0 if note_len < 35 else 18.0
+            gloss_bottom = dy_pt + gloss_height
 
         indent = "0pt" if first_para else "1.5em"
         first_para = False
 
-        typ.append(f"""#grid(
-  columns: (1fr, 4.5cm),
-  column-gutter: 0.5cm,
-  [#par(first-line-indent: {indent})[{greek_text}]],
-  [#set par(leading: 0.25em, justify: false)
-{gloss_col}
-  ],
-)""")
+        # Emit as a block: placed glosses first, then paragraph text
+        gloss_block = "\n".join(gloss_calls)
+        typ.append(f"""#block[
+{gloss_block}
+  #par(first-line-indent: {indent})[{greek_text}]
+]
+""")
 
     return "\n".join(typ)
 
