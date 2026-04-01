@@ -192,42 +192,45 @@ def render_passage(passage_ids: list[str]) -> str:
     margin: 0 0 1.5rem; color: #333; letter-spacing: 0.15em;
   }
 
-  /* Two-panel layout: Greek (left) + glosses (right) */
+  /* Per-paragraph row layout: each .para-row is a grid with text + glosses */
   .page-body {
-    display: grid;
-    grid-template-columns: 1fr 340px;
-    gap: 0 1.2rem;
     position: relative;
   }
 
+  .para-row {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 0 1.2rem;
+    break-inside: avoid-page;
+  }
+
   /* Main Greek text column */
-  .main-text {
+  .para-text {
     font-size: 1.1rem;
     line-height: 2;
     text-align: justify;
     hyphens: auto;
   }
-  .main-text .para {
+  .para-text .para {
     text-indent: 1.5em;
     margin-bottom: 0.5rem;
   }
-  .main-text .para:first-child {
+  .para-row:first-child .para-text .para {
     text-indent: 0;
   }
 
-  /* Gloss panel: two-column CSS flow inside */
-  .gloss-panel {
+  /* Gloss panel per paragraph */
+  .para-glosses {
     position: relative;
-    border-left: none;
     padding-left: 1rem;
+    padding-top: 0.3rem;
   }
 
   .mg {
-    position: absolute;
-    width: 100%;
     font-size: 0.75rem;
     line-height: 1.35;
     color: #555;
+    margin-bottom: 0.15rem;
   }
   .mg .w {
     font-weight: 600;
@@ -253,10 +256,12 @@ def render_passage(passage_ids: list[str]) -> str:
   @media print {
     body { padding: 0; max-width: none; }
     .gw:hover { background: none; }
+    .fb-tab, .fb-panel { display: none !important; }
+    .para-row { break-inside: auto; }
   }
   @media (max-width: 800px) {
-    .page-body { grid-template-columns: 1fr; }
-    .gloss-panel { display: none; }
+    .para-row { grid-template-columns: 1fr; }
+    .para-glosses { display: none; }
   }
 </style>
 </head>
@@ -277,154 +282,120 @@ def render_passage(passage_ids: list[str]) -> str:
     html.append('<div class="chapter-num">Ι</div>')
     html.append('<div class="page-body">')
 
-    # Column 1: flowing Greek text with paragraphs + inline apparatus after each
-    html.append('<div class="main-text">')
-    para_parts = []
-    para_footnotes = []
+    # Build paragraphs, each containing its text parts and associated glosses
+    paragraphs = []  # list of {parts: [...], footnotes: [...], glosses: [...]}
+    cur_para = {"parts": [], "footnotes": [], "glosses": []}
     fn_counter = 1
 
     for item in all_sentences:
         if item.get("para_break"):
-            if para_parts:
-                if para_footnotes:
-                    # Deduplicate by Greek phrase — keep the one with longest source_quote
-                    seen_phrases = {}
-                    for fn in para_footnotes:
-                        phrase = fn.get("greek", "")[:20]
-                        existing = seen_phrases.get(phrase)
-                        if not existing or len(fn.get("source_quote", "")) > len(existing.get("source_quote", "")):
-                            seen_phrases[phrase] = fn
-                    deduped = list(seen_phrases.values())
-
-                    # Select best entries
-                    ranked = sorted(deduped, key=lambda f: (
-                        f.get("rank", 2),  # Sonnet's significance rank (1=best)
-                        -len(f.get("source_quote", "")),  # longer quote = better
-                        -len(f.get("note", "")),
-                    ))
-                    selected = ranked[:MAX_APPARATUS_PER_PARA]
-
-                    # Find position of each echo phrase in the plain text
-                    # to assign numbers in text order
-                    joined = " ".join(para_parts)
-                    # Strip HTML tags for position finding
-                    plain = re.sub(r'<[^>]+>', '', joined)
-                    for fn in selected:
-                        phrase = fn.get("greek", "")
-                        # Find the END position of the phrase in plain text
-                        pos = plain.find(phrase[:15])
-                        if pos >= 0:
-                            fn["_text_pos"] = pos + len(phrase)
-                        else:
-                            fn["_text_pos"] = len(plain)
-
-                    # Sort by position in text, then assign numbers
-                    selected.sort(key=lambda f: f.get("_text_pos", 0))
-                    for fn in selected:
-                        fn["_num"] = fn_counter
-                        fn_counter += 1
-
-                    # Insert markers into the HTML at the right positions
-                    # Work backwards so insertions don't shift later positions
-                    # Build plain-text version for position finding
-                    plain = re.sub(r'<[^>]+>', '', joined)
-
-                    for fn in reversed(selected):
-                        phrase = fn.get("greek", "").strip()
-                        if not phrase:
-                            continue
-
-                        # Find the phrase in the PLAIN text to get the end position
-                        # Try full phrase first, then progressively shorter prefixes
-                        plain_pos = -1
-                        match_len = 0
-                        for try_len in range(len(phrase), 4, -1):
-                            p = plain.find(phrase[:try_len])
-                            if p >= 0:
-                                plain_pos = p
-                                match_len = try_len
-                                break
-
-                        if plain_pos < 0:
-                            continue
-
-                        # The end position in plain text
-                        plain_end = plain_pos + match_len
-
-                        # Now find where plain_end maps to in the HTML
-                        # Walk through joined, tracking plain-text position
-                        html_insert = 0
-                        plain_idx = 0
-                        in_tag = False
-                        for i, ch in enumerate(joined):
-                            if ch == '<':
-                                in_tag = True
-                            elif ch == '>':
-                                in_tag = False
-                                continue
-                            if not in_tag:
-                                if plain_idx == plain_end:
-                                    html_insert = i
-                                    break
-                                plain_idx += 1
-                        else:
-                            html_insert = len(joined)
-
-                        # Skip past any closing tags at this position
-                        while html_insert < len(joined) and joined[html_insert:html_insert+2] == '</':
-                            close = joined.find('>', html_insert)
-                            if close >= 0:
-                                html_insert = close + 1
-                            else:
-                                break
-
-                        marker = f'<sup class="fn-marker">{fn["_num"]}</sup>'
-                        joined = joined[:html_insert] + marker + joined[html_insert:]
-                        # Update plain too so subsequent searches account for shift
-                        plain = re.sub(r'<[^>]+>', '', joined)
-
-                    html.append(f'<p class="para">{joined}</p>')
-
-                    # Emit apparatus in number order
-                    selected.sort(key=lambda f: f["_num"])
-                    refs = []
-                    for fn in selected:
-                        source = fn.get("source", "")
-                        source_quote = fn.get("source_quote", "")
-                        note = fn.get("note", "")
-                        ref = f'<sup>{fn["_num"]}</sup> <em>{source}</em>'
-                        if source_quote:
-                            ref += f': {source_quote}'
-                        if note:
-                            ref += f' — {note}'
-                        refs.append(ref)
-                    html.append(
-                        f'<div class="apparatus">{";&nbsp; ".join(refs)}</div>'
-                    )
-                else:
-                    html.append(f'<p class="para">{" ".join(para_parts)}</p>')
-                para_parts = []
-                para_footnotes = []
+            if cur_para["parts"]:
+                paragraphs.append(cur_para)
+            cur_para = {"parts": [], "footnotes": [], "glosses": []}
             continue
 
-        para_parts.append(item["html"])
+        cur_para["parts"].append(item["html"])
+        # Collect glosses for this paragraph (vocabulary only, not echoes/attestations)
+        for g in item.get("glosses", []):
+            if g.get("_type") not in ("echo", "attestation"):
+                cur_para["glosses"].append(g)
         for fn in item.get("footnotes", []):
             if fn.get("source_quote") or (fn.get("note") and len(fn.get("note", "")) > 10):
-                para_footnotes.append(fn)
+                cur_para["footnotes"].append(fn)
 
-    if para_parts:
-        html.append(f'<p class="para">{" ".join(para_parts)}</p>')
+    if cur_para["parts"]:
+        paragraphs.append(cur_para)
+
+    # Emit per-paragraph rows
+    for para in paragraphs:
+        para_footnotes = para["footnotes"]
+        para_glosses = para["glosses"]
+
         if para_footnotes:
-            ranked = sorted(para_footnotes, key=lambda f: (
+            # Deduplicate by Greek phrase — keep the one with longest source_quote
+            seen_phrases = {}
+            for fn in para_footnotes:
+                phrase = fn.get("greek", "")[:20]
+                existing = seen_phrases.get(phrase)
+                if not existing or len(fn.get("source_quote", "")) > len(existing.get("source_quote", "")):
+                    seen_phrases[phrase] = fn
+            deduped = list(seen_phrases.values())
+
+            # Select best entries
+            ranked = sorted(deduped, key=lambda f: (
+                f.get("rank", 2),
                 -len(f.get("source_quote", "")),
                 -len(f.get("note", "")),
             ))
+            selected = ranked[:MAX_APPARATUS_PER_PARA]
+
+            joined = " ".join(para["parts"])
+            plain = re.sub(r'<[^>]+>', '', joined)
+            for fn in selected:
+                phrase = fn.get("greek", "")
+                pos = plain.find(phrase[:15])
+                if pos >= 0:
+                    fn["_text_pos"] = pos + len(phrase)
+                else:
+                    fn["_text_pos"] = len(plain)
+
+            selected.sort(key=lambda f: f.get("_text_pos", 0))
+            for fn in selected:
+                fn["_num"] = fn_counter
+                fn_counter += 1
+
+            plain = re.sub(r'<[^>]+>', '', joined)
+            for fn in reversed(selected):
+                phrase = fn.get("greek", "").strip()
+                if not phrase:
+                    continue
+                plain_pos = -1
+                match_len = 0
+                for try_len in range(len(phrase), 4, -1):
+                    p = plain.find(phrase[:try_len])
+                    if p >= 0:
+                        plain_pos = p
+                        match_len = try_len
+                        break
+                if plain_pos < 0:
+                    continue
+                plain_end = plain_pos + match_len
+                html_insert = 0
+                plain_idx = 0
+                in_tag = False
+                for i, ch in enumerate(joined):
+                    if ch == '<':
+                        in_tag = True
+                    elif ch == '>':
+                        in_tag = False
+                        continue
+                    if not in_tag:
+                        if plain_idx == plain_end:
+                            html_insert = i
+                            break
+                        plain_idx += 1
+                else:
+                    html_insert = len(joined)
+                while html_insert < len(joined) and joined[html_insert:html_insert+2] == '</':
+                    close = joined.find('>', html_insert)
+                    if close >= 0:
+                        html_insert = close + 1
+                    else:
+                        break
+                marker = f'<sup class="fn-marker">{fn["_num"]}</sup>'
+                joined = joined[:html_insert] + marker + joined[html_insert:]
+                plain = re.sub(r'<[^>]+>', '', joined)
+
+            # Emit row with text + glosses
+            html.append('<div class="para-row">')
+            html.append(f'<div class="para-text"><p class="para">{joined}</p>')
+            selected.sort(key=lambda f: f["_num"])
             refs = []
-            for fn in ranked[:MAX_APPARATUS_PER_PARA]:
+            for fn in selected:
                 source = fn.get("source", "")
                 source_quote = fn.get("source_quote", "")
                 note = fn.get("note", "")
-                ref = f'<em>{source}</em>'
+                ref = f'<sup>{fn["_num"]}</sup> <em>{source}</em>'
                 if source_quote:
                     ref += f': {source_quote}'
                 if note:
@@ -433,72 +404,32 @@ def render_passage(passage_ids: list[str]) -> str:
             html.append(
                 f'<div class="apparatus">{";&nbsp; ".join(refs)}</div>'
             )
-    html.append('</div>')
+            html.append('</div>')
+        else:
+            html.append('<div class="para-row">')
+            html.append(f'<div class="para-text"><p class="para">{" ".join(para["parts"])}</p></div>')
 
-    # Gloss panel: vocabulary glosses only (no echoes/attestations)
-    html.append('<div class="gloss-panel">')
-    for g in all_glosses:
-        if g.get("_type") in ("echo", "attestation"):
-            continue  # these are now footnotes
-        gid = g.get("_id", "")
-        html.append(
-            f'<div class="mg" data-for="{gid}">'
-            f'<span class="w">{g["anchor"]}</span> '
-            f'<span class="n">{g["note"]}</span>'
-            f'</div>'
-        )
-    html.append('</div>')
+        # Gloss column for this paragraph
+        html.append('<div class="para-glosses">')
+        for g in para_glosses:
+            gid = g.get("_id", "")
+            html.append(
+                f'<div class="mg" data-for="{gid}">'
+                f'<span class="w">{g["anchor"]}</span> '
+                f'<span class="n">{g["note"]}</span>'
+                f'</div>'
+            )
+        html.append('</div>')
+        html.append('</div>')  # para-row
 
     html.append('</div>')  # page-body
 
-    # JS to position glosses in two columns within the panel
+    # JS: glosses are now in flow within each para-row, no absolute positioning needed
+    # But we can still do fine-grained vertical alignment on screen
     html.append("""
 <script>
-function alignGlosses() {
-  const panel = document.querySelector('.gloss-panel');
-  if (!panel) return;
-  const body = document.querySelector('.page-body');
-  const bodyTop = body.getBoundingClientRect().top + window.scrollY;
-  const panelWidth = panel.offsetWidth;
-  const colWidth = Math.floor((panelWidth - 12) / 2);
-
-  const mgs = panel.querySelectorAll('.mg');
-
-  let col1Bottom = 0;
-  let col2Bottom = 0;
-
-  mgs.forEach(mg => {
-    const forId = mg.dataset.for;
-    const anchor = document.getElementById(forId);
-    if (!anchor) { mg.style.display = 'none'; return; }
-
-    mg.style.width = colWidth + 'px';
-
-    const anchorRect = anchor.getBoundingClientRect();
-    let idealTop = anchorRect.top + window.scrollY - bodyTop;
-
-    let top1 = Math.max(idealTop, col1Bottom + 2);
-    let top2 = Math.max(idealTop, col2Bottom + 2);
-
-    let useCol1 = true;
-    if (Math.abs(top2 - idealTop) < Math.abs(top1 - idealTop)) {
-      useCol1 = false;
-    }
-
-    if (useCol1) {
-      mg.style.top = top1 + 'px';
-      mg.style.left = '0px';
-      col1Bottom = top1 + mg.offsetHeight;
-    } else {
-      mg.style.top = top2 + 'px';
-      mg.style.left = (colWidth + 12) + 'px';
-      col2Bottom = top2 + mg.offsetHeight;
-    }
-  });
-}
-
-window.addEventListener('load', alignGlosses);
-window.addEventListener('resize', alignGlosses);
+// Glosses are already in flow per paragraph — no JS positioning needed for print.
+// On screen, we leave them in document flow within their para-glosses container.
 </script>
 """)
 
