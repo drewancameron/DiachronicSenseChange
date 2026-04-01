@@ -424,12 +424,38 @@ def render_passage(passage_ids: list[str]) -> str:
 
     html.append('</div>')  # page-body
 
-    # JS: glosses are now in flow within each para-row, no absolute positioning needed
-    # But we can still do fine-grained vertical alignment on screen
+    # JS: align glosses vertically with their anchor words using margin-top.
+    # Margins are flow-based, so they survive print pagination.
     html.append("""
 <script>
-// Glosses are already in flow per paragraph — no JS positioning needed for print.
-// On screen, we leave them in document flow within their para-glosses container.
+function alignGlosses() {
+  document.querySelectorAll('.para-row').forEach(row => {
+    const textEl = row.querySelector('.para-text');
+    const glossPanel = row.querySelector('.para-glosses');
+    if (!textEl || !glossPanel) return;
+
+    const textTop = textEl.getBoundingClientRect().top;
+    const mgs = glossPanel.querySelectorAll('.mg');
+    let prevBottom = glossPanel.getBoundingClientRect().top;
+
+    mgs.forEach(mg => {
+      const forId = mg.dataset.for;
+      const anchor = document.getElementById(forId);
+      if (!anchor) return;
+
+      const anchorTop = anchor.getBoundingClientRect().top;
+      // How far down the anchor is from where the next gloss would naturally sit
+      const gap = anchorTop - prevBottom;
+      mg.style.marginTop = Math.max(0, gap) + 'px';
+
+      // Track where this gloss ends up for the next one
+      prevBottom = mg.getBoundingClientRect().bottom + 2;
+    });
+  });
+}
+
+window.addEventListener('load', alignGlosses);
+window.addEventListener('resize', alignGlosses);
 </script>
 """)
 
