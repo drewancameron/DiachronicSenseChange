@@ -139,7 +139,7 @@ def render_typst(passage_ids: list[str]) -> str:
 
     typ = []
 
-    # Preamble
+    # Preamble — per-sentence grid with gloss column
     typ.append(r"""#set page(
   paper: "a4",
   margin: (top: 2.5cm, bottom: 2.5cm, left: 2cm, right: 1.5cm),
@@ -148,10 +148,14 @@ def render_typst(passage_ids: list[str]) -> str:
 #set text(font: "Didot", size: 11pt, lang: "el")
 #set par(justify: true, leading: 0.85em)
 
-// Gloss entry: bold anchor + explanation on one line, uniform 6pt
+// Smaller footnotes for apparatus
+#show footnote.entry: set text(size: 6.5pt)
+
+// Gloss entry in the margin column
 #let gloss(anchor, note) = {
-  set text(size: 6pt)
-  block(above: 2pt, below: 0pt, strong(anchor) + h(2pt) + text(fill: rgb("#666"), note))
+  block(above: 1.5pt, below: 0pt,
+    text(size: 7pt)[#strong[#anchor] #text(fill: rgb("#555"))[#note]]
+  )
 }
 """)
 
@@ -216,17 +220,15 @@ def render_typst(passage_ids: list[str]) -> str:
                 if note:
                     fn_body += f' — {note}'
 
-                # Find the phrase and insert footnote AFTER the next word boundary
                 phrase_esc = escape_typst(phrase[:15])
                 pos = greek_text.find(phrase_esc)
                 if pos >= 0:
-                    # Advance past the match to the next space/punctuation
                     end = pos + len(phrase_esc)
                     while end < len(greek_text) and greek_text[end] not in ' .,;·!?\n':
                         end += 1
                     greek_text = greek_text[:end] + f'#footnote[{fn_body}]' + greek_text[end:]
 
-        # Build gloss column
+        # Build gloss column entries
         gloss_lines = []
         seen_anchors = set()
         for g in para["glosses"]:
@@ -247,12 +249,12 @@ def render_typst(passage_ids: list[str]) -> str:
         indent = "0pt" if first_para else "1.5em"
         first_para = False
 
-        # Emit as a grid row: text | glosses
-        typ.append(f"""#block(spacing: 0.6em, grid(
-  columns: (1fr, 4.2cm),
-  column-gutter: 0.6cm,
+        # Emit as grid row: text | glosses
+        typ.append(f"""#block(spacing: 0.4em, grid(
+  columns: (1fr, 4.5cm),
+  column-gutter: 0.5cm,
   [#par(first-line-indent: {indent})[{greek_text}]],
-  [#set par(leading: 0.3em, justify: false)
+  [#set par(leading: 0.25em, justify: false)
 {gloss_col}
   ],
 ))""")
