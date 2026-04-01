@@ -225,12 +225,18 @@ def render_passage(passage_ids: list[str]) -> str:
     padding-left: 1rem;
     padding-top: 0.3rem;
   }
+  /* Dense gloss panels: two-column flow when > 6 glosses */
+  .para-glosses.dense {
+    columns: 2;
+    column-gap: 0.8rem;
+  }
 
   .mg {
     font-size: 0.75rem;
     line-height: 1.35;
     color: #555;
     margin-bottom: 0.15rem;
+    break-inside: avoid;
   }
   .mg .w {
     font-weight: 600;
@@ -409,7 +415,8 @@ def render_passage(passage_ids: list[str]) -> str:
             html.append(f'<div class="para-text"><p class="para">{" ".join(para["parts"])}</p></div>')
 
         # Gloss column for this paragraph
-        html.append('<div class="para-glosses">')
+        dense = ' dense' if len(para_glosses) > 6 else ''
+        html.append(f'<div class="para-glosses{dense}">')
         for g in para_glosses:
             gid = g.get("_id", "")
             html.append(
@@ -433,6 +440,8 @@ function alignGlosses() {
     const textEl = row.querySelector('.para-text');
     const glossPanel = row.querySelector('.para-glosses');
     if (!textEl || !glossPanel) return;
+    // Skip alignment for dense (two-column) panels — CSS columns handle flow
+    if (glossPanel.classList.contains('dense')) return;
 
     const mgs = glossPanel.querySelectorAll('.mg');
 
