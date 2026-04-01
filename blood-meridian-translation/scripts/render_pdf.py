@@ -225,14 +225,25 @@ def render_typst(passage_ids: list[str]) -> str:
                         end += 1
                     greek_text = greek_text[:end] + f'#footnote[{fn_body}]' + greek_text[end:]
 
-        # Build gloss place() calls with dy offsets estimated from anchor position.
-        # Text column is ~13.5cm wide at 11pt, ~65 chars/line, ~20pt per line.
-        plain_text = " ".join(para["sentences"])
-        chars_per_line = 58.0  # approximate for 11pt Didot in 13.5cm column
-        pt_per_line = 20.0    # 11pt + 0.85em leading
+        # Build gloss place() calls with dy offsets based on sentence positions.
+        # Strategy: compute cumulative line position for each sentence in the
+        # paragraph, then place each gloss at the line where its sentence starts.
+        TEXT_COL_CHARS = 55.0  # chars per line in 11pt Didot, 13.5cm column
+        PT_PER_LINE = 20.0    # 11pt text + 0.85em leading
+        GLOSS_COL_CHARS = 38.0  # chars per line in 7pt, 4.5cm gloss box
+        GLOSS_LINE_PT = 9.0   # 7pt text line height in gloss column
 
+        # Map each sentence to its starting line in the paragraph
+        sent_line_starts = []
+        cumulative_chars = 0.0
+        for sent in para["sentences"]:
+            line_start = cumulative_chars / TEXT_COL_CHARS * PT_PER_LINE
+            sent_line_starts.append(line_start)
+            cumulative_chars += len(sent) + 1  # +1 for space between sentences
+
+        # Map each gloss to a sentence by finding which sentence contains the anchor
         gloss_calls = []
-        gloss_bottom = 0.0  # track bottom of last gloss to avoid overlap
+        gloss_bottom = 0.0
         seen_anchors = set()
         for g in para["glosses"]:
             anchor = g["anchor"]
@@ -245,22 +256,27 @@ def render_typst(passage_ids: list[str]) -> str:
             note = note.replace("\x00ITAL\x00", "_")
             anchor_esc = escape_typst(anchor)
 
-            # Estimate dy from anchor's character position in the paragraph
-            pos = plain_text.find(anchor)
-            if pos >= 0:
-                line_num = pos / chars_per_line
-                anchor_dy = line_num * pt_per_line
-            else:
-                anchor_dy = gloss_bottom  # fallback: stack after previous
+            # Find which sentence contains this anchor
+            anchor_dy = gloss_bottom  # fallback
+            char_offset = 0
+            for i, sent in enumerate(para["sentences"]):
+                pos_in_sent = sent.find(anchor)
+                if pos_in_sent >= 0:
+                    # Exact position within paragraph
+                    total_char_pos = char_offset + pos_in_sent
+                    anchor_dy = total_char_pos / TEXT_COL_CHARS * PT_PER_LINE
+                    break
+                char_offset += len(sent) + 1
 
             # Don't overlap previous gloss
             dy_pt = max(anchor_dy, gloss_bottom)
 
             gloss_calls.append(f'  #mg({dy_pt:.1f}pt)[{anchor_esc}][{note}]')
 
-            # Advance bottom tracker
-            note_len = len(note) + len(anchor)
-            gloss_height = 10.0 if note_len < 35 else 18.0
+            # Estimate gloss height from note length in the 4.5cm column
+            total_gloss_chars = len(anchor) + len(note) + 1
+            gloss_lines = max(1, -(-total_gloss_chars // int(GLOSS_COL_CHARS)))  # ceil div
+            gloss_height = gloss_lines * GLOSS_LINE_PT + 2.0  # +2pt padding
             gloss_bottom = dy_pt + gloss_height
 
         indent = "0pt" if first_para else "1.5em"
