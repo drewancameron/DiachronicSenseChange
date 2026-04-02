@@ -297,32 +297,7 @@ Output the corrected Greek text with ONLY the above changes applied."""
             else:
                 print(f"    ✓ All clear after fix")
 
-        print(f"\n  [{passage_id}] CALL 3: Sonnet targeted fix")
-        t0 = time.time()
-        r3 = client.messages.create(
-            model="claude-sonnet-4-20250514",
-            max_tokens=4096,
-            messages=[{"role": "user", "content": fix_prompt}],
-        )
-        fixed = r3.content[0].text.strip()
-        r3_cost = r3.usage.input_tokens / 1e6 * 3 + r3.usage.output_tokens / 1e6 * 15
-        print(f"    {time.time()-t0:.0f}s ({r3.usage.input_tokens} in, {r3.usage.output_tokens} out, ${r3_cost:.4f})")
-        print(f"    {fixed[:100]}...")
-
-        # Save fixed version
-        (draft_path.parent / "stage2_sonnet_fixed.txt").write_text(fixed)
-        draft_path.write_text(fixed + "\n")
-        final = fixed
-
-        # Re-run checks on fixed version
-        print(f"\n  [{passage_id}] RE-CHECK")
-        recheck = run_checks(passage_id, en_text, fixed)
-        if recheck:
-            print(f"    ⚠ {len(recheck)} residual issues (for human review):")
-            for issue in recheck:
-                print(f"      {issue[:80]}")
-        else:
-            print(f"    ✓ All clear after fix")
+        pass  # no duplicate fix block
     else:
         print(f"    ✓ All clear")
         r3_cost = 0.0

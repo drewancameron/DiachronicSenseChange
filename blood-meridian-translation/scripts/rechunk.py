@@ -36,7 +36,7 @@ TARGET_IDEAL = 700
 
 # Chapter boundaries (line numbers from the source file)
 CHAPTER_LINES = {
-    "I": (1, 245),
+    "I": (0, 245),
     "II": (246, 581),
     "III": (582, 979),
     "IV": (980, 1150),
