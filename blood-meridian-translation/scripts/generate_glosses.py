@@ -1,424 +1,195 @@
 #!/usr/bin/env python3
 """
-Automatic Ørberg-style gloss generator.
+Generate Ørberg-style marginal glosses using IDF-based word selection
+and a single LLM call for definitions.
 
-For each passage draft, this script:
-  1. Tokenises the Greek and computes corpus frequency for each lemma
-  2. Identifies rare words (below frequency threshold)
-  3. For each rare word, generates a context-sensitive gloss using:
-     - Corpus collocate data for sense disambiguation
-     - Heuristic case/construction analysis
-     - The IDF glossary for locked terms
-     - The full Ørberg notation vocabulary (= ↔ < > · + case labels)
-  4. Outputs marginal_glosses.json
+Pipeline:
+1. IDF auto-glosser identifies rare words (threshold-based)
+2. Single Sonnet call generates Ørberg-style definitions for all flagged words
+3. Output written to apparatus/<passage_id>/marginal_glosses.json
 
 Usage:
-  python3 scripts/generate_glosses.py                     # all passages
-  python3 scripts/generate_glosses.py 001_see_the_child   # one passage
+  python3 scripts/generate_glosses.py 001_see_the_child
+  python3 scripts/generate_glosses.py --all
+  python3 scripts/generate_glosses.py --all --threshold 9
 """
 
 import json
 import re
 import sys
-import unicodedata
+import time
 from pathlib import Path
-from collections import Counter
 
 ROOT = Path(__file__).resolve().parent.parent
 DRAFTS = ROOT / "drafts"
+PASSAGES = ROOT / "passages"
 APPARATUS = ROOT / "apparatus"
-GLOSSARY_PATH = ROOT / "glossary" / "idf_glossary.json"
-CORPUS_PATH = ROOT / "retrieval" / "data" / "corpus.jsonl"
-COLLOCATE_PATH = ROOT / "retrieval" / "data" / "collocates.json"
+GLOSSARY = ROOT / "glossary"
 
-# ====================================================================
-# Greek normalisation
-# ====================================================================
+sys.path.insert(0, str(ROOT / "scripts"))
 
-def strip_accents(text: str) -> str:
-    decomposed = unicodedata.normalize("NFD", text)
-    stripped = "".join(c for c in decomposed if unicodedata.category(c) != "Mn")
-    return stripped.lower()
+DEFAULT_THRESHOLD = 9.0
 
 
-def tokenise(text: str) -> list[str]:
-    """Split Greek text into tokens, stripping punctuation."""
-    return [t for t in re.findall(r'[\w\u0370-\u03FF\u1F00-\u1FFF]+', text) if t]
+def load_idf():
+    from auto_gloss import load_idf as _load
+    return _load()
 
 
-# ====================================================================
-# Corpus frequency model
-# ====================================================================
-
-_freq_cache: Counter | None = None
-
-def load_corpus_frequencies() -> Counter:
-    global _freq_cache
-    if _freq_cache is not None:
-        return _freq_cache
-
-    _freq_cache = Counter()
-    if not CORPUS_PATH.exists():
-        print("  WARNING: no corpus.jsonl — frequency data unavailable")
-        return _freq_cache
-
-    with open(CORPUS_PATH, encoding="utf-8") as f:
-        for line in f:
-            if not line.strip():
-                continue
-            rec = json.loads(line)
-            text = rec.get("text", "")
-            for tok in tokenise(text):
-                _freq_cache[strip_accents(tok)] += 1
-
-    print(f"  Loaded frequency model: {len(_freq_cache)} types, {sum(_freq_cache.values())} tokens")
-    return _freq_cache
+def get_words_to_gloss(passage_id: str, lemma_idf: dict, form_idf: dict,
+                       threshold: float) -> list[dict]:
+    from auto_gloss import propose_glosses
+    return propose_glosses(passage_id, lemma_idf, form_idf, threshold, threshold + 2)
 
 
-def word_frequency(word: str) -> int:
-    """Return corpus frequency of a word (accent-stripped)."""
-    freq = load_corpus_frequencies()
-    return freq.get(strip_accents(word), 0)
-
-
-def frequency_rank(word: str) -> int:
-    """Return frequency rank (1 = most common). 0 = not found."""
-    freq = load_corpus_frequencies()
-    norm = strip_accents(word)
-    count = freq.get(norm, 0)
-    if count == 0:
-        return 0
-    # Rank among all types
-    rank = sum(1 for c in freq.values() if c > count) + 1
-    return rank
-
-
-# ====================================================================
-# Collocate lookup
-# ====================================================================
-
-_colloc_cache: dict | None = None
-
-def load_collocates() -> dict:
-    global _colloc_cache
-    if _colloc_cache is not None:
-        return _colloc_cache
-    if COLLOCATE_PATH.exists():
-        with open(COLLOCATE_PATH) as f:
-            _colloc_cache = json.load(f)
-    else:
-        _colloc_cache = {}
-    return _colloc_cache
-
-
-# ====================================================================
-# IDF glossary lookup
-# ====================================================================
-
-_glossary_cache: dict | None = None
-
-def load_glossary() -> dict:
-    """Load glossary and build a lookup by normalised Greek form."""
-    global _glossary_cache
-    if _glossary_cache is not None:
-        return _glossary_cache
-
-    with open(GLOSSARY_PATH) as f:
-        raw = json.load(f)
-
-    _glossary_cache = {}
-    for cat_name, cat in raw.items():
-        if cat_name.startswith("_") or not isinstance(cat, dict):
-            continue
-        for key, entry in cat.items():
-            if not isinstance(entry, dict):
-                continue
-            ag = entry.get("ancient_greek", "")
-            if not ag:
-                continue
-            # Extract primary form, strip articles and *
-            primary = ag.split("/")[0].split("(")[0].strip()
-            primary = re.sub(r'^[ὁἡτὸτόαἱοἱ]\s+', '', primary).replace("*", "").strip()
-            norm = strip_accents(primary)
-            _glossary_cache[norm] = entry
-
-    return _glossary_cache
-
-
-# ====================================================================
-# Case / construction analysis (heuristic)
-# ====================================================================
-
-PREPOSITIONS = {
-    "ἐν": "δοτ.", "εἰς": "αἰτ.", "ἐκ": "γεν.", "ἐξ": "γεν.",
-    "ἀπό": "γεν.", "ἀπ'": "γεν.", "πρό": "γεν.", "μετά": "γεν./αἰτ.",
-    "μετ'": "γεν./αἰτ.", "παρά": "γεν./δοτ./αἰτ.", "παρ'": "γεν./δοτ./αἰτ.",
-    "ὑπέρ": "γεν./αἰτ.", "ὑπό": "γεν./αἰτ.", "ὑπ'": "γεν./αἰτ.",
-    "πρός": "αἰτ.", "διά": "γεν./αἰτ.", "δι'": "γεν./αἰτ.",
-    "κατά": "γεν./αἰτ.", "κατ'": "γεν./αἰτ.",
-    "περί": "γεν./αἰτ.", "ἐπί": "γεν./δοτ./αἰτ.", "ἐπ'": "γεν./δοτ./αἰτ.",
-}
-
-GENITIVE_ARTICLE = {"τοῦ", "τῆς", "τῶν"}
-DATIVE_ARTICLE = {"τῷ", "τῇ", "τοῖς", "ταῖς"}
-ACCUSATIVE_ARTICLE = {"τόν", "τήν", "τόν", "τούς", "τάς"}
-
-
-def analyse_context(tokens: list[str], idx: int) -> dict:
-    """Analyse the grammatical context of a token at position idx."""
-    ctx = {"case_label": None, "construction": None, "prep_governed": False}
-
-    # Check if preceded by a preposition
-    if idx > 0:
-        prev = tokens[idx - 1]
-        if prev in PREPOSITIONS:
-            ctx["prep_governed"] = True
-            ctx["case_label"] = PREPOSITIONS[prev]
-            ctx["construction"] = f"+ {prev}"
-
-    # Check if followed by a genitive article (suggesting X + gen.)
-    if idx + 1 < len(tokens) and tokens[idx + 1] in GENITIVE_ARTICLE:
-        # Check what kind of genitive
-        if idx + 2 < len(tokens):
-            next_word_norm = strip_accents(tokens[idx + 2])
-            # Rough heuristic: if the word after the genitive article
-            # shares a root with a person/agent word, it's likely possessive
-            # otherwise it might be objective
-            ctx["genitive_follows"] = tokens[idx + 1] + " " + tokens[idx + 2]
-
-    return ctx
-
-
-# ====================================================================
-# Gloss generation
-# ====================================================================
-
-# Ørberg notation templates
-def make_synonym_gloss(word: str, synonym: str) -> str:
-    return f"= {synonym}"
-
-def make_derivation_gloss(word: str, root: str, meaning: str = "") -> str:
-    if meaning:
-        return f"< {root} = {meaning}"
-    return f"< {root}"
-
-def make_antonym_gloss(word: str, synonym: str, antonym: str) -> str:
-    return f"= {synonym} ↔ {antonym}"
-
-def make_compound_gloss(parts: list[str], meaning: str) -> str:
-    return f"{'·'.join(parts)} = {meaning}"
-
-def make_scale_gloss(word: str, base: str, relation: str) -> str:
-    return f"> {base}· {relation}"
-
-def make_context_gloss(word: str, here_meaning: str, default_meaning: str = "") -> str:
-    if default_meaning:
-        return f"ἐνταῦθα = {here_meaning} (οὐ {default_meaning})"
-    return f"ἐνταῦθα = {here_meaning}"
-
-
-# Frequency threshold: words below this rank get glossed
-RARE_RANK_THRESHOLD = 3000  # top 3000 words are "known"
-MAX_GLOSSES_PER_SENTENCE = 3
-MAX_GLOSSES_PER_PASSAGE = 6
-
-
-def should_gloss(word: str, freq: Counter) -> bool:
-    """Decide if a word needs glossing based on frequency."""
-    norm = strip_accents(word)
-
-    # Skip very short words (particles, articles)
-    if len(norm) <= 2:
+def generate_glosses_for_passage(passage_id: str, lemma_idf: dict, form_idf: dict,
+                                  threshold: float, dry_run: bool = False) -> bool:
+    primary_path = DRAFTS / passage_id / "primary.txt"
+    if not primary_path.exists():
+        print(f"  {passage_id}: no primary.txt")
         return False
 
-    # Skip common function words
-    common = {"και", "δε", "τε", "γαρ", "μεν", "ουν", "αλλα", "ουτε", "μητε",
-              "εστι", "εστιν", "ειναι", "ην", "ησαν", "αυτου", "αυτης", "αυτων",
-              "αυτον", "αυτην", "αυτοις", "ουτος", "εκεινος", "τις", "τινος",
-              "πας", "πασα", "παν", "ουδεις", "ουκ", "μη", "ως", "οτι",
-              "εις", "εν", "εκ", "απο", "προς", "δια", "κατα", "μετα",
-              "περι", "υπο", "επι", "παρα", "υπερ", "προ"}
-    if norm in common:
+    greek = primary_path.read_text("utf-8").strip()
+
+    # Get words to gloss
+    words = get_words_to_gloss(passage_id, lemma_idf, form_idf, threshold)
+    if not words:
+        print(f"  {passage_id}: no words need glossing")
         return False
 
-    count = freq.get(norm, 0)
-    if count == 0:
-        return True  # hapax or very rare — definitely gloss
-    rank = sum(1 for c in freq.values() if c > count) + 1
-    return rank > RARE_RANK_THRESHOLD
+    print(f"  {passage_id}: {len(words)} words to gloss")
 
+    # Split Greek into sentences
+    sentences = [s.strip() for s in re.split(r'(?<=[.;·!])\s+', greek) if s.strip()]
 
-def detect_compound(word: str) -> list[str] | None:
-    """Detect if a word is a transparent compound. Returns parts or None."""
-    norm = strip_accents(word)
-    # Known compound prefixes
-    prefixes = [
-        ("ξυλο", "ξύλον"), ("υδρο", "ὕδωρ"), ("πυρι", "πῦρ"), ("πυρο", "πῦρ"),
-        ("σκληρο", "σκληρός"), ("πατρ", "πατήρ"), ("μεγαλο", "μέγας"),
-        ("οινο", "οἶνος"), ("πτυελο", "πτύελον"), ("γραμματο", "γράμμα"),
-    ]
-    for pref_norm, pref_full in prefixes:
-        if norm.startswith(pref_norm) and len(norm) > len(pref_norm) + 2:
-            remainder = word[len(pref_norm):]
-            return [pref_full, remainder]
-    return None
+    if dry_run:
+        for w in words:
+            print(f"    {w['word']:>25}  IDF={w['idf']:.1f}")
+        return False
 
+    # Single Sonnet call to generate all definitions
+    word_block = "\n".join(f"- {w['word']}" for w in words)
 
-def detect_antonym(word: str) -> str | None:
-    """Return a common antonym if one exists."""
-    antonyms = {
-        "σκοτεινος": "φαιδρός",
-        "μεγας": "μικρός",
-        "λεπτος": "παχύς",
-        "ισχνος": "παχύς",
-        "ωχρος": "ἐρυθρός",
-        "αλουτος": "καθαρός",
-        "ανιπτος": "καθαρός",
-        "ανοπλος": "ὡπλισμένος",
-        "φαλακρος": "κομήτης",
-        "αγραμματος": "πεπαιδευμένος",
-        "σκληρος": "μαλακός",
-        "κενος": "πλήρης",
-        "ερημος": "οἰκουμένη",
-    }
-    return antonyms.get(strip_accents(word))
+    prompt = f"""Generate Ørberg-style Ancient Greek glosses for these words. Each word appears in the translation below.
 
+Ørberg notation rules:
+- "= synonym" for simple definitions (e.g., ὠχρός = λευκὸς ὡς νοσῶν ↔ ἐρυθρός)
+- "< root" for derivations (e.g., λίνεον < λίνον = ἐκ λίνου πεποιημένον)
+- "↔ antonym" for contrast (e.g., ἰσχνός = λεπτός ↔ παχύς)
+- "·" to decompose compounds (e.g., ξυλο·κόπος = ξύλα κόπτων)
+- "ἐνταῦθα =" for contextual meaning when a word has a special sense here
+- Keep definitions SHORT — ideally under 8 Greek words
+- Use ONLY Ancient Greek in the definitions, never English
+- For verbs, give the meaning; for rare noun forms, give nominative + meaning
+- For participles, show the root verb
 
-def generate_gloss_for_word(word: str, tokens: list[str], idx: int) -> str | None:
-    """Generate an Ørberg-style gloss for a single word in context."""
-    norm = strip_accents(word)
-    ctx = analyse_context(tokens, idx)
+Words to gloss:
+{word_block}
 
-    # Check for compound decomposition
-    parts = detect_compound(word)
-    if parts:
-        return f"{'·'.join(p for p in parts)} (< {parts[0]})"
+Greek text (for context):
+{greek}
 
-    # Check for antonym pair opportunity
-    antonym = detect_antonym(word)
+Output as JSON array:
+[{{"word": "ὠχρός", "note": "= λευκὸς ὡς νοσῶν ↔ ἐρυθρός"}}, ...]
 
-    # Check glossary for locked definition
-    glossary = load_glossary()
-    gloss_entry = glossary.get(norm)
+Output ONLY the JSON array, no other text."""
 
-    # Build the gloss
-    # For now, generate a placeholder that the review pipeline can refine
-    # The key insight: we flag WHAT needs glossing and provide the raw data;
-    # the final gloss text still benefits from human/LLM polish
+    import anthropic
+    client = anthropic.Anthropic()
 
-    return None  # signal that auto-generation couldn't produce a good gloss
+    t0 = time.time()
+    r = client.messages.create(
+        model="claude-sonnet-4-20250514",
+        max_tokens=4096,
+        messages=[{"role": "user", "content": prompt}],
+    )
+    response_text = r.content[0].text.strip()
+    cost = r.usage.input_tokens / 1e6 * 3 + r.usage.output_tokens / 1e6 * 15
+    print(f"    Sonnet: {time.time()-t0:.0f}s, {r.usage.input_tokens}+{r.usage.output_tokens} tok, ${cost:.4f}")
 
+    # Parse JSON response
+    try:
+        if "```" in response_text:
+            response_text = re.search(r'```(?:json)?\s*\n?(.*?)```',
+                                       response_text, re.DOTALL).group(1)
+        gloss_defs = json.loads(response_text)
+    except (json.JSONDecodeError, AttributeError) as e:
+        print(f"    Failed to parse response: {e}")
+        print(f"    Response: {response_text[:200]}")
+        return False
 
-def generate_passage_glosses(passage_id: str) -> dict:
-    """Generate glosses for a single passage."""
-    draft_path = DRAFTS / passage_id / "primary.txt"
-    if not draft_path.exists():
-        return {}
+    # Build gloss lookup
+    gloss_lookup = {}
+    for g in gloss_defs:
+        word = g.get("word", "")
+        note = g.get("note", "")
+        if word and note:
+            gloss_lookup[word] = note
 
-    text = draft_path.read_text("utf-8").strip()
-    freq = load_corpus_frequencies()
+    print(f"    Got {len(gloss_lookup)} definitions")
 
-    # Split into sentences
-    sentences = re.split(r'(?<=[.·;!])\s+', text)
-    sentences = [s.strip() for s in sentences if s.strip()]
-
-    # Also handle paragraph breaks
-    expanded = []
-    for s in sentences:
-        for sub in s.split("\n\n"):
-            sub = sub.strip()
-            if sub:
-                expanded.append(sub)
-    sentences = expanded
-
-    result = {
-        "passage_id": passage_id,
-        "style": "Ørberg",
-        "sentences": [],
-    }
-
-    total_glosses = 0
-    glossed_norms = set()  # deduplicate across sentences
-
-    for sent_idx, sent in enumerate(sentences):
-        tokens = tokenise(sent)
+    # Build marginal_glosses.json structure
+    mg_sentences = []
+    for i, sent in enumerate(sentences):
         sent_glosses = []
-
-        for tok_idx, tok in enumerate(tokens):
-            if total_glosses >= MAX_GLOSSES_PER_PASSAGE:
-                break
-            if len(sent_glosses) >= MAX_GLOSSES_PER_SENTENCE:
-                break
-
-            norm = strip_accents(tok)
-            if norm in glossed_norms:
-                continue
-
-            if should_gloss(tok, freq):
-                glossed_norms.add(norm)
+        for w in words:
+            word = w["word"]
+            if word in sent and word in gloss_lookup:
                 sent_glosses.append({
-                    "anchor": tok,
-                    "note": "",  # to be filled by gloss polish step
-                    "_frequency": freq.get(norm, 0),
-                    "_rank": frequency_rank(tok),
-                    "_context": analyse_context(
-                        [t for t in re.findall(r'[\S]+', sent)],
-                        min(tok_idx, len(re.findall(r'[\S]+', sent)) - 1)
-                    ),
-                    "_compound": detect_compound(tok),
-                    "_antonym": detect_antonym(tok),
-                    "_needs_polish": True,
+                    "anchor": word,
+                    "note": gloss_lookup[word],
+                    "rank": 1,
                 })
-                total_glosses += 1
-
-        result["sentences"].append({
-            "index": sent_idx,
+        mg_sentences.append({
+            "index": i,
             "greek": sent,
             "glosses": sent_glosses,
         })
 
-    return result
+    # Write output
+    out_dir = APPARATUS / passage_id
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out_path = out_dir / "marginal_glosses.json"
+    with open(out_path, "w") as f:
+        json.dump({"sentences": mg_sentences}, f, ensure_ascii=False, indent=2)
+    print(f"    Wrote {out_path}")
 
-
-def report_rare_words(passage_id: str):
-    """Print a report of rare words that need glossing."""
-    data = generate_passage_glosses(passage_id)
-    print(f"\n=== {passage_id} ===")
-    for sent in data.get("sentences", []):
-        for g in sent.get("glosses", []):
-            anchor = g["anchor"]
-            freq = g.get("_frequency", 0)
-            rank = g.get("_rank", 0)
-            compound = g.get("_compound")
-            antonym = g.get("_antonym")
-
-            notes = []
-            if compound:
-                notes.append(f"compound: {'·'.join(compound)}")
-            if antonym:
-                notes.append(f"↔ {antonym}")
-            if freq == 0:
-                notes.append("hapax/unattested")
-            else:
-                notes.append(f"rank {rank}, freq {freq}")
-
-            print(f"  {anchor:30s} {', '.join(notes)}")
+    total_glosses = sum(len(s["glosses"]) for s in mg_sentences)
+    print(f"    {total_glosses} glosses across {len(sentences)} sentences")
+    return True
 
 
 def main():
-    if len(sys.argv) > 1:
-        passage_ids = sys.argv[1:]
-    else:
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("passages", nargs="*")
+    parser.add_argument("--all", action="store_true")
+    parser.add_argument("--threshold", type=float, default=DEFAULT_THRESHOLD)
+    parser.add_argument("--dry-run", action="store_true")
+    args = parser.parse_args()
+
+    if args.all:
         passage_ids = sorted(
             d.name for d in DRAFTS.iterdir()
             if d.is_dir() and (d / "primary.txt").exists()
         )
+    elif args.passages:
+        passage_ids = args.passages
+    else:
+        parser.print_help()
+        return
 
-    print("Loading frequency model...")
-    load_corpus_frequencies()
+    lemma_idf, form_idf = load_idf()
+    print(f"IDF loaded: {len(lemma_idf):,} lemmas, threshold={args.threshold}")
+    print()
 
+    t0 = time.time()
     for pid in passage_ids:
-        report_rare_words(pid)
+        generate_glosses_for_passage(pid, lemma_idf, form_idf,
+                                     args.threshold, args.dry_run)
+        print()
+
+    print(f"Done in {time.time()-t0:.0f}s")
 
 
 if __name__ == "__main__":
