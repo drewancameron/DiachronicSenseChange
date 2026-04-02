@@ -126,9 +126,7 @@ def render_passage(passage_ids: list[str]) -> str:
                         "_type": "attestation",
                     })
 
-            # Filter glosses by rank if present (keep rank 1 and 2, drop 3 if tight)
-            # For now keep all — the renderer can thin later based on density
-            glosses = [g for g in glosses if g.get("rank", 1) <= 2]
+            # Show all glosses — IDF-based selection ensures only rare words are glossed
 
             if grk in para_starters and all_sentences and not all_sentences[-1].get("para_break"):
                 if any(not item.get("para_break") for item in all_sentences):
@@ -260,11 +258,25 @@ def render_passage(passage_ids: list[str]) -> str:
   .gw:hover { background: #F5F0E0; }
 
   @media print {
-    body { padding: 0; }
+    body { padding: 0; max-width: 100%; overflow: hidden; }
     .gw:hover { background: none; }
     .fb-tab, .fb-panel { display: none !important; }
-    .para-glosses.dense { columns: 1; }
-    .mg { font-size: 0.6rem; line-height: 1.25; }
+    .para-row {
+      grid-template-columns: 1fr 35%;
+      gap: 0 0.4rem;
+      overflow: hidden;
+    }
+    .para-glosses {
+      padding-left: 0.3rem;
+      columns: 1 !important;
+      overflow: hidden;
+    }
+    .mg { font-size: 6pt; line-height: 1.2; margin-bottom: 0; }
+    .mg .w { font-size: 6pt; }
+    .mg .n { font-size: 6pt; }
+    .apparatus { font-size: 6pt; }
+    .para-text { font-size: 10pt; line-height: 1.6; }
+    .fn-marker { font-size: 5pt; }
   }
   @media (max-width: 800px) {
     .para-row { grid-template-columns: 1fr; }
