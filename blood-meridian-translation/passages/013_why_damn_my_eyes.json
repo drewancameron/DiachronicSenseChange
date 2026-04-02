@@ -1,0 +1,58 @@
+{
+  "id": "013_why_damn_my_eyes",
+  "chapter": "I",
+  "title": "why damn my eyes",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "Why damn my eyes if I wont shoot the son of a bitch, said a man rising at the far side of the tent, and drawing a pistol from his boot he leveled it and fired.\n\nThe young teamster instantly produced a knife from his clothing and unseamed the tent and stepped outside into the rain. The kid followed. They ducked low and ran across the mud toward the hotel. Already gunfire was general within the tent and a dozen exits had been hacked through the canvas walls and people were pouring out, women screaming, folk stumbling, folk trampled underfoot in the mud. The kid and his friend reached the hotel gallery and wiped the water from their eyes and turned to watch. As they did so the tent began to sway and buckle and like a huge and wounded medusa it slowly settled to the ground trailing tattered canvas walls and ratty guyropes over the ground.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "Why damn my eyes if I wont shoot the son of a bitch, said a man rising at the far side of the tent, and drawing a pistol from his boot he leveled it and fired.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 1,
+      "text": "The young teamster instantly produced a knife from his clothing and unseamed the tent and stepped outside into the rain.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "The kid followed.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 3,
+      "text": "They ducked low and ran across the mud toward the hotel.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "Already gunfire was general within the tent and a dozen exits had been hacked through the canvas walls and people were pouring out, women screaming, folk stumbling, folk trampled underfoot in the mud.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "The kid and his friend reached the hotel gallery and wiped the water from their eyes and turned to watch.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "As they did so the tent began to sway and buckle and like a huge and wounded medusa it slowly settled to the ground trailing tattered canvas walls and ratty guyropes over the ground.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 7,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    159
+  ]
+}

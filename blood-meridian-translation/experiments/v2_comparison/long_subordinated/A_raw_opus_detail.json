@@ -1,0 +1,25 @@
+{
+  "greek": "οὕτως ἐποίει ὅτι τέχνη αὐτοῦ ἦν καὶ ὅμως ὀλίγα ἔπραττεν· ὀλίγοι γὰρ ὁδοιπόροι ἐν τῷ τόπῳ. ὥστε οὐ διὰ μακροῦ εἴθιστο ὡς βάρβαρος σκευάζεσθαι καὶ σταθμὸν λαμβάνειν σταδίους τινὰς ὑπὲρ τοῦ ἐργαστηρίου καὶ παρὰ τὴν ὁδὸν μένειν ἐρωτῶν τὸν παριόντα εἴ τις χρήματα δοίη. τότε δὲ οὐδένα πω ἠδίκει.",
+  "revision_prompt": null,
+  "scores": {
+    "voice_preservation": 7,
+    "greek_idiom": 8,
+    "register_match": 8,
+    "grammar": 9,
+    "vocabulary": 8,
+    "imagery": 7,
+    "errors": [
+      "βάρβαρος for 'indian' is too generic - should be more specific",
+      "σκευάζεσθαι might be better as ἐσθῆτα ἐνδύεσθαι or similar for clarity",
+      "ἐρωτῶν τὸν παριόντα lacks the iterative/potential sense of 'whoever should come'"
+    ],
+    "strengths": [
+      "Good preservation of paratactic structure with καὶ...καὶ",
+      "Natural use of ὥστε + infinitive construction",
+      "Excellent register match with Xenophontic narrative style",
+      "τότε δὲ οὐδένα πω ἠδίκει perfectly captures the terse final sentence",
+      "Good use of εἴθιστο for 'fell into the habit'"
+    ],
+    "total": 47
+  }
+}

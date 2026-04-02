@@ -1,0 +1,68 @@
+{
+  "id": "067_the_kid_looked_around",
+  "chapter": "II",
+  "title": "the kid looked around",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "The kid looked around the room. Some of those men wore pistols in their belts but none moved. The kid vaulted the bar and took another bottle and tucked it under his arm and walked out the door. The dog was gone. The man on the bench was gone too. He untied the mule and led it across the square.\n\nHe woke in the nave of a ruinous church, blinking up at the vaulted ceiling and the tall swagged walls with their faded frescos. The floor of the church was deep in dried guano and the droppings of cattle and sheep. Pigeons flapped through the piers of dusty light and three buzzards hobbled about on the picked bone carcass of some animal dead in the chancel.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "The kid looked around the room.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "Some of those men wore pistols in their belts but none moved.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "The kid vaulted the bar and took another bottle and tucked it under his arm and walked out the door.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "The dog was gone.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 4,
+      "text": "The man on the bench was gone too.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "He untied the mule and led it across the square.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "He woke in the nave of a ruinous church, blinking up at the vaulted ceiling and the tall swagged walls with their faded frescos.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "The floor of the church was deep in dried guano and the droppings of cattle and sheep.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "Pigeons flapped through the piers of dusty light and three buzzards hobbled about on the picked bone carcass of some animal dead in the chancel.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 9,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    296
+  ]
+}

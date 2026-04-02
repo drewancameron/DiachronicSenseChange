@@ -1,0 +1,94 @@
+{
+  "passage_id": "014_hotel_fire",
+  "greek_length": 663,
+  "grammar": {
+    "issues": [
+      {
+        "type": "glossary_missing",
+        "severity": "info",
+        "message": "English has 'the judge' but Greek lacks ὁ κριτής — intentional?"
+      }
+    ],
+    "issue_count": 1,
+    "warnings": 0
+  },
+  "retrieval": {
+    "register": {
+      "dominant_period": "classical",
+      "neighbours": [
+        "classical/herodotus.histories.hdt..1.89.3",
+        "classical/thucydides.peleponnesian_war.thuc..pele..1.121.3",
+        "classical/herodotus.histories.hdt..7.190.1",
+        "imperial/plutarch.alcibiades.plut.alc..35.4",
+        "classical/herodotus.histories.hdt..1.24.2"
+      ],
+      "assessment": "strongly classical",
+      "issues": []
+    },
+    "lexical_suggestions": [
+      {
+        "query": "When he saw them he turned and started back into the room but Toadvine seized him about the neck and rode him to the floor and held him by the hair and began to pry out an eyeball with his thumb",
+        "greek": "λέγων ᾿Εξάγαγε τὸν κατάρασά.",
+        "source": "lxx.Leviticus.3.24",
+        "period": "hellenistic",
+        "score": 0.623
+      },
+      {
+        "query": "When he saw them he turned and started back into the room but Toadvine seized him about the neck and rode him to the floor and held him by the hair and began to pry out an eyeball with his thumb",
+        "greek": "ὅτι κύριος κέκληκεν τὸ παιδάριον.",
+        "source": "lxx.Regnorum_I.11.3",
+        "period": "hellenistic",
+        "score": 0.585
+      },
+      {
+        "query": "When he saw them he turned and started back into the room but Toadvine seized him about the neck and rode him to the floor and held him by the hair and began to pry out an eyeball with his thumb",
+        "greek": "ἔστησαν ἔναντι κυρίου.",
+        "source": "lxx.Leviticus.3.9",
+        "period": "hellenistic",
+        "score": 0.569
+      },
+      {
+        "query": "He leaned against the animal with his shoulder and got the saddle over it and got it cinched, the mule starting and shying and running its head along the fence",
+        "greek": "τούτου λαβέτωσαν ἕκαστος πρόβατον",
+        "source": "lxx.Exodus.2.12",
+        "period": "hellenistic",
+        "score": 0.531
+      },
+      {
+        "query": "He leaned against the animal with his shoulder and got the saddle over it and got it cinched, the mule starting and shying and running its head along the fence",
+        "greek": "παρ’ ᾧ ἂν εὑρεθῇ τὸ κόνδηυ,",
+        "source": "lxx.Genesis.1.44",
+        "period": "hellenistic",
+        "score": 0.486
+      },
+      {
+        "query": "He leaned against the animal with his shoulder and got the saddle over it and got it cinched, the mule starting and shying and running its head along the fence",
+        "greek": "τούτου λαβέτωσαν ἕκαστος πρόβατον κατ’ οἴκους",
+        "source": "lxx.Exodus.2.12",
+        "period": "hellenistic",
+        "score": 0.485
+      },
+      {
+        "query": "There were horses tethered in the lot and there was a flatbed wagon against the fence with some turkeys sitting on the edge looking out",
+        "greek": "ἁμ ρότεραι ἄλογοι ἔσονται,",
+        "source": "lxx.Numeri.4.6",
+        "period": "hellenistic",
+        "score": 0.503
+      },
+      {
+        "query": "There were horses tethered in the lot and there was a flatbed wagon against the fence with some turkeys sitting on the edge looking out",
+        "greek": "ἄνδρες γὰρ κτηνοτρόφοι ἦσαν·",
+        "source": "lxx.Genesis.1.46",
+        "period": "hellenistic",
+        "score": 0.467
+      },
+      {
+        "query": "There were horses tethered in the lot and there was a flatbed wagon against the fence with some turkeys sitting on the edge looking out",
+        "greek": "ἄλογοι ἔσονται, ὅτι",
+        "source": "lxx.Numeri.4.6",
+        "period": "hellenistic",
+        "score": 0.458
+      }
+    ]
+  }
+}

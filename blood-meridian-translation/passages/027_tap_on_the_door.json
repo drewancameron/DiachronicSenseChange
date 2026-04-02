@@ -1,0 +1,110 @@
+{
+  "id": "027_tap_on_the_door",
+  "chapter": "I",
+  "title": "tap on the door",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "Tap on the door now, said Toadvine.\n\nThe kid rose. Toadvine stood up and waited. They could hear the flames crackling inside the room. The kid tapped.\n\nYou better tap louder than that. This man drinks some.\n\nHe balled his fist and lambasted the door about five times.\n\nHell fire, said a voice.\n\nHere he comes.\n\nThey waited.\n\nYou hot son of a bitch, said the voice. Then the knob turned and the door opened.\n\nHe stood in his underwear holding in one hand the towel he'd used to turn the doorknob with. When he saw them he turned and started back into the room but Toadvine seized him about the neck and rode him to the floor and held him by the hair and began to pry out an eyeball with his thumb. The man grabbed his wrist and bit it.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "Tap on the door now, said Toadvine.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 1,
+      "text": "The kid rose.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 2,
+      "text": "Toadvine stood up and waited.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 3,
+      "text": "They could hear the flames crackling inside the room.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "The kid tapped.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 5,
+      "text": "You better tap louder than that.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "This man drinks some.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 7,
+      "text": "He balled his fist and lambasted the door about five times.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "Hell fire, said a voice.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 9,
+      "text": "Here he comes.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 10,
+      "text": "They waited.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 11,
+      "text": "You hot son of a bitch, said the voice.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 12,
+      "text": "Then the knob turned and the door opened.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 13,
+      "text": "He stood in his underwear holding in one hand the towel he'd used to turn the doorknob with.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 14,
+      "text": "When he saw them he turned and started back into the room but Toadvine seized him about the neck and rode him to the floor and held him by the hair and began to pry out an eyeball with his thumb.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 15,
+      "text": "The man grabbed his wrist and bit it.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 16,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    35,
+    150,
+    206,
+    267,
+    293,
+    309,
+    323,
+    406
+  ]
+}

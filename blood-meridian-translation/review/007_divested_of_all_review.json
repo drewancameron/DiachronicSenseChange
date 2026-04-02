@@ -1,0 +1,88 @@
+{
+  "passage_id": "007_divested_of_all",
+  "greek_length": 120,
+  "grammar": {
+    "issues": [],
+    "issue_count": 0,
+    "warnings": 0
+  },
+  "retrieval": {
+    "register": {
+      "dominant_period": "classical",
+      "neighbours": [
+        "imperial/plutarch.de_recta_ratione_audiendi.plut..de_recta..1.17",
+        "imperial/plutarch.regum_et_imperatorum_apophthegmata.plut..regum.71.3",
+        "classical/thucydides.peleponnesian_war.thuc..pele..1.97.1",
+        "classical/thucydides.peleponnesian_war.thuc..pele..5.111.3",
+        "classical/herodotus.histories.hdt..6.125.2"
+      ],
+      "assessment": "mostly classical",
+      "issues": []
+    },
+    "lexical_suggestions": [
+      {
+        "query": "His origins are become remote as is his destiny and not again in all the world's turning will there be terrains so wild and barbarous to try whether the stuff of creation may be shaped to man's will or whether his own heart is not another kind of clay",
+        "greek": "θεός Γενηθήτω στερέωμα",
+        "source": "lxx.Genesis.1.1",
+        "period": "hellenistic",
+        "score": 0.555
+      },
+      {
+        "query": "His origins are become remote as is his destiny and not again in all the world's turning will there be terrains so wild and barbarous to try whether the stuff of creation may be shaped to man's will or whether his own heart is not another kind of clay",
+        "greek": "παροξύνει με ὁ λαὸς οὗτος;",
+        "source": "lxx.Numeri.4.14",
+        "period": "hellenistic",
+        "score": 0.547
+      },
+      {
+        "query": "His origins are become remote as is his destiny and not again in all the world's turning will there be terrains so wild and barbarous to try whether the stuff of creation may be shaped to man's will or whether his own heart is not another kind of clay",
+        "greek": "οὐκ ἐγένετο ἡ χάλαζα.",
+        "source": "lxx.Exodus.2.9",
+        "period": "hellenistic",
+        "score": 0.547
+      },
+      {
+        "query": "They disembark aboard a lighter, settlers with their chattels, all studying the low coastline, the thin bight of sand and scrub pine swimming in the haze",
+        "greek": "περιεζωσμένον ἐφοὺδ βάρ.",
+        "source": "lxx.Regnorum_I.11.2",
+        "period": "hellenistic",
+        "score": 0.537
+      },
+      {
+        "query": "They disembark aboard a lighter, settlers with their chattels, all studying the low coastline, the thin bight of sand and scrub pine swimming in the haze",
+        "greek": "ἐμπόρια παράλιον κατοικούντων.",
+        "source": "lxx.Deuteronomium.5.33",
+        "period": "hellenistic",
+        "score": 0.53
+      },
+      {
+        "query": "They disembark aboard a lighter, settlers with their chattels, all studying the low coastline, the thin bight of sand and scrub pine swimming in the haze",
+        "greek": "θαλάσσης θηλάσει σε,",
+        "source": "lxx.Deuteronomium.5.33",
+        "period": "hellenistic",
+        "score": 0.53
+      },
+      {
+        "query": "They cage their eyes and no man asks another what it is that brings him here",
+        "greek": "ἴδεν κύριος ὅτι προσάγει ἰδεῖν,",
+        "source": "lxx.Exodus.2.3",
+        "period": "hellenistic",
+        "score": 0.53
+      },
+      {
+        "query": "They cage their eyes and no man asks another what it is that brings him here",
+        "greek": "αὐτῷ Τί οἱ ἄνθρωποι οὗτοι παρὰ σοί;",
+        "source": "lxx.Numeri.4.22",
+        "period": "hellenistic",
+        "score": 0.528
+      },
+      {
+        "query": "They cage their eyes and no man asks another what it is that brings him here",
+        "greek": "ἁγίῳ, ὃν τρόπον μοι συνέταξεν κύριος. καὶ",
+        "source": "lxx.Leviticus.3.10",
+        "period": "hellenistic",
+        "score": 0.526
+      }
+    ]
+  }
+}

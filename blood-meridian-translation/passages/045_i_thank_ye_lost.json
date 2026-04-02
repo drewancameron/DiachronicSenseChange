@@ -1,0 +1,82 @@
+{
+  "id": "045_i_thank_ye_lost",
+  "chapter": "II",
+  "title": "i thank ye lost",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "I thank ye.\n\nLost ye way in the dark, said the old man. He stirred the fire, standing slender tusks of bone up out of the ashes.\n\nThe kid didnt answer.\n\nThe old man swung his head back and forth. The way of the transgressor is hard. God made this world, but he didnt make it to suit everbody, did he?\n\nI dont believe he much had me in mind.\n\nAye, said the old man. But where does a man come by his notions. What world's he seen that he liked better?",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "I thank ye.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 1,
+      "text": "Lost ye way in the dark, said the old man.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 2,
+      "text": "He stirred the fire, standing slender tusks of bone up out of the ashes.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "The kid didnt answer.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 4,
+      "text": "The old man swung his head back and forth.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "The way of the transgressor is hard.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "God made this world, but he didnt make it to suit everbody, did he?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "I dont believe he much had me in mind.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "Aye, said the old man.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 9,
+      "text": "But where does a man come by his notions.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 10,
+      "text": "What world's he seen that he liked better?",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 11,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    11,
+    128,
+    151,
+    300,
+    340
+  ]
+}

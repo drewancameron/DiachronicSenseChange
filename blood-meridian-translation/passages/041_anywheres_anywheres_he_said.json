@@ -1,0 +1,88 @@
+{
+  "id": "041_anywheres_anywheres_he_said",
+  "chapter": "II",
+  "title": "anywheres anywheres he said",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "Anywheres, anywheres, he said. Where's ye saddle at?\n\nThe kid gestured with his chin.\n\nDont leave it out yonder somethinll eat it. This is a hungry country.\n\nHe went out and ran into the mule in the dark. It had been standing looking in at the fire.\n\nGet away, fool, he said. He took up the saddle and went back in.\n\nNow pull that door to fore we blow away, said the old man.\n\nThe door was a mass of planks on leather hinges. He dragged it across the dirt and fastened it by its leather latch.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "Anywheres, anywheres, he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "Where's ye saddle at?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 2,
+      "text": "The kid gestured with his chin.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "Dont leave it out yonder somethinll eat it.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "This is a hungry country.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 5,
+      "text": "He went out and ran into the mule in the dark.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "It had been standing looking in at the fire.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "Get away, fool, he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "He took up the saddle and went back in.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "Now pull that door to fore we blow away, said the old man.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 10,
+      "text": "The door was a mass of planks on leather hinges.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "He dragged it across the dirt and fastened it by its leather latch.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 12,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    52,
+    85,
+    156,
+    249,
+    315,
+    375
+  ]
+}

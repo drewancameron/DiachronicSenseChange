@@ -1,0 +1,46 @@
+{
+  "id": "035_come_evening_he_tracks",
+  "chapter": "II",
+  "title": "come evening he tracks",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "Come evening he tracks a spire of smoke rising oblique from among the low hills and before dark he hails up at the doorway of an old anchorite nested away in the sod like a groundsloth. Solitary, half mad, his eyes redrimmed as if locked in their cages with hot wires. But a ponderable body for that. He watched wordless while the kid eased down stiffly from the mule. A rough wind was blowing and his rags flapped about him.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "Come evening he tracks a spire of smoke rising oblique from among the low hills and before dark he hails up at the doorway of an old anchorite nested away in the sod like a groundsloth.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "Solitary, half mad, his eyes redrimmed as if locked in their cages with hot wires.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "But a ponderable body for that.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "He watched wordless while the kid eased down stiffly from the mule.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "A rough wind was blowing and his rags flapped about him.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 5,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": []
+}

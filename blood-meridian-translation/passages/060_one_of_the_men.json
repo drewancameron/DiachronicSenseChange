@@ -1,0 +1,103 @@
+{
+  "id": "060_one_of_the_men",
+  "chapter": "II",
+  "title": "one of the men",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "One of the men at the bar said something in Spanish. The boy glared at them. They winked one to the other, they took up their glasses.\n\nHe turned to the barman again. His eyes were dark and narrow. Sweep the floor, he said.\n\nThe barman blinked.\n\nThe kid stepped back and made sweeping motions, a pantomime that bent the drinkers in silent mirth. Sweep, he said, pointing at the floor.\n\nNo esta sucio, said the barman.\n\nHe swept again. Sweep, goddamnit, he said.\n\nThe barman shrugged. He went to the end of the bar and got a broom and brought it back. The boy took it and went on to the back of the room.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "One of the men at the bar said something in Spanish.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 1,
+      "text": "The boy glared at them.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 2,
+      "text": "They winked one to the other, they took up their glasses.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "He turned to the barman again.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "His eyes were dark and narrow.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "Sweep the floor, he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "The barman blinked.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 7,
+      "text": "The kid stepped back and made sweeping motions, a pantomime that bent the drinkers in silent mirth.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "Sweep, he said, pointing at the floor.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "No esta sucio, said the barman.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 10,
+      "text": "He swept again.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 11,
+      "text": "Sweep, goddamnit, he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 12,
+      "text": "The barman shrugged.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 13,
+      "text": "He went to the end of the bar and got a broom and brought it back.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 14,
+      "text": "The boy took it and went on to the back of the room.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 15,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    134,
+    223,
+    244,
+    384,
+    417,
+    461
+  ]
+}

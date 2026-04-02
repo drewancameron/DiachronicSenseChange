@@ -1,0 +1,89 @@
+{
+  "id": "037_you_reckon_i_could",
+  "chapter": "II",
+  "title": "you reckon i could",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "You reckon I could water my old mule out there?\n\nThe old man began to beat his palm with one fist and dart his eyes about.\n\nBe proud to fetch in some fresh. Just tell me where it's at.\n\nWhat ye aim to water him with?\n\nThe kid looked at the bucket and he looked around in the dim hut.\n\nI aint drinkin after no mule, said the hermit.\n\nHave you not got no old bucket nor nothin?\n\nNo, cried the hermit. No. I aint. He was clapping the heels of his clenched fists together at his chest.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "You reckon I could water my old mule out there?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "The old man began to beat his palm with one fist and dart his eyes about.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "Be proud to fetch in some fresh.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "Just tell me where it's at.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "What ye aim to water him with?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "The kid looked at the bucket and he looked around in the dim hut.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "I aint drinkin after no mule, said the hermit.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 7,
+      "text": "Have you not got no old bucket nor nothin?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "No, cried the hermit.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "No.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 10,
+      "text": "I aint.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 11,
+      "text": "He was clapping the heels of his clenched fists together at his chest.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 12,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    47,
+    122,
+    184,
+    216,
+    283,
+    331,
+    375
+  ]
+}

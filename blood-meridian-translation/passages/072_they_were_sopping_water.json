@@ -1,0 +1,92 @@
+{
+  "id": "072_they_were_sopping_water",
+  "chapter": "II",
+  "title": "they were sopping water",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "They were sopping water over the black lacquerwork and one of them raised up and turned to look at him. The horses stood to their knees in the current.\n\nWhat? called the black.\n\nHave you seen a mule.\n\nMule?\n\nI lost a mule. I think he come this way.\n\nThe black wiped his face with the back of his arm. Somethin come down the road about a hour back. I think it went down the river yonder. It might of been a mule. It didnt have no tail nor no hair to speak of but it did have long ears.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "They were sopping water over the black lacquerwork and one of them raised up and turned to look at him.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "The horses stood to their knees in the current.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "What?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 3,
+      "text": "called the black.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "Have you seen a mule.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 5,
+      "text": "Mule?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 6,
+      "text": "I lost a mule.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 7,
+      "text": "I think he come this way.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "The black wiped his face with the back of his arm.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "Somethin come down the road about a hour back.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 10,
+      "text": "I think it went down the river yonder.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "It might of been a mule.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 12,
+      "text": "It didnt have no tail nor no hair to speak of but it did have long ears.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 13,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    151,
+    176,
+    199,
+    206,
+    248
+  ]
+}

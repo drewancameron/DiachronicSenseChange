@@ -1,0 +1,105 @@
+{
+  "id": "046_i_can_think_of",
+  "chapter": "II",
+  "title": "i can think of",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "I can think of better places and better ways.\n\nCan ye make it be?\n\nNo.\n\nNo. It's a mystery. A man's at odds to know his mind cause his mind is aught he has to know it with. He can know his heart, but he dont want to. Rightly so. Best not to look in there. It aint the heart of a creature that is bound in the way that God has set for it. You can find meanness in the least of creatures, but when God made man the devil was at his elbow. A creature that can do anything. Make a machine. And a machine to make the machine. And evil that can run itself a thousand years, no need to tend it. You believe that?",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "I can think of better places and better ways.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "Can ye make it be?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 2,
+      "text": "No.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 3,
+      "text": "No.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 4,
+      "text": "It's a mystery.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 5,
+      "text": "A man's at odds to know his mind cause his mind is aught he has to know it with.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "He can know his heart, but he dont want to.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "Rightly so.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 8,
+      "text": "Best not to look in there.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "It aint the heart of a creature that is bound in the way that God has set for it.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 10,
+      "text": "You can find meanness in the least of creatures, but when God made man the devil was at his elbow.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "A creature that can do anything.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 12,
+      "text": "Make a machine.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 13,
+      "text": "And a machine to make the machine.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 14,
+      "text": "And evil that can run itself a thousand years, no need to tend it.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 15,
+      "text": "You believe that?",
+      "discourse_hint": "fragment"
+    }
+  ],
+  "sentence_count": 16,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    45,
+    65,
+    70
+  ]
+}

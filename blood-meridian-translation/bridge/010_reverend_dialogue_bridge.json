@@ -1,0 +1,245 @@
+{
+  "passage_id": "010_reverend_dialogue",
+  "title": "Reverend Green's sermon and the judge's entrance",
+  "chapter": "I",
+  "korto_text": "Γειτόνοι, έλεγε ο αιδεσιμότατος, δεν μπορούσε να πάψει ν' ανακατεύεται μ' αυτούς τους διάολε-διάολε-διαολεμένους γειτόνους... Κυρίες και κύριοι, αισθάνομαι ότι είναι χρέος μου να σας πληροφορήσω ότι ο κύριος που οργάνωσε αυτή την αφύπνιση είναι απατεώνας. Δε βαστάει χαρτί κληρικού από κανένα ίδρυμα, αναγνωρισμένο ή φανταστικό...",
+  "korto_notes": [
+    {
+      "english": "Ladies and gentlemen I feel it my duty",
+      "korto": "Κυρίες και κύριοι, αισθάνομαι ότι είναι χρέος μου",
+      "note": "The judge speaks in formal educated MG — matching his formal English. AG should use elevated periodic prose: Ὦ ἄνδρες καὶ γυναῖκες..."
+    },
+    {
+      "english": "an imposter",
+      "korto": "απατεώνας",
+      "note": "απατεών = impostor/fraud (= AG ἀπατεών, same word)"
+    },
+    {
+      "english": "the livery of his God",
+      "korto": "τα άμφια του Κυρίου και Θεού του",
+      "note": "άμφια = vestments (ecclesiastical MG, from AG ἄμφια). Κύριος = Lord."
+    },
+    {
+      "english": "This is him. The devil. Here he stands.",
+      "korto": "Ιδού, φώναζε ο αιδεσιμότατος, κλαίγοντας με αναφιλητά. Ιδού ο διάβολος. Στέκεται μπρος στα μάτια σας.",
+      "note": "Ιδού = Behold! (biblical MG, directly from AG ἰδού). Perfect for our translation — use ἰδού."
+    }
+  ],
+  "google_translate": {
+    "sentences": [
+      {
+        "index": 0,
+        "english": "You ever see such a place for rain?",
+        "google_translate_el": "Έχετε δει ποτέ τέτοιο μέρος για βροχή;"
+      },
+      {
+        "index": 1,
+        "english": "The kid had been watching the reverend.",
+        "google_translate_el": "Το παιδί παρακολουθούσε τον αιδεσιμότατο."
+      },
+      {
+        "index": 2,
+        "english": "He turned to the man who spoke.",
+        "google_translate_el": "Γύρισε στον άντρα που μίλησε."
+      },
+      {
+        "index": 3,
+        "english": "He wore long moustaches after the fashion of teamsters and he wore a widebrim hat with a low round crown.",
+        "google_translate_el": "Φορούσε μακριά μουστάκια κατά τη μόδα των teamsters και φορούσε ένα πλατύ καπέλο με χαμηλή στρογγυλή κορώνα."
+      },
+      {
+        "index": 4,
+        "english": "He was slightly walleyed and he was watching the kid earnestly as if he'd know his opinion about the rain.",
+        "google_translate_el": "Ήταν ελαφρώς τυλιγμένος και παρακολουθούσε σοβαρά το παιδί σαν να ήξερε τη γνώμη του για τη βροχή."
+      },
+      {
+        "index": 5,
+        "english": "I just got here, said the kid.",
+        "google_translate_el": "Μόλις έφτασα εδώ, είπε το παιδί."
+      },
+      {
+        "index": 6,
+        "english": "Well it beats all I ever seen.",
+        "google_translate_el": "Λοιπόν, ξεπερνά όλα όσα έχω δει ποτέ."
+      },
+      {
+        "index": 7,
+        "english": "The kid nodded.",
+        "google_translate_el": "Το παιδί έγνεψε καταφατικά."
+      },
+      {
+        "index": 8,
+        "english": "An enormous man dressed in an oilcloth slicker had entered the tent and removed his hat.",
+        "google_translate_el": "Ένας τεράστιος άνδρας ντυμένος με λαδόπανο είχε μπει στη σκηνή και του έβγαλε το καπέλο."
+      },
+      {
+        "index": 9,
+        "english": "He was bald as a stone and he had no trace of beard and he had no brows to his eyes nor lashes to them.",
+        "google_translate_el": "Ήταν φαλακρός σαν πέτρα και δεν είχε ίχνος γενειάδας και δεν είχε φρύδια στα μάτια ούτε βλεφαρίδες σε αυτά."
+      },
+      {
+        "index": 10,
+        "english": "He was close on to seven feet in height and he stood smoking a cigar even in this nomadic house of God and he seemed to have removed his hat only to chase the rain from it for now he put it on again.",
+        "google_translate_el": "Ήταν κοντά στα επτά πόδια ύψος και στάθηκε να καπνίζει ένα πούρο ακόμη και σε αυτό το νομαδικό σπίτι του Θεού και φαινόταν να είχε αφαιρέσει το καπέλο του μόνο για να διώξει τη βροχή από αυτό, τώρα το φόρεσε ξανά."
+      },
+      {
+        "index": 11,
+        "english": "The reverend had stopped his sermon altogether.",
+        "google_translate_el": "Ο αιδεσιμότατος είχε σταματήσει τελείως το κήρυγμά του."
+      },
+      {
+        "index": 12,
+        "english": "There was no sound in the tent.",
+        "google_translate_el": "Δεν ακουγόταν ήχος στη σκηνή."
+      },
+      {
+        "index": 13,
+        "english": "All watched the man.",
+        "google_translate_el": "Όλοι παρακολουθούσαν τον άντρα."
+      },
+      {
+        "index": 14,
+        "english": "He adjusted the hat and then pushed his way forward as far as the crateboard pulpit where the reverend stood and there he turned to address the reverend's congregation.",
+        "google_translate_el": "Προσάρμοσε το καπέλο και μετά έσπρωξε το δρόμο του προς τα εμπρός μέχρι τον άμβωνα από crateboard όπου στεκόταν ο αιδεσιμότατος και εκεί γύρισε για να μιλήσει στην εκκλησία του αιδεσιμότατου."
+      },
+      {
+        "index": 15,
+        "english": "His face was serene and strangely childlike.",
+        "google_translate_el": "Το πρόσωπό του ήταν γαλήνιο και παράξενα παιδικό."
+      },
+      {
+        "index": 16,
+        "english": "His hands were small.",
+        "google_translate_el": "Τα χέρια του ήταν μικρά."
+      },
+      {
+        "index": 17,
+        "english": "He held them out.",
+        "google_translate_el": "Τα κράτησε."
+      },
+      {
+        "index": 18,
+        "english": "Ladies and gentlemen I feel it my duty to inform you that the man holding this revival is an imposter.",
+        "google_translate_el": "Κυρίες και κύριοι, αισθάνομαι καθήκον μου να σας ενημερώσω ότι ο άνδρας που κάνει αυτή την αναβίωση είναι απατεώνας."
+      },
+      {
+        "index": 19,
+        "english": "He holds no papers of divinity from any institution recognized or improvised.",
+        "google_translate_el": "Δεν κατέχει έγγραφα θεότητας από κανένα ίδρυμα αναγνωρισμένο ή αυτοσχέδιο."
+      },
+      {
+        "index": 20,
+        "english": "He is altogether devoid of the least qualification to the office he has usurped and has only committed to memory a few passages from the good book for the purpose of lending to his fraudulent sermons some faint flavor of the piety he despises.",
+        "google_translate_el": "Στερείται εντελώς από τα ελάχιστα προσόντα για το αξίωμα που έχει σφετεριστεί και έχει αφιερώσει στη μνήμη μόνο μερικά αποσπάσματα από το καλό βιβλίο για να δανείσει στα δόλια κηρύγματά του κάποια αμυδρή γεύση της ευσέβειας που περιφρονεί."
+      },
+      {
+        "index": 21,
+        "english": "In truth, the gentleman standing here before you posing as a minister of the Lord is not only totally illiterate but is also wanted by the law in the states of Tennessee, Kentucky, Mississippi, and Arkansas.",
+        "google_translate_el": "Στην πραγματικότητα, ο κύριος που στέκεται εδώ μπροστά σας και παρουσιάζεται ως υπουργός του Κυρίου δεν είναι μόνο εντελώς αναλφάβητος, αλλά καταζητείται επίσης από το νόμο στις πολιτείες του Τενεσί, του Κεντάκι, του Μισισιπή και του Αρκάνσας."
+      },
+      {
+        "index": 22,
+        "english": "Oh God, cried the reverend.",
+        "google_translate_el": "Ω Θεέ, φώναξε ο αιδεσιμότατος."
+      },
+      {
+        "index": 23,
+        "english": "Lies, lies!",
+        "google_translate_el": "Ψέματα, ψέματα!"
+      },
+      {
+        "index": 24,
+        "english": "He began reading feverishly from his opened bible.",
+        "google_translate_el": "Άρχισε να διαβάζει πυρετωδώς από την ανοιχτή του Βίβλο."
+      },
+      {
+        "index": 25,
+        "english": "On a variety of charges the most recent of which involved a girl of eleven years—I said eleven—who had come to him in trust and whom he was surprised in the act of violating while actually clothed in the livery of his God.",
+        "google_translate_el": "Για διάφορες κατηγορίες, η πιο πρόσφατη από τις οποίες αφορούσε ένα κορίτσι έντεκα ετών -είπα έντεκα- που είχε έρθει κοντά του με εμπιστοσύνη και το οποίο έμεινε έκπληκτος με την πράξη της παραβίασης, ενώ στην πραγματικότητα ήταν ντυμένος με τα χρώματα του Θεού του."
+      },
+      {
+        "index": 26,
+        "english": "A moan swept through the crowd.",
+        "google_translate_el": "Μια γκρίνια σάρωσε το πλήθος."
+      },
+      {
+        "index": 27,
+        "english": "A lady sank to her knees.",
+        "google_translate_el": "Μια κυρία βυθίστηκε στα γόνατα."
+      },
+      {
+        "index": 28,
+        "english": "This is him, cried the reverend, sobbing.",
+        "google_translate_el": "Αυτός είναι, φώναξε ο αιδεσιμότατος κλαίγοντας."
+      },
+      {
+        "index": 29,
+        "english": "This is him.",
+        "google_translate_el": "Αυτός είναι."
+      },
+      {
+        "index": 30,
+        "english": "The devil.",
+        "google_translate_el": "Ο διάβολος."
+      },
+      {
+        "index": 31,
+        "english": "Here he stands.",
+        "google_translate_el": "Εδώ στέκεται."
+      },
+      {
+        "index": 32,
+        "english": "Let's hang the turd, called an ugly thug from the gallery to the rear.",
+        "google_translate_el": "Ας κρεμάσουμε το τουρσί, που τον λένε άσχημο τραμπούκο από τη στοά προς τα πίσω."
+      },
+      {
+        "index": 33,
+        "english": "Not three weeks before this he was run out of Fort Smith Arkansas for having congress with a goat.",
+        "google_translate_el": "Όχι τρεις εβδομάδες πριν από αυτό, του έμεινε έξω από το Φορτ Σμιθ Αρκάνσας επειδή είχε συνέδριο με μια κατσίκα."
+      },
+      {
+        "index": 34,
+        "english": "Yes lady, that is what I said.",
+        "google_translate_el": "Ναι κυρία, αυτό είπα."
+      },
+      {
+        "index": 35,
+        "english": "Goat.",
+        "google_translate_el": "Κατσίκα."
+      },
+      {
+        "index": 36,
+        "english": "Why damn my eyes if I wont shoot the son of a bitch, said a man rising at the far side of the tent, and drawing a pistol from his boot he leveled it and fired.",
+        "google_translate_el": "Γιατί διάβολε τα μάτια μου αν δεν συνηθίζω να πυροβολώ τον γιο της σκύλας, είπε ένας άντρας που σηκώθηκε στην άκρη της σκηνής, και βγάζοντας ένα πιστόλι από την μπότα του, το ισοπέδωσε και πυροβόλησε."
+      }
+    ]
+  },
+  "idiom_notes": [
+    "The judge speaks in formal educated MG — matching his formal English. AG should use elevated periodic prose: Ὦ ἄνδρες καὶ γυναῖκες...",
+    "απατεών = impostor/fraud (= AG ἀπατεών, same word)",
+    "άμφια = vestments (ecclesiastical MG, from AG ἄμφια). Κύριος = Lord.",
+    "Ιδού = Behold! (biblical MG, directly from AG ἰδού). Perfect for our translation — use ἰδού."
+  ],
+  "vocabulary_harvest": [
+    {
+      "english": "Ladies and gentlemen I feel it my duty",
+      "korto_mg": "Κυρίες και κύριοι, αισθάνομαι ότι είναι χρέος μου",
+      "ag_hint": "The judge speaks in formal educated MG — matching his formal English. AG should use elevated periodic prose: Ὦ ἄνδρες καὶ γυναῖκες..."
+    },
+    {
+      "english": "an imposter",
+      "korto_mg": "απατεώνας",
+      "ag_hint": "απατεών = impostor/fraud (= AG ἀπατεών, same word)"
+    },
+    {
+      "english": "the livery of his God",
+      "korto_mg": "τα άμφια του Κυρίου και Θεού του",
+      "ag_hint": "άμφια = vestments (ecclesiastical MG, from AG ἄμφια). Κύριος = Lord."
+    },
+    {
+      "english": "This is him. The devil. Here he stands.",
+      "korto_mg": "Ιδού, φώναζε ο αιδεσιμότατος, κλαίγοντας με αναφιλητά. Ιδού ο διάβολος. Στέκεται μπρος στα μάτια σας.",
+      "ag_hint": "Ιδού = Behold! (biblical MG, directly from AG ἰδού). Perfect for our translation — use ἰδού."
+    }
+  ]
+}

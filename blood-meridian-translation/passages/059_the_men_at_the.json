@@ -1,0 +1,93 @@
+{
+  "id": "059_the_men_at_the",
+  "chapter": "II",
+  "title": "the men at the",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "The men at the bar watched.\n\nThe barman looked at the kid.\n\nQuiere trabajo, said the old man. Quien sabe. He turned back to his pieces and made his play without further consultation.\n\nQuieres trabajar, said one of the men at the bar.\n\nThey began to laugh.\n\nWhat are you laughing at? said the boy.\n\nThey stopped. Some looked at him, some pursed their mouths or shrugged. The boy turned to the bartender. You got something I could do for a couple of drinks I know damn good and well.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "The men at the bar watched.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "The barman looked at the kid.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "Quiere trabajo, said the old man.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 3,
+      "text": "Quien sabe.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 4,
+      "text": "He turned back to his pieces and made his play without further consultation.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "Quieres trabajar, said one of the men at the bar.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 6,
+      "text": "They began to laugh.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 7,
+      "text": "What are you laughing at?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 8,
+      "text": "said the boy.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "They stopped.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 10,
+      "text": "Some looked at him, some pursed their mouths or shrugged.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "The boy turned to the bartender.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 12,
+      "text": "You got something I could do for a couple of drinks I know damn good and well.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 13,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    27,
+    58,
+    182,
+    233,
+    255,
+    296
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "073_the_other_two_blacks",
+  "chapter": "II",
+  "title": "the other two blacks",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "The other two blacks grinned. The kid looked off down the river. He spat and set off along the path through the willows and swales of grass.\n\nHe found it about a hundred yards downriver. It was wet to its belly and it looked up at him and then lowered its head again into the lush river grass. He threw down the saddle and took up the trailing rope and tied the animal to a limb and kicked it halfheartedly. It shifted slightly to the side and continued to graze. He reached atop his head but he had lost the crazy hat somewhere. He made his way down through the trees and stood looking at the cold swirling waters. Then he waded out into the river like some wholly wretched baptismal candidate.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "The other two blacks grinned.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 1,
+      "text": "The kid looked off down the river.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "He spat and set off along the path through the willows and swales of grass.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "He found it about a hundred yards downriver.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "It was wet to its belly and it looked up at him and then lowered its head again into the lush river grass.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "He threw down the saddle and took up the trailing rope and tied the animal to a limb and kicked it halfheartedly.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "It shifted slightly to the side and continued to graze.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "He reached atop his head but he had lost the crazy hat somewhere.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "He made his way down through the trees and stood looking at the cold swirling waters.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "Then he waded out into the river like some wholly wretched baptismal candidate.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 10,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    140
+  ]
+}

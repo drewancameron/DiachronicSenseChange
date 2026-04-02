@@ -1,0 +1,88 @@
+{
+  "passage_id": "012_judge_bar_scene",
+  "greek_length": 192,
+  "grammar": {
+    "issues": [],
+    "issue_count": 0,
+    "warnings": 0
+  },
+  "retrieval": {
+    "register": {
+      "dominant_period": "hellenistic",
+      "neighbours": [
+        "imperial/plutarch.cleomenes.plut..cleom..32.3",
+        "hellenistic/lxx.Psalmi.27.23",
+        "imperial/plutarch.caius_marius.plut..mar..8.5",
+        "hellenistic/lxx.Psalmi.27.124",
+        "hellenistic/lxx.Genesis.1.4"
+      ],
+      "assessment": "mostly hellenistic",
+      "issues": []
+    },
+    "lexical_suggestions": [
+      {
+        "query": "The bar was that tall not every man could even get his elbows up on it but it came just to the judge's waist and he stood with his hands placed flatwise on the wood, leaning slightly, as if about to give another address",
+        "greek": "ἃς ἔπηξεν κύριος,",
+        "source": "lxx.Numeri.4.24",
+        "period": "hellenistic",
+        "score": 0.536
+      },
+      {
+        "query": "The bar was that tall not every man could even get his elbows up on it but it came just to the judge's waist and he stood with his hands placed flatwise on the wood, leaning slightly, as if about to give another address",
+        "greek": "κλήρου, ὃν τρόπον συνέταξεν κύριος",
+        "source": "lxx.Numeri.4.34",
+        "period": "hellenistic",
+        "score": 0.485
+      },
+      {
+        "query": "The bar was that tall not every man could even get his elbows up on it but it came just to the judge's waist and he stood with his hands placed flatwise on the wood, leaning slightly, as if about to give another address",
+        "greek": "ὃν τρόπον συνέταξεν κύριος",
+        "source": "lxx.Exodus.2.40",
+        "period": "hellenistic",
+        "score": 0.484
+      },
+      {
+        "query": "The teamster set his glass down and looked at the kid or he seemed to, you couldnt be sure of his gaze",
+        "greek": "ὅτι κύριος κέκληκεν τὸ παιδάριον.",
+        "source": "lxx.Regnorum_I.11.3",
+        "period": "hellenistic",
+        "score": 0.518
+      },
+      {
+        "query": "The teamster set his glass down and looked at the kid or he seemed to, you couldnt be sure of his gaze",
+        "greek": "εἶπεν Τί τὸ γεγονὸς ῥῆμα, τέκνον;",
+        "source": "lxx.Regnorum_I.11.4",
+        "period": "hellenistic",
+        "score": 0.489
+      },
+      {
+        "query": "The teamster set his glass down and looked at the kid or he seemed to, you couldnt be sure of his gaze",
+        "greek": "κέκληκεν τὸ παιδάριον. καὶ εἶπεν ’ κάθευδε,",
+        "source": "lxx.Regnorum_I.11.3",
+        "period": "hellenistic",
+        "score": 0.483
+      },
+      {
+        "query": "By now men were piling through the doorway, bleeding, covered in mud, cursing",
+        "greek": "οὐ κατελίπομεν ζωγρείαν.",
+        "source": "lxx.Deuteronomium.5.2",
+        "period": "hellenistic",
+        "score": 0.67
+      },
+      {
+        "query": "By now men were piling through the doorway, bleeding, covered in mud, cursing",
+        "greek": "οὐ κατελίπομεν ζωγρείαν. πλὴν τὰ κτήνη",
+        "source": "lxx.Deuteronomium.5.2",
+        "period": "hellenistic",
+        "score": 0.655
+      },
+      {
+        "query": "By now men were piling through the doorway, bleeding, covered in mud, cursing",
+        "greek": "ὁ δὲ βάτος οὐ κατεκαίετο.",
+        "source": "lxx.Exodus.2.3",
+        "period": "hellenistic",
+        "score": 0.649
+      }
+    ]
+  }
+}

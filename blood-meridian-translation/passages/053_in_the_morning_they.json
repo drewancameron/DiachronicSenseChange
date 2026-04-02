@@ -1,0 +1,46 @@
+{
+  "id": "053_in_the_morning_they",
+  "chapter": "II",
+  "title": "in the morning they",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "In the morning they ate flapjacks with molasses and the herders saddled up and moved on. When he found his mule there was a small fibre bag tied to the animal's rope and inside the bag there was a cupful of dried beans and some peppers and an old greenriver knife with a handle made of string. He saddled up the mule, the mule's back galled and balding, the hooves cracked. The ribs like fishbones. They hobbled on across the endless plain.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "In the morning they ate flapjacks with molasses and the herders saddled up and moved on.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "When he found his mule there was a small fibre bag tied to the animal's rope and inside the bag there was a cupful of dried beans and some peppers and an old greenriver knife with a handle made of string.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "He saddled up the mule, the mule's back galled and balding, the hooves cracked.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "The ribs like fishbones.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 4,
+      "text": "They hobbled on across the endless plain.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 5,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": []
+}

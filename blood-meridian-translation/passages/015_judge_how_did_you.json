@@ -1,0 +1,144 @@
+{
+  "id": "015_judge_how_did_you",
+  "chapter": "I",
+  "title": "judge how did you",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "Judge, how did you come to have the goods on that no-account?\n\nGoods? said the judge.\n\nWhen was you in Fort Smith?\n\nFort Smith?\n\nWhere did you know him to know all that stuff on him?\n\nYou mean the Reverend Green?\n\nYessir. I reckon you was in Fort Smith fore ye come out here.\n\nI was never in Fort Smith in my life. Doubt that he was.\n\nThey looked from one to the other.\n\nWell where was it you run up on him?\n\nI never laid eyes on the man before today. Never even heard of him.\n\nHe raised his glass and drank.\n\nThere was a strange silence in the room. The men looked like mud effigies. Finally someone began to laugh. Then another. Soon they were all laughing together. Someone bought the judge a drink.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "Judge, how did you come to have the goods on that no-account?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "Goods?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 2,
+      "text": "said the judge.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "When was you in Fort Smith?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "Fort Smith?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 5,
+      "text": "Where did you know him to know all that stuff on him?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "You mean the Reverend Green?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 7,
+      "text": "Yessir.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 8,
+      "text": "I reckon you was in Fort Smith fore ye come out here.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "I was never in Fort Smith in my life.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 10,
+      "text": "Doubt that he was.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 11,
+      "text": "They looked from one to the other.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 12,
+      "text": "Well where was it you run up on him?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 13,
+      "text": "I never laid eyes on the man before today.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 14,
+      "text": "Never even heard of him.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 15,
+      "text": "He raised his glass and drank.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 16,
+      "text": "There was a strange silence in the room.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 17,
+      "text": "The men looked like mud effigies.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 18,
+      "text": "Finally someone began to laugh.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 19,
+      "text": "Then another.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 20,
+      "text": "Soon they were all laughing together.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 21,
+      "text": "Someone bought the judge a drink.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 22,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    61,
+    85,
+    114,
+    127,
+    182,
+    212,
+    275,
+    333,
+    369,
+    407,
+    476,
+    508
+  ]
+}

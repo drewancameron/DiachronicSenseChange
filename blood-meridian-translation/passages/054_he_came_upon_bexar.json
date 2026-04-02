@@ -1,0 +1,46 @@
+{
+  "id": "054_he_came_upon_bexar",
+  "chapter": "II",
+  "title": "he came upon bexar",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "He came upon Bexar in the evening of the fourth day and he sat the tattered mule on a low rise and looked down at the town, the quiet adobe houses, the line of green oaks and cottonwoods that marked the course of the river, the plaza filled with wagons with their osnaburg covers and the whitewashed public buildings and the Moorish churchdome rising from the trees and the garrison and the tall stone powderhouse in the distance. A light breeze stirred the fronds of his hat, his matted greasy hair. His eyes lay dark and tunneled in a caved and haunted face and a foul stench rose from the wells of his boot tops. The sun was just down and to the west lay reefs of bloodred clouds up out of which rose little desert nighthawks like fugitives from some great fire at the earth's end. He spat a dry white spit and clumped the cracked wooden stirrups against the mule's ribs and they staggered into motion again.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "He came upon Bexar in the evening of the fourth day and he sat the tattered mule on a low rise and looked down at the town, the quiet adobe houses, the line of green oaks and cottonwoods that marked the course of the river, the plaza filled with wagons with their osnaburg covers and the whitewashed public buildings and the Moorish churchdome rising from the trees and the garrison and the tall stone powderhouse in the distance.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "A light breeze stirred the fronds of his hat, his matted greasy hair.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "His eyes lay dark and tunneled in a caved and haunted face and a foul stench rose from the wells of his boot tops.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "The sun was just down and to the west lay reefs of bloodred clouds up out of which rose little desert nighthawks like fugitives from some great fire at the earth's end.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "He spat a dry white spit and clumped the cracked wooden stirrups against the mule's ribs and they staggered into motion again.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 5,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": []
+}

@@ -1,0 +1,100 @@
+{
+  "passage_id": "004_at_fourteen",
+  "greek_length": 78,
+  "grammar": {
+    "issues": [
+      {
+        "type": "register_drift",
+        "severity": "info",
+        "message": "few Koine/classical neighbours (1/5) — register may be drifting. Target is Koine structure with Attic vocabulary."
+      }
+    ],
+    "issue_count": 1,
+    "warnings": 0
+  },
+  "retrieval": {
+    "register": {
+      "dominant_period": "imperial",
+      "neighbours": [
+        "imperial/plutarch.cleomenes.plut..cleom..11.1",
+        "imperial/plutarch.de_se_ipsum_citra_invidiam_laudando.plut..de_se_ipsum.tess.18",
+        "classical/xenophon.anabasis.xen..anab..6.4.1",
+        "imperial/plutarch.sulla.plut..sull.19.6",
+        "imperial/plutarch.camillus.plut..cam..32.3"
+      ],
+      "assessment": "strongly imperial",
+      "issues": [
+        {
+          "type": "register_drift",
+          "severity": "info",
+          "message": "few Koine/classical neighbours (1/5) — register may be drifting. Target is Koine structure with Attic vocabulary."
+        }
+      ]
+    },
+    "lexical_suggestions": [
+      {
+        "query": "He wanders west as far as Memphis, a solitary migrant upon that flat and pastoral landscape",
+        "greek": "Βάδιζε ὑγιαίνων. μετὰ",
+        "source": "lxx.Exodus.2.4",
+        "period": "hellenistic",
+        "score": 0.521
+      },
+      {
+        "query": "He wanders west as far as Memphis, a solitary migrant upon that flat and pastoral landscape",
+        "greek": "Βάδιζε ὑγιαίνων. μετὰ δὲ",
+        "source": "lxx.Exodus.2.4",
+        "period": "hellenistic",
+        "score": 0.478
+      },
+      {
+        "query": "He wanders west as far as Memphis, a solitary migrant upon that flat and pastoral landscape",
+        "greek": "Βάδιζε ὑγιαίνων. μετὰ δὲ τὰς",
+        "source": "lxx.Exodus.2.4",
+        "period": "hellenistic",
+        "score": 0.468
+      },
+      {
+        "query": "Blacks in the fields, lank and stooped, their fingers spiderlike among the bolls of cotton",
+        "greek": "τὰ δὲ ὑπολειπόμενα ἔδεται τὰ ἄγρια θηρία.",
+        "source": "lxx.Exodus.2.23",
+        "period": "hellenistic",
+        "score": 0.6
+      },
+      {
+        "query": "Blacks in the fields, lank and stooped, their fingers spiderlike among the bolls of cotton",
+        "greek": "ὑπολειπόμενα ἔδεται τὰ ἄγρια θηρία.",
+        "source": "lxx.Exodus.2.23",
+        "period": "hellenistic",
+        "score": 0.599
+      },
+      {
+        "query": "Blacks in the fields, lank and stooped, their fingers spiderlike among the bolls of cotton",
+        "greek": "ἄνδρα ἕνα κατὰ φυλήν.",
+        "source": "lxx.Deuteronomium.5.1",
+        "period": "hellenistic",
+        "score": 0.591
+      },
+      {
+        "query": "A lone dark husbandman pursuing mule and harrow down the rainblown bottomland toward night",
+        "greek": "ὁ ἄνθρωπος παρ’ ᾧ ἂν εὑρεθῇ τὸ κόνδηυ,",
+        "source": "lxx.Genesis.1.44",
+        "period": "hellenistic",
+        "score": 0.466
+      },
+      {
+        "query": "A lone dark husbandman pursuing mule and harrow down the rainblown bottomland toward night",
+        "greek": "κύριος βάδιζε κατάβηθι,",
+        "source": "lxx.Exodus.2.19",
+        "period": "hellenistic",
+        "score": 0.449
+      },
+      {
+        "query": "A lone dark husbandman pursuing mule and harrow down the rainblown bottomland toward night",
+        "greek": "Βάδιζε ὑγιαίνων. μετὰ",
+        "source": "lxx.Exodus.2.4",
+        "period": "hellenistic",
+        "score": 0.426
+      }
+    ]
+  }
+}

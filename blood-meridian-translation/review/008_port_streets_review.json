@@ -1,0 +1,88 @@
+{
+  "passage_id": "008_port_streets",
+  "greek_length": 164,
+  "grammar": {
+    "issues": [],
+    "issue_count": 0,
+    "warnings": 0
+  },
+  "retrieval": {
+    "register": {
+      "dominant_period": "classical",
+      "neighbours": [
+        "classical/herodotus.histories.hdt..6.12.1",
+        "classical/herodotus.histories.hdt..1.119.7",
+        "imperial/plutarch.demetrius.plut..demetr..9.4",
+        "classical/herodotus.histories.hdt..2.25.1",
+        "hellenistic/lxx.Osee.36.11"
+      ],
+      "assessment": "mostly classical",
+      "issues": []
+    },
+    "lexical_suggestions": [
+      {
+        "query": "He takes as pay from a farmer an aged mule and aback this animal in the spring of the year eighteen and forty-nine he rides up through the latterday republic of Fredonia into the town of Nacogdoches",
+        "greek": "εἴκοσι, καμήλους θηλαζούσας καὶ",
+        "source": "lxx.Genesis.1.32",
+        "period": "hellenistic",
+        "score": 0.576
+      },
+      {
+        "query": "He takes as pay from a farmer an aged mule and aback this animal in the spring of the year eighteen and forty-nine he rides up through the latterday republic of Fredonia into the town of Nacogdoches",
+        "greek": "εἴκοσι, καμήλους θηλαζούσας",
+        "source": "lxx.Genesis.1.32",
+        "period": "hellenistic",
+        "score": 0.574
+      },
+      {
+        "query": "He takes as pay from a farmer an aged mule and aback this animal in the spring of the year eighteen and forty-nine he rides up through the latterday republic of Fredonia into the town of Nacogdoches",
+        "greek": "ἄνδρες γὰρ κτηνοτρόφοι ἦσαν·",
+        "source": "lxx.Genesis.1.46",
+        "period": "hellenistic",
+        "score": 0.559
+      },
+      {
+        "query": "A week and he is on the move again, a few dollars in his purse that he's earned, walking the sand roads of the southern night alone, his hands balled in the cotton pockets of his cheap coat",
+        "greek": "Βάδιζε ὑγιαίνων. μετὰ",
+        "source": "lxx.Exodus.2.4",
+        "period": "hellenistic",
+        "score": 0.652
+      },
+      {
+        "query": "A week and he is on the move again, a few dollars in his purse that he's earned, walking the sand roads of the southern night alone, his hands balled in the cotton pockets of his cheap coat",
+        "greek": "κύριος βάδιζε κατάβηθι,",
+        "source": "lxx.Exodus.2.19",
+        "period": "hellenistic",
+        "score": 0.647
+      },
+      {
+        "query": "A week and he is on the move again, a few dollars in his purse that he's earned, walking the sand roads of the southern night alone, his hands balled in the cotton pockets of his cheap coat",
+        "greek": "δὲ αὐτῷ κύριος βάδιζε κατάβηθι,",
+        "source": "lxx.Exodus.2.19",
+        "period": "hellenistic",
+        "score": 0.631
+      },
+      {
+        "query": "He sees a parricide hanged in a crossroads hamlet and the man's friends run forward and pull his legs and he hangs dead from his rope while urine darkens his trousers",
+        "greek": "τοὺς νεκρούς. ἔστιν γὰρ βδέλυγμα",
+        "source": "lxx.Deuteronomium.5.18",
+        "period": "hellenistic",
+        "score": 0.562
+      },
+      {
+        "query": "He sees a parricide hanged in a crossroads hamlet and the man's friends run forward and pull his legs and he hangs dead from his rope while urine darkens his trousers",
+        "greek": "λέγων ᾿Εξάγαγε τὸν κατάρασά. μένον ἔξω",
+        "source": "lxx.Leviticus.3.24",
+        "period": "hellenistic",
+        "score": 0.524
+      },
+      {
+        "query": "He sees a parricide hanged in a crossroads hamlet and the man's friends run forward and pull his legs and he hangs dead from his rope while urine darkens his trousers",
+        "greek": "θανατούσθωσαν ὁ μοιχεύων",
+        "source": "lxx.Leviticus.3.20",
+        "period": "hellenistic",
+        "score": 0.52
+      }
+    ]
+  }
+}

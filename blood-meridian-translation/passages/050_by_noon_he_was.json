@@ -1,0 +1,58 @@
+{
+  "id": "050_by_noon_he_was",
+  "chapter": "II",
+  "title": "by noon he was",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "By noon he was on the prairie again and the dust to the north was stretched out along the edge of the earth. By evening the first of a drove of cattle came into view. Rangy vicious beasts with enormous hornspreads. That night he sat in the herders' camp and ate beans and pilotbread and heard of life on the trail.\n\nThey were coming down from Abilene, forty days out, headed for the markets in Louisiana. Followed by packs of wolves, coyotes, indians. Cattle groaned about them for miles in the dark.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "By noon he was on the prairie again and the dust to the north was stretched out along the edge of the earth.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "By evening the first of a drove of cattle came into view.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "Rangy vicious beasts with enormous hornspreads.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "That night he sat in the herders' camp and ate beans and pilotbread and heard of life on the trail.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "They were coming down from Abilene, forty days out, headed for the markets in Louisiana.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "Followed by packs of wolves, coyotes, indians.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "Cattle groaned about them for miles in the dark.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 7,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    314
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "069_it_was_nowhere_in",
+  "chapter": "II",
+  "title": "it was nowhere in",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "It was nowhere in sight. The mission occupied eight or ten ares of enclosed land, a barren purlieu that held a few goats and burros. In the mud walls of the enclosure were cribs inhabited by families of squatters and a few cookfires smoked thinly in the sun. He walked around the side of the church and entered the sacristy. Buzzards shuffled off through the chaff and plaster like enormous yardfowl. The domed vaults overhead were clotted with a dark furred mass that shifted and breathed and chittered. In the room was a wooden table with a few clay pots and along the back wall lay the remains of several bodies, one a child. He went on through the sacristy into the church again and got his saddle. He drank the rest of the bottle and he put the saddle on his shoulder and went out.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "It was nowhere in sight.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 1,
+      "text": "The mission occupied eight or ten ares of enclosed land, a barren purlieu that held a few goats and burros.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "In the mud walls of the enclosure were cribs inhabited by families of squatters and a few cookfires smoked thinly in the sun.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "He walked around the side of the church and entered the sacristy.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "Buzzards shuffled off through the chaff and plaster like enormous yardfowl.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "The domed vaults overhead were clotted with a dark furred mass that shifted and breathed and chittered.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "In the room was a wooden table with a few clay pots and along the back wall lay the remains of several bodies, one a child.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "He went on through the sacristy into the church again and got his saddle.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "He drank the rest of the bottle and he put the saddle on his shoulder and went out.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 9,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": []
+}

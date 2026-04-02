@@ -1,0 +1,41 @@
+{
+  "id": "033_now_come_days_of",
+  "chapter": "II",
+  "title": "now come days of",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "Now come days of begging, days of theft. Days of riding where there rode no soul save he. He's left behind the pinewood country and the evening sun declines before him beyond an endless swale and dark falls here like a thunderclap and a cold wind sets the weeds to gnashing. The night sky lies so sprent with stars that there is scarcely space of black at all and they fall all night in bitter arcs and it is so that their numbers are no less.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "Now come days of begging, days of theft.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "Days of riding where there rode no soul save he.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "He's left behind the pinewood country and the evening sun declines before him beyond an endless swale and dark falls here like a thunderclap and a cold wind sets the weeds to gnashing.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "The night sky lies so sprent with stars that there is scarcely space of black at all and they fall all night in bitter arcs and it is so that their numbers are no less.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 4,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": []
+}

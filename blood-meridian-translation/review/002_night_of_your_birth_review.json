@@ -1,0 +1,88 @@
+{
+  "passage_id": "002_night_of_your_birth",
+  "greek_length": 25,
+  "grammar": {
+    "issues": [],
+    "issue_count": 0,
+    "warnings": 0
+  },
+  "retrieval": {
+    "register": {
+      "dominant_period": "classical",
+      "neighbours": [
+        "classical/xenophon.anabasis.xen..anab..3.2.38",
+        "classical/herodotus.histories.hdt..1.96.1",
+        "classical/herodotus.histories.hdt..1.43.1",
+        "hellenistic/lxx.Isaias.48.21",
+        "classical/xenophon.anabasis.xen..anab..6.1.12"
+      ],
+      "assessment": "strongly classical",
+      "issues": []
+    },
+    "lexical_suggestions": [
+      {
+        "query": "I looked for blackness, holes in the heavens",
+        "greek": "Αἰγύπτου, ψηλαφητὸν σκότος.",
+        "source": "lxx.Exodus.2.10",
+        "period": "hellenistic",
+        "score": 0.656
+      },
+      {
+        "query": "I looked for blackness, holes in the heavens",
+        "greek": "σκοτινὸς μέγας ἐπιπίτει",
+        "source": "lxx.Genesis.1.15",
+        "period": "hellenistic",
+        "score": 0.628
+      },
+      {
+        "query": "I looked for blackness, holes in the heavens",
+        "greek": "τὸ σπήλαιον ὃ ἦν αὐτῷ,",
+        "source": "lxx.Genesis.1.23",
+        "period": "hellenistic",
+        "score": 0.619
+      },
+      {
+        "query": "The Leonids they were called",
+        "greek": "ἦσαν υἱοὶ Χεττούρας.",
+        "source": "lxx.Genesis.1.25",
+        "period": "hellenistic",
+        "score": 0.612
+      },
+      {
+        "query": "The Leonids they were called",
+        "greek": "Κάδης, βασιλέα Ζακάχ, βασιλέα Μαρεδὼθ",
+        "source": "lxx.Josue.6.12",
+        "period": "hellenistic",
+        "score": 0.598
+      },
+      {
+        "query": "The Leonids they were called",
+        "greek": "ἐγέννησεν τὴν ῾Ρεβέκκαν. ὀκτὼ",
+        "source": "lxx.Genesis.1.22",
+        "period": "hellenistic",
+        "score": 0.575
+      },
+      {
+        "query": "God how the stars did fall",
+        "greek": "ὁ θεός. πορευόμενα ἐπορεύθη τὰ",
+        "source": "lxx.Judices.8.9",
+        "period": "hellenistic",
+        "score": 0.658
+      },
+      {
+        "query": "God how the stars did fall",
+        "greek": "οὑ ἦν ὁ θεός.",
+        "source": "lxx.Exodus.2.20",
+        "period": "hellenistic",
+        "score": 0.656
+      },
+      {
+        "query": "God how the stars did fall",
+        "greek": "ἐποίησεν Κύριος ὁ θεός.",
+        "source": "lxx.Genesis.1.3",
+        "period": "hellenistic",
+        "score": 0.653
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "passage": "He did so because it was his trade and yet he did little of it for there were few travelers in that place. So that he fell into the habit before long of dressing himself as an indian and taking up station a few miles above his shop and waiting there by the roadside to ask whoever should come that way if they would give him money. At this time he had done no person any injury.",
+  "tier_a": "ἐποίει δὲ ταῦτα ὅτι ἦν αὐτοῦ ἡ τέχνη καίτοι ὀλίγα ἔπραττεν οὐ γὰρ ἦσαν πολλοὶ ὁδοιπόροι ἐν τῷ τόπῳ ἐκείνῳ. ὥστε εἴθιστο οὐ διὰ μακροῦ σκευάζειν ἑαυτὸν ὡς Ἰνδὸν καὶ καταστὰς σταδίους τινὰς ὑπὲρ τοῦ ἐργαστηρίου παρὰ τὴν ὁδὸν ἐκαραδόκει αἰτῆσαι τὸν ἂν παριόντα εἴ τι δοίη αὐτῷ ἀργύριον. τέως δὲ οὐδένα ἠδίκησεν.",
+  "tier_b": "οὕτως ἐποίει· τέχνη γὰρ αὐτοῦ ἦν καὶ ὅμως ὀλίγα ἔπραττεν· ὀλίγοι γὰρ ὁδοιπόροι ἐν τῷ χωρίῳ. ὥστε οὐ διὰ πολλοῦ εἰώθει ἑαυτὸν ὡς βάρβαρον σκευάζειν καὶ στάσιν λαμβάνειν σταδίους τινὰς ὑπὲρ τοῦ ἐργαστηρίου καὶ παρὰ τὴν ὁδὸν μένειν αἰτῶν τοὺς παριόντας ἀργύριον. τότε δὲ οὐδένα πω ἠδίκει.",
+  "tier_c": "Οὕτω δὲ ἔπραττε διὰ τὸ τέχνην αὐτῷ εἶναι καίτοι ὀλίγα ἐργαζόμενος· ὀλίγοι γὰρ ὁδοιπόροι ἐν τῷ χώρῳ. Ὥστε οὐ διὰ μακροῦ εἴθιστο Ἰνδοῦ σχῆμα λαμβάνειν καὶ χώραν καταλαμβάνειν σταδίους τινὰς ὑπὲρ τοῦ ἐργαστηρίου καὶ παρὰ τὴν ὁδὸν μένειν ἐρωτῶν τοὺς παριόντας εἰ ἀργυρίου μεταδοῖεν. Τότε δὲ οὐδένα πω ἠδικήκει.",
+  "tier_b_draft": "οὕτως ἐποίει ὅτι τέχνη αὐτοῦ ἦν καὶ ὅμως ὀλίγα ἔπραττεν· ὀλίγοι γὰρ ὁδοιπόροι ἐν τῷ χωρίῳ. ὥστε οὐ διὰ πολλοῦ εἰώθει ἑαυτὸν ὡς βάρβαρον σκευάζειν καὶ σταθμὸν λαμβάνειν σταδίους τινὰς ὑπὲρ τοῦ ἐργαστηρίου καὶ παρὰ τὴν ὁδὸν μένειν αἰτῶν τοὺς παριόντας εἴ τις αὐτῷ ἀργύριον δοίη. τότε δὲ οὐδένα πω ἠδίκει.",
+  "tier_c_draft": "Οὕτω δὲ ἔπραττε διὰ τὸ τέχνην αὐτῷ εἶναι καίτοι ὀλίγα ἐργαζόμενος· ὀλίγοι γὰρ ὁδοιπόροι ἐν τῷ χώρῳ. Ὥστε οὐ διὰ μακροῦ εἴθιστο ὡς Ἰνδὸς σκευάζεσθαι καὶ σταθμὸν λαμβάνειν σταδίους τινὰς ὑπὲρ τοῦ ἐργαστηρίου καὶ παρὰ τὴν ὁδὸν μένειν ἐρωτῶν τοὺς παριόντας εἴ τι ἀργύριον δοῖεν. Τότε δὲ οὐδένα πω ἠδικήκει.",
+  "tier_b_sonnet_issues": [
+    {
+      "greek": "οὕτως ἐποίει ὅτι τέχνη αὐτοῦ ἦν",
+      "problem": "OVER-SUBORDINATION: McCarthy's simple coordination 'He did so because it was his trade' becomes subordinated with ὅτι",
+      "fix": "οὕτως ἐποίει· τέχνη γὰρ αὐτοῦ ἦν"
+    },
+    {
+      "greek": "σταθμὸν λαμβάνειν",
+      "problem": "WRONG SENSE: σταθμός means 'quarters/camp' not 'taking up station/position'",
+      "fix": "στάσιν λαμβάνειν or χώραν καταλαμβάνειν"
+    },
+    {
+      "greek": "αἰτῶν τοὺς παριόντας εἴ τις αὐτῷ ἀργύριον δοίη",
+      "problem": "UNIDIOMATIC GREEK: This construction awkwardly calques English 'asking if they would give'. Greek would use direct construction",
+      "fix": "αἰτῶν τοὺς παριόντας ἀργύριον or ἐρωτῶν τοὺς παριόντας χρήματα"
+    }
+  ],
+  "tier_c_sonnet_issues": [
+    {
+      "greek": "ὡς Ἰνδὸς σκευάζεσθαι",
+      "problem": "UNIDIOMATIC GREEK: This is a calque from English 'dressing himself as an Indian'. Greek would more naturally express this as assuming the appearance or guise of an Indian",
+      "fix": "Ἰνδοῦ σχῆμα λαμβάνειν or Ἰνδῷ ὁμοιοῦσθαι"
+    },
+    {
+      "greek": "σταθμὸν λαμβάνειν",
+      "problem": "WRONG SENSE: σταθμός primarily means 'quarters' or 'station' in a military sense, not taking up position for ambush or begging",
+      "fix": "χώραν καταλαμβάνειν or ἵστασθαι"
+    },
+    {
+      "greek": "εἴ τι ἀργύριον δοῖεν",
+      "problem": "UNIDIOMATIC GREEK: This construction is too direct a calque from English 'if they would give him money'. Greek would use a more natural expression for asking for money",
+      "fix": "εἰ βούλοιντο ἀργύριόν τι διδόναι or εἰ ἀργυρίου μεταδοῖεν"
+    }
+  ],
+  "tier_c_polysemy": []
+}

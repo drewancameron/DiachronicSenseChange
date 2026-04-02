@@ -1,0 +1,113 @@
+{
+  "passage_id": "009_reverend_green_tent",
+  "greek_length": 180,
+  "grammar": {
+    "issues": [
+      {
+        "type": "preposition_case",
+        "severity": "warning",
+        "position": 36,
+        "word": "εἷς",
+        "context": "τόπος εἷς ἢ δύο, καὶ",
+        "message": "εἰς + αἰτ. but article looks nominative"
+      },
+      {
+        "type": "glossary_missing",
+        "severity": "info",
+        "message": "English has 'the kid' but Greek lacks ὁ παῖς / ὁ μικρός — intentional?"
+      },
+      {
+        "type": "register_drift",
+        "severity": "info",
+        "message": "few Koine/classical neighbours (1/5) — register may be drifting. Target is Koine structure with Attic vocabulary."
+      }
+    ],
+    "issue_count": 3,
+    "warnings": 1
+  },
+  "retrieval": {
+    "register": {
+      "dominant_period": "imperial",
+      "neighbours": [
+        "imperial/plutarch.sertorius.plut..sert.21.2",
+        "imperial/plutarch.caesar.plut..caes..10.2",
+        "imperial/plutarch.pyrrhus.plut.pyrrh..16.10",
+        "classical/thucydides.peleponnesian_war.thuc..pele..8.93.1",
+        "imperial/plutarch.cimon.plut..cim..4.4"
+      ],
+      "assessment": "strongly imperial",
+      "issues": [
+        {
+          "type": "register_drift",
+          "severity": "info",
+          "message": "few Koine/classical neighbours (1/5) — register may be drifting. Target is Koine structure with Attic vocabulary."
+        }
+      ]
+    },
+    "lexical_suggestions": [
+      {
+        "query": "When the kid ducked into the ratty canvas tent there was standing room along the walls, a place or two, and such a heady reek of the wet and bathless that they themselves would sally forth into the downpour now and again for fresh air before the rain drove them in again",
+        "greek": "ὅτι στεῖρα ετεκεν ἔπτα,",
+        "source": "lxx.Regnorum_I.11.2",
+        "period": "hellenistic",
+        "score": 0.564
+      },
+      {
+        "query": "When the kid ducked into the ratty canvas tent there was standing room along the walls, a place or two, and such a heady reek of the wet and bathless that they themselves would sally forth into the downpour now and again for fresh air before the rain drove them in again",
+        "greek": "ἦν στεῖρα. καὶ",
+        "source": "lxx.Genesis.1.29",
+        "period": "hellenistic",
+        "score": 0.559
+      },
+      {
+        "query": "When the kid ducked into the ratty canvas tent there was standing room along the walls, a place or two, and such a heady reek of the wet and bathless that they themselves would sally forth into the downpour now and again for fresh air before the rain drove them in again",
+        "greek": "καταλιμπάνει τὰ ἱμάτια παρ’ ἑαυτῇ",
+        "source": "lxx.Genesis.1.39",
+        "period": "hellenistic",
+        "score": 0.55
+      },
+      {
+        "query": "The Reverend Green had been playing to a full house daily as long as the rain had been falling and the rain had been falling for two weeks",
+        "greek": "λίθος ὁ πράσινος.",
+        "source": "lxx.Genesis.1.2",
+        "period": "hellenistic",
+        "score": 0.483
+      },
+      {
+        "query": "The Reverend Green had been playing to a full house daily as long as the rain had been falling and the rain had been falling for two weeks",
+        "greek": "λίθος ὁ πράσινος. καὶ",
+        "source": "lxx.Genesis.1.2",
+        "period": "hellenistic",
+        "score": 0.481
+      },
+      {
+        "query": "The Reverend Green had been playing to a full house daily as long as the rain had been falling and the rain had been falling for two weeks",
+        "greek": "καὶ ὁ λίθος ὁ πράσινος.",
+        "source": "lxx.Genesis.1.2",
+        "period": "hellenistic",
+        "score": 0.467
+      },
+      {
+        "query": "Neighbors, said the reverend, he couldnt stay out of these here hell, hell, hellholes right here in Nacogdoches",
+        "greek": "πλησίον σου, καὶ οὐ λήμψῃ δι’ αὐτὸν ἁμαρτίαν.",
+        "source": "lxx.Leviticus.3.19",
+        "period": "hellenistic",
+        "score": 0.581
+      },
+      {
+        "query": "Neighbors, said the reverend, he couldnt stay out of these here hell, hell, hellholes right here in Nacogdoches",
+        "greek": "σωτηρίου ἣν προσοίσουσιν Κυρίῳ.",
+        "source": "lxx.Leviticus.3.7",
+        "period": "hellenistic",
+        "score": 0.567
+      },
+      {
+        "query": "Neighbors, said the reverend, he couldnt stay out of these here hell, hell, hellholes right here in Nacogdoches",
+        "greek": "Κύριος ’ιδοὺ τόπος παρ’",
+        "source": "lxx.Exodus.2.33",
+        "period": "hellenistic",
+        "score": 0.563
+      }
+    ]
+  }
+}

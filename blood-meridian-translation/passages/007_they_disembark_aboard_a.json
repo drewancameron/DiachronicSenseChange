@@ -1,0 +1,73 @@
+{
+  "id": "007_they_disembark_aboard_a",
+  "chapter": "I",
+  "title": "they disembark aboard a",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "They disembark aboard a lighter, settlers with their chattels, all studying the low coastline, the thin bight of sand and scrub pine swimming in the haze.\n\nHe walks through the narrow streets of the port. The air smells of salt and newsawn lumber. At night whores call to him from the dark like souls in want. A week and he is on the move again, a few dollars in his purse that he's earned, walking the sand roads of the southern night alone, his hands balled in the cotton pockets of his cheap coat. Earthen causeways across the marshland. Egrets in their rookeries white as candles among the moss. The wind has a raw edge to it and leaves lope by the roadside and skelter on in the night fields. He moves north through small settlements and farms, working for day wages and found. He sees a parricide hanged in a crossroads hamlet and the man's friends run forward and pull his legs and he hangs dead from his rope while urine darkens his trousers.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "They disembark aboard a lighter, settlers with their chattels, all studying the low coastline, the thin bight of sand and scrub pine swimming in the haze.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "He walks through the narrow streets of the port.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "The air smells of salt and newsawn lumber.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "At night whores call to him from the dark like souls in want.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "A week and he is on the move again, a few dollars in his purse that he's earned, walking the sand roads of the southern night alone, his hands balled in the cotton pockets of his cheap coat.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "Earthen causeways across the marshland.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 6,
+      "text": "Egrets in their rookeries white as candles among the moss.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "The wind has a raw edge to it and leaves lope by the roadside and skelter on in the night fields.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "He moves north through small settlements and farms, working for day wages and found.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "He sees a parricide hanged in a crossroads hamlet and the man's friends run forward and pull his legs and he hangs dead from his rope while urine darkens his trousers.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 10,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    154
+  ]
+}

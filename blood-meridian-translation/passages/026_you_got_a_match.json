@@ -1,0 +1,97 @@
+{
+  "id": "026_you_got_a_match",
+  "chapter": "I",
+  "title": "you got a match",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "You got a match?\n\nThe kid searched his pockets and came up with a crushed and stained wooden box.\n\nThe man took it from him. Need a little tinder here, he said. He was crumbling the box and stacking the bits against the door. He struck a match and set the pieces alight. He pushed the little pile of burning wood under the door and added more matches.\n\nIs he in there? said the boy.\n\nThat's what we're fixin to see.\n\nA dark curl of smoke rose, a blue flame of burning varnish. They squatted in the hallway and watched. Thin flames began to run up over the panels and dart back again. The watchers looked like forms excavated from a bog.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "You got a match?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 1,
+      "text": "The kid searched his pockets and came up with a crushed and stained wooden box.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "The man took it from him.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "Need a little tinder here, he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "He was crumbling the box and stacking the bits against the door.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "He struck a match and set the pieces alight.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "He pushed the little pile of burning wood under the door and added more matches.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "Is he in there?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 8,
+      "text": "said the boy.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "That's what we're fixin to see.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 10,
+      "text": "A dark curl of smoke rose, a blue flame of burning varnish.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "They squatted in the hallway and watched.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 12,
+      "text": "Thin flames began to run up over the panels and dart back again.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 13,
+      "text": "The watchers looked like forms excavated from a bog.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 14,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    16,
+    97,
+    351,
+    382,
+    415
+  ]
+}

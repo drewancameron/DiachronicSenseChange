@@ -1,0 +1,41 @@
+{
+  "passage": "He did so because it was his trade and yet he did little of it for there were few travelers in that place. So that he fell into the habit before long of dressing himself as an indian and taking up station a few miles above his shop and waiting there by the roadside to ask whoever should come that way if they would give him money. At this time he had done no person any injury.",
+  "draft": "οὕτως ἐποίει ὅτι τέχνη αὐτοῦ ἦν καὶ ὅμως ὀλίγα ἔπραττεν· ὀλίγοι γὰρ ὁδοιπόροι ἐν τῷ τόπῳ ἐκείνῳ. ὥστε οὐ διὰ μακροῦ εἰς ἔθος κατέστη ἑαυτὸν ὡς βάρβαρον σκευάζειν καὶ στάσιν λαμβάνειν σταδίους τινὰς ὑπὲρ τοῦ ἐργαστηρίου καὶ παρὰ τὴν ὁδὸν μένειν ἐρωτῶν εἴ τις παρέλθοι εἰ δοίη αὐτῷ ἀργύριον. τότε δὲ οὐδένα πω ἠδίκησεν.",
+  "pass1": "οὕτως ἐποίει· τέχνη γὰρ αὐτοῦ ἦν καὶ ὅμως ὀλίγα ἔπραττεν· ὀλίγοι γὰρ ὁδοιπόροι ἦσαν ἐν τῷ τόπῳ ἐκείνῳ. ὥστε οὐ διὰ μακροῦ εἰς ἔθος κατέστη ἑαυτὸν ὡς βάρβαρον σκευάζειν καὶ καθίστασθαι σταδίους τινὰς ὑπὲρ τοῦ ἐργαστηρίου καὶ παρὰ τὴν ὁδὸν μένειν ἐρωτῶν τοὺς παριόντας εἰ δοίησαν αὐτῷ ἀργύριον. τότε δὲ οὐδένα πω ἠδίκησεν.",
+  "pass2": "οὕτως ἐποίει· τέχνη γὰρ αὐτοῦ ἦν καὶ ὅμως ὀλίγα ἔπραττεν· ὀλίγοι γὰρ ὁδοιπόροι ἦσαν ἐν τῷ τόπῳ ἐκείνῳ. ὥστε οὐ διὰ μακροῦ εἰς ἔθος κατέστη ἑαυτὸν ὡς βάρβαρον ἀμφιέννυσθαι καὶ καθίστασθαι σταδίους τινὰς ὑπὲρ τοῦ καπηλείου καὶ παρὰ τὴν ὁδὸν μένειν ἐρωτῶν τοὺς παριόντας εἰ δοίησαν αὐτῷ ἀργύριον. τότε δὲ οὐδένα πω ἠδίκησεν.",
+  "pass1_sonnet_issues": [
+    {
+      "greek": "οὕτως ἐποίει ὅτι τέχνη αὐτοῦ ἦν",
+      "problem": "OVER-SUBORDINATION: McCarthy's simple coordination 'He did so because it was his trade' becomes subordinated with ὅτι",
+      "fix": "οὕτως ἐποίει· τέχνη γὰρ αὐτοῦ ἦν"
+    },
+    {
+      "greek": "στάσιν λαμβάνειν",
+      "problem": "UNIDIOMATIC GREEK: 'taking up station' calqued as στάσιν λαμβάνειν - this is not idiomatic Greek",
+      "fix": "ἵστασθαι or καθίστασθαι"
+    },
+    {
+      "greek": "ἐρωτῶν εἴ τις παρέλθοι εἰ δοίη",
+      "problem": "UNIDIOMATIC GREEK: Double εἰ construction is awkward - first should be relative construction",
+      "fix": "ἐρωτῶν τοὺς παριόντας εἰ δοίησαν"
+    },
+    {
+      "greek": "ὀλίγοι γὰρ ὁδοιπόροι ἐν τῷ τόπῳ ἐκείνῳ",
+      "problem": "UNIDIOMATIC GREEK: Missing verb creates incomplete sentence fragment",
+      "fix": "ὀλίγοι γὰρ ὁδοιπόροι ἦσαν ἐν τῷ τόπῳ ἐκείνῳ"
+    }
+  ],
+  "pass2_sonnet_issues": [
+    {
+      "greek": "σκευάζειν",
+      "problem": "Wrong sense chosen - means 'to prepare/equip' but used here for 'dress/costume oneself'",
+      "fix": "ἀμφιέννυσθαι or στολίζειν"
+    },
+    {
+      "greek": "ἐργαστηρίου",
+      "problem": "Anachronistic - this form is more Hellenistic/later; classical would use simpler terms",
+      "fix": "καπηλείου or ἐργαστῆρος"
+    }
+  ],
+  "pass2_polysemy": []
+}

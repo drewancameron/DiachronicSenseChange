@@ -1,0 +1,56 @@
+{
+  "id": "061_a_great_hall_of",
+  "chapter": "II",
+  "title": "a great hall of",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "A great hall of a place. He swept in the corners where potted trees stood silent in the dark. He swept around the spittoons and he swept around the players at the table and he swept around the dog. He swept along the front of the bar and when he reached the place where the drinkers stood he straightened up and leaned on the broom and looked at them. They conferred silently among themselves and at last one took his glass from the bar and stepped away. The others followed. The kid swept past them to the door.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "A great hall of a place.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "He swept in the corners where potted trees stood silent in the dark.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "He swept around the spittoons and he swept around the players at the table and he swept around the dog.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "He swept along the front of the bar and when he reached the place where the drinkers stood he straightened up and leaned on the broom and looked at them.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "They conferred silently among themselves and at last one took his glass from the bar and stepped away.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "The others followed.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 6,
+      "text": "The kid swept past them to the door.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 7,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": []
+}

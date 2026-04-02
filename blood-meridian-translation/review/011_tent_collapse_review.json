@@ -1,0 +1,105 @@
+{
+  "passage_id": "011_tent_collapse",
+  "greek_length": 168,
+  "grammar": {
+    "issues": [
+      {
+        "type": "glossary_missing",
+        "severity": "info",
+        "message": "English has 'the kid' but Greek lacks ὁ παῖς / ὁ μικρός — intentional?"
+      },
+      {
+        "type": "register_drift",
+        "severity": "info",
+        "message": "few Koine/classical neighbours (1/5) — register may be drifting. Target is Koine structure with Attic vocabulary."
+      }
+    ],
+    "issue_count": 2,
+    "warnings": 0
+  },
+  "retrieval": {
+    "register": {
+      "dominant_period": "imperial",
+      "neighbours": [
+        "imperial/plutarch.alexander.plut.alex..51.2",
+        "imperial/plutarch.sulla.plut..sull.30.4",
+        "classical/thucydides.peleponnesian_war.thuc..pele..4.43.4",
+        "imperial/plutarch.artaxerxes.plut..art..21.1",
+        "imperial/plutarch.tiberius_gracchus.plut..tg.19.6"
+      ],
+      "assessment": "strongly imperial",
+      "issues": [
+        {
+          "type": "register_drift",
+          "severity": "info",
+          "message": "few Koine/classical neighbours (1/5) — register may be drifting. Target is Koine structure with Attic vocabulary."
+        }
+      ]
+    },
+    "lexical_suggestions": [
+      {
+        "query": "Already gunfire was general within the tent and a dozen exits had been hacked through the canvas walls and people were pouring out, women screaming, folk stumbling, folk trampled underfoot in the mud",
+        "greek": "μετὰ τοῦτο σφάξει ὁ ἱερεὺς τὸ ὁλοκαύτωμα.",
+        "source": "lxx.Leviticus.3.14",
+        "period": "hellenistic",
+        "score": 0.621
+      },
+      {
+        "query": "Already gunfire was general within the tent and a dozen exits had been hacked through the canvas walls and people were pouring out, women screaming, folk stumbling, folk trampled underfoot in the mud",
+        "greek": "σφάζουσιν τὰ ὁλοκαυτώματα.",
+        "source": "lxx.Leviticus.3.4",
+        "period": "hellenistic",
+        "score": 0.614
+      },
+      {
+        "query": "Already gunfire was general within the tent and a dozen exits had been hacked through the canvas walls and people were pouring out, women screaming, folk stumbling, folk trampled underfoot in the mud",
+        "greek": "σφάξει ὁ ἱερεὺς τὸ ὁλοκαύτωμα.",
+        "source": "lxx.Leviticus.3.14",
+        "period": "hellenistic",
+        "score": 0.607
+      },
+      {
+        "query": "As they did so the tent began to sway and buckle and like a huge and wounded medusa it slowly settled to the ground trailing tattered canvas walls and ratty guyropes over the ground",
+        "greek": "ἐνεποδίσθησαν πτέρναι ἵππου,",
+        "source": "lxx.Judices.8.5",
+        "period": "hellenistic",
+        "score": 0.577
+      },
+      {
+        "query": "As they did so the tent began to sway and buckle and like a huge and wounded medusa it slowly settled to the ground trailing tattered canvas walls and ratty guyropes over the ground",
+        "greek": "καταρώμενοί σε κεκατήρανται.",
+        "source": "lxx.Numeri.4.24",
+        "period": "hellenistic",
+        "score": 0.576
+      },
+      {
+        "query": "As they did so the tent began to sway and buckle and like a huge and wounded medusa it slowly settled to the ground trailing tattered canvas walls and ratty guyropes over the ground",
+        "greek": "δυνατή. τότε ἐνεποδίσθησαν πτέρναι ἵππου,",
+        "source": "lxx.Judices.8.5",
+        "period": "hellenistic",
+        "score": 0.557
+      },
+      {
+        "query": "They stood up to the bar and ordered whiskeys and the kid laid his money down but the barman pushed it back with his thumb and nodded",
+        "greek": "ἔδωκεν τὸ ποτήριον εἰς τὴν χεῖρα Φαραώ.",
+        "source": "lxx.Genesis.1.40",
+        "period": "hellenistic",
+        "score": 0.514
+      },
+      {
+        "query": "They stood up to the bar and ordered whiskeys and the kid laid his money down but the barman pushed it back with his thumb and nodded",
+        "greek": "ἔδωκεν τὸ ποτήριον εἰς τὴν χεῖρα Φαραώ. τὀν",
+        "source": "lxx.Genesis.1.40",
+        "period": "hellenistic",
+        "score": 0.49
+      },
+      {
+        "query": "They stood up to the bar and ordered whiskeys and the kid laid his money down but the barman pushed it back with his thumb and nodded",
+        "greek": "τὴν τράπεζαν τὴν καθαρὰν ἔναντι κυρίου.",
+        "source": "lxx.Leviticus.3.24",
+        "period": "hellenistic",
+        "score": 0.466
+      }
+    ]
+  }
+}

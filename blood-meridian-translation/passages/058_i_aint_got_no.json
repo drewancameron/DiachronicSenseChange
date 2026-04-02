@@ -1,0 +1,133 @@
+{
+  "id": "058_i_aint_got_no",
+  "chapter": "II",
+  "title": "i aint got no",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "I aint got no money but I need a drink. I'll fetch out the slops or mop the floor or whatever.\n\nThe barman looked across the room to where two men were playing dominoes at a table. Abuelito, he said.\n\nThe older of the two raised his head.\n\nQue dice el muchacho.\n\nThe old man looked at the kid and turned back to his dominoes.\n\nThe barman shrugged his shoulders.\n\nThe kid turned to the old man. You speak american? he said.\n\nThe old man looked up from his play. He regarded the kid without expression.\n\nTell him I'll work for a drink. I aint got no money.\n\nThe old man thrust his chin and made a clucking noise with his tongue.\n\nThe kid looked at the barman.\n\nThe old man made a fist with the thumb pointing up and the little finger down and tilted his head back and tipped a phantom drink down his throat. Quiere hecharse una copa, he said. Pero no puede pagar.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "I aint got no money but I need a drink.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "I'll fetch out the slops or mop the floor or whatever.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "The barman looked across the room to where two men were playing dominoes at a table.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "Abuelito, he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "The older of the two raised his head.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "Que dice el muchacho.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 6,
+      "text": "The old man looked at the kid and turned back to his dominoes.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "The barman shrugged his shoulders.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 8,
+      "text": "The kid turned to the old man.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "You speak american?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 10,
+      "text": "he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "The old man looked up from his play.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 12,
+      "text": "He regarded the kid without expression.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 13,
+      "text": "Tell him I'll work for a drink.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 14,
+      "text": "I aint got no money.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 15,
+      "text": "The old man thrust his chin and made a clucking noise with his tongue.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 16,
+      "text": "The kid looked at the barman.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 17,
+      "text": "The old man made a fist with the thumb pointing up and the little finger down and tilted his head back and tipped a phantom drink down his throat.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 18,
+      "text": "Quiere hecharse una copa, he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 19,
+      "text": "Pero no puede pagar.",
+      "discourse_hint": "fragment"
+    }
+  ],
+  "sentence_count": 20,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    94,
+    199,
+    238,
+    261,
+    325,
+    361,
+    422,
+    500,
+    554,
+    626,
+    657
+  ]
+}

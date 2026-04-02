@@ -1,0 +1,101 @@
+{
+  "passage_id": "004_at_fourteen",
+  "title": "At fourteen he runs away",
+  "chapter": "I",
+  "korto_text": "Στα δεκατέσσερα το σκάει. Δε θα ξαναδεί ποτέ το παγερό κουζινόσπιτο στο σκοτάδι πριν φέξει. Τα καυσόξυλα, τις λεκάνες. Περιπλανιέται δυτικά ίσαμε το Μέμφις, ένας μοναχικός μετανάστης στο επίπεδο ποιμενικό τοπίο. Μαύροι στα χωράφια, σκυφτοί και λιπόσαρκοι, τα δάχτυλά τους σαν αράχνες μες στις κάψες του βαμβακιού. Οδύνη βαθιά σε μια σκιά του κήπου. Κόντρα στην κατάβαση του ήλιου μορφές προχωρούν στο αργοκίνητο σούρουπο με φόντο έναν ουρανό σαν χαρτί. Ένας μελαψός χωρικός που κυνηγάει μουλάρι και σβάρνα κάτω στη δαρμένη απ' τη βροχή χαμηλοράχη προς τη νύχτα.",
+  "korto_notes": [
+    {
+      "english": "runs away",
+      "korto": "το σκάει",
+      "note": "το σκάω = to bolt/run away (colloquial MG)"
+    },
+    {
+      "english": "a solitary migrant",
+      "korto": "ένας μοναχικός μετανάστης",
+      "note": "μετανάστης = migrant — same word in AG (μετανάστης)"
+    },
+    {
+      "english": "bolls of cotton",
+      "korto": "κάψες του βαμβακιού",
+      "note": "κάψες = pods/bolls; βαμβάκι = cotton"
+    },
+    {
+      "english": "A shadowed agony in the garden",
+      "korto": "Οδύνη βαθιά σε μια σκιά του κήπου",
+      "note": "οδύνη = agony/pain (learned MG, = AG ὀδύνη). Gethsemane allusion preserved."
+    },
+    {
+      "english": "husbandman",
+      "korto": "χωρικός",
+      "note": "χωρικός = peasant/farmer. For AG: γεωργός (farmer/husbandman, NT usage in parables)"
+    }
+  ],
+  "google_translate": {
+    "sentences": [
+      {
+        "index": 0,
+        "english": "At fourteen he runs away.",
+        "google_translate_el": "Στα δεκατέσσερα φεύγει τρέχοντας."
+      },
+      {
+        "index": 1,
+        "english": "He will not see again the freezing kitchenhouse in the predawn dark.",
+        "google_translate_el": "Δεν θα ξαναδεί την παγωμένη κουζίνα στο σκοτάδι πριν την αυγή."
+      },
+      {
+        "index": 2,
+        "english": "The firewood, the washpots.",
+        "google_translate_el": "Τα καυσόξυλα, οι πλύσεις."
+      },
+      {
+        "index": 3,
+        "english": "He wanders west as far as Memphis, a solitary migrant upon that flat and pastoral landscape.",
+        "google_translate_el": "Περιπλανιέται δυτικά μέχρι το Μέμφις, ένας μοναχικός μετανάστης σε αυτό το επίπεδο και ποιμενικό τοπίο."
+      },
+      {
+        "index": 4,
+        "english": "Blacks in the fields, lank and stooped, their fingers spiderlike among the bolls of cotton.",
+        "google_translate_el": "Μαύροι στα χωράφια, χοντροκομμένοι και σκυμμένοι, με τα δάχτυλά τους σαν αράχνη ανάμεσα στις βαμβακερές ράβδους."
+      },
+      {
+        "index": 5,
+        "english": "A shadowed agony in the garden.",
+        "google_translate_el": "Μια σκιερή αγωνία στον κήπο."
+      },
+      {
+        "index": 6,
+        "english": "Against the sun's declining figures moving in the slower dusk across a paper skyline.",
+        "google_translate_el": "Κόντρα στις φθίνουσες φιγούρες του ήλιου που κινούνται το πιο αργό σούρουπο σε έναν χάρτινο ορίζοντα."
+      },
+      {
+        "index": 7,
+        "english": "A lone dark husbandman pursuing mule and harrow down the rainblown bottomland toward night.",
+        "google_translate_el": "Ένας μοναχικός σκοτεινός γεωργός που κυνηγάει μουλάρι και σβάρνα στον βροχερό βυθό προς τη νύχτα."
+      }
+    ]
+  },
+  "idiom_notes": [
+    "το σκάω = to bolt/run away (colloquial MG)",
+    "μετανάστης = migrant — same word in AG (μετανάστης)",
+    "κάψες = pods/bolls; βαμβάκι = cotton",
+    "οδύνη = agony/pain (learned MG, = AG ὀδύνη). Gethsemane allusion preserved.",
+    "χωρικός = peasant/farmer. For AG: γεωργός (farmer/husbandman, NT usage in parables)"
+  ],
+  "vocabulary_harvest": [
+    {
+      "english": "a solitary migrant",
+      "korto_mg": "ένας μοναχικός μετανάστης",
+      "ag_hint": "μετανάστης = migrant — same word in AG (μετανάστης)"
+    },
+    {
+      "english": "A shadowed agony in the garden",
+      "korto_mg": "Οδύνη βαθιά σε μια σκιά του κήπου",
+      "ag_hint": "οδύνη = agony/pain (learned MG, = AG ὀδύνη). Gethsemane allusion preserved."
+    },
+    {
+      "english": "husbandman",
+      "korto_mg": "χωρικός",
+      "ag_hint": "χωρικός = peasant/farmer. For AG: γεωργός (farmer/husbandman, NT usage in parables)"
+    }
+  ]
+}

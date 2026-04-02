@@ -1,0 +1,46 @@
+{
+  "id": "055_he_went_down_a",
+  "chapter": "II",
+  "title": "he went down a",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "He went down a narrow sandy road and as he went he met a deadcart bound out with a load of corpses, a small bell tolling the way and a lantern swinging from the gate. Three men sat on the box not unlike the dead themselves or spirit folk so white they were with lime and nearly phosphorescent in the dusk. A pair of horses drew the cart and they went on up the road in a faint miasma of carbolic and passed from sight. He turned and watched them go. The naked feet of the dead jostled stiffly from side to side.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "He went down a narrow sandy road and as he went he met a deadcart bound out with a load of corpses, a small bell tolling the way and a lantern swinging from the gate.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "Three men sat on the box not unlike the dead themselves or spirit folk so white they were with lime and nearly phosphorescent in the dusk.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "A pair of horses drew the cart and they went on up the road in a faint miasma of carbolic and passed from sight.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "He turned and watched them go.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "The naked feet of the dead jostled stiffly from side to side.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 5,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": []
+}

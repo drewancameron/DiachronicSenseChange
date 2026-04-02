@@ -1,0 +1,100 @@
+{
+  "passage_id": "005_saint_louis",
+  "greek_length": 140,
+  "grammar": {
+    "issues": [
+      {
+        "type": "register_drift",
+        "severity": "info",
+        "message": "few Koine/classical neighbours (1/5) — register may be drifting. Target is Koine structure with Attic vocabulary."
+      }
+    ],
+    "issue_count": 1,
+    "warnings": 0
+  },
+  "retrieval": {
+    "register": {
+      "dominant_period": "imperial",
+      "neighbours": [
+        "imperial/plutarch.themistocles.plut..them.20.4",
+        "imperial/plutarch.camillus.plut..cam..16.2",
+        "imperial/plutarch.timoleon.plut..tim.35.2",
+        "classical/thucydides.peleponnesian_war.thuc..pele..8.48.7",
+        "imperial/plutarch.marcus_cato.plut..cat..ma..12.3"
+      ],
+      "assessment": "strongly imperial",
+      "issues": [
+        {
+          "type": "register_drift",
+          "severity": "info",
+          "message": "few Koine/classical neighbours (1/5) — register may be drifting. Target is Koine structure with Attic vocabulary."
+        }
+      ]
+    },
+    "lexical_suggestions": [
+      {
+        "query": "He lives in a room above a courtyard behind a tavern and he comes down at night like some fairybook beast to fight with the sailors",
+        "greek": "συνάγων με εἰς τὴν οἰκίαν. καί",
+        "source": "lxx.Judices.8.19",
+        "period": "hellenistic",
+        "score": 0.529
+      },
+      {
+        "query": "He lives in a room above a courtyard behind a tavern and he comes down at night like some fairybook beast to fight with the sailors",
+        "greek": "πρὸς Κύριον ὅλην τὴν νύκτα.",
+        "source": "lxx.Regnorum_I.11.15",
+        "period": "hellenistic",
+        "score": 0.528
+      },
+      {
+        "query": "He lives in a room above a courtyard behind a tavern and he comes down at night like some fairybook beast to fight with the sailors",
+        "greek": "εἶπεν πρὸς αὐτὸν Βόος ᾿Εκκλίνας κάθισον ὧδε,",
+        "source": "lxx.Ruth.10.4",
+        "period": "hellenistic",
+        "score": 0.507
+      },
+      {
+        "query": "Men from lands so far and queer that standing over them where they lie bleeding in the mud he feels mankind itself vindicated",
+        "greek": "οὐκ ἐπάξονται πρὸς ἑαυτοὺς ἁμαρτίαν,",
+        "source": "lxx.Exodus.2.28",
+        "period": "hellenistic",
+        "score": 0.615
+      },
+      {
+        "query": "Men from lands so far and queer that standing over them where they lie bleeding in the mud he feels mankind itself vindicated",
+        "greek": "θυσίαν ὀσμὴν εὐωδίας κυρίῳ.",
+        "source": "lxx.Leviticus.3.6",
+        "period": "hellenistic",
+        "score": 0.613
+      },
+      {
+        "query": "Men from lands so far and queer that standing over them where they lie bleeding in the mud he feels mankind itself vindicated",
+        "greek": "παρώξυναν οἱ ἄνθρωποι οὗτοι τὸν κύριον.",
+        "source": "lxx.Numeri.4.16",
+        "period": "hellenistic",
+        "score": 0.605
+      },
+      {
+        "query": "They break up the float and sell the lumber and he walks in the streets and hears tongues he has not heard before",
+        "greek": "αὐτό. εἶπεν δὲ αὐτῷ κύριος βάδιζε κατάβηθι,",
+        "source": "lxx.Exodus.2.19",
+        "period": "hellenistic",
+        "score": 0.534
+      },
+      {
+        "query": "They break up the float and sell the lumber and he walks in the streets and hears tongues he has not heard before",
+        "greek": "συκοφαντήσει ἕκαστος τὸν πλησίον.",
+        "source": "lxx.Leviticus.3.19",
+        "period": "hellenistic",
+        "score": 0.53
+      },
+      {
+        "query": "They break up the float and sell the lumber and he walks in the streets and hears tongues he has not heard before",
+        "greek": "ἤκουσεν τὰ ῥήματα ταῦτα,",
+        "source": "lxx.Regnorum_I.11.11",
+        "period": "hellenistic",
+        "score": 0.528
+      }
+    ]
+  }
+}

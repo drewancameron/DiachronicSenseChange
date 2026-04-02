@@ -1,18 +1,17 @@
 {
   "id": "002_night_of_your_birth",
   "chapter": "I",
-  "title": "Night of your birth",
+  "title": "night of your birth",
   "source_lines": [
-    3,
-    3
+    0,
+    0
   ],
   "discourse_types": [
-    "biblical",
-    "description"
+    "narrative"
   ],
-  "priority": 1,
-  "notes": "Father's voice, the Leonid meteor shower. Second-person address, fragmented syntax. Cosmological imagery — stars, holes in the heavens.",
-  "text": "Night of your birth. Thirty-three. The Leonids they were called. God how the stars did fall. I looked for blackness, holes in the heavens. The Dipper stove.",
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "Night of your birth. Thirty-three. The Leonids they were called. God how the stars did fall. I looked for blackness, holes in the heavens. The Dipper stove.\n\nThe mother dead these fourteen years did incubate in her own bosom the creature who would carry her off. The father never speaks her name, the child does not know it. He has a sister in this world that he will not see again. He watches, pale and unwashed. He can neither read nor write and in him broods already a taste for mindless violence. All history present in that visage, the child the father of the man.",
   "sentences": [
     {
       "index": 0,
@@ -32,20 +31,53 @@
     {
       "index": 3,
       "text": "God how the stars did fall.",
-      "discourse_hint": "fragment"
+      "discourse_hint": "narrative"
     },
     {
       "index": 4,
       "text": "I looked for blackness, holes in the heavens.",
-      "discourse_hint": "dialogue"
+      "discourse_hint": "narrative"
     },
     {
       "index": 5,
       "text": "The Dipper stove.",
       "discourse_hint": "fragment"
+    },
+    {
+      "index": 6,
+      "text": "The mother dead these fourteen years did incubate in her own bosom the creature who would carry her off.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "The father never speaks her name, the child does not know it.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "He has a sister in this world that he will not see again.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "He watches, pale and unwashed.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 10,
+      "text": "He can neither read nor write and in him broods already a taste for mindless violence.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "All history present in that visage, the child the father of the man.",
+      "discourse_hint": "narrative"
     }
   ],
-  "sentence_count": 6,
+  "sentence_count": 12,
   "glossary_terms_needed": [],
-  "translation_status": "pending"
+  "translation_status": "pending",
+  "para_breaks": [
+    156
+  ]
 }

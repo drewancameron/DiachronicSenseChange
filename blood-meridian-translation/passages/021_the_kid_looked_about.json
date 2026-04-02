@@ -1,0 +1,104 @@
+{
+  "id": "021_the_kid_looked_about",
+  "chapter": "I",
+  "title": "the kid looked about",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "The kid looked about stiffly at the day. Where's my boots? he said.\n\nThe man squinted at him. Flakes of dried mud fell from his face.\n\nI'm goin to have to kill some son of a bitch if they got my boots.\n\nYonder looks like one of em.\n\nThe kid labored off through the mud and fetched up one boot. He slogged about in the yard feeling likely lumps of mud.\n\nThis your knife? he said.\n\nThe man squinted at him. Looks like it, he said.\n\nThe kid pitched it to him and he bent and picked it up and wiped the huge blade on his trouserleg. Thought somebody'd done stole you, he told the knife.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "The kid looked about stiffly at the day.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "Where's my boots?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 2,
+      "text": "he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "The man squinted at him.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 4,
+      "text": "Flakes of dried mud fell from his face.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "I'm goin to have to kill some son of a bitch if they got my boots.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "Yonder looks like one of em.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "The kid labored off through the mud and fetched up one boot.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "He slogged about in the yard feeling likely lumps of mud.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "This your knife?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 10,
+      "text": "he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "The man squinted at him.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 12,
+      "text": "Looks like it, he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 13,
+      "text": "The kid pitched it to him and he bent and picked it up and wiped the huge blade on his trouserleg.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 14,
+      "text": "Thought somebody'd done stole you, he told the knife.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 15,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    67,
+    133,
+    201,
+    231,
+    351,
+    378,
+    428
+  ]
+}

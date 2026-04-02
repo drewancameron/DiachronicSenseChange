@@ -1,0 +1,109 @@
+{
+  "id": "042_i_take_it_ye",
+  "chapter": "II",
+  "title": "i take it ye",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "I take it ye lost your way, said the hermit.\n\nNo, I went right to it.\n\nHe waved quickly with his hand, the old man. No, no, he said. I mean ye was lost to of come here. Was they a sandstorm? Did ye drift off the road in the night? Did thieves beset ye?\n\nThe kid pondered this. Yes, he said We got off the road someways or another.\n\nKnowed ye did.\n\nHow long you been out here?\n\nOut where?\n\nThe kid was sitting on his blanketroll across the fire from the old man. Here, he said. In this place.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "I take it ye lost your way, said the hermit.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 1,
+      "text": "No, I went right to it.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "He waved quickly with his hand, the old man.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "No, no, he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "I mean ye was lost to of come here.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "Was they a sandstorm?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 6,
+      "text": "Did ye drift off the road in the night?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "Did thieves beset ye?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 8,
+      "text": "The kid pondered this.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 9,
+      "text": "Yes, he said We got off the road someways or another.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 10,
+      "text": "Knowed ye did.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 11,
+      "text": "How long you been out here?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 12,
+      "text": "Out where?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 13,
+      "text": "The kid was sitting on his blanketroll across the fire from the old man.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 14,
+      "text": "Here, he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 15,
+      "text": "In this place.",
+      "discourse_hint": "fragment"
+    }
+  ],
+  "sentence_count": 16,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    44,
+    69,
+    252,
+    330,
+    346,
+    375,
+    387
+  ]
+}

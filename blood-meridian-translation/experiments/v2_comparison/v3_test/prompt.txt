@@ -1,0 +1,216 @@
+You are translating Cormac McCarthy's Blood Meridian into Ancient Greek (Koine register with Attic vocabulary, polytonic orthography).
+
+McCarthy's prose is paratactic, asyndetic, and fragment-heavy. Preserve his voice:
+- "and...and...and" coordination chains → preserve as καί chains. Do NOT subordinate.
+- Comma splices → asyndeton. But use particles (δέ, γάρ, οὖν) where Greek genuinely needs them for readability.
+- Fragments remain fragments. Do not expand.
+- Direct speech preserves its structure and line breaks.
+- Neuter plural subjects take SINGULAR verbs (Attic rule).
+
+Draw on whatever classical register suits the context naturally: Septuagintal for religious, Platonic for philosophical, Thucydidean for military narration.
+
+Every word must be attestable in Morpheus/LSJ. For modern concepts with no classical equivalent, use a transparent Greek compound or Hellenised transliteration marked with * (e.g. *πιστόλιον).
+
+## Translation Decisions (use these for consistency)
+Relevant to this passage:
+  the kid → ὁ παῖς  (παῖς covers both 'child' and 'young man' in classical and Koine usage. Korto alternates ο μικρός (co)
+  the judge → ὁ κριτής  (κριτής over δικαστής. In the Septuagint, κριτής = 'judge' in the Book of Judges — figures of terrify)
+  fire → τὸ πῦρ  (Universal.)
+  bones → τὰ ὀστᾶ  (Standard classical/Koine form.)
+  night → ἡ νύξ  (Universal. McCarthy's most frequent time-marker.)
+  hat → ὁ πῖλος / ὁ πέτασος  (πέτασος = wide-brimmed hat (traveller's hat, as worn by Hermes). πῖλος = felt cap. Use πέτασος for t)
+
+Full list:
+  the kid → ὁ παῖς
+  the judge → ὁ κριτής  [septuagintal]
+  pistol → πιστόλιον  [modern_loan]
+  rifle / gun (long) → τὸ πυροβόλον
+  gunpowder / powder → ἡ πυρῖτις (κόνις)
+  gunshot / to shoot → πυροβολέω / πυροβολισμός
+  knife → ἡ μάχαιρα
+  desert / waste → ἡ ἔρημος / ἡ ἐρημία  [septuagintal]
+  plain / prairie / flat land → τὸ πεδίον
+  river → ὁ ποταμός
+  mud / mire → ὁ πηλός / ἡ ἰλύς
+  blood → τὸ αἷμα
+  fire → τὸ πῦρ
+  sun → ὁ ἥλιος
+  dust → ἡ κόνις
+  bones → τὰ ὀστᾶ
+  stars → οἱ ἀστέρες
+  night → ἡ νύξ
+  horse → ὁ ἵππος
+  mule → ὁ ἡμίονος
+  wolf / wolves → ὁ λύκος
+  tavern / saloon / dramshop → τὸ καπηλεῖον
+  hotel → τὸ πανδοκεῖον  [NT]
+  whore / whores → αἱ πόρναι
+  pilgrim → ὁ προσκυνητής
+  dollar / dollars / money / coins → τὸ ἀργύριον (generic money) / ὁ στατήρ (coin)
+  hat → ὁ πῖλος / ὁ πέτασος
+  boots → αἱ ἐμβάδες / αἱ κρηπῖδες
+  shirt / linen shirt → ὁ λίνεος χιτών
+  Memphis → Μέμφις
+  Texas → Τέξας  [transliteration]
+
+## English Source
+In the night they followed a mountain torrent in a wild gorge choked with mossy rocks and they rode under dark grottoes where the water dripped and spattered and tasted of iron and they saw the silver filaments of cascades divided upon the faces of distant buttes that appeared as signs and wonders in the heavens themselves so dark was the ground of their origins. They crossed the blackened wood of a burn and they rode through a region of cloven rock where great boulders lay halved with smooth uncentered faces and on the slopes of those ferric grounds old paths of fire and the blackened bones of trees assassinated in the mountain storms. On the day following they began to encounter holly and oak, hardwood forests much like those they had quit in their youth. In pockets on the north slopes hail lay nested like tectites among the leaves and the nights were cool.
+
+Output ONLY the Greek text, matching McCarthy's paragraph formatting.
+
+## Thematic Vocabulary (attested in the classical corpus)
+These words appear in Greek passages on similar themes. Use them
+if they fit naturally — they are suggestions, not requirements.
+
+### mountains and rocky landscape
+  ὄρος                       [Septuagint, LXX Deuteronomium (+5 others)]
+  πέτρας                     [Lucian, Dialogues of the Gods (+2 others)]
+  τοῦτο                      [Lucian, Dialogues of the Gods (+2 others)]
+  αὐτῷ                       [Lucian, Dialogues of the Gods (+1 others)]
+  ἐπεὶ                       [Lucian, Dialogues of the Gods (+1 others)]
+  θεός                       [Lucian, The Hall (+1 others)]
+  πέτραν                     [Euripides, Bacchae (+1 others)]
+  λόφος                      [Xenophon, Anabasis (+1 others)]
+  Αἶμον                      [DFHG Fragment, DFHG Fragment (vol1_HECATAEUS)]
+  Σιὼν                       [Clement of Alexandria, Clement of Alexandria (tlg2042.tlg058.1st1K-grc1)]
+  ἐκτήσατο                   [Clement of Alexandria, Clement of Alexandria (tlg2042.tlg058.1st1K-grc1)]
+  ἐλυτρώσατο                 [Clement of Alexandria, Clement of Alexandria (tlg2042.tlg058.1st1K-grc1)]
+  Ταρπηίας                   [Plutarch, Romulus]
+  ὁπόταν                     [Lucian, Dialogues of the Gods]
+  ἐθελήσῃς                   [Lucian, Dialogues of the Gods]
+
+### rivers and water
+  ῥεῦμα                      [Epictetus, Arrian's Discourses of Epictetus (+2 others)]
+  νᾶμα                       [Theocritus, theocritus.idylls (+1 others)]
+  κρήνης                     [Alcaeus, Alcaeus (tlg0533.tlg004.perseus-grc2) (+1 others)]
+  ὥσπερ                      [Epictetus, Arrian's Discourses of Epictetus (+1 others)]
+  γίνεται                    [Epictetus, Arrian's Discourses of Epictetus (+1 others)]
+  κρήνην                     [DFHG Fragment, DFHG Fragment (vol4_THEOPHILUS) (+1 others)]
+  ῥέων                       [Herodotus, Histories (+1 others)]
+  ὀρῶν                       [Arrian, arrian.anabasis (+1 others)]
+  αὑτὴν                      [Libanius, libanius.declamations_13-30.part.2 (+1 others)]
+  ποτὲ                       [Epictetus, Arrian's Discourses of Epictetus]
+  Σικελίας                   [DFHG Fragment, DFHG Fragment (vol4_THEOPHILUS)]
+  Ϲκηνή                      [Theophrastus, Theophrastus (tlg0087.tlg033.1st1K-grc1)]
+  φήνη                       [Theophrastus, Theophrastus (tlg0087.tlg033.1st1K-grc1)]
+  μισῶ                       [Alcaeus, Alcaeus (tlg0533.tlg004.perseus-grc2)]
+  περίφοιτον                 [Alcaeus, Alcaeus (tlg0533.tlg004.perseus-grc2)]
+
+### forest and trees
+  ὕλην                       [Josephus, Josephus (tlg0526.tlg004.perseus-grc2) (+2 others)]
+  Διὸς                       [Theocritus, theocritus.idylls.part.25 (+1 others)]
+  Πατρὸς                     [Clement of Alexandria, Clement of Alexandria (tlg2042.tlg058.1st1K-grc1) (+1 others)]
+  ὕλης                       [Diogenes Laertius, Diogenes Laertius (tlg0093.tlg001.1st1K-grc1) (+1 others)]
+  ποῖα                       [Diogenes Laertius, Diogenes Laertius (tlg0093.tlg001.1st1K-grc1)]
+  τρέφειν                    [Pindar, Σφῆκες]
+  δύναιτʼ                    [Pindar, Σφῆκες]
+  λόχμη                      [Pindar, Σφῆκες]
+  κλέπτα                     [Pindar, Σφῆκες]
+  προειρημένων               [Philo of Alexandria, Philo of Alexandria (tlg2018.tlg001.1st1K-grc1)]
+  ἱστορίαις                  [Philo of Alexandria, Philo of Alexandria (tlg2018.tlg001.1st1K-grc1)]
+  δηλοῦται                   [Philo of Alexandria, Philo of Alexandria (tlg2018.tlg001.1st1K-grc1)]
+  τινα                       [Philo of Alexandria, Philo of Alexandria (tlg2018.tlg001.1st1K-grc1)]
+  βασιλέων                   [Philo of Alexandria, Philo of Alexandria (tlg2018.tlg001.1st1K-grc1)]
+  Εὐρώπης                    [Philo of Alexandria, Philo of Alexandria (tlg2018.tlg001.1st1K-grc1)]
+
+### weather and storms
+  ἄνεμος                     [Pausanias, Pausanias (tlg0074.tlg002.perseus-grc2) (+3 others)]
+  νέφος                      [Aeschines, Aeschines (tlg0018.tlg024.1st1K-grc1) (+1 others)]
+  ἐναντίος                   [Xenophon, Anabasis (+1 others)]
+  οὐρανόν                    [Septuagint, LXX Exodus (+1 others)]
+  αἰγιαλῷ                    [Pausanias, Pausanias (tlg0074.tlg002.perseus-grc2)]
+  ζῴων                       [Aeschines, Aeschines (tlg0018.tlg024.1st1K-grc1)]
+  ὅλην                       [Septuagint, LXX Exodus]
+  Ζεὺς                       [Pindar, Birds]
+  ἡμῖν                       [Pindar, Birds]
+  βροντήσας                  [Pindar, Birds]
+  πέμψει                     [Pindar, Birds]
+  πτερόεντα                  [Pindar, Birds]
+  κεραυνόν                   [Pindar, Birds]
+  ἀστραπήν                   [Epicurus, Epicurus (tlg0537.tlg011.1st1K-grc1)]
+  ὑστερεῖν                   [Epicurus, Epicurus (tlg0537.tlg011.1st1K-grc1)]
+
+### sky, light and darkness
+  σαφῶς                      [Philo of Alexandria, Philo of Alexandria (tlg2018.tlg005.1st1K-grc1) (+3 others)]
+  σκότος                     [Plutarch, The Roman Questions (+3 others)]
+  ἥλιος                      [Pindar, Clouds (+1 others)]
+  πάλιν                      [John Chrysostom, John Chrysostom (tlg4102.tlg043.1st1K-grc1) (+1 others)]
+  κυρίου                     [Philo of Alexandria, Philo of Alexandria (tlg2018.tlg005.1st1K-grc1) (+1 others)]
+  λέγεται                    [Philo of Alexandria, Philo of Alexandria (tlg2018.tlg005.1st1K-grc1) (+1 others)]
+  φησὶν                      [Philo of Alexandria, Philo of Alexandria (tlg2018.tlg005.1st1K-grc1) (+1 others)]
+  ἑαυτοὺς                    [Plutarch, The Roman Questions (+1 others)]
+  σελήνη                     [Pindar, Clouds (+1 others)]
+  ἐπεὶ                       [Xenophon, Hellenica (+1 others)]
+  ναὸν                       [Philo of Alexandria, Philo of Alexandria (tlg2018.tlg005.1st1K-grc1)]
+  μήτε                       [Marcus Aurelius, Marcus Aurelius (tlg0732.tlg011.1st1K-grc1)]
+  Ἰωάννης                    [John Chrysostom, John Chrysostom (tlg4102.tlg005.1st1K-grc1)]
+  ἅγιοι                      [John Chrysostom, John Chrysostom (tlg4102.tlg005.1st1K-grc1)]
+  φωτὶ                       [John Chrysostom, John Chrysostom (tlg4102.tlg043.1st1K-grc1)]
+
+### horses and riding
+  ἵππος                      [Thucydides, History of the Peloponnesian War (+8 others)]
+  ἵππων                      [Herodotus, Histories (+1 others)]
+  ὄνος                       [Pindar, Βάτραχοι (+1 others)]
+  ἠμίονος                    [Clement of Alexandria, Clement of Alexandria (tlg2042.tlg058.1st1K-grc1) (+1 others)]
+  ποππυσμῷ                   [Xenophon, On the Art of Horsemanship]
+  κλωσμῷ                     [Xenophon, On the Art of Horsemanship]
+  Βοῦς                       [Athenaeus, Athenaeus (tlg0008.tlg001.perseus-grc3)]
+  ὁδοῦ                       [Philo of Alexandria, Philo of Alexandria (tlg2018.tlg002.1st1K-grc2)]
+  βαρύτονον                  [Theophrastus, Theophrastus (tlg0087.tlg033.1st1K-grc1)]
+  παρ’                       [Theophrastus, Theophrastus (tlg0087.tlg033.1st1K-grc1)]
+  ἀμφὶ                       [Arrian, arrian.anabasis]
+  ψύλλα                      [Philo of Alexandria, Philo of Alexandria (tlg2018.tlg001.1st1K-grc1)]
+  ἐγείρεσθαι                 [Xenophon, On the Art of Horsemanship]
+  σύνεσις                    [Clement of Alexandria, Clement of Alexandria (tlg2042.tlg058.1st1K-grc1)]
+  Ἀβεσσαλὼμ                  [Septuagint, LXX Regnorum II]
+
+### religion and the sacred
+  θεός                       [Hesiod, Works and Days (+2 others)]
+  ἁμαρτίας                   [Clement of Alexandria, Clement of Alexandria (tlg2042.tlg058.1st1K-grc1) (+1 others)]
+  τοιοῦτον                   [Aeschines, Aeschines (tlg0018.tlg018.1st1K-grc1) (+1 others)]
+  πάντων                     [Septuagint, LXX Genesis (+1 others)]
+  ψυχήν                      [Gregory of Nyssa, Gregory of Nyssa (tlg2959.tlg003.opp-ger1) (+1 others)]
+  Τούτου                     [Clement of Alexandria, Clement of Alexandria (tlg2042.tlg058.1st1K-grc1) (+1 others)]
+  ψυχή                       [Plato, Theaetetus (+1 others)]
+  κύριος                     [Septuagint, LXX Genesis]
+  ποιῆσαι                    [Septuagint, LXX Genesis]
+  Ἰωδᾶε                      [Septuagint, LXX Paralipomenon II]
+  σαββάτου                   [Septuagint, LXX Paralipomenon II]
+  ἀλλʼ                       [Plato, Theaetetus]
+  ποτʼ                       [Plato, Theaetetus]
+  ἀνομίαι                    [Clement of Alexandria, Clement of Alexandria (tlg2042.tlg058.1st1K-grc1)]
+  ἁμαρτίαν                   [Clement of Alexandria, Clement of Alexandria (tlg2042.tlg079.1st1K-grc1)]
+
+### death and corpses
+  θάνατος                    [Josephus, Josephus (tlg0526.tlg001.perseus-grc2) (+7 others)]
+  ἡμῖν                       [Epictetus, Arrian's Discourses of Epictetus (+1 others)]
+  ποτὲ                       [Aeschines, Aeschines (tlg0018.tlg017.1st1K-grc1) (+1 others)]
+  ἀφεῖλεν                    [Septuagint, LXX Isaias]
+  θεὸς                       [Septuagint, LXX Isaias]
+  Ἀρχέδημον                  [Epictetus, Arrian's Discourses of Epictetus]
+  ἀποσκοποῦν                 [Josephus, Josephus (tlg0526.tlg001.perseus-grc2)]
+  Ἰουδαίων                   [Josephus, Josephus (tlg0526.tlg001.perseus-grc2)]
+  διάνοιαν                   [Josephus, Josephus (tlg0526.tlg001.perseus-grc2)]
+  εὐκτὸς                     [Josephus, Josephus (tlg0526.tlg001.perseus-grc2)]
+  πάνυ                       [Josephus, Josephus (tlg0526.tlg001.perseus-grc2)]
+  κεχαρισμένος               [Josephus, Josephus (tlg0526.tlg001.perseus-grc2)]
+  ζῶντος                     [Josephus, Josephus (tlg0526.tlg001.perseus-grc2)]
+  ἀποστάσει                  [Josephus, Josephus (tlg0526.tlg001.perseus-grc2)]
+  ἐπείγεσθαι                 [Josephus, Josephus (tlg0526.tlg001.perseus-grc2)]
+
+### fire and burning
+  ὕδωρ                       [Marcus Aurelius, Marcus Aurelius (tlg0732.tlg004.1st1K-grc1) (+1 others)]
+  τούτοις                    [Marcus Aurelius, Marcus Aurelius (tlg0732.tlg004.1st1K-grc1) (+1 others)]
+  αὐτοὺς                     [Polybius, Histories (+1 others)]
+  δικαίως                    [Plutarch, Sayings of Spartans (+1 others)]
+  ἔχον                       [Plutarch, Sayings of Spartans (+1 others)]
+  πολλὴν                     [Athenaeus, Athenaeus (tlg0008.tlg001.perseus-grc3) (+1 others)]
+  δικαίων                    [Septuagint, LXX Psalmi Salomonis]
+  οὔτε                       [Polybius, Histories]
+  ταῦτα                      [Polybius, Histories]
+  παίδων                     [Plutarch, Brutus]
+  γυναικῶν                   [Plutarch, Brutus]
+  ἐλεύθεροί                  [Plutarch, Brutus]
+  δοῦλοι                     [Plutarch, Brutus]
+  πᾶσα                       [Plutarch, Brutus]
+  ἡλικία                     [Plutarch, Brutus]

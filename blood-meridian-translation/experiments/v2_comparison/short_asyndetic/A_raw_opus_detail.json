@@ -1,0 +1,25 @@
+{
+  "greek": "ἐκάθισε καὶ ἐξέτεινε τὸ σκέλος ἐπὶ τὴν γῆν καὶ ἔβλεψεν εἰς αὐτό, αὐτὸς αἱματωδέστερος τῶν πλείστων. ἔλαβε τὸν καυλὸν καὶ ἐβάρυνεν ἐπ' αὐτόν. ὁ ἱδρὼς ἔστη ἐπὶ τοῦ μετώπου. κατεῖχε τὸ σκέλος καὶ ὤμοσεν ἠρέμα. τινὲς ἐθεῶντο, τινὲς οὔ. ὁ παῖς ἀνέστη. πειράσομαι αὐτήν, ἔφη.",
+  "revision_prompt": null,
+  "scores": {
+    "voice_preservation": 9,
+    "greek_idiom": 8,
+    "register_match": 8,
+    "grammar": 9,
+    "vocabulary": 7,
+    "imagery": 8,
+    "errors": [
+      "αὐτὸς αἱματωδέστερος τῶν πλείστων - slightly awkward nominative absolute construction",
+      "ἐβάρυνεν ἐπ' αὐτόν - unusual use of βαρύνω for 'bore down'",
+      "πειράσομαι αὐτήν - feminine pronoun unclear in reference"
+    ],
+    "strengths": [
+      "Excellent preservation of McCarthy's parataxis with καί...καί chains",
+      "Natural use of asyndeton in 'τινὲς ἐθεῶντο, τινὲς οὔ'",
+      "Good terse style matching the original",
+      "Appropriate historical present tenses",
+      "ἠρέμα for 'softly' is well-chosen"
+    ],
+    "total": 49
+  }
+}

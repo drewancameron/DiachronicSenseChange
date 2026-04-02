@@ -1,0 +1,58 @@
+{
+  "id": "022_the_kid_found_his",
+  "chapter": "I",
+  "title": "the kid found his",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "The kid found his other boot and came and sat on the boards. His hands were huge with mud and he wiped one of them briefly at his knee and let it fall again.\n\nThey sat there side by side looking out across the barren lot. There was a picket fence at the edge of the lot and beyond the fence a boy was drawing water at a well and there were chickens in the yard there. A man came from the dramshop door down the walk toward the outhouse. He stopped where they sat and looked at them and then stepped off into the mud. After a while he came back and stepped off into the mud again and went around and on up the walk.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "The kid found his other boot and came and sat on the boards.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "His hands were huge with mud and he wiped one of them briefly at his knee and let it fall again.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "They sat there side by side looking out across the barren lot.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "There was a picket fence at the edge of the lot and beyond the fence a boy was drawing water at a well and there were chickens in the yard there.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "A man came from the dramshop door down the walk toward the outhouse.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "He stopped where they sat and looked at them and then stepped off into the mud.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "After a while he came back and stepped off into the mud again and went around and on up the walk.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 7,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    157
+  ]
+}

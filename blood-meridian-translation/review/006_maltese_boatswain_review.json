@@ -1,0 +1,88 @@
+{
+  "passage_id": "006_maltese_boatswain",
+  "greek_length": 106,
+  "grammar": {
+    "issues": [],
+    "issue_count": 0,
+    "warnings": 0
+  },
+  "retrieval": {
+    "register": {
+      "dominant_period": "classical",
+      "neighbours": [
+        "classical/xenophon.anabasis.xen..anab..1.1.7",
+        "classical/herodotus.histories.hdt..6.107.2",
+        "classical/thucydides.peleponnesian_war.thuc..pele..2.79.7",
+        "imperial/plutarch.theseus.plut..thes.27.4",
+        "classical/thucydides.peleponnesian_war.thuc..pele..3.3.5"
+      ],
+      "assessment": "strongly classical",
+      "issues": []
+    },
+    "lexical_suggestions": [
+      {
+        "query": "By the time he is mended he has no money to pay her and he leaves in the night and sleeps on the riverbank until he can find a boat that will take him on",
+        "greek": "κοιμηθήσεται ἕως φάγῃ θήραν,",
+        "source": "lxx.Numeri.4.23",
+        "period": "hellenistic",
+        "score": 0.507
+      },
+      {
+        "query": "By the time he is mended he has no money to pay her and he leaves in the night and sleeps on the riverbank until he can find a boat that will take him on",
+        "greek": "πατάξαι Κύριον τὸν ποταμὸν.",
+        "source": "lxx.Exodus.2.7",
+        "period": "hellenistic",
+        "score": 0.49
+      },
+      {
+        "query": "By the time he is mended he has no money to pay her and he leaves in the night and sleeps on the riverbank until he can find a boat that will take him on",
+        "greek": "Γένοιτο. Ἐπικατάρατος ὁ κοιμώμενος μετὰ παντὸς κτήνους.",
+        "source": "lxx.Deuteronomium.5.27",
+        "period": "hellenistic",
+        "score": 0.472
+      },
+      {
+        "query": "He lies in a cot in the room upstairs for two weeks while the tavernkeeper's wife attends him",
+        "greek": "κοιμηθῇ μετὰ ἄρσενος κοίτην γυναικός,",
+        "source": "lxx.Leviticus.3.20",
+        "period": "hellenistic",
+        "score": 0.465
+      },
+      {
+        "query": "He lies in a cot in the room upstairs for two weeks while the tavernkeeper's wife attends him",
+        "greek": "ἐν τίνι κοιμηθήσεται;",
+        "source": "lxx.Exodus.2.22",
+        "period": "hellenistic",
+        "score": 0.463
+      },
+      {
+        "query": "He lies in a cot in the room upstairs for two weeks while the tavernkeeper's wife attends him",
+        "greek": "κοιμηθήσεται ἕως φάγῃ θήραν,",
+        "source": "lxx.Numeri.4.23",
+        "period": "hellenistic",
+        "score": 0.42
+      },
+      {
+        "query": "The man flees and he leans against the bar with the blood running out of his shirt",
+        "greek": "κύριος βάδιζε κατάβηθι,",
+        "source": "lxx.Exodus.2.19",
+        "period": "hellenistic",
+        "score": 0.444
+      },
+      {
+        "query": "The man flees and he leans against the bar with the blood running out of his shirt",
+        "greek": "ἃς ἔπηξεν κύριος,",
+        "source": "lxx.Numeri.4.24",
+        "period": "hellenistic",
+        "score": 0.416
+      },
+      {
+        "query": "The man flees and he leans against the bar with the blood running out of his shirt",
+        "greek": "ἱμάτια οὐ διαρρήξει,",
+        "source": "lxx.Leviticus.3.21",
+        "period": "hellenistic",
+        "score": 0.407
+      }
+    ]
+  }
+}

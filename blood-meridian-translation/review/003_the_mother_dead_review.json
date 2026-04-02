@@ -1,0 +1,88 @@
+{
+  "passage_id": "003_the_mother_dead",
+  "greek_length": 67,
+  "grammar": {
+    "issues": [],
+    "issue_count": 0,
+    "warnings": 0
+  },
+  "retrieval": {
+    "register": {
+      "dominant_period": "classical",
+      "neighbours": [
+        "imperial/plutarch.cicero.plut..cic..22.2",
+        "imperial/plutarch.cicero.plut..cic..19.1",
+        "classical/herodotus.histories.hdt..8.121.1",
+        "classical/herodotus.histories.hdt..8.54.1",
+        "classical/herodotus.histories.hdt..2.30.1"
+      ],
+      "assessment": "mostly classical",
+      "issues": []
+    },
+    "lexical_suggestions": [
+      {
+        "query": "The mother dead these fourteen years did incubate in her own bosom the creature who would carry her off",
+        "greek": "τερατοσκόπος, ὀπὸς, τοὺς νεκρούς. ἔστιν γὰρ βδέλυγμα",
+        "source": "lxx.Deuteronomium.5.18",
+        "period": "hellenistic",
+        "score": 0.584
+      },
+      {
+        "query": "The mother dead these fourteen years did incubate in her own bosom the creature who would carry her off",
+        "greek": "Ῥεβέκκαν τὴν μητέρα",
+        "source": "lxx.Genesis.1.27",
+        "period": "hellenistic",
+        "score": 0.578
+      },
+      {
+        "query": "The mother dead these fourteen years did incubate in her own bosom the creature who would carry her off",
+        "greek": "τὰ δὲ ὑπολειπόμενα ἔδεται τὰ ἄγρια θηρία.",
+        "source": "lxx.Exodus.2.23",
+        "period": "hellenistic",
+        "score": 0.576
+      },
+      {
+        "query": "He can neither read nor write and in him broods already a taste for mindless violence",
+        "greek": "ὅν εἶπεν Βόος.",
+        "source": "lxx.Ruth.10.4",
+        "period": "hellenistic",
+        "score": 0.579
+      },
+      {
+        "query": "He can neither read nor write and in him broods already a taste for mindless violence",
+        "greek": "ὅν εἶπεν Βόος. καὶ",
+        "source": "lxx.Ruth.10.4",
+        "period": "hellenistic",
+        "score": 0.556
+      },
+      {
+        "query": "He can neither read nor write and in him broods already a taste for mindless violence",
+        "greek": "ὦν ἴδεν αὐτός.",
+        "source": "lxx.Genesis.1.42",
+        "period": "hellenistic",
+        "score": 0.529
+      },
+      {
+        "query": "All history present in that visage, the child the father of the man",
+        "greek": "πρὸς Ῥαγουὴλ ’τον πατέρα",
+        "source": "lxx.Exodus.2.2",
+        "period": "hellenistic",
+        "score": 0.735
+      },
+      {
+        "query": "All history present in that visage, the child the father of the man",
+        "greek": "πατέρας ἡμῶν •",
+        "source": "lxx.Numeri.4.20",
+        "period": "hellenistic",
+        "score": 0.72
+      },
+      {
+        "query": "All history present in that visage, the child the father of the man",
+        "greek": "πρὸς τὸν πατέρα πάσας τὰς ἡμέρας. νῦν",
+        "source": "lxx.Genesis.1.44",
+        "period": "hellenistic",
+        "score": 0.703
+      }
+    ]
+  }
+}

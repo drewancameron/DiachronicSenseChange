@@ -1,0 +1,84 @@
+{
+  "id": "014_the_baldheaded_man_was",
+  "chapter": "I",
+  "title": "the baldheaded man was",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "The baldheaded man was already at the bar when they entered.\n\nOn the polished wood before him were two hats and a double handful of coins. He raised his glass but not to them. They stood up to the bar and ordered whiskeys and the kid laid his money down but the barman pushed it back with his thumb and nodded. These here is on the judge, he said.\n\nThey drank. The teamster set his glass down and looked at the kid or he seemed to, you couldnt be sure of his gaze. The kid looked down the bar to where the judge stood. The bar was that tall not every man could even get his elbows up on it but it came just to the judge's waist and he stood with his hands placed flatwise on the wood, leaning slightly, as if about to give another address. By now men were piling through the doorway, bleeding, covered in mud, cursing. They gathered about the judge. A posse was being drawn to pursue the preacher.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "The baldheaded man was already at the bar when they entered.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "On the polished wood before him were two hats and a double handful of coins.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "He raised his glass but not to them.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "They stood up to the bar and ordered whiskeys and the kid laid his money down but the barman pushed it back with his thumb and nodded.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "These here is on the judge, he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "They drank.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 6,
+      "text": "The teamster set his glass down and looked at the kid or he seemed to, you couldnt be sure of his gaze.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "The kid looked down the bar to where the judge stood.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "The bar was that tall not every man could even get his elbows up on it but it came just to the judge's waist and he stood with his hands placed flatwise on the wood, leaning slightly, as if about to give another address.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "By now men were piling through the doorway, bleeding, covered in mud, cursing.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 10,
+      "text": "They gathered about the judge.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 11,
+      "text": "A posse was being drawn to pursue the preacher.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 12,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    60,
+    347
+  ]
+}

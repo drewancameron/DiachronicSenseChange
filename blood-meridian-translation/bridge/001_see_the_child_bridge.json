@@ -1,0 +1,86 @@
+{
+  "passage_id": "001_see_the_child",
+  "title": "See the child",
+  "chapter": "I",
+  "korto_text": "Δείτε το παιδί. Είναι χλωμό κι αδύνατο, φοράει ένα ψιλό και κουρελιασμένο λινό πουκάμισο. Συνδαυλίζει τη θράκα της κουζίνας. Έξω κείτονται σκοτεινά σκαμμένα χωράφια με κουρέλια χιονιού και σκοτεινότερα δάση στο βάθος που τα λυμαίνονται ακόμα κάτι λύκοι που 'χουν απομείνει. Το σόι του είναι γνωστό για τους πελεκητές και τους ανιχνευτές νερού, μα στην πραγματικότητα ο πατέρας του έχει κάνει δάσκαλος. Κείτεται μες στο ποτί, μνημονεύει στίχους ποιητών που τα ονόματά τους έχουν πια χαθεί. Το αγόρι λουφάζει πλάι στη φωτιά και τον παρατηρεί.",
+  "korto_notes": [
+    {
+      "english": "See the child",
+      "korto": "Δείτε το παιδί",
+      "note": "Imperative plural (δείτε), uses το παιδί not ο μικρός for the opening"
+    },
+    {
+      "english": "thin and ragged linen shirt",
+      "korto": "ψιλό και κουρελιασμένο λινό πουκάμισο",
+      "note": "ψιλό = thin/fine, κουρελιασμένο = ragged, λινό = linen — standard MG"
+    },
+    {
+      "english": "He stokes the scullery fire",
+      "korto": "Συνδαυλίζει τη θράκα της κουζίνας",
+      "note": "συνδαυλίζω = to stoke/rake; θράκα = embers; κουζίνα = kitchen (not scullery exactly)"
+    },
+    {
+      "english": "hewers of wood and drawers of water",
+      "korto": "πελεκητές και ανιχνευτές νερού",
+      "note": "πελεκητές = hewers; ανιχνευτές νερού = trackers of water. Biblical allusion (Joshua 9:21) — in the Septuagint: ξυλοκόποι καὶ ὑδροφόροι"
+    },
+    {
+      "english": "He lies in drink",
+      "korto": "Κείτεται μες στο ποτί",
+      "note": "ποτί = drink/booze (colloquial MG)"
+    },
+    {
+      "english": "The boy crouches by the fire and watches him",
+      "korto": "Το αγόρι λουφάζει πλάι στη φωτιά και τον παρατηρεί",
+      "note": "λουφάζω = to crouch/lurk; παρατηρεί = watches/observes"
+    }
+  ],
+  "google_translate": {
+    "sentences": [
+      {
+        "index": 0,
+        "english": "See the child.",
+        "google_translate_el": "Δείτε το παιδί."
+      },
+      {
+        "index": 1,
+        "english": "He is pale and thin, he wears a thin and ragged linen shirt.",
+        "google_translate_el": "Είναι χλωμός και αδύνατος, φοράει ένα λεπτό και κουρελιασμένο λινό πουκάμισο."
+      },
+      {
+        "index": 2,
+        "english": "He stokes the scullery fire.",
+        "google_translate_el": "Φέρνει την πυρκαγιά."
+      },
+      {
+        "index": 3,
+        "english": "Outside lie dark turned fields with rags of snow and darker woods beyond that harbor yet a few last wolves.",
+        "google_translate_el": "Έξω βρίσκονται σκοτεινά γυρισμένα χωράφια με κουρέλια από χιόνι και πιο σκοτεινά δάση πέρα ​​από αυτό το λιμάνι και μερικούς τελευταίους λύκους."
+      },
+      {
+        "index": 4,
+        "english": "His folk are known for hewers of wood and drawers of water but in truth his father has been a schoolmaster.",
+        "google_translate_el": "Οι δικοί του είναι γνωστοί για ξυλοκόπους και συρτάρια νερού, αλλά στην πραγματικότητα ο πατέρας του ήταν σχολάρχης."
+      },
+      {
+        "index": 5,
+        "english": "He lies in drink, he quotes from poets whose names are now lost.",
+        "google_translate_el": "Ξαπλώνει στο ποτό, παραθέτει αποσπάσματα από ποιητές των οποίων τα ονόματα έχουν πλέον χαθεί."
+      },
+      {
+        "index": 6,
+        "english": "The boy crouches by the fire and watches him.",
+        "google_translate_el": "Το αγόρι σκύβει δίπλα στη φωτιά και τον παρακολουθεί."
+      }
+    ]
+  },
+  "idiom_notes": [
+    "Imperative plural (δείτε), uses το παιδί not ο μικρός for the opening",
+    "ψιλό = thin/fine, κουρελιασμένο = ragged, λινό = linen — standard MG",
+    "συνδαυλίζω = to stoke/rake; θράκα = embers; κουζίνα = kitchen (not scullery exactly)",
+    "πελεκητές = hewers; ανιχνευτές νερού = trackers of water. Biblical allusion (Joshua 9:21) — in the Septuagint: ξυλοκόποι καὶ ὑδροφόροι",
+    "ποτί = drink/booze (colloquial MG)",
+    "λουφάζω = to crouch/lurk; παρατηρεί = watches/observes"
+  ],
+  "vocabulary_harvest": []
+}

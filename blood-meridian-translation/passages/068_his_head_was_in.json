@@ -1,0 +1,56 @@
+{
+  "id": "068_his_head_was_in",
+  "chapter": "II",
+  "title": "his head was in",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "His head was in torment and his tongue swollen with thirst. He sat up and looked around him. He'd put the bottle under his saddle and he found it and held it up and shook it and drew the cork and drank. He sat with his eyes closed, the sweat beaded on his forehead. Then he opened his eyes and drank again. The buzzards stepped down one by one and trotted off into the sacristy. After a while he rose and went out to look for the mule.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "His head was in torment and his tongue swollen with thirst.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "He sat up and looked around him.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "He'd put the bottle under his saddle and he found it and held it up and shook it and drew the cork and drank.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "He sat with his eyes closed, the sweat beaded on his forehead.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "Then he opened his eyes and drank again.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "The buzzards stepped down one by one and trotted off into the sacristy.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "After a while he rose and went out to look for the mule.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 7,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": []
+}

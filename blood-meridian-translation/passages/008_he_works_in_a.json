@@ -1,0 +1,53 @@
+{
+  "id": "008_he_works_in_a",
+  "chapter": "I",
+  "title": "he works in a",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "He works in a sawmill, he works in a diptheria pesthouse. He takes as pay from a farmer an aged mule and aback this animal in the spring of the year eighteen and forty-nine he rides up through the latterday republic of Fredonia into the town of Nacogdoches.\n\nThe Reverend Green had been playing to a full house daily as long as the rain had been falling and the rain had been falling for two weeks. When the kid ducked into the ratty canvas tent there was standing room along the walls, a place or two, and such a heady reek of the wet and bathless that they themselves would sally forth into the downpour now and again for fresh air before the rain drove them in again. He stood with others of his kind along the back wall. The only thing that might have distinguished him in that crowd was that he was not armed.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "He works in a sawmill, he works in a diptheria pesthouse.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "He takes as pay from a farmer an aged mule and aback this animal in the spring of the year eighteen and forty-nine he rides up through the latterday republic of Fredonia into the town of Nacogdoches.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "The Reverend Green had been playing to a full house daily as long as the rain had been falling and the rain had been falling for two weeks.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "When the kid ducked into the ratty canvas tent there was standing room along the walls, a place or two, and such a heady reek of the wet and bathless that they themselves would sally forth into the downpour now and again for fresh air before the rain drove them in again.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "He stood with others of his kind along the back wall.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "The only thing that might have distinguished him in that crowd was that he was not armed.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 6,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    257
+  ]
+}

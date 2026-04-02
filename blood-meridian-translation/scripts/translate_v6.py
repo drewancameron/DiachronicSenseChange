@@ -125,8 +125,33 @@ def run_checks(passage_id: str, en_text: str, greek: str) -> list[str]:
     return issues
 
 
+def _is_greek(text: str) -> bool:
+    """Check if text starts with Greek (not an English refusal)."""
+    import unicodedata
+    text = text.strip()[:20]
+    return bool(text) and "GREEK" in unicodedata.name(text[0], "")
+
+
+def _openai_translate(prompt: str, model: str = "gpt-4.1") -> tuple[str, dict]:
+    """Fallback translation via OpenAI."""
+    import openai
+    client = openai.OpenAI()
+    t0 = time.time()
+    r = client.chat.completions.create(
+        model=model,
+        max_tokens=4096,
+        messages=[{"role": "user", "content": prompt}],
+    )
+    text = r.choices[0].message.content.strip()
+    elapsed = time.time() - t0
+    usage = {"input": r.usage.prompt_tokens, "output": r.usage.completion_tokens}
+    print(f"    [OpenAI {model}] {elapsed:.0f}s ({usage['input']} in, {usage['output']} out)")
+    return text, usage
+
+
 def translate_passage(passage_id: str, dry_run: bool = False,
-                      force: bool = False) -> dict | None:
+                      force: bool = False,
+                      fallback_openai: bool = False) -> dict | None:
     p_path = PASSAGES / f"{passage_id}.json"
     if not p_path.exists():
         print(f"  {passage_id}: not found")
@@ -188,6 +213,21 @@ English:
     print(f"    {time.time()-t0:.0f}s ({r1.usage.input_tokens} in, {r1.usage.output_tokens} out)")
     print(f"    {draft[:100]}...")
 
+    # Check for refusal
+    if not _is_greek(draft) and fallback_openai:
+        print(f"    ⚠ Sonnet refused — falling back to OpenAI")
+        draft, _ = _openai_translate(draft_prompt)
+        print(f"    {draft[:100]}...")
+        if not _is_greek(draft):
+            print(f"    ✗ OpenAI also refused")
+            return None
+
+    if not _is_greek(draft):
+        print(f"    ✗ Refused (use --fallback-openai to retry with GPT)")
+        (draft_path.parent / "stage0_sonnet_draft.txt").write_text(draft)
+        draft_path.write_text(draft + "\n")
+        return None
+
     # Save draft
     (draft_path.parent / "stage0_sonnet_draft.txt").write_text(draft)
 
@@ -223,6 +263,18 @@ Output ONLY the improved Greek text. No commentary."""
     improved = r2.content[0].text.strip()
     print(f"    {time.time()-t0:.0f}s ({r2.usage.input_tokens} in, {r2.usage.output_tokens} out)")
     print(f"    {improved[:100]}...")
+
+    # Check for Opus refusal
+    if not _is_greek(improved):
+        if fallback_openai:
+            print(f"    ⚠ Opus refused improve — falling back to OpenAI")
+            improved, _ = _openai_translate(improve_prompt)
+            if not _is_greek(improved):
+                print(f"    ⚠ OpenAI also refused improve — using raw draft")
+                improved = draft
+        else:
+            print(f"    ⚠ Opus refused improve — using raw draft")
+            improved = draft
 
     # Save improved
     (draft_path.parent / "stage1_opus_improved.txt").write_text(improved)
@@ -325,6 +377,8 @@ def main():
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--force", action="store_true",
                         help="Overwrite existing translations")
+    parser.add_argument("--fallback-openai", action="store_true",
+                        help="Fall back to OpenAI if Claude refuses")
     args = parser.parse_args()
 
     if args.all:
@@ -343,7 +397,8 @@ def main():
     start = time.time()
     total_cost = 0
     for pid in passage_ids:
-        result = translate_passage(pid, dry_run=args.dry_run, force=args.force)
+        result = translate_passage(pid, dry_run=args.dry_run, force=args.force,
+                                   fallback_openai=args.fallback_openai)
         if result:
             total_cost += result["cost"]
 

@@ -1,0 +1,89 @@
+{
+  "passage_id": "006_maltese_boatswain",
+  "title": "The Maltese boatswain",
+  "chapter": "I",
+  "korto_text": "Μια νύχτα ένας Μαλτέζος λοστρόμος τον πυροβολεί στην πλάτη μ' ένα μικρό πιστόλι. Γυρνώντας να τα βάλει με τον τύπο τρώει κι άλλη σφαίρα κάτω ακριβώς απ' την καρδιά. Ο τύπος το βάζει στα πόδια κι αυτός γέρνει στην μπάρα με το αίμα να κυλάει απ' το πουκάμισό του. Οι άλλοι αποστρέφουνε το βλέμμα. Μετά από λίγο κάθεται κατάχαμα. Κείτεται σ' ένα ράντζο στο καμαράκι του πρώτου δυο βδομάδες, με την ταβερνιάρισσα να τον γιατροπορεύει. Του φέρνει να φάει, του αδειάζει τους κουβάδες. Γυναίκα αγριωπή στην όψη με κορμί λαμπάδα, σαν αντρικό. Ώσπου να γιάνει δεν του 'χουν μείνει λεφτά να την πληρώσει και φεύγει νύχτα και κοιμάται στην ακροποταμιά μέχρι να βρει βαπόρι που να τον θέλει. Το βαπόρι πάει Τέξας.",
+  "korto_notes": [
+    {
+      "english": "a small pistol",
+      "korto": "ένα μικρό πιστόλι",
+      "note": "πιστόλι — direct loanword in MG, our *πιστόλιον in AG"
+    },
+    {
+      "english": "shot again just below the heart",
+      "korto": "τρώει κι άλλη σφαίρα κάτω ακριβώς απ' την καρδιά",
+      "note": "τρώει σφαίρα = 'eats a bullet' (colloquial MG idiom). σφαίρα = bullet"
+    },
+    {
+      "english": "The boat is going to Texas",
+      "korto": "Το βαπόρι πάει Τέξας",
+      "note": "βαπόρι = ship/steamer (from Italian vapore). Short, punchy — matches McCarthy's rhythm"
+    }
+  ],
+  "google_translate": {
+    "sentences": [
+      {
+        "index": 0,
+        "english": "On a certain night a Maltese boatswain shoots him in the back with a small pistol.",
+        "google_translate_el": "Κάποια νύχτα, ένας Μαλτέζος βαρκάρης τον πυροβολεί στην πλάτη με ένα μικρό πιστόλι."
+      },
+      {
+        "index": 1,
+        "english": "Swinging to deal with the man he is shot again just below the heart.",
+        "google_translate_el": "Ταλαντεύοντας για να αντιμετωπίσει τον άνδρα πυροβολείται ξανά ακριβώς κάτω από την καρδιά."
+      },
+      {
+        "index": 2,
+        "english": "The man flees and he leans against the bar with the blood running out of his shirt.",
+        "google_translate_el": "Ο άντρας φεύγει και ακουμπάει στη μπάρα με το αίμα να τρέχει από το πουκάμισό του."
+      },
+      {
+        "index": 3,
+        "english": "The others look away.",
+        "google_translate_el": "Οι άλλοι κοιτούν αλλού."
+      },
+      {
+        "index": 4,
+        "english": "After a while he sits in the floor.",
+        "google_translate_el": "Μετά από λίγο κάθεται στο πάτωμα."
+      },
+      {
+        "index": 5,
+        "english": "He lies in a cot in the room upstairs for two weeks while the tavernkeeper's wife attends him.",
+        "google_translate_el": "Ξαπλώνει σε μια κούνια στο δωμάτιο στον επάνω όροφο για δύο εβδομάδες, ενώ η γυναίκα του ταβερνιάρη τον παρακολουθεί."
+      },
+      {
+        "index": 6,
+        "english": "She brings his meals, she carries out his slops.",
+        "google_translate_el": "Φέρνει τα φαγητά του, κάνει τα slops του."
+      },
+      {
+        "index": 7,
+        "english": "A hardlooking woman with a wiry body like a man's.",
+        "google_translate_el": "Μια σκληροτράχηλη γυναίκα με κορμί σαν αντρικό."
+      },
+      {
+        "index": 8,
+        "english": "By the time he is mended he has no money to pay her and he leaves in the night and sleeps on the riverbank until he can find a boat that will take him on.",
+        "google_translate_el": "Μέχρι να επισκευαστεί, δεν έχει χρήματα να την πληρώσει και φεύγει το βράδυ και κοιμάται στην όχθη του ποταμού μέχρι να βρει μια βάρκα που θα τον ανεβάσει."
+      },
+      {
+        "index": 9,
+        "english": "The boat is going to Texas.",
+        "google_translate_el": "Το σκάφος πηγαίνει στο Τέξας."
+      }
+    ]
+  },
+  "idiom_notes": [
+    "πιστόλι — direct loanword in MG, our *πιστόλιον in AG",
+    "τρώει σφαίρα = 'eats a bullet' (colloquial MG idiom). σφαίρα = bullet",
+    "βαπόρι = ship/steamer (from Italian vapore). Short, punchy — matches McCarthy's rhythm"
+  ],
+  "vocabulary_harvest": [
+    {
+      "english": "a small pistol",
+      "korto_mg": "ένα μικρό πιστόλι",
+      "ag_hint": "πιστόλι — direct loanword in MG, our *πιστόλιον in AG"
+    }
+  ]
+}

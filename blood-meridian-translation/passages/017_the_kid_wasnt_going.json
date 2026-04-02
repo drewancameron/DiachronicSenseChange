@@ -1,0 +1,68 @@
+{
+  "id": "017_the_kid_wasnt_going",
+  "chapter": "I",
+  "title": "the kid wasnt going",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "The kid wasnt going to do that and he saw no use in discussing it. He kicked the man in the jaw. The man went down and got up again. He said: I'm goin to kill you.\n\nHe swung with the bottle and the kid ducked and he swung again and the kid stepped back. When the kid hit him the man shattered the bottle against the side of his head. He went off the boards into the mud and the man lunged after him with the jagged bottleneck and tried to stick it in his eye. The kid was fending with his hands and they were slick with blood. He kept trying to reach into his boot for his knife.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "The kid wasnt going to do that and he saw no use in discussing it.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "He kicked the man in the jaw.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "The man went down and got up again.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "He said: I'm goin to kill you.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "He swung with the bottle and the kid ducked and he swung again and the kid stepped back.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "When the kid hit him the man shattered the bottle against the side of his head.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "He went off the boards into the mud and the man lunged after him with the jagged bottleneck and tried to stick it in his eye.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "The kid was fending with his hands and they were slick with blood.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "He kept trying to reach into his boot for his knife.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 9,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    163
+  ]
+}

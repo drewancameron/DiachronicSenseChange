@@ -1,0 +1,88 @@
+{
+  "id": "043_the_old_man_didnt",
+  "chapter": "II",
+  "title": "the old man didnt",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "The old man didnt answer. He turned his head suddenly aside and seized his nose between his thumb and forefinger and blew twin strings of snot onto the floor and wiped his fingers on the seam of his jeans. I come from Mississippi. I was a slaver, dont care to tell it. Made good money. I never did get caught. Just got sick of it. Sick of niggers. Wait till I show ye somethin.\n\nHe turned and rummaged among the hides and handed through the flames a small dark thing. The kid turned it in his hand. Some man's heart, dried and blackened. He passed it back and the old man cradled it in his palm as if he'd weigh it.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "The old man didnt answer.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 1,
+      "text": "He turned his head suddenly aside and seized his nose between his thumb and forefinger and blew twin strings of snot onto the floor and wiped his fingers on the seam of his jeans.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "I come from Mississippi.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 3,
+      "text": "I was a slaver, dont care to tell it.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "Made good money.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 5,
+      "text": "I never did get caught.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 6,
+      "text": "Just got sick of it.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 7,
+      "text": "Sick of niggers.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 8,
+      "text": "Wait till I show ye somethin.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "He turned and rummaged among the hides and handed through the flames a small dark thing.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 10,
+      "text": "The kid turned it in his hand.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "Some man's heart, dried and blackened.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 12,
+      "text": "He passed it back and the old man cradled it in his palm as if he'd weigh it.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 13,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    377
+  ]
+}

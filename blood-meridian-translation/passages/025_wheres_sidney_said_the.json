@@ -1,0 +1,129 @@
+{
+  "id": "025_wheres_sidney_said_the",
+  "chapter": "I",
+  "title": "wheres sidney said the",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "Where's Sidney? said the man in his suit of mud.\n\nIn the bed I reckon.\n\nThey went on.\n\nToadvine, called the barman.\n\nThe kid looked back.\n\nThe barman had come from behind the bar and was looking after them. They crossed from the door through the lobby of the hotel toward the stairs leaving varied forms of mud behind them on the floor. As they started up the stairs the clerk at the desk leaned and called to them.\n\nToadvine.\n\nHe stopped and looked back.\n\nHe'll shoot you.\n\nOld Sidney?\n\nOld Sidney.\n\nThey went on up the stairs.\n\nAt the top of the landing was a long hall with a windowlight at the end. There were varnished doors down the walls set so close they might have been closets. Toadvine went on until he came to the end of the hall. He listened at the last door and he eyed the kid.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "Where's Sidney?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 1,
+      "text": "said the man in his suit of mud.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "In the bed I reckon.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 3,
+      "text": "They went on.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 4,
+      "text": "Toadvine, called the barman.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 5,
+      "text": "The kid looked back.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 6,
+      "text": "The barman had come from behind the bar and was looking after them.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "They crossed from the door through the lobby of the hotel toward the stairs leaving varied forms of mud behind them on the floor.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "As they started up the stairs the clerk at the desk leaned and called to them.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "Toadvine.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 10,
+      "text": "He stopped and looked back.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 11,
+      "text": "He'll shoot you.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 12,
+      "text": "Old Sidney?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 13,
+      "text": "Old Sidney.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 14,
+      "text": "They went on up the stairs.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 15,
+      "text": "At the top of the landing was a long hall with a windowlight at the end.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 16,
+      "text": "There were varnished doors down the walls set so close they might have been closets.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 17,
+      "text": "Toadvine went on until he came to the end of the hall.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 18,
+      "text": "He listened at the last door and he eyed the kid.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 19,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    48,
+    70,
+    85,
+    115,
+    137,
+    415,
+    426,
+    455,
+    473,
+    486,
+    499,
+    528
+  ]
+}

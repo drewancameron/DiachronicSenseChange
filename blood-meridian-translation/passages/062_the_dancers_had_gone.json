@@ -1,0 +1,83 @@
+{
+  "id": "062_the_dancers_had_gone",
+  "chapter": "II",
+  "title": "the dancers had gone",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "The dancers had gone, the music. Across the street sat a man on a bench dimly lit in the doorlight from the cafe. The mule stood where he'd tied it. He tapped the broom on the steps and came back in and took the broom to the corner where the barman had gotten it. Then he came to the bar and stood.\n\nThe barman ignored him.\n\nThe kid rapped with his knuckles.\n\nThe barman turned and put one hand on his hip and pursed his lips.\n\nHow about that drink now, said the kid.\n\nThe barman stood.\n\nThe kid made the drinking motions that the old man had made and the barman flapped his towel idly at him.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "The dancers had gone, the music.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "Across the street sat a man on a bench dimly lit in the doorlight from the cafe.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "The mule stood where he'd tied it.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "He tapped the broom on the steps and came back in and took the broom to the corner where the barman had gotten it.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "Then he came to the bar and stood.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "The barman ignored him.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 6,
+      "text": "The kid rapped with his knuckles.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "The barman turned and put one hand on his hip and pursed his lips.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "How about that drink now, said the kid.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 9,
+      "text": "The barman stood.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 10,
+      "text": "The kid made the drinking motions that the old man had made and the barman flapped his towel idly at him.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 11,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    298,
+    323,
+    358,
+    426,
+    467,
+    486
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "018_kill_your_ass_the",
+  "chapter": "I",
+  "title": "kill your ass the",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "Kill your ass, the man said. They slogged about in the dark of the lot, coming out of their boots. The kid had his knife now and they circled crabwise and when the man lurched at him he cut the man's shirt open. The man threw down the bottleneck and unsheathed an immense bowieknife from behind his neck. His hat had come off and his black and ropy locks swung about his head and he had codified his threats to the one word kill like a crazed chant.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "Kill your ass, the man said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "They slogged about in the dark of the lot, coming out of their boots.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "The kid had his knife now and they circled crabwise and when the man lurched at him he cut the man's shirt open.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "The man threw down the bottleneck and unsheathed an immense bowieknife from behind his neck.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "His hat had come off and his black and ropy locks swung about his head and he had codified his threats to the one word kill like a crazed chant.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 5,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": []
+}

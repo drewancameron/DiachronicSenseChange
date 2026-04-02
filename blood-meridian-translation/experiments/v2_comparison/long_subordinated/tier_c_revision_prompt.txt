@@ -1,0 +1,26 @@
+You are revising an Ancient Greek translation of McCarthy's Blood Meridian (Koine register, Attic vocabulary).
+
+Fix ONLY the specific issues listed below. Do not change anything that is already correct.
+
+## English Source
+He did so because it was his trade and yet he did little of it for there were few travelers in that place. So that he fell into the habit before long of dressing himself as an indian and taking up station a few miles above his shop and waiting there by the roadside to ask whoever should come that way if they would give him money. At this time he had done no person any injury.
+
+## Current Greek Translation
+Οὕτω δὲ ἔπραττε διὰ τὸ τέχνην αὐτῷ εἶναι καίτοι ὀλίγα ἐργαζόμενος· ὀλίγοι γὰρ ὁδοιπόροι ἐν τῷ χώρῳ. Ὥστε οὐ διὰ μακροῦ εἴθιστο ὡς Ἰνδὸς σκευάζεσθαι καὶ σταθμὸν λαμβάνειν σταδίους τινὰς ὑπὲρ τοῦ ἐργαστηρίου καὶ παρὰ τὴν ὁδὸν μένειν ἐρωτῶν τοὺς παριόντας εἴ τι ἀργύριον δοῖεν. Τότε δὲ οὐδένα πω ἠδικήκει.
+
+## Style and Sense Issues (from review)
+  - ὡς Ἰνδὸς σκευάζεσθαι: UNIDIOMATIC GREEK: This is a calque from English 'dressing himself as an Indian'. Greek would more naturally express this as assuming the appearance or guise of an Indian
+    → Suggested: Ἰνδοῦ σχῆμα λαμβάνειν or Ἰνδῷ ὁμοιοῦσθαι
+  - σταθμὸν λαμβάνειν: WRONG SENSE: σταθμός primarily means 'quarters' or 'station' in a military sense, not taking up position for ambush or begging
+    → Suggested: χώραν καταλαμβάνειν or ἵστασθαι
+  - εἴ τι ἀργύριον δοῖεν: UNIDIOMATIC GREEK: This construction is too direct a calque from English 'if they would give him money'. Greek would use a more natural expression for asking for money
+    → Suggested: εἰ βούλοιντο ἀργύριόν τι διδόναι or εἰ ἀργυρίου μεταδοῖεν
+
+## Style Reference (thematically matched passages — guide your register)
+  [homer, odyssey]: ἕζετο κερδοσύνη, σκῆπτρον δέ οἱ ἔκπεσε χειρός.
+
+## Instructions
+1. Fix each listed issue while preserving everything that is correct.
+2. Use the supporting evidence above to guide your corrections where provided.
+3. Every word must be attestable in Morpheus/LSJ.
+4. Output ONLY the complete revised Greek text — no explanations.

@@ -1,0 +1,56 @@
+{
+  "id": "001_see_the_child_he",
+  "chapter": "I",
+  "title": "see the child he",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "See the child. He is pale and thin, he wears a thin and ragged linen shirt. He stokes the scullery fire. Outside lie dark turned fields with rags of snow and darker woods beyond that harbor yet a few last wolves. His folk are known for hewers of wood and drawers of water but in truth his father has been a schoolmaster. He lies in drink, he quotes from poets whose names are now lost. The boy crouches by the fire and watches him.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "See the child.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 1,
+      "text": "He is pale and thin, he wears a thin and ragged linen shirt.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "He stokes the scullery fire.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 3,
+      "text": "Outside lie dark turned fields with rags of snow and darker woods beyond that harbor yet a few last wolves.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "His folk are known for hewers of wood and drawers of water but in truth his father has been a schoolmaster.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "He lies in drink, he quotes from poets whose names are now lost.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "The boy crouches by the fire and watches him.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 7,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": []
+}

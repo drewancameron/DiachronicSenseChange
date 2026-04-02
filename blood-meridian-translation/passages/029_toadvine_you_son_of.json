@@ -1,0 +1,64 @@
+{
+  "id": "029_toadvine_you_son_of",
+  "chapter": "I",
+  "title": "toadvine you son of",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "Toadvine you son of a bitch, he said.\n\nToadvine was four steps above him and when he kicked him he caught him in the throat. The clerk sat down on the stairs. When the kid came past he hit him in the side of the head and the clerk slumped over and began to slide toward the landing. The kid stepped over him and went down to the lobby and crossed to the front door and out.\n\nToadvine was running down the street, waving his fists above his head crazily and laughing. He looked like a great clay voodoo doll made animate and the kid looked like another. Behind them flames were licking at the top corner of the hotel and clouds of dark smoke rose into the warm Texas morning.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "Toadvine you son of a bitch, he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "Toadvine was four steps above him and when he kicked him he caught him in the throat.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "The clerk sat down on the stairs.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "When the kid came past he hit him in the side of the head and the clerk slumped over and began to slide toward the landing.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "The kid stepped over him and went down to the lobby and crossed to the front door and out.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "Toadvine was running down the street, waving his fists above his head crazily and laughing.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "He looked like a great clay voodoo doll made animate and the kid looked like another.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "Behind them flames were licking at the top corner of the hotel and clouds of dark smoke rose into the warm Texas morning.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 8,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    37,
+    373
+  ]
+}

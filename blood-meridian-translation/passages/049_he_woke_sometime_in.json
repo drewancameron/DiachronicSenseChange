@@ -1,0 +1,64 @@
+{
+  "id": "049_he_woke_sometime_in",
+  "chapter": "II",
+  "title": "he woke sometime in",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "He woke sometime in the night with the hut in almost total darkness and the hermit bent over him and all but in his bed.\n\nWhat do you want? he said. But the hermit crawled away and in the morning when he woke the hut was empty and he got his things and left.\n\nAll that day he watched to the north a thin line of dust. It seemed not to move at all and it was late evening before he could see that it was headed his way. He passed through a forest of live oak and he watered at a stream and moved on in the dusk and made a fireless camp. Birds woke him where he lay in a dry and dusty wood.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "He woke sometime in the night with the hut in almost total darkness and the hermit bent over him and all but in his bed.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "What do you want?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 2,
+      "text": "he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "But the hermit crawled away and in the morning when he woke the hut was empty and he got his things and left.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "All that day he watched to the north a thin line of dust.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "It seemed not to move at all and it was late evening before he could see that it was headed his way.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "He passed through a forest of live oak and he watered at a stream and moved on in the dusk and made a fireless camp.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "Birds woke him where he lay in a dry and dusty wood.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 8,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    120,
+    258
+  ]
+}

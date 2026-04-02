@@ -1,0 +1,88 @@
+{
+  "passage_id": "013_toadvine_fight",
+  "greek_length": 691,
+  "grammar": {
+    "issues": [],
+    "issue_count": 0,
+    "warnings": 0
+  },
+  "retrieval": {
+    "register": {
+      "dominant_period": "classical",
+      "neighbours": [
+        "imperial/plutarch.cimon.plut..cim..4.5",
+        "imperial/plutarch.antony.plut..ant..58.4",
+        "classical/xenophon.anabasis.xen..anab..7.7.57",
+        "classical/herodotus.histories.hdt..2.146.1",
+        "classical/herodotus.histories.hdt..3.130.2"
+      ],
+      "assessment": "mostly classical",
+      "issues": []
+    },
+    "lexical_suggestions": [
+      {
+        "query": "On his forehead were burned the letters H T and lower and almost between the eyes the letter F and these markings were splayed and garish as if the iron had been left too long",
+        "greek": "τὰ δέρματα ὑακίνθινα ἐπάνωθεν.",
+        "source": "lxx.Exodus.2.26",
+        "period": "hellenistic",
+        "score": 0.601
+      },
+      {
+        "query": "On his forehead were burned the letters H T and lower and almost between the eyes the letter F and these markings were splayed and garish as if the iron had been left too long",
+        "greek": "ὄψεται εἰς πρόσωπον,",
+        "source": "lxx.Regnorum_I.11.16",
+        "period": "hellenistic",
+        "score": 0.591
+      },
+      {
+        "query": "On his forehead were burned the letters H T and lower and almost between the eyes the letter F and these markings were splayed and garish as if the iron had been left too long",
+        "greek": "τὰ δέρματα ὑακίνθινα",
+        "source": "lxx.Exodus.2.26",
+        "period": "hellenistic",
+        "score": 0.577
+      },
+      {
+        "query": "When he woke it was daylight and the rain had stopped and he was looking up into the face of a man with long hair who was completely covered in mud",
+        "greek": "πρωί, ὤμοσαν ἄνθρωπος",
+        "source": "lxx.Genesis.1.26",
+        "period": "hellenistic",
+        "score": 0.57
+      },
+      {
+        "query": "When he woke it was daylight and the rain had stopped and he was looking up into the face of a man with long hair who was completely covered in mud",
+        "greek": "ἕνα ποιήσεις τὸ πρωί,",
+        "source": "lxx.Numeri.4.28",
+        "period": "hellenistic",
+        "score": 0.532
+      },
+      {
+        "query": "When he woke it was daylight and the rain had stopped and he was looking up into the face of a man with long hair who was completely covered in mud",
+        "greek": "ἕνα ποιήσεις τὸ πρωί,",
+        "source": "lxx.Exodus.2.29",
+        "period": "hellenistic",
+        "score": 0.532
+      },
+      {
+        "query": "There was a picket fence at the edge of the lot and beyond the fence a boy was drawing water at a well and there were chickens in the yard there",
+        "greek": "τὸ μέρος τὸ πρὸς θάλασ’σαν ποιήσεις ἓξ στύλους.",
+        "source": "lxx.Exodus.2.26",
+        "period": "hellenistic",
+        "score": 0.421
+      },
+      {
+        "query": "There was a picket fence at the edge of the lot and beyond the fence a boy was drawing water at a well and there were chickens in the yard there",
+        "greek": "συκοφαντήσει ἕκαστος τὸν πλησίον.",
+        "source": "lxx.Leviticus.3.19",
+        "period": "hellenistic",
+        "score": 0.406
+      },
+      {
+        "query": "There was a picket fence at the edge of the lot and beyond the fence a boy was drawing water at a well and there were chickens in the yard there",
+        "greek": "τὴν πύλην Σοδόμων.",
+        "source": "lxx.Genesis.1.19",
+        "period": "hellenistic",
+        "score": 0.404
+      }
+    ]
+  }
+}

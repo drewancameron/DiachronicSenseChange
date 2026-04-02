@@ -1,0 +1,98 @@
+{
+  "id": "048_dont_have_no_bacca",
+  "chapter": "II",
+  "title": "dont have no bacca",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "Dont have no bacca with ye do ye?\n\nNo I aint, said the kid.\n\nDidnt allow ye did.\n\nYou reckon it'll rain?\n\nIt's got ever opportunity. Likely it wont.\n\nThe kid watched the fire. Already he was nodding. Finally he raised up and shook his head. The hermit watched him over the dying flames. Just go on and fix ye bed, he said.\n\nHe did. Spreading his blankets on the packed mud and pulling off his stinking boots. The fluepipe moaned and he heard the mule stamp and snuffle outside and in his sleep he struggled and muttered like a dreaming dog.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "Dont have no bacca with ye do ye?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "No I aint, said the kid.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 2,
+      "text": "Didnt allow ye did.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 3,
+      "text": "You reckon it'll rain?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 4,
+      "text": "It's got ever opportunity.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 5,
+      "text": "Likely it wont.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 6,
+      "text": "The kid watched the fire.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 7,
+      "text": "Already he was nodding.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 8,
+      "text": "Finally he raised up and shook his head.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "The hermit watched him over the dying flames.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 10,
+      "text": "Just go on and fix ye bed, he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "He did.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 12,
+      "text": "Spreading his blankets on the packed mud and pulling off his stinking boots.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 13,
+      "text": "The fluepipe moaned and he heard the mule stamp and snuffle outside and in his sleep he struggled and muttered like a dreaming dog.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 14,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    33,
+    59,
+    80,
+    104,
+    148,
+    322
+  ]
+}

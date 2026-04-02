@@ -1,0 +1,73 @@
+{
+  "id": "005_on_a_certain_night",
+  "chapter": "I",
+  "title": "on a certain night",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "On a certain night a Maltese boatswain shoots him in the back with a small pistol. Swinging to deal with the man he is shot again just below the heart. The man flees and he leans against the bar with the blood running out of his shirt. The others look away. After a while he sits in the floor.\n\nHe lies in a cot in the room upstairs for two weeks while the tavernkeeper's wife attends him. She brings his meals, she carries out his slops. A hardlooking woman with a wiry body like a man's. By the time he is mended he has no money to pay her and he leaves in the night and sleeps on the riverbank until he can find a boat that will take him on. The boat is going to Texas.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "On a certain night a Maltese boatswain shoots him in the back with a small pistol.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "Swinging to deal with the man he is shot again just below the heart.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "The man flees and he leans against the bar with the blood running out of his shirt.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "The others look away.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 4,
+      "text": "After a while he sits in the floor.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "He lies in a cot in the room upstairs for two weeks while the tavernkeeper's wife attends him.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "She brings his meals, she carries out his slops.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "A hardlooking woman with a wiry body like a man's.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "By the time he is mended he has no money to pay her and he leaves in the night and sleeps on the riverbank until he can find a boat that will take him on.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "The boat is going to Texas.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 10,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    293
+  ]
+}

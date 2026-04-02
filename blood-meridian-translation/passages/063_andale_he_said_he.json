@@ -1,0 +1,73 @@
+{
+  "id": "063_andale_he_said_he",
+  "chapter": "II",
+  "title": "andale he said he",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "Andale, he said. He made a shooing motion with the back of his hand.\n\nThe kid's face clouded. You son of a bitch, he said. He started down the bar. The barman's expression did not change. He brought up from under the bar an oldfashioned military pistol with a flint lock and shoved back the cock with the heel of his hand. A great wooden clicking in the silence. A clicking of glasses all down the bar. Then the scuffling of chairs pushed back by the players at the wall.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "Andale, he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "He made a shooing motion with the back of his hand.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "The kid's face clouded.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 3,
+      "text": "You son of a bitch, he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "He started down the bar.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 5,
+      "text": "The barman's expression did not change.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "He brought up from under the bar an oldfashioned military pistol with a flint lock and shoved back the cock with the heel of his hand.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "A great wooden clicking in the silence.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "A clicking of glasses all down the bar.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "Then the scuffling of chairs pushed back by the players at the wall.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 10,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    68
+  ]
+}

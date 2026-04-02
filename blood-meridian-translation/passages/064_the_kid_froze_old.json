@@ -1,0 +1,93 @@
+{
+  "id": "064_the_kid_froze_old",
+  "chapter": "II",
+  "title": "the kid froze old",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "The kid froze. Old man, he said.\n\nThe old man didnt answer. There was no sound in the cafe. The kid turned to find him with his eyes.\n\nEsta borracho, said the old man.\n\nThe boy watched the barman's eyes.\n\nThe barman waved the pistol toward the door.\n\nThe old man spoke to the room in Spanish. Then he spoke to the barman. Then he put on his hat and went out.\n\nThe barman's face drained. When he came around the end of the bar he had laid down the pistol and he was carrying a bung-starter in one hand.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "The kid froze.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 1,
+      "text": "Old man, he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "The old man didnt answer.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 3,
+      "text": "There was no sound in the cafe.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "The kid turned to find him with his eyes.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "Esta borracho, said the old man.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 6,
+      "text": "The boy watched the barman's eyes.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "The barman waved the pistol toward the door.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "The old man spoke to the room in Spanish.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "Then he spoke to the barman.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 10,
+      "text": "Then he put on his hat and went out.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "The barman's face drained.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 12,
+      "text": "When he came around the end of the bar he had laid down the pistol and he was carrying a bung-starter in one hand.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 13,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    32,
+    133,
+    167,
+    203,
+    249,
+    358
+  ]
+}

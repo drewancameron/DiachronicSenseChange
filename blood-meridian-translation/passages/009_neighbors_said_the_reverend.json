@@ -1,0 +1,78 @@
+{
+  "id": "009_neighbors_said_the_reverend",
+  "chapter": "I",
+  "title": "neighbors said the reverend",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "Neighbors, said the reverend, he couldnt stay out of these here hell, hell, hellholes right here in Nacogdoches. I said to him, said: You goin to take the son of God in there with ye? And he said: Oh no. No I aint. And I said: Dont you know that he said I will foller ye always even unto the end of the road?\n\nWell, he said, I aint askin nobody to go nowheres. And I said: Neighbor, you dont need to ask. He's a goin to be there with ye ever step of the way whether ye ask it or ye dont. I said: Neighbor, you caint get shed of him. Now. Are you going to drag him, him, into that hellhole yonder?",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "Neighbors, said the reverend, he couldnt stay out of these here hell, hell, hellholes right here in Nacogdoches.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 1,
+      "text": "I said to him, said: You goin to take the son of God in there with ye?",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 2,
+      "text": "And he said: Oh no.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "No I aint.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 4,
+      "text": "And I said: Dont you know that he said I will foller ye always even unto the end of the road?",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 5,
+      "text": "Well, he said, I aint askin nobody to go nowheres.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "And I said: Neighbor, you dont need to ask.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "He's a goin to be there with ye ever step of the way whether ye ask it or ye dont.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "I said: Neighbor, you caint get shed of him.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "Now.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 10,
+      "text": "Are you going to drag him, him, into that hellhole yonder?",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 11,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    308
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "final": "Ἐν τῇ νυκτὶ ἠκολούθουν χειμάρρῳ ὀρεινῷ ἐν φάραγγι ἀγρίᾳ βρύα ἐχούσῃ πετρῶν καὶ ἵππευον ὑπὸ σκοτεινὰ ἄντρα ὅπου τὸ ὕδωρ ἔσταζε καὶ ἐρράντιζε καὶ σιδήρου ἐγεύετο. καὶ εἶδον ἀργυρᾶ νήματα καταρρακτῶν διῃρημένα ἐπὶ προσώπων μακρῶν κρημνῶν ἅπερ ἐφαίνετο ὡς σημεῖα καὶ τέρατα ἐν αὐτοῖς τοῖς οὐρανοῖς οὕτω σκοτεινὸν ἦν τὸ ἔδαφος τῶν ἀρχῶν αὐτῶν. Διέβησαν μελανθὲν ξύλον ἐμπρησμοῦ καὶ ἵππευσαν διὰ χώρας σχιστῆς πέτρας ὅπου μεγάλοι λίθοι ἔκειντο δίχα τετμημένοι λείοις ἀσυμμέτροις προσώποις καὶ ἐπὶ κλιτύων τῶν σιδηρῶν ἐκείνων χωμάτων παλαιαὶ ὁδοὶ πυρὸς καὶ μελανθέντα ὀστᾶ δένδρων πεφονευμένων ἐν ταῖς ὀρειναῖς θυέλλαις. Τῇ ἐπιούσῃ ἡμέρᾳ ἤρξαντο ἀπαντᾶν πρῖνον καὶ δρῦν, σκληρόξυλα ἄλση πάνυ ὅμοια ἐκείνοις ἃ κατέλιπον ἐν νεότητι. Ἐν κόλποις ἐπὶ βορείων κλιτύων χάλαζα ἔκειτο κατακειμένη καθάπερ σφαιρία μεταξὺ τῶν φύλλων καὶ αἱ νύκτες ψυχραὶ ἦσαν.",
+  "style_issues": [
+    {
+      "greek": "ὅπου τὸ ὕδωρ ἔσταζε καὶ ἐρραίνετο καὶ σιδήρου ἐγεύετο καὶ εἶδον",
+      "problem": "LOST FRAGMENTS: McCarthy's paratactic series with repeated 'and they' preserved as fragments is expanded into full subordinated clause",
+      "fix": "ὅπου τὸ ὕδωρ ἔσταζε καὶ ἐρραίνετο καὶ σιδήρου ἐγεύετο. καὶ εἶδον"
+    },
+    {
+      "greek": "ἃ ἐφαίνετο",
+      "problem": "RELATIVE PRONOUN ERRORS: neuter plural ἃ incorrectly agrees with nearest noun κρημνῶν (masculine) instead of true antecedent cascades/νήματα (neuter)",
+      "fix": "ἅπερ ἐφαίνετο"
+    },
+    {
+      "greek": "νεοττεύουσα ὥσπερ *τεκτῖται",
+      "problem": "CALQUES: 'nested like tectites' rendered as unidiomatic Greek construction with participle + comparison",
+      "fix": "κατακειμένη καθάπερ τεκτῖται"
+    }
+  ],
+  "vocab_issues": [
+    {
+      "greek": "βρυωδῶν",
+      "problem": "UNATTESTED: formed by analogy from βρύον + -ωδης, likely not in LSJ",
+      "fix": "βρύοις κατειλημμένων or βρύα ἐχουσῶν"
+    },
+    {
+      "greek": "ἐρραίνετο",
+      "problem": "WRONG SENSE: means 'was sprinkled' but English 'spattered' implies more forceful action",
+      "fix": "ἐρράντιζε or ἀπερράττετο"
+    },
+    {
+      "greek": "πυρκαϊᾶς",
+      "problem": "UNATTESTED: genitive form appears to be analogical formation, likely not in LSJ",
+      "fix": "ἐμπυρίου or καύματος"
+    },
+    {
+      "greek": "ἀκέντροις",
+      "problem": "WRONG SENSE: means 'without a sting/goad' but English 'uncentered' means 'off-center'",
+      "fix": "ἀσυμμέτροις or ἀκαταλλήλως τετμημένοις"
+    },
+    {
+      "greek": "τεκτῖται",
+      "problem": "UNATTESTED: appears to be invented term for 'tectites' (meteorite glass), not a classical concept",
+      "fix": "λίθοι οὐράνιοι or σφαιρία"
+    }
+  ],
+  "echoes": [
+    {
+      "greek": "σημεῖα καὶ τέρατα ἐν αὐτοῖς τοῖς οὐρανοῖς",
+      "source": "Septuagint, Joel 2:30",
+      "note": "Biblical formula for portents and wonders in the heavens, suggesting apocalyptic dread"
+    },
+    {
+      "greek": "δίχα τετμημένοι λείοις ἀσυμμέτροις προσώποις",
+      "source": "Homer, Iliad 13.178-179",
+      "note": "Echoes Homeric descriptions of cleaved rocks and stone faces, particularly in battle scenes"
+    },
+    {
+      "greek": "πεφονευμένων ἐν ταῖς ὀρειναῖς θυέλλαις",
+      "source": "Hesiod, Theogony 707ff",
+      "note": "Recalls Hesiodic imagery of cosmic violence and destruction in mountain storms"
+    }
+  ]
+}

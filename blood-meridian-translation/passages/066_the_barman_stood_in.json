@@ -1,0 +1,51 @@
+{
+  "id": "066_the_barman_stood_in",
+  "chapter": "II",
+  "title": "the barman stood in",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "The barman stood in the center of the room. He was breathing heavily and he turned, following the kid's movements. When the kid approached him he raised the bungstarter. The kid crouched lightly with the bottles and feinted and then broke the right one over the man's head. Blood and liquor sprayed and the man's knees buckled and his eyes rolled. The kid had already let go the bottleneck and he pitched the second bottle into his right hand in a roadagent's pass before it even reached the floor and he backhanded the second bottle across the barman's skull and crammed the jagged remnant into his eye as he went down.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "The barman stood in the center of the room.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "He was breathing heavily and he turned, following the kid's movements.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "When the kid approached him he raised the bungstarter.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "The kid crouched lightly with the bottles and feinted and then broke the right one over the man's head.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "Blood and liquor sprayed and the man's knees buckled and his eyes rolled.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "The kid had already let go the bottleneck and he pitched the second bottle into his right hand in a roadagent's pass before it even reached the floor and he backhanded the second bottle across the barman's skull and crammed the jagged remnant into his eye as he went down.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 6,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": []
+}

@@ -1,0 +1,81 @@
+{
+  "id": "010_you_ever_see_such",
+  "chapter": "I",
+  "title": "you ever see such",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "You ever see such a place for rain?\n\nThe kid had been watching the reverend. He turned to the man who spoke. He wore long moustaches after the fashion of teamsters and he wore a widebrim hat with a low round crown. He was slightly walleyed and he was watching the kid earnestly as if he'd know his opinion about the rain.\n\nI just got here, said the kid.\n\nWell it beats all I ever seen.\n\nThe kid nodded. An enormous man dressed in an oilcloth slicker had entered the tent and removed his hat. He was bald as a stone and he had no trace of beard and he had no brows to his eyes nor lashes to them. He was close on to seven feet in height and he stood smoking a cigar even in this nomadic house of God and he seemed to have removed his hat only to chase the rain from it for now he put it on again.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "You ever see such a place for rain?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "The kid had been watching the reverend.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "He turned to the man who spoke.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "He wore long moustaches after the fashion of teamsters and he wore a widebrim hat with a low round crown.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "He was slightly walleyed and he was watching the kid earnestly as if he'd know his opinion about the rain.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "I just got here, said the kid.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 6,
+      "text": "Well it beats all I ever seen.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "The kid nodded.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 8,
+      "text": "An enormous man dressed in an oilcloth slicker had entered the tent and removed his hat.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "He was bald as a stone and he had no trace of beard and he had no brows to his eyes nor lashes to them.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 10,
+      "text": "He was close on to seven feet in height and he stood smoking a cigar even in this nomadic house of God and he seemed to have removed his hat only to chase the rain from it for now he put it on again.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 11,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    35,
+    321,
+    353,
+    385
+  ]
+}

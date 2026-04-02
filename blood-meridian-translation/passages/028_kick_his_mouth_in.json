@@ -1,0 +1,86 @@
+{
+  "id": "028_kick_his_mouth_in",
+  "chapter": "I",
+  "title": "kick his mouth in",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "Kick his mouth in, called Toadvine. Kick it.\n\nThe kid stepped past them into the room and turned and kicked the man in the face. Toadvine held his head back by the hair.\n\nKick him, he called. Aw, kick him, honey.\n\nHe kicked.\n\nToadvine pulled the bloody head around and looked at it and let it flop to the floor and he rose and kicked the man himself. Two spectators were standing in the hallway. The door was completely afire and part of the wall and ceiling. They went out and down the hall. The clerk was coming up the steps two at a time.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "Kick his mouth in, called Toadvine.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 1,
+      "text": "Kick it.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 2,
+      "text": "The kid stepped past them into the room and turned and kicked the man in the face.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "Toadvine held his head back by the hair.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "Kick him, he called.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "Aw, kick him, honey.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 6,
+      "text": "He kicked.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 7,
+      "text": "Toadvine pulled the bloody head around and looked at it and let it flop to the floor and he rose and kicked the man himself.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "Two spectators were standing in the hallway.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "The door was completely afire and part of the wall and ceiling.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 10,
+      "text": "They went out and down the hall.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "The clerk was coming up the steps two at a time.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 12,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    44,
+    169,
+    212,
+    224
+  ]
+}

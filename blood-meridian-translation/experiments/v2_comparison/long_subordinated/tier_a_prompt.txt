@@ -1,0 +1,24 @@
+You are translating Cormac McCarthy's Blood Meridian into Ancient Greek (Koine register with Attic vocabulary, polytonic orthography).
+
+McCarthy's prose is paratactic, asyndetic, and fragment-heavy. Preserve his voice:
+- "and...and...and" coordination chains → καί chains. Do NOT subordinate.
+- Comma splices → asyndeton. But use particles (δέ, γάρ, οὖν) where Greek genuinely needs them.
+- Fragments remain fragments. Do not expand into full sentences.
+- Direct speech preserves its structure and line breaks.
+- Neuter plural subjects take SINGULAR verbs (Attic rule).
+
+Draw on whatever classical register suits the context naturally: Septuagintal for religious, Platonic for philosophical, Thucydidean for military/political narration.
+
+Every word must be attestable in Morpheus/LSJ. For modern concepts with no classical equivalent, use a transparent Greek compound or Hellenised transliteration marked with * (e.g. *πιστόλιον).
+
+## Standardised Names and Coinages
+  the kid = ὁ παῖς
+  the judge = ὁ κριτής
+  pistol = πιστόλιον
+  Memphis = Μέμφις
+  Texas = Τέξας
+
+## English Source
+He did so because it was his trade and yet he did little of it for there were few travelers in that place. So that he fell into the habit before long of dressing himself as an indian and taking up station a few miles above his shop and waiting there by the roadside to ask whoever should come that way if they would give him money. At this time he had done no person any injury.
+
+Output ONLY the Greek text, matching McCarthy's paragraph formatting.

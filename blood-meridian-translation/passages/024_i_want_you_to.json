@@ -1,0 +1,64 @@
+{
+  "id": "024_i_want_you_to",
+  "chapter": "I",
+  "title": "i want you to",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "I want you to look here, he said. At my goddamned hat.\n\nYou couldnt tell what it was, something dead. He flapped it about and pulled it over his head and went on and the kid followed.\n\nThe dramhouse was a long narrow hall wainscotted with varnished boards. There were tables by the wall and spittoons on the floor. There were no patrons. The barman looked up when they entered and a nigger that had been sweeping the floor stood the broom against the wall and went out.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "I want you to look here, he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "At my goddamned hat.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 2,
+      "text": "You couldnt tell what it was, something dead.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "He flapped it about and pulled it over his head and went on and the kid followed.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "The dramhouse was a long narrow hall wainscotted with varnished boards.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "There were tables by the wall and spittoons on the floor.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "There were no patrons.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 7,
+      "text": "The barman looked up when they entered and a nigger that had been sweeping the floor stood the broom against the wall and went out.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 8,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    54,
+    183
+  ]
+}

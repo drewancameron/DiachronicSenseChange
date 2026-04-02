@@ -1,0 +1,119 @@
+{
+  "passage_id": "009_reverend_green_tent",
+  "title": "The Reverend Green's tent",
+  "chapter": "I",
+  "korto_text": "Ο αιδεσιμότατος Γκριν έπαιζε σε γεμάτο μαγαζί καθημερινά όσο κρατούσαν οι βροχές και οι βροχές κράτησαν δυο βδομάδες. Όταν ο μικρός μπήκε σκυφτός στην τριμμένη σκηνή από καραβόπανο υπήρχε χώρος για ορθίους στα πλαϊνά, για κάνα-δυο νοματαίους, και τέτοια μεθυστική αποφορά βρεμένου κι άπλυτου που και οι ίδιοι ξεμύτιζαν κάθε τόσο στη νεροποντή ν' ανασάνουν καθαρό αέρα ώσπου η βροχή τους έστελνε πάλι μέσα τρέχοντας. Στάθηκε με κάτι άλλους της σειράς του πίσω πίσω. Το μόνο που θα τον ξεχώριζε απ' το πλήθος ήταν ότι δεν είχε πάνω του όπλο.",
+  "korto_notes": [
+    {
+      "english": "playing to a full house",
+      "korto": "έπαιζε σε γεμάτο μαγαζί",
+      "note": "μαγαζί = shop/venue. Korto treats 'playing' as performing."
+    },
+    {
+      "english": "ratty canvas tent",
+      "korto": "τριμμένη σκηνή από καραβόπανο",
+      "note": "τριμμένη = worn/ratty; καραβόπανο = sailcloth/canvas. AG: σκηνὴ τρυχίνη ἐκ λίνου"
+    },
+    {
+      "english": "he was not armed",
+      "korto": "δεν είχε πάνω του όπλο",
+      "note": "όπλο = weapon. AG: οὐχ ὡπλισμένος ἦν or ἄνοπλος"
+    }
+  ],
+  "google_translate": {
+    "sentences": [
+      {
+        "index": 0,
+        "english": "The Reverend Green had been playing to a full house daily as long as the rain had been falling and the rain had been falling for two weeks.",
+        "google_translate_el": "Ο αιδεσιμότατος Γκριν έπαιζε σε ένα γεμάτο σπίτι καθημερινά όσο η βροχή έπεφτε και η βροχή έπεφτε για δύο εβδομάδες."
+      },
+      {
+        "index": 1,
+        "english": "When the kid ducked into the ratty canvas tent there was standing room along the walls, a place or two, and such a heady reek of the wet and bathless that they themselves would sally forth into the downpour now and again for fresh air before the rain drove them in again.",
+        "google_translate_el": "Όταν το παιδί έσκυψε στη σκηνή από καμβά, υπήρχε χώρος κατά μήκος των τοίχων, ένα ή δύο μέρη, και μια τέτοια μεθυστική μυρωδιά βρεγμένου και λουτρού, που τα ίδια έβγαιναν στη νεροποντή πολλές φορές για καθαρό αέρα πριν τους φέρει ξανά μέσα η βροχή."
+      },
+      {
+        "index": 2,
+        "english": "He stood with others of his kind along the back wall.",
+        "google_translate_el": "Στάθηκε με άλλους του είδους του στον πίσω τοίχο."
+      },
+      {
+        "index": 3,
+        "english": "The only thing that might have distinguished him in that crowd was that he was not armed.",
+        "google_translate_el": "Το μόνο πράγμα που θα μπορούσε να τον διέκρινε σε εκείνο το πλήθος ήταν ότι δεν ήταν οπλισμένος."
+      },
+      {
+        "index": 4,
+        "english": "Neighbors, said the reverend, he couldnt stay out of these here hell, hell, hellholes right here in Nacogdoches.",
+        "google_translate_el": "Γείτονες, είπε ο αιδεσιμότατος, δεν μπορούσε να μείνει μακριά από αυτές εδώ, κόλαση, κόλαση, κόλαση εδώ στο Nacogdoches."
+      },
+      {
+        "index": 5,
+        "english": "I said to him, said: You goin to take the son of God in there with ye?",
+        "google_translate_el": "Του είπα, είπα: Θα πάρεις τον γιο του Θεού εκεί μέσα μαζί σου;"
+      },
+      {
+        "index": 6,
+        "english": "And he said: Oh no.",
+        "google_translate_el": "Και είπε: Ω, όχι."
+      },
+      {
+        "index": 7,
+        "english": "No I aint.",
+        "google_translate_el": "Όχι δεν είμαι."
+      },
+      {
+        "index": 8,
+        "english": "And I said: Dont you know that he said I will foller ye always even unto the end of the road?",
+        "google_translate_el": "Και είπα: Δεν ξέρεις ότι είπε ότι θα σε ακολουθώ πάντα μέχρι το τέλος του δρόμου;"
+      },
+      {
+        "index": 9,
+        "english": "Well, he said, I aint askin nobody to go nowheres.",
+        "google_translate_el": "Λοιπόν, είπε, δεν ζητάω από κανέναν να πάει πουθενά."
+      },
+      {
+        "index": 10,
+        "english": "And I said: Neighbor, you dont need to ask.",
+        "google_translate_el": "Και είπα: Γείτονα, δεν χρειάζεται να ρωτήσεις."
+      },
+      {
+        "index": 11,
+        "english": "He's a goin to be there with ye ever step of the way whether ye ask it or ye dont.",
+        "google_translate_el": "Θα είναι εκεί μαζί σας, είτε το ζητάτε είτε όχι."
+      },
+      {
+        "index": 12,
+        "english": "I said: Neighbor, you caint get shed of him.",
+        "google_translate_el": "Είπα: Γείτονα, δεν μπορείς να τον ξεφύγεις."
+      },
+      {
+        "index": 13,
+        "english": "Now.",
+        "google_translate_el": "Τώρα."
+      },
+      {
+        "index": 14,
+        "english": "Are you going to drag him, him, into that hellhole yonder?",
+        "google_translate_el": "Θα τον σύρετε, αυτόν, σε εκείνη την κόλαση εκεί πέρα;"
+      }
+    ]
+  },
+  "idiom_notes": [
+    "μαγαζί = shop/venue. Korto treats 'playing' as performing.",
+    "τριμμένη = worn/ratty; καραβόπανο = sailcloth/canvas. AG: σκηνὴ τρυχίνη ἐκ λίνου",
+    "όπλο = weapon. AG: οὐχ ὡπλισμένος ἦν or ἄνοπλος"
+  ],
+  "vocabulary_harvest": [
+    {
+      "english": "ratty canvas tent",
+      "korto_mg": "τριμμένη σκηνή από καραβόπανο",
+      "ag_hint": "τριμμένη = worn/ratty; καραβόπανο = sailcloth/canvas. AG: σκηνὴ τρυχίνη ἐκ λίνου"
+    },
+    {
+      "english": "he was not armed",
+      "korto_mg": "δεν είχε πάνω του όπλο",
+      "ag_hint": "όπλο = weapon. AG: οὐχ ὡπλισμένος ἦν or ἄνοπλος"
+    }
+  ]
+}

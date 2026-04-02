@@ -1,0 +1,79 @@
+{
+  "id": "030_hed_left_the_mule",
+  "chapter": "I",
+  "title": "hed left the mule",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "He'd left the mule with a Mexican family that boarded animals at the edge of town and he arrived there wildlooking and out of breath. The woman opened the door and looked at him.\n\nNeed to get my mule, he wheezed.\n\nShe looked at him some more, then she called toward the back of the house. He walked around. There were horses tethered in the lot and there was a flatbed wagon against the fence with some turkeys sitting on the edge looking out. The old lady had come to the back door. Nito, she called. Venga. Hay un caballero aquf. Venga.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "He'd left the mule with a Mexican family that boarded animals at the edge of town and he arrived there wildlooking and out of breath.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "The woman opened the door and looked at him.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "Need to get my mule, he wheezed.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "She looked at him some more, then she called toward the back of the house.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "He walked around.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 5,
+      "text": "There were horses tethered in the lot and there was a flatbed wagon against the fence with some turkeys sitting on the edge looking out.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "The old lady had come to the back door.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "Nito, she called.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "Venga.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 9,
+      "text": "Hay un caballero aquf.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 10,
+      "text": "Venga.",
+      "discourse_hint": "fragment"
+    }
+  ],
+  "sentence_count": 11,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    178,
+    212
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "first_draft": "ἐκάθισε καὶ ἐξέτεινε τὸ σκέλος ἐπὶ τῆς γῆς καὶ ἔβλεψεν αὐτό, αἱματωδέστερος τῶν πλείστων. ἔλαβε τὸν καυλὸν καὶ ἐπέβαλεν αὐτῷ. ὁ ἱδρὼς ἵστατο ἐπὶ τοῦ μετώπου. κατεῖχε τὸ σκέλος καὶ ὤμνυ ἡσυχῇ. οἱ μὲν ἐθεῶντο, οἱ δ' οὔ. ἀνέστη ὁ παῖς. πειράσομαι αὐτήν, ἔφη.",
+  "sonnet_issues": [
+    {
+      "greek": "ἔλαβε τὸν καυλὸν καὶ ἐπέβαλεν αὐτῷ",
+      "problem": "WRONG SENSE: καυλός means 'stalk/stem of a plant' but the context requires 'shaft' of an arrow/spear",
+      "fix": "ἔλαβε τὸν στελεὸν καὶ ἐπέβαλεν αὐτῷ"
+    },
+    {
+      "greek": "ἐπέβαλεν αὐτῷ",
+      "problem": "UNIDIOMATIC GREEK: This calques English 'bore down on it' but Greek would express the action more specifically",
+      "fix": "εἵλκυσεν αὐτόν or κατεπίεσεν αὐτόν"
+    },
+    {
+      "greek": "ὤμνυ ἡσυχῇ",
+      "problem": "UNIDIOMATIC GREEK: This literally renders 'swore softly' but Greek would more naturally express cursing/swearing quietly",
+      "fix": "κατηρᾶτο σιγῇ or ἠρᾶτο ἡσυχῇ"
+    }
+  ],
+  "revision_prompt": "You are revising an Ancient Greek translation of McCarthy's Blood Meridian (Koine register, Attic vocabulary).\n\nFix ONLY the specific issues listed below. Do not change anything else.\n\n## English Source\nHe sat and stretched his leg out on the ground and looked at it, he bloodier than most. He gripped the shaft and bore down on it. The sweat stood on his forehead. He held his leg and swore softly. Some watched, some did not. The kid rose. I'll try her, he said.\n\n## Current Greek Translation\nἐκάθισε καὶ ἐξέτεινε τὸ σκέλος ἐπὶ τῆς γῆς καὶ ἔβλεψεν αὐτό, αἱματωδέστερος τῶν πλείστων. ἔλαβε τὸν καυλὸν καὶ ἐπέβαλεν αὐτῷ. ὁ ἱδρὼς ἵστατο ἐπὶ τοῦ μετώπου. κατεῖχε τὸ σκέλος καὶ ὤμνυ ἡσυχῇ. οἱ μὲν ἐθεῶντο, οἱ δ' οὔ. ἀνέστη ὁ παῖς. πειράσομαι αὐτήν, ἔφη.\n\n## Style and Sense Issues (from review)\n  - ἔλαβε τὸν καυλὸν καὶ ἐπέβαλεν αὐτῷ: WRONG SENSE: καυλός means 'stalk/stem of a plant' but the context requires 'shaft' of an arrow/spear\n    → Suggested: ἔλαβε τὸν στελεὸν καὶ ἐπέβαλεν αὐτῷ\n  - ἐπέβαλεν αὐτῷ: UNIDIOMATIC GREEK: This calques English 'bore down on it' but Greek would express the action more specifically\n    → Suggested: εἵλκυσεν αὐτόν or κατεπίεσεν αὐτόν\n  - ὤμνυ ἡσυχῇ: UNIDIOMATIC GREEK: This literally renders 'swore softly' but Greek would more naturally express cursing/swearing quietly\n    → Suggested: κατηρᾶτο σιγῇ or ἠρᾶτο ἡσυχῇ\n\n## Instructions\n1. Fix each listed issue while preserving everything that is correct.\n2. Every word must be attestable in Morpheus/LSJ.\n3. Output ONLY the complete revised Greek text — no explanations.",
+  "greek": "ἐκάθισε καὶ ἐξέτεινε τὸ σκέλος ἐπὶ τῆς γῆς καὶ ἔβλεψεν αὐτό, αἱματωδέστερος τῶν πλείστων. ἔλαβε τὸν στελεὸν καὶ εἵλκυσεν αὐτόν. ὁ ἱδρὼς ἵστατο ἐπὶ τοῦ μετώπου. κατεῖχε τὸ σκέλος καὶ κατηρᾶτο σιγῇ. οἱ μὲν ἐθεῶντο, οἱ δ' οὔ. ἀνέστη ὁ παῖς. πειράσομαι αὐτήν, ἔφη.",
+  "scores": {
+    "voice_preservation": 9,
+    "greek_idiom": 7,
+    "register_match": 8,
+    "grammar": 8,
+    "vocabulary": 7,
+    "imagery": 8,
+    "errors": [
+      "στελεόν for 'shaft' is unusual - κοντός or δόρυ would be clearer",
+      "εἵλκυσεν αὐτόν should be κατέσχεν or ἐπίεσεν for 'bore down'",
+      "κατηρᾶτο too strong for 'swore softly' - ὠμόζειν or βλασφημεῖν ἠρέμα better",
+      "αὐτήν unclear referent - should be neuter αὐτό for the task/attempt"
+    ],
+    "strengths": [
+      "Excellent preservation of paratactic structure with καί...καί",
+      "Natural use of οἱ μέν...οἱ δ' οὔ construction",
+      "Good terse style matching McCarthy",
+      "Proper use of imperfect ἵστατο for descriptive past",
+      "αἱματωδέστερος τῶν πλείστων nicely renders 'bloodier than most'"
+    ],
+    "total": 47
+  }
+}

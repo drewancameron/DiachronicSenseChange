@@ -1,0 +1,88 @@
+{
+  "passage_id": "001_see_the_child",
+  "greek_length": 71,
+  "grammar": {
+    "issues": [],
+    "issue_count": 0,
+    "warnings": 0
+  },
+  "retrieval": {
+    "register": {
+      "dominant_period": "imperial",
+      "neighbours": [
+        "imperial/plutarch.caius_marius.plut..mar..26.4",
+        "imperial/plutarch.antony.plut..ant..59.4",
+        "classical/herodotus.histories.hdt..1.157.3",
+        "imperial/plutarch.alexander.plut.alex..69.3",
+        "classical/thucydides.peleponnesian_war.thuc..pele..7.65.1"
+      ],
+      "assessment": "mostly imperial",
+      "issues": []
+    },
+    "lexical_suggestions": [
+      {
+        "query": "Outside lie dark turned fields with rags of snow and darker woods beyond that harbor yet a few last wolves",
+        "greek": "εἰς τὸν χειμάρρουν Κεισών.",
+        "source": "lxx.Judices.8.4",
+        "period": "hellenistic",
+        "score": 0.581
+      },
+      {
+        "query": "Outside lie dark turned fields with rags of snow and darker woods beyond that harbor yet a few last wolves",
+        "greek": "τοὺς χειμάρρους κατέστησεν κατοικίσαι Ἤρ,",
+        "source": "lxx.Numeri.4.21",
+        "period": "hellenistic",
+        "score": 0.578
+      },
+      {
+        "query": "Outside lie dark turned fields with rags of snow and darker woods beyond that harbor yet a few last wolves",
+        "greek": "λάκκους λελατομημένους οὓς",
+        "source": "lxx.Deuteronomium.5.6",
+        "period": "hellenistic",
+        "score": 0.572
+      },
+      {
+        "query": "His folk are known for hewers of wood and drawers of water but in truth his father has been a schoolmaster",
+        "greek": "ὅτι κύριος κέκληκεν τὸ παιδάριον.",
+        "source": "lxx.Regnorum_I.11.3",
+        "period": "hellenistic",
+        "score": 0.523
+      },
+      {
+        "query": "His folk are known for hewers of wood and drawers of water but in truth his father has been a schoolmaster",
+        "greek": "πρὸς Ῥαγουὴλ ’τον πατέρα",
+        "source": "lxx.Exodus.2.2",
+        "period": "hellenistic",
+        "score": 0.508
+      },
+      {
+        "query": "His folk are known for hewers of wood and drawers of water but in truth his father has been a schoolmaster",
+        "greek": "αὐτῇ. εἶπεν δὲ Συχὲμ πρὸς τὸν πατέρα",
+        "source": "lxx.Genesis.1.34",
+        "period": "hellenistic",
+        "score": 0.5
+      },
+      {
+        "query": "He lies in drink, he quotes from poets whose names are now lost",
+        "greek": "ἔπι τὴν γῆν.",
+        "source": "lxx.Genesis.1.42",
+        "period": "hellenistic",
+        "score": 0.584
+      },
+      {
+        "query": "He lies in drink, he quotes from poets whose names are now lost",
+        "greek": "μέθυσμα οὐ πίεται,",
+        "source": "lxx.Regnorum_I.11.1",
+        "period": "hellenistic",
+        "score": 0.568
+      },
+      {
+        "query": "He lies in drink, he quotes from poets whose names are now lost",
+        "greek": "ἔπι τὴν γῆν. ἰδὼν",
+        "source": "lxx.Genesis.1.42",
+        "period": "hellenistic",
+        "score": 0.565
+      }
+    ]
+  }
+}

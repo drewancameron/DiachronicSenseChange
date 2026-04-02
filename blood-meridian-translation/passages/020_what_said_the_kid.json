@@ -1,0 +1,142 @@
+{
+  "id": "020_what_said_the_kid",
+  "chapter": "I",
+  "title": "what said the kid",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "What? said the kid.\n\nI said are you quits?\n\nQuits?\n\nQuits. Cause if you want some more of me you sure as hell goin to get it.\n\nHe looked at the sky. Very high, very small, a buzzard. He looked at the man. Is my neck broke? he said.\n\nThe man looked out over the lot and spat and looked at the boy again. Can you not get up?\n\nI dont know. I aint tried.\n\nI never meant to break your neck.\n\nNo.\n\nI meant to kill ye.\n\nThey aint nobody done it yet. He clawed at the mud and pushed himself up. The man was sitting on the planks with his boots alongside him. They aint nothin wrong with you, he said.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "What?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 1,
+      "text": "said the kid.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "I said are you quits?",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 3,
+      "text": "Quits?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 4,
+      "text": "Quits.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 5,
+      "text": "Cause if you want some more of me you sure as hell goin to get it.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "He looked at the sky.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 7,
+      "text": "Very high, very small, a buzzard.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "He looked at the man.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 9,
+      "text": "Is my neck broke?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 10,
+      "text": "he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "The man looked out over the lot and spat and looked at the boy again.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 12,
+      "text": "Can you not get up?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 13,
+      "text": "I dont know.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 14,
+      "text": "I aint tried.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 15,
+      "text": "I never meant to break your neck.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 16,
+      "text": "No.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 17,
+      "text": "I meant to kill ye.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 18,
+      "text": "They aint nobody done it yet.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 19,
+      "text": "He clawed at the mud and pushed himself up.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 20,
+      "text": "The man was sitting on the planks with his boots alongside him.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 21,
+      "text": "They aint nothin wrong with you, he said.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 22,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    19,
+    42,
+    50,
+    125,
+    231,
+    322,
+    350,
+    385,
+    390,
+    411
+  ]
+}

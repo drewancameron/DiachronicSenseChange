@@ -1,0 +1,23 @@
+You are revising an Ancient Greek translation of McCarthy's Blood Meridian (Koine register, Attic vocabulary).
+
+Fix ONLY the specific issues listed below. Do not change anything that is already correct.
+
+## English Source
+He did so because it was his trade and yet he did little of it for there were few travelers in that place. So that he fell into the habit before long of dressing himself as an indian and taking up station a few miles above his shop and waiting there by the roadside to ask whoever should come that way if they would give him money. At this time he had done no person any injury.
+
+## Current Greek Translation
+οὕτως ἐποίει· τέχνη γὰρ αὐτοῦ ἦν καὶ ὅμως ὀλίγα ἔπραττεν· ὀλίγοι γὰρ ὁδοιπόροι ἦσαν ἐν τῷ τόπῳ ἐκείνῳ. ὥστε οὐ διὰ μακροῦ εἰς ἔθος κατέστη ἑαυτὸν ὡς βάρβαρον σκευάζειν καὶ καθίστασθαι σταδίους τινὰς ὑπὲρ τοῦ ἐργαστηρίου καὶ παρὰ τὴν ὁδὸν μένειν ἐρωτῶν τοὺς παριόντας εἰ δοίησαν αὐτῷ ἀργύριον. τότε δὲ οὐδένα πω ἠδίκησεν.
+
+## Style and Sense Issues (from review)
+  - σκευάζειν: Wrong sense chosen - means 'to prepare/equip' but used here for 'dress/costume oneself'
+    → Suggested: ἀμφιέννυσθαι or στολίζειν
+  - ἐργαστηρίου: Anachronistic - this form is more Hellenistic/later; classical would use simpler terms
+    → Suggested: καπηλείου or ἐργαστῆρος
+
+
+
+## Instructions
+1. Fix each listed issue while preserving everything that is correct.
+2. Use the supporting evidence above to guide your corrections where provided.
+3. Every word must be attestable in Morpheus/LSJ.
+4. Output ONLY the complete revised Greek text — no explanations.

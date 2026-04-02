@@ -1,0 +1,51 @@
+{
+  "id": "070_the_facade_of_the",
+  "chapter": "II",
+  "title": "the facade of the",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "The facade of the building bore an array of saints in their niches and they had been shot up by American troops trying their rifles, the figures shorn of ears and noses and darkly mottled with leadmarks oxidized upon the stone. The huge carved and paneled doors hung awap on their hinges and a carved stone Virgin held in her arms a headless child. He stood blinking in the noon heat. Then he saw the mule's tracks. They were just the palest disturbance of the dust and they came out of the door of the church and crossed the lot to the gate in the east wall. He hiked the saddle higher onto his shoulder and set out after them.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "The facade of the building bore an array of saints in their niches and they had been shot up by American troops trying their rifles, the figures shorn of ears and noses and darkly mottled with leadmarks oxidized upon the stone.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "The huge carved and paneled doors hung awap on their hinges and a carved stone Virgin held in her arms a headless child.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "He stood blinking in the noon heat.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "Then he saw the mule's tracks.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "They were just the palest disturbance of the dust and they came out of the door of the church and crossed the lot to the gate in the east wall.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "He hiked the saddle higher onto his shoulder and set out after them.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 6,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": []
+}

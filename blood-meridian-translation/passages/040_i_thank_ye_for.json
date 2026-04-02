@@ -1,0 +1,95 @@
+{
+  "id": "040_i_thank_ye_for",
+  "chapter": "II",
+  "title": "i thank ye for",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "I thank ye for the water, he called.\n\nThe hermit appeared darkly in the door. Just stay with me, he said.\n\nThat's all right.\n\nBest stay. It's fixin to storm.\n\nYou reckon?\n\nI reckon and I reckon right.\n\nWell.\n\nBring ye bed. Bring ye possibles.\n\nHe uncinched and threw down the saddle and hobbled the mule foreleg to rear and took his bedroll in. There was no light save the fire and the old man was squatting by it tailorwise.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "I thank ye for the water, he called.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "The hermit appeared darkly in the door.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "Just stay with me, he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "That's all right.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 4,
+      "text": "Best stay.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 5,
+      "text": "It's fixin to storm.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 6,
+      "text": "You reckon?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 7,
+      "text": "I reckon and I reckon right.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "Well.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 9,
+      "text": "Bring ye bed.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 10,
+      "text": "Bring ye possibles.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 11,
+      "text": "He uncinched and threw down the saddle and hobbled the mule foreleg to rear and took his bedroll in.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 12,
+      "text": "There was no light save the fire and the old man was squatting by it tailorwise.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 13,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    36,
+    105,
+    124,
+    157,
+    170,
+    200,
+    207,
+    242
+  ]
+}

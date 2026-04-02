@@ -1,0 +1,69 @@
+{
+  "passage_id": "002_night_of_your_birth",
+  "title": "Night of your birth",
+  "chapter": "I",
+  "korto_text": "Η νύχτα που γεννήθηκες. Το τριάντα τρία. Νύχτα των Λεοντιδών τη λέγανε. Και πέφτανε τ' αστέρια, Θεέ μου, σαν βροχή. Εγώ έψαχνα με το μάτι τη μαυρίλα, τρύπες στα ουράνια. Την Άρκτο.",
+  "korto_notes": [
+    {
+      "english": "Night of your birth",
+      "korto": "Η νύχτα που γεννήθηκες",
+      "note": "Relative clause (που γεννήθηκες) where McCarthy uses nominal fragment"
+    },
+    {
+      "english": "The Leonids they were called",
+      "korto": "Νύχτα των Λεοντιδών τη λέγανε",
+      "note": "Λεοντιδών = genitive plural of Λεοντίδες, hellenised naturally"
+    },
+    {
+      "english": "God how the stars did fall",
+      "korto": "Θεέ μου, σαν βροχή",
+      "note": "Adds simile 'like rain' (σαν βροχή) not in the English"
+    },
+    {
+      "english": "The Dipper stove",
+      "korto": "Την Άρκτο",
+      "note": "Άρκτος = the Bear (= Ursa Major = the Dipper). Korto truncates 'stove' — just names the constellation"
+    }
+  ],
+  "google_translate": {
+    "sentences": [
+      {
+        "index": 0,
+        "english": "Night of your birth.",
+        "google_translate_el": "Νύχτα της γέννησής σου."
+      },
+      {
+        "index": 1,
+        "english": "Thirty-three.",
+        "google_translate_el": "Τριάντα τρία."
+      },
+      {
+        "index": 2,
+        "english": "The Leonids they were called.",
+        "google_translate_el": "Λεωνίδες τους έλεγαν."
+      },
+      {
+        "index": 3,
+        "english": "God how the stars did fall.",
+        "google_translate_el": "Θεέ μου πώς έπεσαν τα αστέρια."
+      },
+      {
+        "index": 4,
+        "english": "I looked for blackness, holes in the heavens.",
+        "google_translate_el": "Αναζήτησα μαυρίλα, τρύπες στους ουρανούς."
+      },
+      {
+        "index": 5,
+        "english": "The Dipper stove.",
+        "google_translate_el": "Η σόμπα Dipper."
+      }
+    ]
+  },
+  "idiom_notes": [
+    "Relative clause (που γεννήθηκες) where McCarthy uses nominal fragment",
+    "Λεοντιδών = genitive plural of Λεοντίδες, hellenised naturally",
+    "Adds simile 'like rain' (σαν βροχή) not in the English",
+    "Άρκτος = the Bear (= Ursa Major = the Dipper). Korto truncates 'stove' — just names the constellation"
+  ],
+  "vocabulary_harvest": []
+}

@@ -1,0 +1,93 @@
+{
+  "id": "057_he_went_on_through",
+  "chapter": "II",
+  "title": "he went on through",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "He went on through the town leading the animal. There was no one about. By and by he entered a plaza and he could hear guitars and a horn. At the far end of the square there were lights from a cafe and laughter and highpitched cries. He led the mule into the square and up the far side past a long portico toward the lights.\n\nThere was a team of dancers in the street and they wore gaudy costumes and called out in Spanish. He and the mule stood at the edge of the lights and watched. Old men sat along the tavern wall and children played in the dust. They wore strange costumes all, the men in dark flatcrowned hats, white nightshirts, trousers that buttoned up the outside leg and the girls with garish painted faces and tortoiseshell combs in their blueblack hair. The kid crossed the street with the mule and tied it and entered the cafe. A number of men were standing at the bar and they quit talking when he entered. He crossed the polished clay floor past a sleeping dog that opened one eye and looked at him and he stood at the bar and placed both hands on the tiles. The barman nodded to him. Digame, he said.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "He went on through the town leading the animal.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "There was no one about.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 2,
+      "text": "By and by he entered a plaza and he could hear guitars and a horn.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "At the far end of the square there were lights from a cafe and laughter and highpitched cries.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "He led the mule into the square and up the far side past a long portico toward the lights.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "There was a team of dancers in the street and they wore gaudy costumes and called out in Spanish.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "He and the mule stood at the edge of the lights and watched.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "Old men sat along the tavern wall and children played in the dust.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "They wore strange costumes all, the men in dark flatcrowned hats, white nightshirts, trousers that buttoned up the outside leg and the girls with garish painted faces and tortoiseshell combs in their blueblack hair.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "The kid crossed the street with the mule and tied it and entered the cafe.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 10,
+      "text": "A number of men were standing at the bar and they quit talking when he entered.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "He crossed the polished clay floor past a sleeping dog that opened one eye and looked at him and he stood at the bar and placed both hands on the tiles.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 12,
+      "text": "The barman nodded to him.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 13,
+      "text": "Digame, he said.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 14,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    324
+  ]
+}

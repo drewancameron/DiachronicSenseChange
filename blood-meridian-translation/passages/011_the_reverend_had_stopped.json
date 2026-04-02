@@ -1,0 +1,78 @@
+{
+  "id": "011_the_reverend_had_stopped",
+  "chapter": "I",
+  "title": "the reverend had stopped",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "The reverend had stopped his sermon altogether. There was no sound in the tent. All watched the man. He adjusted the hat and then pushed his way forward as far as the crateboard pulpit where the reverend stood and there he turned to address the reverend's congregation. His face was serene and strangely childlike. His hands were small. He held them out.\n\nLadies and gentlemen I feel it my duty to inform you that the man holding this revival is an imposter. He holds no papers of divinity from any institution recognized or improvised. He is altogether devoid of the least qualification to the office he has usurped and has only committed to memory a few passages from the good book for the purpose of lending to his fraudulent sermons some faint flavor of the piety he despises. In truth, the gentleman standing here before you posing as a minister of the Lord is not only totally illiterate but is also wanted by the law in the states of Tennessee, Kentucky, Mississippi, and Arkansas.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "The reverend had stopped his sermon altogether.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "There was no sound in the tent.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "All watched the man.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 3,
+      "text": "He adjusted the hat and then pushed his way forward as far as the crateboard pulpit where the reverend stood and there he turned to address the reverend's congregation.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "His face was serene and strangely childlike.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "His hands were small.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 6,
+      "text": "He held them out.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 7,
+      "text": "Ladies and gentlemen I feel it my duty to inform you that the man holding this revival is an imposter.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "He holds no papers of divinity from any institution recognized or improvised.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "He is altogether devoid of the least qualification to the office he has usurped and has only committed to memory a few passages from the good book for the purpose of lending to his fraudulent sermons some faint flavor of the piety he despises.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 10,
+      "text": "In truth, the gentleman standing here before you posing as a minister of the Lord is not only totally illiterate but is also wanted by the law in the states of Tennessee, Kentucky, Mississippi, and Arkansas.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 11,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    354
+  ]
+}

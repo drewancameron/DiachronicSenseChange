@@ -1,0 +1,85 @@
+You are translating Cormac McCarthy's Blood Meridian into Ancient Greek (Koine register with Attic vocabulary, polytonic orthography).
+
+McCarthy's prose is paratactic, asyndetic, and fragment-heavy. Preserve his voice:
+- "and...and...and" coordination chains → preserve as καί chains. Do NOT subordinate.
+- Comma splices → asyndeton. But use particles (δέ, γάρ, οὖν) where Greek genuinely needs them for readability.
+- Fragments remain fragments. Do not expand.
+- Direct speech preserves its structure and line breaks.
+- Neuter plural subjects take SINGULAR verbs (Attic rule).
+
+Draw on whatever classical register suits the context naturally: Septuagintal for religious, Platonic for philosophical, Thucydidean for military narration.
+
+Every word must be attestable in Morpheus/LSJ. For modern concepts with no classical equivalent, use a transparent Greek compound or Hellenised transliteration marked with * (e.g. *πιστόλιον).
+
+## Translation Decisions (use these for consistency)
+Relevant to this passage:
+  the kid → ὁ παῖς  (παῖς covers both 'child' and 'young man' in classical and Koine usage. Korto alternates ο μικρός (co)
+  the judge → ὁ κριτής  (κριτής over δικαστής. In the Septuagint, κριτής = 'judge' in the Book of Judges — figures of terrify)
+  fire → τὸ πῦρ  (Universal.)
+  bones → τὰ ὀστᾶ  (Standard classical/Koine form.)
+  night → ἡ νύξ  (Universal. McCarthy's most frequent time-marker.)
+  hat → ὁ πῖλος / ὁ πέτασος  (πέτασος = wide-brimmed hat (traveller's hat, as worn by Hermes). πῖλος = felt cap. Use πέτασος for t)
+
+Full list:
+  the kid → ὁ παῖς
+  the judge → ὁ κριτής  [septuagintal]
+  pistol → πιστόλιον  [modern_loan]
+  rifle / gun (long) → τὸ πυροβόλον
+  gunpowder / powder → ἡ πυρῖτις (κόνις)
+  gunshot / to shoot → πυροβολέω / πυροβολισμός
+  knife → ἡ μάχαιρα
+  desert / waste → ἡ ἔρημος / ἡ ἐρημία  [septuagintal]
+  plain / prairie / flat land → τὸ πεδίον
+  river → ὁ ποταμός
+  mud / mire → ὁ πηλός / ἡ ἰλύς
+  blood → τὸ αἷμα
+  fire → τὸ πῦρ
+  sun → ὁ ἥλιος
+  dust → ἡ κόνις
+  bones → τὰ ὀστᾶ
+  stars → οἱ ἀστέρες
+  night → ἡ νύξ
+  horse → ὁ ἵππος
+  mule → ὁ ἡμίονος
+  wolf / wolves → ὁ λύκος
+  tavern / saloon / dramshop → τὸ καπηλεῖον
+  hotel → τὸ πανδοκεῖον  [NT]
+  whore / whores → αἱ πόρναι
+  pilgrim → ὁ προσκυνητής
+  dollar / dollars / money / coins → τὸ ἀργύριον (generic money) / ὁ στατήρ (coin)
+  hat → ὁ πῖλος / ὁ πέτασος
+  boots → αἱ ἐμβάδες / αἱ κρηπῖδες
+  shirt / linen shirt → ὁ λίνεος χιτών
+  Memphis → Μέμφις
+  Texas → Τέξας  [transliteration]
+
+## English Source
+In the night they followed a mountain torrent in a wild gorge choked with mossy rocks and they rode under dark grottoes where the water dripped and spattered and tasted of iron and they saw the silver filaments of cascades divided upon the faces of distant buttes that appeared as signs and wonders in the heavens themselves so dark was the ground of their origins. They crossed the blackened wood of a burn and they rode through a region of cloven rock where great boulders lay halved with smooth uncentered faces and on the slopes of those ferric grounds old paths of fire and the blackened bones of trees assassinated in the mountain storms. On the day following they began to encounter holly and oak, hardwood forests much like those they had quit in their youth. In pockets on the north slopes hail lay nested like tectites among the leaves and the nights were cool.
+
+Output ONLY the Greek text, matching McCarthy's paragraph formatting.
+
+## Thematic Vocabulary (attested in the classical corpus)
+These words appear in Greek passages on similar themes. Use them
+if they fit naturally — they are suggestions, not requirements.
+
+### mountains and rocky landscape
+  ὄρος                       [John Chrysostom, John Chrysostom (tlg4102.tlg005.1st1K-grc1) (+6 others)]
+  πέτραι                     [Josephus, Josephus (tlg0526.tlg004.perseus-grc2)]
+  πέτραν                     [Pindar, Birds]
+  πέτραις                    [Euripides, Bacchae]
+  κορυφή                     [Theophrastus, Theophrastus (tlg0087.tlg026.1st1K-grc1)]
+  κορυφαῖοϲ                  [Theophrastus, Theophrastus (tlg0087.tlg026.1st1K-grc1)]
+  πέτρας                     [Euripides, Helen]
+
+### forest and trees
+  ἄλσος                      [Septuagint, LXX Judices (+1 others)]
+  δένδρων                    [Gregory of Nyssa, Gregory of Nyssa (tlg2959.tlg003.opp-ger1)]
+
+### rivers and water
+  κρήνης                     [Alcaeus, Alcaeus (tlg0533.tlg003.perseus-grc2) (+2 others)]
+  κρήνη                      [Theophrastus, Theophrastus (tlg0087.tlg011.1st1K-grc1) (+1 others)]
+  κρήνην                     [DFHG Fragment, DFHG Fragment (vol1_THEOPOMPUS)]
+  ποταμός                    [Homer, Iliad]
+  ποταμοί                    [Homer, Epigrams]
+  πηγήν                      [Septuagint, LXX Machabaeorum iv]
+  ῥεῦμα                      [Gregory of Nyssa, Gregory of Nyssa (tlg2959.tlg003.opp-ger1)]

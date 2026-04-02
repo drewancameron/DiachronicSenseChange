@@ -1,0 +1,41 @@
+{
+  "id": "071_a_dog_in_the",
+  "chapter": "II",
+  "title": "a dog in the",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "A dog in the shade of the portal rose and lurched sullenly out into the sun until he had passed and then lurched back. He took the road down the hill toward the river, a ragged figure enough. He entered a deep wood of pecan and oak and the road took a rise and he could see the river below him. Blacks were washing a carriage in the ford and he went down the hill and stood at the edge of the water and after a while he called out to them.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "A dog in the shade of the portal rose and lurched sullenly out into the sun until he had passed and then lurched back.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "He took the road down the hill toward the river, a ragged figure enough.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "He entered a deep wood of pecan and oak and the road took a rise and he could see the river below him.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "Blacks were washing a carriage in the ford and he went down the hill and stood at the edge of the water and after a while he called out to them.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 4,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": []
+}

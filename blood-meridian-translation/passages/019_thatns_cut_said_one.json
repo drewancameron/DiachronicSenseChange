@@ -1,0 +1,65 @@
+{
+  "id": "019_thatns_cut_said_one",
+  "chapter": "I",
+  "title": "thatns cut said one",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "That'ns cut, said one of several men standing along the walkway watching.\n\nKill kill slobbered the man wading forward.\n\nBut someone else was coming down the lot, great steady sucking sounds like a cow. He was carrying a huge shellalegh. He reached the kid first and when he swung with the club the kid went face down in the mud. He'd have died if someone hadn't turned him over.\n\nWhen he woke it was daylight and the rain had stopped and he was looking up into the face of a man with long hair who was completely covered in mud. The man was saying something to him.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "That'ns cut, said one of several men standing along the walkway watching.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 1,
+      "text": "Kill kill slobbered the man wading forward.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "But someone else was coming down the lot, great steady sucking sounds like a cow.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "He was carrying a huge shellalegh.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "He reached the kid first and when he swung with the club the kid went face down in the mud.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "He'd have died if someone hadn't turned him over.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "When he woke it was daylight and the rain had stopped and he was looking up into the face of a man with long hair who was completely covered in mud.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "The man was saying something to him.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 8,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    73,
+    118,
+    378
+  ]
+}

@@ -1,0 +1,406 @@
+{
+  "overall": {
+    "relative_clause": {
+      "total": 107296,
+      "distribution": {
+        "none": {
+          "count": 92082,
+          "probability": 0.8582
+        },
+        "genitive_absolute": {
+          "count": 8934,
+          "probability": 0.0833
+        },
+        "relative_clause": {
+          "count": 6261,
+          "probability": 0.0584
+        },
+        "articular_participle": {
+          "count": 19,
+          "probability": 0.0002
+        }
+      }
+    },
+    "coordination_chain": {
+      "total": 74129,
+      "distribution": {
+        "none": {
+          "count": 50656,
+          "probability": 0.6833
+        },
+        "coordination_chain": {
+          "count": 23473,
+          "probability": 0.3167
+        }
+      }
+    },
+    "fragment": {
+      "total": 28072,
+      "distribution": {
+        "none": {
+          "count": 20841,
+          "probability": 0.7424
+        },
+        "fragment": {
+          "count": 7231,
+          "probability": 0.2576
+        }
+      }
+    },
+    "temporal": {
+      "total": 9508,
+      "distribution": {
+        "none": {
+          "count": 8703,
+          "probability": 0.9153
+        },
+        "temporal": {
+          "count": 805,
+          "probability": 0.0847
+        }
+      }
+    },
+    "conditional": {
+      "total": 7860,
+      "distribution": {
+        "none": {
+          "count": 4944,
+          "probability": 0.629
+        },
+        "conditional_real": {
+          "count": 1579,
+          "probability": 0.2009
+        },
+        "conditional_fv": {
+          "count": 695,
+          "probability": 0.0884
+        },
+        "conditional_opt": {
+          "count": 642,
+          "probability": 0.0817
+        }
+      }
+    }
+  },
+  "by_period": {
+    "classical": {
+      "relative_clause": {
+        "total": 27667,
+        "distribution": {
+          "none": {
+            "count": 22161,
+            "probability": 0.801
+          },
+          "relative_clause": {
+            "count": 2941,
+            "probability": 0.1063
+          },
+          "genitive_absolute": {
+            "count": 2551,
+            "probability": 0.0922
+          },
+          "articular_participle": {
+            "count": 14,
+            "probability": 0.0005
+          }
+        }
+      },
+      "coordination_chain": {
+        "total": 13205,
+        "distribution": {
+          "coordination_chain": {
+            "count": 6653,
+            "probability": 0.5038
+          },
+          "none": {
+            "count": 6552,
+            "probability": 0.4962
+          }
+        }
+      },
+      "fragment": {
+        "total": 5453,
+        "distribution": {
+          "none": {
+            "count": 4288,
+            "probability": 0.7864
+          },
+          "fragment": {
+            "count": 1165,
+            "probability": 0.2136
+          }
+        }
+      },
+      "temporal": {
+        "total": 3101,
+        "distribution": {
+          "none": {
+            "count": 2659,
+            "probability": 0.8575
+          },
+          "temporal": {
+            "count": 442,
+            "probability": 0.1425
+          }
+        }
+      },
+      "conditional": {
+        "total": 3054,
+        "distribution": {
+          "none": {
+            "count": 1216,
+            "probability": 0.3982
+          },
+          "conditional_real": {
+            "count": 828,
+            "probability": 0.2711
+          },
+          "conditional_fv": {
+            "count": 558,
+            "probability": 0.1827
+          },
+          "conditional_opt": {
+            "count": 452,
+            "probability": 0.148
+          }
+        }
+      }
+    },
+    "imperial": {
+      "relative_clause": {
+        "total": 46345,
+        "distribution": {
+          "none": {
+            "count": 36918,
+            "probability": 0.7966
+          },
+          "genitive_absolute": {
+            "count": 6313,
+            "probability": 0.1362
+          },
+          "relative_clause": {
+            "count": 3109,
+            "probability": 0.0671
+          },
+          "articular_participle": {
+            "count": 5,
+            "probability": 0.0001
+          }
+        }
+      },
+      "coordination_chain": {
+        "total": 28751,
+        "distribution": {
+          "coordination_chain": {
+            "count": 16279,
+            "probability": 0.5662
+          },
+          "none": {
+            "count": 12472,
+            "probability": 0.4338
+          }
+        }
+      },
+      "fragment": {
+        "total": 15458,
+        "distribution": {
+          "none": {
+            "count": 10321,
+            "probability": 0.6677
+          },
+          "fragment": {
+            "count": 5137,
+            "probability": 0.3323
+          }
+        }
+      },
+      "temporal": {
+        "total": 4355,
+        "distribution": {
+          "none": {
+            "count": 3995,
+            "probability": 0.9173
+          },
+          "temporal": {
+            "count": 360,
+            "probability": 0.0827
+          }
+        }
+      },
+      "conditional": {
+        "total": 4450,
+        "distribution": {
+          "none": {
+            "count": 3372,
+            "probability": 0.7578
+          },
+          "conditional_real": {
+            "count": 751,
+            "probability": 0.1688
+          },
+          "conditional_opt": {
+            "count": 190,
+            "probability": 0.0427
+          },
+          "conditional_fv": {
+            "count": 137,
+            "probability": 0.0308
+          }
+        }
+      }
+    },
+    "homeric": {
+      "relative_clause": {
+        "total": 33284,
+        "distribution": {
+          "none": {
+            "count": 33003,
+            "probability": 0.9916
+          },
+          "relative_clause": {
+            "count": 211,
+            "probability": 0.0063
+          },
+          "genitive_absolute": {
+            "count": 70,
+            "probability": 0.0021
+          }
+        }
+      },
+      "coordination_chain": {
+        "total": 32173,
+        "distribution": {
+          "none": {
+            "count": 31632,
+            "probability": 0.9832
+          },
+          "coordination_chain": {
+            "count": 541,
+            "probability": 0.0168
+          }
+        }
+      },
+      "fragment": {
+        "total": 7161,
+        "distribution": {
+          "none": {
+            "count": 6232,
+            "probability": 0.8703
+          },
+          "fragment": {
+            "count": 929,
+            "probability": 0.1297
+          }
+        }
+      },
+      "conditional": {
+        "total": 356,
+        "distribution": {
+          "none": {
+            "count": 356,
+            "probability": 1.0
+          }
+        }
+      },
+      "temporal": {
+        "total": 2052,
+        "distribution": {
+          "none": {
+            "count": 2049,
+            "probability": 0.9985
+          },
+          "temporal": {
+            "count": 3,
+            "probability": 0.0015
+          }
+        }
+      }
+    }
+  },
+  "phrase_patterns": {
+    "verb_forms": {
+      "verb_Past_Ind_Act": 87240,
+      "verb_Pres_Ind_Act": 34639,
+      "verb_Past_Ind_Mid": 30783,
+      "verb_Pres_Ind_Mid": 11985,
+      "verb_Past_Ind_Pass": 5183,
+      "verb_Past_Imp_Mid": 4383,
+      "verb_Fut_Ind_Act": 4280,
+      "verb_Past_Sub_Act": 4106,
+      "verb_Pres_Imp_Act": 3231,
+      "verb_Past_Opt_Act": 2955,
+      "verb_Pres_Sub_Act": 2954,
+      "verb_Fut_Ind_Mid": 2322,
+      "verb_Pres_Imp_Mid": 1712,
+      "verb_Pres_Opt_Act": 1627,
+      "verb_Pqp_Ind_Act": 1553,
+      "verb_Past_Imp_Act": 1444,
+      "verb_Past_Sub_Mid": 1401,
+      "verb_Pqp_Ind_Mid": 1361,
+      "verb_Pres_Opt_Mid": 1056,
+      "verb_Past_Opt_Mid": 1031,
+      "verb_Pres_Sub_Mid": 964,
+      "verb_Past_Opt_Pass": 415,
+      "verb_Past_Sub_Pass": 286,
+      "verb_Fut_Sub_Act": 26,
+      "verb_Past_Imp_Pass": 12,
+      "verb_Fut_Opt_Act": 4,
+      "verb_Fut_Sub_Mid": 2,
+      "verb_Pqp_Imp_Act": 2
+    },
+    "pp_patterns": {
+      "ἐν+Dat": 19799,
+      "εἰς+Acc": 14808,
+      "πρός+Acc": 13206,
+      "ἐκ+Gen": 9211,
+      "κατά+Acc": 5889,
+      "ἐπί+Acc": 5767,
+      "ὑπό+Gen": 5472,
+      "ἀπό+Gen": 4876,
+      "περί+Acc": 4827,
+      "περί+Gen": 4693,
+      "διά+Acc": 3340,
+      "ἐπί+Dat": 3062,
+      "μετά+Gen": 2906,
+      "διά+Gen": 2173,
+      "παρά+Acc": 2121,
+      "ἐπί+Gen": 1904,
+      "μετά+Acc": 1787,
+      "ὑπέρ+Gen": 1327,
+      "παρά+Gen": 1326,
+      "παρά+Dat": 1246,
+      "διʼ+Acc": 871,
+      "πρό+Gen": 811,
+      "πρός+Dat": 766,
+      "διʼ+Gen": 766,
+      "μεί+Gen": 700,
+      "κατά+Gen": 585,
+      "σύν+Dat": 570,
+      "ἅμα+Dat": 563,
+      "μέχρι+Gen": 559,
+      "ἄνευ+Gen": 542,
+      "ἀνά+Gen": 528,
+      "ἕνεκα+Gen": 511,
+      "ὑπό+Acc": 493,
+      "ἐν+?": 474,
+      "ἐν+Gen": 449,
+      "ὑπό+Dat": 432,
+      "πλήν+Gen": 404,
+      "πρός+?": 350,
+      "ἀντί+Gen": 328,
+      "ὑφʼ+Gen": 323,
+      "ἐπί+?": 319,
+      "διά+?": 318,
+      "περί+Dat": 312,
+      "πρός+Gen": 292,
+      "ἐκ+?": 272,
+      "ἄχρι+Gen": 272,
+      "ἔξω+Gen": 267,
+      "εἰς+?": 263,
+      "ἐκ+Acc": 234,
+      "μεί+Acc": 232
+    }
+  },
+  "total_records": 54570,
+  "total_pairs": 226865
+}

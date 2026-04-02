@@ -1,0 +1,70 @@
+{
+  "id": "047_i_dont_know_believe",
+  "chapter": "II",
+  "title": "i dont know believe",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "I dont know.\n\nBelieve that.\n\nWhen the old man's mess was warmed he doled it out and they ate in silence. Thunder was moving north and before long it was booming overhead and starting bits of rust in a thin trickle down the stovepipe. They hunkered over their plates and wiped the grease up with their fingers and drank from the gourd.\n\nThe kid went out and scoured his cup and plate in the sand and came back banging the tins together as if to fend away some drygulch phantom out there in the dark. Distant thunderheads reared quivering against the electric sky and were sucked away in the blackness again. The old man sat with one ear cocked to the howling waste without. The kid shut the door.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "I dont know.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 1,
+      "text": "Believe that.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 2,
+      "text": "When the old man's mess was warmed he doled it out and they ate in silence.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "Thunder was moving north and before long it was booming overhead and starting bits of rust in a thin trickle down the stovepipe.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "They hunkered over their plates and wiped the grease up with their fingers and drank from the gourd.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "The kid went out and scoured his cup and plate in the sand and came back banging the tins together as if to fend away some drygulch phantom out there in the dark.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "Distant thunderheads reared quivering against the electric sky and were sucked away in the blackness again.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "The old man sat with one ear cocked to the howling waste without.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "The kid shut the door.",
+      "discourse_hint": "fragment"
+    }
+  ],
+  "sentence_count": 9,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    12,
+    27,
+    334
+  ]
+}

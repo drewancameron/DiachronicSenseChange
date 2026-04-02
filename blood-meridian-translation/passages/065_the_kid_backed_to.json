@@ -1,0 +1,61 @@
+{
+  "id": "065_the_kid_backed_to",
+  "chapter": "II",
+  "title": "the kid backed to",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "The kid backed to the center of the room and the barman labored over the floor toward him like a man on his way to some chore. He swung twice at the kid and the kid stepped twice to the right. Then he stepped backward. The barman froze. The kid boosted himself lightly over the bar and picked up the pistol. No one moved. He raked the frizzen open against the bartop and dumped the priming out and laid the pistol down again. Then he selected a pair of full bottles from the shelves behind him and came around the end of the bar with one in each hand.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "The kid backed to the center of the room and the barman labored over the floor toward him like a man on his way to some chore.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "He swung twice at the kid and the kid stepped twice to the right.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "Then he stepped backward.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 3,
+      "text": "The barman froze.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 4,
+      "text": "The kid boosted himself lightly over the bar and picked up the pistol.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "No one moved.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 6,
+      "text": "He raked the frizzen open against the bartop and dumped the priming out and laid the pistol down again.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "Then he selected a pair of full bottles from the shelves behind him and came around the end of the bar with one in each hand.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 8,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": []
+}

@@ -1,0 +1,83 @@
+{
+  "id": "032_he_led_it_out",
+  "chapter": "I",
+  "title": "he led it out",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "He led it out to the road. As he passed the house the woman came padding out after him. When she saw him put his foot in the stirrup she began to run. He swung up into the broken saddle and chucked the mule forward. She stopped at the gate and watched him go. He didnt look back.\n\nWhen he passed back through the town the hotel was burning and men were standing around watching it, some holding empty buckets. A few men sat horseback watching the flames and one of these was the judge. As the kid rode past the judge turned and watched him. He turned the horse, as if he'd have the animal watch too. When the kid looked back the judge smiled. The kid touched up the mule and they went sucking out past the old stone fort along the road west.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "He led it out to the road.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "As he passed the house the woman came padding out after him.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "When she saw him put his foot in the stirrup she began to run.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "He swung up into the broken saddle and chucked the mule forward.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "She stopped at the gate and watched him go.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "He didnt look back.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 6,
+      "text": "When he passed back through the town the hotel was burning and men were standing around watching it, some holding empty buckets.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "A few men sat horseback watching the flames and one of these was the judge.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "As the kid rode past the judge turned and watched him.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "He turned the horse, as if he'd have the animal watch too.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 10,
+      "text": "When the kid looked back the judge smiled.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "The kid touched up the mule and they went sucking out past the old stone fort along the road west.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 12,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    279
+  ]
+}

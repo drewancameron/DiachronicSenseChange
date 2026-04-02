@@ -1,0 +1,46 @@
+{
+  "id": "031_he_went_down_the",
+  "chapter": "I",
+  "title": "he went down the",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "He went down the shed to the tackroom and got his wretched saddle and his blanketroll and brought them back. He found the mule and unstalled it and bridled it with the rawhide hacka-more and led it to the fence. He leaned against the animal with his shoulder and got the saddle over it and got it cinched, the mule starting and shying and running its head along the fence. He led it across the lot. The mule kept shaking its head sideways as if it had something in its ear.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "He went down the shed to the tackroom and got his wretched saddle and his blanketroll and brought them back.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "He found the mule and unstalled it and bridled it with the rawhide hacka-more and led it to the fence.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "He leaned against the animal with his shoulder and got the saddle over it and got it cinched, the mule starting and shying and running its head along the fence.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "He led it across the lot.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "The mule kept shaking its head sideways as if it had something in its ear.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 5,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": []
+}

@@ -32,3 +32,8 @@ Thumbs.db
 
 # Environment
 .env
+
+# Large index/model files (blood-meridian-translation)
+blood-meridian-translation/retrieval/data/indices/
+blood-meridian-translation/models/construction_model/*.jsonl
+blood-meridian-translation/node_modules/

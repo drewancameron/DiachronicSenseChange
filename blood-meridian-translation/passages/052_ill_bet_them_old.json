@@ -1,0 +1,96 @@
+{
+  "id": "052_ill_bet_them_old",
+  "chapter": "II",
+  "title": "ill bet them old",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "I'll bet them old boys is in Bexar drinkin they brains out.\n\nI'll bet old Lonnie's done topped ever whore in town.\n\nHow far is it to Bexar?\n\nIt's about two days.\n\nIt's furthern that. More like four I'd say.\n\nHow would a man go if he'd a mind to?\n\nYou cut straight south you ought to hit the road about half a day.\n\nYou going to Bexar?\n\nI might do.\n\nYou see old Lonnie down there you tell him get a piece for me. Tell him old Oren. He'll buy ye a drink if he aint blowed all his money in.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "I'll bet them old boys is in Bexar drinkin they brains out.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "I'll bet old Lonnie's done topped ever whore in town.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "How far is it to Bexar?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "It's about two days.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 4,
+      "text": "It's furthern that.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 5,
+      "text": "More like four I'd say.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 6,
+      "text": "How would a man go if he'd a mind to?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "You cut straight south you ought to hit the road about half a day.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "You going to Bexar?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 9,
+      "text": "I might do.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 10,
+      "text": "You see old Lonnie down there you tell him get a piece for me.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "Tell him old Oren.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 12,
+      "text": "He'll buy ye a drink if he aint blowed all his money in.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 13,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    59,
+    114,
+    139,
+    161,
+    206,
+    245,
+    313,
+    334,
+    347
+  ]
+}

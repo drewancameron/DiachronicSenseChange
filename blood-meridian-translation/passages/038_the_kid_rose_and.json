@@ -1,0 +1,86 @@
+{
+  "id": "038_the_kid_rose_and",
+  "chapter": "II",
+  "title": "the kid rose and",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "The kid rose and looked toward the door. Ill find somethin, he said. Where's the well at?\n\nUp the hill, foller the path.\n\nIt's nigh too dark to see out here.\n\nIt's a deep path. Foller ye feet. Foller ye mule. I caint go.\n\nHe stepped out into the wind and looked about for the mule but the mule wasnt there. Far to the south lightning flared soundlessly. He went up the path among the thrashing weeds and found the mule standing at the well.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "The kid rose and looked toward the door.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "Ill find somethin, he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "Where's the well at?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 3,
+      "text": "Up the hill, foller the path.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "It's nigh too dark to see out here.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "It's a deep path.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 6,
+      "text": "Foller ye feet.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 7,
+      "text": "Foller ye mule.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 8,
+      "text": "I caint go.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 9,
+      "text": "He stepped out into the wind and looked about for the mule but the mule wasnt there.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 10,
+      "text": "Far to the south lightning flared soundlessly.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "He went up the path among the thrashing weeds and found the mule standing at the well.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 12,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    89,
+    120,
+    157,
+    220
+  ]
+}

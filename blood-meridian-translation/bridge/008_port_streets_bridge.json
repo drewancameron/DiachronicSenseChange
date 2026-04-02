@@ -1,0 +1,104 @@
+{
+  "passage_id": "008_port_streets",
+  "title": "The narrow streets of the port",
+  "chapter": "I",
+  "korto_text": "Γυρνάει στα στενοσόκακα του λιμανιού. Ο αέρας μυρίζει αρμύρα και φρεσκοκομμένη ξυλεία. Τα βράδια πόρνες του φωνάζουν μέσα απ' τα σκοτάδια σαν ψυχές στερημένες. Μια βδομάδα και να τον πάλι στο δρόμο, κάτι δολάρια που 'βαλε στο πουγκί του, να βαδίζει στους αμμουδερούς δρόμους της νότιας βραδιάς μοναχός του, με τα χέρια σφιγμένα στις βαμβακερές τσέπες του φτηνού του σακακιού. Χωμάτινα μονοπάτια μέσα απ' το έλος. Ερωδιοί στις φωλιές τους άσπροι σαν κεριά μες στα βρύα. Ο άνεμος έχει μιαν άγρια αψάδα και καλπάζοντας στο πλάι του δρόμου αφήνει χαμό στο κατόπι του, στα νυχτωμένα χωράφια. Πηγαίνει προς βορρά περνώντας από μικρούς καταυλισμούς και φάρμες, βγάζοντας κάνα μεροκάματο. Βλέπει έναν πατροκτόνο κρεμασμένο στο σταυροδρόμι ενός μικρού χωριού και τους φίλους του να τρέχουν και να τον τραβάνε απ' τα ποδάρια κι αυτός κρέμεται νεκρός στο σχοινί ενόσω τα ούρα σκουραίνουν το παντελόνι του.",
+  "korto_notes": [
+    {
+      "english": "whores call to him from the dark like souls in want",
+      "korto": "πόρνες του φωνάζουν μέσα απ' τα σκοτάδια σαν ψυχές στερημένες",
+      "note": "πόρνες = whores (= AG πόρναι). ψυχές στερημένες = deprived souls. For AG: ψυχαὶ ἐνδεεῖς or ψυχαὶ πενόμεναι"
+    },
+    {
+      "english": "Egrets in their rookeries white as candles among the moss",
+      "korto": "Ερωδιοί στις φωλιές τους άσπροι σαν κεριά μες στα βρύα",
+      "note": "ερωδιός = heron/egret (= AG ἐρωδιός). βρύα = moss (= AG βρύον). Direct AG continuity."
+    },
+    {
+      "english": "a parricide hanged",
+      "korto": "πατροκτόνο κρεμασμένο",
+      "note": "πατροκτόνος (= AG πατροκτόνος). Another word continuous from ancient to modern."
+    }
+  ],
+  "google_translate": {
+    "sentences": [
+      {
+        "index": 0,
+        "english": "He walks through the narrow streets of the port.",
+        "google_translate_el": "Περπατάει στα στενά δρομάκια του λιμανιού."
+      },
+      {
+        "index": 1,
+        "english": "The air smells of salt and newsawn lumber.",
+        "google_translate_el": "Ο αέρας μυρίζει αλάτι και ξυλεία εφημερίδων."
+      },
+      {
+        "index": 2,
+        "english": "At night whores call to him from the dark like souls in want.",
+        "google_translate_el": "Τη νύχτα οι πόρνες τον καλούν από το σκοτάδι σαν ψυχές σε έλλειψη."
+      },
+      {
+        "index": 3,
+        "english": "A week and he is on the move again, a few dollars in his purse that he's earned, walking the sand roads of the southern night alone, his hands balled in the cotton pockets of his cheap coat.",
+        "google_translate_el": "Μια εβδομάδα και είναι πάλι σε κίνηση, λίγα δολάρια στο πορτοφόλι του που κέρδισε, περπατώντας μόνος τους στους δρόμους της άμμου της νότιας νύχτας, με τα χέρια του σφιχτά στις βαμβακερές τσέπες του φτηνού παλτό του."
+      },
+      {
+        "index": 4,
+        "english": "Earthen causeways across the marshland.",
+        "google_translate_el": "Χωματόδρομοι σε όλη την ελώδη περιοχή."
+      },
+      {
+        "index": 5,
+        "english": "Egrets in their rookeries white as candles among the moss.",
+        "google_translate_el": "Τσικνοτσικνιά μες στις πρωτιές τους λευκές σαν κεριά ανάμεσα στα βρύα."
+      },
+      {
+        "index": 6,
+        "english": "The wind has a raw edge to it and leaves lope by the roadside and skelter on in the night fields.",
+        "google_translate_el": "Ο άνεμος έχει μια ακατέργαστη άκρη σε αυτό και αφήνει την λοπ στην άκρη του δρόμου και τον σκελετό στα νυχτερινά χωράφια."
+      },
+      {
+        "index": 7,
+        "english": "He moves north through small settlements and farms, working for day wages and found.",
+        "google_translate_el": "Μετακομίζει βόρεια μέσα από μικρούς οικισμούς και αγροκτήματα, δουλεύοντας με μεροκάματα και βρήκε."
+      },
+      {
+        "index": 8,
+        "english": "He sees a parricide hanged in a crossroads hamlet and the man's friends run forward and pull his legs and he hangs dead from his rope while urine darkens his trousers.",
+        "google_translate_el": "Βλέπει έναν πατροκτόνο κρεμασμένο σε ένα χωριουδάκι σταυροδρόμι και οι φίλοι του άντρα τρέχουν μπροστά και του τραβούν τα πόδια και κρεμιέται νεκρός από το σχοινί του ενώ τα ούρα σκουραίνουν το παντελόνι του."
+      },
+      {
+        "index": 9,
+        "english": "He works in a sawmill, he works in a diptheria pesthouse.",
+        "google_translate_el": "Δουλεύει σε πριονιστήριο, δουλεύει σε ζιζανιοκτόνο διφθερίτιδας."
+      },
+      {
+        "index": 10,
+        "english": "He takes as pay from a farmer an aged mule and aback this animal in the spring of the year eighteen and forty-nine he rides up through the latterday republic of Fredonia into the town of Nacogdoches.",
+        "google_translate_el": "Παίρνει ως αμοιβή από έναν αγρότη ένα ηλικιωμένο μουλάρι και αιφνιδιάζει αυτό το ζώο την άνοιξη του δεκαοκτώ και σαράντα εννέα έτους, ανεβαίνει με ιππασία μέσω της τελευταίας δημοκρατίας της Fredonia στην πόλη Nacogdoches."
+      }
+    ]
+  },
+  "idiom_notes": [
+    "πόρνες = whores (= AG πόρναι). ψυχές στερημένες = deprived souls. For AG: ψυχαὶ ἐνδεεῖς or ψυχαὶ πενόμεναι",
+    "ερωδιός = heron/egret (= AG ἐρωδιός). βρύα = moss (= AG βρύον). Direct AG continuity.",
+    "πατροκτόνος (= AG πατροκτόνος). Another word continuous from ancient to modern."
+  ],
+  "vocabulary_harvest": [
+    {
+      "english": "whores call to him from the dark like souls in want",
+      "korto_mg": "πόρνες του φωνάζουν μέσα απ' τα σκοτάδια σαν ψυχές στερημένες",
+      "ag_hint": "πόρνες = whores (= AG πόρναι). ψυχές στερημένες = deprived souls. For AG: ψυχαὶ ἐνδεεῖς or ψυχαὶ πενόμεναι"
+    },
+    {
+      "english": "Egrets in their rookeries white as candles among the moss",
+      "korto_mg": "Ερωδιοί στις φωλιές τους άσπροι σαν κεριά μες στα βρύα",
+      "ag_hint": "ερωδιός = heron/egret (= AG ἐρωδιός). βρύα = moss (= AG βρύον). Direct AG continuity."
+    },
+    {
+      "english": "a parricide hanged",
+      "korto_mg": "πατροκτόνο κρεμασμένο",
+      "ag_hint": "πατροκτόνος (= AG πατροκτόνος). Another word continuous from ancient to modern."
+    }
+  ]
+}

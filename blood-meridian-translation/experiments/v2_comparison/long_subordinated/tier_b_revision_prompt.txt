@@ -1,0 +1,26 @@
+You are revising an Ancient Greek translation of McCarthy's Blood Meridian (Koine register, Attic vocabulary).
+
+Fix ONLY the specific issues listed below. Do not change anything that is already correct.
+
+## English Source
+He did so because it was his trade and yet he did little of it for there were few travelers in that place. So that he fell into the habit before long of dressing himself as an indian and taking up station a few miles above his shop and waiting there by the roadside to ask whoever should come that way if they would give him money. At this time he had done no person any injury.
+
+## Current Greek Translation
+οὕτως ἐποίει ὅτι τέχνη αὐτοῦ ἦν καὶ ὅμως ὀλίγα ἔπραττεν· ὀλίγοι γὰρ ὁδοιπόροι ἐν τῷ χωρίῳ. ὥστε οὐ διὰ πολλοῦ εἰώθει ἑαυτὸν ὡς βάρβαρον σκευάζειν καὶ σταθμὸν λαμβάνειν σταδίους τινὰς ὑπὲρ τοῦ ἐργαστηρίου καὶ παρὰ τὴν ὁδὸν μένειν αἰτῶν τοὺς παριόντας εἴ τις αὐτῷ ἀργύριον δοίη. τότε δὲ οὐδένα πω ἠδίκει.
+
+## Style and Sense Issues (from review)
+  - οὕτως ἐποίει ὅτι τέχνη αὐτοῦ ἦν: OVER-SUBORDINATION: McCarthy's simple coordination 'He did so because it was his trade' becomes subordinated with ὅτι
+    → Suggested: οὕτως ἐποίει· τέχνη γὰρ αὐτοῦ ἦν
+  - σταθμὸν λαμβάνειν: WRONG SENSE: σταθμός means 'quarters/camp' not 'taking up station/position'
+    → Suggested: στάσιν λαμβάνειν or χώραν καταλαμβάνειν
+  - αἰτῶν τοὺς παριόντας εἴ τις αὐτῷ ἀργύριον δοίη: UNIDIOMATIC GREEK: This construction awkwardly calques English 'asking if they would give'. Greek would use direct construction
+    → Suggested: αἰτῶν τοὺς παριόντας ἀργύριον or ἐρωτῶν τοὺς παριόντας χρήματα
+
+## Style Reference (thematically matched passages — guide your register)
+  [homer, odyssey]: ἕζετο κερδοσύνη, σκῆπτρον δέ οἱ ἔκπεσε χειρός.
+
+## Instructions
+1. Fix each listed issue while preserving everything that is correct.
+2. Use the supporting evidence above to guide your corrections where provided.
+3. Every word must be attestable in Morpheus/LSJ.
+4. Output ONLY the complete revised Greek text — no explanations.

@@ -1,0 +1,110 @@
+{
+  "id": "051_they_asked_him_no",
+  "chapter": "II",
+  "title": "they asked him no",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "They asked him no questions, a ragged lot themselves. Crossbreeds some, free niggers, an indian or two.\n\nI had my outfit stole, he said.\n\nThey nodded in the firelight.\n\nThey got everthing I had. I aint even got a knife.\n\nYou might could sign on with us. We lost two men. Turned back to go to Californy.\n\nI'm headed yon way.\n\nI guess you might be goin to Californy ye own self.\n\nI might. I aint decided.\n\nThem boys was with us fell in with a bunch from Arkansas. They was headed down for Bexar. Goin to pull for Mexico and the west.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "They asked him no questions, a ragged lot themselves.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "Crossbreeds some, free niggers, an indian or two.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "I had my outfit stole, he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "They nodded in the firelight.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 4,
+      "text": "They got everthing I had.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 5,
+      "text": "I aint even got a knife.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "You might could sign on with us.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "We lost two men.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 8,
+      "text": "Turned back to go to Californy.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "I'm headed yon way.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 10,
+      "text": "I guess you might be goin to Californy ye own self.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "I might.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 12,
+      "text": "I aint decided.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 13,
+      "text": "Them boys was with us fell in with a bunch from Arkansas.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 14,
+      "text": "They was headed down for Bexar.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 15,
+      "text": "Goin to pull for Mexico and the west.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 16,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    103,
+    136,
+    167,
+    219,
+    302,
+    323,
+    376,
+    402
+  ]
+}

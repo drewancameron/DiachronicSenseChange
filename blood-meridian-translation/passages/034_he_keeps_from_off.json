@@ -1,0 +1,53 @@
+{
+  "id": "034_he_keeps_from_off",
+  "chapter": "II",
+  "title": "he keeps from off",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "He keeps from off the king's road for fear of citizenry. The little prairie wolves cry all night and dawn finds him in a grassy draw where he'd gone to hide from the wind. The hobbled mule stands over him and watches the east for light.\n\nThe sun that rises is the color of steel. His mounted shadow falls for miles before him. He wears on his head a hat he's made from leaves and they have dried and cracked in the sun and he looks like a raggedyman wandered from some garden where he'd used to frighten birds.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "He keeps from off the king's road for fear of citizenry.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "The little prairie wolves cry all night and dawn finds him in a grassy draw where he'd gone to hide from the wind.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "The hobbled mule stands over him and watches the east for light.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "The sun that rises is the color of steel.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "His mounted shadow falls for miles before him.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "He wears on his head a hat he's made from leaves and they have dried and cracked in the sun and he looks like a raggedyman wandered from some garden where he'd used to frighten birds.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 6,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    236
+  ]
+}

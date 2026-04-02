@@ -362,13 +362,22 @@ def curate_echoes(greek: str, candidates: list[dict]) -> list[dict]:
 
 
 def hard_verify(echoes: list[dict], cur) -> list[dict]:
-    """Final verification: check each source_quote actually exists in the corpus."""
+    """Final verification: check each source_quote actually exists in the corpus.
+    Also rejects vague sources like 'Multiple classical sources'."""
     verified = []
     for echo in echoes:
+        source = echo.get("source", "")
         quote = echo.get("source_quote", "")
-        if not quote or len(quote) < 5:
+
+        # Reject vague/generic sources
+        if "multiple" in source.lower() or "various" in source.lower():
             continue
-        # Check first 20 chars of quote
+
+        # Require a real source quote (at least 15 chars of Greek)
+        if not quote or len(quote) < 15:
+            continue
+
+        # Check the quote actually exists in our corpus
         cur.execute("""
             SELECT COUNT(*) FROM passages
             WHERE greek_text LIKE ?

@@ -1,0 +1,75 @@
+{
+  "passage_id": "003_the_mother_dead",
+  "title": "The mother dead these fourteen years",
+  "chapter": "I",
+  "korto_text": "Η μάνα, νεκρή εδώ και δεκατέσσερα χρόνια, είχε επωάσει στο μαστό της το πλάσμα που θα 'παιρνε το πτώμα της στην πλάτη. Ο πατέρας δε λέει τ' ονομά της ποτέ, το παιδί δεν το ξέρει καν. Έχει μια αδελφή σ' αυτό τον κόσμο που δε θα την ξαναδεί ποτέ. Παρατηρεί, χλωμό κι άλουστο. Δεν ξέρει μήτε γραφή μήτε ανάγνωση κι εντός του σιγοβράζει ήδη μια αδυναμία στην άσκεφτη βία. Η ιστορία ολάκαιρη παρούσα σε τούτη την όψη, το παιδί ο πατέρας του ανθρώπου.",
+  "korto_notes": [
+    {
+      "english": "did incubate in her own bosom",
+      "korto": "είχε επωάσει στο μαστό της",
+      "note": "επωάζω = to incubate; μαστός = breast/bosom — Korto preserves McCarthy's Latinate construction"
+    },
+    {
+      "english": "the creature who would carry her off",
+      "korto": "το πλάσμα που θα 'παιρνε το πτώμα της στην πλάτη",
+      "note": "πλάσμα = creature; πτώμα = corpse. Korto makes explicit what McCarthy implies: the creature carried the corpse on its back"
+    },
+    {
+      "english": "a taste for mindless violence",
+      "korto": "μια αδυναμία στην άσκεφτη βία",
+      "note": "αδυναμία = weakness/predilection; άσκεφτη = thoughtless/mindless"
+    },
+    {
+      "english": "the child the father of the man",
+      "korto": "το παιδί ο πατέρας του ανθρώπου",
+      "note": "Wordsworth allusion preserved literally. In AG: ὁ παῖς πατὴρ τοῦ ἀνδρός"
+    }
+  ],
+  "google_translate": {
+    "sentences": [
+      {
+        "index": 0,
+        "english": "The mother dead these fourteen years did incubate in her own bosom the creature who would carry her off.",
+        "google_translate_el": "Η μητέρα νεκρή αυτά τα δεκατέσσερα χρόνια όντως επώασε στους κόλπους της το πλάσμα που θα την έπαιρνε μακριά."
+      },
+      {
+        "index": 1,
+        "english": "The father never speaks her name, the child does not know it.",
+        "google_translate_el": "Ο πατέρας δεν λέει ποτέ το όνομά της, το παιδί δεν το ξέρει."
+      },
+      {
+        "index": 2,
+        "english": "He has a sister in this world that he will not see again.",
+        "google_translate_el": "Έχει μια αδερφή σε αυτόν τον κόσμο που δεν θα ξαναδεί."
+      },
+      {
+        "index": 3,
+        "english": "He watches, pale and unwashed.",
+        "google_translate_el": "Παρακολουθεί χλωμός και άπλυτος."
+      },
+      {
+        "index": 4,
+        "english": "He can neither read nor write and in him broods already a taste for mindless violence.",
+        "google_translate_el": "Δεν ξέρει ούτε να διαβάζει ούτε να γράφει και μέσα του γεννιέται ήδη μια γεύση για ανόητη βία."
+      },
+      {
+        "index": 5,
+        "english": "All history present in that visage, the child the father of the man.",
+        "google_translate_el": "Όλη η ιστορία είναι παρούσα σε αυτό το πρόσωπο, το παιδί ο πατέρας του άντρα."
+      }
+    ]
+  },
+  "idiom_notes": [
+    "επωάζω = to incubate; μαστός = breast/bosom — Korto preserves McCarthy's Latinate construction",
+    "πλάσμα = creature; πτώμα = corpse. Korto makes explicit what McCarthy implies: the creature carried the corpse on its back",
+    "αδυναμία = weakness/predilection; άσκεφτη = thoughtless/mindless",
+    "Wordsworth allusion preserved literally. In AG: ὁ παῖς πατὴρ τοῦ ἀνδρός"
+  ],
+  "vocabulary_harvest": [
+    {
+      "english": "the child the father of the man",
+      "korto_mg": "το παιδί ο πατέρας του ανθρώπου",
+      "ag_hint": "Wordsworth allusion preserved literally. In AG: ὁ παῖς πατὴρ τοῦ ἀνδρός"
+    }
+  ]
+}

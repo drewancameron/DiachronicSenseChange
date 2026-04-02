@@ -1,0 +1,48 @@
+{
+  "id": "039_a_hole_in_the",
+  "chapter": "II",
+  "title": "a hole in the",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "A hole in the sand with rocks piled about it. A piece of dry hide for a cover and a stone to weight it down. There was a rawhide bucket with a rawhide bail and a rope of greasy leather. The bucket had a rock tied to the bail to help it tip and fill and he lowered it until the rope in his hand went slack while the mule watched over his shoulder.\n\nHe drew up three bucketfuls and held them so the mule would not spill them and then he put the cover back over the well and led the mule back down the path to the hut.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "A hole in the sand with rocks piled about it.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "A piece of dry hide for a cover and a stone to weight it down.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "There was a rawhide bucket with a rawhide bail and a rope of greasy leather.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "The bucket had a rock tied to the bail to help it tip and fill and he lowered it until the rope in his hand went slack while the mule watched over his shoulder.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "He drew up three bucketfuls and held them so the mule would not spill them and then he put the cover back over the well and led the mule back down the path to the hut.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 5,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    346
+  ]
+}

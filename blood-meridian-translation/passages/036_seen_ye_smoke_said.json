@@ -1,0 +1,79 @@
+{
+  "id": "036_seen_ye_smoke_said",
+  "chapter": "II",
+  "title": "seen ye smoke said",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "Seen ye smoke, said the kid. Thought you might spare a man a sup of water.\n\nThe old hermit scratched in his filthy hair and looked at the ground. He turned and entered the hut and the kid followed.\n\nInside darkness and a smell of earth. A small fire burned on the dirt floor and the only furnishings were a pile of hides in one corner. The old man shuffled through the gloom, his head bent to clear the low ceiling of woven limbs and mud. He pointed down to where a bucket stood in the dirt. The kid bent and took up the gourd floating there and dipped and drank. The water was salty, sulphurous. He drank on.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "Seen ye smoke, said the kid.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 1,
+      "text": "Thought you might spare a man a sup of water.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "The old hermit scratched in his filthy hair and looked at the ground.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "He turned and entered the hut and the kid followed.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "Inside darkness and a smell of earth.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "A small fire burned on the dirt floor and the only furnishings were a pile of hides in one corner.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "The old man shuffled through the gloom, his head bent to clear the low ceiling of woven limbs and mud.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "He pointed down to where a bucket stood in the dirt.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "The kid bent and took up the gourd floating there and dipped and drank.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "The water was salty, sulphurous.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 10,
+      "text": "He drank on.",
+      "discourse_hint": "fragment"
+    }
+  ],
+  "sentence_count": 11,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    74,
+    197
+  ]
+}

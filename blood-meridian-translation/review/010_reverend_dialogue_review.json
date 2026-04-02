@@ -1,0 +1,88 @@
+{
+  "passage_id": "010_reverend_dialogue",
+  "greek_length": 394,
+  "grammar": {
+    "issues": [],
+    "issue_count": 0,
+    "warnings": 0
+  },
+  "retrieval": {
+    "register": {
+      "dominant_period": "classical",
+      "neighbours": [
+        "imperial/plutarch.comparison_of_lucullus_and_cimon.plut.comp.cim.luc..3.6",
+        "imperial/plutarch.de_iside_et_osiride.plut..de_iside..38",
+        "classical/herodotus.histories.hdt..1.148.1",
+        "classical/herodotus.histories.hdt..8.133.1",
+        "classical/herodotus.histories.hdt..1.60.1"
+      ],
+      "assessment": "mostly classical",
+      "issues": []
+    },
+    "lexical_suggestions": [
+      {
+        "query": "He is altogether devoid of the least qualification to the office he has usurped and has only committed to memory a few passages from the good book for the purpose of lending to his fraudulent sermons some faint flavor of the piety he despises",
+        "greek": "ὦν ἴδεν αὐτός.",
+        "source": "lxx.Genesis.1.42",
+        "period": "hellenistic",
+        "score": 0.464
+      },
+      {
+        "query": "He is altogether devoid of the least qualification to the office he has usurped and has only committed to memory a few passages from the good book for the purpose of lending to his fraudulent sermons some faint flavor of the piety he despises",
+        "greek": "δὲ κύριος ὁ θεὸς μισεῖται Λεία,",
+        "source": "lxx.Genesis.1.29",
+        "period": "hellenistic",
+        "score": 0.442
+      },
+      {
+        "query": "He is altogether devoid of the least qualification to the office he has usurped and has only committed to memory a few passages from the good book for the purpose of lending to his fraudulent sermons some faint flavor of the piety he despises",
+        "greek": "ὃν τρόπον εὐφράνθη Κύριος",
+        "source": "lxx.Deuteronomium.5.28",
+        "period": "hellenistic",
+        "score": 0.437
+      },
+      {
+        "query": "On a variety of charges the most recent of which involved a girl of eleven years—I said eleven—who had come to him in trust and whom he was surprised in the act of violating while actually clothed in the livery of his God",
+        "greek": "ἐσοφίσατο Ἤλει ὅτι κύριος κέκληκεν τὸ παιδάριον.",
+        "source": "lxx.Regnorum_I.11.3",
+        "period": "hellenistic",
+        "score": 0.603
+      },
+      {
+        "query": "On a variety of charges the most recent of which involved a girl of eleven years—I said eleven—who had come to him in trust and whom he was surprised in the act of violating while actually clothed in the livery of his God",
+        "greek": "ἡ παρεμβολὴ ἦν πεποιθυῖα.",
+        "source": "lxx.Judices.8.8",
+        "period": "hellenistic",
+        "score": 0.6
+      },
+      {
+        "query": "On a variety of charges the most recent of which involved a girl of eleven years—I said eleven—who had come to him in trust and whom he was surprised in the act of violating while actually clothed in the livery of his God",
+        "greek": "δὲ ἦν ἑστηκὼς ἐναντίον Κυρίου.",
+        "source": "lxx.Genesis.1.18",
+        "period": "hellenistic",
+        "score": 0.593
+      },
+      {
+        "query": "In truth, the gentleman standing here before you posing as a minister of the Lord is not only totally illiterate but is also wanted by the law in the states of Tennessee, Kentucky, Mississippi, and Arkansas",
+        "greek": "εἰμι κύριος. Τὸν νόμον",
+        "source": "lxx.Leviticus.3.19",
+        "period": "hellenistic",
+        "score": 0.537
+      },
+      {
+        "query": "In truth, the gentleman standing here before you posing as a minister of the Lord is not only totally illiterate but is also wanted by the law in the states of Tennessee, Kentucky, Mississippi, and Arkansas",
+        "greek": "ἂν ἐκλέξηται κύριος,",
+        "source": "lxx.Deuteronomium.5.31",
+        "period": "hellenistic",
+        "score": 0.535
+      },
+      {
+        "query": "In truth, the gentleman standing here before you posing as a minister of the Lord is not only totally illiterate but is also wanted by the law in the states of Tennessee, Kentucky, Mississippi, and Arkansas",
+        "greek": "αὐτὸν φυλακήν, διακρῖναι αὐτὸν διὰ προστάγματος κυρίου.",
+        "source": "lxx.Leviticus.3.24",
+        "period": "hellenistic",
+        "score": 0.53
+      }
+    ]
+  }
+}

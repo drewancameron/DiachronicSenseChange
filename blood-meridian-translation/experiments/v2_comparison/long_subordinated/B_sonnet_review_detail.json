@@ -1,0 +1,44 @@
+{
+  "first_draft": "Ἐποίει δὲ οὕτως ὅτι αὐτοῦ ἡ τέχνη καὶ ὅμως ὀλίγα ἔπραττεν· ὀλίγοι γὰρ ὁδοιπόροι ἐν τῷ τόπῳ ἐκείνῳ. Ὥστε οὐ διὰ πολλοῦ εἰς ἔθος κατέστη ἑαυτὸν ὡς Ἰνδὸν σκευάζειν καὶ στάσιν λαμβάνειν σταδίους τινὰς ὑπὲρ τοῦ ἐργαστηρίου καὶ παρὰ τὴν ὁδὸν ἐκεῖ μένειν ἐρωτῶν ὅστις ἂν παρίῃ εἰ δοίη ἂν αὐτῷ ἀργύριον. Ἐν τούτῳ τῷ χρόνῳ οὐδένα πω ἠδίκει.",
+  "sonnet_issues": [
+    {
+      "greek": "ὅτι αὐτοῦ ἡ τέχνη",
+      "problem": "UNIDIOMATIC GREEK: This word order creates an awkward calque of 'it was his trade'. Greek would more naturally express this as a predicate.",
+      "fix": "ὅτι ἡ τέχνη αὐτοῦ ἦν or ὅτι τέχνη αὐτῷ ἦν"
+    },
+    {
+      "greek": "στάσιν λαμβάνειν",
+      "problem": "UNIDIOMATIC GREEK: This is a calque of 'taking up station'. Classical Greek doesn't use this expression for positioning oneself.",
+      "fix": "ἵστασθαι or καθίστασθαι"
+    },
+    {
+      "greek": "σταδίους τινὰς ὑπὲρ τοῦ ἐργαστηρίου",
+      "problem": "UNIDIOMATIC GREEK: The use of ὑπέρ with distance and ἐργαστήριον for a frontier shop creates an awkward expression.",
+      "fix": "σταδίους τινὰς ἄνω τοῦ καταλύματος or πρὸ τοῦ καπηλείου"
+    }
+  ],
+  "revision_prompt": "You are revising an Ancient Greek translation of McCarthy's Blood Meridian (Koine register, Attic vocabulary).\n\nFix ONLY the specific issues listed below. Do not change anything else.\n\n## English Source\nHe did so because it was his trade and yet he did little of it for there were few travelers in that place. So that he fell into the habit before long of dressing himself as an indian and taking up station a few miles above his shop and waiting there by the roadside to ask whoever should come that way if they would give him money. At this time he had done no person any injury.\n\n## Current Greek Translation\nἘποίει δὲ οὕτως ὅτι αὐτοῦ ἡ τέχνη καὶ ὅμως ὀλίγα ἔπραττεν· ὀλίγοι γὰρ ὁδοιπόροι ἐν τῷ τόπῳ ἐκείνῳ. Ὥστε οὐ διὰ πολλοῦ εἰς ἔθος κατέστη ἑαυτὸν ὡς Ἰνδὸν σκευάζειν καὶ στάσιν λαμβάνειν σταδίους τινὰς ὑπὲρ τοῦ ἐργαστηρίου καὶ παρὰ τὴν ὁδὸν ἐκεῖ μένειν ἐρωτῶν ὅστις ἂν παρίῃ εἰ δοίη ἂν αὐτῷ ἀργύριον. Ἐν τούτῳ τῷ χρόνῳ οὐδένα πω ἠδίκει.\n\n## Style and Sense Issues (from review)\n  - ὅτι αὐτοῦ ἡ τέχνη: UNIDIOMATIC GREEK: This word order creates an awkward calque of 'it was his trade'. Greek would more naturally express this as a predicate.\n    → Suggested: ὅτι ἡ τέχνη αὐτοῦ ἦν or ὅτι τέχνη αὐτῷ ἦν\n  - στάσιν λαμβάνειν: UNIDIOMATIC GREEK: This is a calque of 'taking up station'. Classical Greek doesn't use this expression for positioning oneself.\n    → Suggested: ἵστασθαι or καθίστασθαι\n  - σταδίους τινὰς ὑπὲρ τοῦ ἐργαστηρίου: UNIDIOMATIC GREEK: The use of ὑπέρ with distance and ἐργαστήριον for a frontier shop creates an awkward expression.\n    → Suggested: σταδίους τινὰς ἄνω τοῦ καταλύματος or πρὸ τοῦ καπηλείου\n\n## Instructions\n1. Fix each listed issue while preserving everything that is correct.\n2. Every word must be attestable in Morpheus/LSJ.\n3. Output ONLY the complete revised Greek text — no explanations.",
+  "greek": "Ἐποίει δὲ οὕτως ὅτι τέχνη αὐτῷ ἦν καὶ ὅμως ὀλίγα ἔπραττεν· ὀλίγοι γὰρ ὁδοιπόροι ἐν τῷ τόπῳ ἐκείνῳ. Ὥστε οὐ διὰ πολλοῦ εἰς ἔθος κατέστη ἑαυτὸν ὡς Ἰνδὸν σκευάζειν καὶ καθίστασθαι σταδίους τινὰς ἄνω τοῦ καπηλείου καὶ παρὰ τὴν ὁδὸν ἐκεῖ μένειν ἐρωτῶν ὅστις ἂν παρίῃ εἰ δοίη ἂν αὐτῷ ἀργύριον. Ἐν τούτῳ τῷ χρόνῳ οὐδένα πω ἠδίκει.",
+  "scores": {
+    "voice_preservation": 7,
+    "greek_idiom": 8,
+    "register_match": 8,
+    "grammar": 9,
+    "vocabulary": 7,
+    "imagery": 8,
+    "errors": [
+      "ὥστε with finite verb instead of infinitive is less classical",
+      "σκευάζειν for 'dress' is slightly theatrical/comic",
+      "ἐρωτῶν without explicit object (τοῦτο) is mildly awkward",
+      "παρίῃ for 'come by' is slightly precious"
+    ],
+    "strengths": [
+      "Good preservation of McCarthy's declarative style",
+      "Natural use of γάρ for explanation",
+      "Excellent οὐδένα πω ἠδίκει for the final terse statement",
+      "Good Thucydidean/Xenophontic register throughout",
+      "εἰς ἔθος κατέστη is idiomatic Greek"
+    ],
+    "total": 47
+  }
+}

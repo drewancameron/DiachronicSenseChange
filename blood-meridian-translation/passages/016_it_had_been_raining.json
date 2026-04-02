@@ -1,0 +1,76 @@
+{
+  "id": "016_it_had_been_raining",
+  "chapter": "I",
+  "title": "it had been raining",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "It had been raining for sixteen days when he met Toadvine and it was raining yet. He was still standing in the same saloon and he had drunk up all his money save two dollars. The teamster had gone, the room was all but empty. The door stood open and you could see the rain falling in the empty lot behind the hotel. He drained his glass and went out. There were boards laid across the mud and he followed the paling band of doorlight down toward the batboard jakes at the bottom of the lot. Another man was coming up from the jakes and they met halfway on the narrow planks. The man before him swayed slightly. His wet hatbrim fell to his shoulders save in the front where it was pinned back. He held a bottle loosely in one hand. You better get out of my way, he said.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "It had been raining for sixteen days when he met Toadvine and it was raining yet.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "He was still standing in the same saloon and he had drunk up all his money save two dollars.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "The teamster had gone, the room was all but empty.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "The door stood open and you could see the rain falling in the empty lot behind the hotel.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "He drained his glass and went out.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "There were boards laid across the mud and he followed the paling band of doorlight down toward the batboard jakes at the bottom of the lot.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "Another man was coming up from the jakes and they met halfway on the narrow planks.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "The man before him swayed slightly.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "His wet hatbrim fell to his shoulders save in the front where it was pinned back.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "He held a bottle loosely in one hand.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 10,
+      "text": "You better get out of my way, he said.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 11,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": []
+}

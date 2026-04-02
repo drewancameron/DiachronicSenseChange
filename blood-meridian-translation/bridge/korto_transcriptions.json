@@ -1,0 +1,109 @@
+{
+  "_meta": {
+    "source": "Αύγουστος Κορτώ (trans.), Ματωμένος Μεσημβρινός, Εκδόσεις Καστανιώτη, 2011",
+    "note": "Transcribed from PDF fragment (pp. 9–17) for internal research comparison only. Not for redistribution.",
+    "coverage": "Chapter I complete"
+  },
+
+  "001_see_the_child": {
+    "korto_text": "Δείτε το παιδί. Είναι χλωμό κι αδύνατο, φοράει ένα ψιλό και κουρελιασμένο λινό πουκάμισο. Συνδαυλίζει τη θράκα της κουζίνας. Έξω κείτονται σκοτεινά σκαμμένα χωράφια με κουρέλια χιονιού και σκοτεινότερα δάση στο βάθος που τα λυμαίνονται ακόμα κάτι λύκοι που 'χουν απομείνει. Το σόι του είναι γνωστό για τους πελεκητές και τους ανιχνευτές νερού, μα στην πραγματικότητα ο πατέρας του έχει κάνει δάσκαλος. Κείτεται μες στο ποτί, μνημονεύει στίχους ποιητών που τα ονόματά τους έχουν πια χαθεί. Το αγόρι λουφάζει πλάι στη φωτιά και τον παρατηρεί.",
+    "korto_notes": [
+      {"english": "See the child", "korto": "Δείτε το παιδί", "note": "Imperative plural (δείτε), uses το παιδί not ο μικρός for the opening"},
+      {"english": "thin and ragged linen shirt", "korto": "ψιλό και κουρελιασμένο λινό πουκάμισο", "note": "ψιλό = thin/fine, κουρελιασμένο = ragged, λινό = linen — standard MG"},
+      {"english": "He stokes the scullery fire", "korto": "Συνδαυλίζει τη θράκα της κουζίνας", "note": "συνδαυλίζω = to stoke/rake; θράκα = embers; κουζίνα = kitchen (not scullery exactly)"},
+      {"english": "hewers of wood and drawers of water", "korto": "πελεκητές και ανιχνευτές νερού", "note": "πελεκητές = hewers; ανιχνευτές νερού = trackers of water. Biblical allusion (Joshua 9:21) — in the Septuagint: ξυλοκόποι καὶ ὑδροφόροι"},
+      {"english": "He lies in drink", "korto": "Κείτεται μες στο ποτί", "note": "ποτί = drink/booze (colloquial MG)"},
+      {"english": "The boy crouches by the fire and watches him", "korto": "Το αγόρι λουφάζει πλάι στη φωτιά και τον παρατηρεί", "note": "λουφάζω = to crouch/lurk; παρατηρεί = watches/observes"}
+    ]
+  },
+
+  "002_night_of_your_birth": {
+    "korto_text": "Η νύχτα που γεννήθηκες. Το τριάντα τρία. Νύχτα των Λεοντιδών τη λέγανε. Και πέφτανε τ' αστέρια, Θεέ μου, σαν βροχή. Εγώ έψαχνα με το μάτι τη μαυρίλα, τρύπες στα ουράνια. Την Άρκτο.",
+    "korto_notes": [
+      {"english": "Night of your birth", "korto": "Η νύχτα που γεννήθηκες", "note": "Relative clause (που γεννήθηκες) where McCarthy uses nominal fragment"},
+      {"english": "The Leonids they were called", "korto": "Νύχτα των Λεοντιδών τη λέγανε", "note": "Λεοντιδών = genitive plural of Λεοντίδες, hellenised naturally"},
+      {"english": "God how the stars did fall", "korto": "Θεέ μου, σαν βροχή", "note": "Adds simile 'like rain' (σαν βροχή) not in the English"},
+      {"english": "The Dipper stove", "korto": "Την Άρκτο", "note": "Άρκτος = the Bear (= Ursa Major = the Dipper). Korto truncates 'stove' — just names the constellation"}
+    ]
+  },
+
+  "003_the_mother_dead": {
+    "korto_text": "Η μάνα, νεκρή εδώ και δεκατέσσερα χρόνια, είχε επωάσει στο μαστό της το πλάσμα που θα 'παιρνε το πτώμα της στην πλάτη. Ο πατέρας δε λέει τ' ονομά της ποτέ, το παιδί δεν το ξέρει καν. Έχει μια αδελφή σ' αυτό τον κόσμο που δε θα την ξαναδεί ποτέ. Παρατηρεί, χλωμό κι άλουστο. Δεν ξέρει μήτε γραφή μήτε ανάγνωση κι εντός του σιγοβράζει ήδη μια αδυναμία στην άσκεφτη βία. Η ιστορία ολάκαιρη παρούσα σε τούτη την όψη, το παιδί ο πατέρας του ανθρώπου.",
+    "korto_notes": [
+      {"english": "did incubate in her own bosom", "korto": "είχε επωάσει στο μαστό της", "note": "επωάζω = to incubate; μαστός = breast/bosom — Korto preserves McCarthy's Latinate construction"},
+      {"english": "the creature who would carry her off", "korto": "το πλάσμα που θα 'παιρνε το πτώμα της στην πλάτη", "note": "πλάσμα = creature; πτώμα = corpse. Korto makes explicit what McCarthy implies: the creature carried the corpse on its back"},
+      {"english": "a taste for mindless violence", "korto": "μια αδυναμία στην άσκεφτη βία", "note": "αδυναμία = weakness/predilection; άσκεφτη = thoughtless/mindless"},
+      {"english": "the child the father of the man", "korto": "το παιδί ο πατέρας του ανθρώπου", "note": "Wordsworth allusion preserved literally. In AG: ὁ παῖς πατὴρ τοῦ ἀνδρός"}
+    ]
+  },
+
+  "007_divested_of_all": {
+    "korto_text": "Τώρα μόνο το παιδί απεκδύεται αλλών όσα συνέβησαν. Η καταγωγή του γίνεται απόμακρη σαν το πεπρωμένο του και ποτέ ξανά σ' όλο το γύρισμα του κόσμου δε θα ξαναφανούν εδάφη τόσο άγρια και βάρβαρα που δοκιμάζουν κατά πόσον η ύλη της Δημιουργίας μπορεί να πάρει το σχήμα της από τη θέληση του ανθρώπου ή αν η καρδιά του δεν είναι κι αυτή ένα αλλιώτικο είδος πηλού. Οι επιβάτες μαζεμένοι. Τα μάτια τους κλουβιά και κανείς δε ρωτάει το διπλανό του πώς και βρέθηκε εδώ πέρα. Κοιμάται στο κατάστρωμα, προσκυνητής κι αυτός μες στους πολλούς. Κοιτάει τη θολή ακτή να κυματίζει. Τεφρά θαλασσοπούλια κιαλάρουν. Πελεκάνοι πετούν παραλιακά πάνω απ' τα γκρίζα κύματα.",
+    "korto_notes": [
+      {"english": "divested of all that he has been", "korto": "απεκδύεται αλλών όσα συνέβησαν", "note": "απεκδύομαι = to strip off/divest (learned MG, echoes NT ἀπεκδυσάμενοι Col 2:15)"},
+      {"english": "the world's turning", "korto": "το γύρισμα του κόσμου", "note": "γύρισμα = turning — concrete noun, matches McCarthy's physicality"},
+      {"english": "the stuff of creation", "korto": "η ύλη της Δημιουργίας", "note": "ύλη = matter/stuff; Δημιουργία = Creation (capitalised, theological). For AG: ἡ ὕλη τῆς κτίσεως"},
+      {"english": "another kind of clay", "korto": "ένα αλλιώτικο είδος πηλού", "note": "πηλός = clay — continuous from ancient Greek. Genesis resonance."},
+      {"english": "They cage their eyes", "korto": "Τα μάτια τους κλουβιά", "note": "κλουβιά = cages (used as predicate). Korto makes it a nominal sentence."},
+      {"english": "a pilgrim among others", "korto": "προσκυνητής κι αυτός μες στους πολλούς", "note": "προσκυνητής = pilgrim/worshipper. κι αυτός = he too. μες στους πολλούς = among the many"}
+    ]
+  },
+
+  "004_at_fourteen": {
+    "korto_text": "Στα δεκατέσσερα το σκάει. Δε θα ξαναδεί ποτέ το παγερό κουζινόσπιτο στο σκοτάδι πριν φέξει. Τα καυσόξυλα, τις λεκάνες. Περιπλανιέται δυτικά ίσαμε το Μέμφις, ένας μοναχικός μετανάστης στο επίπεδο ποιμενικό τοπίο. Μαύροι στα χωράφια, σκυφτοί και λιπόσαρκοι, τα δάχτυλά τους σαν αράχνες μες στις κάψες του βαμβακιού. Οδύνη βαθιά σε μια σκιά του κήπου. Κόντρα στην κατάβαση του ήλιου μορφές προχωρούν στο αργοκίνητο σούρουπο με φόντο έναν ουρανό σαν χαρτί. Ένας μελαψός χωρικός που κυνηγάει μουλάρι και σβάρνα κάτω στη δαρμένη απ' τη βροχή χαμηλοράχη προς τη νύχτα.",
+    "korto_notes": [
+      {"english": "runs away", "korto": "το σκάει", "note": "το σκάω = to bolt/run away (colloquial MG)"},
+      {"english": "a solitary migrant", "korto": "ένας μοναχικός μετανάστης", "note": "μετανάστης = migrant — same word in AG (μετανάστης)"},
+      {"english": "bolls of cotton", "korto": "κάψες του βαμβακιού", "note": "κάψες = pods/bolls; βαμβάκι = cotton"},
+      {"english": "A shadowed agony in the garden", "korto": "Οδύνη βαθιά σε μια σκιά του κήπου", "note": "οδύνη = agony/pain (learned MG, = AG ὀδύνη). Gethsemane allusion preserved."},
+      {"english": "husbandman", "korto": "χωρικός", "note": "χωρικός = peasant/farmer. For AG: γεωργός (farmer/husbandman, NT usage in parables)"}
+    ]
+  },
+
+  "005_saint_louis": {
+    "korto_text": "Ένα χρόνο μετά βρίσκεται στο Σεντ Λιούις. Πηγαίνει στη Νέα Ορλεάνη με μια μεγάλη βάρκα. Σαράντα δύο μέρες στο ποτάμι. Τα βράδια τα ατμόπλοια σφυρίζουν και περνάνε σέρνοντας μέσα απ' τα μαύρα νερά φωταγωγημένα σαν πλεούμενες πόλεις. Σπάνε τη βάρκα και πουλάνε την ξυλεία κι αυτός τριγυρνάει στους δρόμους κι ακούει γλώσσες πρωτάκουστες. Μένει σ' ένα καμαράκι πάνω από μια αυλή και πίσω από ένα ταβερνείο και τα βράδια κατεβαίνει σαν θεριό παραμυθιού να πιαστεί στα χέρια με τους ναύτες. Δεν είναι μεγαλόσωμος αλλά έχει φαρδιούς καρπούς, μεγάλα χέρια. Οι ώμοι του στενοί, δεμένοι. Το παιδικό μούτρο περιέργως απείραχτο κάτω απ' τις ουλές, τα μάτια παραδόξως αθώα. Δέρνονται με μπουνιές, με κλοτσιές, με μπουκάλια ή με μαχαίρια. Όλες οι ράτσες, όλες οι σποράδες. Άντρες που η φωνή τους ηχεί σαν το μουγκρητό των πιθήκων. Άντρες από χώρες τόσο μακρινές κι αλλόκοτες που στέκοντας από πάνω τους όπως κείτονται στις λάσπες αιμορραγώντας νιώθει πως παίρνει εκδίκηση για την ίδια την ανθρωπότητα.",
+    "korto_notes": [
+      {"english": "steamboats hoot and trudge past", "korto": "τα ατμόπλοια σφυρίζουν και περνάνε σέρνοντας", "note": "ατμόπλοια = steamships. For AG, no word exists — periphrasis: τὰ πυρίπνοα πλοῖα (fire-breathing ships)?"},
+      {"english": "like cities adrift", "korto": "σαν πλεούμενες πόλεις", "note": "πλεούμενες πόλεις = floating cities — beautiful. AG: ὥσπερ πόλεις πλέουσαι"},
+      {"english": "like some fairybook beast", "korto": "σαν θεριό παραμυθιού", "note": "θεριό = beast; παραμύθι = fairy tale. AG: ὥσπερ θηρίον τι μυθῶδες"},
+      {"english": "mankind itself vindicated", "korto": "παίρνει εκδίκηση για την ίδια την ανθρωπότητα", "note": "εκδίκηση = revenge/vindication. Korto reads 'vindicated' as 'avenged' — interesting shift"}
+    ]
+  },
+
+  "006_maltese_boatswain": {
+    "korto_text": "Μια νύχτα ένας Μαλτέζος λοστρόμος τον πυροβολεί στην πλάτη μ' ένα μικρό πιστόλι. Γυρνώντας να τα βάλει με τον τύπο τρώει κι άλλη σφαίρα κάτω ακριβώς απ' την καρδιά. Ο τύπος το βάζει στα πόδια κι αυτός γέρνει στην μπάρα με το αίμα να κυλάει απ' το πουκάμισό του. Οι άλλοι αποστρέφουνε το βλέμμα. Μετά από λίγο κάθεται κατάχαμα. Κείτεται σ' ένα ράντζο στο καμαράκι του πρώτου δυο βδομάδες, με την ταβερνιάρισσα να τον γιατροπορεύει. Του φέρνει να φάει, του αδειάζει τους κουβάδες. Γυναίκα αγριωπή στην όψη με κορμί λαμπάδα, σαν αντρικό. Ώσπου να γιάνει δεν του 'χουν μείνει λεφτά να την πληρώσει και φεύγει νύχτα και κοιμάται στην ακροποταμιά μέχρι να βρει βαπόρι που να τον θέλει. Το βαπόρι πάει Τέξας.",
+    "korto_notes": [
+      {"english": "a small pistol", "korto": "ένα μικρό πιστόλι", "note": "πιστόλι — direct loanword in MG, our *πιστόλιον in AG"},
+      {"english": "shot again just below the heart", "korto": "τρώει κι άλλη σφαίρα κάτω ακριβώς απ' την καρδιά", "note": "τρώει σφαίρα = 'eats a bullet' (colloquial MG idiom). σφαίρα = bullet"},
+      {"english": "The boat is going to Texas", "korto": "Το βαπόρι πάει Τέξας", "note": "βαπόρι = ship/steamer (from Italian vapore). Short, punchy — matches McCarthy's rhythm"}
+    ]
+  },
+
+  "008_port_streets": {
+    "korto_text": "Γυρνάει στα στενοσόκακα του λιμανιού. Ο αέρας μυρίζει αρμύρα και φρεσκοκομμένη ξυλεία. Τα βράδια πόρνες του φωνάζουν μέσα απ' τα σκοτάδια σαν ψυχές στερημένες. Μια βδομάδα και να τον πάλι στο δρόμο, κάτι δολάρια που 'βαλε στο πουγκί του, να βαδίζει στους αμμουδερούς δρόμους της νότιας βραδιάς μοναχός του, με τα χέρια σφιγμένα στις βαμβακερές τσέπες του φτηνού του σακακιού. Χωμάτινα μονοπάτια μέσα απ' το έλος. Ερωδιοί στις φωλιές τους άσπροι σαν κεριά μες στα βρύα. Ο άνεμος έχει μιαν άγρια αψάδα και καλπάζοντας στο πλάι του δρόμου αφήνει χαμό στο κατόπι του, στα νυχτωμένα χωράφια. Πηγαίνει προς βορρά περνώντας από μικρούς καταυλισμούς και φάρμες, βγάζοντας κάνα μεροκάματο. Βλέπει έναν πατροκτόνο κρεμασμένο στο σταυροδρόμι ενός μικρού χωριού και τους φίλους του να τρέχουν και να τον τραβάνε απ' τα ποδάρια κι αυτός κρέμεται νεκρός στο σχοινί ενόσω τα ούρα σκουραίνουν το παντελόνι του.",
+    "korto_notes": [
+      {"english": "whores call to him from the dark like souls in want", "korto": "πόρνες του φωνάζουν μέσα απ' τα σκοτάδια σαν ψυχές στερημένες", "note": "πόρνες = whores (= AG πόρναι). ψυχές στερημένες = deprived souls. For AG: ψυχαὶ ἐνδεεῖς or ψυχαὶ πενόμεναι"},
+      {"english": "Egrets in their rookeries white as candles among the moss", "korto": "Ερωδιοί στις φωλιές τους άσπροι σαν κεριά μες στα βρύα", "note": "ερωδιός = heron/egret (= AG ἐρωδιός). βρύα = moss (= AG βρύον). Direct AG continuity."},
+      {"english": "a parricide hanged", "korto": "πατροκτόνο κρεμασμένο", "note": "πατροκτόνος (= AG πατροκτόνος). Another word continuous from ancient to modern."}
+    ]
+  },
+
+  "009_reverend_green_tent": {
+    "korto_text": "Ο αιδεσιμότατος Γκριν έπαιζε σε γεμάτο μαγαζί καθημερινά όσο κρατούσαν οι βροχές και οι βροχές κράτησαν δυο βδομάδες. Όταν ο μικρός μπήκε σκυφτός στην τριμμένη σκηνή από καραβόπανο υπήρχε χώρος για ορθίους στα πλαϊνά, για κάνα-δυο νοματαίους, και τέτοια μεθυστική αποφορά βρεμένου κι άπλυτου που και οι ίδιοι ξεμύτιζαν κάθε τόσο στη νεροποντή ν' ανασάνουν καθαρό αέρα ώσπου η βροχή τους έστελνε πάλι μέσα τρέχοντας. Στάθηκε με κάτι άλλους της σειράς του πίσω πίσω. Το μόνο που θα τον ξεχώριζε απ' το πλήθος ήταν ότι δεν είχε πάνω του όπλο.",
+    "korto_notes": [
+      {"english": "playing to a full house", "korto": "έπαιζε σε γεμάτο μαγαζί", "note": "μαγαζί = shop/venue. Korto treats 'playing' as performing."},
+      {"english": "ratty canvas tent", "korto": "τριμμένη σκηνή από καραβόπανο", "note": "τριμμένη = worn/ratty; καραβόπανο = sailcloth/canvas. AG: σκηνὴ τρυχίνη ἐκ λίνου"},
+      {"english": "he was not armed", "korto": "δεν είχε πάνω του όπλο", "note": "όπλο = weapon. AG: οὐχ ὡπλισμένος ἦν or ἄνοπλος"}
+    ]
+  },
+
+  "010_reverend_dialogue": {
+    "korto_text_fragment": "Γειτόνοι, έλεγε ο αιδεσιμότατος, δεν μπορούσε να πάψει ν' ανακατεύεται μ' αυτούς τους διάολε-διάολε-διαολεμένους γειτόνους... Κυρίες και κύριοι, αισθάνομαι ότι είναι χρέος μου να σας πληροφορήσω ότι ο κύριος που οργάνωσε αυτή την αφύπνιση είναι απατεώνας. Δε βαστάει χαρτί κληρικού από κανένα ίδρυμα, αναγνωρισμένο ή φανταστικό...",
+    "korto_notes": [
+      {"english": "Ladies and gentlemen I feel it my duty", "korto": "Κυρίες και κύριοι, αισθάνομαι ότι είναι χρέος μου", "note": "The judge speaks in formal educated MG — matching his formal English. AG should use elevated periodic prose: Ὦ ἄνδρες καὶ γυναῖκες..."},
+      {"english": "an imposter", "korto": "απατεώνας", "note": "απατεών = impostor/fraud (= AG ἀπατεών, same word)"},
+      {"english": "the livery of his God", "korto": "τα άμφια του Κυρίου και Θεού του", "note": "άμφια = vestments (ecclesiastical MG, from AG ἄμφια). Κύριος = Lord."},
+      {"english": "This is him. The devil. Here he stands.", "korto": "Ιδού, φώναζε ο αιδεσιμότατος, κλαίγοντας με αναφιλητά. Ιδού ο διάβολος. Στέκεται μπρος στα μάτια σας.", "note": "Ιδού = Behold! (biblical MG, directly from AG ἰδού). Perfect for our translation — use ἰδού."}
+    ]
+  }
+}

@@ -1,0 +1,508 @@
+{
+  "passage_id": "014_hotel_fire",
+  "title": "The hotel fire and escape",
+  "chapter": "I",
+  "korto_text": null,
+  "korto_notes": [],
+  "google_translate": {
+    "sentences": [
+      {
+        "index": 0,
+        "english": "The dramhouse was a long narrow hall wainscotted with varnished boards.",
+        "google_translate_el": "Το δραματικό σπίτι ήταν μια μακρόστενη αίθουσα με λουστραρισμένες σανίδες."
+      },
+      {
+        "index": 1,
+        "english": "There were tables by the wall and spittoons on the floor.",
+        "google_translate_el": "Υπήρχαν τραπέζια δίπλα στον τοίχο και πτυελάκια στο πάτωμα."
+      },
+      {
+        "index": 2,
+        "english": "There were no patrons.",
+        "google_translate_el": "Δεν υπήρχαν θαμώνες."
+      },
+      {
+        "index": 3,
+        "english": "The barman looked up when they entered and a nigger that had been sweeping the floor stood the broom against the wall and went out.",
+        "google_translate_el": "Ο μπάρμαν σήκωσε το βλέμμα όταν μπήκαν μέσα και ένας μαύρος που σκούπιζε το πάτωμα στάθηκε τη σκούπα στον τοίχο και βγήκε έξω."
+      },
+      {
+        "index": 4,
+        "english": "Where's Sidney? said the man in his suit of mud.",
+        "google_translate_el": "Πού είναι ο Σίντνεϊ; είπε ο άντρας με το κοστούμι από λάσπη."
+      },
+      {
+        "index": 5,
+        "english": "In the bed I reckon.",
+        "google_translate_el": "Στο κρεβάτι υπολογίζω."
+      },
+      {
+        "index": 6,
+        "english": "They went on.",
+        "google_translate_el": "Συνέχισαν."
+      },
+      {
+        "index": 7,
+        "english": "Toadvine, called the barman.",
+        "google_translate_el": "Toadvine, που λέγεται ο μπάρμαν."
+      },
+      {
+        "index": 8,
+        "english": "The kid looked back.",
+        "google_translate_el": "Το παιδί κοίταξε πίσω."
+      },
+      {
+        "index": 9,
+        "english": "The barman had come from behind the bar and was looking after them.",
+        "google_translate_el": "Ο μπάρμαν είχε έρθει πίσω από το μπαρ και τους πρόσεχε."
+      },
+      {
+        "index": 10,
+        "english": "They crossed from the door through the lobby of the hotel toward the stairs leaving varied forms of mud behind them on the floor.",
+        "google_translate_el": "Πέρασαν από την πόρτα μέσα από το λόμπι του ξενοδοχείου προς τις σκάλες αφήνοντας διάφορες μορφές λάσπης πίσω τους στο πάτωμα."
+      },
+      {
+        "index": 11,
+        "english": "As they started up the stairs the clerk at the desk leaned and called to them.",
+        "google_translate_el": "Καθώς άρχισαν να ανεβαίνουν τις σκάλες, ο υπάλληλος στο γραφείο έγειρε και τους φώναξε."
+      },
+      {
+        "index": 12,
+        "english": "Toadvine.",
+        "google_translate_el": "Toadvine."
+      },
+      {
+        "index": 13,
+        "english": "He stopped and looked back.",
+        "google_translate_el": "Σταμάτησε και κοίταξε πίσω."
+      },
+      {
+        "index": 14,
+        "english": "He'll shoot you.",
+        "google_translate_el": "Θα σε πυροβολήσει."
+      },
+      {
+        "index": 15,
+        "english": "Old Sidney?",
+        "google_translate_el": "Παλιό Σίντνεϊ;"
+      },
+      {
+        "index": 16,
+        "english": "Old Sidney.",
+        "google_translate_el": "Παλιό Σίντνεϊ."
+      },
+      {
+        "index": 17,
+        "english": "They went on up the stairs.",
+        "google_translate_el": "Ανέβηκαν τις σκάλες."
+      },
+      {
+        "index": 18,
+        "english": "At the top of the landing was a long hall with a windowlight at the end.",
+        "google_translate_el": "Στην κορυφή της προσγείωσης υπήρχε μια μεγάλη αίθουσα με ένα φως παραθύρου στο τέλος."
+      },
+      {
+        "index": 19,
+        "english": "There were varnished doors down the walls set so close they might have been closets.",
+        "google_translate_el": "Υπήρχαν βερνικωμένες πόρτες κάτω από τους τοίχους τοποθετημένες τόσο κοντά που μπορεί να ήταν ντουλάπες."
+      },
+      {
+        "index": 20,
+        "english": "Toadvine went on until he came to the end of the hall.",
+        "google_translate_el": "Ο Τοντβάιν συνέχισε μέχρι που έφτασε στο τέλος της αίθουσας."
+      },
+      {
+        "index": 21,
+        "english": "He listened at the last door and he eyed the kid.",
+        "google_translate_el": "Άκουσε στην τελευταία πόρτα και κοίταξε το παιδί."
+      },
+      {
+        "index": 22,
+        "english": "You got a match?",
+        "google_translate_el": "Έχεις ταίρι;"
+      },
+      {
+        "index": 23,
+        "english": "The kid searched his pockets and came up with a crushed and stained wooden box.",
+        "google_translate_el": "Το παιδί έψαξε τις τσέπες του και βρήκε ένα θρυμματισμένο και λεκιασμένο ξύλινο κουτί."
+      },
+      {
+        "index": 24,
+        "english": "The man took it from him.",
+        "google_translate_el": "Του το πήρε ο άντρας."
+      },
+      {
+        "index": 25,
+        "english": "Need a little tinder here, he said.",
+        "google_translate_el": "Χρειάζομαι λίγη επικάλυψη εδώ, είπε."
+      },
+      {
+        "index": 26,
+        "english": "He was crumbling the box and stacking the bits against the door.",
+        "google_translate_el": "Έσπασε το κουτί και στοίβαζε τα κομμάτια στην πόρτα."
+      },
+      {
+        "index": 27,
+        "english": "He struck a match and set the pieces alight.",
+        "google_translate_el": "Χτύπησε ένα σπίρτο και άναψε τα κομμάτια."
+      },
+      {
+        "index": 28,
+        "english": "He pushed the little pile of burning wood under the door and added more matches.",
+        "google_translate_el": "Έσπρωξε το μικρό σωρό από αναμμένα ξύλα κάτω από την πόρτα και πρόσθεσε κι άλλα σπίρτα."
+      },
+      {
+        "index": 29,
+        "english": "Is he in there? said the boy.",
+        "google_translate_el": "Είναι εκεί μέσα; είπε το αγόρι."
+      },
+      {
+        "index": 30,
+        "english": "That's what we're fixin to see.",
+        "google_translate_el": "Αυτό είναι που επιδιώκουμε να δούμε."
+      },
+      {
+        "index": 31,
+        "english": "A dark curl of smoke rose, a blue flame of burning varnish.",
+        "google_translate_el": "Μια σκούρα μπούκλα καπνού σηκώθηκε, μια μπλε φλόγα από αναμμένο βερνίκι."
+      },
+      {
+        "index": 32,
+        "english": "They squatted in the hallway and watched.",
+        "google_translate_el": "Έκαναν οκλαδόν στο διάδρομο και παρακολουθούσαν."
+      },
+      {
+        "index": 33,
+        "english": "Thin flames began to run up over the panels and dart back again.",
+        "google_translate_el": "Οι λεπτές φλόγες άρχισαν να τρέχουν πάνω από τα πάνελ και να ξαναγυρίζουν πίσω."
+      },
+      {
+        "index": 34,
+        "english": "The watchers looked like forms excavated from a bog.",
+        "google_translate_el": "Οι παρατηρητές έμοιαζαν με φόρμες που είχαν ανασκαφεί από έναν βάλτο."
+      },
+      {
+        "index": 35,
+        "english": "Tap on the door now, said Toadvine.",
+        "google_translate_el": "Χτύπησε την πόρτα τώρα, είπε ο Τοντβάιν."
+      },
+      {
+        "index": 36,
+        "english": "The kid rose.",
+        "google_translate_el": "Το παιδί σηκώθηκε."
+      },
+      {
+        "index": 37,
+        "english": "Toadvine stood up and waited.",
+        "google_translate_el": "Ο Τοντβάιν σηκώθηκε και περίμενε."
+      },
+      {
+        "index": 38,
+        "english": "They could hear the flames crackling inside the room.",
+        "google_translate_el": "Μπορούσαν να ακούσουν τις φλόγες να τρίζουν μέσα στο δωμάτιο."
+      },
+      {
+        "index": 39,
+        "english": "The kid tapped.",
+        "google_translate_el": "Το παιδί χτύπησε."
+      },
+      {
+        "index": 40,
+        "english": "You better tap louder than that.",
+        "google_translate_el": "Καλύτερα να χτυπάς πιο δυνατά από αυτό."
+      },
+      {
+        "index": 41,
+        "english": "This man drinks some.",
+        "google_translate_el": "Αυτός ο άνθρωπος πίνει λίγο."
+      },
+      {
+        "index": 42,
+        "english": "He balled his fist and lambasted the door about five times.",
+        "google_translate_el": "Χτύπησε τη γροθιά του και χτύπησε την πόρτα περίπου πέντε φορές."
+      },
+      {
+        "index": 43,
+        "english": "Hell fire, said a voice.",
+        "google_translate_el": "Φωτιά κόλασης, είπε μια φωνή."
+      },
+      {
+        "index": 44,
+        "english": "Here he comes.",
+        "google_translate_el": "Εδώ έρχεται."
+      },
+      {
+        "index": 45,
+        "english": "They waited.",
+        "google_translate_el": "Περίμεναν."
+      },
+      {
+        "index": 46,
+        "english": "You hot son of a bitch, said the voice.",
+        "google_translate_el": "Κόκκινο γιο της σκύλας, είπε η φωνή."
+      },
+      {
+        "index": 47,
+        "english": "Then the knob turned and the door opened.",
+        "google_translate_el": "Τότε το πόμολο γύρισε και η πόρτα άνοιξε."
+      },
+      {
+        "index": 48,
+        "english": "He stood in his underwear holding in one hand the towel he'd used to turn the doorknob with.",
+        "google_translate_el": "Στάθηκε με το εσώρουχό του κρατώντας στο ένα χέρι την πετσέτα με την οποία γυρνούσε το πόμολο της πόρτας."
+      },
+      {
+        "index": 49,
+        "english": "When he saw them he turned and started back into the room but Toadvine seized him about the neck and rode him to the floor and held him by the hair and began to pry out an eyeball with his thumb.",
+        "google_translate_el": "Όταν τους είδε γύρισε και ξεκίνησε πίσω στο δωμάτιο, αλλά ο Toadvine τον έπιασε από τον λαιμό και τον οδήγησε στο πάτωμα, τον κράτησε από τα μαλλιά και άρχισε να βγάζει ένα βολβό του ματιού με τον αντίχειρά του."
+      },
+      {
+        "index": 50,
+        "english": "The man grabbed his wrist and bit it.",
+        "google_translate_el": "Ο άντρας άρπαξε τον καρπό του και τον δάγκωσε."
+      },
+      {
+        "index": 51,
+        "english": "Kick his mouth in, called Toadvine.",
+        "google_translate_el": "Κλώτσησε το στόμα του, που ονομάζεται Toadvine."
+      },
+      {
+        "index": 52,
+        "english": "Kick it.",
+        "google_translate_el": "Κλοτσήστε το."
+      },
+      {
+        "index": 53,
+        "english": "The kid stepped past them into the room and turned and kicked the man in the face.",
+        "google_translate_el": "Το παιδί πέρασε δίπλα τους στο δωμάτιο και γύρισε και κλώτσησε τον άντρα στο πρόσωπο."
+      },
+      {
+        "index": 54,
+        "english": "Toadvine held his head back by the hair.",
+        "google_translate_el": "Ο Τοντβάιν κράτησε το κεφάλι του πίσω από τα μαλλιά."
+      },
+      {
+        "index": 55,
+        "english": "Kick him, he called.",
+        "google_translate_el": "Κλωτσήστε τον, φώναξε."
+      },
+      {
+        "index": 56,
+        "english": "Aw, kick him, honey.",
+        "google_translate_el": "Α, κλωτσήστε τον, γλυκιά μου."
+      },
+      {
+        "index": 57,
+        "english": "He kicked.",
+        "google_translate_el": "Αυτός κλώτσησε."
+      },
+      {
+        "index": 58,
+        "english": "Toadvine pulled the bloody head around and looked at it and let it flop to the floor and he rose and kicked the man himself.",
+        "google_translate_el": "Ο Τοντβάιν τράβηξε το ματωμένο κεφάλι και το κοίταξε και το άφησε να πέσει στο πάτωμα και σηκώθηκε και κλώτσησε τον ίδιο τον άντρα."
+      },
+      {
+        "index": 59,
+        "english": "Two spectators were standing in the hallway.",
+        "google_translate_el": "Δύο θεατές στέκονταν στο διάδρομο."
+      },
+      {
+        "index": 60,
+        "english": "The door was completely afire and part of the wall and ceiling.",
+        "google_translate_el": "Η πόρτα ήταν εντελώς φλεγόμενη και μέρος του τοίχου και της οροφής."
+      },
+      {
+        "index": 61,
+        "english": "They went out and down the hall.",
+        "google_translate_el": "Βγήκαν έξω και κατέβηκαν στο διάδρομο."
+      },
+      {
+        "index": 62,
+        "english": "The clerk was coming up the steps two at a time.",
+        "google_translate_el": "Ο υπάλληλος ανέβαινε τα σκαλιά δύο τη φορά."
+      },
+      {
+        "index": 63,
+        "english": "Toadvine you son of a bitch, he said.",
+        "google_translate_el": "Ξυπνάς, είπε."
+      },
+      {
+        "index": 64,
+        "english": "Toadvine was four steps above him and when he kicked him he caught him in the throat.",
+        "google_translate_el": "Ο Τοντβάιν ήταν τέσσερα βήματα από πάνω του και όταν τον κλώτσησε τον έπιασε στο λαιμό."
+      },
+      {
+        "index": 65,
+        "english": "The clerk sat down on the stairs.",
+        "google_translate_el": "Ο υπάλληλος κάθισε στις σκάλες."
+      },
+      {
+        "index": 66,
+        "english": "When the kid came past he hit him in the side of the head and the clerk slumped over and began to slide toward the landing.",
+        "google_translate_el": "Όταν το παιδί πέρασε, το χτύπησε στο πλάι του κεφαλιού και ο υπάλληλος σωριάστηκε και άρχισε να γλιστράει προς την προσγείωση."
+      },
+      {
+        "index": 67,
+        "english": "The kid stepped over him and went down to the lobby and crossed to the front door and out.",
+        "google_translate_el": "Το παιδί πέρασε από πάνω του και κατέβηκε στο λόμπι και πέρασε στην εξώπορτα και βγήκε."
+      },
+      {
+        "index": 68,
+        "english": "Toadvine was running down the street, waving his fists above his head crazily and laughing.",
+        "google_translate_el": "Ο Τοντβάιν έτρεχε στο δρόμο, κουνώντας τρελά τις γροθιές του πάνω από το κεφάλι του και γελώντας."
+      },
+      {
+        "index": 69,
+        "english": "He looked like a great clay voodoo doll made animate and the kid looked like another.",
+        "google_translate_el": "Έμοιαζε με μια υπέροχη κούκλα βουντού από πηλό που έγινε ζωντανή και το παιδί έμοιαζε με άλλο."
+      },
+      {
+        "index": 70,
+        "english": "Behind them flames were licking at the top corner of the hotel and clouds of dark smoke rose into the warm Texas morning.",
+        "google_translate_el": "Πίσω τους φλόγες έγλειφαν στην επάνω γωνία του ξενοδοχείου και σύννεφα σκούρου καπνού υψώθηκαν στο ζεστό πρωινό του Τέξας."
+      },
+      {
+        "index": 71,
+        "english": "He'd left the mule with a Mexican family that boarded animals at the edge of town and he arrived there wildlooking and out of breath.",
+        "google_translate_el": "Είχε αφήσει το μουλάρι με μια μεξικανική οικογένεια που επιβίβαζε ζώα στην άκρη της πόλης και έφτασε εκεί με άγρια ​​όψη και λαχανιασμένος."
+      },
+      {
+        "index": 72,
+        "english": "The woman opened the door and looked at him.",
+        "google_translate_el": "Η γυναίκα άνοιξε την πόρτα και τον κοίταξε."
+      },
+      {
+        "index": 73,
+        "english": "Need to get my mule, he wheezed.",
+        "google_translate_el": "Πρέπει να πάρω το μουλάρι μου, συριγμένος."
+      },
+      {
+        "index": 74,
+        "english": "She looked at him some more, then she called toward the back of the house.",
+        "google_translate_el": "Τον κοίταξε λίγο ακόμα, μετά φώναξε προς το πίσω μέρος του σπιτιού."
+      },
+      {
+        "index": 75,
+        "english": "He walked around.",
+        "google_translate_el": "Περπάτησε."
+      },
+      {
+        "index": 76,
+        "english": "There were horses tethered in the lot and there was a flatbed wagon against the fence with some turkeys sitting on the edge looking out.",
+        "google_translate_el": "Υπήρχαν άλογα δεμένα στην παρτίδα και υπήρχε ένα βαγόνι με επίπεδη επιφάνεια στον φράχτη με μερικές γαλοπούλες να κάθονται στην άκρη και να κοιτάζουν έξω."
+      },
+      {
+        "index": 77,
+        "english": "The old lady had come to the back door.",
+        "google_translate_el": "Η ηλικιωμένη κυρία είχε έρθει στην πίσω πόρτα."
+      },
+      {
+        "index": 78,
+        "english": "Nito, she called.",
+        "google_translate_el": "Νίτο, φώναξε."
+      },
+      {
+        "index": 79,
+        "english": "Venga.",
+        "google_translate_el": "Venga."
+      },
+      {
+        "index": 80,
+        "english": "Hay un caballero aquf.",
+        "google_translate_el": "Hay un caballero aquf."
+      },
+      {
+        "index": 81,
+        "english": "Venga.",
+        "google_translate_el": "Venga."
+      },
+      {
+        "index": 82,
+        "english": "He went down the shed to the tackroom and got his wretched saddle and his blanketroll and brought them back.",
+        "google_translate_el": "Κατέβηκε από το υπόστεγο στο τακτικό και πήρε την άθλια σέλα του και την κουβέρτα του και τα έφερε πίσω."
+      },
+      {
+        "index": 83,
+        "english": "He found the mule and unstalled it and bridled it with the rawhide hacka-more and led it to the fence.",
+        "google_translate_el": "Βρήκε το μουλάρι και το απεγκατέστησε και το χαλινάρισε με το ακατέργαστο δέρμα χάκα-μορ και το οδήγησε στον φράχτη."
+      },
+      {
+        "index": 84,
+        "english": "He leaned against the animal with his shoulder and got the saddle over it and got it cinched, the mule starting and shying and running its head along the fence.",
+        "google_translate_el": "Έσκυψε πάνω στο ζώο με τον ώμο του και πήρε τη σέλα από πάνω του και το έσφιξε, το μουλάρι άρχισε να ντρέπεται και να τρέχει το κεφάλι του κατά μήκος του φράχτη."
+      },
+      {
+        "index": 85,
+        "english": "He led it across the lot.",
+        "google_translate_el": "Το οδήγησε σε όλη την παρτίδα."
+      },
+      {
+        "index": 86,
+        "english": "The mule kept shaking its head sideways as if it had something in its ear.",
+        "google_translate_el": "Το μουλάρι συνέχιζε να κουνάει το κεφάλι του στο πλάι σαν να είχε κάτι στο αυτί του."
+      },
+      {
+        "index": 87,
+        "english": "He led it out to the road.",
+        "google_translate_el": "Το οδήγησε στο δρόμο."
+      },
+      {
+        "index": 88,
+        "english": "As he passed the house the woman came padding out after him.",
+        "google_translate_el": "Καθώς περνούσε από το σπίτι, η γυναίκα βγήκε από πίσω του."
+      },
+      {
+        "index": 89,
+        "english": "When she saw him put his foot in the stirrup she began to run.",
+        "google_translate_el": "Όταν τον είδε να βάζει το πόδι του στον αναβολέα άρχισε να τρέχει."
+      },
+      {
+        "index": 90,
+        "english": "He swung up into the broken saddle and chucked the mule forward.",
+        "google_translate_el": "Αναπήδησε στη σπασμένη σέλα και τρύπησε το μουλάρι μπροστά."
+      },
+      {
+        "index": 91,
+        "english": "She stopped at the gate and watched him go.",
+        "google_translate_el": "Σταμάτησε στην πύλη και τον είδε να φεύγει."
+      },
+      {
+        "index": 92,
+        "english": "He didnt look back.",
+        "google_translate_el": "Δεν κοίταξε πίσω."
+      },
+      {
+        "index": 93,
+        "english": "When he passed back through the town the hotel was burning and men were standing around watching it, some holding empty buckets.",
+        "google_translate_el": "Όταν πέρασε πίσω από την πόλη, το ξενοδοχείο καιγόταν και άντρες στέκονταν γύρω και το παρακολουθούσαν, κάποιοι κρατώντας άδειους κουβάδες."
+      },
+      {
+        "index": 94,
+        "english": "A few men sat horseback watching the flames and one of these was the judge.",
+        "google_translate_el": "Μερικοί άντρες κάθισαν έφιπποι και παρακολουθούσαν τις φλόγες και ένας από αυτούς ήταν ο κριτής."
+      },
+      {
+        "index": 95,
+        "english": "As the kid rode past the judge turned and watched him.",
+        "google_translate_el": "Καθώς το παιδί περνούσε δίπλα του, ο δικαστής γύρισε και τον παρακολούθησε."
+      },
+      {
+        "index": 96,
+        "english": "He turned the horse, as if he'd have the animal watch too.",
+        "google_translate_el": "Γύρισε το άλογο, σαν να είχε και το ρολόι των ζώων."
+      },
+      {
+        "index": 97,
+        "english": "When the kid looked back the judge smiled.",
+        "google_translate_el": "Όταν το παιδί κοίταξε πίσω ο δικαστής χαμογέλασε."
+      },
+      {
+        "index": 98,
+        "english": "The kid touched up the mule and they went sucking out past the old stone fort along the road west.",
+        "google_translate_el": "Το παιδί άγγιξε το μουλάρι και πήγαν να ρουφήξουν έξω από το παλιό πέτρινο φρούριο κατά μήκος του δρόμου δυτικά."
+      }
+    ]
+  },
+  "idiom_notes": [],
+  "vocabulary_harvest": []
+}

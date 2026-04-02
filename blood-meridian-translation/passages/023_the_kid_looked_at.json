@@ -1,0 +1,56 @@
+{
+  "id": "023_the_kid_looked_at",
+  "chapter": "I",
+  "title": "the kid looked at",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter I",
+  "text": "The kid looked at the man. His head was strangely narrow and his hair was plastered up with mud in a bizarre and primitive coiffure. On his forehead were burned the letters H T and lower and almost between the eyes the letter F and these markings were splayed and garish as if the iron had been left too long. When he turned to look at the kid the kid could see that he had no ears. He stood up and sheathed the knife and started up the walk with the boots in his hand and the kid rose and followed. Halfway to the hotel the man stopped and looked out at the mud and then sat down on the planks and pulled on the boots mud and all. Then he rose and slogged off through the lot to pick something up.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "The kid looked at the man.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "His head was strangely narrow and his hair was plastered up with mud in a bizarre and primitive coiffure.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "On his forehead were burned the letters H T and lower and almost between the eyes the letter F and these markings were splayed and garish as if the iron had been left too long.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "When he turned to look at the kid the kid could see that he had no ears.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "He stood up and sheathed the knife and started up the walk with the boots in his hand and the kid rose and followed.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "Halfway to the hotel the man stopped and looked out at the mud and then sat down on the planks and pulled on the boots mud and all.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "Then he rose and slogged off through the lot to pick something up.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 7,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": []
+}

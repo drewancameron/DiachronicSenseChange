@@ -1,0 +1,87 @@
+{
+  "id": "044_they_is_four_things",
+  "chapter": "II",
+  "title": "they is four things",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter II",
+  "text": "They is four things that can destroy the earth, he said. Women, whiskey, money, and niggers.\n\nThey sat in silence. The wind moaned in the section of stovepipe that was run through the roof above them to quit the place of smoke. After a while the old man put the heart away.\n\nThat thing costed me two hundred dollars, he said.\n\nYou give two hundred dollars for it?\n\nI did, for that was the price they put on the black son of a bitch it hung inside of.\n\nHe stirred about in the corner and came up with an old dark brass kettle, lifted the cover and poked inside with one finger. The remains of one of the lank prairie hares interred in cold grease and furred with a light blue mold. He clamped the lid back on the kettle and set it in the flames. Aint much but we'll go shares, he said.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "They is four things that can destroy the earth, he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "Women, whiskey, money, and niggers.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 2,
+      "text": "They sat in silence.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 3,
+      "text": "The wind moaned in the section of stovepipe that was run through the roof above them to quit the place of smoke.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "After a while the old man put the heart away.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "That thing costed me two hundred dollars, he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "You give two hundred dollars for it?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "I did, for that was the price they put on the black son of a bitch it hung inside of.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "He stirred about in the corner and came up with an old dark brass kettle, lifted the cover and poked inside with one finger.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "The remains of one of the lank prairie hares interred in cold grease and furred with a light blue mold.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 10,
+      "text": "He clamped the lid back on the kettle and set it in the flames.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "Aint much but we'll go shares, he said.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 12,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    92,
+    273,
+    325,
+    363,
+    450
+  ]
+}

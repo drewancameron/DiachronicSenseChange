@@ -1,0 +1,50 @@
+{
+  "first_draft": "Ἐκάθητο καὶ ἐξέτεινε τὸ σκέλος ἐπὶ τῆς γῆς καὶ ἔβλεπεν αὐτό, αἱματωδέστερος τῶν πλείστων. Ἔλαβε τὸν καυλὸν καὶ ἐπέκειτο αὐτῷ. Ὁ ἱδρὼς ἐφειστήκει ἐπὶ τοῦ μετώπου. Εἶχε τὸ σκέλος καὶ ὤμνυε ἠρέμα. Τινὲς μὲν ἐθεῶντο, τινὲς δὲ οὔ. Ὁ παῖς ἀνέστη. Πειράσομαι αὐτήν, ἔφη.",
+  "mechanical": {
+    "unattested_words": [],
+    "grammar_violations": [],
+    "construction_mismatches": []
+  },
+  "sonnet_issues": [
+    {
+      "greek": "καυλὸν",
+      "problem": "WRONG SENSE: καυλός means 'stalk/stem of a plant' but here refers to an arrow shaft",
+      "fix": "δόρυ or κάλαμος"
+    },
+    {
+      "greek": "ἐπέκειτο αὐτῷ",
+      "problem": "UNIDIOMATIC GREEK: calque of English 'bore down on it' - Greek would not use ἐπίκειμαι this way for gripping/pressing",
+      "fix": "κατεπίεζεν or ἐβιάζετο"
+    },
+    {
+      "greek": "ἐφειστήκει",
+      "problem": "WRONG SENSE: ἐφίστημι means 'to set over/place in charge' not 'to stand out' (of sweat)",
+      "fix": "παρεστηκὼς ἦν or ἐξεστηκὼς ἦν"
+    }
+  ],
+  "polysemy_issues": [],
+  "revision_prompt": "You are revising an Ancient Greek translation of McCarthy's Blood Meridian (Koine register, Attic vocabulary).\n\nFix ONLY the specific issues listed below. Do not change anything else.\n\n## English Source\nHe sat and stretched his leg out on the ground and looked at it, he bloodier than most. He gripped the shaft and bore down on it. The sweat stood on his forehead. He held his leg and swore softly. Some watched, some did not. The kid rose. I'll try her, he said.\n\n## Current Greek Translation\nἘκάθητο καὶ ἐξέτεινε τὸ σκέλος ἐπὶ τῆς γῆς καὶ ἔβλεπεν αὐτό, αἱματωδέστερος τῶν πλείστων. Ἔλαβε τὸν καυλὸν καὶ ἐπέκειτο αὐτῷ. Ὁ ἱδρὼς ἐφειστήκει ἐπὶ τοῦ μετώπου. Εἶχε τὸ σκέλος καὶ ὤμνυε ἠρέμα. Τινὲς μὲν ἐθεῶντο, τινὲς δὲ οὔ. Ὁ παῖς ἀνέστη. Πειράσομαι αὐτήν, ἔφη.\n\n## Style and Sense Issues (from review)\n  - καυλὸν: WRONG SENSE: καυλός means 'stalk/stem of a plant' but here refers to an arrow shaft\n    → Suggested: δόρυ or κάλαμος\n  - ἐπέκειτο αὐτῷ: UNIDIOMATIC GREEK: calque of English 'bore down on it' - Greek would not use ἐπίκειμαι this way for gripping/pressing\n    → Suggested: κατεπίεζεν or ἐβιάζετο\n  - ἐφειστήκει: WRONG SENSE: ἐφίστημι means 'to set over/place in charge' not 'to stand out' (of sweat)\n    → Suggested: παρεστηκὼς ἦν or ἐξεστηκὼς ἦν\n\n## Instructions\n1. Fix each listed issue while preserving everything that is correct.\n2. Every word must be attestable in Morpheus/LSJ.\n3. Output ONLY the complete revised Greek text — no explanations.",
+  "greek": "Ἐκάθητο καὶ ἐξέτεινε τὸ σκέλος ἐπὶ τῆς γῆς καὶ ἔβλεπεν αὐτό, αἱματωδέστερος τῶν πλείστων. Ἔλαβε τὸν κάλαμον καὶ κατεπίεζεν αὐτόν. Ὁ ἱδρὼς ἐξεστηκὼς ἦν ἐπὶ τοῦ μετώπου. Εἶχε τὸ σκέλος καὶ ὤμνυε ἠρέμα. Τινὲς μὲν ἐθεῶντο, τινὲς δὲ οὔ. Ὁ παῖς ἀνέστη. Πειράσομαι αὐτήν, ἔφη.",
+  "scores": {
+    "voice_preservation": 8,
+    "greek_idiom": 7,
+    "register_match": 8,
+    "grammar": 6,
+    "vocabulary": 7,
+    "imagery": 8,
+    "errors": [
+      "ἐξεστηκὼς ἦν is unidiomatic - should be εἱστήκει or ἐφειστήκει",
+      "κάλαμον for 'shaft' is questionable - στῦλος or ξύλον would be clearer",
+      "αἱματωδέστερος is not well-attested - should be ᾑματωμένος μᾶλλον τῶν πλείστων",
+      "κατεπίεζεν lacks object clarity in this medical context"
+    ],
+    "strengths": [
+      "Excellent preservation of McCarthy's parataxis with καί...καί structure",
+      "Natural dialogue with Πειράσομαι αὐτήν, ἔφη",
+      "Good use of imperfects for ongoing actions",
+      "Τινὲς μὲν...τινὲς δὲ οὔ perfectly captures the terse English",
+      "ὤμνυε ἠρέμα nicely renders 'swore softly'"
+    ],
+    "total": 44
+  }
+}
