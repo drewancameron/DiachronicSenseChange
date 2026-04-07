@@ -135,7 +135,7 @@ def build_chunk(chapter_dir: str, recently_glossed: set) -> tuple[str, set]:
         # Each gloss entry height: 6.5pt per margin line, ~30 chars per margin line
         # (measured from PDF: 4.5cm at 6.5pt ≈ 30 chars per line)
         MARGIN_CHARS = 30
-        MARGIN_LINE = 7.0  # pt including spacing
+        MARGIN_LINE = 8.5  # pt per margin line (measured: 8.1pt avg)
         cumulative = 0
         max_entries = 0
         for _, _, anchor, note in gloss_candidates:
