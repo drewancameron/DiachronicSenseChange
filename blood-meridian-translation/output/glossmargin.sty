@@ -1,46 +1,82 @@
-% glossmargin.sty — Margin glosses for Ancient Greek reader editions
+% glossmargin.sty — Self-correcting margin glosses via position tracking
 %
-% Two-column layout with Python-computed vertical offsets.
-% Font size and spacing tuned for 4.5cm margin width.
+% Uses zref-savepos to record actual gloss positions on pass 1.
+% On pass 2, detects overlaps and shifts blocks down.
+% Requires TWO xelatex compilation passes.
 %
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{glossmargin}[2026/04/07 Margin glosses v3]
+\ProvidesPackage{glossmargin}[2026/04/07 Self-correcting margin glosses v4]
 
 \RequirePackage{marginnote}
 \RequirePackage{xcolor}
+\RequirePackage{zref-savepos}
 
 % === Configuration ===
 \definecolor{glosscolor}{gray}{0.3}
+\newcommand{\glossfont}{\fontsize{6.5pt}{8.5pt}\selectfont\color{glosscolor}}
 
-\newcommand{\glossfont}{%
-  \fontsize{6.5pt}{8.5pt}\selectfont\color{glosscolor}%
+% Minimum vertical gap between consecutive gloss blocks
+\newlength{\glossmingap}
+\setlength{\glossmingap}{6pt}
+
+% === State ===
+\newcounter{glblk}
+\newlength{\gloss@shift}
+\newlength{\gloss@prevbot}
+\newlength{\gloss@curtop}
+
+% === Core placement with overlap correction ===
+\newcommand{\@glossplace}[1]{%
+  \stepcounter{glblk}%
+  % Mark current y-position
+  \zsaveposy{glb\theglblk t}%
+  %
+  % Default: no shift
+  \setlength{\gloss@shift}{0pt}%
+  %
+  % On pass 2+, check for overlap with previous block
+  \ifnum\value{glblk}>1\relax
+    % Check if both positions are defined (from previous run)
+    \zifrefundefined{glb\the\numexpr\value{glblk}-1\relax b}{%
+      % Previous bottom not known — first pass, skip
+    }{%
+      \zifrefundefined{glb\theglblk t}{%
+        % Current top not known — first pass, skip
+      }{%
+        % Both defined. y increases upward: lower on page = smaller y.
+        % prevbot y-value and curtop y-value
+        \setlength{\gloss@prevbot}{\zposy{glb\the\numexpr\value{glblk}-1\relax b}sp}%
+        \setlength{\gloss@curtop}{\zposy{glb\theglblk t}sp}%
+        % Overlap when previous bottom is BELOW current top on the page,
+        % i.e. prevbot < curtop (smaller y = lower on page)
+        \ifdim\gloss@prevbot<\gloss@curtop\relax
+          % Overlap detected. Push this block down.
+          % Amount = (curtop - prevbot) + gap
+          \setlength{\gloss@shift}{\dimexpr\gloss@curtop - \gloss@prevbot + \glossmingap\relax}%
+        \fi
+      }%
+    }%
+  \fi
+  %
+  % Place the margin note, shifted down if needed
+  \marginnote{\glossfont #1\zsaveposy{glb\theglblk b}}[\gloss@shift]%
 }
 
-% === Two-column gloss block ===
-% #1 = left column, #2 = right column, #3 = vertical offset in pt
-\newcommand{\glossblock}[3]{%
-  \marginnote{%
-    \glossfont
-    \begin{minipage}[t]{0.47\marginparwidth}%
-      \raggedright #1%
-    \end{minipage}%
+% === User commands ===
+
+% Two-column gloss block
+\newcommand{\glossblock}[2]{%
+  \@glossplace{%
+    \begin{minipage}[t]{0.47\marginparwidth}\raggedright #1\end{minipage}%
     \hfill
-    \begin{minipage}[t]{0.47\marginparwidth}%
-      \raggedright #2%
-    \end{minipage}%
-  }[#3]%
+    \begin{minipage}[t]{0.47\marginparwidth}\raggedright #2\end{minipage}%
+  }%
 }
 
-% === Single-column gloss block ===
-% #1 = content, #2 = vertical offset in pt
-\newcommand{\glossblocksingle}[2]{%
-  \marginnote{\glossfont #1}[#2]%
-}
+% Single-column gloss block
+\newcommand{\glossblocksingle}[1]{\@glossplace{#1}}
 
-% === Inline gloss ===
-\newcommand{\gloss}[2]{%
-  \marginnote{\glossfont \textbf{#1}~#2}[0pt]%
-  #1%
-}
+% Inline gloss
+\newcommand{\gloss}[2]{\@glossplace{\textbf{#1}~#2}}
 
 \endinput

@@ -90,9 +90,9 @@ def build_chunk(chapter_dir: str) -> str:
     #   Chars per text line: ~65
 
     TEXT_LINE_HT = 17  # pt per text line (11pt × 1.6 leading)
-    GLOSS_LINE_HT = 10  # pt per gloss line (7pt font + 3pt gap)
+    
     CHARS_PER_TEXT_LINE = 55  # chars per text line (with wide margin)
-    CHARS_PER_GLOSS_LINE = 30  # chars per gloss margin line (4cm wide, small font)
+    
 
     # IDF lookup for prioritising rarest glosses
     try:
@@ -113,12 +113,18 @@ def build_chunk(chapter_dir: str) -> str:
 
     # Track recently glossed words — don't repeat within RECENCY_WINDOW paragraphs
     RECENCY_WINDOW = 6
-    recent_glosses = []  # list of sets, one per paragraph
+    recent_glosses = []
+
+    # Batch short paragraphs: accumulate glosses until we hit a long paragraph
+    # or accumulate enough text height to warrant a block
+    MIN_TEXT_HEIGHT_FOR_BLOCK = 60  # ~4 lines minimum before emitting a gloss block
 
     parts = []
-    margin_used = 0
+    pending_glosses = []  # accumulated glosses waiting for emission
+    pending_text = []     # accumulated paragraph text
+    pending_height = 0    # estimated accumulated text height
 
-    for para in paragraphs:
+    for para_idx, para in enumerate(paragraphs):
         para_tex = tex_escape(para)
 
         # Estimate text height of this paragraph
@@ -147,61 +153,54 @@ def build_chunk(chapter_dir: str) -> str:
         para_glosses = [g for _, _, g in para_gloss_candidates]
         glossed_this_para = {anchor for _, anchor, _ in para_gloss_candidates}
 
-        if para_glosses:
-            # Cap glosses: gloss block should not be taller than the text
-            # At ~3 gloss lines per entry in two columns, each entry pair = ~30pt
-            # Cap to fit within text_ht
-            max_pairs = max(2, int(text_ht / 30))
-            max_glosses = max_pairs * 2
-            if len(para_glosses) > max_glosses:
-                para_glosses = para_glosses[:max_glosses]
+        # Accumulate glosses and text
+        pending_glosses.extend(para_glosses)
+        pending_text.append(para_tex)
+        pending_height += text_ht
+        recent_glosses.append(glossed_this_para)
 
-            # Estimate gloss block height
-            # Each column is ~16 chars wide at 6.5pt in 4.5cm/2
-            col1_lines = 0
-            col2_lines = 0
-            for i, g in enumerate(para_glosses):
-                entry_lines = max(2, (len(g) + 8) // 14)  # conservative: 14 chars/line
-                if i % 2 == 0:
-                    col1_lines += entry_lines
+        # Decide whether to emit now or keep batching
+        is_last = (para_idx == len(paragraphs) - 1)
+        is_long_enough = pending_height >= MIN_TEXT_HEIGHT_FOR_BLOCK
+        has_no_glosses = len(pending_glosses) == 0
+
+        if is_last or is_long_enough or (has_no_glosses and pending_text):
+            # Emit accumulated text with accumulated glosses
+            text_block = "\n\n".join(pending_text)
+
+            if pending_glosses:
+                # Cap to reasonable density
+                max_glosses = min(10, max(4, int(pending_height / TEXT_LINE_HT)))
+                if len(pending_glosses) > max_glosses:
+                    pending_glosses = pending_glosses[:max_glosses]
+
+                # Split into two columns
+                col1 = []
+                col2 = []
+                for i, g in enumerate(pending_glosses):
+                    if i % 2 == 0:
+                        col1.append(g)
+                    else:
+                        col2.append(g)
+
+                if col2:
+                    c1_tex = "\\\\[3pt]".join(col1)
+                    c2_tex = "\\\\[3pt]".join(col2)
+                    parts.append(
+                        f"\\glossblock{{{c1_tex}}}{{{c2_tex}}}%\n{text_block}\n"
+                    )
                 else:
-                    col2_lines += entry_lines
-            gloss_lines = max(col1_lines, col2_lines)
-            gloss_ht = gloss_lines * GLOSS_LINE_HT + 8  # generous gap
-
-            # Offset to avoid overlapping with previous paragraph's glosses
-            # Add a minimum 8pt gap between blocks
-            offset = max(0, margin_used + 8) if margin_used > 0 else 0
-
-            # Split glosses into two columns (alternate)
-            col1 = []
-            col2 = []
-            for i, g in enumerate(para_glosses):
-                if i % 2 == 0:
-                    col1.append(g)
-                else:
-                    col2.append(g)
-
-            if col2:
-                # Two-column layout with computed offset
-                c1_tex = "\\\\[3pt]".join(col1)
-                c2_tex = "\\\\[3pt]".join(col2)
-                parts.append(
-                    f"\\glossblock{{{c1_tex}}}{{{c2_tex}}}{{{offset}pt}}%\n{para_tex}\n"
-                )
+                    block = "\\\\[3pt]".join(pending_glosses)
+                    parts.append(
+                        f"\\glossblocksingle{{{block}}}%\n{text_block}\n"
+                    )
             else:
-                # Single column with computed offset
-                block = "\\\\[3pt]".join(para_glosses)
-                parts.append(
-                    f"\\glossblocksingle{{{block}}}{{{offset}pt}}%\n{para_tex}\n"
-                )
+                parts.append(text_block + "\n")
 
-            margin_used = offset + gloss_ht - text_ht
-            recent_glosses.append(glossed_this_para)
-        else:
-            parts.append(para_tex + "\n")
-            margin_used = max(0, margin_used - text_ht)
-            recent_glosses.append(set())
+            # Reset accumulators
+            pending_glosses = []
+            pending_text = []
+            pending_height = 0
 
     return "\n".join(parts)
 
