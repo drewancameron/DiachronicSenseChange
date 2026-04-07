@@ -115,14 +115,27 @@ def build_chunk(chapter_dir: str) -> str:
                 para_glosses.append(f"\\textbf{{{anchor_esc}}} {note_esc}")
 
         if para_glosses:
-            # Estimate gloss block height based on actual content length
-            total_gloss_chars = sum(len(g) for g in para_glosses)
-            # In two columns, each column is ~15 chars wide
-            gloss_lines = sum(max(1, len(g) // 15 + 1) for g in para_glosses) // 2 + 1
-            gloss_ht = gloss_lines * GLOSS_LINE_HT + 4  # +4pt gap
+            # Cap glosses per paragraph to prevent overflow
+            MAX_GLOSSES_PER_PARA = min(12, max(4, text_lines))
+            if len(para_glosses) > MAX_GLOSSES_PER_PARA:
+                para_glosses = para_glosses[:MAX_GLOSSES_PER_PARA]
+
+            # Estimate gloss block height
+            # Each column is ~16 chars wide at 6.5pt in 4.5cm/2
+            col1_lines = 0
+            col2_lines = 0
+            for i, g in enumerate(para_glosses):
+                entry_lines = max(2, (len(g) + 8) // 14)  # conservative: 14 chars/line
+                if i % 2 == 0:
+                    col1_lines += entry_lines
+                else:
+                    col2_lines += entry_lines
+            gloss_lines = max(col1_lines, col2_lines)
+            gloss_ht = gloss_lines * GLOSS_LINE_HT + 8  # generous gap
 
             # Offset to avoid overlapping with previous paragraph's glosses
-            offset = max(0, margin_used)
+            # Add a minimum 8pt gap between blocks
+            offset = max(0, margin_used + 8) if margin_used > 0 else 0
 
             # Split glosses into two columns (alternate)
             col1 = []
@@ -134,17 +147,17 @@ def build_chunk(chapter_dir: str) -> str:
                     col2.append(g)
 
             if col2:
-                # Two-column layout
-                c1_tex = "\\\\[1pt]".join(col1)
-                c2_tex = "\\\\[1pt]".join(col2)
+                # Two-column layout with computed offset
+                c1_tex = "\\\\[3pt]".join(col1)
+                c2_tex = "\\\\[3pt]".join(col2)
                 parts.append(
-                    f"\\glossblock{{{c1_tex}}}{{{c2_tex}}}%\n{para_tex}\n"
+                    f"\\glossblock{{{c1_tex}}}{{{c2_tex}}}{{{offset}pt}}%\n{para_tex}\n"
                 )
             else:
-                # Single column (1-2 glosses only)
-                block = "\\\\[2pt]".join(para_glosses)
+                # Single column with computed offset
+                block = "\\\\[3pt]".join(para_glosses)
                 parts.append(
-                    f"\\glossblocksingle{{{block}}}%\n{para_tex}\n"
+                    f"\\glossblocksingle{{{block}}}{{{offset}pt}}%\n{para_tex}\n"
                 )
 
             margin_used = offset + gloss_ht - text_ht
