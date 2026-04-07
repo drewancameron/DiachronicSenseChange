@@ -24,7 +24,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from construction_dispatcher import (
     analyse_sentence, SentenceSkeleton, ClauseSkeleton, GreekTarget,
-    lookup_greek, _load_vocab, _save_haiku_cache,
+    lookup_greek, _load_vocab, _save_haiku_cache, verify_and_fix_draft,
 )
 
 
@@ -133,28 +133,48 @@ def order_clause_words(clause: ClauseSkeleton) -> list[GreekTarget]:
 # Assembly
 # ====================================================================
 
-def assemble_skeleton(skeleton: SentenceSkeleton) -> str:
+def assemble_skeleton(skeleton: SentenceSkeleton, verify: bool = True) -> str:
     """Assemble a sentence skeleton into an annotated Greek draft.
 
+    If verify=True, runs a Haiku sanity check on the word choices.
     Returns a string of lemmas with morphological annotations.
     """
-    parts = []
-
+    # Collect all words for verification
+    all_targets = []
     for clause in skeleton.clauses:
         ordered = order_clause_words(clause)
+        all_targets.extend(ordered)
 
-        for target in ordered:
-            lemma = target.lemma
-            if lemma.startswith("["):
-                # Unknown word — pass through with marker
-                parts.append(f"⟨{target.english}⟩")
-                continue
+    # Haiku verification pass
+    if verify and all_targets:
+        draft_pairs = [(t.english, t.lemma) for t in all_targets
+                       if not t.lemma.startswith("[")]
+        corrected = verify_and_fix_draft(skeleton.english, draft_pairs)
 
-            feats = format_features(target)
-            if feats:
-                parts.append(f"{lemma}[{feats}]")
-            else:
-                parts.append(lemma)
+        # Apply corrections back to targets
+        correction_map = {}
+        for (en_orig, grc_orig), (en_corr, grc_corr) in zip(draft_pairs, corrected):
+            if grc_corr != grc_orig:
+                correction_map[en_orig.lower()] = grc_corr
+
+        if correction_map:
+            for t in all_targets:
+                if t.english.lower() in correction_map:
+                    t.lemma = correction_map[t.english.lower()]
+
+    # Format output
+    parts = []
+    for target in all_targets:
+        lemma = target.lemma
+        if lemma.startswith("["):
+            parts.append(f"⟨{target.english}⟩")
+            continue
+
+        feats = format_features(target)
+        if feats:
+            parts.append(f"{lemma}[{feats}]")
+        else:
+            parts.append(lemma)
 
     return " ".join(parts)
 

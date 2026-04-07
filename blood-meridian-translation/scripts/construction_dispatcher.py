@@ -325,6 +325,92 @@ def _save_haiku_cache():
             json.dump(_haiku_cache, f, ensure_ascii=False)
 
 
+def verify_and_fix_draft(en_sentence: str, draft_pairs: list[tuple[str, str]],
+                         ) -> list[tuple[str, str]]:
+    """Use Haiku to verify and fix word-level translations.
+
+    Args:
+        en_sentence: the full English sentence
+        draft_pairs: list of (english_word, greek_lemma) pairs from the draft
+
+    Returns:
+        corrected list of (english_word, greek_lemma) pairs
+    """
+    # Filter to content words only, excluding locked/McCarthy vocab
+    content_pairs = [(en, grc) for en, grc in draft_pairs
+                     if not grc.startswith("[") and len(en) > 2
+                     and en.lower() not in _SKIP_WORDS
+                     and en.lower() not in _CONJUNCTION_MAP
+                     and en.lower() not in _PREPOSITION_MAP
+                     and en.lower() not in _MCCARTHY_VOCAB
+                     and en.lower() not in (_locked_glossary or {})]
+
+    if not content_pairs:
+        return draft_pairs
+
+    pair_block = "\n".join(f"  {en} → {grc}" for en, grc in content_pairs)
+
+    prompt = f"""Check each English→Greek word pairing below. The Greek word should correctly translate the English word AS USED IN THIS SENTENCE.
+
+Sentence: {en_sentence}
+
+Pairings:
+{pair_block}
+
+For each WRONG pairing, output a correction as JSON: {{"wrong_english": "word", "wrong_greek": "...", "correct_greek": "...", "reason": "..."}}
+
+If ALL pairings are correct, output: []
+
+Output ONLY the JSON array, nothing else."""
+
+    try:
+        import anthropic
+        client = anthropic.Anthropic()
+        r = client.messages.create(
+            model="claude-haiku-4-5-20251001",
+            max_tokens=1024,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        text = r.content[0].text.strip()
+
+        if "```" in text:
+            text = re.search(r'```(?:json)?\s*\n?(.*?)```', text, re.DOTALL).group(1)
+        corrections = json.loads(text)
+
+        if not corrections:
+            return draft_pairs
+
+        # Apply corrections
+        correction_map = {}
+        for c in corrections:
+            if isinstance(c, dict):
+                en_word = c.get("wrong_english", "").lower()
+                new_grc = c.get("correct_greek", "")
+                if en_word and new_grc:
+                    correction_map[en_word] = new_grc
+
+        if correction_map:
+            result = []
+            for en, grc in draft_pairs:
+                if en.lower() in correction_map:
+                    new_grc = correction_map[en.lower()]
+                    # Take first option if Haiku gave "X or Y"
+                    if " or " in new_grc:
+                        new_grc = new_grc.split(" or ")[0].strip()
+                    # Strip parenthetical notes
+                    if "(" in new_grc:
+                        new_grc = new_grc[:new_grc.index("(")].strip()
+                    result.append((en, new_grc))
+                else:
+                    result.append((en, grc))
+            return result
+
+    except Exception as e:
+        pass  # silently fall back to uncorrected draft
+
+    return draft_pairs
+
+
 def generate_synonyms_for_sentence(sentence: str) -> dict[str, list[str]]:
     """Use Haiku to generate contextual synonyms for each content word.
 
