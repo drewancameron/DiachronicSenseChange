@@ -1,0 +1,74 @@
+{
+  "id": "090_but_i_dont_misread",
+  "chapter": "III",
+  "title": "but i dont misread",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "But I dont misread you. I'm seldom mistaken in a man. I think you mean to make your mark in this world. Am I wrong?\n\nNo sir.\n\nNo. And I don't think you're the sort of chap to abandon a land that Americans fought and died for to a foreign power. And mark my word. Unless Americans act, people like you and me who take their country seriously while those mollycoddles in Washington sit on their hindsides, unless we act, Mexico—and I mean the whole of the country—will one day fly a European flag. Monroe Doctrine or no.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "But I dont misread you.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 1,
+      "text": "I'm seldom mistaken in a man.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "I think you mean to make your mark in this world.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "Am I wrong?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 4,
+      "text": "No sir.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 5,
+      "text": "No.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 6,
+      "text": "And I don't think you're the sort of chap to abandon a land that Americans fought and died for to a foreign power.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "And mark my word.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 8,
+      "text": "Unless Americans act, people like you and me who take their country seriously while those mollycoddles in Washington sit on their hindsides, unless we act, Mexico—and I mean the whole of the country—will one day fly a European flag.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "Monroe Doctrine or no.",
+      "discourse_hint": "fragment"
+    }
+  ],
+  "sentence_count": 10,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    115,
+    124
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "id": "085_the_captain_nodded_he",
+  "chapter": "III",
+  "title": "the captain nodded he",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "The captain nodded. He folded his hands between his knees. What do you think of the treaty? he said.\n\nThe kid looked at the man on the settle next to him. He had his eyes shut. He looked down at his thumbs. I dont know nothin about it, he said.\n\nI'm afraid that's the case with a lot of Americans, said the captain. Where are you from, son?\n\nTennessee.\n\nYou werent with the Volunteers at Monterrey were you?\n\nNo sir.\n\nBravest bunch of men under fire I believe I ever saw. I suppose more men from Tennessee bled and died on the field in northern Mexico than from any other state. Did you know that?",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "The captain nodded.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 1,
+      "text": "He folded his hands between his knees.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "What do you think of the treaty?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "The kid looked at the man on the settle next to him.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "He had his eyes shut.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 6,
+      "text": "He looked down at his thumbs.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "I dont know nothin about it, he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "I'm afraid that's the case with a lot of Americans, said the captain.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 9,
+      "text": "Where are you from, son?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 10,
+      "text": "Tennessee.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 11,
+      "text": "You werent with the Volunteers at Monterrey were you?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 12,
+      "text": "No sir.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 13,
+      "text": "Bravest bunch of men under fire I believe I ever saw.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 14,
+      "text": "I suppose more men from Tennessee bled and died on the field in northern Mexico than from any other state.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 15,
+      "text": "Did you know that?",
+      "discourse_hint": "fragment"
+    }
+  ],
+  "sentence_count": 16,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    100,
+    244,
+    340,
+    352,
+    407,
+    416
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "id": "084_what_man_said_the",
+  "chapter": "III",
+  "title": "what man said the",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "What man? said the kid.\n\nWhat man sir, said the captain's man.\n\nHow old are you, son?\n\nNineteen.\n\nThe captain nodded his head. He was looking the kid over. What happened to you?\n\nWhat?\n\nSay sir, said the recruiter.\n\nSir?\n\nI said what happened to you.\n\nThe kid looked at the man sitting next to him. He looked down at himself and he looked at the captain again. I was fell on by robbers, he said.\n\nRobbers, said the captain.\n\nTook everthing I had. Took my watch and everthing.\n\nHave you got a rifle?\n\nNot no more I aint.\n\nWhere was it you were robbed.\n\nI dont know. They wasnt no name to it. It was just a wilderness.\n\nWhere were you coming from?\n\nI was comin from Naca, Naca ...\n\nNacogdoches?\n\nYeah.\n\nYessir.\n\nYessir.\n\nHow many were there?\n\nThe kid stared at him.\n\nRobbers. How many robbers.\n\nSeven or eight, I reckon. I got busted in the head with a scantlin.\n\nThe captain squinted one eye at him. Were they Mexicans?\n\nSome. Mexicans and niggers. They was a white or two with em. They had a bunch of cattle they'd stole. Only thing they left me with was a old piece of knife I had in my boot.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "What man?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 1,
+      "text": "said the kid.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "What man sir, said the captain's man.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 3,
+      "text": "How old are you, son?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 4,
+      "text": "Nineteen.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 5,
+      "text": "The captain nodded his head.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 6,
+      "text": "He was looking the kid over.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "What happened to you?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 8,
+      "text": "What?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 9,
+      "text": "Say sir, said the recruiter.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 10,
+      "text": "Sir?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 11,
+      "text": "I said what happened to you.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 12,
+      "text": "The kid looked at the man sitting next to him.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 13,
+      "text": "He looked down at himself and he looked at the captain again.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 14,
+      "text": "I was fell on by robbers, he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 15,
+      "text": "Robbers, said the captain.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 16,
+      "text": "Took everthing I had.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 17,
+      "text": "Took my watch and everthing.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 18,
+      "text": "Have you got a rifle?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 19,
+      "text": "Not no more I aint.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 20,
+      "text": "Where was it you were robbed.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 21,
+      "text": "I dont know.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 22,
+      "text": "They wasnt no name to it.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 23,
+      "text": "It was just a wilderness.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 24,
+      "text": "Where were you coming from?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 25,
+      "text": "I was comin from Naca, Naca ...",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 26,
+      "text": "Nacogdoches?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 27,
+      "text": "Yeah.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 28,
+      "text": "Yessir.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 29,
+      "text": "Yessir.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 30,
+      "text": "How many were there?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 31,
+      "text": "The kid stared at him.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 32,
+      "text": "Robbers.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 33,
+      "text": "How many robbers.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 34,
+      "text": "Seven or eight, I reckon.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 35,
+      "text": "I got busted in the head with a scantlin.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 36,
+      "text": "The captain squinted one eye at him.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 37,
+      "text": "Were they Mexicans?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 38,
+      "text": "Some.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 39,
+      "text": "Mexicans and niggers.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 40,
+      "text": "They was a white or two with em.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 41,
+      "text": "They had a bunch of cattle they'd stole.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 42,
+      "text": "Only thing they left me with was a old piece of knife I had in my boot.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 43,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    23,
+    62,
+    85,
+    96,
+    177,
+    184,
+    214,
+    220,
+    250,
+    395,
+    423,
+    475,
+    498,
+    519,
+    550,
+    616,
+    645,
+    678,
+    692,
+    699,
+    708,
+    717,
+    739,
+    763,
+    791,
+    860,
+    918
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "088_there_are_already_some",
+  "chapter": "III",
+  "title": "there are already some",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "There are already some fourteen thousand French colonists in the state of Sonora. They're being given free land to settle. They're being given tools and livestock. Enlightened Mexicans encourage this. Paredes is already calling for secession from the Mexican government. They'd rather be ruled by toadeaters than thieves and imbeciles. Colonel Carrasco is asking for American intervention. And he's going to get it.\n\nRight now they are forming in Washington a commission to come out here and draw up the boundary lines between our country and Mexico. I dont think there's any question that ultimately Sonora will become a United States territory. Guaymas a U S port. Americans will be able to get to California without having to pass through our benighted sister republic and our citizens will be protected at last from the notorious packs of cutthroats presently infesting the routes which they are obliged to travel.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "There are already some fourteen thousand French colonists in the state of Sonora.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "They're being given free land to settle.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "They're being given tools and livestock.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "Enlightened Mexicans encourage this.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 4,
+      "text": "Paredes is already calling for secession from the Mexican government.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "They'd rather be ruled by toadeaters than thieves and imbeciles.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "Colonel Carrasco is asking for American intervention.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "And he's going to get it.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "Right now they are forming in Washington a commission to come out here and draw up the boundary lines between our country and Mexico.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "I dont think there's any question that ultimately Sonora will become a United States territory.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 10,
+      "text": "Guaymas a U S port.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 11,
+      "text": "Americans will be able to get to California without having to pass through our benighted sister republic and our citizens will be protected at last from the notorious packs of cutthroats presently infesting the routes which they are obliged to travel.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 12,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    415
+  ]
+}

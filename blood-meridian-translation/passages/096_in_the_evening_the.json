@@ -1,0 +1,76 @@
+{
+  "id": "096_in_the_evening_the",
+  "chapter": "III",
+  "title": "in the evening the",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "In the evening the kid and two other recruits went into town. He'd bathed and shaved himself and he wore a pair of blue cord trousers and the cotton shirt the captain had given him and save for the boots he looked a new man altogether. His friends rode small and colorful horses that forty days ago had been wild animals on the plain and they shied and skittered and snapped like turtles.\n\nWait till you get you one of these, said the second corporal. You aint never had no fun.\n\nThese horses is all right, said the other.\n\nThere's one or two in there yet that might make ye a horse.\n\nThe kid looked down at them from his mule. They rode either side like escorts and the mule trotted with its head up, its eyes shifting nervously. They'll all stick ye head in the ground, said the second corporal.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "In the evening the kid and two other recruits went into town.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "He'd bathed and shaved himself and he wore a pair of blue cord trousers and the cotton shirt the captain had given him and save for the boots he looked a new man altogether.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "His friends rode small and colorful horses that forty days ago had been wild animals on the plain and they shied and skittered and snapped like turtles.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "Wait till you get you one of these, said the second corporal.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 4,
+      "text": "You aint never had no fun.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "These horses is all right, said the other.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 6,
+      "text": "There's one or two in there yet that might make ye a horse.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "The kid looked down at them from his mule.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "They rode either side like escorts and the mule trotted with its head up, its eyes shifting nervously.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "They'll all stick ye head in the ground, said the second corporal.",
+      "discourse_hint": "dialogue"
+    }
+  ],
+  "sentence_count": 10,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    388,
+    478,
+    522,
+    583
+  ]
+}

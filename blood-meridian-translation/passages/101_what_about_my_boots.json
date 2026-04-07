@@ -1,0 +1,116 @@
+{
+  "id": "101_what_about_my_boots",
+  "chapter": "III",
+  "title": "what about my boots",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "What about my boots? said the kid.\n\nY sus botas, said the Texan.\n\nBotas?\n\nSi. He made sewing motions.\n\nThe harnessmaker looked down at the boots. He cupped his fingers in a little gesture of impatience and the kid took off the boots and stood barefoot in the dust.\n\nWhen all was done they stood in the street and looked at one another. The kid had his new tack slung up on his shoulder.\n\nThe second corporal looked at the boy from Missouri. You got any money, Earl?\n\nNot a copper cent.\n\nWell I aint neither. We might's well get our asses back on out to that hole of misery.\n\nThe kid shifted the weight of the gear on his shoulder. We got this quarter eagle to drink up yet, he said.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "What about my boots?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 1,
+      "text": "said the kid.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "Y sus botas, said the Texan.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 3,
+      "text": "Botas?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 4,
+      "text": "Si.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 5,
+      "text": "He made sewing motions.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 6,
+      "text": "The harnessmaker looked down at the boots.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "He cupped his fingers in a little gesture of impatience and the kid took off the boots and stood barefoot in the dust.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "When all was done they stood in the street and looked at one another.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "The kid had his new tack slung up on his shoulder.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 10,
+      "text": "The second corporal looked at the boy from Missouri.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "You got any money, Earl?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 12,
+      "text": "Not a copper cent.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 13,
+      "text": "Well I aint neither.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 14,
+      "text": "We might's well get our asses back on out to that hole of misery.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 15,
+      "text": "The kid shifted the weight of the gear on his shoulder.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 16,
+      "text": "We got this quarter eagle to drink up yet, he said.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 17,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    34,
+    64,
+    72,
+    101,
+    264,
+    386,
+    465,
+    485,
+    573
+  ]
+}

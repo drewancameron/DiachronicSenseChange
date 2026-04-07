@@ -1,0 +1,36 @@
+{
+  "id": "103_they_arrive_at_last",
+  "chapter": "III",
+  "title": "they arrive at last",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "They arrive at last before a wooden door. It is hinged into a larger door or gate and all must step over the foot-high sill where a thousand boots have scuffed away the wood, where fools in their hundreds have tripped or fallen or tottered drunkenly into the street. They pass along a ramada in a courtyard by an old grape arbor where small fowl nod in the dusk among the gnarled and barren vines and they enter a cantina where the lamps are lit and they cross stooping under a low beam to a bar and belly up one two three.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "They arrive at last before a wooden door.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "It is hinged into a larger door or gate and all must step over the foot-high sill where a thousand boots have scuffed away the wood, where fools in their hundreds have tripped or fallen or tottered drunkenly into the street.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "They pass along a ramada in a courtyard by an old grape arbor where small fowl nod in the dusk among the gnarled and barren vines and they enter a cantina where the lamps are lit and they cross stooping under a low beam to a bar and belly up one two three.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 3,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": []
+}

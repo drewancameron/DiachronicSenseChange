@@ -1,0 +1,61 @@
+{
+  "id": "098_with_immigrants_and_texans",
+  "chapter": "III",
+  "title": "with immigrants and texans",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "With immigrants and Texans and Mexicans and with slaves and Lipan Indians and deputations of Karankawas tall and austere, their faces dyed blue and their hands locked about the shafts of their sixfoot spears, all but naked savages who with their painted skins and their whispered taste for human flesh seemed outrageous presences even in that fabled company. The recruits rode with their animals close reined and they turned up past the courthouse and along the high walls of the carcel with the broken glass imbedded in the topmost course. In the Main Plaza a band had assembled and were at tuning their instruments. The riders turned down Salinas Street past small gaminghouses and coffee-stands and there were in this street a number of Mexican harness-makers and traders and keepers of gamechickens and cobblers and bootmakers in little stalls or shops of mud. The second corporal was from Texas and spoke a little Spanish and he meant to trade the mule. The other boy was from Missouri. They were in good spirits, scrubbed and combed, clean shirts all. Each foreseeing a night of drink, perhaps of love.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "With immigrants and Texans and Mexicans and with slaves and Lipan Indians and deputations of Karankawas tall and austere, their faces dyed blue and their hands locked about the shafts of their sixfoot spears, all but naked savages who with their painted skins and their whispered taste for human flesh seemed outrageous presences even in that fabled company.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "The recruits rode with their animals close reined and they turned up past the courthouse and along the high walls of the carcel with the broken glass imbedded in the topmost course.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "In the Main Plaza a band had assembled and were at tuning their instruments.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "The riders turned down Salinas Street past small gaminghouses and coffee-stands and there were in this street a number of Mexican harness-makers and traders and keepers of gamechickens and cobblers and bootmakers in little stalls or shops of mud.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "The second corporal was from Texas and spoke a little Spanish and he meant to trade the mule.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "The other boy was from Missouri.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "They were in good spirits, scrubbed and combed, clean shirts all.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "Each foreseeing a night of drink, perhaps of love.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 8,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": []
+}

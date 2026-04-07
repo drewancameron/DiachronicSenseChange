@@ -1,0 +1,68 @@
+{
+  "id": "106_but_they_berated_the",
+  "chapter": "III",
+  "title": "but they berated the",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "But they berated the old man and swore at him until he moved off down the bar muttering, and how else could it be?\n\nHow these things end. In confusion and curses and blood. They drank on and the wind blew in the streets and the stars that had been overhead lay low in the west and these young men fell afoul of others and words were said that could not be put right again and in the dawn the kid and the second corporal knelt over the boy from Missouri who had been named Earl and they spoke his name but he never spoke back. He lay on his side in the dust of the courtyard. The men were gone, the whores were gone. An old man swept the clay floor within the cantina. The boy lay with his skull broken in a pool of blood, none knew by whom. A third one came to be with them in the courtyard.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "But they berated the old man and swore at him until he moved off down the bar muttering, and how else could it be?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "How these things end.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 2,
+      "text": "In confusion and curses and blood.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "They drank on and the wind blew in the streets and the stars that had been overhead lay low in the west and these young men fell afoul of others and words were said that could not be put right again and in the dawn the kid and the second corporal knelt over the boy from Missouri who had been named Earl and they spoke his name but he never spoke back.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 4,
+      "text": "He lay on his side in the dust of the courtyard.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "The men were gone, the whores were gone.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "An old man swept the clay floor within the cantina.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "The boy lay with his skull broken in a pool of blood, none knew by whom.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "A third one came to be with them in the courtyard.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 9,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    114
+  ]
+}

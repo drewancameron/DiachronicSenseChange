@@ -1,0 +1,88 @@
+{
+  "id": "082_he_sat_at_a",
+  "chapter": "III",
+  "title": "he sat at a",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "He sat at a wickerwork desk writing letters, the captain. They stood attending, the captain's man with his black hat in his hands. The captain wrote on nor did he look up. Outside the kid could hear a woman speaking in Spanish. Other than that there was just the scratching of the captain's pen.\n\nWhen he had done he laid down the pen and looked up. He looked at his man and then he looked at the kid and then he bent his head to read what he'd written. He nodded to himself and dusted the letter with sand from a little onyx box and folded it. Taking a match from a box of them on the desk he lit it and held it to a stick of sealing wax until a small red medallion had pooled onto the paper. He shook out the match, blew briefly at the paper and knuckled the seal with his ring. Then he stood the letter between two books on his desk and leaned back in his chair and looked at the kid again. He nodded gravely. Take seats, he said.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "He sat at a wickerwork desk writing letters, the captain.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "They stood attending, the captain's man with his black hat in his hands.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "The captain wrote on nor did he look up.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "Outside the kid could hear a woman speaking in Spanish.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "Other than that there was just the scratching of the captain's pen.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "When he had done he laid down the pen and looked up.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "He looked at his man and then he looked at the kid and then he bent his head to read what he'd written.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "He nodded to himself and dusted the letter with sand from a little onyx box and folded it.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "Taking a match from a box of them on the desk he lit it and held it to a stick of sealing wax until a small red medallion had pooled onto the paper.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "He shook out the match, blew briefly at the paper and knuckled the seal with his ring.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 10,
+      "text": "Then he stood the letter between two books on his desk and leaned back in his chair and looked at the kid again.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "He nodded gravely.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 12,
+      "text": "Take seats, he said.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 13,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    295
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "076_the_man_was_sitting",
+  "chapter": "III",
+  "title": "the man was sitting",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "The man was sitting in the grass with his legs crossed. He was dressed in buckskin and he wore a plug hat of dusty black silk and he had a small Mexican cigar in the corner of his teeth. When he saw what clawed its way out through the willows he shook his head.\n\nKindly fell on hard times aint ye son? he said.\n\nI just aint fell on no good ones.\n\nYou ready to go to Mexico?\n\nI aint lost nothin down there.\n\nIt's a chance for ye to raise ye self in the world. You best make a move someway or another fore ye go plumb in under.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "The man was sitting in the grass with his legs crossed.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "He was dressed in buckskin and he wore a plug hat of dusty black silk and he had a small Mexican cigar in the corner of his teeth.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "When he saw what clawed its way out through the willows he shook his head.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "Kindly fell on hard times aint ye son?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "I just aint fell on no good ones.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "You ready to go to Mexico?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "I aint lost nothin down there.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "It's a chance for ye to raise ye self in the world.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "You best make a move someway or another fore ye go plumb in under.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 10,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    261,
+    310,
+    345,
+    373,
+    405
+  ]
+}

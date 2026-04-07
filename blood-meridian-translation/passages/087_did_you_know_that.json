@@ -1,0 +1,94 @@
+{
+  "id": "087_did_you_know_that",
+  "chapter": "III",
+  "title": "did you know that",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "Did you know that when Colonel Doniphan took Chihuahua City he inflicted over a thousand casualties on the enemy and lost only one man and him all but a suicide? With an army of unpaid irregulars that called him Bill, were half naked, and had walked to the battlefield from Missouri?\n\nNo sir.\n\nThe captain leaned back and folded his arms. What we are dealing with, he said, is a race of degenerates. A mongrel race, little better than niggers. And maybe no better. There is no government in Mexico. Hell, there's no God in Mexico. Never will be. We are dealing with a people manifestly incapable of governing themselves. And do you know what happens with people who cannot govern themselves? That's right. Others come in to govern for them.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "Did you know that when Colonel Doniphan took Chihuahua City he inflicted over a thousand casualties on the enemy and lost only one man and him all but a suicide?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "With an army of unpaid irregulars that called him Bill, were half naked, and had walked to the battlefield from Missouri?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "No sir.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 3,
+      "text": "The captain leaned back and folded his arms.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "What we are dealing with, he said, is a race of degenerates.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "A mongrel race, little better than niggers.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "And maybe no better.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 7,
+      "text": "There is no government in Mexico.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "Hell, there's no God in Mexico.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "Never will be.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 10,
+      "text": "We are dealing with a people manifestly incapable of governing themselves.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "And do you know what happens with people who cannot govern themselves?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 12,
+      "text": "That's right.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 13,
+      "text": "Others come in to govern for them.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 14,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    283,
+    292
+  ]
+}

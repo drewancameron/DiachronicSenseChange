@@ -1,0 +1,209 @@
+{
+  "sentences": [
+    {
+      "index": 0,
+      "greek": "γυμνὸς ὑπὸ δένδροις κατέκειτο, ῥάκη ὑπὲρ κώλων τεταμένα, ὅτ' ἄλλος ἱππεὺς κατὰ ποταμὸν ἀνέσχε τ' ἔστη τε.",
+      "glosses": [
+        {
+          "anchor": "γυμνὸς",
+          "note": "= naked ↔ ὁπλιτοδρόμος",
+          "rank": 1
+        },
+        {
+          "anchor": "δένδροις",
+          "note": "= trees",
+          "rank": 1
+        },
+        {
+          "anchor": "ἀνέσχε",
+          "note": "= reined",
+          "rank": 1
+        },
+        {
+          "anchor": "ἔστη",
+          "note": "= stopped",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "greek": "ἔστρεψε κεφαλήν.",
+      "glosses": [
+        {
+          "anchor": "κεφαλήν",
+          "note": "= head ↔ οὐρά",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "greek": "διὰ δ' ἰτέων σκέλη ἵππου ἰδεῖν.",
+      "glosses": [
+        {
+          "anchor": "σκέλη",
+          "note": "= legs",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "greek": "ἐπὶ γαστέρα ἐστράφη.",
+      "glosses": [
+        {
+          "anchor": "ἐστράφη",
+          "note": "= turned",
+          "rank": 1
+        },
+        {
+          "anchor": "γαστέρα",
+          "note": "= stomach",
+          "rank": 1
+        },
+        {
+          "anchor": "ἐστράφη",
+          "note": "= he/she turned",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "greek": "ὁ δ' ἀνὴρ καταβὰς παρ' ἵππῳ ἔστη.",
+      "glosses": [
+        {
+          "anchor": "καταβὰς",
+          "note": "= lying",
+          "rank": 1
+        },
+        {
+          "anchor": "καταβὰς",
+          "note": "= got",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "greek": "ὤρεξε χεῖρα, μάχαιραν σπαρτόδετον ἔλαβεν.",
+      "glosses": [
+        {
+          "anchor": "σπαρτόδετον",
+          "note": "= bound with rope",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "greek": "χαῖρ', ὦ ξέν', εἶπεν ἱππεύς.",
+      "glosses": []
+    },
+    {
+      "index": 7,
+      "greek": "οὐκ ἀπεκρίνατο.",
+      "glosses": []
+    },
+    {
+      "index": 8,
+      "greek": "ἐκίνησε πλευρὰν ὡς διὰ κλάδων ἄμεινον ἰδεῖν.",
+      "glosses": [
+        {
+          "anchor": "πλευρὰν",
+          "note": "= side ↔ κατὰ",
+          "rank": 1
+        },
+        {
+          "anchor": "κλάδων",
+          "note": "= branches",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "greek": "χαῖρ', ὦ ξέν'.",
+      "glosses": []
+    },
+    {
+      "index": 10,
+      "greek": "ποῦ δ' εἶ;",
+      "glosses": []
+    },
+    {
+      "index": 11,
+      "greek": "τί βούλει;",
+      "glosses": []
+    },
+    {
+      "index": 12,
+      "greek": "λέγειν πρὸς σέ.",
+      "glosses": []
+    },
+    {
+      "index": 13,
+      "greek": "περὶ τίνος;",
+      "glosses": []
+    },
+    {
+      "index": 14,
+      "greek": "μὰ τὸν Ἅιδην, δεῦρ' ἔξελθε.",
+      "glosses": []
+    },
+    {
+      "index": 15,
+      "greek": "λευκός τ' εἰμὶ Χριστιανός τε.",
+      "glosses": [
+        {
+          "anchor": "λευκός",
+          "note": "= white ↔ μέλας",
+          "rank": 1
+        },
+        {
+          "anchor": "Χριστιανός",
+          "note": "= christian",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "greek": "ὁ παῖς ἄνω δι' ἰτέων ὠρέγετο, ἀναξυρίδας λαβεῖν πειρώμενος.",
+      "glosses": [
+        {
+          "anchor": "πειρώμενος",
+          "note": "= trying",
+          "rank": 1
+        },
+        {
+          "anchor": "ἀναξυρίδας",
+          "note": "= breeches",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "greek": "ζώνη δὲ κάτω ᾐώρητο, ἔσπασε δ', ἀλλ' ἀναξυρίδες ἐπὶ κώλῳ ἐκρέμαντο.",
+      "glosses": [
+        {
+          "anchor": "ζώνη",
+          "note": "= belt",
+          "rank": 1
+        },
+        {
+          "anchor": "ᾐώρητο",
+          "note": "= was suspended/hung",
+          "rank": 1
+        },
+        {
+          "anchor": "ἐκρέμαντο",
+          "note": "= hung down/were suspended",
+          "rank": 1
+        }
+      ]
+    }
+  ]
+}

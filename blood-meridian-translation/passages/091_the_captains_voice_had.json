@@ -1,0 +1,111 @@
+{
+  "id": "091_the_captains_voice_had",
+  "chapter": "III",
+  "title": "the captains voice had",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "The captain's voice had become soft and intense. He tilted his head to one side and regarded the kid with a sort of benevolence. The kid rubbed the palms of his hands on the knees of his filthy jeans. He glanced at the man beside him but he seemed to be asleep.\n\nWhat about a saddle? he said.\n\nSaddle?\n\nYessir.\n\nYou dont have a saddle?\n\nNo sir.\n\nI thought you had a horse.\n\nA mule.\n\nI see.\n\nI got a old hull on the mule but they aint much left of it. Aint a whole lot left of the mule. He said I was to get a horse and a rifle.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "The captain's voice had become soft and intense.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "He tilted his head to one side and regarded the kid with a sort of benevolence.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "The kid rubbed the palms of his hands on the knees of his filthy jeans.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "He glanced at the man beside him but he seemed to be asleep.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "What about a saddle?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 5,
+      "text": "he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "Saddle?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 7,
+      "text": "Yessir.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 8,
+      "text": "You dont have a saddle?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 9,
+      "text": "No sir.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 10,
+      "text": "I thought you had a horse.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "A mule.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 12,
+      "text": "I see.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 13,
+      "text": "I got a old hull on the mule but they aint much left of it.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 14,
+      "text": "Aint a whole lot left of the mule.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 15,
+      "text": "He said I was to get a horse and a rifle.",
+      "discourse_hint": "dialogue"
+    }
+  ],
+  "sentence_count": 16,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    261,
+    292,
+    301,
+    310,
+    335,
+    344,
+    372,
+    381,
+    389
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "102_already_it_is_twilight",
+  "chapter": "III",
+  "title": "already it is twilight",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "Already it is twilight down in the Laredito. Bats fly forth from their roostings in courthouse and tower and circle the quarter. The air is full of the smell of burning charcoal. Children and dogs squat by the mud stoops and gamecocks flap and settle in the branches of the fruit trees. They go afoot, these comrades, down along a bare adobe wall. Band music carries dimly from the square. They pass a watercart in the street and they pass a hole in the wall where by the light of a small forgefire an old man beats out shapes of metal. They pass in a doorway a young girl whose beauty becomes the flowers about.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "Already it is twilight down in the Laredito.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "Bats fly forth from their roostings in courthouse and tower and circle the quarter.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "The air is full of the smell of burning charcoal.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "Children and dogs squat by the mud stoops and gamecocks flap and settle in the branches of the fruit trees.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "They go afoot, these comrades, down along a bare adobe wall.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "Band music carries dimly from the square.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "They pass a watercart in the street and they pass a hole in the wall where by the light of a small forgefire an old man beats out shapes of metal.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "They pass in a doorway a young girl whose beauty becomes the flowers about.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 8,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": []
+}

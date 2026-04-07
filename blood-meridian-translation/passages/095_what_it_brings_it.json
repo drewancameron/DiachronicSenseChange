@@ -1,0 +1,113 @@
+{
+  "id": "095_what_it_brings_it",
+  "chapter": "III",
+  "title": "what it brings it",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "What it brings it brings.\n\nThey done killed another beef.\n\nI dont want to hear about it.\n\nI caint do nothin with em.\n\nI aint tellin the captain. He'll roll them eyes around till they come unscrewed and fall out in the ground.\n\nThe man spat again. Well, that's the gods truth anyway.\n\nSee to this man now. I got to get.\n\nWell.\n\nAint nobody sick is they?\n\nNo.\n\nThank God for that.\n\nHe stood up into the saddle and touched the horse's neck lightly with the reins. He looked back and shook his head.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "What it brings it brings.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 1,
+      "text": "They done killed another beef.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 2,
+      "text": "I dont want to hear about it.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "I caint do nothin with em.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "I aint tellin the captain.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 5,
+      "text": "He'll roll them eyes around till they come unscrewed and fall out in the ground.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "The man spat again.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 7,
+      "text": "Well, that's the gods truth anyway.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "See to this man now.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 9,
+      "text": "I got to get.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 10,
+      "text": "Well.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 11,
+      "text": "Aint nobody sick is they?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 12,
+      "text": "No.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 13,
+      "text": "Thank God for that.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 14,
+      "text": "He stood up into the saddle and touched the horse's neck lightly with the reins.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 15,
+      "text": "He looked back and shook his head.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 16,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    25,
+    57,
+    88,
+    116,
+    225,
+    282,
+    318,
+    325,
+    352,
+    357,
+    378
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "id": "092_sergeant_trammel_did_i",
+  "chapter": "III",
+  "title": "sergeant trammel did i",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "Sergeant Trammel did?\n\nI never promised him no saddle, said the sergeant.\n\nWe'll get you a saddle.\n\nI did tell him we might find him some clothes, Captain.\n\nRight. We may be irregulars but we dont want to look like bobtails, do we?\n\nNo sir.\n\nWe aint got no more broke horses neither, said the sergeant.\n\nWell break one.\n\nThat old boy that was so good about breakin em is out of commission.\n\nI know that. Get somebody else.\n\nYessir. Maybe this man can break horses. You ever break horses? No sir.\n\nAint no need to sir me. Yessir.\n\nSergeant, said the captain, easing himself down from the desk. Yessir. Sign this man up.\n\nThe camp was upriver at the edge of the town. A tent patched up from old wagon canvas, a few wickiups made of brush and beyond them a corral in the form of a figure eight likewise made from brush where a few small painted ponies stood sulking in the sun.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "Sergeant Trammel did?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 1,
+      "text": "I never promised him no saddle, said the sergeant.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 2,
+      "text": "We'll get you a saddle.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 3,
+      "text": "I did tell him we might find him some clothes, Captain.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "Right.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 5,
+      "text": "We may be irregulars but we dont want to look like bobtails, do we?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "No sir.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 7,
+      "text": "We aint got no more broke horses neither, said the sergeant.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 8,
+      "text": "Well break one.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 9,
+      "text": "That old boy that was so good about breakin em is out of commission.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 10,
+      "text": "I know that.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 11,
+      "text": "Get somebody else.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 12,
+      "text": "Yessir.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 13,
+      "text": "Maybe this man can break horses.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 14,
+      "text": "You ever break horses?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 15,
+      "text": "No sir.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 16,
+      "text": "Aint no need to sir me.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 17,
+      "text": "Yessir.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 18,
+      "text": "Sergeant, said the captain, easing himself down from the desk.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 19,
+      "text": "Yessir.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 20,
+      "text": "Sign this man up.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 21,
+      "text": "The camp was upriver at the edge of the town.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 22,
+      "text": "A tent patched up from old wagon canvas, a few wickiups made of brush and beyond them a corral in the form of a figure eight likewise made from brush where a few small painted ponies stood sulking in the sun.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 23,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    21,
+    73,
+    98,
+    155,
+    231,
+    240,
+    302,
+    319,
+    389,
+    422,
+    495,
+    528,
+    618
+  ]
+}

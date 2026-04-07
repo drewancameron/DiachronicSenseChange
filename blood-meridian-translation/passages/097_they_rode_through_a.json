@@ -1,0 +1,26 @@
+{
+  "id": "097_they_rode_through_a",
+  "chapter": "III",
+  "title": "they rode through a",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "They rode through a plaza thronged with wagons and stock.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "They rode through a plaza thronged with wagons and stock.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 1,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": []
+}

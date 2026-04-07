@@ -1,0 +1,123 @@
+{
+  "id": "093_corporal_called_the_sergeant",
+  "chapter": "III",
+  "title": "corporal called the sergeant",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "Corporal, called the sergeant.\n\nHe aint here.\n\nHe dismounted and strode toward the tent and threw back the fly. The kid sat on the mule. Three men were lying in the shade of a tree and they studied him. Howdy, said one.\n\nHowdy.\n\nYou a new man?\n\nI reckon.\n\nCaptain say when we leavin this pesthole?\n\nHe never said.\n\nThe sergeant came from the tent. Where's he at? he said.\n\nGone to town.\n\nGone to town, said the sergeant. Come here.\n\nThe man rose from the ground and ambled over to the tent and stood with his hands resting in the small of his back.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "Corporal, called the sergeant.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 1,
+      "text": "He aint here.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 2,
+      "text": "He dismounted and strode toward the tent and threw back the fly.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "The kid sat on the mule.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "Three men were lying in the shade of a tree and they studied him.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "Howdy, said one.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 6,
+      "text": "Howdy.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 7,
+      "text": "You a new man?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 8,
+      "text": "I reckon.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 9,
+      "text": "Captain say when we leavin this pesthole?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 10,
+      "text": "He never said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "The sergeant came from the tent.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 12,
+      "text": "Where's he at?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 13,
+      "text": "he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 14,
+      "text": "Gone to town.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 15,
+      "text": "Gone to town, said the sergeant.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 16,
+      "text": "Come here.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 17,
+      "text": "The man rose from the ground and ambled over to the tent and stood with his hands resting in the small of his back.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 18,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    30,
+    45,
+    219,
+    227,
+    243,
+    254,
+    297,
+    313,
+    371,
+    386,
+    431
+  ]
+}

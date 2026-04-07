@@ -1,0 +1,63 @@
+{
+  "id": "083_they_eased_themselves_into",
+  "chapter": "III",
+  "title": "they eased themselves into",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "They eased themselves into a kind of settle made from some dark wood. The captain's man had a large revolver at his belt and as he sat he hitched the belt around so that the piece lay cradled between his thighs. He put his hat over it and leaned back. The kid folded his busted boots one behind the other and sat upright.\n\nThe captain pushed his chair back and rose and came around to the front of the desk. He stood there for a measured minute and then he hitched himself up on the desk and sat with his boots dangling. He had gray in his hair and in the sweeping moustaches that he wore but he was not old. So you're the man, he said.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "They eased themselves into a kind of settle made from some dark wood.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "The captain's man had a large revolver at his belt and as he sat he hitched the belt around so that the piece lay cradled between his thighs.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "He put his hat over it and leaned back.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "The kid folded his busted boots one behind the other and sat upright.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "The captain pushed his chair back and rose and came around to the front of the desk.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "He stood there for a measured minute and then he hitched himself up on the desk and sat with his boots dangling.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "He had gray in his hair and in the sweeping moustaches that he wore but he was not old.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "So you're the man, he said.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 8,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    321
+  ]
+}

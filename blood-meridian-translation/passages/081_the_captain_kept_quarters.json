@@ -1,0 +1,56 @@
+{
+  "id": "081_the_captain_kept_quarters",
+  "chapter": "III",
+  "title": "the captain kept quarters",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "The captain kept quarters in a hotel on a plaza where there were trees and a small green gazebo with benches. An iron gate at the hotel front opened into a passageway with a courtyard at the rear. The walls were whitewashed and set with little ornate colored tiles. The captain's man wore carved boots with tall heels that rang smartly on the tiles and on the stairs ascending from the courtyard to the rooms above. In the courtyard there were green plants growing and they were freshly watered and steaming. The captain's man strode down the long balcony and rapped sharply at the door at the end. A voice said for them to come in.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "The captain kept quarters in a hotel on a plaza where there were trees and a small green gazebo with benches.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "An iron gate at the hotel front opened into a passageway with a courtyard at the rear.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "The walls were whitewashed and set with little ornate colored tiles.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "The captain's man wore carved boots with tall heels that rang smartly on the tiles and on the stairs ascending from the courtyard to the rooms above.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "In the courtyard there were green plants growing and they were freshly watered and steaming.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "The captain's man strode down the long balcony and rapped sharply at the door at the end.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "A voice said for them to come in.",
+      "discourse_hint": "dialogue"
+    }
+  ],
+  "sentence_count": 7,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": []
+}

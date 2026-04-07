@@ -1,0 +1,93 @@
+{
+  "id": "089_the_captain_was_watching",
+  "chapter": "III",
+  "title": "the captain was watching",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "The captain was watching the kid. The kid looked uneasy. Son, said the captain. We are to be the instruments of liberation in a dark and troubled land. That's right. We are to spearhead the drive. We have the tacit support of Governor Burnett of California.\n\nHe leaned forward and placed his hands on his knees. And we will be the ones who will divide the spoils. There will be a section of land for every man in my company. Fine grassland. Some of the finest in the world. A land rich in minerals, in gold and silver I would say beyond the wildest speculation. You're young.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "The captain was watching the kid.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "The kid looked uneasy.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 2,
+      "text": "Son, said the captain.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 3,
+      "text": "We are to be the instruments of liberation in a dark and troubled land.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "That's right.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 5,
+      "text": "We are to spearhead the drive.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "We have the tacit support of Governor Burnett of California.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "He leaned forward and placed his hands on his knees.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "And we will be the ones who will divide the spoils.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "There will be a section of land for every man in my company.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 10,
+      "text": "Fine grassland.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 11,
+      "text": "Some of the finest in the world.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 12,
+      "text": "A land rich in minerals, in gold and silver I would say beyond the wildest speculation.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 13,
+      "text": "You're young.",
+      "discourse_hint": "fragment"
+    }
+  ],
+  "sentence_count": 14,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    257
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "100_they_traded_the_mule",
+  "chapter": "III",
+  "title": "they traded the mule",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "They traded the mule accoutred as it was for a Texas stock saddle, bare tree with rawhide cover, not new but sound. For a bridle and bit that was new. For a woven wool blanket from Saltillo that was dusty new or not. And lastly for a two and a half dollar gold piece. The Texan looked at this small coin in the kid's palm and demanded more money but the harnessmaker shook his head and held up his hands in utter finality.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "They traded the mule accoutred as it was for a Texas stock saddle, bare tree with rawhide cover, not new but sound.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "For a bridle and bit that was new.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "For a woven wool blanket from Saltillo that was dusty new or not.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "And lastly for a two and a half dollar gold piece.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "The Texan looked at this small coin in the kid's palm and demanded more money but the harnessmaker shook his head and held up his hands in utter finality.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 5,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": []
+}

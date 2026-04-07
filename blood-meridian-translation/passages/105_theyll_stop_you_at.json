@@ -1,0 +1,168 @@
+{
+  "id": "105_theyll_stop_you_at",
+  "chapter": "III",
+  "title": "theyll stop you at",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "They'll stop you at the river, he says.\n\nThe second corporal looks past his comrades. Are you talking to me?\n\nAt the river. Be told. They'll jail you to a man.\n\nWho will?\n\nThe United States Army. General Worth.\n\nThe hell they will.\n\nPray that they will.\n\nHe looks at his comrades. He leans toward the Mennonite. What does that mean, old man?\n\nDo ye cross that river with yon filibuster armed yell not cross it back.\n\nDont aim to cross it back. We goin to Sonora.\n\nWhat's it to you, old man?\n\nThe Mennonite watches the enshadowed dark before them as it is reflected to him in the mirror over the bar. He turns to them. His eyes are wet, he speaks slowly. The wrath of God lies sleeping. It was hid a million years before men were and only men have power to wake it. Hell aint half full. Hear me. Ye carry war of a madman's making onto a foreign land. Ye'll wake more than the dogs.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "They'll stop you at the river, he says.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "The second corporal looks past his comrades.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "Are you talking to me?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 3,
+      "text": "At the river.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 4,
+      "text": "Be told.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 5,
+      "text": "They'll jail you to a man.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "Who will?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 7,
+      "text": "The United States Army.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 8,
+      "text": "General Worth.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 9,
+      "text": "The hell they will.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 10,
+      "text": "Pray that they will.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 11,
+      "text": "He looks at his comrades.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 12,
+      "text": "He leans toward the Mennonite.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 13,
+      "text": "What does that mean, old man?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 14,
+      "text": "Do ye cross that river with yon filibuster armed yell not cross it back.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 15,
+      "text": "Dont aim to cross it back.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 16,
+      "text": "We goin to Sonora.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 17,
+      "text": "What's it to you, old man?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 18,
+      "text": "The Mennonite watches the enshadowed dark before them as it is reflected to him in the mirror over the bar.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 19,
+      "text": "He turns to them.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 20,
+      "text": "His eyes are wet, he speaks slowly.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 21,
+      "text": "The wrath of God lies sleeping.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 22,
+      "text": "It was hid a million years before men were and only men have power to wake it.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 23,
+      "text": "Hell aint half full.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 24,
+      "text": "Hear me.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 25,
+      "text": "Ye carry war of a madman's making onto a foreign land.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 26,
+      "text": "Ye'll wake more than the dogs.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 27,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    39,
+    108,
+    159,
+    170,
+    210,
+    231,
+    253,
+    341,
+    415,
+    462,
+    490
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "080_a_few_bony_dogs",
+  "chapter": "III",
+  "title": "a few bony dogs",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "A few bony dogs slank off before them. They rode through the Military Plaza and they passed the little street where the boy and the mule had drunk the night before and there were clusters of women and girls at the well and many shapes of wickercovered clay jars standing about. They passed a little house where women inside were wailing and the little hearsecart stood at the door with the horses patient and motionless in the heat and the flies.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "A few bony dogs slank off before them.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "They rode through the Military Plaza and they passed the little street where the boy and the mule had drunk the night before and there were clusters of women and girls at the well and many shapes of wickercovered clay jars standing about.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "They passed a little house where women inside were wailing and the little hearsecart stood at the door with the horses patient and motionless in the heat and the flies.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 3,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": []
+}

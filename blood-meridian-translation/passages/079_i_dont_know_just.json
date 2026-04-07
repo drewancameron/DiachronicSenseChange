@@ -1,0 +1,75 @@
+{
+  "id": "079_i_dont_know_just",
+  "chapter": "III",
+  "title": "i dont know just",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "I dont know.\n\nJust come with me and meet the captain.\n\nThe boy pulled at the halms of grass. He looked at the horse again. Well, he said. Dont reckon it'd hurt nothin.\n\nThey rode through the town with the recruiter splendid on the stockingfooted horse and the kid behind him on the mule like something he'd captured. They rode through narrow lanes where the wattled huts steamed in the heat. Grass and prickly pear grew on the roofs and goats walked about on them and somewhere off in that squalid kingdom of mud the sound of the little deathbells tolled thinly. They turned up Commerce Street through the Main Plaza among rafts of wagons and they crossed another plaza where boys were selling grapes and figs from little trundlecarts.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "I dont know.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 1,
+      "text": "Just come with me and meet the captain.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "The boy pulled at the halms of grass.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "He looked at the horse again.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "Well, he said.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "Dont reckon it'd hurt nothin.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 6,
+      "text": "They rode through the town with the recruiter splendid on the stockingfooted horse and the kid behind him on the mule like something he'd captured.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "They rode through narrow lanes where the wattled huts steamed in the heat.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "Grass and prickly pear grew on the roofs and goats walked about on them and somewhere off in that squalid kingdom of mud the sound of the little deathbells tolled thinly.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "They turned up Commerce Street through the Main Plaza among rafts of wagons and they crossed another plaza where boys were selling grapes and figs from little trundlecarts.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 10,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    12,
+    53,
+    167
+  ]
+}

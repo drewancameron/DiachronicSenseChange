@@ -1,0 +1,48 @@
+{
+  "id": "107_it_was_the_mennonite",
+  "chapter": "III",
+  "title": "it was the mennonite",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "It was the Mennonite. A warm wind was blowing and the east held a gray light. The fowls roosting among the grapevines had begun to stir and call.\n\nThere is no such joy in the tavern as upon the road thereto, said the Mennonite. He had been holding his hat in his hands and now he set it upon his head again and turned and went out the gate.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "It was the Mennonite.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 1,
+      "text": "A warm wind was blowing and the east held a gray light.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "The fowls roosting among the grapevines had begun to stir and call.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "There is no such joy in the tavern as upon the road thereto, said the Mennonite.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 4,
+      "text": "He had been holding his hat in his hands and now he set it upon his head again and turned and went out the gate.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 5,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    145
+  ]
+}

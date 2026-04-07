@@ -1,0 +1,140 @@
+{
+  "id": "075_goddamn_said_the_man",
+  "chapter": "III",
+  "title": "goddamn said the man",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "Goddamn, said the man. You aint up in the tree are ye?\n\nWhy dont you go on and leave me the hell alone.\n\nJust wanted to talk to ye. Didnt intend to get ye all riled up.\n\nYou done got me riled.\n\nWas you the feller knocked in that Mexer's head yesterday evenin? I aint the law.\n\nWho wants to know?\n\nCaptain White. He wants to sign that feller up to join the army.\n\nThe army?\n\nYessir.\n\nWhat army?\n\nCompany under Captain White. We goin to whip up on the Mexicans.\n\nThe war's over.\n\nHe says it aint over. Where are you at?\n\nHe rose and hauled the breeches down from where he'd hung them and pulled them on. He pulled on his boots and put the knife in the right bootleg and came out from the willows pulling on his shirt.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "Goddamn, said the man.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 1,
+      "text": "You aint up in the tree are ye?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "Why dont you go on and leave me the hell alone.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "Just wanted to talk to ye.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "Didnt intend to get ye all riled up.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "You done got me riled.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 6,
+      "text": "Was you the feller knocked in that Mexer's head yesterday evenin?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "I aint the law.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 8,
+      "text": "Who wants to know?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 9,
+      "text": "Captain White.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 10,
+      "text": "He wants to sign that feller up to join the army.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "The army?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 12,
+      "text": "Yessir.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 13,
+      "text": "What army?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 14,
+      "text": "Company under Captain White.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 15,
+      "text": "We goin to whip up on the Mexicans.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 16,
+      "text": "The war's over.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 17,
+      "text": "He says it aint over.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 18,
+      "text": "Where are you at?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 19,
+      "text": "He rose and hauled the breeches down from where he'd hung them and pulled them on.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 20,
+      "text": "He pulled on his boots and put the knife in the right bootleg and came out from the willows pulling on his shirt.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 21,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    54,
+    103,
+    168,
+    192,
+    275,
+    295,
+    361,
+    372,
+    381,
+    393,
+    459,
+    476,
+    517
+  ]
+}

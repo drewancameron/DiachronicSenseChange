@@ -1,0 +1,26 @@
+{
+  "id": "099_how_many_youths_have",
+  "chapter": "III",
+  "title": "how many youths have",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "How many youths have come home cold and dead from just such nights and just such plans.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "How many youths have come home cold and dead from just such nights and just such plans.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 1,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": []
+}

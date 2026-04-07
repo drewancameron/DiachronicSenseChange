@@ -1,0 +1,72 @@
+{
+  "id": "094_this_here_man_aint",
+  "chapter": "III",
+  "title": "this here man aint",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "This here man aint got no outfit, said the sergeant.\n\nThe man nodded.\n\nThe captain give him a shirt and some money to get his boots mended. We need to get him somethin he can ride and we need to get him a saddle.\n\nA saddle.\n\nOught to be able to sell that mule for enough to get him one of some kind.\n\nThe man looked at the mule and turned back and squinted at the sergeant. He leaned and spat. That there mule wont bring ten dollars.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "This here man aint got no outfit, said the sergeant.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 1,
+      "text": "The man nodded.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 2,
+      "text": "The captain give him a shirt and some money to get his boots mended.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "We need to get him somethin he can ride and we need to get him a saddle.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "A saddle.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 5,
+      "text": "Ought to be able to sell that mule for enough to get him one of some kind.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "The man looked at the mule and turned back and squinted at the sergeant.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "He leaned and spat.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 8,
+      "text": "That there mule wont bring ten dollars.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 9,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    52,
+    69,
+    212,
+    223,
+    299
+  ]
+}

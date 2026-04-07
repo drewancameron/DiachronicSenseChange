@@ -1,0 +1,51 @@
+{
+  "id": "104_there_is_an_old",
+  "chapter": "III",
+  "title": "there is an old",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "There is an old disordered Mennonite in this place and he turns to study them. A thin man in a leather weskit, a black and straightbrim hat set square on his head, a thin rim of whiskers. The recruits order glasses of whiskey and drink them down and order more. There are monte games at tables by the wall and there are whores at another table who look the recruits over. The recruits stand sideways along the bar with their thumbs in their belts and watch the room. They talk among themselves of the expedition in loud voices and the old Mennonite shakes a rueful head and sips his drink and mutters.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "There is an old disordered Mennonite in this place and he turns to study them.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "A thin man in a leather weskit, a black and straightbrim hat set square on his head, a thin rim of whiskers.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "The recruits order glasses of whiskey and drink them down and order more.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "There are monte games at tables by the wall and there are whores at another table who look the recruits over.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "The recruits stand sideways along the bar with their thumbs in their belts and watch the room.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "They talk among themselves of the expedition in loud voices and the old Mennonite shakes a rueful head and sips his drink and mutters.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 6,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": []
+}

@@ -1,0 +1,123 @@
+{
+  "id": "074_he_was_lying_naked",
+  "chapter": "III",
+  "title": "he was lying naked",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "He was lying naked under the trees with his rags spread across the limbs above him when another rider going down the river reined up and stopped.\n\nHe turned his head. Through the willows he could see the legs of the horse. He rolled over on his stomach.\n\nThe man got down and stood beside the horse.\n\nHe reached and got his twinehandled knife.\n\nHowdy there, said the rider.\n\nHe didnt answer. He moved to the side to see better through, the branches.\n\nHowdy there. Where ye at?\n\nWhat do you want?\n\nWanted to talk to ye.\n\nWhat about?\n\nHell fire, come on out. I'm white and Christian.\n\nThe kid was reaching up through the willows trying to get his breeches. The belt was hanging down and he tugged at it but the breeches were hung on a limb.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "He was lying naked under the trees with his rags spread across the limbs above him when another rider going down the river reined up and stopped.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 1,
+      "text": "He turned his head.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 2,
+      "text": "Through the willows he could see the legs of the horse.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "He rolled over on his stomach.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "The man got down and stood beside the horse.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "He reached and got his twinehandled knife.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "Howdy there, said the rider.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 7,
+      "text": "He didnt answer.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 8,
+      "text": "He moved to the side to see better through, the branches.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "Howdy there.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 10,
+      "text": "Where ye at?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 11,
+      "text": "What do you want?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 12,
+      "text": "Wanted to talk to ye.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 13,
+      "text": "What about?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 14,
+      "text": "Hell fire, come on out.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 15,
+      "text": "I'm white and Christian.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 16,
+      "text": "The kid was reaching up through the willows trying to get his breeches.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 17,
+      "text": "The belt was hanging down and he tugged at it but the breeches were hung on a limb.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 18,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    145,
+    253,
+    299,
+    343,
+    373,
+    449,
+    476,
+    495,
+    518,
+    531,
+    581
+  ]
+}

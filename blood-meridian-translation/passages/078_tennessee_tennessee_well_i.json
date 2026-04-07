@@ -1,0 +1,100 @@
+{
+  "id": "078_tennessee_tennessee_well_i",
+  "chapter": "III",
+  "title": "tennessee tennessee well i",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "Tennessee.\n\nTennessee. Well I dont misdoubt but what you can shoot a rifle.\n\nThe kid squatted in the grass. He looked at the man's horse. The horse was fitted out in tooled leather with worked silver trim. It had a white blaze on its face and four white stockings and it was cropping up great teethfuls of the rich grass. Where you from, said the kid.\n\nI been in Texas since thirty-eight. If I'd not run up on Captain White I dont know where I'd be this day. I was a sorrier sight even than what you are and he come along and raised me up like Lazarus. Set my feet in the path of righteousness. I'd done took to drinkin and whorin till hell wouldnt have me. He seen somethin in me worth savin and I see it in you. What do ye say?",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "Tennessee.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 1,
+      "text": "Tennessee.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 2,
+      "text": "Well I dont misdoubt but what you can shoot a rifle.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "The kid squatted in the grass.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 4,
+      "text": "He looked at the man's horse.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 5,
+      "text": "The horse was fitted out in tooled leather with worked silver trim.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 6,
+      "text": "It had a white blaze on its face and four white stockings and it was cropping up great teethfuls of the rich grass.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "Where you from, said the kid.",
+      "discourse_hint": "dialogue"
+    },
+    {
+      "index": 8,
+      "text": "I been in Texas since thirty-eight.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "If I'd not run up on Captain White I dont know where I'd be this day.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 10,
+      "text": "I was a sorrier sight even than what you are and he come along and raised me up like Lazarus.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "Set my feet in the path of righteousness.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 12,
+      "text": "I'd done took to drinkin and whorin till hell wouldnt have me.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 13,
+      "text": "He seen somethin in me worth savin and I see it in you.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 14,
+      "text": "What do ye say?",
+      "discourse_hint": "fragment"
+    }
+  ],
+  "sentence_count": 15,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    10,
+    75,
+    351
+  ]
+}

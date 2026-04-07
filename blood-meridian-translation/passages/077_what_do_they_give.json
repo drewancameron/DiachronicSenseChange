@@ -1,0 +1,114 @@
+{
+  "id": "077_what_do_they_give",
+  "chapter": "III",
+  "title": "what do they give",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "What do they give ye?\n\nEver man gets a horse and his ammunition. I reckon we might find some clothes in your case.\n\nI aint got no rifle.\n\nWe'll find ye one.\n\nWhat about wages?\n\nHell fire son, you wont need no wages. You get to keep ever-thing you can raise. We goin to Mexico. Spoils of war. Aint a man in the company wont come out a big landowner. How much land you own now?\n\nI dont know nothin about soldierin.\n\nThe man eyed him. He took the unlit cigar from his teeth and turned his head and spat and put it back again. Where ye from? he said.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "What do they give ye?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 1,
+      "text": "Ever man gets a horse and his ammunition.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 2,
+      "text": "I reckon we might find some clothes in your case.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "I aint got no rifle.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 4,
+      "text": "We'll find ye one.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 5,
+      "text": "What about wages?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 6,
+      "text": "Hell fire son, you wont need no wages.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "You get to keep ever-thing you can raise.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "We goin to Mexico.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 9,
+      "text": "Spoils of war.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 10,
+      "text": "Aint a man in the company wont come out a big landowner.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "How much land you own now?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 12,
+      "text": "I dont know nothin about soldierin.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 13,
+      "text": "The man eyed him.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 14,
+      "text": "He took the unlit cigar from his teeth and turned his head and spat and put it back again.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 15,
+      "text": "Where ye from?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 16,
+      "text": "he said.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 17,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    21,
+    114,
+    136,
+    156,
+    175,
+    375,
+    412
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "id": "086_no_sir_they_were",
+  "chapter": "III",
+  "title": "no sir they were",
+  "source_lines": [
+    0,
+    0
+  ],
+  "discourse_types": [
+    "narrative"
+  ],
+  "priority": 2,
+  "notes": "Auto-chunked from Chapter III",
+  "text": "No sir.\n\nThey were sold out. Fought and died down there in that desert and then they were sold out by their own country.\n\nThe kid sat silent.\n\nThe captain leaned forward. We fought for it. Lost friends and brothers down there. And then by God if we didnt give it back. Back to a bunch of barbarians that even the most biased in their favor will admit have no least notion in God's earth of honor or justice or the meaning of republican government. A people so cowardly they've paid tribute a hundred years to tribes of naked savages. Given up their crops and livestock. Mines shut down. Whole villages abandoned. While a heathen horde rides over the land looting and killing with total impunity. Not a hand raised against them. What kind of people are these? The Apaches wont even shoot them. Did you know that? They kill them with rocks. The captain shook his head. He seemed made sad by what he had to tell.",
+  "sentences": [
+    {
+      "index": 0,
+      "text": "No sir.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 1,
+      "text": "They were sold out.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 2,
+      "text": "Fought and died down there in that desert and then they were sold out by their own country.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 3,
+      "text": "The kid sat silent.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 4,
+      "text": "The captain leaned forward.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 5,
+      "text": "We fought for it.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 6,
+      "text": "Lost friends and brothers down there.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 7,
+      "text": "And then by God if we didnt give it back.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 8,
+      "text": "Back to a bunch of barbarians that even the most biased in their favor will admit have no least notion in God's earth of honor or justice or the meaning of republican government.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 9,
+      "text": "A people so cowardly they've paid tribute a hundred years to tribes of naked savages.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 10,
+      "text": "Given up their crops and livestock.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 11,
+      "text": "Mines shut down.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 12,
+      "text": "Whole villages abandoned.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 13,
+      "text": "While a heathen horde rides over the land looting and killing with total impunity.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 14,
+      "text": "Not a hand raised against them.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 15,
+      "text": "What kind of people are these?",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 16,
+      "text": "The Apaches wont even shoot them.",
+      "discourse_hint": "narrative"
+    },
+    {
+      "index": 17,
+      "text": "Did you know that?",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 18,
+      "text": "They kill them with rocks.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 19,
+      "text": "The captain shook his head.",
+      "discourse_hint": "fragment"
+    },
+    {
+      "index": 20,
+      "text": "He seemed made sad by what he had to tell.",
+      "discourse_hint": "narrative"
+    }
+  ],
+  "sentence_count": 21,
+  "glossary_terms_needed": [],
+  "translation_status": "pending",
+  "para_breaks": [
+    7,
+    120,
+    141
+  ]
+}
