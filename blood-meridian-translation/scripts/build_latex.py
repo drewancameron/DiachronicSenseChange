@@ -203,7 +203,7 @@ def build_page():
 \\usepackage[
   a4paper,
   top=2cm,
-  bottom=2.5cm,
+  bottom=2cm,
   left=2.5cm,
   right=5.5cm,
   marginparwidth=4.5cm,
@@ -221,8 +221,9 @@ def build_page():
 \\setlength{{\\parindent}}{{1.5em}}
 \\setlength{{\\parskip}}{{0.4em}}
 
-% Margin note spacing — prevents overflow at page bottom
-\\setlength{{\\marginparpush}}{{8pt}}
+% marginpar extends ~40pt below text area on dense pages
+% This is an inherent limitation — accepted as tradeoff for
+% correct collision avoidance and same-page placement
 
 \\pagestyle{{plain}}
 

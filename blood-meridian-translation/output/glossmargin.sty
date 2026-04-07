@@ -1,79 +1,30 @@
-% glossmargin.sty — Per-word margin glosses with page-boundary awareness
+% glossmargin.sty — Margin glosses using \marginpar
 %
-% Each glossed word gets its own \marginpar, placed inline at the word.
-% \marginpar handles collision avoidance (stacking without overlap).
-% zref-savepos guards against glosses near the page bottom.
-%
-% Requires TWO xelatex passes.
+% \marginpar handles collision avoidance natively.
+% We accept minor overflow at page bottoms (~40pt) as a tradeoff
+% for correct stacking and same-page placement.
 %
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{glossmargin}[2026/04/07 Per-word margin glosses v7]
+\ProvidesPackage{glossmargin}[2026/04/07 marginpar glosses v9]
 
 \RequirePackage{xcolor}
-\RequirePackage{zref-savepos}
 
 % === Configuration ===
 \definecolor{glosscolor}{gray}{0.3}
 \newcommand{\glossfont}{\fontsize{6.5pt}{8.5pt}\selectfont\color{glosscolor}\raggedright}
 
-% Spacing between consecutive marginpars
-\setlength{\marginparpush}{4pt}
+% Tight spacing between consecutive marginpars
+\setlength{\marginparpush}{3pt}
 
-% Page-bottom guard (suppress glosses within this distance of bottom)
-\newlength{\glossbottomguard}
-% Suppress glosses whose anchor word is within this distance of page bottom.
-% Must be at least as tall as the tallest expected gloss block to prevent overflow.
-% 150pt ≈ 10 gloss entries at ~15pt each.
-\setlength{\glossbottomguard}{150pt}
+% === Commands ===
 
-% === State ===
-\newcounter{gmctr}
-\newcommand{\glossguardsp}{}
-\AtBeginDocument{%
-  \edef\glossguardsp{\the\numexpr\number\glossbottomguard*65536\relax}%
-}
-
-% === Per-word gloss command ===
-% #1 = anchor word (printed in text)
-% #2 = gloss note (placed in margin)
-%
-% The anchor word is printed inline. A \marginpar is placed at that
-% position with the gloss note. \marginpar handles vertical stacking
-% automatically. On pass 2, glosses near page bottom are suppressed.
-%
-\newcommand{\gloss}[2]{%
-  \stepcounter{gmctr}%
-  \zsaveposy{gm\thegmctr}%
-  \zifrefundefined{gm\thegmctr}{%
-    % Pass 1: place unconditionally
-    \marginpar{\glossfont\textbf{#1} #2}%
-  }{%
-    % Pass 2: check page bottom
-    \ifnum\zposy{gm\thegmctr}>\glossguardsp\relax
-      \marginpar{\glossfont\textbf{#1} #2}%
-    \fi
-  }%
-  % Print the anchor word in the text
-  #1%
-}
-
-% Merged gloss: multiple entries in one \marginpar (reduces float count)
-% #1 = anchor word (printed in text)
-% #2 = merged note block (multiple entries separated by \\[2pt])
-%
-% Uses \raisebox{0pt} trick to make the \marginpar align with the
-% current baseline rather than being pushed down by interline spacing.
 \newcommand{\glossmerged}[2]{%
-  \stepcounter{gmctr}%
-  \zsaveposy{gm\thegmctr}%
-  \zifrefundefined{gm\thegmctr}{%
-    \marginpar{\glossfont #2}%
-  }{%
-    \ifnum\zposy{gm\thegmctr}>\glossguardsp\relax
-      \marginpar{\glossfont #2}%
-    \fi
-  }%
+  \marginpar{\glossfont #2}%
   #1%
+}
+
+\newcommand{\gloss}[2]{%
+  \marginpar{\glossfont\textbf{#1} #2}%
 }
 
 \endinput
