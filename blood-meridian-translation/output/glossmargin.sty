@@ -57,6 +57,9 @@
 % Merged gloss: multiple entries in one \marginpar (reduces float count)
 % #1 = anchor word (printed in text)
 % #2 = merged note block (multiple entries separated by \\[2pt])
+%
+% Uses \raisebox{0pt} trick to make the \marginpar align with the
+% current baseline rather than being pushed down by interline spacing.
 \newcommand{\glossmerged}[2]{%
   \stepcounter{gmctr}%
   \zsaveposy{gm\thegmctr}%

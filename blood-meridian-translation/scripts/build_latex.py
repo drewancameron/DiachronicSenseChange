@@ -138,8 +138,9 @@ def build_chunk(chapter_dir: str) -> str:
 
         if len(gloss_positions) == 1:
             pos, anchor, anchor_esc, note_esc = gloss_positions[0]
-            replacement = f"\\gloss{{{anchor_esc}}}{{{note_esc}}}"
-            para_tex = para_tex.replace(anchor_esc, replacement, 1)
+            # Place at PARAGRAPH START for alignment
+            note = f"\\textbf{{{anchor_esc}}} {note_esc}"
+            para_tex = f"\\glossmerged{{}}{{{note}}}" + para_tex
         elif len(gloss_positions) > 1:
             # Build merged note block
             entries = []
@@ -147,10 +148,8 @@ def build_chunk(chapter_dir: str) -> str:
                 entries.append(f"\\textbf{{{anchor_esc}}} {note_esc}")
 
             merged_note = "\\\\[2pt]".join(entries)
-            # Place at first glossed word
-            first_anchor_esc = gloss_positions[0][2]
-            replacement = f"\\glossmerged{{{first_anchor_esc}}}{{{merged_note}}}"
-            para_tex = para_tex.replace(first_anchor_esc, replacement, 1)
+            # Place at PARAGRAPH START — ensures marginpar aligns with first line
+            para_tex = f"\\glossmerged{{}}{{{merged_note}}}" + para_tex
 
         recent_glosses.append(glossed_this_para)
         parts.append(para_tex + "\n")
