@@ -115,10 +115,13 @@ def build_chunk(chapter_dir: str) -> str:
                 para_glosses.append(f"\\textbf{{{anchor_esc}}} {note_esc}")
 
         if para_glosses:
-            # Cap glosses per paragraph to prevent overflow
-            MAX_GLOSSES_PER_PARA = min(12, max(4, text_lines))
-            if len(para_glosses) > MAX_GLOSSES_PER_PARA:
-                para_glosses = para_glosses[:MAX_GLOSSES_PER_PARA]
+            # Cap glosses: gloss block should not be taller than the text
+            # At ~3 gloss lines per entry in two columns, each entry pair = ~30pt
+            # Cap to fit within text_ht
+            max_pairs = max(2, int(text_ht / 30))
+            max_glosses = max_pairs * 2
+            if len(para_glosses) > max_glosses:
+                para_glosses = para_glosses[:max_glosses]
 
             # Estimate gloss block height
             # Each column is ~16 chars wide at 6.5pt in 4.5cm/2
