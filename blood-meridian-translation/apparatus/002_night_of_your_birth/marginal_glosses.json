@@ -13,13 +13,7 @@
     {
       "index": 2,
       "greek": "Λεονίδαι ἐκαλοῦντο.",
-      "glosses": [
-        {
-          "anchor": "Λεονίδαι",
-          "note": "= υἱοὶ Λεωνίδου",
-          "rank": 1
-        }
-      ]
+      "glosses": []
     },
     {
       "index": 3,
@@ -32,12 +26,12 @@
       "glosses": [
         {
           "anchor": "μελανίαν",
-          "note": "< μέλας = μαύρη χρόα ↔ λευκότης",
+          "note": "= blackness ↔ λευκότης",
           "rank": 1
         },
         {
           "anchor": "ὀπὰς",
-          "note": "= τρῆμα, χάσμα ↔ στερέωμα",
+          "note": "= holes in the earth",
           "rank": 1
         }
       ]
@@ -48,12 +42,12 @@
       "glosses": [
         {
           "anchor": "κατεάγη",
-          "note": "< κατάγνυμι = συνετρίβη",
+          "note": "< κατάγνυμι (ἀόρ. παθ.) = break in pieces, shatter",
           "rank": 1
         },
         {
           "anchor": "ἅμαξα",
-          "note": "= ὄχημα τετράκυκλον",
+          "note": "< ἄμαξα = frame-work, ‘châssis’ ↔ πείρινς",
           "rank": 1
         }
       ]
@@ -64,22 +58,22 @@
       "glosses": [
         {
           "anchor": "τεθνηκυῖα",
-          "note": "< θνῄσκω = ἀποθανοῦσα ↔ ζῶσα",
+          "note": "< θνήσκω (παρακ. μτχ. ἐν.) = be dead",
           "rank": 1
         },
         {
           "anchor": "ἔθαλπεν",
-          "note": "< θάλπω = θερμαίνω καὶ τρέφω",
+          "note": "< θάλπω (πρτ. ἐν.) = heat, soften by heat",
           "rank": 1
         },
         {
           "anchor": "ἀποίσοι",
-          "note": "< ἀποφέρω = ἀπάγοι",
+          "note": "= carry off",
           "rank": 1
         },
         {
           "anchor": "τεσσαρεσκαίδεκα",
-          "note": "= τέτταρες καὶ δέκα = ιδ΄",
+          "note": "= fourteen",
           "rank": 1
         }
       ]
@@ -100,12 +94,12 @@
       "glosses": [
         {
           "anchor": "ἄνιπτος",
-          "note": "= οὐ πεπλυμένος ↔ καθαρός",
+          "note": "= unwashen",
           "rank": 1
         },
         {
           "anchor": "ὠχρὸς",
-          "note": "= λευκὸς ὡς νοσῶν ↔ ἐρυθρός",
+          "note": "= pale, wan ↔ ἐρυθρός",
           "rank": 1
         }
       ]
@@ -116,7 +110,7 @@
       "glosses": [
         {
           "anchor": "ὄρεξις",
-          "note": "< ὀρέγομαι = ἐπιθυμία τινός",
+          "note": "= appetency, conation ↔ φυγή",
           "rank": 1
         }
       ]

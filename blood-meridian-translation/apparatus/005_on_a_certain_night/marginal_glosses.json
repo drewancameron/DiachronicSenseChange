@@ -5,18 +5,8 @@
       "greek": "νυκτί τινι ναύκληρος Μελιταῖος βάλλει αὐτὸν κατὰ νώτου πιστολίῳ μικρῷ.",
       "glosses": [
         {
-          "anchor": "Μελιταῖος",
-          "note": "= ἐκ Μελίτης νήσου",
-          "rank": 1
-        },
-        {
-          "anchor": "πιστολίῳ",
-          "note": "= μικρὸν ὅπλον βάλλον σφαίρας",
-          "rank": 1
-        },
-        {
           "anchor": "ναύκληρος",
-          "note": "= ὁ πλοίου κύριος",
+          "note": "= skipper, sailing-master ↔ ἔμπορος",
           "rank": 1
         }
       ]
@@ -27,12 +17,12 @@
       "glosses": [
         {
           "anchor": "στρεφόμενος",
-          "note": "< στρέφω = περιάγω",
+          "note": "< στρέφω (ἐνεστ. μτχ. μέσ.) = turn about",
           "rank": 1
         },
         {
           "anchor": "βάλλεται",
-          "note": "ἐνταῦθα = τιτρώσκεται πιστολίῳ",
+          "note": "= throw",
           "rank": 1
         }
       ]
@@ -43,12 +33,12 @@
       "glosses": [
         {
           "anchor": "κάπηλον",
-          "note": "= καπηλεῖον, οἰνοπώλιον",
+          "note": "= tavern-keeper ↔ ἔμπορος",
           "rank": 1
         },
         {
           "anchor": "ἐρείδεται",
-          "note": "= ἐπερείδεται, στηρίζεται",
+          "note": "= cause to lean, prop",
           "rank": 1
         }
       ]
@@ -59,7 +49,7 @@
       "glosses": [
         {
           "anchor": "ἀποβλέπουσι",
-          "note": "< ἀποβλέπω = εἰς τι βλέπω",
+          "note": "< ἀποβλέπω (ἐνεστ. μτχ. ἐν.) = look away",
           "rank": 1
         }
       ]
@@ -75,22 +65,22 @@
       "glosses": [
         {
           "anchor": "θεραπευούσης",
-          "note": "< θεραπεύω = ἰατρεύω",
+          "note": "< θεραπεύω (ἐνεστ. μτχ. ἐν.) = be an attendant, do service",
           "rank": 1
         },
         {
           "anchor": "καπήλου",
-          "note": "= ὁ οἶνον πωλῶν",
+          "note": "< κάπηλος (γεν.) = tavern-keeper ↔ ἔμπορος",
           "rank": 1
         },
         {
           "anchor": "ὑπερῴῳ",
-          "note": "= δωμάτιον ἄνω",
+          "note": "= upper part of the house",
           "rank": 1
         },
         {
           "anchor": "ἑβδομάδας",
-          "note": "= ἑπτὰ ἡμέρας",
+          "note": "= number seven",
           "rank": 1
         }
       ]
@@ -101,7 +91,7 @@
       "glosses": [
         {
           "anchor": "λύματα",
-          "note": "= ἀκάθαρτα ῥύπου",
+          "note": "< λῦμα (πλ.) = ruin",
           "rank": 1
         }
       ]
@@ -112,7 +102,7 @@
       "glosses": [
         {
           "anchor": "νευρῶδες",
-          "note": "< νεῦρον = νεύρων πλῆρες",
+          "note": "< νευρώδης = sinewy",
           "rank": 1
         }
       ]
@@ -123,17 +113,17 @@
       "glosses": [
         {
           "anchor": "ὄχθην",
-          "note": "= αἰγιαλὸς ποταμοῦ",
+          "note": "< ὀχθέω (πρτ. ἐν.) = be sorely angered, vexed in spirit",
           "rank": 1
         },
         {
           "anchor": "ἀπέρχεται",
-          "note": "< ἀπέρχομαι = ἄπειμι λάθρᾳ",
+          "note": "= go away, depart",
           "rank": 1
         },
         {
           "anchor": "καθεύδει",
-          "note": "= ὕπνῳ δέδεται",
+          "note": "= lie down to sleep, sleep ↔ ἀγρυπνέω",
           "rank": 1
         }
       ]
@@ -143,13 +133,8 @@
       "greek": "τὸ πλοῖον πλεῖ εἰς Τέξας.",
       "glosses": [
         {
-          "anchor": "Τέξας",
-          "note": "= χώρα τῆς Ἀμερικῆς",
-          "rank": 1
-        },
-        {
           "anchor": "πλεῖ",
-          "note": "= ναυτίλλεται",
+          "note": "= sail, go by sea",
           "rank": 1
         }
       ]

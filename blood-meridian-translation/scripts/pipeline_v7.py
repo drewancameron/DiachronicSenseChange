@@ -119,9 +119,21 @@ def translate_passage(passage_id: str, style: str = "sophocles",
 
     style_desc = STYLES.get(style, STYLES["sophocles"])
 
+    # Check if we're allowing vocab substitutions
+    vocab_free = style in ("sophocles", "euripides", "thucydides")
+
+    if vocab_free:
+        vocab_instruction = """You have FREEDOM to substitute vocabulary where a more precise, powerful, or stylistically authentic word exists. Mark substitutions by placing the new word in angle brackets on first use: ⟨new_word⟩. This lets us track your choices for glossing.
+
+Only substitute when genuinely better — don't change for change's sake."""
+    else:
+        vocab_instruction = """Keep the vocabulary from the draft. Do NOT substitute words — they were chosen deliberately from Woodhouse."""
+
     prompt = f"""You are rewriting a mechanical Ancient Greek translation in the distinctive style of {style_desc}.
 
-Transform this draft into prose that reads as natural, powerful Ancient Greek. You may freely reorder, adjust morphology, add particles and articles, choose between synonyms where the draft's choice feels flat.
+Transform this draft into prose that reads as natural, powerful Ancient Greek. You may freely reorder, adjust morphology, add particles and articles.
+
+{vocab_instruction}
 
 Preserve:
 - The core meaning of each sentence
@@ -152,9 +164,11 @@ Output ONLY the Greek text."""
     print(f"    {polish_time:.0f}s, ${cost:.4f}")
     print(f"    {polished[:100]}...")
 
-    # Save polished
+    # Save polished (with markers for reference)
     (draft_dir / "stage1_opus_polished.txt").write_text(polished)
-    draft_path.write_text(polished + "\n")
+    # Save clean version (markers stripped) as primary
+    clean = polished.replace("⟨", "").replace("⟩", "")
+    draft_path.write_text(clean + "\n")
 
     # === STAGE 6: Glosses from provenance ===
     print(f"\n  [{passage_id}] GLOSSES FROM PROVENANCE")
@@ -195,20 +209,28 @@ def build_provenance_glosses(passage_id: str,
 
     _load_lsj()
 
-    # Common lemmas an intermediate reader knows — don't gloss
-    COMMON = {
-        "εἶναι", "ἔχειν", "λέγειν", "ποιεῖν", "γίγνεσθαι", "ἔρχεσθαι",
-        "ἰέναι", "ὁρᾶν", "εἰδέναι", "δοκεῖν", "βούλεσθαι", "δεῖν",
-        "δύνασθαι", "φέρειν", "λαμβάνειν", "διδόναι", "τιθέναι",
-        "ἀνήρ", "γυνή", "ἄνθρωπος", "θεός", "παῖς", "πατήρ", "μήτηρ",
-        "πόλις", "γῆ", "ὕδωρ", "πῦρ", "οἶκος", "ὁδός", "χείρ",
-        "λόγος", "ἔργον", "ὄνομα", "μέγας", "πολύς", "καλός", "κακός",
-        "ἀγαθός", "πᾶς", "ἄλλος", "αὐτός", "ἐγώ", "σύ", "οὗτος",
-        "ἐκεῖνος", "ὅς", "τίς", "εἷς", "δύο", "τρεῖς",
-    }
-
     provenance = get_provenance()
     if not provenance:
+        return None
+
+    # Load IDF for frequency-based filtering
+    IDF_THRESHOLD = 6.0
+    try:
+        from auto_gloss import load_idf
+        lemma_idf, form_idf = load_idf()
+    except Exception:
+        lemma_idf, form_idf = {}, {}
+
+    def _strip_accents(w):
+        nfd = unicodedata.normalize("NFD", w)
+        return "".join(c for c in nfd if unicodedata.category(c) != "Mn").lower()
+
+    def _get_idf(word):
+        stripped = _strip_accents(word)
+        if stripped in lemma_idf:
+            return lemma_idf[stripped]["idf"]
+        if stripped in form_idf:
+            return form_idf[stripped]["idf"]
         return None
 
     # Build gloss entries from provenance
@@ -218,10 +240,16 @@ def build_provenance_glosses(passage_id: str,
         lemma = prov["lemma"]
         english = prov["english"]
 
-        if lemma in COMMON or lemma in gloss_entries or len(lemma) <= 2:
+        if lemma in gloss_entries or len(lemma) <= 2:
             continue
 
-        # The English word IS the gloss — we know the sense because we chose it
+        # IDF filter: only gloss words rarer than threshold
+        idf = _get_idf(lemma)
+        if idf is not None and idf < IDF_THRESHOLD:
+            continue
+        # If IDF unknown (word not in corpus), it's probably rare — gloss it
+
+        # The English word IS the gloss
         en_word = english.lower().strip(".,;:!?")
         defn = en_word
 
@@ -244,6 +272,41 @@ def build_provenance_glosses(passage_id: str,
                 note += f" ↔ {ant}"
 
         gloss_entries[lemma] = note
+
+    # Catch Opus ⟨⟩ vocabulary substitutions and add as glosses
+    substitutions = re.findall(r'⟨([^⟩]+)⟩', polished_greek)
+    if substitutions:
+        # Use Haiku to get quick English definitions for substituted words
+        import anthropic
+        sub_list = ", ".join(substitutions)
+        try:
+            client = anthropic.Anthropic()
+            r = client.messages.create(
+                model="claude-haiku-4-5-20251001",
+                max_tokens=512,
+                messages=[{"role": "user", "content":
+                    f"Give a short English definition (2-5 words) for each Ancient Greek word. "
+                    f"Output as JSON: {{\"word\": \"definition\"}}\n\nWords: {sub_list}"}],
+            )
+            sub_text = r.content[0].text.strip()
+            if "```" in sub_text:
+                sub_text = re.search(r'```(?:json)?\s*\n?(.*?)```', sub_text, re.DOTALL).group(1)
+            sub_defs = json.loads(sub_text)
+            for word, defn in sub_defs.items():
+                if word not in gloss_entries:
+                    gloss_entries[word] = f"= {defn}"
+        except Exception:
+            # Fallback: try LSJ
+            from mechanical_glosser import lsj_lookup as _lsj
+            for sub in substitutions:
+                sub_clean = sub.strip()
+                if sub_clean not in gloss_entries:
+                    sub_defn = _lsj(sub_clean)
+                    defn = sub_defn if sub_defn else "(Opus substitution)"
+                    gloss_entries[sub_clean] = f"= {defn}"
+
+    # Strip the ⟨⟩ markers from the polished text for the final output
+    polished_greek = polished_greek.replace("⟨", "").replace("⟩", "")
 
     # Split polished Greek into sentences
     greek_sentences = [s.strip() for s in
