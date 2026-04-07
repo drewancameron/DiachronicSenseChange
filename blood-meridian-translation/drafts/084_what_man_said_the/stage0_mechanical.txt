@@ -1,0 +1,128 @@
+EN: What man?
+GR: ποῖος ἀνήρ[ἑν.]
+
+EN: said the kid.
+GR: εἶπεν[ἀόρ..ἐν..γ´.ἑν.] ὁ παῖς
+
+EN: What man sir, said the captain's man.
+GR: ἀνήρ[ὀν..ἑν.] εἶπεν[ἀόρ..ἐν..γ´.ἑν.] τί ἀνήρ[ἑν.] κύριε[ἑν.] κυβερνήτης[γεν..ἑν.]
+
+EN: How old are you, son?
+GR: πόσος[ὀν..ἑν.] παῖς[ὀν..ἑν.] εἶναι[ἐνεστ..ἐν..β´.ἑν.] πόσος ἐτῶν[ἑν.]
+
+EN: Nineteen.
+GR: ἐννεακαίδεκα
+
+EN: The captain nodded his head.
+GR: κυβερνήτης[ὀν..ἑν.] κινεῖν[ἀόρ..ἐν..γ´.ἑν.] κεφαλή[αἰτ..ἑν.] αὐτός[γεν..ἑν.]
+
+EN: He was looking the kid over.
+GR: ἦν[ἀόρ..ἐν..γ´.ἑν.] σκοπεῖν[ἐνεστ..ἐν..γ´.ἑν.] ὁ παῖς ὑπέρ
+
+EN: What happened to you?
+GR: τί[ὀν..ἑν.] συμβαίνειν[ἀόρ..ἐν..γ´.ἑν.] πρός σοί[δοτ..ἑν.]
+
+EN: What?
+GR: τί[ἑν.]
+
+EN: Say sir, said the recruiter.
+GR: ⟨recruiter⟩ λέγειν[ἐνεστ..προστ..ἐν..γ´.ἑν.] εἶπεν[ἀόρ..ἐν..γ´.ἑν.] κύριε[αἰτ..ἑν.]
+
+EN: Sir?
+GR: κύριε
+
+EN: I said what happened to you.
+GR: ἐγώ[ὀν..ἑν.] τί[ὀν..ἑν.] εἶπον[ἀόρ..ἐν..α´.ἑν.] συμβαίνειν[ἀόρ..ἐν..γ´.ἑν.] πρός σοι[δοτ..ἑν.]
+
+EN: The kid looked at the man sitting next to him.
+GR: βλέπειν[ἀόρ..ἐν..γ´.ἑν.] κάθημαι[ἐνεστ..ἐν..γ´.ἑν.] ὁ παῖς ἐν πρός ἀνήρ[δοτ..ἑν.] αὐτός[δοτ..ἑν.] ἐγγύς
+
+EN: He looked down at himself and he looked at the captain again.
+GR: καί ὁρᾶν[ἀόρ..ἐν..γ´.ἑν.] ὁρᾶν[ἀόρ..ἐν..γ´.ἑν.] κατά ἐν ἐν ἑαυτοῦ[δοτ..ἑν.] κυβερνήτης[δοτ..ἑν.] πάλιν
+
+EN: I was fell on by robbers, he said.
+GR: ἐγώ[ὀν..ἑν.] ἦν[ἀόρ..ἐν..α´.ἑν.] ἐπέπεσον[ἀόρ..παθ..γ´.ἑν.] εἶπεν[ἀόρ..ἐν..γ´.ἑν.] ἐπί παρά λῃστάι[πλ.]
+
+EN: Robbers, said the captain.
+GR: λῃσταί[ὀν..πλ.] κυβερνήτης[ὀν..ἑν.] εἶπεν[ἀόρ..ἐν..γ´.ἑν.]
+
+EN: Took everthing I had.
+GR: ἐγώ[ὀν..ἑν.] ἔλαβον[ἀόρ..ἐν..α´.ἑν.] ἔχειν[ἀόρ..ἐν..α´.ἑν.]
+
+EN: Took my watch and everthing.
+GR: καί λαμβάνειν[ἀόρ..ἐν..α´.ἑν.] ρολόι[αἰτ..ἑν.] ἐμός[γεν..ἑν.] ⟨everthing⟩
+
+EN: Have you got a rifle?
+GR: σύ[ὀν..ἑν.] ἔχεις[ἐνεστ..ἐν..β´.ἑν.] ἔχεις[ἀόρ..ἐν..γ´.ἑν.] τόξον[αἰτ..ἑν.]
+
+EN: Not no more I aint.
+GR: ἐγώ[ὀν..ἑν.] ⟨aint⟩ οὐ οὐ ἔτι[ἑν.]
+
+EN: Where was it you were robbed.
+GR: ὑμεῖς[ὀν..ἑν.] ἦν[ἀόρ..ἐν..γ´.ἑν.] ἐρράφητε[ἀόρ..ἐν..β´.ἑν.] ἀφαιρέω[ἀόρ..παθ..γ´.ἑν.] ποῦ
+
+EN: I dont know.
+GR: ἐγώ[ὀν..ἑν.] ποιεῖν[ἐνεστ..ἐν..α´.ἑν.] οἶδα[ἐνεστ..ἐν..γ´.ἑν.]
+
+EN: They wasnt no name to it.
+GR: ἦν[ἀόρ..ἐν..γ´.ἑν.] πρός οὐ ὄνομα[ἑν.]
+
+EN: It was just a wilderness.
+GR: ἦν[ἀόρ..ἐν..γ´.ἑν.] μόνον ἐρημία[ἑν.]
+
+EN: Where were you coming from?
+GR: ὑμεῖς[ὀν..ἑν.] ἦσθα/ἦτε[ἀόρ..ἐν..β´.ἑν.] ἔρχεσθαι[ἐνεστ..ἐν..γ´.ἑν.] ἀπό ποῦ
+
+EN: I was comin from Naca, Naca ...
+GR: ἐγώ[ὀν..ἑν.] ἦν[ἀόρ..ἐν..α´.ἑν.] ἀπό *Naca ⟨comin⟩ *Naca
+
+EN: Nacogdoches?
+GR: *Nacogdoches
+
+EN: Yeah.
+GR: ⟨Yeah⟩
+
+EN: Yessir.
+GR: ⟨Yessir⟩
+
+EN: Yessir.
+GR: ⟨Yessir⟩
+
+EN: How many were there?
+GR: πόσος[ὀν..ἑν.] εἶναι[ἀόρ..ἐν..γ´.πλ.] πόσος absent/not needed
+
+EN: The kid stared at him.
+GR: ἀθρέω[ἀόρ..ἐν..γ´.ἑν.] ὁ παῖς ἐν αὐτόν[δοτ..ἑν.]
+
+EN: Robbers.
+GR: λῃσταί[πλ.]
+
+EN: How many robbers.
+GR: πόσος πόσος[ἑν.] λῃστής[πλ.]
+
+EN: Seven or eight, I reckon.
+GR: ἤ ἐγώ[ὀν..ἑν.] οἶμαι[ἐνεστ..ἐν..α´.ἑν.] ἑπτά ὀκτώ
+
+EN: I got busted in the head with a scantlin.
+GR: ἐγώ[ὀν..ἑν.] ἐτύπην[ἀόρ..ἐν..α´.ἑν.] πληγῆναι[ἀόρ..παθ..γ´.ἑν.] ἐν μετά κεφαλή[δοτ..ἑν.] ξύλον[δοτ..ἑν.]
+
+EN: The captain squinted one eye at him.
+GR: κυβερνήτης[ὀν..ἑν.] ἀμβλυωπεῖν[ἀόρ..ἐν..γ´.ἑν.] ὀφθαλμός[αἰτ..ἑν.] ἐν αὐτόν[δοτ..ἑν.] εἵς
+
+EN: Were they Mexicans?
+GR: ἦσαν[ἀόρ..ἐν..γ´.πλ.] Μεξικανοί
+
+EN: Some.
+GR: τις
+
+EN: Mexicans and niggers.
+GR: καί *Mexicans Νέγροι[πλ.]
+
+EN: They was a white or two with em.
+GR: ἤ εἶναι[ἀόρ..ἐν..γ´.ἑν.] μετά λευκόν[ἑν.] δύο
+
+EN: They had a bunch of cattle they'd stole.
+GR: εἶχον[ἀόρ..ἐν..γ´.πλ.] μακάρι[ἀόρ..ἐν..γ´.πλ.] ἔκλεψαν[ἀόρ..ἐν..γ´.ἑν.] πλῆθος[αἰτ..ἑν.] βοσκήματα[γεν..πλ.]
+
+EN: Only thing they left me with was a old piece of knife I had in my boot.
+GR: πρᾶγμα[ὀν..ἑν.] ἐγώ[ὀν..ἑν.] λείπειν[ἀόρ..ἐν..γ´.πλ.] εἶναι[ἀόρ..ἐν..γ´.ἑν.] ἔχειν[ἀόρ..ἐν..α´.ἑν.] ἐγώ[αἰτ..ἑν.] μετά ἐν μετά ἡ μάχαιρα[γεν..ἑν.] περόνη[δοτ..ἑν.] μόνον παλαιός[ἑν.] μέρος[ἑν.] ἐμός[γεν..ἑν.]

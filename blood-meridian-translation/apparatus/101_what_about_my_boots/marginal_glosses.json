@@ -1,0 +1,189 @@
+{
+  "sentences": [
+    {
+      "index": 0,
+      "greek": "τί δὴ περὶ τῶν ἐμβάδων;",
+      "glosses": [
+        {
+          "anchor": "ἐμβάδων",
+          "note": "= boots",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "greek": "ἔφη ὁ παῖς.",
+      "glosses": []
+    },
+    {
+      "index": 2,
+      "greek": "καὶ τὰς κρηπῖδας αὐτοῦ, ἔφη ὁ Τεξανός.",
+      "glosses": [
+        {
+          "anchor": "κρηπῖδας",
+          "note": "= foundations or bases",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "greek": "κρηπῖδας;",
+      "glosses": []
+    },
+    {
+      "index": 4,
+      "greek": "ναί.",
+      "glosses": []
+    },
+    {
+      "index": 5,
+      "greek": "ἔδειξε ῥαπτικὰς χεῖρας.",
+      "glosses": [
+        {
+          "anchor": "ῥαπτικὰς",
+          "note": "= sewing",
+          "rank": 1
+        },
+        {
+          "anchor": "χεῖρας",
+          "note": "= gesture",
+          "rank": 1
+        },
+        {
+          "anchor": "ἔδειξε",
+          "note": "= he/she showed",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "greek": "ὁ σκυτοτόμος κάτω εἰς τὰς κρηπῖδας ἔβλεψεν.",
+      "glosses": []
+    },
+    {
+      "index": 7,
+      "greek": "κοίλους δακτύλους συνέσχε, μικρὸν σχῆμα ἀκρασίας·",
+      "glosses": [
+        {
+          "anchor": "κοίλους",
+          "note": "= cupped",
+          "rank": 1
+        },
+        {
+          "anchor": "μικρὸν",
+          "note": "= little ↔ μέγας",
+          "rank": 1
+        },
+        {
+          "anchor": "συνέσχε",
+          "note": "= he/she held together",
+          "rank": 1
+        },
+        {
+          "anchor": "σχῆμα",
+          "note": "= form or shape",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "greek": "ὁ δὲ παῖς ἐξελὼν τὰς κρηπῖδας γυμνόπους ἔστη ἐν κονίᾳ.",
+      "glosses": []
+    },
+    {
+      "index": 9,
+      "greek": "πάντων δὲ πεπραγμένων, ἔστησαν ἐν τῇ ὁδῷ καὶ εἰς ἀλλήλους ἔβλεπον.",
+      "glosses": []
+    },
+    {
+      "index": 10,
+      "greek": "ὁ παῖς τὰ νέα σκεύη ἐπ' ὤμου ἀνηρτημένα εἶχεν.",
+      "glosses": [
+        {
+          "anchor": "ἀνηρτημένα",
+          "note": "= suspended or hanging",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "greek": "ὁ δεύτερος λοχαγὸς εἰς τὸν ἐκ Μισσουρίου ἔβλεψε.",
+      "glosses": [
+        {
+          "anchor": "δεύτερος",
+          "note": "= second",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "greek": "πότερον ἔχεις τι ἀργύριον, Ἔαρλ;",
+      "glosses": [
+        {
+          "anchor": "ἔχεις",
+          "note": "= got",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "greek": "οὐδὲ χαλκοῦν.",
+      "glosses": [
+        {
+          "anchor": "χαλκοῦν",
+          "note": "= copper",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "greek": "οὐδ' ἐγὼ μήν.",
+      "glosses": []
+    },
+    {
+      "index": 15,
+      "greek": "δεῖ ἡμᾶς τοὺς ὄνους πάλιν ἐπανελθεῖν εἰς ἐκεῖνο τὸ τῆς κακοδαιμονίας βάραθρον.",
+      "glosses": [
+        {
+          "anchor": "δεῖ",
+          "note": "= it is necessary",
+          "rank": 1
+        },
+        {
+          "anchor": "βάραθρον",
+          "note": "= abyss or chasm",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "greek": "ὁ παῖς τὸ βάρος τῶν σκευῶν ἐπ' ὤμου μετέθηκε.",
+      "glosses": []
+    },
+    {
+      "index": 17,
+      "greek": "ἔτι τόδε τὸ τεταρτημόριον χρυσοῦν ἔχομεν ἐκπιεῖν, ἔφη.",
+      "glosses": [
+        {
+          "anchor": "τεταρτημόριον",
+          "note": "= quarter or fourth part",
+          "rank": 1
+        },
+        {
+          "anchor": "ἐκπιεῖν",
+          "note": "= to drink up",
+          "rank": 1
+        }
+      ]
+    }
+  ]
+}

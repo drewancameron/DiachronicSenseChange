@@ -1,0 +1,38 @@
+EN: He sat at a wickerwork desk writing letters, the captain.
+GR: ἐκάθητο[ἀόρ..ἐν..γ´.ἑν.] ἐν ἐπιστολή[δοτ..πλ.] πλεκτός[ἑν.] τράπεζα[ἑν.] γράφων[ἑν.] ναύαρχος[ὀν..ἑν.]
+
+EN: They stood attending, the captain's man with his black hat in his hands.
+GR: ἱστάναι[ἀόρ..ἐν..γ´.πλ.] παρίστημι[ἐνεστ..ἐν..γ´.ἑν.] ἀνήρ[αἰτ..ἑν.] μετά ἐν πέτασος[γεν..ἑν.] χείρ[γεν..πλ.] μέλας[ἑν.] κυβερνήτης[γεν..ἑν.] αὐτός[γεν..ἑν.] αὐτός[γεν..ἑν.]
+
+EN: The captain wrote on nor did he look up.
+GR: μηδέ κυβερνήτης[ὀν..ἑν.] ἔγραψεν[ἀόρ..ἐν..γ´.ἑν.] This auxiliary is not needed; the verb ἔγραψεν stands alone[ἀόρ..ἐν..γ´.ἑν.] ἀνέβλεψεν[ἐνεστ..ἐν..γ´.ἑν.] ἐπί ἀνά ἐπί
+
+EN: Outside the kid could hear a woman speaking in Spanish.
+GR: ἐδύνατο[ἐνεστ..ἐν..γ´.ἑν.] ἀκούειν[ἐνεστ..ἐν..γ´.ἑν.] λέγουσαν[ἐνεστ..ἐν..γ´.ἑν.] ὁ παῖς γυνή[αἰτ..ἑν.] ἔξω ἐν Ἱσπανική
+
+EN: Other than that there was just the scratching of the captain's pen.
+GR: ἕτερος[ὀν..ἑν.] ψόφος[ὀν..ἑν.] εἶναι[ἀόρ..ἐν..γ´.ἑν.] ἤ γραφίς[γεν..ἑν.] μόνον κυβερνήτης[γεν..ἑν.]
+
+EN: When he had done he laid down the pen and looked up.
+GR: καί εἶχεν[ἀόρ..ἐν..γ´.ἑν.] πεποιηκώς[ἀόρ..ἐν..γ´.ἑν.] τιθέναι[ἀόρ..ἐν..γ´.ἑν.] ἀνέβλεψεν[ἀόρ..ἐν..γ´.ἑν.] γραφίς[αἰτ..ἑν.] κατά ἀνά ὅτε
+
+EN: He looked at his man and then he looked at the kid and then he bent his head to read what he'd written.
+GR: καί καί ὁρᾶν[ἀόρ..ἐν..γ´.ἑν.] ὁρᾶν[ἀόρ..ἐν..γ´.ἑν.] κατακάμπτειν[ἀόρ..ἐν..γ´.ἑν.] ἀναγιγνώσκειν[ἐνεστ..ἐν..γ´.ἑν.] μακάρι[ἀόρ..ἐν..γ´.ἑν.] γεγραμμένος[ἀόρ..ἐν..γ´.ἑν.] ὁ παῖς κεφαλή[αἰτ..ἑν.] τί[αἰτ..ἑν.] ἐν ἐν ἀνήρ[δοτ..ἑν.] τότε τότε αὐτός[γεν..ἑν.] αὐτός[γεν..ἑν.]
+
+EN: He nodded to himself and dusted the letter with sand from a little onyx box and folded it.
+GR: καί καί νεύειν[ἀόρ..ἐν..γ´.ἑν.] κονιάω[ἀόρ..ἐν..γ´.ἑν.] συμπτύσσειν[ἀόρ..ἐν..γ´.ἑν.] ἐπιστολή[αἰτ..ἑν.] πρός μετά ἀπό ἑαυτοῦ[δοτ..ἑν.] ἄμμος[δοτ..ἑν.] λάρναξ[δοτ..ἑν.] μικρός[ἑν.] ὀνῠχῐνος[ἑν.]
+
+EN: Taking a match from a box of them on the desk he lit it and held it to a stick of sealing wax until a small red medallion had pooled onto the paper.
+GR: καί ἕως μετάλλιον[ὀν..ἑν.] λαμβάνειν is acceptable but the participle form λαβών would be more precise for 'Taking' in this context[ἐνεστ..ἐν..γ´.ἑν.] ἅπτειν[ἀόρ..ἐν..γ´.ἑν.] ἔχειν[ἀόρ..ἐν..γ´.ἑν.] ἐπισημαίνειν[ἐνεστ..ἐν..γ´.ἑν.] ἔχειν[ἀόρ..ἐν..γ´.ἑν.] ῥέειν[ἀόρ..ἐν..γ´.ἑν.] σχοίνιον[αἰτ..ἑν.] κηρός[αἰτ..ἑν.] ἀπό ἐπί πρός ⟨onto⟩ κάδος[δοτ..ἑν.] αὐτός[γεν..πλ.] τράπεζα[γεν..ἑν.] ῥάβδος[δοτ..ἑν.] πίναξ[δοτ..ἑν.] μικρός[ἑν.] ἐρυθρός[ἑν.]
+
+EN: He shook out the match, blew briefly at the paper and knuckled the seal with his ring.
+GR: καί σείειν[ἀόρ..ἐν..γ´.ἑν.] φυσᾶν[ἀόρ..ἐν..γ´.ἑν.] θλίβειν[ἀόρ..ἐν..γ´.ἑν.] σπινθήρ[αἰτ..ἑν.] σφραγίς[αἰτ..ἑν.] ἔξω ἐν μετά χάρτης[δοτ..ἑν.] δακτύλιος[δοτ..ἑν.] συντόμως αὐτός[γεν..ἑν.]
+
+EN: Then he stood the letter between two books on his desk and leaned back in his chair and looked at the kid again.
+GR: καί καί ἱστάναι[ἀόρ..ἐν..γ´.ἑν.] ἀποκλίνειν[ἀόρ..ἐν..γ´.ἑν.] ὁρᾶν[ἀόρ..ἐν..γ´.ἑν.] ὁ παῖς ἐπιστολή[αἰτ..ἑν.] μεταξύ ἐπί ἐν ἐν βίβλος[δοτ..πλ.] τράπεζα[γεν..ἑν.] δίφρος[δοτ..ἑν.] τότε δύο ὀπίσω πάλιν αὐτός[γεν..ἑν.] αὐτός[γεν..ἑν.]
+
+EN: He nodded gravely.
+GR: ἔνευσεν[ἀόρ..ἐν..γ´.ἑν.] σεμνῶς
+
+EN: Take seats, he said.
+GR: καθίζειν[ἐνεστ..προστ..ἐν..γ´.ἑν.] λέγειν[ἀόρ..ἐν..γ´.ἑν.] καθέδρα[αἰτ..πλ.]

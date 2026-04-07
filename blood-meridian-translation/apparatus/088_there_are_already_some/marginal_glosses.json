@@ -1,0 +1,220 @@
+{
+  "sentences": [
+    {
+      "index": 0,
+      "greek": "ἤδη τεσσαρεσκαίδεκα χιλιάδες Γαλλικοὶ ἄποικοι ἐν τῇ Σονόρᾳ πολιτείᾳ.",
+      "glosses": [
+        {
+          "anchor": "Γαλλικοὶ",
+          "note": "= french",
+          "rank": 1
+        },
+        {
+          "anchor": "ἄποικοι",
+          "note": "= colonists",
+          "rank": 1
+        },
+        {
+          "anchor": "πολιτείᾳ",
+          "note": "= state",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "greek": "γῆν ἐλευθέραν δίδονται οἰκῆσαι.",
+      "glosses": [
+        {
+          "anchor": "δίδονται",
+          "note": "= given",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "greek": "ὄργανά τε καὶ βοσκήματα δίδονται.",
+      "glosses": [
+        {
+          "anchor": "βοσκήματα",
+          "note": "= livestock",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "greek": "Μεξικανοὶ πεπαιδευμένοι ταῦτα προτρέπουσιν.",
+      "glosses": [
+        {
+          "anchor": "πεπαιδευμένοι",
+          "note": "= enlightened",
+          "rank": 1
+        },
+        {
+          "anchor": "Μεξικανοὶ",
+          "note": "= mexicans",
+          "rank": 1
+        },
+        {
+          "anchor": "προτρέπουσιν",
+          "note": "= encourage",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "greek": "ὁ Παρέδης ἤδη ἀπόστασιν καλεῖ ἀπὸ τῆς Μεξικανῆς ἀρχῆς.",
+      "glosses": [
+        {
+          "anchor": "ἀπόστασιν",
+          "note": "= secession",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "greek": "κόλαξιν ἂν μᾶλλον ἢ κλέπταις καὶ μωροῖς ἄρχεσθαι βούλονται.",
+      "glosses": [
+        {
+          "anchor": "κλέπταις",
+          "note": "= thieves ↔ ἅρπαξ",
+          "rank": 1
+        },
+        {
+          "anchor": "μωροῖς",
+          "note": "= foolish, silly persons",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "greek": "ὁ ταγματάρχης Καρράσκος Ἀμερικανὴν ἐπικουρίαν αἰτεῖ.",
+      "glosses": [
+        {
+          "anchor": "αἰτεῖ",
+          "note": "= asking",
+          "rank": 1
+        },
+        {
+          "anchor": "ἐπικουρίαν",
+          "note": "= aid, assistance, support",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "greek": "καὶ τεύξεται.",
+      "glosses": []
+    },
+    {
+      "index": 8,
+      "greek": "νῦν δὴ ἐν Οὐασιγκτῶνι συνίσταται συνέδριον δεῦρ' ἐλθεῖν καὶ γράψαι τὰς μεθορίους γραμμὰς μεταξὺ τῆς ἡμετέρας χώρας καὶ Μεξίκου.",
+      "glosses": [
+        {
+          "anchor": "συνίσταται",
+          "note": "= forming",
+          "rank": 1
+        },
+        {
+          "anchor": "γραμμὰς",
+          "note": "= lines ↔ σκιά",
+          "rank": 1
+        },
+        {
+          "anchor": "χώρας",
+          "note": "= country",
+          "rank": 1
+        },
+        {
+          "anchor": "συνέδριον",
+          "note": "= council, assembly",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "greek": "οὐ νομίζω τιν' ἀμφισβήτησιν εἶναι ὅτι τέλος ἡ Σονόρα Ἡνωμένων Πολιτειῶν χῶρος γενήσεται.",
+      "glosses": [
+        {
+          "anchor": "νομίζω",
+          "note": "= think",
+          "rank": 1
+        },
+        {
+          "anchor": "ἀμφισβήτησιν",
+          "note": "= question",
+          "rank": 1
+        },
+        {
+          "anchor": "χῶρος",
+          "note": "= place, space, region",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "greek": "Γουάιμας Ἡνωμένων Πολιτειῶν λιμήν.",
+      "glosses": [
+        {
+          "anchor": "λιμήν",
+          "note": "= port",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "greek": "Ἀμερικανοὶ δυνήσονται εἰς Καλιφορνίαν ἀφικέσθαι οὐ διὰ τῆς σκοτεινῆς ἀδελφῆς δημοκρατίας ἡμῶν διελθόντες καὶ οἱ ἡμέτεροι πολῖται φυλαχθήσονται τέλος ἀπὸ τῶν περιβοήτων λῃστῶν συστάσεων αἳ νῦν τὰς ὁδοὺς λυμαίνονται ἃς πορεύεσθαι ἀναγκάζονται.",
+      "glosses": [
+        {
+          "anchor": "ἀδελφῆς",
+          "note": "= sister",
+          "rank": 1
+        },
+        {
+          "anchor": "δημοκρατίας",
+          "note": "= republic",
+          "rank": 1
+        },
+        {
+          "anchor": "περιβοήτων",
+          "note": "= notorious",
+          "rank": 1
+        },
+        {
+          "anchor": "πορεύεσθαι",
+          "note": "= travel",
+          "rank": 1
+        },
+        {
+          "anchor": "σκοτεινῆς",
+          "note": "= dark, obscure",
+          "rank": 1
+        },
+        {
+          "anchor": "διελθόντες",
+          "note": "= having passed through",
+          "rank": 1
+        },
+        {
+          "anchor": "λῃστῶν",
+          "note": "= robbers, bandits",
+          "rank": 1
+        },
+        {
+          "anchor": "λυμαίνονται",
+          "note": "= they destroy, damage",
+          "rank": 1
+        }
+      ]
+    }
+  ]
+}

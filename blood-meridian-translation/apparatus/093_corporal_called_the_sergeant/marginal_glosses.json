@@ -1,0 +1,161 @@
+{
+  "sentences": [
+    {
+      "index": 0,
+      "greek": "Δεκάδαρχον ἐκάλεσεν ὁ λοχαγός.",
+      "glosses": [
+        {
+          "anchor": "ἐκάλεσεν",
+          "note": "= called",
+          "rank": 1
+        },
+        {
+          "anchor": "λοχαγός",
+          "note": "= captain of soldiers",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "greek": "Οὐκ ἔστιν ἐνθάδε.",
+      "glosses": []
+    },
+    {
+      "index": 2,
+      "greek": "Καταβὰς ἐβάδισε πρὸς τὴν σκηνὴν καὶ ἀνέρριψε τὸ κάλυμμα.",
+      "glosses": [
+        {
+          "anchor": "σκηνὴν",
+          "note": "= tent ↔ χορός",
+          "rank": 1
+        },
+        {
+          "anchor": "κάλυμμα",
+          "note": "= covering or garment",
+          "rank": 1
+        },
+        {
+          "anchor": "ἐβάδισε",
+          "note": "= on foot, walking",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "greek": "ὁ δὲ παῖς ἐπὶ τῇ ἡμιόνῳ ἐκάθητο.",
+      "glosses": [
+        {
+          "anchor": "ἐκάθητο",
+          "note": "= sat",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "greek": "τρεῖς δ' ἄνδρες ὑπὸ δένδρῳ κείμενοι ἐσκόπουν αὐτόν.",
+      "glosses": [
+        {
+          "anchor": "δένδρῳ",
+          "note": "= tree",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "greek": "χαῖρ', ἔφη τις.",
+      "glosses": []
+    },
+    {
+      "index": 6,
+      "greek": "Χαῖρε.",
+      "glosses": [
+        {
+          "anchor": "Χαῖρε",
+          "note": "= howdy",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "greek": "Νέος εἶ στρατιώτης;",
+      "glosses": []
+    },
+    {
+      "index": 8,
+      "greek": "Οἴομαι.",
+      "glosses": []
+    },
+    {
+      "index": 9,
+      "greek": "Πότ' ἔφη ὁ λοχαγὸς τόδε λοιμῶδες ἀπολείψειν;",
+      "glosses": []
+    },
+    {
+      "index": 10,
+      "greek": "Οὐκ εἶπε.",
+      "glosses": []
+    },
+    {
+      "index": 11,
+      "greek": "Ἐκ σκηνῆς δ' ἦλθεν ὁ λοχαγός.",
+      "glosses": []
+    },
+    {
+      "index": 12,
+      "greek": "ποῦ 'στιν;",
+      "glosses": []
+    },
+    {
+      "index": 13,
+      "greek": "ἔφη.",
+      "glosses": []
+    },
+    {
+      "index": 14,
+      "greek": "Εἰς ἄστυ ᾤχετο.",
+      "glosses": []
+    },
+    {
+      "index": 15,
+      "greek": "Εἰς ἄστυ ᾤχετο, ἔφη ὁ λοχαγός.",
+      "glosses": []
+    },
+    {
+      "index": 16,
+      "greek": "δεῦρ' ἐλθέ.",
+      "glosses": [
+        {
+          "anchor": "ἐλθέ",
+          "note": "= come",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "greek": "Ἀναστὰς ἐκ γῆς ὁ ἀνὴρ ἐβάδην πρὸς τὴν σκηνὴν ἦλθε κἄστη, χεῖρας ἐν ὀσφύι ἀναπαύων.",
+      "glosses": [
+        {
+          "anchor": "ἀναπαύων",
+          "note": "= resting",
+          "rank": 1
+        },
+        {
+          "anchor": "ὀσφύι",
+          "note": "= back",
+          "rank": 1
+        },
+        {
+          "anchor": "ἀναπαύων",
+          "note": "= resting, giving rest",
+          "rank": 1
+        }
+      ]
+    }
+  ]
+}

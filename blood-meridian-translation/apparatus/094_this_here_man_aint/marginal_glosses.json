@@ -1,0 +1,115 @@
+{
+  "sentences": [
+    {
+      "index": 0,
+      "greek": "οὗτος ὁ ἀνὴρ οὐκ ἔχει σκευήν, ἔφη ὁ λοχαγός.",
+      "glosses": [
+        {
+          "anchor": "σκευήν",
+          "note": "= equipment, baggage",
+          "rank": 1
+        },
+        {
+          "anchor": "λοχαγός",
+          "note": "= captain, platoon commander",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "greek": "ὁ δ' ἐπένευσε.",
+      "glosses": []
+    },
+    {
+      "index": 2,
+      "greek": "ὁ ταξίαρχος χιτῶνά τε δέδωκεν ἀργύριόν τε πρὸς ἐμβάδων ἐπισκευήν.",
+      "glosses": [
+        {
+          "anchor": "ἐμβάδων",
+          "note": "= boots",
+          "rank": 1
+        },
+        {
+          "anchor": "ἐπισκευήν",
+          "note": "= mended",
+          "rank": 1
+        },
+        {
+          "anchor": "ταξίαρχος",
+          "note": "= commander of regiment",
+          "rank": 1
+        },
+        {
+          "anchor": "ἐπισκευήν",
+          "note": "= repair, restoration",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "greek": "δεῖ δέ τι κτήσασθαι ὅ γ' ἐποχήσεται, δεῖ δὲ καὶ ἐφίππιον.",
+      "glosses": [
+        {
+          "anchor": "ἐφίππιον",
+          "note": "= saddle",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "greek": "ἐφίππιον.",
+      "glosses": []
+    },
+    {
+      "index": 5,
+      "greek": "ἐξαρκέσει τὴν ἡμίονον ἀποδόσθαι ὥστε πορίσαι τι τοιοῦτον.",
+      "glosses": [
+        {
+          "anchor": "ἡμίονον",
+          "note": "= mule",
+          "rank": 1
+        },
+        {
+          "anchor": "ἐξαρκέσει",
+          "note": "= will suffice, be adequate",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "greek": "ὁ δ' ἀνὴρ βλέψας εἰς τὴν ἡμίονον αὖθις ὑπέβλεψε τὸν λοχαγόν.",
+      "glosses": [
+        {
+          "anchor": "ὑπέβλεψε",
+          "note": "= looked down on, despised",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "greek": "κλινθεὶς δ' ἔπτυσεν.",
+      "glosses": []
+    },
+    {
+      "index": 8,
+      "greek": "ἐκείνη ἡ ἡμίονος οὐδὲ δέκα δραχμὰς ἄξει.",
+      "glosses": [
+        {
+          "anchor": "δραχμὰς",
+          "note": "= drachmas, currency units",
+          "rank": 1
+        },
+        {
+          "anchor": "ἄξει",
+          "note": "= will lead, will conduct",
+          "rank": 1
+        }
+      ]
+    }
+  ]
+}

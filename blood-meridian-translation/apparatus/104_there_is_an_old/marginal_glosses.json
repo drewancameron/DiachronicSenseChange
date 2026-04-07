@@ -1,0 +1,176 @@
+{
+  "sentences": [
+    {
+      "index": 0,
+      "greek": "Γέρων τις Μεννωνίτης ἐν τῷδε χώρῳ, ἄτακτος·",
+      "glosses": [
+        {
+          "anchor": "Μεννωνίτης",
+          "note": "= of Memnon",
+          "rank": 1
+        },
+        {
+          "anchor": "ἄτακτος",
+          "note": "= disorderly, undisciplined",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "greek": "στρέφεται σκοπεῖν αὐτούς.",
+      "glosses": []
+    },
+    {
+      "index": 2,
+      "greek": "Ἀνὴρ ἰσχνός, δερμάτινον χιτωνίδιον, πῖλος μέλας ὀρθόκρανος ἐπὶ κεφαλῆς τεθεὶς τετραγώνως·",
+      "glosses": [
+        {
+          "anchor": "μέλας",
+          "note": "= black ↔ λευκός",
+          "rank": 1
+        },
+        {
+          "anchor": "τετραγώνως",
+          "note": "= square",
+          "rank": 1
+        },
+        {
+          "anchor": "κεφαλῆς",
+          "note": "= head ↔ οὐρά",
+          "rank": 1
+        },
+        {
+          "anchor": "ἰσχνός",
+          "note": "= thin, slender",
+          "rank": 1
+        },
+        {
+          "anchor": "χιτωνίδιον",
+          "note": "= small tunic",
+          "rank": 1
+        },
+        {
+          "anchor": "ὀρθόκρανος",
+          "note": "= straight-headed",
+          "rank": 1
+        },
+        {
+          "anchor": "τετραγώνως",
+          "note": "= squarely, four-cornered",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "greek": "λεπτὸς κύκλος γενειάδος.",
+      "glosses": [
+        {
+          "anchor": "λεπτὸς",
+          "note": "= thin ↔ παχύς",
+          "rank": 1
+        },
+        {
+          "anchor": "γενειάδος",
+          "note": "= of beard",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "greek": "Οἱ νεόλεκτοι κελεύουσι κύλικας οὐίσκου, καταπίνουσί τε, κελεύουσι πλείους.",
+      "glosses": [
+        {
+          "anchor": "πλείους",
+          "note": "= more",
+          "rank": 1
+        },
+        {
+          "anchor": "νεόλεκτοι",
+          "note": "= newly recruited soldiers",
+          "rank": 1
+        },
+        {
+          "anchor": "κύλικας",
+          "note": "= drinking cups",
+          "rank": 1
+        },
+        {
+          "anchor": "οὐίσκου",
+          "note": "= of wine",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "greek": "Παιδιαὶ μόντε παρὰ ταῖς τραπέζαις πρὸς τῷ τοίχῳ, πόρναι δ' ἐφ' ἑτέρας τραπέζης σκοποῦσαι τοὺς νεολέκτους.",
+      "glosses": [
+        {
+          "anchor": "πόρναι",
+          "note": "= whores",
+          "rank": 1
+        },
+        {
+          "anchor": "μόντε",
+          "note": "= not found",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "greek": "Οἱ νεόλεκτοι λοξοὶ παρὰ τὸ πωλητήριον ἑστᾶσιν, ἀντίχειρες ἐν ταῖς ζώναις, θεῶνται δὲ τὸ οἴκημα.",
+      "glosses": [
+        {
+          "anchor": "οἴκημα",
+          "note": "= room",
+          "rank": 1
+        },
+        {
+          "anchor": "λοξοὶ",
+          "note": "= slanting, oblique",
+          "rank": 1
+        },
+        {
+          "anchor": "πωλητήριον",
+          "note": "= market, sales place",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "greek": "Λαλοῦσιν ἐν ἑαυτοῖς περὶ τῆς στρατείας φωναῖς μεγάλαις·",
+      "glosses": []
+    },
+    {
+      "index": 8,
+      "greek": "ὁ δὲ γέρων Μεννωνίτης σείει πενθικὴν κεφαλήν, ῥοφεῖ τὸ πόμα, ὑποτονθορύζει.",
+      "glosses": [
+        {
+          "anchor": "σείει",
+          "note": "= shakes",
+          "rank": 1
+        },
+        {
+          "anchor": "πενθικὴν",
+          "note": "= mournful",
+          "rank": 1
+        },
+        {
+          "anchor": "ῥοφεῖ",
+          "note": "= sips, drinks",
+          "rank": 1
+        },
+        {
+          "anchor": "ὑποτονθορύζει",
+          "note": "= mutters quietly",
+          "rank": 1
+        }
+      ]
+    }
+  ]
+}

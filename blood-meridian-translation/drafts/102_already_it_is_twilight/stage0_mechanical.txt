@@ -1,0 +1,23 @@
+EN: Already it is twilight down in the Laredito.
+GR: εἶναι[ἐνεστ..ἐν..γ´.ἑν.] ἐν *Laredito ἤδη κάτω λυκόφως[ἑν.]
+
+EN: Bats fly forth from their roostings in courthouse and tower and circle the quarter.
+GR: καί καί νυκτερίς[ὀν..πλ.] πέτεσθαι[ἐνεστ..ἐν..γ´.πλ.] κυκλόω[ἐνεστ..ἐν..γ´.πλ.] περιοχή[αἰτ..ἑν.] ἀπό ἐν κατάλυμα[δοτ..πλ.] ⟨courthouse⟩ ἔξω αὐτός[γεν..πλ.] πύργος[ἑν.]
+
+EN: The air is full of the smell of burning charcoal.
+GR: ἀήρ[ὀν..ἑν.] εἶναι[ἐνεστ..ἐν..γ´.ἑν.] ὀσμή[δοτ..ἑν.] ἄνθραξ[γεν..ἑν.] καῦσις[ἑν.] μεστός[ἑν.]
+
+EN: Children and dogs squat by the mud stoops and gamecocks flap and settle in the branches of the fruit trees.
+GR: καί καί καί τέκνον[ὀν..πλ.] ὄρνις[ὀν..πλ.] ὀκλάζειν[ἐνεστ..ἐν..γ´.πλ.] κινεῖν[ἐνεστ..ἐν..γ´.πλ.] καθιστάναι[ἐνεστ..ἐν..γ´.πλ.] παρά ἐν στοαί[δοτ..πλ.] κλάδος[δοτ..πλ.] δένδρον[γεν..πλ.] κύων[πλ.] πηλός[ἑν.] καρπός[ἑν.]
+
+EN: They go afoot, these comrades, down along a bare adobe wall.
+GR: ἔρχεσθαι[ἐνεστ..ἐν..γ´.πλ.] παρά τοῖχος[δοτ..ἑν.] κάτω γυμνός[ἑν.] πεζός[ἑν.] οὗτος ἑταῖρος[πλ.] πλίνθος[ἑν.]
+
+EN: Band music carries dimly from the square.
+GR: μουσική[ὀν..ἑν.] ἔρχεται[ἐνεστ..ἐν..γ´.ἑν.] ἀπό πλατεῖα[δοτ..ἑν.] ἀμυδρῶς ὀρχήστρα[ἑν.]
+
+EN: They pass a watercart in the street and they pass a hole in the wall where by the light of a small forgefire an old man beats out shapes of metal.
+GR: καί ἀνήρ[ὀν..ἑν.] παρέρχεσθαι[ἐνεστ..ἐν..γ´.πλ.] παρέρχεσθαι[ἐνεστ..ἐν..γ´.πλ.] κρούειν[ἐνεστ..ἐν..γ´.ἑν.] ⟨watercart⟩ τρῆμα[αἰτ..ἑν.] εἶδος[αἰτ..πλ.] ἐν ἐν παρά ἔξω ὁδός[δοτ..ἑν.] τεῖχος[δοτ..ἑν.] φῶς[δοτ..ἑν.] ⟨forgefire⟩ μέταλλον[γεν..ἑν.] ὅπου μικρός[ἑν.] γεραιός[ἑν.]
+
+EN: They pass in a doorway a young girl whose beauty becomes the flowers about.
+GR: κάλλος[ὀν..ἑν.] παρέρχεσθαι[ἐνεστ..ἐν..γ´.πλ.] γίγνεσθαι[ἐνεστ..ἐν..γ´.ἑν.] κόρη[αἰτ..ἑν.] ἐν περί θύρα[δοτ..ἑν.] περί νέος[ἑν.] ὅς[γεν..ἑν.] ἄνθος[πλ.]

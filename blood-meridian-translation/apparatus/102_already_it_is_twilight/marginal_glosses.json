@@ -1,0 +1,187 @@
+{
+  "sentences": [
+    {
+      "index": 0,
+      "greek": "ἤδη λυκόφως ἐν τῷ Laredito κάτω.",
+      "glosses": [
+        {
+          "anchor": "λυκόφως",
+          "note": "= twilight",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "greek": "νυκτερίδες ἐκπέτονται καταλυμάτων ἐκ δικαστηρίου τε πύργου τε, κυκλοῦσι τὴν περιοχήν.",
+      "glosses": [
+        {
+          "anchor": "νυκτερίδες",
+          "note": "= bats",
+          "rank": 1
+        },
+        {
+          "anchor": "πύργου",
+          "note": "= tower",
+          "rank": 1
+        },
+        {
+          "anchor": "κυκλοῦσι",
+          "note": "= circle",
+          "rank": 1
+        },
+        {
+          "anchor": "περιοχήν",
+          "note": "= quarter ↔ μῆκος",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "greek": "ὀσμῆς ἀνθράκων καιομένων μεστὸς ὁ ἀήρ.",
+      "glosses": [
+        {
+          "anchor": "ἀήρ",
+          "note": "= air ↔ αἰθήρ",
+          "rank": 1
+        },
+        {
+          "anchor": "μεστὸς",
+          "note": "= full",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "greek": "τέκνα κύνες τε ὀκλάζουσι παρὰ πηλίναις στοαῖς, ἀλεκτρύονες δ' ἀγωνισταί πτερύσσονται καθίζουσί τ' ἐν κλάδοις καρποφόρων.",
+      "glosses": [
+        {
+          "anchor": "τέκνα",
+          "note": "= children",
+          "rank": 1
+        },
+        {
+          "anchor": "ὀκλάζουσι",
+          "note": "= squat",
+          "rank": 1
+        },
+        {
+          "anchor": "στοαῖς",
+          "note": "= stoops",
+          "rank": 1
+        },
+        {
+          "anchor": "καρποφόρων",
+          "note": "= fruit",
+          "rank": 1
+        },
+        {
+          "anchor": "ἀγωνισταί",
+          "note": "= competitors, contestants",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "greek": "βαίνουσι πεζοὶ οὗτοι οἱ ἑταῖροι παρὰ γυμνὸν πλίνθινον τοῖχον κάτω.",
+      "glosses": [
+        {
+          "anchor": "ἑταῖροι",
+          "note": "= comrades ↔ πόρνη",
+          "rank": 1
+        },
+        {
+          "anchor": "γυμνὸν",
+          "note": "= bare ↔ ὁπλιτοδρόμος",
+          "rank": 1
+        },
+        {
+          "anchor": "πλίνθινον",
+          "note": "= adobe",
+          "rank": 1
+        },
+        {
+          "anchor": "τοῖχον",
+          "note": "= wall",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "greek": "μουσικὴ χορείας ἀμυδρῶς ἐξ ἀγορᾶς φέρεται.",
+      "glosses": [
+        {
+          "anchor": "μουσικὴ",
+          "note": "= music",
+          "rank": 1
+        },
+        {
+          "anchor": "χορείας",
+          "note": "= dancing, choral performance",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "greek": "παρέρχονται ὑδροφόρον ἅμαξαν ἐν ὁδῷ, παρέρχονται δὲ τρῆμα ἐν τείχει ὅπου πρὸς φωτὶ μικρᾶς χαλκευτικῆς πυρᾶς γεραιὸς ἀνὴρ σχήματα μετάλλου ἐκτύπτει.",
+      "glosses": [
+        {
+          "anchor": "παρέρχονται",
+          "note": "= pass",
+          "rank": 1
+        },
+        {
+          "anchor": "τρῆμα",
+          "note": "= hole",
+          "rank": 1
+        },
+        {
+          "anchor": "μικρᾶς",
+          "note": "= small ↔ μέγας",
+          "rank": 1
+        },
+        {
+          "anchor": "γεραιὸς",
+          "note": "= old",
+          "rank": 1
+        },
+        {
+          "anchor": "ἅμαξαν",
+          "note": "= wagon, cart",
+          "rank": 1
+        },
+        {
+          "anchor": "χαλκευτικῆς",
+          "note": "= metalworking, bronze-working",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "greek": "παρέρχονται ἐν θύραις κόρην νέαν ἧς κάλλος ἄνθη τὰ πέριξ γίγνεται.",
+      "glosses": [
+        {
+          "anchor": "θύραις",
+          "note": "= doorway",
+          "rank": 1
+        },
+        {
+          "anchor": "κόρην",
+          "note": "= girl",
+          "rank": 1
+        },
+        {
+          "anchor": "κάλλος",
+          "note": "= beauty ↔ αἶσχος",
+          "rank": 1
+        }
+      ]
+    }
+  ]
+}

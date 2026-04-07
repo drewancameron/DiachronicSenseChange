@@ -1,0 +1,35 @@
+{
+  "sentences": [
+    {
+      "index": 0,
+      "greek": "πόσοι νέοι οἴκαδε ἦλθον ψυχροὶ νεκροί, τοιούτων νυκτῶν τοιούτων τε βουλευμάτων ἀπό.",
+      "glosses": [
+        {
+          "anchor": "πόσοι",
+          "note": "= many",
+          "rank": 1
+        },
+        {
+          "anchor": "ψυχροὶ",
+          "note": "= cold ↔ θερμός",
+          "rank": 1
+        },
+        {
+          "anchor": "νεκροί",
+          "note": "= dead ↔ ζῶν",
+          "rank": 1
+        },
+        {
+          "anchor": "τοιούτων",
+          "note": "= such",
+          "rank": 1
+        },
+        {
+          "anchor": "ἀπό",
+          "note": "= away from, off",
+          "rank": 1
+        }
+      ]
+    }
+  ]
+}

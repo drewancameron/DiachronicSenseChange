@@ -1,0 +1,127 @@
+{
+  "sentences": [
+    {
+      "index": 0,
+      "greek": "ἀφικνοῦνται τέλος πρὸ θύρας ξυλίνης.",
+      "glosses": [
+        {
+          "anchor": "ἀφικνοῦνται",
+          "note": "= arrive",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "greek": "ἥρμοσται δ' εἰς μείζονα θύραν ἢ πύλην, δεῖ δὲ πάντας ὑπερβαίνειν οὐδὸν ποδιαῖον, ἔνθα χίλιαι κρηπῖδες ἀπέτριψαν τὸ ξύλον, ἔνθα μωροὶ κατ' ἑκατοντάδας ἔπταισαν ἢ κατέπεσον ἢ μεθύοντες εἰς τὴν ὁδὸν ἐσαλεύθησαν.",
+      "glosses": [
+        {
+          "anchor": "ἑκατοντάδας",
+          "note": "= hundreds",
+          "rank": 1
+        },
+        {
+          "anchor": "κρηπῖδες",
+          "note": "= foundation stones, bases",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "greek": "παρέρχονται δὲ παρὰ στέγην ἐν αὐλῇ παρὰ γεραιᾷ περγούλῃ ἀμπέλων, ἔνθα μικρὰ ὄρνεα νεύει ἐν κνέφει μεταξὺ ῥυσῶν καὶ ἀκάρπων κλημάτων, εἰσέρχονται δὲ καπηλεῖον ἔνθα λύχνοι καίονται, διαβαίνουσι δὲ κύπτοντες ὑπὸ ταπεινὴν δοκόν, πρὸς πότου τράπεζαν, γαστέρας προβάλλοντες εἷς δύο τρεῖς.",
+      "glosses": [
+        {
+          "anchor": "παρέρχονται",
+          "note": "= pass",
+          "rank": 1
+        },
+        {
+          "anchor": "γεραιᾷ",
+          "note": "= old",
+          "rank": 1
+        },
+        {
+          "anchor": "στέγην",
+          "note": "= arbor",
+          "rank": 1
+        },
+        {
+          "anchor": "μικρὰ",
+          "note": "= small ↔ μέγας",
+          "rank": 1
+        },
+        {
+          "anchor": "νεύει",
+          "note": "= nod",
+          "rank": 1
+        },
+        {
+          "anchor": "κνέφει",
+          "note": "= dusk",
+          "rank": 1
+        },
+        {
+          "anchor": "εἰσέρχονται",
+          "note": "= enter",
+          "rank": 1
+        },
+        {
+          "anchor": "λύχνοι",
+          "note": "= lamps",
+          "rank": 1
+        },
+        {
+          "anchor": "διαβαίνουσι",
+          "note": "= cross",
+          "rank": 1
+        },
+        {
+          "anchor": "ταπεινὴν",
+          "note": "= low ↔ ὑψηλός",
+          "rank": 1
+        },
+        {
+          "anchor": "δοκόν",
+          "note": "= beam",
+          "rank": 1
+        },
+        {
+          "anchor": "τράπεζαν",
+          "note": "= bar",
+          "rank": 1
+        },
+        {
+          "anchor": "γαστέρας",
+          "note": "= belly",
+          "rank": 1
+        },
+        {
+          "anchor": "περγούλῃ",
+          "note": "= vine arbor, trellis",
+          "rank": 1
+        },
+        {
+          "anchor": "ῥυσῶν",
+          "note": "= flowing, streaming water",
+          "rank": 1
+        },
+        {
+          "anchor": "καπηλεῖον",
+          "note": "= tavern, wine shop",
+          "rank": 1
+        },
+        {
+          "anchor": "πότου",
+          "note": "= drinking, drinking party",
+          "rank": 1
+        },
+        {
+          "anchor": "προβάλλοντες",
+          "note": "= projecting, extending forward",
+          "rank": 1
+        }
+      ]
+    }
+  ]
+}

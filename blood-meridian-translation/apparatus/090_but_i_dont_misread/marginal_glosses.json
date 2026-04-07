@@ -1,0 +1,140 @@
+{
+  "sentences": [
+    {
+      "index": 0,
+      "greek": "ἀλλ' οὐ παραγιγνώσκω σε.",
+      "glosses": [
+        {
+          "anchor": "παραγιγνώσκω",
+          "note": "= misread",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "greek": "σπανίως σφάλλομαι περὶ ἀνδρός.",
+      "glosses": [
+        {
+          "anchor": "σφάλλομαι",
+          "note": "= to fall, stumble",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "greek": "οἶμαί σε βούλεσθαι σημεῖόν τι θέσθαι ἐν τῷδε κόσμῳ.",
+      "glosses": [
+        {
+          "anchor": "βούλεσθαι",
+          "note": "= mean",
+          "rank": 1
+        },
+        {
+          "anchor": "σημεῖόν",
+          "note": "= mark",
+          "rank": 1
+        },
+        {
+          "anchor": "σημεῖόν",
+          "note": "= sign, mark",
+          "rank": 1
+        },
+        {
+          "anchor": "σημεῖόν",
+          "note": "= to mark, note",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "greek": "ἆρ' ἁμαρτάνω;",
+      "glosses": [
+        {
+          "anchor": "ἁμαρτάνω",
+          "note": "= to err, sin",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "greek": "οὐχί, ὦναξ.",
+      "glosses": [
+        {
+          "anchor": "ὦναξ",
+          "note": "= O master, lord",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "greek": "οὔ.",
+      "glosses": []
+    },
+    {
+      "index": 6,
+      "greek": "οὐδ' οἴομαί σε τοιοῦτον εἶναι οἷον προδοῦναι γῆν ὑπὲρ ἧς Ἀμερικανοὶ ἐμάχοντο καὶ ἀπέθανον ἀλλοτρίᾳ δυνάμει.",
+      "glosses": []
+    },
+    {
+      "index": 7,
+      "greek": "καὶ σημείωσαι τόνδε λόγον.",
+      "glosses": []
+    },
+    {
+      "index": 8,
+      "greek": "εἰ μὴ Ἀμερικανοὶ δράσουσιν, ἄνδρες οἷοι σύ τε κἀγὼ οἳ σπουδαίως τὴν πατρίδα νομίζομεν, τῶν δὲ μαλθακῶν ἐν Οὐασιγκτῶνι ἐπὶ πυγαῖς καθημένων, εἰ μὴ δράσομεν, Μεξικόν—λέγω δὲ πᾶσαν τὴν χώραν—ποτὲ σημαίαν Εὐρωπαίαν ἀρεῖ.",
+      "glosses": [
+        {
+          "anchor": "νομίζομεν",
+          "note": "= think",
+          "rank": 1
+        },
+        {
+          "anchor": "χώραν",
+          "note": "= country",
+          "rank": 1
+        },
+        {
+          "anchor": "Εὐρωπαίαν",
+          "note": "= european",
+          "rank": 1
+        },
+        {
+          "anchor": "σημαίαν",
+          "note": "= flag",
+          "rank": 1
+        },
+        {
+          "anchor": "δράσουσιν",
+          "note": "= they will do",
+          "rank": 1
+        },
+        {
+          "anchor": "νομίζομεν",
+          "note": "= we think, believe",
+          "rank": 1
+        },
+        {
+          "anchor": "μαλθακῶν",
+          "note": "= soft, gentle",
+          "rank": 1
+        },
+        {
+          "anchor": "ἀρεῖ",
+          "note": "= he will lift",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "greek": "εἴτε Μονρόης δόγμα εἴτε μή.",
+      "glosses": []
+    }
+  ]
+}

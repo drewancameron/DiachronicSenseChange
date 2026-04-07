@@ -1,0 +1,179 @@
+{
+  "sentences": [
+    {
+      "index": 0,
+      "greek": "φωνὴ δ' ἁπαλὴ τε καὶ σύντονος ἐγένετο τοῦ ἄρχοντος.",
+      "glosses": [
+        {
+          "anchor": "ἁπαλὴ",
+          "note": "= soft ↔ τραχύς",
+          "rank": 1
+        },
+        {
+          "anchor": "σύντονος",
+          "note": "= intense",
+          "rank": 1
+        },
+        {
+          "anchor": "ἄρχοντος",
+          "note": "= ruling magistrate",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "greek": "κλίνας δὲ κεφαλὴν ἐς πλευρὰν ἐπέβλεψε τὸν παῖδα εὐνοίᾳ τινί.",
+      "glosses": [
+        {
+          "anchor": "κεφαλὴν",
+          "note": "= head ↔ οὐρά",
+          "rank": 1
+        },
+        {
+          "anchor": "πλευρὰν",
+          "note": "= side ↔ κατὰ",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "greek": "ὁ δὲ παῖς ἔτριβε θέναρα χειρῶν πρὸς γόνασι ῥυπαρῶν περισκελῶν.",
+      "glosses": [
+        {
+          "anchor": "θέναρα",
+          "note": "= palms",
+          "rank": 1
+        },
+        {
+          "anchor": "ῥυπαρῶν",
+          "note": "= filthy",
+          "rank": 1
+        },
+        {
+          "anchor": "περισκελῶν",
+          "note": "= leg armor pieces",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "greek": "βλέψας δ' ἐς τὸν παρ' αὐτῷ ἄνδρα, καθεύδειν ἐφαίνετο.",
+      "glosses": [
+        {
+          "anchor": "καθεύδειν",
+          "note": "= asleep",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "greek": "τί δ' ἐφιππίου πέρι;",
+      "glosses": []
+    },
+    {
+      "index": 5,
+      "greek": "ἔφη.",
+      "glosses": []
+    },
+    {
+      "index": 6,
+      "greek": "ἐφίππιον;",
+      "glosses": [
+        {
+          "anchor": "ἐφίππιον",
+          "note": "= saddle",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "greek": "ναί, κύριε.",
+      "glosses": [
+        {
+          "anchor": "κύριε",
+          "note": "= lord, master",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "greek": "οὐκ ἔχεις ἐφίππιον;",
+      "glosses": [
+        {
+          "anchor": "ἔχεις",
+          "note": "= have",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "greek": "οὐ δῆτα, κύριε.",
+      "glosses": []
+    },
+    {
+      "index": 10,
+      "greek": "ᾤμην σ' ἵππον ἔχειν.",
+      "glosses": []
+    },
+    {
+      "index": 11,
+      "greek": "ἡμίονον.",
+      "glosses": [
+        {
+          "anchor": "ἡμίονον",
+          "note": "= mule",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "greek": "μανθάνω.",
+      "glosses": []
+    },
+    {
+      "index": 13,
+      "greek": "παλαιὸν μέν τι σάγμα ἔχω ἐπὶ τῷ ἡμιόνῳ, ἀλλ' οὐ πολὺ λείπεται αὐτοῦ.",
+      "glosses": [
+        {
+          "anchor": "παλαιὸν",
+          "note": "= old",
+          "rank": 1
+        },
+        {
+          "anchor": "λείπεται",
+          "note": "= left",
+          "rank": 1
+        },
+        {
+          "anchor": "σάγμα",
+          "note": "= pack saddle",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "greek": "οὐδ' αὐτοῦ τοῦ ἡμιόνου πολύ.",
+      "glosses": []
+    },
+    {
+      "index": 15,
+      "greek": "ἔφη δέ με δεῖν ἵππον τε κτήσασθαι καὶ ὅπλον.",
+      "glosses": [
+        {
+          "anchor": "ὅπλον",
+          "note": "= weapon, armor",
+          "rank": 1
+        }
+      ]
+    }
+  ]
+}

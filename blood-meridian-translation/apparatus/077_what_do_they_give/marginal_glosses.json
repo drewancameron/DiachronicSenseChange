@@ -1,0 +1,165 @@
+{
+  "sentences": [
+    {
+      "index": 0,
+      "greek": "τί σοι διδόασιν;",
+      "glosses": [
+        {
+          "anchor": "διδόασιν",
+          "note": "= give",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "greek": "ἵππον ἕκαστος λαμβάνει καὶ βέλη.",
+      "glosses": [
+        {
+          "anchor": "βέλη",
+          "note": "= missiles, arrows, darts",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "greek": "οἶμαι δ' ἂν εὑρεῖν ἐσθῆτά σοι.",
+      "glosses": []
+    },
+    {
+      "index": 3,
+      "greek": "οὐκ ἔχω ὅπλον.",
+      "glosses": [
+        {
+          "anchor": "ὅπλον",
+          "note": "= weapon, armor, arms",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "greek": "εὑρήσομέν σοι.",
+      "glosses": []
+    },
+    {
+      "index": 5,
+      "greek": "τί περὶ μισθοῦ;",
+      "glosses": [
+        {
+          "anchor": "μισθοῦ",
+          "note": "= wages",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "greek": "φεῦ, ὦ παῖ, οὐδὲν δεήσει μισθοῦ.",
+      "glosses": [
+        {
+          "anchor": "φεῦ",
+          "note": "= alas, oh dear",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "greek": "πάντα γὰρ ἕξεις ἃ ἂν λάβῃς.",
+      "glosses": [
+        {
+          "anchor": "λάβῃς",
+          "note": "= you might take, seize",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "greek": "εἰς Μεξικὸν ἐρχόμεθα.",
+      "glosses": []
+    },
+    {
+      "index": 9,
+      "greek": "σκῦλα πολέμου.",
+      "glosses": [
+        {
+          "anchor": "σκῦλα",
+          "note": "= spoils, plunder, booty",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "greek": "οὐδεὶς τῶν ἑταίρων οὐχὶ γεωκτήμων μέγας ἔσται.",
+      "glosses": [
+        {
+          "anchor": "γεωκτήμων",
+          "note": "= landowner, landholder",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "greek": "πόσην γῆν νῦν ἔχεις;",
+      "glosses": []
+    },
+    {
+      "index": 12,
+      "greek": "οὐδὲν οἶδα περὶ στρατείας.",
+      "glosses": [
+        {
+          "anchor": "στρατείας",
+          "note": "= military campaign, expedition",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "greek": "ὁ δ' ἀνὴρ ἔβλεψεν αὐτόν.",
+      "glosses": [
+        {
+          "anchor": "ἔβλεψεν",
+          "note": "= he/she looked, gazed",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "greek": "τὸ ἄκαυστον σιγάρον ἐκ τῶν ὀδόντων λαβὼν τὴν κεφαλὴν ἔστρεψε, πτύσας δ' αὖθις ἔθηκε.",
+      "glosses": [
+        {
+          "anchor": "σιγάρον",
+          "note": "= cigar",
+          "rank": 1
+        },
+        {
+          "anchor": "κεφαλὴν",
+          "note": "= head ↔ οὐρά",
+          "rank": 1
+        },
+        {
+          "anchor": "ἄκαυστον",
+          "note": "= unburnt, unburned",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "greek": "πόθεν εἶ;",
+      "glosses": []
+    },
+    {
+      "index": 16,
+      "greek": "ἔφη.",
+      "glosses": []
+    }
+  ]
+}

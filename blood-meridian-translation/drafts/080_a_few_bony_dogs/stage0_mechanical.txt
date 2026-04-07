@@ -1,0 +1,8 @@
+EN: A few bony dogs slank off before them.
+GR: κύων[ὀν..πλ.] ἀπέρχομαι[ἐνεστ..ἐν..γ´.πλ.] ἀπ' πρό αὐτούς[δοτ..πλ.] ὀλίγος[ἑν.] ἰσχνός[ἑν.]
+
+EN: They rode through the Military Plaza and they passed the little street where the boy and the mule had drunk the night before and there were clusters of women and girls at the well and many shapes of wickercovered clay jars standing about.
+GR: καί καί καί καί καί παῖς[ὀν..ἑν.] ὁρμαθός[ὀν..πλ.] ἐλαύνειν[ἀόρ..ἐν..γ´.πλ.] παρέρχεσθαι[ἀόρ..ἐν..γ´.πλ.] ἔπινον[ἀόρ..ἐν..γ´.πλ.] εἶναι[ἀόρ..ἐν..γ´.πλ.] ⟨wickercovered⟩ ἱστάναι[ἐνεστ..ἐν..γ´.ἑν.] ὁδός[αἰτ..ἑν.] διά ἐν περί πλατεῖα γυνή[γεν..πλ.] φρέαρ[γεν..ἑν.] ἀμφορεύς[γεν..πλ.] περί πολεμικός[ἑν.] μικρός[ἑν.] ποῦ πρόσθεν πολύς[ἑν.] ⟨wickercovered⟩ ἡμίονος[ἑν.] πιών[ἑν.] ἡ νύξ[ἑν.] παῖς[πλ.] εἶδος[πλ.] πηλός[ἑν.]
+
+EN: They passed a little house where women inside were wailing and the little hearsecart stood at the door with the horses patient and motionless in the heat and the flies.
+GR: καί καί καί γυνή[ὀν..πλ.] ⟨hearsecart⟩ παρέρχεσθαι[ἀόρ..ἐν..γ´.πλ.] εἶναι[ἀόρ..ἐν..γ´.πλ.] ὀδύρεσθαι[ἐνεστ..ἐν..γ´.ἑν.] ἱστάναι[ἀόρ..ἐν..γ´.ἑν.] οἶκος[αἰτ..ἑν.] ἐν μετά ἐν θύρα[δοτ..ἑν.] ὁ ἵππος[δοτ..πλ.] καῦμα[δοτ..ἑν.] μικρός[ἑν.] ποῦ ἔνδον μικρός[ἑν.] ὑπομονή[ἑν.] ἀκίνητος[ἑν.] μυῖα[πλ.]

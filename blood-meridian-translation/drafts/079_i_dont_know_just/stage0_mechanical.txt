@@ -1,0 +1,29 @@
+EN: I dont know.
+GR: ἐγώ[ὀν..ἑν.] ποιεῖν[ἐνεστ..ἐν..α´.ἑν.] οἶδα[ἐνεστ..ἐν..γ´.ἑν.]
+
+EN: Just come with me and meet the captain.
+GR: καί ἔρχεσθαι[ἐνεστ..προστ..ἐν..γ´.ἑν.] ἀπαντάν[ἐνεστ..προστ..ἐν..γ´.ἑν.] ναύαρχος[αἰτ..ἑν.] μετά ἐγώ[δοτ..ἑν.] ἀλλά
+
+EN: The boy pulled at the halms of grass.
+GR: παῖς[ὀν..ἑν.] ἕλκειν[ἀόρ..ἐν..γ´.ἑν.] ἐν κάλαμος[δοτ..πλ.] πόα[γεν..ἑν.]
+
+EN: He looked at the horse again.
+GR: βλέπειν[ἀόρ..ἐν..γ´.ἑν.] ἐν ὁ ἵππος[δοτ..ἑν.] πάλιν
+
+EN: Well, he said.
+GR: εἶπεν[ἀόρ..ἐν..γ´.ἑν.] ὦ
+
+EN: Dont reckon it'd hurt nothin.
+GR: ποιεῖν[ἐνεστ..ἐν..γ´.ἑν.] δοκεῖν[ἐνεστ..προστ..ἐν..γ´.ἑν.] μακάρι[ἐνεστ..ἐν..γ´.ἑν.] βλάπτειν[ἐνεστ..ἐν..γ´.ἑν.]
+
+EN: They rode through the town with the recruiter splendid on the stockingfooted horse and the kid behind him on the mule like something he'd captured.
+GR: καί ἐλαύνειν[ἀόρ..ἐν..γ´.πλ.] μακάρι[ἀόρ..ἐν..γ´.ἑν.] ἁλίσκεσθαι[ἀόρ..ἐν..γ´.ἑν.] ὁ παῖς διά μετά ἐπί ὄπισθεν ἐπί ὡς ἄστυ[δοτ..ἑν.] στρατολόγος[δοτ..ἑν.] ὁ ἵππος[δοτ..ἑν.] αὐτός[γεν..ἑν.] ἡμίονος[γεν..ἑν.] λαμπρός[ἑν.] ⟨stockingfooted⟩
+
+EN: They rode through narrow lanes where the wattled huts steamed in the heat.
+GR: κάλυβα[ὀν..πλ.] ἐλαύνειν[ἀόρ..ἐν..γ´.πλ.] πλεκτός[ἀόρ..παθ..γ´.ἑν.] τυφόμενος[ἀόρ..ἐν..γ´.πλ.] διά ἐν στενωπός[δοτ..πλ.] καῦμα[δοτ..ἑν.] στενός[ἑν.] ὅπου πλεκτός[ἀόρ..παθ..γ´.ἑν.]
+
+EN: Grass and prickly pear grew on the roofs and goats walked about on them and somewhere off in that squalid kingdom of mud the sound of the little deathbells tolled thinly.
+GR: καί καί καί ὀπώρα[ὀν..ἑν.] αἶγα[ὀν..πλ.] φωνή[ὀν..ἑν.] φύειν[ἀόρ..ἐν..γ´.πλ.] περιπατεῖν[ἀόρ..ἐν..γ´.πλ.] κάδω[ἀόρ..ἐν..γ´.πλ.] ἐπί περί ἐπί ἐν ὄροφος[δοτ..πλ.] αὐτός[δοτ..πλ.] βασιλεία[δοτ..ἑν.] πηλός[γεν..ἑν.] κώδων[γεν..πλ.] ἐκποδών αὐχμηρός[ἑν.] μικρός[ἑν.] λεπτῶς πόα[ἑν.] ἀκανθώδης[ἑν.] που ἐκεῖνος
+
+EN: They turned up Commerce Street through the Main Plaza among rafts of wagons and they crossed another plaza where boys were selling grapes and figs from little trundlecarts.
+GR: καί καί παῖς[ὀν..πλ.] ἐστραμμένος[ἀόρ..ἐν..γ´.πλ.] διαβαίνειν[ἀόρ..ἐν..γ´.πλ.] εἶναι[ἀόρ..ἐν..γ´.πλ.] πωλεῖν[ἐνεστ..ἐν..γ´.ἑν.] ὁδός τετράγωνον[αἰτ..ἑν.] σταφυλή[αἰτ..πλ.] ἀνά διά ἐν ἀπό *Plaza σχεδία[δοτ..πλ.] ἁμάξα[γεν..πλ.] ἅμαξα[δοτ..πλ.] μέγιστος[ἑν.] ποῦ μικρός[ἑν.] ἐμπορία ἄλλος σῦκον[πλ.]

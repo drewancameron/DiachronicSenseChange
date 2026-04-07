@@ -1,0 +1,93 @@
+{
+  "sentences": [
+    {
+      "index": 0,
+      "greek": "ἦν ὁ Μεννωνίτης.",
+      "glosses": []
+    },
+    {
+      "index": 1,
+      "greek": "θερμὸς δ' ἄνεμος ἔπνει, πολιὸν δ' ἀνατολὴ φῶς εἶχεν.",
+      "glosses": [
+        {
+          "anchor": "θερμὸς",
+          "note": "= warm ↔ ψυχρός",
+          "rank": 1
+        },
+        {
+          "anchor": "ἄνεμος",
+          "note": "= wind",
+          "rank": 1
+        },
+        {
+          "anchor": "ἀνατολὴ",
+          "note": "= east ↔ δύσις",
+          "rank": 1
+        },
+        {
+          "anchor": "πολιὸν",
+          "note": "= gray",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "greek": "ὄρνιθες δ' ἐν ἀμπέλοις αὐλιζόμενοι ἤρξαντο κινεῖσθαί τε καὶ βοᾶν.",
+      "glosses": [
+        {
+          "anchor": "ὄρνιθες",
+          "note": "= fowls",
+          "rank": 1
+        },
+        {
+          "anchor": "κινεῖσθαί",
+          "note": "= stir",
+          "rank": 1
+        },
+        {
+          "anchor": "αὐλιζόμενοι",
+          "note": "= lodging, camping out",
+          "rank": 1
+        },
+        {
+          "anchor": "βοᾶν",
+          "note": "= to shout, cry out",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "greek": "οὐκ ἔστι τοιαύτη χαρὰ ἐν καπηλείῳ οἵα ἐπὶ τῆς ὁδοῦ τῆς ἐκεῖσε, ἔφη ὁ Μεννωνίτης.",
+      "glosses": [
+        {
+          "anchor": "καπηλείῳ",
+          "note": "= tavern",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "greek": "πέτασον δ' ἐν χερσὶν ἔχων τότε μὲν ἦν, νῦν δ' ἐπὶ κεφαλῆς θεὶς πάλιν στραφεὶς ἔξω πυλῶν ἔβη.",
+      "glosses": [
+        {
+          "anchor": "πέτασον",
+          "note": "= hat",
+          "rank": 1
+        },
+        {
+          "anchor": "κεφαλῆς",
+          "note": "= head ↔ οὐρά",
+          "rank": 1
+        },
+        {
+          "anchor": "στραφεὶς",
+          "note": "= having turned, turning around",
+          "rank": 1
+        }
+      ]
+    }
+  ]
+}

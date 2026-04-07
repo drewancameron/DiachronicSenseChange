@@ -1,0 +1,158 @@
+{
+  "sentences": [
+    {
+      "index": 0,
+      "greek": "ὃ φέρει φέρει.",
+      "glosses": [
+        {
+          "anchor": "φέρει",
+          "note": "= brings",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "greek": "ἄλλον βοῦν κατέκτανον.",
+      "glosses": [
+        {
+          "anchor": "κατέκτανον",
+          "note": "= they killed, slew",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "greek": "οὐ βούλομαι ἀκούειν.",
+      "glosses": []
+    },
+    {
+      "index": 3,
+      "greek": "οὐδὲν δύναμαι πρὸς αὐτούς.",
+      "glosses": []
+    },
+    {
+      "index": 4,
+      "greek": "οὐ φράσω τῷ ἄρχοντι.",
+      "glosses": [
+        {
+          "anchor": "ἄρχοντι",
+          "note": "= to the ruler, magistrate",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "greek": "τοὺς ὀφθαλμοὺς περιστρέψει ἕως ἂν λυθέντες εἰς γῆν πέσωσιν.",
+      "glosses": [
+        {
+          "anchor": "ὀφθαλμοὺς",
+          "note": "= eyes ↔ εἰς",
+          "rank": 1
+        },
+        {
+          "anchor": "λυθέντες",
+          "note": "= having been released, freed",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "greek": "ὁ δ' ἀνὴρ πάλιν ἔπτυσεν.",
+      "glosses": []
+    },
+    {
+      "index": 7,
+      "greek": "εὖ γε·",
+      "glosses": []
+    },
+    {
+      "index": 8,
+      "greek": "τοῦτό γ' ἀληθὲς ὡς θεῶν.",
+      "glosses": []
+    },
+    {
+      "index": 9,
+      "greek": "τοῦδε νῦν ἐπιμελοῦ.",
+      "glosses": [
+        {
+          "anchor": "ἐπιμελοῦ",
+          "note": "= see",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "greek": "δεῖ με ἀπελθεῖν.",
+      "glosses": [
+        {
+          "anchor": "ἀπελθεῖν",
+          "note": "= to go away, depart",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "greek": "εἶεν.",
+      "glosses": []
+    },
+    {
+      "index": 12,
+      "greek": "μή τις νοσεῖ;",
+      "glosses": []
+    },
+    {
+      "index": 13,
+      "greek": "οὔ.",
+      "glosses": []
+    },
+    {
+      "index": 14,
+      "greek": "θεοῖς χάρις.",
+      "glosses": [
+        {
+          "anchor": "θεοῖς",
+          "note": "= gratitude to gods, thanks",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "greek": "εἰς τὸν ἵππον ἀναβὰς ἡνίαις κούφως τράχηλον ἥψατο.",
+      "glosses": [
+        {
+          "anchor": "ἡνίαις",
+          "note": "= reins ↔ ἐκ",
+          "rank": 1
+        },
+        {
+          "anchor": "ἀναβὰς",
+          "note": "= having gone up, ascended",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "greek": "ἀποβλέψας δ' ἔσεισε τὴν κεφαλήν.",
+      "glosses": [
+        {
+          "anchor": "κεφαλήν",
+          "note": "= head ↔ οὐρά",
+          "rank": 1
+        },
+        {
+          "anchor": "ἀποβλέψας",
+          "note": "= having looked away, glanced",
+          "rank": 1
+        }
+      ]
+    }
+  ]
+}

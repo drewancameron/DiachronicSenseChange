@@ -1,0 +1,224 @@
+{
+  "sentences": [
+    {
+      "index": 0,
+      "greek": "*Tennessee.",
+      "glosses": []
+    },
+    {
+      "index": 1,
+      "greek": "*Tennessee.",
+      "glosses": []
+    },
+    {
+      "index": 2,
+      "greek": "οὐ μὴν ἀπιστῶ ἀλλ' ἦ που τόξον βάλλεις.",
+      "glosses": [
+        {
+          "anchor": "τόξον",
+          "note": "= rifle",
+          "rank": 1
+        },
+        {
+          "anchor": "ἀπιστῶ",
+          "note": "= I disbelieve",
+          "rank": 1
+        },
+        {
+          "anchor": "βάλλεις",
+          "note": "= you throw",
+          "rank": 1
+        },
+        {
+          "anchor": "ἦ",
+          "note": "= indeed, verily",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "greek": "ὥκλασεν ὁ παῖς ἐν πόᾳ.",
+      "glosses": [
+        {
+          "anchor": "ὥκλασεν",
+          "note": "= he wept",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "greek": "ἔβλεψεν εἰς τὸν ἵππον τἀνδρός.",
+      "glosses": [
+        {
+          "anchor": "ἔβλεψεν",
+          "note": "= he looked",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "greek": "ὁ δ' ἵππος κεκόσμητο σκύτεσι τορευτοῖς ἀργύρῳ τ' εἰργασμένῳ.",
+      "glosses": [
+        {
+          "anchor": "κεκόσμητο",
+          "note": "= it was adorned",
+          "rank": 1
+        },
+        {
+          "anchor": "τορευτοῖς",
+          "note": "= embossed, carved",
+          "rank": 1
+        },
+        {
+          "anchor": "εἰργασμένῳ",
+          "note": "= worked, wrought",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "greek": "λευκὸν μὲν σέλας κατὰ πρόσωπον, λευκαὶ δὲ κνῆμαι τέτταρες, ἔνεμε δὲ μεγάλαις γνάθοις πίονα πόαν.",
+      "glosses": [
+        {
+          "anchor": "πόαν",
+          "note": "= grass",
+          "rank": 1
+        },
+        {
+          "anchor": "λευκὸν",
+          "note": "= white ↔ μέλας",
+          "rank": 1
+        },
+        {
+          "anchor": "λευκὸν",
+          "note": "= stockings",
+          "rank": 1
+        },
+        {
+          "anchor": "σέλας",
+          "note": "= brightness, splendor",
+          "rank": 1
+        },
+        {
+          "anchor": "κνῆμαι",
+          "note": "= greaves, leg armor",
+          "rank": 1
+        },
+        {
+          "anchor": "ἔνεμε",
+          "note": "= he distributed",
+          "rank": 1
+        },
+        {
+          "anchor": "γνάθοις",
+          "note": "= jaws, cheeks",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "greek": "πόθεν εἶ, ἔφη ὁ παῖς.",
+      "glosses": []
+    },
+    {
+      "index": 8,
+      "greek": "ἐν Τέξᾳ εἰμὶ ἐξ τριάκοντ' ὀκτώ.",
+      "glosses": [
+        {
+          "anchor": "τριάκοντ",
+          "note": "= thirty-eight",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "greek": "εἰ μὴ συνέκυρσα λοχαγῷ Λευκῷ οὐκ οἶδ' ὅπου ἂν ἦ τήνδ' ἡμέραν.",
+      "glosses": [
+        {
+          "anchor": "συνέκυρσα",
+          "note": "= I met with",
+          "rank": 1
+        },
+        {
+          "anchor": "λοχαγῷ",
+          "note": "= company commander",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "greek": "ἀθλιώτερον θέαμα ἦ ἢ σὺ νῦν, ὁ δ' ἐλθὼν ἤγειρέ μ' ὥσπερ Λάζαρον.",
+      "glosses": [
+        {
+          "anchor": "ἀθλιώτερον",
+          "note": "= more wretched",
+          "rank": 1
+        },
+        {
+          "anchor": "ἤγειρέ",
+          "note": "= he roused",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "greek": "ἔστησε πόδας μου ἐν ὁδῷ δικαιοσύνης.",
+      "glosses": []
+    },
+    {
+      "index": 12,
+      "greek": "μέθῃ καὶ πόρναις προσκείμενος ὥστε μηδ' ᾍδην δέχεσθαί με.",
+      "glosses": [
+        {
+          "anchor": "προσκείμενος",
+          "note": "= fitted",
+          "rank": 1
+        },
+        {
+          "anchor": "μέθῃ",
+          "note": "= intoxication, drunkenness",
+          "rank": 1
+        },
+        {
+          "anchor": "πόρναις",
+          "note": "= prostitutes, harlots",
+          "rank": 1
+        },
+        {
+          "anchor": "προσκείμενος",
+          "note": "= devoted, attached",
+          "rank": 1
+        },
+        {
+          "anchor": "δέχεσθαί",
+          "note": "= to receive, accept",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "greek": "ἐκεῖνος εἶδέ τι ἐν ἐμοὶ σωτήριον κἀγὼ ἐν σοί.",
+      "glosses": [
+        {
+          "anchor": "σωτήριον",
+          "note": "= saving, salvation",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "greek": "τί φῄς;",
+      "glosses": []
+    }
+  ]
+}

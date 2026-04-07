@@ -1,0 +1,35 @@
+EN: There are already some fourteen thousand French colonists in the state of Sonora.
+GR: ἄποικος[ὀν..πλ.] εἶναι[ἐνεστ..ἐν..γ´.πλ.] ἐν πολιτεία[γεν..ἑν.] *Sonora ἤδη τεσσαρεσκαίδεκα χίλιοι Γαλλικός[ἑν.] τις
+
+EN: They're being given free land to settle.
+GR: εἰμί[ἐνεστ..ἐν..γ´.πλ.] εἶναι[ἐνεστ..ἐν..γ´.ἑν.] δίδωμι[ἀόρ..παθ..γ´.ἑν.] οἰκέω[ἐνεστ..ἐν..γ´.ἑν.] γῆ[αἰτ..ἑν.] ἐλεύθερος[ἑν.]
+
+EN: They're being given tools and livestock.
+GR: καί εἰμί[ἐνεστ..ἐν..γ´.πλ.] εἶναι[ἐνεστ..ἐν..γ´.ἑν.] δίδομαι[ἀόρ..παθ..γ´.ἑν.] ἐργαλεῖον[αἰτ..πλ.] βοσκήματα[ἑν.]
+
+EN: Enlightened Mexicans encourage this.
+GR: Μεξικανοί προτρέπειν[ἐνεστ..ἐν..γ´.πλ.] οὗτος[αἰτ..ἑν.] πεπαιδευμένος[ἑν.]
+
+EN: Paredes is already calling for secession from the Mexican government.
+GR: *Paredes εἶναι[ἐνεστ..ἐν..γ´.ἑν.] προσκαλεῖν[ἐνεστ..ἐν..γ´.ἑν.] ὑπέρ ἀπό ἀπόστασις[δοτ..ἑν.] κυβέρνησις[δοτ..ἑν.] ἤδη ⟨Mexican⟩
+
+EN: They'd rather be ruled by toadeaters than thieves and imbeciles.
+GR: καί μακάρι[ἐνεστ..ἐν..γ´.ἑν.] εἶναι[ἐνεστ..ἐν..γ´.ἑν.] ἄγειν[ἀόρ..παθ..γ´.ἑν.] παρά ἤ κλέπτης[δοτ..πλ.] μᾶλλον κολακεύς[πλ.] ἄνοια[πλ.]
+
+EN: Colonel Carrasco is asking for American intervention.
+GR: *Colonel εἶναι[ἐνεστ..ἐν..γ´.ἑν.] αἰτεῖν[ἐνεστ..ἐν..γ´.ἑν.] ὑπέρ παρέμβασις[δοτ..ἑν.] ⟨American⟩ *Carrasco
+
+EN: And he's going to get it.
+GR: καί εἶναι[ἐνεστ..ἐν..γ´.ἑν.] μέλλειν[ἐνεστ..ἐν..γ´.ἑν.] λαμβάνειν[ἐνεστ..ἐν..γ´.ἑν.]
+
+EN: Right now they are forming in Washington a commission to come out here and draw up the boundary lines between our country and Mexico.
+GR: καί καί εἶναι[ἐνεστ..ἐν..γ´.πλ.] συνίστανται[ἐνεστ..ἐν..γ´.ἑν.] ἔρχεσθαι[ἐνεστ..ἐν..γ´.ἑν.] γράφειν[ἐνεστ..ἐν..γ´.ἑν.] ἐπιτροπή[αἰτ..ἑν.] γραμμή[αἰτ..πλ.] ἐν ἀνά μεταξύ *Washington χώρα[γεν..ἑν.] νῦν νῦν ἔξω ἐνταῦθα ὅρος[ἑν.] ἡμέτερος[γεν..πλ.] *Mexico
+
+EN: I dont think there's any question that ultimately Sonora will become a United States territory.
+GR: ἐγώ[ὀν..ἑν.] ἀμφισβήτησις[ὀν..ἑν.] *Sonora ποιεῖν[ἐνεστ..ἐν..α´.ἑν.] νομίζειν[ἐνεστ..ἐν..γ´.ἑν.] εἶναι[ἐνεστ..ἐν..γ´.ἑν.] μέλλειν[ἐνεστ..ἐν..γ´.ἑν.] γίγνεσθαι[ἐνεστ..ἐν..γ´.ἑν.] ἡνωμένος[ἀόρ..ἐν..γ´.ἑν.] τελικῶς ἡνωμένος[ἀόρ..ἐν..γ´.ἑν.] τις κράτος ἐπιτήδειος[ἑν.]
+
+EN: Guaymas a U S port.
+GR: *Guaymas *U *S λιμήν[ὀν..ἑν.]
+
+EN: Americans will be able to get to California without having to pass through our benighted sister republic and our citizens will be protected at last from the notorious packs of cutthroats presently infesting the routes which they are obliged to travel.
+GR: καί ὅς *Americans πολίτης[ὀν..πλ.] βουλεύειν[ἐνεστ..ἐν..γ´.ἑν.] εἶναι[ἐνεστ..ἐν..γ´.ἑν.] κτᾶσθαι[ἐνεστ..ἐν..γ´.ἑν.] ἔχειν[ἐνεστ..ἐν..γ´.ἑν.] παραδιδόναι[ἐνεστ..ἐν..γ´.ἑν.] βουλεύειν[ἐνεστ..ἐν..γ´.ἑν.] εἶναι[ἐνεστ..ἐν..γ´.ἑν.] φυλάσσειν[ἀόρ..παθ..γ´.ἑν.] λυπεῖν[ἐνεστ..ἐν..γ´.ἑν.] εἶναι[ἐνεστ..ἐν..γ´.πλ.] χαρίζεσθαι[ἀόρ..παθ..γ´.ἑν.] πορεύεσθαι[ἐνεστ..ἐν..γ´.ἑν.] ἴχνος[αἰτ..πλ.] ὅς[αἰτ..ἑν.] πρός διά ἐν ἀπό *California δημοκρατία[δοτ..ἑν.] τελευταῖος[δοτ..ἑν.] συνάγειν[δοτ..πλ.] φονεύς[γεν..πλ.] ἀπαίδευτος[ἑν.] περιβόητος[ἑν.] τάχα φρόνιμος[ἑν.] ἡμέτερος[γεν..πλ.] ἀδελφή[ἑν.] ἡμέτερος[γεν..πλ.]

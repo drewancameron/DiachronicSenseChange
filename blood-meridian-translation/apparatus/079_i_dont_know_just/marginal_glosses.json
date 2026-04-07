@@ -1,0 +1,165 @@
+{
+  "sentences": [
+    {
+      "index": 0,
+      "greek": "οὐκ οἶδα.",
+      "glosses": []
+    },
+    {
+      "index": 1,
+      "greek": "ἀλλ' ἕπου μόνον καὶ τῷ ἡγεμόνι ἔντυχε.",
+      "glosses": [
+        {
+          "anchor": "ἡγεμόνι",
+          "note": "= leader, commander",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "greek": "ὁ παῖς καλάμους πόας ἔσπα.",
+      "glosses": [
+        {
+          "anchor": "πόας",
+          "note": "= grass",
+          "rank": 1
+        },
+        {
+          "anchor": "ἔσπα",
+          "note": "= drew, pulled",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "greek": "πάλιν ἵππον ἔβλεψεν.",
+      "glosses": []
+    },
+    {
+      "index": 4,
+      "greek": "εἶεν, ἔφη.",
+      "glosses": []
+    },
+    {
+      "index": 5,
+      "greek": "οὐκ ἄν τι βλάψειε.",
+      "glosses": []
+    },
+    {
+      "index": 6,
+      "greek": "ἤλαυνον δι' ἄστεως, ὁ μὲν στρατολόγος λαμπρὸς ἐφ' ἵππῳ γυμνόποδι, ὁ δὲ παῖς ὄπισθεν ἐπ' ὀρέως, οἷόν τι θήραμα.",
+      "glosses": [
+        {
+          "anchor": "στρατολόγος",
+          "note": "= recruiter",
+          "rank": 1
+        },
+        {
+          "anchor": "λαμπρὸς",
+          "note": "= splendid ↔ σκοτεινός",
+          "rank": 1
+        },
+        {
+          "anchor": "γυμνόποδι",
+          "note": "= barefoot",
+          "rank": 1
+        },
+        {
+          "anchor": "θήραμα",
+          "note": "= hunted prey, quarry",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "greek": "διὰ στενωπῶν, ᾗ πλεκταὶ καλύβαι ἀτμίζουσιν ἐν καύματι.",
+      "glosses": [
+        {
+          "anchor": "στενωπῶν",
+          "note": "= narrow ↔ εὐρύς",
+          "rank": 1
+        },
+        {
+          "anchor": "στενωπῶν",
+          "note": "= lanes",
+          "rank": 1
+        },
+        {
+          "anchor": "πλεκταὶ",
+          "note": "= wattled",
+          "rank": 1
+        },
+        {
+          "anchor": "ἀτμίζουσιν",
+          "note": "= steam, emit vapor",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "greek": "πόα τε καὶ ἀκανθόκαρπος ἐπ' ὀρόφοις ἐφύετο, αἶγές τ' ἐπ' αὐτοῖς περιεπάτουν, καί που ἐν αὐχμηρᾷ ἐκείνῃ πηλοῦ βασιλείᾳ μικρῶν θανατοκωδώνων φωνὴ λεπτὴ ἠχεῖτο.",
+      "glosses": [
+        {
+          "anchor": "ἀκανθόκαρπος",
+          "note": "= prickly",
+          "rank": 1
+        },
+        {
+          "anchor": "περιεπάτουν",
+          "note": "= walked",
+          "rank": 1
+        },
+        {
+          "anchor": "αὐχμηρᾷ",
+          "note": "= squalid",
+          "rank": 1
+        },
+        {
+          "anchor": "μικρῶν",
+          "note": "= little ↔ μέγας",
+          "rank": 1
+        },
+        {
+          "anchor": "ἀκανθόκαρπος",
+          "note": "= thorny-fruited",
+          "rank": 1
+        },
+        {
+          "anchor": "ἠχεῖτο",
+          "note": "= resounded, echoed",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "greek": "ἀνέστρεψαν εἰς ἐμπορίας ὁδὸν διὰ μεγίστης ἀγορᾶς ἐν σχεδίαις ἁμαξῶν, καὶ ἄλλην ἀγορὰν διέβησαν οὗ παῖδες σταφυλάς τε καὶ σῦκα ἀπὸ μικρῶν τροχηλάτων ἐπώλουν.",
+      "glosses": [
+        {
+          "anchor": "ἐμπορίας",
+          "note": "= commerce",
+          "rank": 1
+        },
+        {
+          "anchor": "σχεδίαις",
+          "note": "= rafts",
+          "rank": 1
+        },
+        {
+          "anchor": "σταφυλάς",
+          "note": "= grapes ↔ ὄμφαξ",
+          "rank": 1
+        },
+        {
+          "anchor": "τροχηλάτων",
+          "note": "= wheel-driven, chariot",
+          "rank": 1
+        }
+      ]
+    }
+  ]
+}

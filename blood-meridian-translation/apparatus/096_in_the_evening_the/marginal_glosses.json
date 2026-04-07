@@ -1,0 +1,234 @@
+{
+  "sentences": [
+    {
+      "index": 0,
+      "greek": "ἑσπέρας δ' ὁ παῖς σὺν δυοῖν ἑτέροιν νεοστρατεύτοιν εἰς ἄστυ ᾤχετο.",
+      "glosses": [
+        {
+          "anchor": "ἑσπέρας",
+          "note": "= evening",
+          "rank": 1
+        },
+        {
+          "anchor": "νεοστρατεύτοιν",
+          "note": "= newly enlisted soldiers",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "greek": "λελουμένος δὲ καὶ ἐξυρημένος, ἀναβολάς τε κυανέας σχοινίνας καὶ χιτῶνα λινοῦν ὃν ὁ λοχαγὸς ἔδωκεν ἀμπέχων, πλὴν ἐμβάδων νέος τις ἐφαίνετο παντάπασιν.",
+      "glosses": [
+        {
+          "anchor": "ἐμβάδων",
+          "note": "= boots",
+          "rank": 1
+        },
+        {
+          "anchor": "νέος",
+          "note": "= new ↔ γέρων",
+          "rank": 1
+        },
+        {
+          "anchor": "ἐξυρημένος",
+          "note": "= shaved or depilated",
+          "rank": 1
+        },
+        {
+          "anchor": "ἀναβολάς",
+          "note": "= delays or postponements",
+          "rank": 1
+        },
+        {
+          "anchor": "σχοινίνας",
+          "note": "= made of rope",
+          "rank": 1
+        },
+        {
+          "anchor": "λινοῦν",
+          "note": "= made of linen",
+          "rank": 1
+        },
+        {
+          "anchor": "λοχαγὸς",
+          "note": "= platoon commander",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "greek": "οἱ δ' ἑταῖροι μικροὺς ἵππους ποικίλους ἤλαυνον, οἳ πρὸ τεσσαράκοντα ἡμερῶν ἔτ' ἄγρια θηρία πεδίων ἦσαν·",
+      "glosses": [
+        {
+          "anchor": "μικροὺς",
+          "note": "= small ↔ μέγας",
+          "rank": 1
+        },
+        {
+          "anchor": "ποικίλους",
+          "note": "= colorful",
+          "rank": 1
+        },
+        {
+          "anchor": "ἄγρια",
+          "note": "= wild ↔ ἥμερος",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "greek": "οἱ δ' ἀνεσκίρτων καὶ ἐπήδων καὶ δάκνειν ἐπειρῶντο χελωνῶν δίκην.",
+      "glosses": [
+        {
+          "anchor": "δάκνειν",
+          "note": "= snapped",
+          "rank": 1
+        },
+        {
+          "anchor": "χελωνῶν",
+          "note": "= turtles",
+          "rank": 1
+        },
+        {
+          "anchor": "ἀνεσκίρτων",
+          "note": "= leaped up",
+          "rank": 1
+        },
+        {
+          "anchor": "ἐπήδων",
+          "note": "= jumped or sprang",
+          "rank": 1
+        },
+        {
+          "anchor": "ἐπειρῶντο",
+          "note": "= attempted or tried",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "greek": "μένε γ' ἕως ἂν τούτων τιν' αὐτὸς κτήσῃ, ἔφη ὁ δεύτερος δεκαδάρχης.",
+      "glosses": [
+        {
+          "anchor": "δεύτερος",
+          "note": "= second",
+          "rank": 1
+        },
+        {
+          "anchor": "δεκαδάρχης",
+          "note": "= corporal",
+          "rank": 1
+        },
+        {
+          "anchor": "δεκαδάρχης",
+          "note": "= corporal",
+          "rank": 1
+        },
+        {
+          "anchor": "δεκαδάρχης",
+          "note": "= commander of ten",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "greek": "οὔπω γὰρ τέρψιν ἔσχες οὐδεμίαν.",
+      "glosses": [
+        {
+          "anchor": "τέρψιν",
+          "note": "= pleasure or entertainment",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "greek": "ἀγαθοί γ' εἰσὶν οὗτοι οἱ ἵπποι, εἶπεν ὁ ἕτερος.",
+      "glosses": [
+        {
+          "anchor": "ἕτερος",
+          "note": "= other ↔ ἀμφοτέρως",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "greek": "ἔτ' εἰσὶν ἐκεῖ εἷς ἢ δύο οἵ σ' ἂν ἵππον ποιήσειαν.",
+      "glosses": []
+    },
+    {
+      "index": 8,
+      "greek": "ὁ δὲ παῖς ἀφ' ἡμιόνου κάτω αὐτοὺς ἔβλεπεν.",
+      "glosses": [
+        {
+          "anchor": "κάτω",
+          "note": "= down or below",
+          "rank": 1
+        },
+        {
+          "anchor": "ἔβλεπεν",
+          "note": "= looked or gazed",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "greek": "οἱ δ' ἑκατέρωθεν ὥσπερ πομποὶ ἤλαυνον, ἡ δ' ἡμίονος ἔτρεχε κεφαλὴν ἄνω ἔχουσα, ὀφθαλμοὺς δειλῶς περιάγουσα.",
+      "glosses": [
+        {
+          "anchor": "περιάγουσα",
+          "note": "= wait",
+          "rank": 1
+        },
+        {
+          "anchor": "ἡμίονος",
+          "note": "= mule",
+          "rank": 1
+        },
+        {
+          "anchor": "κεφαλὴν",
+          "note": "= head ↔ οὐρά",
+          "rank": 1
+        },
+        {
+          "anchor": "ὀφθαλμοὺς",
+          "note": "= eyes ↔ εἰς",
+          "rank": 1
+        },
+        {
+          "anchor": "πομποὶ",
+          "note": "= escorts or processions",
+          "rank": 1
+        },
+        {
+          "anchor": "ἔτρεχε",
+          "note": "= ran or was running",
+          "rank": 1
+        },
+        {
+          "anchor": "περιάγουσα",
+          "note": "= leading around",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "greek": "πάντες σε κεφαλὴν εἰς γῆν ὤσουσιν, ἔφη ὁ δεύτερος δεκαδάρχης.",
+      "glosses": [
+        {
+          "anchor": "ὤσουσιν",
+          "note": "= will push or shove",
+          "rank": 1
+        }
+      ]
+    }
+  ]
+}

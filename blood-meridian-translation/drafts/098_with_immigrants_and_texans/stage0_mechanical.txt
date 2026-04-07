@@ -1,0 +1,23 @@
+EN: With immigrants and Texans and Mexicans and with slaves and Lipan Indians and deputations of Karankawas tall and austere, their faces dyed blue and their hands locked about the shafts of their sixfoot spears, all but naked savages who with their painted skins and their whispered taste for human flesh seemed outrageous presences even in that fabled company.
+GR: καί καί καί καί καί καί καί ἀλλά καί ὅς πρόσωπον[ὀν..πλ.] χείρ[ὀν..πλ.] ὅς[ὀν..ἑν.] βαφή[ἀόρ..ἐν..γ´.πλ.] περιέχειν[ἀόρ..ἐν..γ´.πλ.] χρωματίζειν[ἀόρ..παθ..γ´.ἑν.] ψιθυρίζειν[ἀόρ..παθ..γ´.ἑν.] φαίνεσθαι[ἀόρ..ἐν..γ´.πλ.] παρουσία[αἰτ..πλ.] μετά μετά περί μετά ὑπέρ ἐν νέηλῠς[δοτ..πλ.] *Karankawas ξύλον[δοτ..πλ.] δόρυ[γεν..πλ.] χρώς[γεν..πλ.] σάρξ[γεν..ἑν.] ὁμιλία[δοτ..ἑν.] ⟨Lipan⟩ ὑψηλός[ἑν.] χρωματίζειν[ἀόρ..παθ..γ´.ἑν.] ψιθυρίζειν[ἀόρ..παθ..γ´.ἑν.] ἀνθρώπειος[ἑν.] δεινός[ἑν.] καί μυθώδης[ἑν.] *Texans *Mexicans δοῦλος[πλ.] Ἰνδικός πρεσβεία[πλ.] σεμνός[ἑν.] αὐτός[γεν..πλ.] κυάνεος[ἑν.] αὐτός[γεν..πλ.] αὐτός[γεν..πλ.] ⟨sixfoot⟩ πᾶς γυμνός[ἑν.] βάρβαρος[ὀν..πλ.] αὐτός[γεν..πλ.] αὐτός[γεν..πλ.] γεῦσις[ἑν.] ἐκεῖνος
+
+EN: The recruits rode with their animals close reined and they turned up past the courthouse and along the high walls of the carcel with the broken glass imbedded in the topmost course.
+GR: καί καί νεολαία[ὀν..πλ.] ἐλαύνειν[ἀόρ..ἐν..γ´.πλ.] χαλινόω[ἀόρ..παθ..γ´.ἑν.] ἐστραμμένος[ἀόρ..ἐν..γ´.πλ.] σύντριπτος[ἀόρ..παθ..γ´.ἑν.] ἐμπήγνυμι[ἀόρ..παθ..γ´.ἑν.] μετά ἀνά παρά παρά μετά ἐν ζῷον[δοτ..πλ.] ⟨courthouse⟩ δεσμωτήριον[γεν..ἑν.] ὕαλος[γεν..ἑν.] πλίνθος[δοτ..ἑν.] πυκνός ὑψηλός[ἑν.] σύντριπτος[ἀόρ..παθ..γ´.ἑν.] ἄκρος[ἑν.] αὐτός[γεν..πλ.] τεῖχος[πλ.]
+
+EN: In the Main Plaza a band had assembled and were at tuning their instruments.
+GR: καί χορός[ὀν..ἑν.] εἶχον[ἀόρ..ἐν..γ´.ἑν.] συνίστασθαι[ἀόρ..ἐν..γ´.ἑν.] εἶναι[ἀόρ..ἐν..γ´.πλ.] ἁρμόζειν[ἐνεστ..ἐν..γ´.ἑν.] ὄργανον[αἰτ..πλ.] ἐν *Plaza κύριος[ἑν.] αὐτός[γεν..πλ.]
+
+EN: The riders turned down Salinas Street past small gaminghouses and coffee-stands and there were in this street a number of Mexican harness-makers and traders and keepers of gamechickens and cobblers and bootmakers in little stalls or shops of mud.
+GR: καί καί καί καί καί καί ἤ ἱππότης[ὀν..πλ.] ἄριθμος[ὀν..ἑν.] ἐστραμμένος[ἀόρ..ἐν..γ´.πλ.] ἦσαν[ἀόρ..ἐν..γ´.πλ.] ὁδός κατά παρά ἐν ἐν ⟨gaminghouses⟩ ὁδός[δοτ..ἑν.] δημιουργός[γεν..πλ.] ⟨gamechickens⟩ φάτνη[γεν..πλ.] πηλός[γεν..ἑν.] μικρός[ἑν.] ⟨Mexican⟩ μικρός[ἑν.] *Salinas ⟨coffee⟩ περίπτερον[πλ.] οὗτος σκεύη[ἑν.] ἔμπορος[πλ.] φύλαξ[πλ.] σκυτοτόμος[πλ.] σκυτοτόμος[πλ.] καταστήματα[πλ.]
+
+EN: The second corporal was from Texas and spoke a little Spanish and he meant to trade the mule.
+GR: καί καί ἑκατόνταρχος[ὀν..ἑν.] ἦν[ἀόρ..ἐν..γ´.ἑν.] ἐλάλει[ἀόρ..ἐν..γ´.ἑν.] διανοέω[ἀόρ..ἐν..γ´.ἑν.] ἐμπορεύεσθαι[ἐνεστ..ἐν..γ´.ἑν.] Ἱσπανικός ἡμίονος[αἰτ..ἑν.] ἀπό δεύτερος[ἑν.] μικρός[ἑν.] Τέξας
+
+EN: The other boy was from Missouri.
+GR: παῖς[ὀν..ἑν.] ἦν[ἀόρ..ἐν..γ´.ἑν.] ἀπό ἕτερος[ἑν.] *Missouri
+
+EN: They were in good spirits, scrubbed and combed, clean shirts all.
+GR: καί ἦσαν[ἀόρ..ἐν..γ´.πλ.] καθαίρειν[ἀόρ..παθ..γ´.ἑν.] κτενίζειν[ἀόρ..ἐν..γ´.πλ.] χιτωνίσκος[αἰτ..πλ.] ἐν ἀγαθός[ἑν.] καθαρός[ἑν.] θυμός[πλ.] πᾶς
+
+EN: Each foreseeing a night of drink, perhaps of love.
+GR: ἕκαστος προορῶν[ἐνεστ..ἐν..γ´.ἑν.] ἡ νύξ[αἰτ..ἑν.] πόσις[γεν..ἑν.] ἔρως[γεν..ἑν.] ἴσως

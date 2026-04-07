@@ -1,0 +1,41 @@
+EN: Did you know that when Colonel Doniphan took Chihuahua City he inflicted over a thousand casualties on the enemy and lost only one man and him all but a suicide?
+GR: καί καί σύ[ὀν..ἑν.] *Colonel ἆρα[ἀόρ..ἐν..β´.ἑν.] εἰδέναι[ἐνεστ..ἐν..γ´.ἑν.] αἱρεῖν[ἀόρ..ἐν..γ´.ἑν.] περιτίθεσθαι[ἀόρ..ἐν..γ´.ἑν.] ἀπολλύναι[ἀόρ..ἐν..γ´.ἑν.] πόλις νεκροί[αἰτ..πλ.] ἀνήρ[αἰτ..ἑν.] ὑπέρ ἐπί ἀλλά πολέμιος[γεν..ἑν.] θάνατος[γεν..ἑν.] ὅτε χίλιοι μόνον εἵς *Doniphan *Chihuahua αὐτός[ἑν.] σχεδόν
+
+EN: With an army of unpaid irregulars that called him Bill, were half naked, and had walked to the battlefield from Missouri?
+GR: καί ὅς ὃς[ὀν..ἑν.] ὀνομάζειν[ἀόρ..ἐν..γ´.πλ.] εἶναι[ἀόρ..ἐν..γ´.πλ.] ἔχειν[ἀόρ..ἐν..γ´.ἑν.] βαδίζειν[ἀόρ..ἐν..γ´.ἑν.] αὐτός[αἰτ..ἑν.] μετά πρός ἀπό στρατός[δοτ..ἑν.] ἄτακτος[γεν..πλ.] ⟨battlefield⟩ *Missouri ἄμισθος[ἑν.] ἥμισυς Βίλλος γυμνός[ἑν.]
+
+EN: No sir.
+GR: οὐ κύριε[ἑν.]
+
+EN: The captain leaned back and folded his arms.
+GR: καί κυβερνήτης[ὀν..ἑν.] ἐκλίνειν[ἀόρ..ἐν..γ´.ἑν.] συμπτύσσειν[ἀόρ..ἐν..γ´.ἑν.] ὦμος[αἰτ..πλ.] ὀπίσω αὐτός[γεν..ἑν.]
+
+EN: What we are dealing with, he said, is a race of degenerates.
+GR: τί[ὀν..ἑν.] ἡμεῖς[ὀν..πλ.] εἶναι[ἐνεστ..ἐν..α´.πλ.] πράσσειν[ἐνεστ..ἐν..γ´.ἑν.] εἶπεν[ἀόρ..ἐν..γ´.ἑν.] εἶναι[ἐνεστ..ἐν..γ´.ἑν.] μετά μετά ἐκφυλίς[γεν..πλ.] γένος[ἑν.]
+
+EN: A mongrel race, little better than niggers.
+GR: ἤ αἰθίοψ[δοτ..πλ.] σύμμικτος[ἑν.] γένος[ἑν.] μικρός[ἑν.] βέλτιον[ἑν.]
+
+EN: And maybe no better.
+GR: καί οὐ κρείττων[ἑν.]
+
+EN: There is no government in Mexico.
+GR: κυβέρνησις[ὀν..ἑν.] εἶναι[ἐνεστ..ἐν..γ´.ἑν.] ἐν *Mexico οὐ
+
+EN: Hell, there's no God in Mexico.
+GR: θεός εἶναι[ἐνεστ..ἐν..γ´.ἑν.] ἐν *Mexico Άλλα οὐ
+
+EN: Never will be.
+GR: θέλειν[ἐνεστ..ἐν..γ´.ἑν.] εἶναι[ἐνεστ..ἐν..γ´.ἑν.] οὐδέποτε
+
+EN: We are dealing with a people manifestly incapable of governing themselves.
+GR: ἡμεῖς[ὀν..πλ.] εἶναι[ἐνεστ..ἐν..α´.πλ.] πράσσειν[ἐνεστ..ἐν..γ´.ἑν.] ἄρχειν[ἐνεστ..ἐν..γ´.ἑν.] ἑαυτῶν[αἰτ..πλ.] μετά δῆμος[δοτ..πλ.] σαφῶς ἀδύνατος[ἑν.]
+
+EN: And do you know what happens with people who cannot govern themselves?
+GR: καί ὅς σύ[ὀν..ἑν.] τί[ὀν..ἑν.] ὅς[ὀν..ἑν.] ποιεῖν[ἐνεστ..ἐν..β´.ἑν.] εἰδέναι[ἐνεστ..ἐν..γ´.ἑν.] γίγνεσθαι[ἐνεστ..ἐν..γ´.ἑν.] δύνασθαι[ἐνεστ..ἐν..γ´.ἑν.] ἄρχειν[ἐνεστ..ἐν..γ´.ἑν.] ἑαυτῶν[αἰτ..πλ.] μετά ἄνθρωπος[δοτ..πλ.] οὐ
+
+EN: That's right.
+GR: ὅς ὀρθῶς[ὀν..ἑν.] εἶναι[ἐνεστ..ἐν..γ´.ἑν.] ὀρθῶς[ἑν.]
+
+EN: Others come in to govern for them.
+GR: ἄλλος[ὀν..πλ.] ἔρχεσθαι[ἐνεστ..ἐν..γ´.πλ.] ἄρχειν[ἐνεστ..ἐν..γ´.ἑν.] ἐν ὑπέρ αὐτούς[δοτ..πλ.]

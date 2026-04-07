@@ -1,0 +1,124 @@
+{
+  "sentences": [
+    {
+      "index": 0,
+      "greek": "ὁ ἀνὴρ ἐν πόᾳ ἐκάθητο, σκέλη διαπλέξας.",
+      "glosses": [
+        {
+          "anchor": "σκέλη",
+          "note": "= legs",
+          "rank": 1
+        },
+        {
+          "anchor": "διαπλέξας",
+          "note": "= crossed",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "greek": "δορὰν ἠμφίεστο, πῖλον τε πῖλον κεκονιμένης μέλανος σηρικῆς ἐφόρει, μικρὸν δὲ Μεξικανὸν πύρινον πύρινον ἐν γωνίᾳ ὀδόντων εἶχεν.",
+      "glosses": [
+        {
+          "anchor": "κεκονιμένης",
+          "note": "= dusty",
+          "rank": 1
+        },
+        {
+          "anchor": "μέλανος",
+          "note": "= black ↔ λευκός",
+          "rank": 1
+        },
+        {
+          "anchor": "μικρὸν",
+          "note": "= small ↔ μέγας",
+          "rank": 1
+        },
+        {
+          "anchor": "πῖλον",
+          "note": "= felt hat or cap",
+          "rank": 1
+        },
+        {
+          "anchor": "Μεξικανὸν",
+          "note": "= Mexican (adjective)",
+          "rank": 1
+        },
+        {
+          "anchor": "πύρινον",
+          "note": "= made of fire",
+          "rank": 1
+        },
+        {
+          "anchor": "Μεξικανὸν",
+          "note": "= toward Mexico",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "greek": "ὡς δ' εἶδεν ὅ τι δι' ἰτεῶν ὄνυξι προὔκυψεν προὔκυψεν, ἔσεισε κάραν.",
+      "glosses": [
+        {
+          "anchor": "ὄνυξι",
+          "note": "= clawed",
+          "rank": 1
+        },
+        {
+          "anchor": "προὔκυψεν",
+          "note": "= leaned forward",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "greek": "εὖ γ' εἰς κακὰ πέπτωκας, ὦ παῖ;",
+      "glosses": []
+    },
+    {
+      "index": 4,
+      "greek": "ἔφη.",
+      "glosses": []
+    },
+    {
+      "index": 5,
+      "greek": "οὐκ εἰς ἀγαθά γ' ἔγωγε.",
+      "glosses": []
+    },
+    {
+      "index": 6,
+      "greek": "ἑτοῖμος εἶ Μεξικόνδ' Μεξικόνδε ἰέναι;",
+      "glosses": [
+        {
+          "anchor": "ἑτοῖμος",
+          "note": "= ready",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "greek": "οὐδὲν ἐκεῖ ἀπώλεσα.",
+      "glosses": [
+        {
+          "anchor": "ἀπώλεσα",
+          "note": "= lost",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "greek": "καιρός σοι αὔξειν σεαυτὸν ἐν βίῳ.",
+      "glosses": []
+    },
+    {
+      "index": 9,
+      "greek": "κίνει τι πρὶν παντάπασι καταδῦναι.",
+      "glosses": []
+    }
+  ]
+}

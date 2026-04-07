@@ -1,0 +1,190 @@
+{
+  "sentences": [
+    {
+      "index": 0,
+      "greek": "ὁ ἀρχός ἔβλεπε τὸν παῖδα.",
+      "glosses": [
+        {
+          "anchor": "ἀρχός",
+          "note": "= leader, ruler",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "greek": "ἔδοξεν ὁ παῖς δυσθυμεῖν.",
+      "glosses": [
+        {
+          "anchor": "δυσθυμεῖν",
+          "note": "= to be despondent",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "greek": "παῖ, ἔφη ὁ ἀρχός.",
+      "glosses": []
+    },
+    {
+      "index": 3,
+      "greek": "ὄργανα ἐλευθερίας ἐσόμεθα ἐν γῇ σκοτεινῇ καὶ ταραττομένῃ.",
+      "glosses": [
+        {
+          "anchor": "ὄργανα",
+          "note": "= instruments",
+          "rank": 1
+        },
+        {
+          "anchor": "ἐλευθερίας",
+          "note": "= liberation",
+          "rank": 1
+        },
+        {
+          "anchor": "ταραττομένῃ",
+          "note": "= troubled",
+          "rank": 1
+        },
+        {
+          "anchor": "ταραττομένῃ",
+          "note": "= being disturbed",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "greek": "ὀρθῶς.",
+      "glosses": [
+        {
+          "anchor": "ὀρθῶς",
+          "note": "= correctly, rightly",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "greek": "προάξομεν τὴν ὁρμήν.",
+      "glosses": [
+        {
+          "anchor": "προάξομεν",
+          "note": "= we will advance",
+          "rank": 1
+        },
+        {
+          "anchor": "ὁρμήν",
+          "note": "= impulse, attack",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "greek": "ἔχομεν σιγῶσαν ἐπικουρίαν τοῦ ἄρχοντος Βουρνέττου τῆς Καλιφορνίας.",
+      "glosses": [
+        {
+          "anchor": "σιγῶσαν",
+          "note": "= being silent",
+          "rank": 1
+        },
+        {
+          "anchor": "ἐπικουρίαν",
+          "note": "= assistance, aid",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "greek": "προσέκλινε καὶ ἔθηκε χεῖρας ἐπὶ γόνασιν.",
+      "glosses": []
+    },
+    {
+      "index": 8,
+      "greek": "καὶ ἡμεῖς οἱ νεμούμενοι τὰ λάφυρα.",
+      "glosses": [
+        {
+          "anchor": "νεμούμενοι",
+          "note": "= distributing, enjoying",
+          "rank": 1
+        },
+        {
+          "anchor": "λάφυρα",
+          "note": "= booty, spoils",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "greek": "κλῆρος γῆς ἔσται ἑκάστῳ ἀνδρὶ τῆς ἐμῆς συντάξεως.",
+      "glosses": [
+        {
+          "anchor": "κλῆρος",
+          "note": "= lot, portion",
+          "rank": 1
+        },
+        {
+          "anchor": "συντάξεως",
+          "note": "= arrangement, order",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "greek": "νομὴ καλή.",
+      "glosses": [
+        {
+          "anchor": "νομὴ",
+          "note": "= distribution, pasture",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "greek": "τῶν καλλίστων ἐν κόσμῳ τις.",
+      "glosses": [
+        {
+          "anchor": "κόσμῳ",
+          "note": "= order, arrangement",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "greek": "γῆ πλουσία μετάλλοις, χρυσῷ τε καὶ ἀργύρῳ, φαίην ἄν, ὑπὲρ ἐλπίδα τὴν ἀκρατεστάτην.",
+      "glosses": [
+        {
+          "anchor": "χρυσῷ",
+          "note": "= gold",
+          "rank": 1
+        },
+        {
+          "anchor": "φαίην",
+          "note": "= I would say",
+          "rank": 1
+        },
+        {
+          "anchor": "ἐλπίδα",
+          "note": "= hope, expectation",
+          "rank": 1
+        },
+        {
+          "anchor": "ἀκρατεστάτην",
+          "note": "= most incontinent",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "greek": "νέος εἶ.",
+      "glosses": []
+    }
+  ]
+}

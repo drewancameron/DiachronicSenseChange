@@ -1,0 +1,50 @@
+EN: What about my boots?
+GR: περί ἐμβάδες[δοτ..πλ.] Τι[ἑν.] ἐμός[γεν..ἑν.]
+
+EN: said the kid.
+GR: εἶπεν[ἀόρ..ἐν..γ´.ἑν.] ὁ παῖς
+
+EN: Y sus botas, said the Texan.
+GR: *Y *Texan εἶπε[ἀόρ..ἐν..γ´.ἑν.] αὐτοῦ ἀμφορεῖς
+
+EN: Botas?
+GR: Μπότες;
+
+EN: Si.
+GR: ⟨Si⟩
+
+EN: He made sewing motions.
+GR: ποιεῖν[ἀόρ..ἐν..γ´.ἑν.] κίνησις[αἰτ..πλ.] ῥαπτικός[ἑν.]
+
+EN: The harnessmaker looked down at the boots.
+GR: ἱμαντοποιός[ὀν..ἑν.] ὁρᾶν[ἀόρ..ἐν..γ´.ἑν.] κατά ἐν ἐμβάδες[δοτ..πλ.]
+
+EN: He cupped his fingers in a little gesture of impatience and the kid took off the boots and stood barefoot in the dust.
+GR: καί καί κοίλη[ἀόρ..ἐν..γ´.ἑν.] αἱρεῖν[ἀόρ..ἐν..γ´.ἑν.] ἱστάναι[ἀόρ..ἐν..γ´.ἑν.] ὁ παῖς δάκτυλος[αἰτ..πλ.] ἐμβάδες[αἰτ..πλ.] ἐν κατά ἐν χεῖρος κίνησις[δοτ..ἑν.] ἀνυπομονησία[γεν..ἑν.] ἡ κόνις[δοτ..ἑν.] μικρός[ἑν.] γυμνόπους αὐτός[γεν..ἑν.]
+
+EN: When all was done they stood in the street and looked at one another.
+GR: καί πᾶς ἦν[ἀόρ..ἐν..γ´.ἑν.] πέπρακται[ἀόρ..παθ..γ´.ἑν.] ἔστησαν[ἀόρ..ἐν..γ´.πλ.] ἐσκόπουν[ἀόρ..ἐν..γ´.πλ.] ἐν ἐν ὁδός[δοτ..ἑν.] ὅτε ἄλλος
+
+EN: The kid had his new tack slung up on his shoulder.
+GR: εἶχεν[ἀόρ..ἐν..γ´.ἑν.] ἀναρτάω[ἐνεστ..ἐν..γ´.ἑν.] ὁ παῖς ὁπλισμός[αἰτ..ἑν.] ἀνά ἐπί ὦμος[δοτ..ἑν.] νέος[ἑν.] αὐτός[γεν..ἑν.] αὐτός[γεν..ἑν.]
+
+EN: The second corporal looked at the boy from Missouri.
+GR: κεφαλάρχης[ὀν..ἑν.] βλέπειν[ἀόρ..ἐν..γ´.ἑν.] ἐν ἀπό παῖς[δοτ..ἑν.] *Missouri δεύτερος[ἑν.]
+
+EN: You got any money, Earl?
+GR: σύ[ὀν..ἑν.] ἔχεις[ἀόρ..ἐν..β´.ἑν.] χρήματα[αἰτ..ἑν.] τις *Earl
+
+EN: Not a copper cent.
+GR: οὐ χαλκός[ἑν.] λεπτόν[ἑν.]
+
+EN: Well I aint neither.
+GR: ἐγώ[ὀν..ἑν.] εἶναι[ἐνεστ..ἐν..α´.ἑν.] καλῶς οὐδέ
+
+EN: We might's well get our asses back on out to that hole of misery.
+GR: ἡμεῖς[ὀν..πλ.] ἴσως[ἐνεστ..ἐν..γ´.ἑν.] λαμβάνω[ἐνεστ..ἐν..γ´.ἑν.] ὄνος[αἰτ..πλ.] ἐπί ἔξω πρός τρῆμα[δοτ..ἑν.] ταλαιπωρία[γεν..ἑν.] καλῶς ὀπίσω ἡμέτερος[γεν..πλ.] ἐκεῖνος
+
+EN: The kid shifted the weight of the gear on his shoulder.
+GR: μετακινέω[ἀόρ..ἐν..γ´.ἑν.] ὁ παῖς σταθμός[αἰτ..ἑν.] ἐπί σκεύη[γεν..ἑν.] ὦμος[δοτ..ἑν.] αὐτός[γεν..ἑν.]
+
+EN: We got this quarter eagle to drink up yet, he said.
+GR: ἡμεῖς[ὀν..πλ.] κτᾶσθαι[ἀόρ..ἐν..α´.πλ.] πίνειν[ἐνεστ..ἐν..γ´.ἑν.] λέγειν[ἀόρ..ἐν..γ´.ἑν.] ἀετός[αἰτ..ἑν.] ἀνά ὅμως οὗτος τέταρτον[ἑν.]

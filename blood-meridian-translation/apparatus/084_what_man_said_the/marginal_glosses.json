@@ -1,0 +1,398 @@
+{
+  "sentences": [
+    {
+      "index": 0,
+      "greek": "ποῖος ἀνήρ;",
+      "glosses": []
+    },
+    {
+      "index": 1,
+      "greek": "εἶπεν ὁ παῖς.",
+      "glosses": []
+    },
+    {
+      "index": 2,
+      "greek": "ποῖος ἀνήρ, ὦναξ;",
+      "glosses": []
+    },
+    {
+      "index": 3,
+      "greek": "εἶπεν ὁ τοῦ ναυάρχου.",
+      "glosses": [
+        {
+          "anchor": "ναυάρχου",
+          "note": "= of the naval commander",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "greek": "πόσων ἐτῶν εἶ, τέκνον;",
+      "glosses": []
+    },
+    {
+      "index": 5,
+      "greek": "ἐννεακαίδεκα.",
+      "glosses": []
+    },
+    {
+      "index": 6,
+      "greek": "ὁ ναύαρχος ἔνευσε.",
+      "glosses": [
+        {
+          "anchor": "ναύαρχος",
+          "note": "= naval commander",
+          "rank": 1
+        },
+        {
+          "anchor": "ναύαρχος",
+          "note": "= naval commander (accusative)",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "greek": "ἦν σκοπῶν τὸν παῖδα.",
+      "glosses": [
+        {
+          "anchor": "σκοπῶν",
+          "note": "= looking",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "greek": "τί σοι συνέβη;",
+      "glosses": [
+        {
+          "anchor": "συνέβη",
+          "note": "= it happened",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "greek": "τί;",
+      "glosses": []
+    },
+    {
+      "index": 10,
+      "greek": "εἰπὲ ὦναξ, εἶπεν ὁ στρατολόγος.",
+      "glosses": [
+        {
+          "anchor": "στρατολόγος",
+          "note": "= recruiter of troops",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "greek": "ὦναξ;",
+      "glosses": []
+    },
+    {
+      "index": 12,
+      "greek": "εἶπον τί σοι συνέβη.",
+      "glosses": []
+    },
+    {
+      "index": 13,
+      "greek": "ὁ παῖς ἔβλεψεν εἰς τὸν παρακαθήμενον.",
+      "glosses": []
+    },
+    {
+      "index": 14,
+      "greek": "κάτω τ' εἰς ἑαυτὸν ἔβλεψεν καὶ πάλιν εἰς τὸν ναύαρχον.",
+      "glosses": []
+    },
+    {
+      "index": 15,
+      "greek": "ὑπὸ λῃστῶν ἐπέπεσόν με, ἔφη.",
+      "glosses": [
+        {
+          "anchor": "ἐπέπεσόν",
+          "note": "= fell",
+          "rank": 1
+        },
+        {
+          "anchor": "λῃστῶν",
+          "note": "= robbers",
+          "rank": 1
+        },
+        {
+          "anchor": "λῃστῶν",
+          "note": "= robbers",
+          "rank": 1
+        },
+        {
+          "anchor": "λῃστῶν",
+          "note": "= robbers ↔ κλέπτης",
+          "rank": 1
+        },
+        {
+          "anchor": "ἐπέπεσόν",
+          "note": "= they fell upon",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "greek": "λῃσταί, εἶπεν ὁ ναύαρχος.",
+      "glosses": []
+    },
+    {
+      "index": 17,
+      "greek": "πάνθ' ὅσ' εἶχον ἔλαβον.",
+      "glosses": []
+    },
+    {
+      "index": 18,
+      "greek": "καὶ τὸ ὡρολόγιον καὶ πάντα.",
+      "glosses": [
+        {
+          "anchor": "ὡρολόγιον",
+          "note": "= water clock",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "greek": "ἔχεις ὅπλον;",
+      "glosses": [
+        {
+          "anchor": "ἔχεις",
+          "note": "= have",
+          "rank": 1
+        },
+        {
+          "anchor": "ὅπλον",
+          "note": "= weapon or tool",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "greek": "οὐκέτ' ἔχω.",
+      "glosses": []
+    },
+    {
+      "index": 21,
+      "greek": "ποῦ ἐλῃστεύθης;",
+      "glosses": [
+        {
+          "anchor": "ἐλῃστεύθης",
+          "note": "= you were robbed",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "greek": "οὐκ οἶδα.",
+      "glosses": []
+    },
+    {
+      "index": 23,
+      "greek": "οὐκ ἦν ὄνομά τι.",
+      "glosses": []
+    },
+    {
+      "index": 24,
+      "greek": "ἐρημία μόνον.",
+      "glosses": [
+        {
+          "anchor": "ἐρημία",
+          "note": "= wilderness",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "greek": "πόθεν ἦλθες;",
+      "glosses": []
+    },
+    {
+      "index": 26,
+      "greek": "ἀπὸ Νακα, Νακα...",
+      "glosses": []
+    },
+    {
+      "index": 27,
+      "greek": "Νακογδόχης;",
+      "glosses": []
+    },
+    {
+      "index": 28,
+      "greek": "ναί.",
+      "glosses": []
+    },
+    {
+      "index": 29,
+      "greek": "ναί, ὦναξ.",
+      "glosses": []
+    },
+    {
+      "index": 30,
+      "greek": "ναί, ὦναξ.",
+      "glosses": []
+    },
+    {
+      "index": 31,
+      "greek": "πόσοι ἦσαν;",
+      "glosses": [
+        {
+          "anchor": "πόσοι",
+          "note": "= many",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "greek": "ὁ παῖς ἠτένισεν αὐτόν.",
+      "glosses": [
+        {
+          "anchor": "ἠτένισεν",
+          "note": "= he stared at",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "greek": "λῃσταί.",
+      "glosses": []
+    },
+    {
+      "index": 34,
+      "greek": "πόσοι λῃσταί.",
+      "glosses": []
+    },
+    {
+      "index": 35,
+      "greek": "ἑπτὰ ἢ ὀκτώ, οἶμαι.",
+      "glosses": []
+    },
+    {
+      "index": 36,
+      "greek": "ξύλῳ τις τὴν κεφαλήν μ' ἔπληξε.",
+      "glosses": [
+        {
+          "anchor": "κεφαλήν",
+          "note": "= head ↔ οὐρά",
+          "rank": 1
+        },
+        {
+          "anchor": "ξύλῳ",
+          "note": "= with wood",
+          "rank": 1
+        },
+        {
+          "anchor": "ἔπληξε",
+          "note": "= he struck",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "greek": "ὁ ναύαρχος τὸν ἕν' ὀφθαλμὸν μύσας εἰς αὐτὸν ἔβλεψεν.",
+      "glosses": [
+        {
+          "anchor": "ὀφθαλμὸν",
+          "note": "= eye ↔ εἰς",
+          "rank": 1
+        },
+        {
+          "anchor": "μύσας",
+          "note": "= having closed",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "greek": "ἦσαν Μεξικανοί;",
+      "glosses": [
+        {
+          "anchor": "Μεξικανοί",
+          "note": "= mexicans",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "greek": "τινές.",
+      "glosses": []
+    },
+    {
+      "index": 40,
+      "greek": "Μεξικανοὶ καὶ μέλανες.",
+      "glosses": [
+        {
+          "anchor": "μέλανες",
+          "note": "= black things",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "greek": "λευκός τις ἢ δύο μετ' αὐτῶν.",
+      "glosses": [
+        {
+          "anchor": "λευκός",
+          "note": "= white ↔ μέλαν",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "greek": "πολλὰ βοσκήματ' εἶχον ἃ ἔκλεψαν.",
+      "glosses": [
+        {
+          "anchor": "βοσκήματ",
+          "note": "= cattle",
+          "rank": 1
+        },
+        {
+          "anchor": "ἔκλεψαν",
+          "note": "= stole",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "greek": "μόνον ὃ κατέλιπόν μοι παλαιόν τι μαχαίρας τμῆμα ἦν ὃ ἐν τῇ ἐμβάδι εἶχον.",
+      "glosses": [
+        {
+          "anchor": "παλαιόν",
+          "note": "= old",
+          "rank": 1
+        },
+        {
+          "anchor": "τμῆμα",
+          "note": "= a section",
+          "rank": 1
+        },
+        {
+          "anchor": "ἐμβάδι",
+          "note": "= in the bath",
+          "rank": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "sentences": [
+    {
+      "index": 0,
+      "greek": "εἰς θάκον τινὰ μελαίνης ὕλης ῥᾷστα ἐκαθέζοντο.",
+      "glosses": [
+        {
+          "anchor": "ῥᾷστα",
+          "note": "= eased",
+          "rank": 1
+        },
+        {
+          "anchor": "ὕλης",
+          "note": "= wood ↔ ἐντελέχεια",
+          "rank": 1
+        },
+        {
+          "anchor": "θάκον",
+          "note": "= seat, bench",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "greek": "ὁ τοῦ ἄρχοντος ἀνὴρ μέγα βαλλάντιον πρὸς ζώνῃ εἶχε·",
+      "glosses": [
+        {
+          "anchor": "ἄρχοντος",
+          "note": "= ruler, magistrate",
+          "rank": 1
+        },
+        {
+          "anchor": "βαλλάντιον",
+          "note": "= purse, pouch",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "greek": "καθεζόμενος δὲ περιήγαγε τὴν ζώνην ὥστε τὸ ὅπλον μεταξὺ μηρῶν κεῖσθαι.",
+      "glosses": [
+        {
+          "anchor": "ζώνην",
+          "note": "= belt",
+          "rank": 1
+        },
+        {
+          "anchor": "ὅπλον",
+          "note": "= piece",
+          "rank": 1
+        },
+        {
+          "anchor": "περιήγαγε",
+          "note": "= sweeping",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "greek": "πῖλον ἐπέθηκε, ὀπίσω ἀνέπεσε.",
+      "glosses": []
+    },
+    {
+      "index": 4,
+      "greek": "ὁ παῖς ῥαγείσας ἐμβάδας ἑτέραν ὑφ' ἑτέρᾳ συμπτύξας ὀρθὸς ἐκάθητο.",
+      "glosses": [
+        {
+          "anchor": "συμπτύξας",
+          "note": "= folded",
+          "rank": 1
+        },
+        {
+          "anchor": "ἐμβάδας",
+          "note": "= boots",
+          "rank": 1
+        },
+        {
+          "anchor": "ῥαγείσας",
+          "note": "= having burst, broken",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "greek": "ὁ ἄρχων δίφρον ὀπίσω ὤσας ἀνέστη, περὶ τράπεζαν ἦλθε πρὸς τὸ πρόσθεν.",
+      "glosses": [
+        {
+          "anchor": "δίφρον",
+          "note": "= chair",
+          "rank": 1
+        },
+        {
+          "anchor": "τράπεζαν",
+          "note": "= desk",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "greek": "ἔστη ἐκεῖ μεμετρημένον τι, εἶτ' ἐπὶ τράπεζαν ἀναβὰς ἐκάθητο, ποσὶν αἰωρουμένοις.",
+      "glosses": [
+        {
+          "anchor": "ἀναβὰς",
+          "note": "= hitched",
+          "rank": 1
+        },
+        {
+          "anchor": "μεμετρημένον",
+          "note": "= measured, apportioned",
+          "rank": 1
+        },
+        {
+          "anchor": "αἰωρουμένοις",
+          "note": "= suspended, swinging",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "greek": "πολιὰς μὲν εἶχεν ἔν τε κόμῃ καὶ μύστακι μεγάλῳ ὃν ἐφόρει, οὐ μὴν γεραιός.",
+      "glosses": [
+        {
+          "anchor": "πολιὰς",
+          "note": "= gray",
+          "rank": 1
+        },
+        {
+          "anchor": "γεραιός",
+          "note": "= old",
+          "rank": 1
+        },
+        {
+          "anchor": "μύστακι",
+          "note": "= upper lip, mustache",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "greek": "σὺ ἄρ' εἶ ὁ ἀνήρ, ἔφη.",
+      "glosses": []
+    }
+  ]
+}

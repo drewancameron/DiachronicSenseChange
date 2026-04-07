@@ -1,0 +1,141 @@
+{
+  "sentences": [
+    {
+      "index": 0,
+      "greek": "τὴν ἡμίονον ὡς ἐκεκόσμητο ἤμειβον σάγματος Τεξανοῦ, γυμνοῦ ξύλου βυρσοδέτου·",
+      "glosses": [
+        {
+          "anchor": "ἡμίονον",
+          "note": "= mule",
+          "rank": 1
+        },
+        {
+          "anchor": "γυμνοῦ",
+          "note": "= bare ↔ ὁπλιτοδρόμος",
+          "rank": 1
+        },
+        {
+          "anchor": "σάγματος",
+          "note": "= tree",
+          "rank": 1
+        },
+        {
+          "anchor": "ἤμειβον",
+          "note": "= they replied, answered",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "greek": "οὐ νέου, ἀρτίου δέ.",
+      "glosses": [
+        {
+          "anchor": "ἀρτίου",
+          "note": "= of bread, loaf",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "greek": "χαλινοῦ τε καὶ ψαλίου νέων.",
+      "glosses": [
+        {
+          "anchor": "χαλινοῦ",
+          "note": "= bridle",
+          "rank": 1
+        },
+        {
+          "anchor": "ψαλίου",
+          "note": "= bit",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "greek": "στρώματος ἐρεοῦ ὑφαντοῦ ἐκ Σαλτίλλου, κεκονιμένου, νέου ἢ μή.",
+      "glosses": [
+        {
+          "anchor": "ὑφαντοῦ",
+          "note": "= woven",
+          "rank": 1
+        },
+        {
+          "anchor": "κεκονιμένου",
+          "note": "= dusty",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "greek": "τέλος δὲ χρυσοῦ νομίσματος δύο ἡμίσεος δραχμῶν.",
+      "glosses": [
+        {
+          "anchor": "χρυσοῦ",
+          "note": "= gold",
+          "rank": 1
+        },
+        {
+          "anchor": "δραχμῶν",
+          "note": "= coin",
+          "rank": 1
+        },
+        {
+          "anchor": "δραχμῶν",
+          "note": "= of drachmas, currency",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "greek": "ὁ δὲ Τεξανὸς ἐς τὸ μικρὸν κέρμα ἐν θέναρι τοῦ παιδὸς βλέψας πλέον ἀργύριον ᾔτει·",
+      "glosses": [
+        {
+          "anchor": "μικρὸν",
+          "note": "= small ↔ μέγας",
+          "rank": 1
+        },
+        {
+          "anchor": "θέναρι",
+          "note": "= palm",
+          "rank": 1
+        },
+        {
+          "anchor": "ᾔτει",
+          "note": "= he/she was asking",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "greek": "ὁ δὲ σκευοποιὸς κεφαλὴν σείων χεῖράς τ' ἀνασχὼν ἀπέφηνε τέλος.",
+      "glosses": [
+        {
+          "anchor": "κεφαλὴν",
+          "note": "= head ↔ οὐρά",
+          "rank": 1
+        },
+        {
+          "anchor": "χεῖράς",
+          "note": "= hands",
+          "rank": 1
+        },
+        {
+          "anchor": "σκευοποιὸς",
+          "note": "= equipment maker, craftsman",
+          "rank": 1
+        },
+        {
+          "anchor": "ἀπέφηνε",
+          "note": "= he declared, pronounced",
+          "rank": 1
+        }
+      ]
+    }
+  ]
+}
