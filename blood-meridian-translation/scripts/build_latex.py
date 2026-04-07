@@ -273,11 +273,9 @@ def build_page():
 
 \\pagestyle{{plain}}
 
-\\title{{\\Huge Ὁ Αἱματόεις Μεσημβρινός\\\\[0.3em]
-\\large ἢ Τὸ Ἑσπέριον Ἐρύθημα\\\\[0.5em]
-\\normalsize εἰς τὴν Ἑλλάδα φωνὴν μεταφρασθέν}}
-\\author{{ΚΟΡΜΑΚ ΜΑΚΚΑΡΘΥ}}
-\\date{{}}
+\\title{{Blood Meridian}}
+\\author{{Cormac McCarthy}}
+\\date{{Translated into Ancient Greek}}
 
 \\begin{{document}}
 
