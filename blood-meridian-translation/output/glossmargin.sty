@@ -1,45 +1,85 @@
-% glossmargin.sty — Margin glosses using \marginpar for collision avoidance
+% glossmargin.sty — Margin glosses with page-boundary awareness
 %
-% \marginpar has BUILT-IN collision avoidance: LaTeX stacks margin notes
-% vertically without overlap. The only limitation is float count (256 with
-% e-TeX, sufficient for our use).
-%
-% We use \marginpar directly — no \marginnote, no manual offset tracking.
-% LaTeX handles everything.
+% Uses \marginpar for collision avoidance, with a wrapper that checks
+% the current vertical position. If we're too close to the page bottom,
+% the gloss is suppressed rather than overflowing.
 %
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{glossmargin}[2026/04/07 Margin glosses via marginpar v5]
+\ProvidesPackage{glossmargin}[2026/04/07 Page-aware margin glosses v6]
 
 \RequirePackage{xcolor}
+\RequirePackage{zref-savepos}
 
 % === Configuration ===
 \definecolor{glosscolor}{gray}{0.3}
 \newcommand{\glossfont}{\fontsize{6.5pt}{8.5pt}\selectfont\color{glosscolor}\raggedright}
 
-% === Commands ===
+% Minimum distance from page bottom to allow a marginpar (in sp)
+% 1in = 4736286sp. We want ~2cm = ~3.7 million sp
+\newlength{\glossbottomguard}
+\setlength{\glossbottomguard}{30pt}
+
+% Spacing between consecutive marginpars
+\setlength{\marginparpush}{8pt}
+
+% === Page-aware marginpar wrapper ===
+\newcounter{gmctr}
+
+\newcommand{\safemarginpar}[1]{%
+  \stepcounter{gmctr}%
+  \zsaveposy{gm\thegmctr}%
+  % Check if position is known from previous run
+  \zifrefundefined{gm\thegmctr}{%
+    % First pass — place unconditionally
+    \marginpar{\glossfont #1}%
+  }{%
+    % Second pass — check if we're too close to page bottom
+    % \zposy gives absolute y from bottom of page in sp
+    % Larger = higher on page. If value < guard, we're near bottom.
+    \ifnum\zposy{gm\thegmctr}<\strip@pt\glossbottomguard\relax
+      % Too close to bottom — skip this gloss
+    \else
+      \marginpar{\glossfont #1}%
+    \fi
+  }%
+}
+
+% Need to handle the dimension comparison properly
+% \zposy returns sp (scaled points), \glossbottomguard is in pt
+% 1pt = 65536sp
+\newcommand{\glossguardsp}{}
+\AtBeginDocument{%
+  \edef\glossguardsp{\the\numexpr\number\glossbottomguard*65536\relax}%
+}
+
+% Redefine to use sp comparison
+\renewcommand{\safemarginpar}[1]{%
+  \stepcounter{gmctr}%
+  \zsaveposy{gm\thegmctr}%
+  \zifrefundefined{gm\thegmctr}{%
+    \marginpar{\glossfont #1}%
+  }{%
+    \ifnum\zposy{gm\thegmctr}>\glossguardsp\relax
+      \marginpar{\glossfont #1}%
+    \fi
+  }%
+}
+
+% === User commands ===
 
 % Two-column gloss block
 \newcommand{\glossblock}[2]{%
-  \marginpar{%
-    \glossfont
-    \begin{minipage}[t]{0.47\marginparwidth}%
-      \raggedright #1%
-    \end{minipage}%
+  \safemarginpar{%
+    \begin{minipage}[t]{0.47\marginparwidth}\raggedright #1\end{minipage}%
     \hfill
-    \begin{minipage}[t]{0.47\marginparwidth}%
-      \raggedright #2%
-    \end{minipage}%
+    \begin{minipage}[t]{0.47\marginparwidth}\raggedright #2\end{minipage}%
   }%
 }
 
 % Single-column gloss block
-\newcommand{\glossblocksingle}[1]{%
-  \marginpar{\glossfont #1}%
-}
+\newcommand{\glossblocksingle}[1]{\safemarginpar{#1}}
 
-% Inline gloss (single word)
-\newcommand{\gloss}[2]{%
-  \marginpar{\glossfont \textbf{#1}~#2}%
-}
+% Inline gloss
+\newcommand{\gloss}[2]{\safemarginpar{\textbf{#1}~#2}}
 
 \endinput

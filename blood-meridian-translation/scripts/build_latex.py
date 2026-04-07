@@ -170,7 +170,7 @@ def build_chunk(chapter_dir: str) -> str:
 
             if pending_glosses:
                 # Cap to reasonable density
-                max_glosses = min(10, max(4, int(pending_height / TEXT_LINE_HT)))
+                max_glosses = min(8, max(3, int(pending_height / (TEXT_LINE_HT * 1.5))))
                 if len(pending_glosses) > max_glosses:
                     pending_glosses = pending_glosses[:max_glosses]
 
@@ -253,7 +253,7 @@ def build_page():
 \\usepackage[
   a4paper,
   top=2cm,
-  bottom=2cm,
+  bottom=2.5cm,
   left=2.5cm,
   right=5.5cm,
   marginparwidth=4.5cm,
@@ -270,6 +270,9 @@ def build_page():
 % Paragraph formatting
 \\setlength{{\\parindent}}{{1.5em}}
 \\setlength{{\\parskip}}{{0.4em}}
+
+% Margin note spacing — prevents overflow at page bottom
+\\setlength{{\\marginparpush}}{{8pt}}
 
 \\pagestyle{{plain}}
 
