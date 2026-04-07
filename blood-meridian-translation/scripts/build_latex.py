@@ -130,38 +130,27 @@ def build_chunk(chapter_dir: str) -> str:
         # Sort by position in text
         gloss_positions.sort(key=lambda x: x[0])
 
-        # Group nearby glosses into blocks (within ~80 chars ≈ ~1.5 lines)
-        MERGE_DISTANCE = 80
-        groups = []
-        current_group = []
+        # All glosses in a paragraph go into ONE marginpar block
+        # placed at the first glossed word. This ensures:
+        # 1. One \marginpar per paragraph (stays within float limits)
+        # 2. Block aligned with the paragraph start
+        # 3. \marginpar collision avoidance handles inter-paragraph stacking
 
-        for pos, anchor, anchor_esc, note_esc in gloss_positions:
-            if current_group and pos - current_group[-1][0] > MERGE_DISTANCE:
-                groups.append(current_group)
-                current_group = []
-            current_group.append((pos, anchor, anchor_esc, note_esc))
-        if current_group:
-            groups.append(current_group)
+        if len(gloss_positions) == 1:
+            pos, anchor, anchor_esc, note_esc = gloss_positions[0]
+            replacement = f"\\gloss{{{anchor_esc}}}{{{note_esc}}}"
+            para_tex = para_tex.replace(anchor_esc, replacement, 1)
+        elif len(gloss_positions) > 1:
+            # Build merged note block
+            entries = []
+            for _, anchor, anchor_esc, note_esc in gloss_positions:
+                entries.append(f"\\textbf{{{anchor_esc}}} {note_esc}")
 
-        # For each group, place a single \marginpar at the first word
-        # containing all entries, and leave the other words unmarked
-        for group in groups:
-            first_pos, first_anchor, first_anchor_esc, first_note_esc = group[0]
-
-            if len(group) == 1:
-                # Single gloss — simple \gloss command
-                replacement = f"\\gloss{{{first_anchor_esc}}}{{{first_note_esc}}}"
-                para_tex = para_tex.replace(first_anchor_esc, replacement, 1)
-            else:
-                # Merged block — build multi-entry note for first word's \marginpar
-                entries = []
-                for _, anchor, anchor_esc, note_esc in group:
-                    entries.append(f"\\textbf{{{anchor_esc}}} {note_esc}")
-
-                merged_note = "\\\\[2pt]".join(entries)
-                # Place merged block at first word using \glossblock
-                replacement = f"\\glossmerged{{{first_anchor_esc}}}{{{merged_note}}}"
-                para_tex = para_tex.replace(first_anchor_esc, replacement, 1)
+            merged_note = "\\\\[2pt]".join(entries)
+            # Place at first glossed word
+            first_anchor_esc = gloss_positions[0][2]
+            replacement = f"\\glossmerged{{{first_anchor_esc}}}{{{merged_note}}}"
+            para_tex = para_tex.replace(first_anchor_esc, replacement, 1)
 
         recent_glosses.append(glossed_this_para)
         parts.append(para_tex + "\n")
