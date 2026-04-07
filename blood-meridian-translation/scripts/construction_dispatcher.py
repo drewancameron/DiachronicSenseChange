@@ -282,10 +282,11 @@ def _analyse_clause(sent) -> ClauseSkeleton:
                         mwe_spans.add(i + j)
                     break
 
+    sent_text_en = " ".join(w.text for w in sent.words)
     for i, word in enumerate(sent.words):
         if i in mwe_spans:
             continue  # consumed by MWE
-        target = _word_to_target(word, clause)
+        target = _word_to_target(word, clause, en_sentence=sent_text_en)
         if target:
             clause.words.append(target)
 
@@ -321,6 +322,16 @@ _MCCARTHY_VOCAB = {
     "nigger": "μέλας",           # McCarthy's language, not endorsed
     "whiskey": "οἶνος",          # closest Greek equivalent
     "tobacco": "καπνός",
+    # Agricultural
+    "turned": "ἐστραμμένος",     # turned (ploughed) fields
+    "plowed": "ἠροτριωμένος",
+    "ploughed": "ἠροτριωμένος",
+    # Posture/movement
+    "crouches": "πτήσσειν",
+    "crouch": "πτήσσειν",
+    # Quotation
+    "quotes": "λέγειν",
+    "quote": "λέγειν",
 }
 
 # Pronouns: map directly to Greek
@@ -437,8 +448,12 @@ _ADVERB_MAP = {
 }
 
 
-def _word_to_target(word, clause: ClauseSkeleton) -> GreekTarget | None:
-    """Convert a stanza word to a Greek translation target."""
+def _word_to_target(word, clause: ClauseSkeleton,
+                    en_sentence: str = "") -> GreekTarget | None:
+    """Convert a stanza word to a Greek translation target.
+
+    en_sentence: the full English sentence for context-aware sense selection.
+    """
     # Skip punctuation
     if word.upos == "PUNCT":
         return None
@@ -541,8 +556,8 @@ def _word_to_target(word, clause: ClauseSkeleton) -> GreekTarget | None:
         return target
 
     # === CONTENT WORDS (nouns, verbs, adjectives) ===
-    # POS-aware Woodhouse lookup
-    greek = _lookup_pos_aware(lemma, word.text, pos)
+    # Context-aware, POS-aware lookup
+    greek = _lookup_with_context(lemma, word.text, pos, en_sentence)
 
     target = GreekTarget(
         lemma=greek or f"[{lemma}]",
@@ -580,6 +595,45 @@ def _word_to_target(word, clause: ClauseSkeleton) -> GreekTarget | None:
         target.case = _role_to_case(word.deprel)
 
     return target
+
+
+def _lookup_with_context(lemma: str, word_form: str, target_pos: str,
+                         en_sentence: str = "") -> str | None:
+    """Context-aware vocabulary lookup.
+
+    When Woodhouse has multiple senses for a word, use the English sentence
+    context to pick the right one via semantic similarity.
+    """
+    _load_vocab()
+    en = lemma.lower().strip()
+
+    # 0. McCarthy vocab (exact match, no disambiguation needed)
+    if en in _MCCARTHY_VOCAB:
+        return _MCCARTHY_VOCAB[en]
+    if word_form.lower() in _MCCARTHY_VOCAB:
+        return _MCCARTHY_VOCAB[word_form.lower()]
+
+    # 1. Locked glossary
+    if en in _locked_glossary:
+        return _locked_glossary[en]
+
+    # 2. Fall through to POS-aware lookup (Woodhouse + synonyms + LSJ)
+    return _lookup_pos_aware(en, word_form, target_pos)
+
+
+def _pos_matches(greek_word: str, target_pos: str) -> bool:
+    """Check if a Greek word matches the target POS based on ending."""
+    if not target_pos:
+        return True
+    if target_pos == "verb":
+        return any(greek_word.endswith(s) for s in ("ειν", "εῖν", "αν", "ᾶν",
+                                                     "ναι", "σθαι"))
+    elif target_pos == "adj":
+        return any(greek_word.endswith(s) for s in ("ός", "ος", "ή", "ης",
+                                                     "ύς", "υς", "ον"))
+    elif target_pos in ("noun", "propn"):
+        return not any(greek_word.endswith(s) for s in ("ειν", "εῖν", "ᾶν", "σθαι"))
+    return True
 
 
 def _lookup_pos_aware(lemma: str, word_form: str, target_pos: str) -> str | None:
@@ -656,6 +710,9 @@ def _lookup_pos_aware(lemma: str, word_form: str, target_pos: str) -> str | None
                 "hot": ["warm", "burning"], "cold": ["chill", "frigid"],
                 "wet": ["damp", "moist"], "dry": ["arid", "parched"],
                 "hard": ["firm", "tough"], "soft": ["gentle", "tender"],
+            "last": ["final", "ultimate", "extreme"],
+            "few": ["small", "scanty", "sparse"],
+            "ragged": ["tattered", "shabby", "worn"],
             }
             for syn in _ADJECTIVE_SYNONYMS_INNER.get(en, []):
                 if syn in _woodhouse:
