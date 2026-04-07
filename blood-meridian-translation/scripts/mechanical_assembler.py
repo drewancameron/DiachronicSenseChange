@@ -24,7 +24,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from construction_dispatcher import (
     analyse_sentence, SentenceSkeleton, ClauseSkeleton, GreekTarget,
-    lookup_greek, _load_vocab,
+    lookup_greek, _load_vocab, _save_haiku_cache,
 )
 
 
@@ -260,6 +260,8 @@ def main():
 
     else:
         parser.print_help()
+
+    _save_haiku_cache()
 
 
 if __name__ == "__main__":

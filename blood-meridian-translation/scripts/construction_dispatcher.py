@@ -283,6 +283,10 @@ def _analyse_clause(sent) -> ClauseSkeleton:
                     break
 
     sent_text_en = " ".join(w.text for w in sent.words)
+
+    # Generate Haiku synonyms for this sentence (one cheap call)
+    generate_synonyms_for_sentence(sent_text_en)
+
     for i, word in enumerate(sent.words):
         if i in mwe_spans:
             continue  # consumed by MWE
@@ -291,6 +295,87 @@ def _analyse_clause(sent) -> ClauseSkeleton:
             clause.words.append(target)
 
     return clause
+
+
+# ====================================================================
+# Haiku synonym generation
+# ====================================================================
+
+_haiku_synonyms: dict[str, list[str]] = {}
+_haiku_cache_path = GLOSSARY / "haiku_synonym_cache.json"
+_haiku_cache: dict | None = None
+
+
+def _load_haiku_cache():
+    global _haiku_cache
+    if _haiku_cache is not None:
+        return _haiku_cache
+    if _haiku_cache_path.exists():
+        with open(_haiku_cache_path) as f:
+            _haiku_cache = json.load(f)
+    else:
+        _haiku_cache = {}
+    return _haiku_cache
+
+
+def _save_haiku_cache():
+    if _haiku_cache is not None:
+        _haiku_cache_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(_haiku_cache_path, "w") as f:
+            json.dump(_haiku_cache, f, ensure_ascii=False)
+
+
+def generate_synonyms_for_sentence(sentence: str) -> dict[str, list[str]]:
+    """Use Haiku to generate contextual synonyms for each content word.
+
+    Returns {word: [synonym1, synonym2, ...]} for every content word.
+    Cached per sentence to avoid repeated calls.
+    """
+    global _haiku_synonyms
+    cache = _load_haiku_cache()
+
+    # Check cache
+    cache_key = sentence.strip()[:200]  # truncate for key
+    if cache_key in cache:
+        _haiku_synonyms = cache[cache_key]
+        return _haiku_synonyms
+
+    prompt = f"""For each content word in this sentence, give 3-5 English synonyms that capture the word's meaning IN THIS CONTEXT. Include both common and literary/formal synonyms (e.g. "lie" meaning recline → "recline, rest, repose"; "harbor" meaning shelter → "shelter, protect, house").
+
+Skip function words (the, a, is, he, and, of, etc).
+
+Sentence: {sentence}
+
+Output as JSON: {{"word": ["synonym1", "synonym2", "synonym3"]}}
+Only output the JSON, nothing else."""
+
+    try:
+        import anthropic
+        client = anthropic.Anthropic()
+        r = client.messages.create(
+            model="claude-haiku-4-5-20251001",
+            max_tokens=1024,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        text = r.content[0].text.strip()
+
+        # Parse JSON
+        if "```" in text:
+            text = re.search(r'```(?:json)?\s*\n?(.*?)```', text, re.DOTALL).group(1)
+        synonyms = json.loads(text)
+
+        # Normalize: lowercase keys
+        result = {k.lower(): [s.lower() for s in v] for k, v in synonyms.items()}
+
+        # Cache
+        cache[cache_key] = result
+        _haiku_synonyms = result
+        return result
+
+    except Exception as e:
+        print(f"    Haiku synonym error: {e}")
+        _haiku_synonyms = {}
+        return {}
 
 
 # Function words: don't look up in Woodhouse/LSJ, handle structurally
@@ -601,24 +686,57 @@ def _lookup_with_context(lemma: str, word_form: str, target_pos: str,
                          en_sentence: str = "") -> str | None:
     """Context-aware vocabulary lookup.
 
-    When Woodhouse has multiple senses for a word, use the English sentence
-    context to pick the right one via semantic similarity.
+    Uses Haiku-generated synonyms (if available) to find the best Woodhouse match.
     """
     _load_vocab()
     en = lemma.lower().strip()
+    word_lower = word_form.lower().strip()
 
     # 0. McCarthy vocab (exact match, no disambiguation needed)
     if en in _MCCARTHY_VOCAB:
         return _MCCARTHY_VOCAB[en]
-    if word_form.lower() in _MCCARTHY_VOCAB:
-        return _MCCARTHY_VOCAB[word_form.lower()]
+    if word_lower in _MCCARTHY_VOCAB:
+        return _MCCARTHY_VOCAB[word_lower]
 
     # 1. Locked glossary
     if en in _locked_glossary:
         return _locked_glossary[en]
 
-    # 2. Fall through to POS-aware lookup (Woodhouse + synonyms + LSJ)
-    return _lookup_pos_aware(en, word_form, target_pos)
+    # 2. Try direct POS-aware Woodhouse lookup
+    direct = _lookup_pos_aware(en, word_form, target_pos)
+    direct_pos_ok = direct and _pos_matches(direct, target_pos)
+
+    # If direct lookup succeeded with correct POS, use it
+    if direct_pos_ok:
+        return direct
+
+    # 3. Direct lookup failed or POS mismatch — try Haiku synonyms
+    #    These are context-aware so they resolve ambiguity
+    #    (e.g. "turned fields" → "ploughed", "harbor wolves" → "shelter")
+    if _haiku_synonyms:
+        for lookup_key in [word_lower, en]:
+            if lookup_key in _haiku_synonyms:
+                for syn in _haiku_synonyms[lookup_key]:
+                    syn_lower = syn.lower().strip()
+                    if syn_lower == en or syn_lower == word_lower:
+                        continue
+                    # Check McCarthy vocab
+                    if syn_lower in _MCCARTHY_VOCAB:
+                        return _MCCARTHY_VOCAB[syn_lower]
+                    # Then Woodhouse with POS
+                    syn_result = _lookup_pos_aware(syn_lower, syn, target_pos)
+                    if syn_result and _pos_matches(syn_result, target_pos):
+                        return syn_result
+
+    # 4. Fall back to direct result even if POS doesn't match
+    if direct:
+        return direct
+
+    # 5. Try word form if different from lemma
+    if word_lower != en:
+        return _lookup_pos_aware(word_lower, word_form, target_pos)
+
+    return None
 
 
 def _pos_matches(greek_word: str, target_pos: str) -> bool:
@@ -655,7 +773,30 @@ def _lookup_pos_aware(lemma: str, word_form: str, target_pos: str) -> str | None
 
     # 2. Woodhouse with POS awareness
     if en in _woodhouse:
-        entry = _woodhouse[en]
+        wh_data = _woodhouse[en]
+        # Handle both list format (multi-POS) and dict format (legacy)
+        wh_entries = wh_data if isinstance(wh_data, list) else [wh_data]
+
+        # NEW: POS-label matching — find the entry whose Woodhouse POS matches
+        _WH_POS_MAP = {
+            "verb": {"v. trans.", "v. intrans.", "v."},
+            "noun": {"subs."},
+            "adj": {"adj."},
+            "adv": {"adv."},
+        }
+        target_labels = _WH_POS_MAP.get(target_pos, set())
+
+        # First: try POS-matched entry
+        for entry in wh_entries:
+            wh_pos = entry.get("pos", "")
+            if target_labels and wh_pos in target_labels:
+                greek_words = [gw for gw in entry.get("greek", [])
+                              if gw not in ("τό", "τά", "ὁ", "ἡ", "τοῦ")]
+                if greek_words:
+                    return greek_words[0]
+
+        # Second: fallback to first entry with any Greek words
+        entry = wh_entries[0]
         greek_words = entry.get("greek", [])
         senses = entry.get("senses", [])
 
@@ -696,10 +837,11 @@ def _lookup_pos_aware(lemma: str, word_form: str, target_pos: str) -> str | None
                                                  "ωδης", "ώδης")):
                     adj_candidates.append(gw)
 
-            # Skip the first candidate if it matches a common noun pattern
-            # (words like σκότος, θάνατος, λόγος are nouns not adjectives)
-            # Before using Woodhouse's adjective candidates (which may be rare),
-            # check if synonym lookup gives a more common word
+            # Use Woodhouse adjective candidates if available
+            if adj_candidates:
+                return adj_candidates[0]
+
+            # No adjective in Woodhouse — try synonym lookup
             _ADJECTIVE_SYNONYMS_INNER = {
                 "dark": ["gloomy", "murky", "dim"],
                 "pale": ["pallid", "wan", "sallow"],
@@ -710,9 +852,8 @@ def _lookup_pos_aware(lemma: str, word_form: str, target_pos: str) -> str | None
                 "hot": ["warm", "burning"], "cold": ["chill", "frigid"],
                 "wet": ["damp", "moist"], "dry": ["arid", "parched"],
                 "hard": ["firm", "tough"], "soft": ["gentle", "tender"],
-            "last": ["final", "ultimate", "extreme"],
-            "few": ["small", "scanty", "sparse"],
-            "ragged": ["tattered", "shabby", "worn"],
+                "last": ["final", "ultimate", "extreme"],
+                "ragged": ["tattered", "shabby", "worn"],
             }
             for syn in _ADJECTIVE_SYNONYMS_INNER.get(en, []):
                 if syn in _woodhouse:
@@ -720,9 +861,6 @@ def _lookup_pos_aware(lemma: str, word_form: str, target_pos: str) -> str | None
                         if any(gw.endswith(s) for s in ("ός", "ος", "ή", "ης",
                                                          "ύς", "υς", "ον")):
                             return gw
-
-            if adj_candidates:
-                return adj_candidates[0]
             # Don't return a verb/noun when we need an adjective — fall through
         else:
             return greek_words[0]
