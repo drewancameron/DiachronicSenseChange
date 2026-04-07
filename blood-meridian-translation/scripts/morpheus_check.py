@@ -90,11 +90,21 @@ def _extract_analyses(data: dict) -> list[dict]:
     results = []
     try:
         body = data.get("RDF", {}).get("Annotation", {}).get("Body", {})
-        rest = body.get("rest", {})
-        entry = rest.get("entry", {})
 
-        # Can be a single entry or a list
-        entries = entry if isinstance(entry, list) else [entry]
+        # Body can be a dict (single analysis) or a list (multiple lemmas)
+        bodies = body if isinstance(body, list) else [body]
+
+        entries = []
+        for b in bodies:
+            if not isinstance(b, dict):
+                continue
+            rest = b.get("rest", {})
+            entry = rest.get("entry", {})
+            # entry can be a single entry or a list
+            if isinstance(entry, list):
+                entries.extend(entry)
+            elif isinstance(entry, dict):
+                entries.append(entry)
 
         for e in entries:
             if not isinstance(e, dict):
