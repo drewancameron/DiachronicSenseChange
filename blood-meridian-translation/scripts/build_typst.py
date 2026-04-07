@@ -71,8 +71,8 @@ def _load_idf():
 
 
 # Layout constants
-CHARS_PER_LINE = 50     # chars per text line (grid layout, ~310pt column width)
-TEXT_LINE_HT = 14.5     # pt per text line (11pt × 0.9em leading + descent)
+CHARS_PER_LINE = 65     # chars per text line (measured from PDF output)
+TEXT_LINE_HT = 11.0     # pt per text line (measured from PDF output)
 GLOSS_ENTRY_HT = 9.0   # pt per gloss entry (6.5pt font + spacing + bold overhead)
 
 
@@ -127,12 +127,29 @@ def build_chunk(chapter_dir: str, recently_glossed: set) -> tuple[str, set]:
         # Sort by IDF descending (rarest first)
         gloss_candidates.sort(key=lambda x: -x[0])
 
-        # Cap: 1 gloss entry per text line, computed from paragraph length
-        # Each text line ≈ CHARS_PER_LINE chars. Each gloss entry occupies
-        # approximately the same vertical space as 1 text line.
+        # Adaptive constraint: fit as many glosses as the text height allows.
+        # Estimate text height, then add entries until we'd exceed it.
         text_lines = max(1, len(para) // CHARS_PER_LINE + 1)
-        max_entries = max(1, text_lines)
-        gloss_candidates = gloss_candidates[:max_entries]
+        text_ht_pt = text_lines * TEXT_LINE_HT  # estimated paragraph height in pt
+
+        # Each gloss entry height: 6.5pt per margin line, ~30 chars per margin line
+        # (measured from PDF: 4.5cm at 6.5pt ≈ 30 chars per line)
+        MARGIN_CHARS = 30
+        MARGIN_LINE = 7.0  # pt including spacing
+        cumulative = 0
+        max_entries = 0
+        for _, _, anchor, note in gloss_candidates:
+            entry_chars = len(anchor) + len(note) + 3
+            entry_margin_lines = max(1, (entry_chars + MARGIN_CHARS - 1) // MARGIN_CHARS)
+            entry_ht = entry_margin_lines * MARGIN_LINE
+            if cumulative + entry_ht > text_ht_pt:
+                break
+            cumulative += entry_ht
+            max_entries += 1
+
+        gloss_candidates = gloss_candidates[:max(1, max_entries)]
+        if len(para) > 400 and max_entries > 1:
+            print(f"    DEBUG: para {len(para)}ch, {len(gloss_candidates)} entries (max={max_entries}, text_ht={text_ht_pt:.0f}pt)")
 
         # Re-sort by position for display order
         gloss_entries = [(pos, anchor, note) for _, pos, anchor, note in gloss_candidates]
@@ -149,10 +166,10 @@ def build_chunk(chapter_dir: str, recently_glossed: set) -> tuple[str, set]:
                 anchor_esc = anchor.replace('[', '\\[').replace(']', '\\]').replace('#', '\\#')
                 note_esc = note.replace('[', '\\[').replace(']', '\\]').replace('#', '\\#')
                 # Truncate long definitions to avoid wrapping
-            combined = f"{anchor_esc} {note_esc}"
-            if len(combined) > 35:
-                note_esc = note_esc[:35 - len(anchor_esc) - 3] + "…"
-            note_lines.append(f"*{anchor_esc}* {note_esc}")
+                combined = f"{anchor_esc} {note_esc}"
+                if len(combined) > 35:
+                    note_esc = note_esc[:35 - len(anchor_esc) - 3] + "…"
+                note_lines.append(f"*{anchor_esc}* {note_esc}")
 
             notes_block = " \\\n  ".join(note_lines)
             para_esc = para.replace('[', '\\[').replace(']', '\\]').replace('#', '\\#')
@@ -193,8 +210,9 @@ def build_document():
   lang: "el",
 )
 
-// Glossed paragraph: fixed-height grid, gloss column clipped to text height.
-// Ensures glosses never push paragraph breaks or overflow.
+// Glossed paragraph: grid layout, text height constrains gloss column.
+// Gloss column is clipped to text height to prevent gaps.
+// Python pre-computes how many glosses fit (adaptive constraint).
 #let glossed-para(body, notes) = {
   layout(size => {
     let text-block = block(width: size.width - 5cm, [
@@ -202,13 +220,21 @@ def build_document():
       #body
     ])
     let text-height = measure(text-block).height
+    let notes-block = text(size: 6.5pt, fill: luma(80), notes)
+    let notes-height = measure(block(width: 4.5cm, notes-block)).height
+    // Use the taller of the two (but prefer text height)
+    let row-height = if notes-height <= text-height {
+      text-height
+    } else {
+      // Glosses taller than text: clip glosses to text height
+      text-height
+    }
     grid(
       columns: (1fr, 4.5cm),
       column-gutter: 0.5cm,
-      rows: (text-height,),
-      block(height: text-height, clip: false, text-block),
-      block(height: text-height, clip: true,
-        text(size: 6.5pt, fill: luma(80), notes)),
+      rows: (row-height,),
+      block(height: row-height, clip: false, text-block),
+      block(height: row-height, clip: true, notes-block),
     )
   })
   v(0.4em)
@@ -236,7 +262,7 @@ def build_document():
 
     # Build chapters
     recently_glossed = set()
-    RECENCY_WINDOW = 10
+    RECENCY_WINDOW = 6
     recent_sets = []
 
     for roman, chunk_dirs in chapters.items():
@@ -275,53 +301,15 @@ def main():
 
     if args.compile:
         pdf_path = typ_path.with_suffix(".pdf")
-
-        # Iterative: compile, check gaps, reduce glosses, recompile
-        for iteration in range(4):
-            print(f"  Compiling (iteration {iteration + 1})...")
-            result = subprocess.run(
-                ["typst", "compile", str(typ_path), str(pdf_path)],
-                capture_output=True, text=True, timeout=60,
-            )
-            if result.returncode != 0:
-                print(f"  typst errors: {result.stderr[:300]}")
-                break
-
-            # Check for gaps using PyMuPDF
-            try:
-                import fitz
-                gaps = _check_gaps(str(pdf_path))
-                print(f"  {len(gaps)} paragraph gaps found")
-                if not gaps:
-                    break
-
-                # Remove the last gloss entry from each gapped paragraph
-                typ_content = typ_path.read_text("utf-8")
-                fixes = 0
-                for gap_text in gaps[:50]:  # fix up to 50 per iteration
-                    # Find the glossed-para containing this text and remove last entry
-                    import re
-                    # Find a \\ before the closing ] of the notes column
-                    # This removes the last gloss entry from each block
-                    pattern = r'(\\\\\n  \*[^\n]+)\n(\)\n)'
-                    # Simpler: find glossed-para blocks and remove one entry
-                    pass  # complex — just reduce max_entries globally instead
-
-                # Reduce CHARS_PER_LINE to make estimation more conservative
-                global CHARS_PER_LINE
-                CHARS_PER_LINE = max(20, CHARS_PER_LINE - 5)
-                print(f"  Reducing CHARS_PER_LINE to {CHARS_PER_LINE}")
-
-                # Rebuild
-                doc_content = build_document()
-                typ_path.write_text(doc_content)
-
-            except ImportError:
-                print("  PyMuPDF not available")
-                break
-
-        if pdf_path.exists():
+        print("  Compiling with typst...")
+        result = subprocess.run(
+            ["typst", "compile", str(typ_path), str(pdf_path)],
+            capture_output=True, text=True, timeout=60,
+        )
+        if result.returncode == 0:
             print(f"Wrote {pdf_path}")
+        else:
+            print(f"typst errors: {result.stderr[:500]}")
 
 
 def _check_gaps(pdf_path: str) -> list:
