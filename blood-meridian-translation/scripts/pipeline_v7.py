@@ -221,10 +221,9 @@ def build_provenance_glosses(passage_id: str,
         if lemma in COMMON or lemma in gloss_entries or len(lemma) <= 2:
             continue
 
-        # Definition from LSJ with English context
-        defn = lsj_lookup(lemma, prov["sentence"]) or lsj_lookup(lemma)
-        if not defn:
-            defn = english.lower()
+        # The English word IS the gloss — we know the sense because we chose it
+        en_word = english.lower().strip(".,;:!?")
+        defn = en_word
 
         # Clean
         defn = re.sub(r"^(the|a|an|to)\s+", "", defn.strip(), flags=re.I)
