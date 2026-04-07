@@ -127,29 +127,8 @@ def build_chunk(chapter_dir: str, recently_glossed: set) -> tuple[str, set]:
         # Sort by IDF descending (rarest first)
         gloss_candidates.sort(key=lambda x: -x[0])
 
-        # Adaptive constraint: fit as many glosses as the text height allows.
-        # Estimate text height, then add entries until we'd exceed it.
-        text_lines = max(1, len(para) // CHARS_PER_LINE + 1)
-        text_ht_pt = text_lines * TEXT_LINE_HT  # estimated paragraph height in pt
-
-        # Each gloss entry height: 6.5pt per margin line, ~30 chars per margin line
-        # (measured from PDF: 4.5cm at 6.5pt ≈ 30 chars per line)
-        MARGIN_CHARS = 30
-        MARGIN_LINE = 8.5  # pt per margin line (measured: 8.1pt avg)
-        cumulative = 0
-        max_entries = 0
-        for _, _, anchor, note in gloss_candidates:
-            entry_chars = len(anchor) + len(note) + 3
-            entry_margin_lines = max(1, (entry_chars + MARGIN_CHARS - 1) // MARGIN_CHARS)
-            entry_ht = entry_margin_lines * MARGIN_LINE
-            if cumulative + entry_ht > text_ht_pt:
-                break
-            cumulative += entry_ht
-            max_entries += 1
-
-        gloss_candidates = gloss_candidates[:max(1, max_entries)]
-        if len(para) > 400 and max_entries > 1:
-            print(f"    DEBUG: para {len(para)}ch, {len(gloss_candidates)} entries (max={max_entries}, text_ht={text_ht_pt:.0f}pt)")
+        # No Python-side cap — Typst's clip: true handles overflow.
+        # IDF sort ensures rarest words appear at top of each block.
 
         # Re-sort by position for display order
         gloss_entries = [(pos, anchor, note) for _, pos, anchor, note in gloss_candidates]
