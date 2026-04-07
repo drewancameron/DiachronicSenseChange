@@ -1,0 +1,58 @@
+% glossmargin.sty — Custom margin gloss system for Ancient Greek reader editions
+%
+% Avoids overlap by batching glosses per paragraph into a single margin block.
+% Uses \marginnote internally (no float limit) with a vertical offset tracker
+% to prevent blocks from overlapping across paragraph boundaries.
+%
+% Usage:
+%   \gloss{anchor_word}{= definition ↔ antonym}
+%   \flushglosses  % call at end of each paragraph
+%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{glossmargin}[2026/04/07 Custom margin glosses]
+
+\RequirePackage{marginnote}
+\RequirePackage{etoolbox}
+\RequirePackage{xcolor}
+
+% === Configuration ===
+\newcommand{\glossfontsize}{7pt}
+\newcommand{\glossleading}{9pt}
+\definecolor{glosscolor}{gray}{0.3}
+
+\newcommand{\glossfont}{%
+  \fontsize{\glossfontsize}{\glossleading}\selectfont\color{glosscolor}%
+}
+
+% === Two-column gloss layout ===
+% Glosses are arranged in two columns within the margin for double capacity.
+% The Python generator splits glosses into left/right columns.
+
+% Two-column gloss block
+% #1 = left column entries (separated by \\[1pt])
+% #2 = right column entries
+\newcommand{\glossblock}[2]{%
+  \marginnote{%
+    \glossfont
+    \begin{minipage}[t]{0.48\marginparwidth}%
+      \raggedright #1%
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{0.48\marginparwidth}%
+      \raggedright #2%
+    \end{minipage}%
+  }[0pt]%
+}
+
+% Single-column gloss block (for paragraphs with few glosses)
+\newcommand{\glossblocksingle}[1]{%
+  \marginnote{\glossfont #1}[0pt]%
+}
+
+% === Single inline gloss ===
+\newcommand{\gloss}[2]{%
+  \marginnote{\glossfont \textbf{#1}~#2}[0pt]%
+  #1%
+}
+
+\endinput
