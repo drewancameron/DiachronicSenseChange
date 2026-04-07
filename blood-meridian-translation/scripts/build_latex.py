@@ -94,113 +94,77 @@ def build_chunk(chapter_dir: str) -> str:
     CHARS_PER_TEXT_LINE = 55  # chars per text line (with wide margin)
     
 
-    # IDF lookup for prioritising rarest glosses
-    try:
-        from auto_gloss import load_idf
-        _lemma_idf, _form_idf = load_idf()
-    except Exception:
-        _lemma_idf, _form_idf = {}, {}
-
-    def _get_word_idf(word):
-        import unicodedata
-        stripped = "".join(c for c in unicodedata.normalize("NFD", word)
-                          if unicodedata.category(c) != "Mn").lower()
-        if stripped in _lemma_idf:
-            return _lemma_idf[stripped].get("idf", 5)
-        if stripped in _form_idf:
-            return _form_idf[stripped].get("idf", 5)
-        return 12  # unknown words are probably rare
-
     # Track recently glossed words — don't repeat within RECENCY_WINDOW paragraphs
-    RECENCY_WINDOW = 6
-    recent_glosses = []
-
-    # Batch short paragraphs: accumulate glosses until we hit a long paragraph
-    # or accumulate enough text height to warrant a block
-    MIN_TEXT_HEIGHT_FOR_BLOCK = 60  # ~4 lines minimum before emitting a gloss block
+    RECENCY_WINDOW = 8
+    recently_glossed = set()
+    recent_glosses = []  # list of sets per paragraph
 
     parts = []
-    pending_glosses = []  # accumulated glosses waiting for emission
-    pending_text = []     # accumulated paragraph text
-    pending_height = 0    # estimated accumulated text height
 
-    for para_idx, para in enumerate(paragraphs):
+    for para in paragraphs:
         para_tex = tex_escape(para)
 
-        # Estimate text height of this paragraph
-        text_lines = max(1, len(para) // CHARS_PER_TEXT_LINE + 1)
-        text_ht = text_lines * TEXT_LINE_HT + 7  # +7pt for parskip
-
-        # Find which glosses appear in this paragraph
-        # Skip recently glossed words
+        # Update recency window
         recently_glossed = set()
         for s in recent_glosses[-RECENCY_WINDOW:]:
             recently_glossed.update(s)
 
-        para_gloss_candidates = []
+        glossed_this_para = set()
+
+        # Collect glossable words with their positions in the paragraph
         anchors = sorted(gloss_map.keys(), key=len, reverse=True)
+        gloss_positions = []  # (char_position, anchor, note)
+
         for anchor in anchors:
+            if anchor in recently_glossed or anchor in glossed_this_para:
+                continue
             anchor_esc = tex_escape(anchor)
-            if anchor_esc in para_tex and anchor not in recently_glossed:
-                note = gloss_map[anchor]
-                note_esc = tex_escape(note)
-                idf = _get_word_idf(anchor)
-                para_gloss_candidates.append((idf, anchor,
-                    f"\\textbf{{{anchor_esc}}} {note_esc}"))
+            pos = para_tex.find(anchor_esc)
+            if pos < 0:
+                continue
+            note = gloss_map[anchor]
+            note_esc = tex_escape(note)
+            gloss_positions.append((pos, anchor, anchor_esc, note_esc))
+            glossed_this_para.add(anchor)
 
-        # Sort by IDF descending — rarest words first (kept when cap applied)
-        para_gloss_candidates.sort(key=lambda x: -x[0])
-        para_glosses = [g for _, _, g in para_gloss_candidates]
-        glossed_this_para = {anchor for _, anchor, _ in para_gloss_candidates}
+        # Sort by position in text
+        gloss_positions.sort(key=lambda x: x[0])
 
-        # Accumulate glosses and text
-        pending_glosses.extend(para_glosses)
-        pending_text.append(para_tex)
-        pending_height += text_ht
-        recent_glosses.append(glossed_this_para)
+        # Group nearby glosses into blocks (within ~80 chars ≈ ~1.5 lines)
+        MERGE_DISTANCE = 80
+        groups = []
+        current_group = []
 
-        # Decide whether to emit now or keep batching
-        is_last = (para_idx == len(paragraphs) - 1)
-        is_long_enough = pending_height >= MIN_TEXT_HEIGHT_FOR_BLOCK
-        has_no_glosses = len(pending_glosses) == 0
+        for pos, anchor, anchor_esc, note_esc in gloss_positions:
+            if current_group and pos - current_group[-1][0] > MERGE_DISTANCE:
+                groups.append(current_group)
+                current_group = []
+            current_group.append((pos, anchor, anchor_esc, note_esc))
+        if current_group:
+            groups.append(current_group)
 
-        if is_last or is_long_enough or (has_no_glosses and pending_text):
-            # Emit accumulated text with accumulated glosses
-            text_block = "\n\n".join(pending_text)
+        # For each group, place a single \marginpar at the first word
+        # containing all entries, and leave the other words unmarked
+        for group in groups:
+            first_pos, first_anchor, first_anchor_esc, first_note_esc = group[0]
 
-            if pending_glosses:
-                # Cap to reasonable density
-                max_glosses = min(8, max(3, int(pending_height / (TEXT_LINE_HT * 1.5))))
-                if len(pending_glosses) > max_glosses:
-                    pending_glosses = pending_glosses[:max_glosses]
-
-                # Split into two columns
-                col1 = []
-                col2 = []
-                for i, g in enumerate(pending_glosses):
-                    if i % 2 == 0:
-                        col1.append(g)
-                    else:
-                        col2.append(g)
-
-                if col2:
-                    c1_tex = "\\\\[3pt]".join(col1)
-                    c2_tex = "\\\\[3pt]".join(col2)
-                    parts.append(
-                        f"\\glossblock{{{c1_tex}}}{{{c2_tex}}}%\n{text_block}\n"
-                    )
-                else:
-                    block = "\\\\[3pt]".join(pending_glosses)
-                    parts.append(
-                        f"\\glossblocksingle{{{block}}}%\n{text_block}\n"
-                    )
+            if len(group) == 1:
+                # Single gloss — simple \gloss command
+                replacement = f"\\gloss{{{first_anchor_esc}}}{{{first_note_esc}}}"
+                para_tex = para_tex.replace(first_anchor_esc, replacement, 1)
             else:
-                parts.append(text_block + "\n")
+                # Merged block — build multi-entry note for first word's \marginpar
+                entries = []
+                for _, anchor, anchor_esc, note_esc in group:
+                    entries.append(f"\\textbf{{{anchor_esc}}} {note_esc}")
 
-            # Reset accumulators
-            pending_glosses = []
-            pending_text = []
-            pending_height = 0
+                merged_note = "\\\\[2pt]".join(entries)
+                # Place merged block at first word using \glossblock
+                replacement = f"\\glossmerged{{{first_anchor_esc}}}{{{merged_note}}}"
+                para_tex = para_tex.replace(first_anchor_esc, replacement, 1)
+
+        recent_glosses.append(glossed_this_para)
+        parts.append(para_tex + "\n")
 
     return "\n".join(parts)
 
