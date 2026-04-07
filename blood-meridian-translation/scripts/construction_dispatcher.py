@@ -263,7 +263,28 @@ def _analyse_clause(sent) -> ClauseSkeleton:
             clause.subordinator = "ὅς"
 
     # Process each word
-    for word in sent.words:
+    # Check for multi-word expressions in locked glossary FIRST
+    sent_text = " ".join(w.text.lower() for w in sent.words)
+    _load_vocab()
+    mwe_spans = set()  # word indices consumed by MWE matches
+    for en_phrase, grc in _locked_glossary.items():
+        if en_phrase in sent_text and " " in en_phrase:
+            # Find which word indices this phrase covers
+            phrase_words = en_phrase.split()
+            for i in range(len(sent.words) - len(phrase_words) + 1):
+                window = [sent.words[i + j].text.lower() for j in range(len(phrase_words))]
+                if window == phrase_words:
+                    # Emit the Greek as a single unit at the first word's position
+                    target = GreekTarget(lemma=grc, pos="noun",
+                                         english=en_phrase, role="obj")
+                    clause.words.append(target)
+                    for j in range(len(phrase_words)):
+                        mwe_spans.add(i + j)
+                    break
+
+    for i, word in enumerate(sent.words):
+        if i in mwe_spans:
+            continue  # consumed by MWE
         target = _word_to_target(word, clause)
         if target:
             clause.words.append(target)
@@ -273,6 +294,34 @@ def _analyse_clause(sent) -> ClauseSkeleton:
 
 # Function words: don't look up in Woodhouse/LSJ, handle structurally
 _SKIP_WORDS = {"the", "a", "an"}  # articles: added by assembler
+
+# McCarthy-specific vocabulary not in Woodhouse/LSJ
+_MCCARTHY_VOCAB = {
+    "stoke": "σκαλεύειν",       # poke/stir a fire
+    "stokes": "σκαλεύειν",
+    "scullery": "μαγειρεῖον",    # kitchen
+    "saloon": "καπηλεῖον",       # bar/tavern
+    "bartender": "κάπηλος",
+    "barman": "κάπηλος",
+    "pistol": "πιστόλιον",
+    "gun": "πιστόλιον",
+    "rifle": "τόξον",
+    "saddle": "ἐφίππιον",
+    "boots": "ἐμβάδες",
+    "hat": "πέτασος",
+    "felt": "πῖλος",
+    "mud": "πηλός",
+    "mule": "ἡμίονος",
+    "flatboat": "σχεδία",
+    "steamboat": "ἀτμόπλοιον",
+    "tent": "σκηνή",
+    "preacher": "ἱερεύς",
+    "reverend": "αἰδέσιμος",
+    "judge": "κριτής",
+    "nigger": "μέλας",           # McCarthy's language, not endorsed
+    "whiskey": "οἶνος",          # closest Greek equivalent
+    "tobacco": "καπνός",
+}
 
 # Pronouns: map directly to Greek
 _PRONOUN_MAP = {
@@ -542,6 +591,10 @@ def _lookup_pos_aware(lemma: str, word_form: str, target_pos: str) -> str | None
     _load_vocab()
     en = lemma.lower().strip()
 
+    # 0. McCarthy-specific vocabulary
+    if en in _MCCARTHY_VOCAB:
+        return _MCCARTHY_VOCAB[en]
+
     # 1. Locked glossary (always takes priority)
     if en in _locked_glossary:
         return _locked_glossary[en]
@@ -570,13 +623,50 @@ def _lookup_pos_aware(lemma: str, word_form: str, target_pos: str) -> str | None
                     return gw
             return greek_words[0]
         elif target_pos == "adj":
-            # Prefer adjective forms (ending in -ος, -η, -ον, -ής, -ύς)
+            # Prefer adjective forms — but distinguish from nouns in -ος
+            # True adjectives: -ός/-ή/-όν (2nd decl), -ύς/-εῖα/-ύ (3rd decl),
+            #                  -ης/-ες (3rd decl), -ων/-ον (3rd decl)
+            # Use Woodhouse senses to help: if sense says "adj." prefer it
+            adj_candidates = []
             for gw in greek_words:
-                if any(gw.endswith(s) for s in ("ός", "ος", "ή", "ης",
-                                                 "ύς", "υς", "ον")):
-                    return gw
-            # Don't return a verb when we need an adjective — fall through
-            # to synonym lookup and LSJ
+                # Skip articles, verbs, obvious nouns
+                if gw in ("τό", "τά", "ὁ", "ἡ", "τοῦ"):
+                    continue
+                if any(gw.endswith(s) for s in ("ειν", "εῖν", "ᾶν", "σθαι",
+                                                 "ναι")):
+                    continue
+                # Prefer words ending in typical adj suffixes
+                if any(gw.endswith(s) for s in ("ός", "ή", "όν", "ές",
+                                                 "ύς", "εῖα", "ής",
+                                                 "αῖος", "ινος", "ικός",
+                                                 "ωδης", "ώδης")):
+                    adj_candidates.append(gw)
+
+            # Skip the first candidate if it matches a common noun pattern
+            # (words like σκότος, θάνατος, λόγος are nouns not adjectives)
+            # Before using Woodhouse's adjective candidates (which may be rare),
+            # check if synonym lookup gives a more common word
+            _ADJECTIVE_SYNONYMS_INNER = {
+                "dark": ["gloomy", "murky", "dim"],
+                "pale": ["pallid", "wan", "sallow"],
+                "thin": ["lean", "slender", "spare"],
+                "old": ["aged", "ancient", "elderly"],
+                "big": ["large", "great"], "small": ["little", "tiny"],
+                "fast": ["swift", "quick"], "slow": ["sluggish", "tardy"],
+                "hot": ["warm", "burning"], "cold": ["chill", "frigid"],
+                "wet": ["damp", "moist"], "dry": ["arid", "parched"],
+                "hard": ["firm", "tough"], "soft": ["gentle", "tender"],
+            }
+            for syn in _ADJECTIVE_SYNONYMS_INNER.get(en, []):
+                if syn in _woodhouse:
+                    for gw in _woodhouse[syn].get("greek", []):
+                        if any(gw.endswith(s) for s in ("ός", "ος", "ή", "ης",
+                                                         "ύς", "υς", "ον")):
+                            return gw
+
+            if adj_candidates:
+                return adj_candidates[0]
+            # Don't return a verb/noun when we need an adjective — fall through
         else:
             return greek_words[0]
 
@@ -588,7 +678,7 @@ def _lookup_pos_aware(lemma: str, word_form: str, target_pos: str) -> str | None
         _ADJECTIVE_SYNONYMS = {
             "pale": ["pallid", "wan", "sallow"],
             "thin": ["lean", "slender", "spare"],
-            "dark": ["gloomy", "murky", "dim"],
+            "dark": ["gloomy", "murky", "dim", "obscure"],
             "old": ["aged", "ancient", "elderly"],
             "big": ["large", "great"],
             "small": ["little", "tiny"],
@@ -608,13 +698,43 @@ def _lookup_pos_aware(lemma: str, word_form: str, target_pos: str) -> str | None
                                                      "ύς", "υς", "ον")):
                         return gw
 
-    # 4. Inverted LSJ fallback
+    # 4. WordNet synonym expansion — find a synonym that IS in Woodhouse
+    try:
+        from nltk.corpus import wordnet as wn
+        for syn in wn.synsets(en):
+            for lemma_name in syn.lemma_names():
+                candidate = lemma_name.replace("_", " ").lower()
+                if candidate == en:
+                    continue
+                if candidate in _woodhouse:
+                    greek_words = _woodhouse[candidate].get("greek", [])
+                    if target_pos == "adj":
+                        for gw in greek_words:
+                            if any(gw.endswith(s) for s in ("ός", "ος", "ή",
+                                                             "ης", "ύς", "ον")):
+                                return gw
+                    elif target_pos == "verb":
+                        for gw in greek_words:
+                            if any(gw.endswith(s) for s in ("ειν", "εῖν", "αν",
+                                                             "ᾶν", "ναι", "σθαι")):
+                                return gw
+                    elif greek_words:
+                        # For nouns, take the first non-verb entry
+                        for gw in greek_words:
+                            if not any(gw.endswith(s) for s in ("ειν", "εῖν",
+                                                                 "ᾶν", "σθαι")):
+                                return gw
+                        return greek_words[0]
+    except Exception:
+        pass
+
+    # 5. Inverted LSJ fallback
     if en in _lsj_en:
         entries = _lsj_en[en]
         if entries:
             return entries[0]["lemma"]
 
-    # 5. Try the word form itself (not just lemma)
+    # 6. Try the word form itself (not just lemma)
     word_lower = word_form.lower().strip()
     if word_lower != en:
         result = _lookup_pos_aware(word_lower, word_lower, target_pos)
