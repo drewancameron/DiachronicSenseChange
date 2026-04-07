@@ -706,8 +706,23 @@ def _lookup_with_context(lemma: str, word_form: str, target_pos: str,
     direct = _lookup_pos_aware(en, word_form, target_pos)
     direct_pos_ok = direct and _pos_matches(direct, target_pos)
 
-    # If direct lookup succeeded with correct POS, use it
-    if direct_pos_ok:
+    # Check if Woodhouse has MULTIPLE entries with the same POS
+    # (e.g. "lie" has both deceive and recline as v. intrans.)
+    # If so, don't trust the first match — use Haiku synonyms to disambiguate
+    has_ambiguous_pos = False
+    if direct_pos_ok and en in _woodhouse:
+        wh_data = _woodhouse[en]
+        if isinstance(wh_data, list):
+            _WH_POS_MAP = {
+                "verb": {"v. trans.", "v. intrans.", "v."},
+                "noun": {"subs."}, "adj": {"adj."}, "adv": {"adv."},
+            }
+            target_labels = _WH_POS_MAP.get(target_pos, set())
+            matching_entries = [e for e in wh_data if e.get("pos", "") in target_labels]
+            has_ambiguous_pos = len(matching_entries) > 1
+
+    # If direct lookup succeeded with correct POS and no ambiguity, use it
+    if direct_pos_ok and not has_ambiguous_pos:
         return direct
 
     # 3. Direct lookup failed or POS mismatch — try Haiku synonyms
@@ -723,10 +738,15 @@ def _lookup_with_context(lemma: str, word_form: str, target_pos: str,
                     # Check McCarthy vocab
                     if syn_lower in _MCCARTHY_VOCAB:
                         return _MCCARTHY_VOCAB[syn_lower]
-                    # Then Woodhouse with POS
-                    syn_result = _lookup_pos_aware(syn_lower, syn, target_pos)
-                    if syn_result and _pos_matches(syn_result, target_pos):
-                        return syn_result
+                    # Try the synonym directly and lemmatized (strip -s, -ed, -ing)
+                    candidates = [syn_lower]
+                    for suffix in ["s", "es", "ed", "ing", "d"]:
+                        if syn_lower.endswith(suffix) and len(syn_lower) > len(suffix) + 2:
+                            candidates.append(syn_lower[:-len(suffix)])
+                    for candidate in candidates:
+                        syn_result = _lookup_pos_aware(candidate, candidate, target_pos)
+                        if syn_result and _pos_matches(syn_result, target_pos):
+                            return syn_result
 
     # 4. Fall back to direct result even if POS doesn't match
     if direct:
