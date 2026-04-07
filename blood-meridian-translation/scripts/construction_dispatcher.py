@@ -105,29 +105,10 @@ def _load_vocab():
 def lookup_greek(english_word: str, pos_hint: str = "") -> str | None:
     """Look up the Greek lemma for an English word.
 
-    Priority: locked glossary → Woodhouse → inverted LSJ.
+    Priority: locked glossary → Woodhouse (POS-aware) → inverted LSJ.
     Returns the Greek lemma or None.
     """
-    _load_vocab()
-    en = english_word.lower().strip()
-
-    # 1. Locked glossary (highest priority)
-    if en in _locked_glossary:
-        return _locked_glossary[en]
-
-    # 2. Woodhouse (composition dictionary — best for primary meanings)
-    if en in _woodhouse:
-        greek_words = _woodhouse[en].get("greek", [])
-        if greek_words:
-            return greek_words[0]  # first = most common
-
-    # 3. Inverted LSJ (fallback)
-    if en in _lsj_en:
-        entries = _lsj_en[en]
-        if entries:
-            return entries[0]["lemma"]
-
-    return None
+    return _lookup_pos_aware(english_word, english_word, pos_hint or "")
 
 
 # ====================================================================
@@ -290,28 +271,229 @@ def _analyse_clause(sent) -> ClauseSkeleton:
     return clause
 
 
+# Function words: don't look up in Woodhouse/LSJ, handle structurally
+_SKIP_WORDS = {"the", "a", "an"}  # articles: added by assembler
+
+# Pronouns: map directly to Greek
+_PRONOUN_MAP = {
+    # Subject pronouns — usually DROPPED in Greek (pro-drop language)
+    "he": None, "she": None, "it": None, "they": None,
+    "i": "ἐγώ", "we": "ἡμεῖς", "you": "σύ",
+    # Object pronouns
+    "him": "αὐτός", "her": "αὐτός", "them": "αὐτός",
+    "me": "ἐγώ", "us": "ἡμεῖς",
+    # Possessives → genitive of pronoun
+    "his": "αὐτός", "her": "αὐτός", "its": "αὐτός", "their": "αὐτός",
+    "my": "ἐμός", "our": "ἡμέτερος", "your": "σός",
+    # Demonstratives
+    "this": "οὗτος", "that": "ἐκεῖνος", "these": "οὗτος", "those": "ἐκεῖνος",
+    # Reflexive
+    "himself": "ἑαυτοῦ", "herself": "ἑαυτοῦ", "themselves": "ἑαυτῶν",
+    # Interrogative
+    "who": "τίς", "what": "τί", "which": "τίς",
+    # Relative
+    "who": "ὅς", "whom": "ὅς", "whose": "ὅς", "which": "ὅς",
+}
+
+# Prepositions: map English prep + dependency context → Greek prep + case
+_PREPOSITION_MAP = {
+    "in": ("ἐν", "dat"),
+    "into": ("εἰς", "acc"),
+    "to": ("πρός", "acc"),
+    "from": ("ἀπό", "gen"),
+    "out of": ("ἐκ", "gen"),
+    "with": ("μετά", "gen"),     # accompaniment
+    "by": ("παρά", "dat"),       # agent or location
+    "for": ("ὑπέρ", "gen"),      # on behalf of
+    "through": ("διά", "gen"),
+    "against": ("πρός", "acc"),
+    "about": ("περί", "gen"),
+    "upon": ("ἐπί", "gen"),
+    "on": ("ἐπί", "dat"),
+    "over": ("ὑπέρ", "acc"),
+    "under": ("ὑπό", "dat"),
+    "before": ("πρό", "gen"),
+    "after": ("μετά", "acc"),
+    "behind": ("ὄπισθεν", "gen"),
+    "between": ("μεταξύ", "gen"),
+    "across": ("διά", "gen"),
+    "along": ("παρά", "acc"),
+    "toward": ("πρός", "acc"),
+    "beside": ("παρά", "dat"),
+    "without": ("ἄνευ", "gen"),
+    "among": ("ἐν", "dat"),
+    "beyond": ("πέρα", "gen"),
+    "until": ("μέχρι", "gen"),
+    "above": ("ὑπέρ", "gen"),
+    "below": ("ὑπό", "acc"),
+    "around": ("περί", "acc"),
+    "outside": ("ἔξω", "gen"),
+    "inside": ("ἐντός", "gen"),
+    "near": ("ἐγγύς", "gen"),
+    "down": ("κατά", "gen"),
+    "up": ("ἀνά", "acc"),
+    "at": ("ἐν", "dat"),         # location
+    "of": None,                  # → genitive case, not a preposition
+}
+
+# Conjunctions/particles: direct mapping
+_CONJUNCTION_MAP = {
+    "and": "καί",
+    "but": "ἀλλά",
+    "or": "ἤ",
+    "nor": "μηδέ",
+    "yet": "ὅμως",
+    "so": "οὖν",
+    "for": "γάρ",       # as conjunction (causal), not as preposition
+    "because": "ὅτι",
+    "although": "καίπερ",
+    "if": "εἰ",
+    "unless": "εἰ μή",
+    "when": "ὅτε",
+    "while": "ἕως",
+    "since": "ἐπεί",
+    "not": "οὐ",
+    "never": "οὐδέποτε",
+    "no": "οὐ",
+    "now": "νῦν",
+    "then": "τότε",
+    "still": "ἔτι",
+    "already": "ἤδη",
+    "also": "καί",
+    "even": "καί",
+}
+
+# Adverbs with direct Greek equivalents
+_ADVERB_MAP = {
+    "outside": "ἔξω",
+    "inside": "ἔνδον",
+    "here": "ἐνταῦθα",
+    "there": "ἐκεῖ",
+    "where": "ποῦ",
+    "always": "ἀεί",
+    "never": "οὐδέποτε",
+    "again": "πάλιν",
+    "away": "ἀπό",
+    "back": "πάλιν",
+    "down": "κάτω",
+    "up": "ἄνω",
+    "out": "ἔξω",
+    "far": "πόρρω",
+    "perhaps": "ἴσως",
+    "only": "μόνον",
+    "thus": "οὕτως",
+    "very": "μάλα",
+    "much": "πολύ",
+    "well": "εὖ",
+}
+
+
 def _word_to_target(word, clause: ClauseSkeleton) -> GreekTarget | None:
     """Convert a stanza word to a Greek translation target."""
     # Skip punctuation
     if word.upos == "PUNCT":
         return None
 
-    # Skip function words that'll be handled structurally
-    if word.upos in ("DET",) and word.text.lower() in ("the", "a", "an"):
-        # Articles handled separately in assembly
+    en = word.text.lower()
+    lemma = (word.lemma or word.text).lower()
+
+    # Skip articles (handled by assembler)
+    if en in _SKIP_WORDS:
         return None
 
-    # Look up Greek lemma
-    lemma = word.lemma or word.text
-    greek = lookup_greek(lemma)
-
-    # Determine POS mapping
+    # Determine POS
     pos_map = {
-        "NOUN": "noun", "PROPN": "noun", "VERB": "verb", "AUX": "verb",
+        "NOUN": "noun", "PROPN": "propn", "VERB": "verb", "AUX": "verb",
         "ADJ": "adj", "ADV": "adv", "ADP": "prep", "CCONJ": "conj",
-        "SCONJ": "conj", "PRON": "pron", "NUM": "num",
+        "SCONJ": "conj", "PRON": "pron", "NUM": "num", "PART": "particle",
     }
     pos = pos_map.get(word.upos, "other")
+
+    # === PRONOUNS ===
+    if pos == "pron":
+        greek = _PRONOUN_MAP.get(en)
+        if greek is None:
+            # Subject pronoun → drop (Greek is pro-drop)
+            return None
+        target = GreekTarget(lemma=greek, pos="pron", english=word.text,
+                             role=word.deprel)
+        feats = _parse_feats(word.feats)
+        target.number = {"Sing": "sg", "Plur": "pl"}.get(
+            feats.get("Number", "Sing"), "sg")
+        target.case = _role_to_case(word.deprel)
+        # Possessives → genitive
+        if word.deprel == "nmod:poss":
+            target.case = "gen"
+        return target
+
+    # === PREPOSITIONS ===
+    if pos == "prep":
+        if en == "of":
+            # "of" → genitive case on the dependent noun, not a Greek preposition
+            return None
+        prep_info = _PREPOSITION_MAP.get(en)
+        if prep_info:
+            greek_prep, governed_case = prep_info
+            target = GreekTarget(lemma=greek_prep, pos="prep",
+                                 english=word.text, role=word.deprel)
+            target.case = governed_case  # case the prep governs
+            return target
+        # Unknown preposition — try Woodhouse
+        greek = lookup_greek(en)
+        return GreekTarget(lemma=greek or f"[{en}]", pos="prep",
+                           english=word.text, role=word.deprel)
+
+    # === CONJUNCTIONS ===
+    if pos == "conj":
+        # Distinguish "for" as conjunction (causal) vs preposition
+        if en == "for" and word.deprel == "mark":
+            greek = "γάρ"
+        else:
+            greek = _CONJUNCTION_MAP.get(en)
+        if greek:
+            return GreekTarget(lemma=greek, pos="conj",
+                               english=word.text, role=word.deprel)
+        return None  # skip unknown conjunctions
+
+    # === ADVERBS ===
+    if pos == "adv":
+        greek = _ADVERB_MAP.get(en) or _CONJUNCTION_MAP.get(en)
+        if greek:
+            return GreekTarget(lemma=greek, pos="adv",
+                               english=word.text, role=word.deprel)
+        # Try Woodhouse for content adverbs
+        greek = lookup_greek(lemma, pos_hint="adv")
+        if greek:
+            return GreekTarget(lemma=greek, pos="adv",
+                               english=word.text, role=word.deprel)
+        return None
+
+    # === PARTICLES ===
+    if pos == "particle":
+        greek = _CONJUNCTION_MAP.get(en)
+        if greek:
+            return GreekTarget(lemma=greek, pos="particle",
+                               english=word.text, role=word.deprel)
+        return None
+
+    # === PROPER NOUNS ===
+    if pos == "propn":
+        # Check locked glossary first, then transliterate
+        greek = lookup_greek(word.text) or lookup_greek(lemma)
+        if not greek:
+            # Transliterate: keep as-is with asterisk marker
+            greek = f"*{word.text}"
+        target = GreekTarget(lemma=greek, pos="propn", english=word.text,
+                             role=word.deprel)
+        target.case = _role_to_case(word.deprel)
+        feats = _parse_feats(word.feats)
+        target.number = {"Sing": "sg", "Plur": "pl"}.get(
+            feats.get("Number", "Sing"), "sg")
+        return target
+
+    # === CONTENT WORDS (nouns, verbs, adjectives) ===
+    # POS-aware Woodhouse lookup
+    greek = _lookup_pos_aware(lemma, word.text, pos)
 
     target = GreekTarget(
         lemma=greek or f"[{lemma}]",
@@ -341,19 +523,105 @@ def _word_to_target(word, clause: ClauseSkeleton) -> GreekTarget | None:
         target.person = person
         target.number = {"Sing": "sg", "Plur": "pl"}.get(number, "sg")
 
-        # McCarthy's historical present → keep as present
-        if target.tense == "pres" and target.mood == "ind":
-            pass  # good as is
-
     # Set noun/adj features
-    elif pos in ("noun", "adj", "pron"):
+    elif pos in ("noun", "adj"):
         feats = _parse_feats(word.feats)
         target.number = {"Sing": "sg", "Plur": "pl"}.get(
             feats.get("Number", "Sing"), "sg")
-        # Case from dependency role
         target.case = _role_to_case(word.deprel)
 
     return target
+
+
+def _lookup_pos_aware(lemma: str, word_form: str, target_pos: str) -> str | None:
+    """POS-aware vocabulary lookup via Woodhouse.
+
+    Woodhouse entries have sense labels that indicate POS (v. trans., adj., subs.).
+    When looking up 'pale', prefer the adjective entry over the verb entry.
+    """
+    _load_vocab()
+    en = lemma.lower().strip()
+
+    # 1. Locked glossary (always takes priority)
+    if en in _locked_glossary:
+        return _locked_glossary[en]
+
+    # 2. Woodhouse with POS awareness
+    if en in _woodhouse:
+        entry = _woodhouse[en]
+        greek_words = entry.get("greek", [])
+        senses = entry.get("senses", [])
+
+        if not greek_words:
+            pass
+        elif target_pos == "verb":
+            # Prefer entries from verb senses
+            # Woodhouse verbs end in -ειν, -ειν, -αν, -ναι (infinitive)
+            for gw in greek_words:
+                if any(gw.endswith(s) for s in ("ειν", "εῖν", "αν", "ᾶν",
+                                                 "ναι", "σθαι", "ειν")):
+                    return gw
+            return greek_words[0]
+        elif target_pos in ("noun", "propn"):
+            # Prefer entries that are NOT verbs (don't end in infinitive)
+            for gw in greek_words:
+                if not any(gw.endswith(s) for s in ("ειν", "εῖν", "αν", "ᾶν",
+                                                     "ναι", "σθαι")):
+                    return gw
+            return greek_words[0]
+        elif target_pos == "adj":
+            # Prefer adjective forms (ending in -ος, -η, -ον, -ής, -ύς)
+            for gw in greek_words:
+                if any(gw.endswith(s) for s in ("ός", "ος", "ή", "ης",
+                                                 "ύς", "υς", "ον")):
+                    return gw
+            # Don't return a verb when we need an adjective — fall through
+            # to synonym lookup and LSJ
+        else:
+            return greek_words[0]
+
+    # 3. If we need an adjective but Woodhouse only had verbs, try synonyms FIRST
+    #    (before LSJ, which gives less natural primary translations)
+    #    try English synonyms in Woodhouse
+    if target_pos == "adj" and en in _woodhouse:
+        # Woodhouse might have the adjective under a synonym
+        _ADJECTIVE_SYNONYMS = {
+            "pale": ["pallid", "wan", "sallow"],
+            "thin": ["lean", "slender", "spare"],
+            "dark": ["gloomy", "murky", "dim"],
+            "old": ["aged", "ancient", "elderly"],
+            "big": ["large", "great"],
+            "small": ["little", "tiny"],
+            "fast": ["swift", "quick", "rapid"],
+            "slow": ["sluggish", "tardy"],
+            "hot": ["warm", "burning"],
+            "cold": ["chill", "frigid"],
+            "wet": ["damp", "moist"],
+            "dry": ["arid", "parched"],
+            "hard": ["firm", "tough"],
+            "soft": ["gentle", "tender"],
+        }
+        for syn in _ADJECTIVE_SYNONYMS.get(en, []):
+            if syn in _woodhouse:
+                for gw in _woodhouse[syn].get("greek", []):
+                    if any(gw.endswith(s) for s in ("ός", "ος", "ή", "ης",
+                                                     "ύς", "υς", "ον")):
+                        return gw
+
+    # 4. Inverted LSJ fallback
+    if en in _lsj_en:
+        entries = _lsj_en[en]
+        if entries:
+            return entries[0]["lemma"]
+
+    # 5. Try the word form itself (not just lemma)
+    word_lower = word_form.lower().strip()
+    if word_lower != en:
+        result = _lookup_pos_aware(word_lower, word_lower, target_pos)
+        if result:
+            return result
+
+    return None
 
 
 def _parse_feats(feats_str: str | None) -> dict:
@@ -371,8 +639,11 @@ def _role_to_case(deprel: str) -> str:
         "obj": "acc",
         "iobj": "dat",
         "obl": "dat",      # oblique — could be gen/dat depending on preposition
-        "nmod": "gen",
+        "nmod": "gen",      # "of X" → genitive
+        "nmod:poss": "gen", # possessive → genitive
         "vocative": "voc",
+        "appos": "nom",     # apposition matches head case
+        "conj": "",         # conjunction — inherits case from head
     }
     return case_map.get(deprel, "")
 
