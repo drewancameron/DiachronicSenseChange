@@ -94,8 +94,29 @@ def build_chunk(chapter_dir: str) -> str:
     CHARS_PER_TEXT_LINE = 55  # chars per text line (with wide margin)
     CHARS_PER_GLOSS_LINE = 30  # chars per gloss margin line (4cm wide, small font)
 
+    # IDF lookup for prioritising rarest glosses
+    try:
+        from auto_gloss import load_idf
+        _lemma_idf, _form_idf = load_idf()
+    except Exception:
+        _lemma_idf, _form_idf = {}, {}
+
+    def _get_word_idf(word):
+        import unicodedata
+        stripped = "".join(c for c in unicodedata.normalize("NFD", word)
+                          if unicodedata.category(c) != "Mn").lower()
+        if stripped in _lemma_idf:
+            return _lemma_idf[stripped].get("idf", 5)
+        if stripped in _form_idf:
+            return _form_idf[stripped].get("idf", 5)
+        return 12  # unknown words are probably rare
+
+    # Track recently glossed words — don't repeat within RECENCY_WINDOW paragraphs
+    RECENCY_WINDOW = 6
+    recent_glosses = []  # list of sets, one per paragraph
+
     parts = []
-    margin_used = 0  # pt of margin space consumed so far (relative to text)
+    margin_used = 0
 
     for para in paragraphs:
         para_tex = tex_escape(para)
@@ -105,14 +126,26 @@ def build_chunk(chapter_dir: str) -> str:
         text_ht = text_lines * TEXT_LINE_HT + 7  # +7pt for parskip
 
         # Find which glosses appear in this paragraph
-        para_glosses = []
+        # Skip recently glossed words
+        recently_glossed = set()
+        for s in recent_glosses[-RECENCY_WINDOW:]:
+            recently_glossed.update(s)
+
+        para_gloss_candidates = []
         anchors = sorted(gloss_map.keys(), key=len, reverse=True)
         for anchor in anchors:
             anchor_esc = tex_escape(anchor)
-            if anchor_esc in para_tex:
+            if anchor_esc in para_tex and anchor not in recently_glossed:
                 note = gloss_map[anchor]
                 note_esc = tex_escape(note)
-                para_glosses.append(f"\\textbf{{{anchor_esc}}} {note_esc}")
+                idf = _get_word_idf(anchor)
+                para_gloss_candidates.append((idf, anchor,
+                    f"\\textbf{{{anchor_esc}}} {note_esc}"))
+
+        # Sort by IDF descending — rarest words first (kept when cap applied)
+        para_gloss_candidates.sort(key=lambda x: -x[0])
+        para_glosses = [g for _, _, g in para_gloss_candidates]
+        glossed_this_para = {anchor for _, anchor, _ in para_gloss_candidates}
 
         if para_glosses:
             # Cap glosses: gloss block should not be taller than the text
@@ -164,10 +197,11 @@ def build_chunk(chapter_dir: str) -> str:
                 )
 
             margin_used = offset + gloss_ht - text_ht
+            recent_glosses.append(glossed_this_para)
         else:
             parts.append(para_tex + "\n")
-            # No glosses: text passes, reducing margin debt
             margin_used = max(0, margin_used - text_ht)
+            recent_glosses.append(set())
 
     return "\n".join(parts)
 
