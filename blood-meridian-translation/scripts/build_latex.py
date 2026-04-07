@@ -136,20 +136,18 @@ def build_chunk(chapter_dir: str) -> str:
         # 2. Block aligned with the paragraph start
         # 3. \marginpar collision avoidance handles inter-paragraph stacking
 
-        if len(gloss_positions) == 1:
-            pos, anchor, anchor_esc, note_esc = gloss_positions[0]
-            # Place at PARAGRAPH START for alignment
-            note = f"\\textbf{{{anchor_esc}}} {note_esc}"
-            para_tex = f"\\glossmerged{{}}{{{note}}}" + para_tex
-        elif len(gloss_positions) > 1:
-            # Build merged note block
+        if len(gloss_positions) >= 1:
+            # Build note block (single or merged)
             entries = []
             for _, anchor, anchor_esc, note_esc in gloss_positions:
                 entries.append(f"\\textbf{{{anchor_esc}}} {note_esc}")
-
             merged_note = "\\\\[2pt]".join(entries)
-            # Place at PARAGRAPH START — ensures marginpar aligns with first line
-            para_tex = f"\\glossmerged{{}}{{{merged_note}}}" + para_tex
+
+            # Place \marginpar at the FIRST glossed word in the text
+            # LaTeX aligns \marginpar with the line where it's called
+            first_anchor_esc = gloss_positions[0][2]
+            replacement = f"\\glossmerged{{{first_anchor_esc}}}{{{merged_note}}}"
+            para_tex = para_tex.replace(first_anchor_esc, replacement, 1)
 
         recent_glosses.append(glossed_this_para)
         parts.append(para_tex + "\n")
