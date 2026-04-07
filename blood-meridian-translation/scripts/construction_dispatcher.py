@@ -340,13 +340,13 @@ def generate_synonyms_for_sentence(sentence: str) -> dict[str, list[str]]:
         _haiku_synonyms = cache[cache_key]
         return _haiku_synonyms
 
-    prompt = f"""For each content word in this sentence, give 3-5 English synonyms that capture the word's meaning IN THIS CONTEXT. Include both common and literary/formal synonyms (e.g. "lie" meaning recline → "recline, rest, repose"; "harbor" meaning shelter → "shelter, protect, house").
+    prompt = f"""For each content word in this sentence, give 5-8 English synonyms that capture the word's meaning IN THIS CONTEXT. Include common, formal, literary, and archaic synonyms. For verbs used as commands, include imperative synonyms (e.g. "see" as command → "behold, look upon, observe, witness"). For physical actions include precise verbs (e.g. "lie" meaning recline → "recline, repose, rest, stretch out, be prostrate").
 
 Skip function words (the, a, is, he, and, of, etc).
 
 Sentence: {sentence}
 
-Output as JSON: {{"word": ["synonym1", "synonym2", "synonym3"]}}
+Output as JSON: {{"word": ["synonym1", "synonym2", ...]}}
 Only output the JSON, nothing else."""
 
     try:
@@ -722,8 +722,34 @@ def _lookup_with_context(lemma: str, word_form: str, target_pos: str,
             has_ambiguous_pos = len(matching_entries) > 1
 
     # If direct lookup succeeded with correct POS and no ambiguity, use it
+    # BUT check if Haiku synonyms unanimously suggest a different POS
+    # (handles stanza mis-tagging, e.g. "lie" → noun when it should be verb)
     if direct_pos_ok and not has_ambiguous_pos:
-        return direct
+        if _haiku_synonyms and (word_lower in _haiku_synonyms or en in _haiku_synonyms):
+            syns = _haiku_synonyms.get(word_lower, _haiku_synonyms.get(en, []))
+            # Check if any synonym is a known Woodhouse verb
+            verb_count = 0
+            for syn in syns[:5]:
+                syn_base = syn.lower().strip()
+                for suffix in ["es", "s", "ed", "ing", "d"]:
+                    if syn_base.endswith(suffix) and len(syn_base) > len(suffix) + 2:
+                        syn_base = syn_base[:-len(suffix)]
+                        break
+                if syn_base in _woodhouse:
+                    wh = _woodhouse[syn_base]
+                    wh_list = wh if isinstance(wh, list) else [wh]
+                    for e in wh_list:
+                        if e.get("pos", "") in ("v. trans.", "v. intrans.", "v."):
+                            verb_count += 1
+                            break
+            # If most synonyms are verbs but we returned a noun, override
+            # and switch target_pos to verb
+            if verb_count >= 3 and target_pos in ("noun", "adj"):
+                target_pos = "verb"  # trust Haiku over stanza
+            else:
+                return direct
+        else:
+            return direct
 
     # 3. Direct lookup failed or POS mismatch — try Haiku synonyms
     #    These are context-aware so they resolve ambiguity
@@ -738,15 +764,37 @@ def _lookup_with_context(lemma: str, word_form: str, target_pos: str,
                     # Check McCarthy vocab
                     if syn_lower in _MCCARTHY_VOCAB:
                         return _MCCARTHY_VOCAB[syn_lower]
-                    # Try the synonym directly and lemmatized (strip -s, -ed, -ing)
-                    candidates = [syn_lower]
-                    for suffix in ["s", "es", "ed", "ing", "d"]:
+                    # Try lemmatized forms FIRST (strip -s, -ed, -ing), then raw
+                    candidates = []
+                    for suffix in ["es", "s", "ed", "ing", "d"]:
                         if syn_lower.endswith(suffix) and len(syn_lower) > len(suffix) + 2:
                             candidates.append(syn_lower[:-len(suffix)])
+                    candidates.append(syn_lower)  # raw form last
                     for candidate in candidates:
+                        # Try with target POS first
                         syn_result = _lookup_pos_aware(candidate, candidate, target_pos)
                         if syn_result and _pos_matches(syn_result, target_pos):
                             return syn_result
+
+    # 3b. If direct result seems semantically wrong (Haiku synonyms all suggest
+    #     a different POS), try the alt-POS. Handles stanza mis-tagging.
+    if direct and _haiku_synonyms:
+        for lookup_key in [word_lower, en]:
+            if lookup_key in _haiku_synonyms:
+                for syn in _haiku_synonyms[lookup_key]:
+                    syn_lower = syn.lower().strip()
+                    candidates = []
+                    for suffix in ["es", "s", "ed", "ing", "d"]:
+                        if syn_lower.endswith(suffix) and len(syn_lower) > len(suffix) + 2:
+                            candidates.append(syn_lower[:-len(suffix)])
+                    candidates.append(syn_lower)
+                    for candidate in candidates:
+                        for alt_pos in ["verb", "adj", "noun"]:
+                            if alt_pos == target_pos:
+                                continue
+                            syn_result = _lookup_pos_aware(candidate, candidate, alt_pos)
+                            if syn_result and _pos_matches(syn_result, alt_pos):
+                                return syn_result
 
     # 4. Fall back to direct result even if POS doesn't match
     if direct:
@@ -760,15 +808,27 @@ def _lookup_with_context(lemma: str, word_form: str, target_pos: str,
 
 
 def _pos_matches(greek_word: str, target_pos: str) -> bool:
-    """Check if a Greek word matches the target POS based on ending."""
-    if not target_pos:
+    """Check if a Greek word matches the target POS based on ending.
+
+    Note: this is a heuristic. When Woodhouse provides POS labels,
+    those should be preferred over suffix-based guessing.
+    """
+    if not target_pos or not greek_word:
         return True
     if target_pos == "verb":
         return any(greek_word.endswith(s) for s in ("ειν", "εῖν", "αν", "ᾶν",
                                                      "ναι", "σθαι"))
     elif target_pos == "adj":
-        return any(greek_word.endswith(s) for s in ("ός", "ος", "ή", "ης",
-                                                     "ύς", "υς", "ον"))
+        # Greek adjectives: -ος/-η/-ον (2nd decl), -ύς/-εῖα/-ύ (3rd),
+        # -ης/-ες (3rd), -ας/-αινα/-αν (3rd, e.g. μέλας),
+        # -ων/-ον (3rd), -ρος, -λος (various)
+        return any(greek_word.endswith(s) for s in (
+            "ός", "ος", "ή", "ης", "ύς", "υς", "ον", "ές",
+            "ας",  # μέλας, ταλᾶς
+            "ων",  # σώφρων
+            "ρος", "λος",  # various adj endings
+            "αῖος", "ινος", "ικός", "ωδης", "ώδης",
+        ))
     elif target_pos in ("noun", "propn"):
         return not any(greek_word.endswith(s) for s in ("ειν", "εῖν", "ᾶν", "σθαι"))
     return True
@@ -814,6 +874,16 @@ def _lookup_pos_aware(lemma: str, word_form: str, target_pos: str) -> str | None
                               if gw not in ("τό", "τά", "ὁ", "ἡ", "τοῦ")]
                 if greek_words:
                     return greek_words[0]
+
+        # Also check interjections for imperative verbs (behold → ἰδού)
+        if target_pos == "verb":
+            for entry in wh_entries:
+                wh_pos = entry.get("pos", "")
+                if wh_pos in ("interj.", "interj"):
+                    greek_words = [gw for gw in entry.get("greek", [])
+                                  if gw not in ("τό", "τά", "ὁ", "ἡ")]
+                    if greek_words:
+                        return greek_words[0]
 
         # Second: fallback to first entry with any Greek words
         entry = wh_entries[0]
