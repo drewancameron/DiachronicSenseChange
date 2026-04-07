@@ -7,116 +7,108 @@
     },
     {
       "index": 1,
-      "greek": "ὠχρὸς καὶ ἰσχνός, φορεῖ χιτωνίσκον λίνου λεπτὸν ῥακώδη τε.",
+      "greek": "ὠχρὸς καὶ ἰσχνός·",
       "glosses": [
-        {
-          "anchor": "χιτωνίσκος",
-          "note": "= short frock",
-          "rank": 1
-        },
         {
           "anchor": "ἰσχνός",
           "note": "= thin, lean ↔ παχύς",
-          "rank": 1
-        },
-        {
-          "anchor": "ῥακώδης",
-          "note": "= ragged",
-          "rank": 1
-        },
-        {
-          "anchor": "καὶ",
-          "note": "= and specially ↔ εἰ",
           "rank": 1
         }
       ]
     },
     {
       "index": 2,
-      "greek": "σκαλεύει πῦρ μαγειρικόν.",
+      "greek": "χιτωνίσκον λεπτὸν ῥακώδη λίνεον φορεῖ.",
       "glosses": [
         {
-          "anchor": "πῦρ",
-          "note": "= fire ↔ χειμών",
+          "anchor": "ῥακώδη",
+          "note": "= ragged",
           "rank": 1
         },
         {
-          "anchor": "μαγειρεῖον",
-          "note": "= butcherʼs shop, cook-shop",
+          "anchor": "χιτωνίσκον",
+          "note": "= short frock",
           "rank": 1
         }
       ]
     },
     {
       "index": 3,
-      "greek": "ἔξω κεῖνται ἀγροὶ μέλανες ἐστραμμένοι ῥάκεσι χιόνος, ὕλαι δὲ μελάντεραι πέρα, ἔτι λύκους ὀλίγους τελευταίους ἔχουσαι.",
+      "greek": "σκαλεύει πῦρ μαγειρικόν.",
       "glosses": [
         {
-          "anchor": "μέλας",
-          "note": "= black, dark ↔ λευκός",
+          "anchor": "σκαλεύει",
+          "note": "= stokes",
           "rank": 1
         },
         {
-          "anchor": "τελευταῖος",
-          "note": "= oneʼs last day",
+          "anchor": "μαγειρικόν",
+          "note": "= butcherʼs shop, cook-shop",
           "rank": 1
         }
       ]
     },
     {
       "index": 4,
-      "greek": "τὸ μὲν γένος αὐτοῦ γινώσκεται ξυλοκόπων καὶ ὑδροφόρων, τῇ δ' ἀληθείᾳ ὁ πατὴρ διδάσκαλος γέγονεν.",
+      "greek": "ἔξω κεῖνται ἀγροὶ μέλανες ἐστραμμένοι ῥάκεσι χιόνος, ὗλαι δὲ μελάντεραι πέρα, αἳ ἔτι λύκους τινὰς ἐσχάτους κρύπτουσιν.",
       "glosses": [
         {
-          "anchor": "γένος",
-          "note": "= race, stock, kin ↔ εἶδος",
+          "anchor": "μέλανες",
+          "note": "= black, dark ↔ λευκός",
           "rank": 1
         },
         {
-          "anchor": "καὶ",
-          "note": "= and specially ↔ εἰ",
-          "rank": 1
-        },
-        {
-          "anchor": "διδάσκαλος",
-          "note": "= teacher, master",
+          "anchor": "ἐστραμμένοι",
+          "note": "= turned",
           "rank": 1
         }
       ]
     },
     {
       "index": 5,
-      "greek": "κεῖται ἐν μέθῃ, λέγει ἀπὸ ποιητῶν ὧν ὀνόματα νῦν ἀπόλωλεν.",
+      "greek": "οἱ μὲν αὐτοῦ ξυλοτόμοι καὶ ὑδροφόροι νομίζονται·",
       "glosses": [
         {
-          "anchor": "ἀπόλλυμι",
-          "note": "= destroy utterly, kill",
-          "rank": 1
-        },
-        {
-          "anchor": "ποιητής",
-          "note": "= workman",
+          "anchor": "ξυλοτόμοι",
+          "note": "= hewers of wood and drawers of water",
           "rank": 1
         }
       ]
     },
     {
       "index": 6,
-      "greek": "ὁ δὲ παῖς πτήσσει παρὰ τῷ πυρὶ καὶ θεᾶται αὐτόν.",
+      "greek": "τῇ δ' ἀληθείᾳ ὁ πατὴρ γραμματιστὴς γέγονεν.",
       "glosses": [
         {
-          "anchor": "παῖς",
-          "note": "= child, boy ↔ τέκνον",
+          "anchor": "γραμματιστὴς",
+          "note": "= schoolmaster",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "greek": "κεῖται μεθύων, λέγει δὲ ποιητῶν ὧν ὀνόματα νῦν ἀπόλωλεν.",
+      "glosses": [
+        {
+          "anchor": "ποιητῶν",
+          "note": "= workman",
           "rank": 1
         },
         {
-          "anchor": "καὶ",
-          "note": "= and specially ↔ εἰ",
+          "anchor": "ἀπόλωλεν",
+          "note": "= destroy utterly, kill",
           "rank": 1
-        },
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "greek": "ὁ δὲ παῖς πτήσσει παρὰ τῷ πυρὶ καὶ αὐτὸν θεᾶται.",
+      "glosses": [
         {
-          "anchor": "αὐτός",
-          "note": "= self, myself, thyself",
+          "anchor": "πτήσσει",
+          "note": "= crouches",
           "rank": 1
         }
       ]

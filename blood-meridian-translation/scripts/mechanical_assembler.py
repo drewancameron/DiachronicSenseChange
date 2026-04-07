@@ -183,7 +183,11 @@ def assemble_passage(passage_id: str) -> list[tuple[str, str]]:
     """Assemble all sentences in a passage.
 
     Returns list of (english_sentence, annotated_greek_draft) pairs.
+    Also stores provenance data for glossing in _passage_provenance.
     """
+    global _passage_provenance
+    _passage_provenance = []
+
     p_path = ROOT / "passages" / f"{passage_id}.json"
     if not p_path.exists():
         print(f"Passage not found: {passage_id}")
@@ -199,7 +203,28 @@ def assemble_passage(passage_id: str) -> list[tuple[str, str]]:
         draft = assemble_skeleton(skeleton)
         results.append((sent, draft))
 
+        # Store provenance: which Greek lemma came from which English word
+        for clause in skeleton.clauses:
+            for target in clause.words:
+                if (target.lemma and not target.lemma.startswith("[")
+                    and target.pos in ("noun", "verb", "adj", "propn")):
+                    _passage_provenance.append({
+                        "english": target.english,
+                        "lemma": target.lemma,
+                        "pos": target.pos,
+                        "sentence": sent,
+                    })
+
     return results
+
+
+# Provenance data from the last assemble_passage call
+_passage_provenance: list[dict] = []
+
+
+def get_provenance() -> list[dict]:
+    """Get the provenance data from the last assemble_passage call."""
+    return _passage_provenance
 
 
 def format_llm_prompt(passage_id: str) -> str:

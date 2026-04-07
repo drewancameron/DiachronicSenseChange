@@ -186,69 +186,97 @@ def build_provenance_glosses(passage_id: str,
 
     We know: English word → Greek lemma (from Woodhouse/LSJ) → definition.
     No LLM needed — the gloss IS the dictionary definition we already looked up.
-    """
-    from construction_dispatcher import _load_vocab
-    from mechanical_glosser import lsj_lookup, lsj_antonym
 
-    _load_vocab()
+    Skips common words that an intermediate Greek reader already knows.
+    """
+    import unicodedata
+    from mechanical_assembler import get_provenance
+    from mechanical_glosser import lsj_lookup, lsj_antonym, _load_lsj
+
+    _load_lsj()
+
+    # Common lemmas an intermediate reader knows — don't gloss
+    COMMON = {
+        "εἶναι", "ἔχειν", "λέγειν", "ποιεῖν", "γίγνεσθαι", "ἔρχεσθαι",
+        "ἰέναι", "ὁρᾶν", "εἰδέναι", "δοκεῖν", "βούλεσθαι", "δεῖν",
+        "δύνασθαι", "φέρειν", "λαμβάνειν", "διδόναι", "τιθέναι",
+        "ἀνήρ", "γυνή", "ἄνθρωπος", "θεός", "παῖς", "πατήρ", "μήτηρ",
+        "πόλις", "γῆ", "ὕδωρ", "πῦρ", "οἶκος", "ὁδός", "χείρ",
+        "λόγος", "ἔργον", "ὄνομα", "μέγας", "πολύς", "καλός", "κακός",
+        "ἀγαθός", "πᾶς", "ἄλλος", "αὐτός", "ἐγώ", "σύ", "οὗτος",
+        "ἐκεῖνος", "ὅς", "τίς", "εἷς", "δύο", "τρεῖς",
+    }
+
+    provenance = get_provenance()
+    if not provenance:
+        return None
+
+    # Build gloss entries from provenance
+    gloss_entries = {}  # lemma → note string
+
+    for prov in provenance:
+        lemma = prov["lemma"]
+        english = prov["english"]
+
+        if lemma in COMMON or lemma in gloss_entries or len(lemma) <= 2:
+            continue
+
+        # Definition from LSJ with English context
+        defn = lsj_lookup(lemma, prov["sentence"]) or lsj_lookup(lemma)
+        if not defn:
+            defn = english.lower()
+
+        # Clean
+        defn = re.sub(r"^(the|a|an|to)\s+", "", defn.strip(), flags=re.I)
+        defn = re.sub(r"\s+(of|with|for|from|in|on|at|to)(\s+(a|an|the))?\s*$",
+                       "", defn)
+        defn = defn.rstrip(". ")
+        if not defn or len(defn) < 2:
+            continue
+
+        # Antonym
+        antonym = lsj_antonym(lemma)
+        note = f"= {defn}"
+        if antonym:
+            ant = antonym.strip()
+            if (len(ant) > 1 and len(ant) < 30 and
+                any("GREEK" in unicodedata.name(c, "") for c in ant[:3]
+                    if c.isalpha())):
+                note += f" ↔ {ant}"
+
+        gloss_entries[lemma] = note
 
     # Split polished Greek into sentences
     greek_sentences = [s.strip() for s in
                        re.split(r'(?<=[.;·!])\s+', polished_greek) if s.strip()]
 
-    # For each mechanical pair, extract the word mappings
-    all_glosses = {}  # greek_lemma → {note, anchor}
-
-    for en_sent, grc_draft in mechanical_pairs:
-        # Parse the draft to extract lemma → english mappings
-        # Format: lemma[features] or plain lemma
-        tokens = re.findall(r'(\S+?)(?:\[[^\]]*\])?(?=\s|$)', grc_draft)
-
-        for token in tokens:
-            # Skip function words, articles, prepositions
-            if token in ("καί", "ἀλλά", "ἐν", "ἀπό", "μετά", "παρά", "ὑπέρ",
-                         "πέρα", "ἔξω", "νῦν", "ὅμως", "ἐκεῖνος", "ὅς", "τὸ"):
-                continue
-
-            # Look up definition from LSJ
-            defn = lsj_lookup(token, en_sent) or lsj_lookup(token)
-            if not defn:
-                continue
-
-            # Get antonym
-            antonym = lsj_antonym(token)
-
-            # Build gloss note
-            note_parts = [f"= {defn}"]
-            if antonym:
-                import unicodedata
-                ant = antonym.strip()
-                if (len(ant) > 1 and len(ant) < 30 and
-                    any("GREEK" in unicodedata.name(c, "") for c in ant[:3]
-                        if c.isalpha())):
-                    note_parts.append(f"↔ {ant}")
-
-            all_glosses[token] = " ".join(note_parts)
-
-    # Match glosses to polished Greek sentences
+    # Match glosses to polished text by finding inflected forms
     mg_sentences = []
+    used = set()
+
     for i, sent in enumerate(greek_sentences):
         sent_glosses = []
-        for lemma, note in all_glosses.items():
-            # Check if the lemma or a form of it appears in this sentence
-            # (crude: check if the first 4 chars of the lemma appear)
-            if len(lemma) >= 4 and lemma[:4] in sent:
+        for lemma, note in gloss_entries.items():
+            if lemma in used:
+                continue
+            # Match on first 3-4 chars of lemma (prefix matching for inflection)
+            stem = lemma[:min(4, len(lemma))]
+            if stem not in sent:
+                continue
+            # Find the actual word in the sentence
+            anchor = None
+            for word in re.findall(
+                    r'[\u0370-\u03FF\u1F00-\u1FFF\u0300-\u036F]+', sent):
+                if word.startswith(stem) or word.lower().startswith(stem.lower()):
+                    anchor = word
+                    break
+            if anchor:
                 sent_glosses.append({
-                    "anchor": lemma,
+                    "anchor": anchor,
                     "note": note,
                     "rank": 1,
                 })
-            elif lemma in sent:
-                sent_glosses.append({
-                    "anchor": lemma,
-                    "note": note,
-                    "rank": 1,
-                })
+                used.add(lemma)
 
         mg_sentences.append({
             "index": i,
