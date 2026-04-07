@@ -21,7 +21,10 @@
 
 % Page-bottom guard (suppress glosses within this distance of bottom)
 \newlength{\glossbottomguard}
-\setlength{\glossbottomguard}{25pt}
+% Suppress glosses whose anchor word is within this distance of page bottom.
+% Must be at least as tall as the tallest expected gloss block to prevent overflow.
+% 150pt ≈ 10 gloss entries at ~15pt each.
+\setlength{\glossbottomguard}{150pt}
 
 % === State ===
 \newcounter{gmctr}
